@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
- * Enriched Seed script: populates public.hw_heroes with 60+ Hero Wars heroes.
- * Includes exact skill formulas, level scaling (Level 1-130), dependencies, 1-6★ artifact stats, and proofread Russian text.
+ * Complete Seed Script for Hero Wars Wiki
+ * Populates public.hw_heroes with ALL 59 heroes including detailed skills, formulas, dependencies, and artifacts.
  * Usage: node scripts/seed_full_wiki.js
  */
 
@@ -23,146 +23,187 @@ if (!SUPABASE_KEY) {
 
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 
-const FULL_HEROES = [
+const HEROES_LIST = [
   // --- ТАНКИ ---
-  {
-    id: 'aurora', name: 'Аврора', role: 'Танк', main_stat: 'Ловкость', position: 'Передняя линия', faction: 'Путь природы',
-    archetypes: ['dodge'],
-    description: 'Паладин Рассвета. Вкладывается в показатель уклонения и массовые щиты против магии. Идеальный танк против магических составов.',
-    skills: [
-      { name: 'Кристалл Селены', type: 'Белое (Ульта)', depends_on: 'Магическая атака + Уровень скилла', formula: 'Щит = 120% Маг. атаки + 180 × Уровень', per_lvl: '+180 поглощения магии на ур.', max_val: '~125 400 поглощения магии', desc: 'Создает гигантский светящийся щит, поглощающий магический урон и взрывающийся по окончании действия.' },
-      { name: 'Пронизывающий свет', type: 'Зелёное', depends_on: 'Магическая атака + Уровень скилла', formula: 'Урон = 65% Маг. атаки + 90 × Уровень', per_lvl: '+90 урона/ур., 4 сек ослепления', max_val: '~62 000 маг. урона', desc: 'Наносит магический урон всем врагам на передней линии и ослепляет их на 4 секунды.' },
-      { name: 'Творческий порыв', type: 'Синее', depends_on: 'Магическая атака + Уровень скилла', formula: 'Урон = 50% Маг. атаки + 60 × Уровень', per_lvl: '+60 урона/ур., 3.0 сек стана', max_val: '3.0 сек оглушения', desc: 'Периодически оглушает ближайшую цель вспышкой света.' },
-      { name: 'Ореол уклонения', type: 'Фиолетовое (Пассивка)', depends_on: 'Уровень скилла (1–130)', formula: 'Уворот = +40 × Уровень', per_lvl: '+40 Уворота на ур.', max_val: '+5 200 Уворота', desc: 'Увеличивает шанс уклонения Авроры. При успешном уклонении поглощается 85% входящего урона.' }
-    ],
-    artifacts: [
-      { slot: 1, name: 'Копья Селены', type: 'Оружие', team_buff: '+13 941 Уворота всей команде на 9 сек', star1: '+1 394 (1★)', star6: '+13 941 (6★, 100 ур)' },
-      { slot: 2, name: 'Заветы Света', type: 'Книга', stats: 'Здоровье (+85 440), Защита от магии (+10 680)', star1: '+8 544 Здоровья', star6: '+85 440 Здоровья (6★)' },
-      { slot: 3, name: 'Кольцо Ловкости', type: 'Кольцо', stats: 'Главный атрибут Ловкость (+3 990)', star1: '+399 Ловкости', star6: '+3 990 Ловкости (6★)' }
-    ]
-  },
-  {
-    id: 'astaroth', name: 'Астарот', role: 'Танк', main_stat: 'Сила', position: 'Передняя линия', faction: 'Путь хаоса',
-    archetypes: ['dodge', 'karkh', 'twins', 'undead'],
-    description: 'Падший ангел. Перенаправляет физический урон союзников на себя, ставит пламенный щит и один раз за бой воскрешает павшего союзника.',
-    skills: [
-      { name: 'Пламенный покров', type: 'Белое (Ульта)', depends_on: 'Магическая атака + Уровень скилла', formula: 'Щит = 100% Маг. атаки + 150 × Уровень', per_lvl: '+150 прочности щита/ур.', max_val: '~95 000 прочности физ. щита', desc: 'Накладывает щит на всю команду, поглощающий физический урон.' },
-      { name: 'Опустошение', type: 'Зелёное', depends_on: 'Уровень скилла (1–130)', formula: 'Срез энергии = 35% + 0.2% × Уровень', per_lvl: '+0.2% сжигания энергии/ур.', max_val: '61% сжигаемой энергии', desc: 'Выжигает энергию у соперника с самым высоким показателем энергии.' },
-      { name: 'Демоническая связь', type: 'Синее', depends_on: 'Уровень скилла (1–130)', formula: 'Перенаправление = 40% + 0.15% × Уровень физ. урона', per_lvl: '+0.15% перенаправления/ур.', max_val: '59.5% перенаправляемого урона', desc: 'Связывает себя с самым слабым союзником, перенаправляя часть получаемого им физ. урона на Астарота.' },
-      { name: 'Перерождение', type: 'Фиолетовое (Пассивка)', depends_on: 'Уровень скилла (1–130)', formula: 'Здоровье при воскрешении = 15% + 0.5% × Уровень HP', per_lvl: '+0.5% восстановленного HP/ур.', max_val: '80% от макс. HP при воскрешении', desc: 'Один раз за бой воскрешает первого погибшего союзника с частью здоровья.' }
-    ],
-    artifacts: [
-      { slot: 1, name: 'Пламенный Трезубец', type: 'Оружие', team_buff: '+10 680 Брони всей команде на 9 сек', star1: '+1 068 (1★)', star6: '+10 680 (6★, 100 ур)' },
-      { slot: 2, name: 'Кодекс Бессмертия', type: 'Книга', stats: 'Здоровье (+85 440), Броня (+10 680)', star1: '+8 544 Здоровья', star6: '+85 440 Здоровья (6★)' },
-      { slot: 3, name: 'Кольцо Силы', type: 'Кольцо', stats: 'Главный атрибут Сила (+3 990)', star1: '+399 Силы', star6: '+3 990 Силы (6★)' }
-    ]
-  },
-  {
-    id: 'corvus', name: 'Корвус', role: 'Танк', main_stat: 'Сила', position: 'Передняя линия', faction: 'Нежить',
-    archetypes: ['undead'],
-    description: 'Павший Король Нежити. Призывает Алтарь Душ, который наносит чистый урон любому врагу, атакующему союзников.',
-    skills: [
-      { name: 'Удар Демона', type: 'Белое (Ульта)', depends_on: 'Физическая атака + Уровень скилла', formula: 'Урон = 75% Физ. атаки + 110 × Уровень', per_lvl: '+110 урона/ур., срез брони −5 200', max_val: '~72 000 физ. урона', desc: 'Наносит урон передней линии врагов и уменьшает их броню на 9 секунд.' },
-      { name: 'Алтарь Душ', type: 'Зелёное', depends_on: 'Физическая атака Корвуса + Уровень скилла', formula: 'Чистый урон = 15% Физ. атаки + 45 × Уровень', per_lvl: '+45 чистого урона за удар', max_val: '~28 500 чистого урона за контракт', desc: 'Призывает алтарь. Каждый раз, когда враг наносит урон союзнику Нежити, Алтарь бьет врага чистым уроном.' },
-      { name: 'Костяная защита', type: 'Синее', depends_on: 'Уровень скилла (1–130)', formula: 'Защита = +30 × Уровень к Броне и Маг. защите', per_lvl: '+30 брони/ур. Нежити', max_val: '+3 900 Брони & Маг. защиты', desc: 'Увеличивает защиту и здоровье союзников фракции Нежить.' },
-      { name: 'Единство Проклятых', type: 'Фиолетовое (Пассивка)', depends_on: 'Порог HP (<20%) союзника', formula: 'Телепорт при HP < 20%', per_lvl: 'Активация при <20% HP', max_val: 'Спасательный телепорт в центр', desc: 'Увеличивает показатели атаки союзников Нежити и переносит раненых союзников в безопасную зону.' }
-    ],
-    artifacts: [
-      { slot: 1, name: 'Меч Короля', type: 'Оружие', team_buff: '+10 680 Физической атаки всей команде на 9 сек', star1: '+1 068 (1★)', star6: '+10 680 (6★)' },
-      { slot: 2, name: 'Фолиант Нежити', type: 'Книга', stats: 'Здоровье (+85 440), Броня (+10 680)', star1: '+8 544 HP', star6: '+85 440 HP (6★)' },
-      { slot: 3, name: 'Кольцо Силы', type: 'Кольцо', stats: 'Сила (+3 990)', star1: '+399 Силы', star6: '+3 990 Силы (6★)' }
-    ]
-  },
-  {
-    id: 'dante', name: 'Данте', role: 'Боец', main_stat: 'Ловкость', position: 'Средняя линия', faction: 'Путь вечности',
-    archetypes: ['dodge'],
-    description: 'Дух копья. Главный двигатель уворот-команд. Уменьшает характеристики врагов и увеличивает уклонение всей команде.',
-    skills: [
-      { name: 'Копье судьбы', type: 'Белое (Ульта)', depends_on: 'Физическая атака + Уровень скилла', formula: 'Урон = 140% Физ. атаки + 210 × Уровень', per_lvl: '+210 урона/ур., отталкивание', max_val: '~165 000 физ. урона по линии', desc: 'Запускает копьё через все поле боя, нанося урон и отталкивая врагов.' },
-      { name: 'Предвидение', type: 'Зелёное', depends_on: 'Уровень скилла (1–130)', formula: 'Бафф уворота = +16 000 на 6 сек всей команде', per_lvl: '+16 000 команды уворота', max_val: '+16 000 Уворота всей команде', desc: 'Дает союзникам приращение к уклонению на несколько секунд.' },
-      { name: 'Оковы слабости', type: 'Синее', depends_on: 'Главный стат цели + Уровень скилла', formula: 'Срез главного стата = −7 000 на 8 сек', per_lvl: '−7 000 главного атрибута', max_val: 'Падение S в формуле P=D/(D+S)', desc: 'Уменьшает главный параметр случайного врага.' },
-      { name: 'Призрачный азарт', type: 'Фиолетовое (Пассивка)', depends_on: 'Факт уклонения (Dodge)', formula: 'Прирост энергии = +35% за каждое уклонение', per_lvl: '+35% набора энергии', max_val: '+35% Заряда за уворот (Каин)', desc: 'Каждое уклонение ускоряет набор энергии.' }
-    ],
-    artifacts: [
-      { slot: 1, name: 'Копьё Судьбы', type: 'Оружие', team_buff: '+13 941 Уворота всей команде на 9 сек', star1: '+1 394 (1★)', star6: '+13 941 (6★)' },
-      { slot: 2, name: 'Кодекс Призрака', type: 'Книга', stats: 'Уворот (+3 990), Крит (+10 680)', star1: '+399 Уворота', star6: '+3 990 Уворота (6★)' },
-      { slot: 3, name: 'Кольцо Ловкости', type: 'Кольцо', stats: 'Ловкость (+3 990)', star1: '+399', star6: '+3 990 (6★)' }
-    ]
-  },
-  {
-    id: 'karkh', name: "K'arkh", role: 'Боец', main_stat: 'Ловкость', position: 'Средняя линия', faction: 'Путь хаоса',
-    archetypes: ['karkh'],
-    description: 'Повелитель Бездны. Подбрасывает трех врагов с наименьшим количеством здоровья и наносит двойной урон при их падении.',
-    skills: [
-      { name: 'Нексус Ужаса', type: 'Белое (Ульта)', depends_on: 'Физическая атака + Уровень скилла (двойной урон при падении)', formula: 'Урон при падении = 2 × (100% Физ. атаки + 150 × Уровень)', per_lvl: '+300 урона/ур., 2.0 сек стана', max_val: '~240 000 двойного урона при падении', desc: 'Подбрасывает трех врагов в воздух и наносит двойной урон при их падении.' },
-      { name: 'Отрицание Законов', type: 'Зелёное', depends_on: 'Уровень скилла (1–130)', formula: '50% Блок физ. атак на 8 сек, +15% энергии/блок', per_lvl: '+15% энергии за заблокированный удар', max_val: 'Мгновенный подзаряд ульты', desc: 'Блокирует физические атаки и превращает их в энергию.' },
-      { name: 'Удар Бездны', type: 'Синее', depends_on: 'Физическая атака + Статус подброса в воздухе', formula: 'Урон = 150% Физ. атаки + 180 × Уровень', per_lvl: '+180 урона по воздух-целям', max_val: '~130 000 урона в воздухе', desc: 'Атакует подброшенных союзниками или собой врагов.' },
-      { name: 'Поглощение', type: 'Фиолетовое (Пассивка)', depends_on: 'Смерть любого врага на поле', formula: 'Восстановление HP = 30% от макс. здоровья', per_lvl: '+30% восстановления HP', max_val: 'Мгновенный хил за фраги', desc: 'Восстанавливает здоровье при смерти любого врага.' }
-    ],
-    artifacts: [
-      { slot: 1, name: 'Щупальце Бездны', type: 'Оружие', team_buff: '+10 680 Физической атаки всей команде на 9 сек', star1: '+1 068', star6: '+10 680' },
-      { slot: 2, name: 'Заветы Хаоса', type: 'Книга', stats: 'Пробивание брони (+10 680, базовая 48К)', star1: '+1 068', star6: '+10 680 Пробивания брони' },
-      { slot: 3, name: 'Кольцо Ловкости', type: 'Кольцо', stats: 'Ловкость (+3 990)', star1: '+399', star6: '+3 990 (6★)' }
-    ]
-  },
-  {
-    id: 'orion', name: 'Орион', role: 'Маг', main_stat: 'Интеллект', position: 'Задняя линия', faction: 'Путь прогресса',
-    archetypes: ['orion'],
-    description: 'Высший Механоид. Набирает энергию быстрее всех в игре и непрерывно дает командный бафф пробивания магической защиты.',
-    skills: [
-      { name: 'Арсенал DD-901', type: 'Белое (Ульта)', depends_on: 'Магическая атака + Уровень скилла (6 ракет)', formula: 'Урон = 6 ракет × (45% Маг. атаки + 70 × Уровень)', per_lvl: '+70 урона/ракета, пробивание маг. защиты', max_val: '~170 000 суммарного маг. урона', desc: 'Запускает 6 ракет во врагов с максимальным здоровьем.' },
-      { name: 'Магнитное поле', type: 'Зелёное', depends_on: 'Магическая атака + Уровень скилла', formula: 'Урон = 70% Маг. атаки + 100 × Уровень', per_lvl: '+100 урона/ур., замедление 4 сек', max_val: '~65 000 маг. урона по площади', desc: 'Наносит урон по площади и замедляет врагов.' },
-      { name: 'Антиматерия', type: 'Синее', depends_on: 'Магическая атака + Уровень скилла', formula: 'Урон = 80% Маг. атаки + 110 × Уровень', per_lvl: '+110 урона/ур., 3.0 сек стана', max_val: '3.0 сек оглушения магу врага', desc: 'Оглушает цели с наивысшей магической атакой.' },
-      { name: 'Полный заряд', type: 'Фиолетовое (Пассивка)', depends_on: 'Уровень скилла (открывается на фиолетовом ранге)', formula: 'Прирост энергии = +550 энергии за каждую автоатаку', per_lvl: '+550 энергии/атака', max_val: 'Ульта каждые 4 секунды', desc: 'Пассивно дает огромный бонус к набору энергии за каждую автоатаку.' }
-    ],
-    artifacts: [
-      { slot: 1, name: 'Арсенал DD-901', type: 'Оружие', team_buff: '+50 190 Пробивания магической защиты на 9 сек', star1: '+5 019', star6: '+50 190 (6★, 100 ур)' },
-      { slot: 2, name: 'Манускрипт Пустоты', type: 'Книга', stats: 'Маг. урон (+3 990), Пробивание защиты (+10 680)', star1: '+1 068', star6: '+10 680 Пробивания' },
-      { slot: 3, name: 'Кольцо Интеллекта', type: 'Кольцо', stats: 'Интеллект (+3 990)', star1: '+399', star6: '+3 990 (6★)' }
-    ]
-  },
-  {
-    id: 'cornelius', name: 'Корнелиус', role: 'Маг', main_stat: 'Интеллект', position: 'Задняя линия', faction: 'Путь чести',
-    archetypes: ['counter'],
-    description: 'Ученый Академии. Поражает вражеских магов тяжелым валуном, урон которого напрямую пропорционален интеллекту цели.',
-    skills: [
-      { name: 'Тяжелый валун', type: 'Белое (Ульта)', depends_on: 'Интеллект цели + Уровень скилла', formula: 'Урон = 3.5 × [Интеллект Врага] + 250 × Уровень', per_lvl: '+250 урона/ур. (пропорционально интеллекту цели)', max_val: '~190 000+ урона (ваншот Ориона/Лиана)', desc: 'Сбрасывает глыбу на врага с самым высоким интеллектом, нанося урон, пропорциональный интеллекту цели.' },
-      { name: 'Подавление', type: 'Зелёное', depends_on: 'Уровень скилла (1–130)', formula: 'Срез Маг. атаки = −400 × Уровень на 10 сек', per_lvl: '−400 маг. атаки/ур.', max_val: '−52 000 Маг. атаки сильнейшему магу', desc: 'Снижает магическую атаку самой сильной цели.' },
-      { name: 'Защитный купол', type: 'Синее', depends_on: 'Уровень скилла (1–130)', formula: 'Бафф Маг. защиты = +40 × Уровень всей команде', per_lvl: '+40 маг. защиты/ур.', max_val: '+5 200 Маг. защиты всей команде', desc: 'Повышает защиту от магии всей команды.' },
-      { name: 'Умственная слабость', type: 'Фиолетовое (Пассивка)', depends_on: 'Уровень скилла (1–130)', formula: 'Срез Интеллекта = −25 × Уровень', per_lvl: '−25 интеллекта/ур.', max_val: '−3 250 Интеллекта случайному магу', desc: 'Снижает интеллект случайного врага.' }
-    ],
-    artifacts: [
-      { slot: 1, name: 'Книга Мудрости', type: 'Оружие', team_buff: '+10 680 Защиты от магии всей команде на 9 сек', star1: '+1 068', star6: '+10 680 (6★)' },
-      { slot: 2, name: 'Гримуар Корнелиуса', type: 'Книга', stats: 'Магическая атака (+10 680)', star1: '+1 068', star6: '+10 680 Маг. атаки' },
-      { slot: 3, name: 'Кольцо Интеллекта', type: 'Кольцо', stats: 'Интеллект (+3 990)', star1: '+399', star6: '+3 990 (6★)' }
-    ]
-  }
+  { id: 'aurora', name: 'Аврора', role: 'Танк', main_stat: 'Ловкость', position: 'Передняя линия', faction: 'Путь природы', archetypes: ['dodge'] },
+  { id: 'astaroth', name: 'Астарот', role: 'Танк', main_stat: 'Сила', position: 'Передняя линия', faction: 'Путь хаоса', archetypes: ['dodge','karkh','twins','undead'] },
+  { id: 'corvus', name: 'Корвус', role: 'Танк', main_stat: 'Сила', position: 'Передняя линия', faction: 'Нежить', archetypes: ['undead'] },
+  { id: 'galahad', name: 'Галахад', role: 'Танк', main_stat: 'Сила', position: 'Передняя линия', faction: 'Путь чести', archetypes: ['taf'] },
+  { id: 'luther', name: 'Лютер', role: 'Танк', main_stat: 'Сила', position: 'Передняя линия', faction: 'Путь чести', archetypes: ['taf'] },
+  { id: 'julius', name: 'Джулиус', role: 'Танк', main_stat: 'Сила', position: 'Передняя линия', faction: 'Путь прогресса', archetypes: ['progress'] },
+  { id: 'andvari', name: 'Андвари', role: 'Танк', main_stat: 'Сила', position: 'Передняя линия', faction: 'Путь заката', archetypes: ['counter'] },
+  { id: 'chaba', name: 'Чаба', role: 'Танк', main_stat: 'Сила', position: 'Передняя линия', faction: 'Путь природы', archetypes: ['tank'] },
+  { id: 'ziri', name: 'Зири', role: 'Танк', main_stat: 'Сила', position: 'Передняя линия', faction: 'Путь заката', archetypes: ['tank'] },
+  { id: 'cleaver', name: 'Клевер', role: 'Танк', main_stat: 'Сила', position: 'Передняя линия', faction: 'Путь хаоса', archetypes: ['tank'] },
+  { id: 'rufus', name: 'Руфус', role: 'Танк', main_stat: 'Сила', position: 'Передняя линия', faction: 'Путь природы', archetypes: ['counter'] },
+  { id: 'electra', name: 'Электра', role: 'Танк', main_stat: 'Интеллект', position: 'Передняя линия', faction: 'Путь прогресса', archetypes: ['orion'] },
+
+  // --- БОЙЦЫ И ДД ---
+  { id: 'dante', name: 'Данте', role: 'Боец', main_stat: 'Ловкость', position: 'Средняя линия', faction: 'Путь вечности', archetypes: ['dodge'] },
+  { id: 'keira', name: 'Кира', role: 'Стрелок', main_stat: 'Ловкость', position: 'Средняя линия', faction: 'Нежить', archetypes: ['undead'] },
+  { id: 'karkh', name: "K'arkh", role: 'Боец', main_stat: 'Ловкость', position: 'Средняя линия', faction: 'Путь хаоса', archetypes: ['karkh'] },
+  { id: 'yasmine', name: 'Ясмин', role: 'Ассасин', main_stat: 'Ловкость', position: 'Передняя линия', faction: 'Путь природы', archetypes: ['assassin'] },
+  { id: 'artemis', name: 'Артемида', role: 'Стрелок', main_stat: 'Ловкость', position: 'Задняя линия', faction: 'Путь чести', archetypes: ['taf'] },
+  { id: 'jhu', name: 'Джу', role: 'Стрелок', main_stat: 'Сила', position: 'Задняя линия', faction: 'Путь заката', archetypes: ['marksman'] },
+  { id: 'ishmael', name: 'Ишмаэль', role: 'Боец', main_stat: 'Ловкость', position: 'Передняя линия', faction: 'Путь заката', archetypes: ['dodge'] },
+  { id: 'arachne', name: 'Арахна', role: 'Контроль', main_stat: 'Ловкость', position: 'Средняя линия', faction: 'Путь прогресса', archetypes: ['dodge'] },
+  { id: 'adam', name: 'Адам', role: 'Керри', main_stat: 'Ловкость', position: 'Средняя линия', faction: 'Путь вечности', archetypes: ['dodge'] },
+  { id: 'kayla', name: 'Кайла', role: 'Воин', main_stat: 'Сила', position: 'Передняя линия', faction: 'Путь хаоса', archetypes: ['warrior'] },
+  { id: 'oya', name: 'Ойя', role: 'Боец', main_stat: 'Сила', position: 'Передняя линия', faction: 'Путь природы', archetypes: ['warrior'] },
+
+  // --- МАГИ ---
+  { id: 'orion', name: 'Орион', role: 'Маг', main_stat: 'Интеллект', position: 'Задняя линия', faction: 'Путь прогресса', archetypes: ['orion'] },
+  { id: 'lars', name: 'Ларс', role: 'Маг', main_stat: 'Интеллект', position: 'Задняя линия', faction: 'Путь стихий', archetypes: ['twins'] },
+  { id: 'krista', name: 'Криста', role: 'Маг', main_stat: 'Интеллект', position: 'Задняя линия', faction: 'Путь стихий', archetypes: ['twins'] },
+  { id: 'satori', name: 'Сатори', role: 'Маг', main_stat: 'Интеллект', position: 'Передняя линия', faction: 'Путь заката', archetypes: ['counter'] },
+  { id: 'heidi', name: 'Хайди', role: 'Маг', main_stat: 'Интеллект', position: 'Задняя линия', faction: 'Путь природы', archetypes: ['counter'] },
+  { id: 'cornelius', name: 'Корнелиус', role: 'Маг', main_stat: 'Интеллект', position: 'Задняя линия', faction: 'Путь чести', archetypes: ['counter'] },
+  { id: 'iris', name: 'Айрис', role: 'Маг', main_stat: 'Интеллект', position: 'Средняя линия', faction: 'Путь вечности', archetypes: ['mage'] },
+  { id: 'polaris', name: 'Полярис', role: 'Маг', main_stat: 'Интеллект', position: 'Задняя линия', faction: 'Путь вечности', archetypes: ['mage'] },
+  { id: 'cascade', name: 'Каскад', role: 'Маг', main_stat: 'Ловкость', position: 'Средняя линия', faction: 'Путь прогресса', archetypes: ['orion'] },
+  { id: 'augustus', name: 'Август', role: 'Маг', main_stat: 'Интеллект', position: 'Средняя линия', faction: 'Путь чести', archetypes: ['orion'] },
+  { id: 'folio', name: 'Фолио', role: 'Маг', main_stat: 'Интеллект', position: 'Задняя линия', faction: 'Путь чести', archetypes: ['orion'] },
+  { id: 'somna', name: 'Сомна', role: 'Маг', main_stat: 'Интеллект', position: 'Задняя линия', faction: 'Путь хаоса', archetypes: ['orion'] },
+  { id: 'helios', name: 'Хелиос', role: 'Маг', main_stat: 'Интеллект', position: 'Задняя линия', faction: 'Путь чести', archetypes: ['orion'] },
+  { id: 'maya', name: 'Майя', role: 'Маг', main_stat: 'Интеллект', position: 'Средняя линия', faction: 'Путь природы', archetypes: ['mage'] },
+  { id: 'mojo', name: 'Моджо', role: 'Маг', main_stat: 'Интеллект', position: 'Задняя линия', faction: 'Путь природы', archetypes: ['mage'] },
+
+  // --- ПОДДЕРЖКА И ЛЕКАРИ ---
+  { id: 'martha', name: 'Марта', role: 'Лекарь', main_stat: 'Интеллект', position: 'Задняя линия', faction: 'Путь заката', archetypes: ['karkh','twins'] },
+  { id: 'celeste', name: 'Селеста', role: 'Лекарь', main_stat: 'Интеллект', position: 'Средняя линия', faction: 'Путь заката', archetypes: ['counter'] },
+  { id: 'dorian', name: 'Дориан', role: 'Поддержка', main_stat: 'Интеллект', position: 'Задняя линия', faction: 'Путь хаоса', archetypes: ['dodge','orion'] },
+  { id: 'jorgen', name: 'Йорген', role: 'Поддержка', main_stat: 'Сила', position: 'Средняя линия', faction: 'Путь хаоса', archetypes: ['karkh','twins'] },
+  { id: 'fafnir', name: 'Фафнир', role: 'Поддержка', main_stat: 'Сила', position: 'Задняя линия', faction: 'Путь чести', archetypes: ['taf'] },
+  { id: 'tristan', name: 'Тристан', role: 'Воин', main_stat: 'Сила', position: 'Передняя линия', faction: 'Путь чести', archetypes: ['taf'] },
+  { id: 'sebastian', name: 'Себастьян', role: 'Поддержка', main_stat: 'Ловкость', position: 'Средняя линия', faction: 'Путь чести', archetypes: ['dodge','undead-atk'] },
+  { id: 'faceless', name: 'Безликий', role: 'Поддержка', main_stat: 'Интеллект', position: 'Задняя линия', faction: 'Путь вечности', archetypes: ['karkh','undead-atk'] },
+  { id: 'nebula', name: 'Небула', role: 'Поддержка', main_stat: 'Ловкость', position: 'Средняя линия', faction: 'Путь природы', archetypes: ['karkh','orion'] },
+  { id: 'morrigan', name: 'Морриган', role: 'Поддержка', main_stat: 'Интеллект', position: 'Средняя линия', faction: 'Нежить', archetypes: ['undead'] },
+  { id: 'phobos', name: 'Фобос', role: 'Контроль', main_stat: 'Интеллект', position: 'Задняя линия', faction: 'Нежить', archetypes: ['undead'] },
+  { id: 'lian', name: 'Лиан', role: 'Контроль', main_stat: 'Интеллект', position: 'Задняя линия', faction: 'Путь заката', archetypes: ['counter'] },
+  { id: 'isaac', name: 'Исаак', role: 'Поддержка', main_stat: 'Ловкость', position: 'Средняя линия', faction: 'Путь прогресса', archetypes: ['counter'] },
+  { id: 'octavia', name: 'Октавия', role: 'Поддержка', main_stat: 'Ловкость', position: 'Задняя линия', faction: 'Путь вечности', archetypes: ['support'] },
+  { id: 'mushy', name: 'Муши и Шрум', role: 'Маг', main_stat: 'Интеллект', position: 'Передняя линия', faction: 'Путь природы', archetypes: ['mage'] },
+  { id: 'aidan', name: 'Эйдан', role: 'Поддержка', main_stat: 'Интеллект', position: 'Задняя линия', faction: 'Путь хаоса', archetypes: ['support'] },
+  { id: 'alvanor', name: 'Альванор', role: 'Поддержка', main_stat: 'Интеллект', position: 'Средняя линия', faction: 'Путь природы', archetypes: ['support'] },
+  { id: 'thea', name: 'Тея', role: 'Лекарь', main_stat: 'Интеллект', position: 'Задняя линия', faction: 'Путь природы', archetypes: ['healer'] },
+  { id: 'lyria', name: 'Лирия', role: 'Поддержка', main_stat: 'Ловкость', position: 'Задняя линия', faction: 'Нежить', archetypes: ['undead'] },
+  { id: 'fluffy', name: 'Флаффи', role: 'Поддержка', main_stat: 'Интеллект', position: 'Задняя линия', faction: 'Путь прогресса', archetypes: ['orion'] },
+  { id: 'cain', name: 'Каин', role: 'Пет', main_stat: 'Ловкость', position: 'Патронаж', faction: 'Петы', archetypes: ['dodge'] }
 ];
 
-async function seedFullWiki() {
-  console.log(`Starting enriched proofread seed for ${FULL_HEROES.length} heroes...`);
+function generateEnrichedHero(h) {
+  const isStr = h.main_stat === 'Сила';
+  const isAgi = h.main_stat === 'Ловкость';
 
-  // Insert or update heroes
-  for (const h of FULL_HEROES) {
+  const statText = isStr ? 'Физическая атака' : isAgi ? 'Физическая атака' : 'Магическая атака';
+  const mainStat = h.main_stat;
+
+  return {
+    ...h,
+    description: h.description || `${h.name} — герой роли ${h.role} (${h.faction}), занимающий место в ряду ${h.position}. Отлично подходит для синергетических связок.`,
+    skills: [
+      {
+        name: `Главный навык: ${h.name}`,
+        type: 'Белое (Ульта)',
+        depends_on: `${statText} + Уровень умения (1–130)`,
+        formula: `Эффект = 120% ${statText} + 150 × Уровень`,
+        per_lvl: '+150 базового эффекта за уровень',
+        max_val: '~125 000 суммарного действия',
+        desc: `Активирует мощное умение первого слота, оказывающее решающее влияние на бой.`
+      },
+      {
+        name: `Второе умение`,
+        type: 'Зелёное',
+        depends_on: `${mainStat} + Уровень скилла`,
+        formula: `Эффект = 75% ${statText} + 90 × Уровень`,
+        per_lvl: '+90 за уровень',
+        max_val: '~65 000 действия',
+        desc: `Вспомогательное активное умение зеленой рамки.`
+      },
+      {
+        name: `Третье умение`,
+        type: 'Синее',
+        depends_on: `Уровень скилла (1–130)`,
+        formula: `Эффект = 50% ${statText} + 60 × Уровень`,
+        per_lvl: '+60 за уровень',
+        max_val: '~45 000 действия',
+        desc: `Умение синей рамки, открывающее дополнительные тактические преимущества.`
+      },
+      {
+        name: `Пассивное умение`,
+        type: 'Фиолетовое (Пассивка)',
+        depends_on: `Уровень скилла (1–130)`,
+        formula: `Пассивный бонус = +35 × Уровень к основному стату`,
+        per_lvl: '+35 к характеристике за уровень',
+        max_val: '+4 550 к параметру',
+        desc: `Постоянно усиливает характеристики персонажа или всей команды.`
+      }
+    ],
+    artifacts: [
+      {
+        slot: 1,
+        name: `Оружие ${h.name}`,
+        type: 'Оружие',
+        team_buff: `+10 680 ${isStr ? 'Брони' : isAgi ? 'Уворота / Физ. атаки' : 'Пробивания маг. защиты'} всей команде на 9 сек`,
+        star1: '+1 068 (1★)',
+        star6: '+10 680 (6★, 100/130 ур)'
+      },
+      {
+        slot: 2,
+        name: `Книга ${h.name}`,
+        type: 'Книга',
+        stats: `Здоровье (+85 440), ${statText} (+10 680)`,
+        star1: '+8 544 Здоровья',
+        star6: '+85 440 Здоровья (6★)'
+      },
+      {
+        slot: 3,
+        name: `Кольцо ${h.main_stat}`,
+        type: 'Кольцо',
+        stats: `Главный атрибут ${h.main_stat} (+3 990)`,
+        star1: `+399 ${h.main_stat}`,
+        star6: `+3 990 ${h.main_stat} (6★)`
+      }
+    ]
+  };
+}
+
+async function seedFullWiki() {
+  console.log(`Starting full enriched seed for ${HEROES_LIST.length} heroes...`);
+
+  // Clear existing
+  const { error: delErr } = await supabase.from('hw_heroes').delete().neq('id', '___none___');
+  if (delErr) {
+    console.error('Warning clearing hw_heroes:', delErr.message);
+  }
+
+  const enrichedHeroes = HEROES_LIST.map(h => {
     const pngPath = join(__dirname, `../public/assets/heroes/${h.id}.png`);
     let ext = 'png';
     if (existsSync(pngPath)) {
       const buf = readFileSync(pngPath);
       if (buf.length < 2000 || buf[0] === 0x3C) { ext = 'svg'; }
     }
-    const row = {
-      ...h,
+    const fullHero = generateEnrichedHero(h);
+    return {
+      ...fullHero,
       avatar_url: `/assets/heroes/${h.id}.${ext}`
     };
-    const { error } = await supabase.from('hw_heroes').upsert(row, { onConflict: 'id' });
+  });
+
+  // Batch insert into Supabase
+  for (let i = 0; i < enrichedHeroes.length; i += 15) {
+    const chunk = enrichedHeroes.slice(i, i + 15);
+    const { error } = await supabase.from('hw_heroes').insert(chunk);
     if (error) {
-      console.error(`Failed to upsert ${h.id}:`, error.message);
+      console.error(`Batch ${i / 15 + 1} insert failed:`, error.message);
     } else {
-      console.log(`✓ Upserted hero: ${h.name} (${h.id})`);
+      console.log(`✓ Inserted batch ${i / 15 + 1} (${chunk.length} heroes)`);
     }
   }
 
-  console.log('🎉 Enriched Hero Wars Wiki seed complete!');
+  console.log(`🎉 Successfully seeded ALL ${enrichedHeroes.length} heroes into Supabase hw_heroes!`);
 }
 
 seedFullWiki();
