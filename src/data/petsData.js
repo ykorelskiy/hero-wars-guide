@@ -80,7 +80,7 @@ export const PETS_DATA = [
         formula: 'Прирост = +45 * [[Уровень]] к [[Магическая атака]] (до +5 850)'
       }
     },
-    patronage_heroes: ['cornelius', 'mojo', 'lian', 'orion', 'sebastian', 'iris', 'folio']
+    patronage_heroes: ['cornelius', 'mojo', 'lian', 'orion', 'sebastian', 'iris', 'folio', 'cascade']
   },
   {
     id: 'mara',
@@ -106,7 +106,7 @@ export const PETS_DATA = [
         formula: 'Прирост = +40 * [[Уровень]] к [[Пробивание защиты от магии]]'
       }
     },
-    patronage_heroes: ['arachne', 'lian', 'phobos', 'satori', 'iris', 'celeste', 'lars']
+    patronage_heroes: ['arachne', 'lian', 'phobos', 'satori', 'iris', 'celeste', 'lars', 'somna']
   },
   {
     id: 'oliver',
@@ -132,7 +132,7 @@ export const PETS_DATA = [
         formula: 'Прирост = +50 * [[Уровень]] к [[Броня]] (до +6 500)'
       }
     },
-    patronage_heroes: ['astaroth', 'luther', 'rufus', 'chaba', 'ziri', 'cleaver', 'corvus', 'andvari', 'julius', 'adam']
+    patronage_heroes: ['astaroth', 'luther', 'rufus', 'chaba', 'ziri', 'cleaver', 'corvus', 'andvari', 'julius', 'adam', 'electra', 'byrna']
   },
   {
     id: 'axel',
@@ -158,7 +158,7 @@ export const PETS_DATA = [
         formula: 'Прирост = +450 * [[Уровень]] к [[Здоровье]] (до +58 500 HP)'
       }
     },
-    patronage_heroes: ['martha', 'dorian', 'thea', 'celeste', 'maya', 'alvanor', 'markus', 'aidan', 'polaris', 'adam']
+    patronage_heroes: ['martha', 'dorian', 'thea', 'celeste', 'maya', 'alvanor', 'markus', 'aidan', 'polaris', 'adam', 'electra', 'cascade', 'fluffy', 'somna', 'byrna']
   },
   {
     id: 'merlin',
@@ -184,7 +184,7 @@ export const PETS_DATA = [
         formula: 'Прирост = +42 * [[Уровень]] к [[Пробивание защиты от магии]]'
       }
     },
-    patronage_heroes: ['orion', 'lars', 'krista', 'satori', 'helios', 'cornelius', 'iris', 'xesha', 'augustus']
+    patronage_heroes: ['orion', 'lars', 'krista', 'satori', 'helios', 'cornelius', 'iris', 'xesha', 'augustus', 'electra', 'cascade', 'fluffy', 'somna']
   },
   {
     id: 'vex',
@@ -236,7 +236,7 @@ export const PETS_DATA = [
         formula: 'Прирост = +45 * [[Уровень]] к [[Броня]]'
       }
     },
-    patronage_heroes: ['nebula', 'isaac', 'sebastian', 'jet', 'fafnir', 'octavia']
+    patronage_heroes: ['nebula', 'isaac', 'sebastian', 'jet', 'fafnir', 'octavia', 'electra', 'fluffy']
   },
   {
     id: 'khorus',
