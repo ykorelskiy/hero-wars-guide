@@ -1,9 +1,11 @@
 import { getHeroes } from '../data/dataService.js';
 import { openWikiModal } from '../components/wikiModal.js';
 import { navigateTo } from '../components/navigation.js';
+import { getHeroTier, TIER_RANKS } from '../data/tierData.js';
 
 let filters = {
   search: '',
+  tier: 'all',
   stat: 'all',
   role: 'all',
   position: 'all',
@@ -20,6 +22,7 @@ export function initWikiView() {
   }
 
   // Filter bar buttons binding
+  setupFilterGroup('wikiTierFilter', 'tier');
   setupFilterGroup('wikiStatFilter', 'stat');
   setupFilterGroup('wikiRoleFilter', 'role');
   setupFilterGroup('wikiPosFilter', 'position');
@@ -28,7 +31,7 @@ export function initWikiView() {
   const resetBtn = document.getElementById('wikiResetFilters');
   if (resetBtn) {
     resetBtn.addEventListener('click', () => {
-      filters = { search: '', stat: 'all', role: 'all', position: 'all', faction: 'all' };
+      filters = { search: '', tier: 'all', stat: 'all', role: 'all', position: 'all', faction: 'all' };
       if (searchInput) searchInput.value = '';
       document.querySelectorAll('.wiki-filter-bar .fb').forEach(b => {
         b.classList.toggle('on', b.dataset.val === 'all');
@@ -62,6 +65,9 @@ export function renderWikiGrid() {
   const heroes = getHeroes();
 
   const filtered = heroes.filter(h => {
+    const tier = getHeroTier(h.id);
+    // 0. Tier Rank
+    if (filters.tier !== 'all' && tier !== filters.tier) return false;
     // 1. Search name
     if (filters.search && !h.name.toLowerCase().includes(filters.search)) return false;
     // 2. Main stat
@@ -79,8 +85,16 @@ export function renderWikiGrid() {
     return true;
   });
 
+  // Sort by Tier order: S++ -> S+ -> S -> A -> B
+  const tierOrder = { 'S++': 0, 'S+': 1, 'S': 2, 'A': 3, 'B': 4 };
+  filtered.sort((a, b) => {
+    const tA = tierOrder[getHeroTier(a.id)] ?? 5;
+    const tB = tierOrder[getHeroTier(b.id)] ?? 5;
+    return tA - tB;
+  });
+
   if (countBadge) {
-    countBadge.textContent = `Показано: ${filtered.length} из ${heroes.length} героев`;
+    countBadge.textContent = `Показано: ${filtered.length} из ${heroes.length} героев (Тир-Лист 2026 alexandregames.com)`;
   }
 
   if (filtered.length === 0) {
@@ -89,6 +103,9 @@ export function renderWikiGrid() {
   }
 
   filtered.forEach(hero => {
+    const tier = getHeroTier(hero.id);
+    const tierInfo = TIER_RANKS[tier] || TIER_RANKS['A'];
+    
     const statColor = hero.main_stat === 'Сила' ? 'var(--s)' : 
                       hero.main_stat === 'Ловкость' ? 'var(--green)' : 
                       'var(--cyan)';
@@ -111,7 +128,10 @@ export function renderWikiGrid() {
             <div class="ctag">${hero.position || 'Передняя линия'}</div>
           </div>
         </div>
-        <div class="tier" style="font-size:0.75rem;padding:3px 8px;background:${statColor};">${hero.main_stat || 'Стат'}</div>
+        <div style="display:flex;flex-direction:column;align-items:flex-end;gap:4px;">
+          <div class="tier" style="font-size:0.75rem;padding:3px 10px;background:${tierInfo.color};color:#ffffff;font-weight:900;border-radius:6px;box-shadow:0 2px 8px ${tierInfo.color}66;">${tier} TIER</div>
+          <div style="font-size:0.7rem;color:var(--muted);">${hero.main_stat || 'Стат'}</div>
+        </div>
       </div>
 
       <div class="hs" style="margin:8px 0;">
@@ -120,10 +140,10 @@ export function renderWikiGrid() {
       </div>
 
       <div class="hook" style="font-size:0.83rem;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;line-height:1.5;">
-        ${hero.description || 'Описание героя доступно в Вики.'}
+        ${hero.description || 'Подробная гайд-информация по герою доступна в Вики.'}
       </div>
 
-      <div class="card-more" style="margin-top:10px;">Открыть полную Вики ⭐ →</div>
+      <div class="card-more" style="margin-top:10px;">Открыть гайд и параметры ⭐ →</div>
     `;
     
     card.addEventListener('click', () => navigateTo('hero-detail', hero.id));

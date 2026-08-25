@@ -42,13 +42,15 @@
       <!-- Search -->
       <input type="text" id="wikiSearch" placeholder="🔍 Поиск по имени героя (например: Октавия, Корвус, Каскад, Карх)..." style="width:100%;padding:11px 16px;background:rgba(255,255,255,0.05);border:1px solid var(--line);border-radius:12px;color:var(--txt);font-family:inherit;">
 
-      <!-- Main Stat Filter -->
-      <div class="wiki-filter-row" id="wikiStatFilter">
-        <span class="clab">💎 Атрибут:</span>
+      <!-- Tier List Filter -->
+      <div class="wiki-filter-row" id="wikiTierFilter" style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:10px;">
+        <span class="clab">🏆 Тир-Лист 2026:</span>
         <button class="fb on" data-val="all">Все</button>
-        <button class="fb" data-val="Сила">🔴 Сила</button>
-        <button class="fb" data-val="Ловкость">🟢 Ловкость</button>
-        <button class="fb" data-val="Интеллект">🔵 Интеллект</button>
+        <button class="fb" data-val="S++" style="border-color:rgba(248, 113, 113, 0.4);color:#f87171;">🔥 S++ (Мета)</button>
+        <button class="fb" data-val="S+" style="border-color:rgba(251, 146, 60, 0.4);color:#fb923c;">⚡ S+ (Топ)</button>
+        <button class="fb" data-val="S" style="border-color:rgba(250, 204, 21, 0.4);color:#facc15;">⭐ S (Сильные)</button>
+        <button class="fb" data-val="A" style="border-color:rgba(96, 165, 250, 0.4);color:#60a5fa;">🛡️ A (Классика)</button>
+        <button class="fb" data-val="B" style="border-color:rgba(156, 163, 175, 0.4);color:#9ca3af;">⚔️ B (Ситуативные)</button>
       </div>
     </div>
 

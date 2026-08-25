@@ -1,6 +1,7 @@
 import { heroById } from '../data/dataService.js';
 import { getPatronPetsForHero } from '../data/petsData.js';
 import { navigateTo } from '../components/navigation.js';
+import { getHeroTier, TIER_RANKS } from '../data/tierData.js';
 
 export function renderHeroDetail(heroId) {
   const wrap = document.getElementById('heroDetailWrap');
@@ -24,6 +25,9 @@ export function renderHeroDetail(heroId) {
 
   const iconFallback = hero.main_stat === 'Сила' ? '🛡️' : hero.main_stat === 'Ловкость' ? '🏹' : '🔮';
   const avatarSrc = hero.avatar_url || `/assets/heroes/${hero.id}.png`;
+
+  const tier = getHeroTier(hero.id);
+  const tierInfo = TIER_RANKS[tier] || TIER_RANKS['A'];
 
   // Compatible Pets for Patronage
   const patronPets = getPatronPetsForHero(hero.id);
@@ -99,7 +103,8 @@ export function renderHeroDetail(heroId) {
         <div>
           <h2 style="font-size:2rem; font-weight:900; color:#ffffff; margin-bottom:4px;">${hero.name}</h2>
           <div style="color:#94a3b8; font-size:1rem; margin-bottom:8px;">${hero.role} · ${hero.main_stat} · ${hero.position || 'Передняя линия'}</div>
-          <div style="display:flex; gap:8px; flex-wrap:wrap;">
+          <div style="display:flex; gap:8px; flex-wrap:wrap; align-items:center;">
+            <span style="background:${tierInfo.color}; color:#ffffff; font-weight:900; padding:4px 12px; border-radius:8px; font-size:0.9rem; box-shadow:0 2px 10px ${tierInfo.color}66;">🏆 ${tier} TIER (alexandregames 2026)</span>
             <span style="background:${statColor}; color:#0f172a; font-weight:800; padding:4px 12px; border-radius:8px; font-size:0.85rem;">${hero.faction || 'Путь вечности'}</span>
             <span style="background:rgba(255,255,255,0.1); color:#ffffff; font-weight:700; padding:4px 12px; border-radius:8px; font-size:0.85rem;">Dominion Era</span>
           </div>
