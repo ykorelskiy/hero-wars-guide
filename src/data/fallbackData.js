@@ -6,6 +6,7 @@ export const HEROES = [
   // --- Критоворот / уворот ---
   {id:'dante',name:'Данте',role:'Керри/уворот',archetypes:['dodge']},
   {id:'aurora',name:'Аврора',role:'Танк',archetypes:['dodge']},
+  {id:'adam',name:'Адам',role:'Керри, Средняя линия',archetypes:['dodge']},
   {id:'sebastian',name:'Себастьян',role:'Множитель крита',archetypes:['dodge','undead-atk']},
   {id:'dorian',name:'Дориан',role:'Вампиризм',archetypes:['dodge','orion']},
   {id:'ishmael',name:'Ишмаэль',role:'Крит-керри',archetypes:['dodge']},

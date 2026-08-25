@@ -113,6 +113,16 @@ export function renderHeroDetail(heroId) {
       </div>
     </div>
 
+    <!-- HERO DESCRIPTION SECTION -->
+    <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(255, 255, 255, 0.14); border-radius: 16px; padding: 22px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
+      <h3 style="color:#ffffff; font-size:1.3rem; margin-bottom:12px; display:flex; align-items:center; gap:8px;">
+        📜 Описание и Механика Персонажа
+      </h3>
+      <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); padding:16px 20px; border-radius:12px; color:#e2e8f0; font-size:1.02rem; line-height:1.75;">
+        ${hero.description || 'Подробное описание роли, истории и игровых синергий персонажа в игре Hero Wars: Dominion Era.'}
+      </div>
+    </div>
+
     <!-- PATRONAGE SECTION -->
     <div style="background: rgba(15, 23, 42, 0.75); border:1px solid rgba(245, 158, 11, 0.3); border-radius:16px; padding:20px; margin-bottom:24px;">
       <h3 style="color:#f59e0b; font-size:1.2rem; margin-bottom:12px; display:flex; align-items:center; gap:8px;">
