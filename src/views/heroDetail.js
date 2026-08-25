@@ -116,7 +116,7 @@ export function renderHeroDetail(heroId) {
     <div style="background: radial-gradient(circle at center, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.98) 100%); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 20px; padding: 24px; margin-bottom: 24px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
       <div style="display:flex; gap:20px; align-items:center; flex-wrap:wrap;">
         <div style="width:84px; height:84px; border-radius:20px; border:4px solid ${statColor}; overflow:hidden; position:relative; flex-shrink:0;">
-          <img src="${avatarSrc}" alt="${hero.name}" style="width:100%; height:100%; object-fit:cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <img src="/assets/heroes/${hero.id}.png" alt="${hero.name}" style="width:100%; height:100%; object-fit:cover;" onerror="this.src='/images/heroes/${hero.id}.png';" />
           <div style="display:none; background:rgba(255,255,255,0.08); width:100%; height:100%; align-items:center; justify-content:center; font-size:2.5rem;">${iconFallback}</div>
         </div>
 
