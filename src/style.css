@@ -212,3 +212,13 @@ td.neutral{color:var(--muted)}
   animation:spin 0.8s linear infinite;
 }
 @keyframes spin{to{transform:rotate(360deg)}}
+
+/* WIKI FILTER BAR */
+.wiki-filter-bar{
+  background:var(--panel);border:1px solid var(--line);border-radius:18px;
+  padding:20px;margin-bottom:22px;backdrop-filter:blur(10px);display:flex;flex-direction:column;gap:14px;
+}
+.wiki-filter-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.wiki-filter-row .clab{min-width:130px}
+.wiki-match-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
+
