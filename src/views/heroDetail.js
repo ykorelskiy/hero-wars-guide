@@ -151,10 +151,18 @@ export function renderHeroDetail(heroId) {
     <!-- STRATEGIC GUIDE SECTION -->
     <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(16, 185, 129, 0.25); border-radius: 16px; padding: 22px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
       <h3 style="color:#34d399; font-size:1.3rem; margin-bottom:14px; display:flex; align-items:center; gap:8px;">
-        💡 Стратегический Гайд (Синергии, Контр-пики и Питомцы)
+        💡 Стратегический Гайд (Синергии, Контр-пики, Флаги и Питомцы)
       </h3>
       <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:14px;">
         
+        ${heroGuide.conversion_stat ? `
+        <div style="background:rgba(239, 68, 68, 0.1); border:1px solid rgba(239, 68, 68, 0.3); padding:16px; border-radius:12px; grid-column: 1 / -1;">
+          <b style="color:#f87171; font-size:1rem; display:block; margin-bottom:6px;">⚡ Пассивная Конверсия Характеристик и Преображение:</b>
+          <p style="color:#fecdd3; font-size:0.95rem; line-height:1.6; margin:0; font-weight:600;">
+            ${heroGuide.conversion_stat}
+          </p>
+        </div>` : ''}
+
         <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); padding:16px; border-radius:12px;">
           <b style="color:#facc15; font-size:1rem; display:block; margin-bottom:8px;">🎯 Лучшие Синергии и Напарники:</b>
           <p style="color:#cbd5e1; font-size:0.92rem; line-height:1.6; margin:0;">
@@ -175,6 +183,14 @@ export function renderHeroDetail(heroId) {
             ${heroGuide.pets || 'Подходят профильные питомцы на защиту, пробивание или набор энергии.'}
           </p>
         </div>
+
+        ${heroGuide.war_flags ? `
+        <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); padding:16px; border-radius:12px;">
+          <b style="color:#a78bfa; font-size:1rem; display:block; margin-bottom:8px;">🚩 Рекомендуемые Флаги Войны (War Flags):</b>
+          <p style="color:#cbd5e1; font-size:0.92rem; line-height:1.6; margin:0;">
+            ${heroGuide.war_flags}
+          </p>
+        </div>` : ''}
 
       </div>
     </div>
