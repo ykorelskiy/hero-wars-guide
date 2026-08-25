@@ -1,5 +1,6 @@
 import { getHeroes } from '../data/dataService.js';
 import { openWikiModal } from '../components/wikiModal.js';
+import { navigateTo } from '../components/navigation.js';
 
 let filters = {
   search: '',
@@ -93,7 +94,7 @@ export function renderWikiGrid() {
                       'var(--cyan)';
 
     const iconFallback = hero.main_stat === 'Сила' ? '🛡️' : hero.main_stat === 'Ловкость' ? '🏹' : '🔮';
-    const avatarSrc = hero.avatar_url || `https://hero-wars.fandom.com/wiki/Special:Redirect/file/${encodeURIComponent(hero.name)}_Icon.png`;
+    const avatarSrc = `/images/heroes/${hero.id}.png`;
 
     const card = document.createElement('div');
     card.className = 'card wiki-hero-card';

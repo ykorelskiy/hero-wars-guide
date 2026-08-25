@@ -24,7 +24,7 @@ export function renderPetDetail(petId) {
   const heroesGridHtml = (compatibleHeroes.length > 0)
     ? compatibleHeroes.map(h => `
         <div class="pet-hero-badge" data-hero="${h.id}" style="display:flex; align-items:center; gap:12px; background:rgba(30, 41, 59, 0.8); border:1px solid rgba(255, 255, 255, 0.12); border-radius:12px; padding:10px 14px; cursor:pointer; transition:all 0.2s ease;">
-          <img src="${h.avatar_url || `/assets/heroes/${h.id}.png`}" alt="${h.name}" style="width:40px; height:40px; border-radius:10px; object-fit:cover; border:2px solid #06b6d4;" onerror="this.src='/images/heroes/cain.png'" />
+          <img src="/images/heroes/${h.id}.png" alt="${h.name}" style="width:40px; height:40px; border-radius:10px; object-fit:cover; border:2px solid #06b6d4;" onerror="this.src='/images/heroes/cain.png'" />
           <div>
             <div style="font-weight:800; color:#ffffff; font-size:0.95rem;">${h.name}</div>
             <div style="color:#94a3b8; font-size:0.8rem;">${h.role} · ${h.main_stat}</div>

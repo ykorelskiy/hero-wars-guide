@@ -35,7 +35,7 @@ function renderHeroGrid(filter = '') {
   
   getHeroes().forEach(h => {
     if (f && !h.name.toLowerCase().includes(f)) return;
-    const avatarSrc = h.avatar_url || `https://hero-wars.fandom.com/wiki/Special:Redirect/file/${encodeURIComponent(h.name)}_Icon.png`;
+    const avatarSrc = `/images/heroes/${h.id}.png`;
     const chip = document.createElement('div');
     chip.className = 'hero-chip' + (selected.has(h.id) ? ' picked' : '');
     chip.innerHTML = `
@@ -75,7 +75,7 @@ function renderSelList() {
   selected.forEach(id => {
     const h = heroById(id);
     if (!h) return;
-    const avatarSrc = h.avatar_url || `https://hero-wars.fandom.com/wiki/Special:Redirect/file/${encodeURIComponent(h.name)}_Icon.png`;
+    const avatarSrc = `/images/heroes/${h.id}.png`;
     const chip = document.createElement('div');
     chip.className = 'sel-chip';
     chip.innerHTML = `
