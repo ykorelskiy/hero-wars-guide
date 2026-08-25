@@ -51,7 +51,6 @@ const HEROES_74 = [
   { id: 'jhu', name: 'Джу', faction: 'Путь природы', trait: 'Обычный', role: 'Стрелок, Задняя линия', main_stat: 'Сила', stat_gain: '+2.7 za уровень, +21 za звезду' },
   { id: 'ishmael', name: 'Ишмаэль', faction: 'Без фракции', trait: 'Обычный', role: 'Боец, Передняя линия', main_stat: 'Ловкость', stat_gain: '+2.8 za уровень, +22 za звезду' },
   { id: 'arachne', name: 'Арахна', faction: 'Без фракции', trait: 'Обычный', role: 'Контроль, Средняя линия', main_stat: 'Ловкость', stat_gain: '+2.4 za уровень, +18 za звезду' },
-  { id: 'adam', name: 'Адам', faction: 'Без фракции', trait: 'Обычный', role: 'Керри, Средняя линия', main_stat: 'Ловкость', stat_gain: '+2.5 za уровень, +19 za звезду' },
   { id: 'kayla', name: 'Кайла', faction: 'Путь хаоса', trait: 'Обычный', role: 'Воин, Передняя линия', main_stat: 'Сила', stat_gain: '+2.9 za уровень, +22 za звезду' },
   { id: 'oya', name: 'Ойя', faction: 'Путь природы', trait: 'Обычный', role: 'Боец, Передняя линия', main_stat: 'Сила', stat_gain: '+2.8 za уровень, +21 za звезду' },
   { id: 'darkstar', name: 'Тёмная Звезда', faction: 'Путь природы', trait: 'Обычный', role: 'Стрелок, Задняя линия', main_stat: 'Ловкость', stat_gain: '+2.5 za уровень, +19 za звезду' },
@@ -106,8 +105,7 @@ const HEROES_74 = [
   { id: 'thea', name: 'Тея', faction: 'Путь природы', trait: 'Обычный', role: 'Лекарь, Задняя линия', main_stat: 'Интеллект', stat_gain: '+2.5 za уровень, +19 za звезду' },
   { id: 'fluffy', name: 'Флаффи', faction: 'Без фракции', trait: 'Обычный', role: 'Поддержка, Задняя линия', main_stat: 'Интеллект', stat_gain: '+2.4 za уровень, +18 za звезду' },
   { id: 'markus', name: 'Маркус', faction: 'Путь чести', trait: '[[Благословленные]]', role: 'Лекарь, Передняя линия', main_stat: 'Интеллект', stat_gain: '+2.7 za уровень, +21 za звезду' },
-  { id: 'rigel', name: 'Ригель', faction: 'Путь заката', trait: 'Обычный', role: 'Поддержка, Задняя линия', main_stat: 'Интеллект', stat_gain: '+2.6 za уровень, +20 za звезду' },
-  { id: 'hero74', name: 'Герой №74', faction: 'Без фракции', trait: 'Обычный', role: 'Поддержка, Задняя линия', main_stat: 'Интеллект', stat_gain: '+2.5 za уровень, +19 za звезду' }
+  { id: 'rigel', name: 'Ригель', faction: 'Путь заката', trait: 'Обычный', role: 'Поддержка, Задняя линия', main_stat: 'Интеллект', stat_gain: '+2.6 za уровень, +20 za звезду' }
 ];
 
 function generateSkillAndArtifactData(h) {
