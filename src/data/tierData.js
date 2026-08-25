@@ -1,5 +1,5 @@
 /* ======================================================================
-   HERO WARS — TIER LIST DATABASE
+   HERO WARS — TIER LIST DATABASE (100% Dominion Era Sync)
    ====================================================================== */
 
 export const TIER_RANKS = {
@@ -24,11 +24,18 @@ export const TIER_RANKS = {
     border: '#facc15',
     desc: 'Отличные узкоспециализированные герои и надёжные керри/танки/саппорты.'
   },
-  'A': {
-    name: 'A Tier (Хорошая Классика)',
+  'A+': {
+    name: 'A+ Tier (Надёжный Выбор)',
     color: '#3b82f6',
     bg: 'rgba(59, 130, 246, 0.15)',
     border: '#60a5fa',
+    desc: 'Сильные ситуативные персонажи для специализированных пачек.'
+  },
+  'A': {
+    name: 'A Tier (Хорошая Классика)',
+    color: '#06b6d4',
+    bg: 'rgba(6, 182, 212, 0.15)',
+    border: '#22d3ee',
     desc: 'Сбалансированные герои для базовых пачек и средних этапов игры.'
   },
   'B': {
@@ -41,85 +48,82 @@ export const TIER_RANKS = {
 };
 
 export const HERO_TIERS = {
-  // S++ Tier
   electra: 'S++',
-  cascade: 'S++',
-  fluffy: 'S++',
   byrna: 'S++',
-
-  // S+ Tier
+  fluffy: 'S++',
+  cascade: 'S++',
   aidan: 'S+',
   adam: 'S+',
   amira: 'S+',
   augustus: 'S+',
   aurora: 'S+',
   dante: 'S+',
+  guus: 'S+',
   heidi: 'S+',
   isaac: 'S+',
   iris: 'S+',
-  somna: 'S+',
   ishmael: 'S+',
   julius: 'S+',
   krista: 'S+',
   laracroft: 'S+',
   lyria: 'S+',
   nebula: 'S+',
-  octavia: 'S+',
   orion: 'S+',
-  oya: 'S+',
-  polaris: 'S+',
+  qingmao: 'S+',
   rufus: 'S+',
   sebastian: 'S+',
   somna: 'S+',
   thea: 'S+',
-
-  // S Tier
-  astaroth: 'S',
+  yasmine: 'S+',
   arachne: 'S',
+  astaroth: 'S',
   celeste: 'S',
   corvus: 'S',
+  dorian: 'S',
   folio: 'S',
   galahad: 'S',
+  helios: 'S',
+  jorgen: 'S',
   kayla: 'S',
   keira: 'S',
+  martha: 'S',
+  mojo: 'S',
+  morrigan: 'S',
   mushy: 'S',
-
-  // A Tier
-  andvari: 'A',
+  polaris: 'S',
+  ninjaturtles: 'S',
+  andvari: 'A+',
+  cleaver: 'A+',
+  faceless: 'A+',
+  fafnir: 'A+',
+  jhu: 'A+',
+  judge: 'A+',
+  lars: 'A+',
+  lian: 'A+',
+  phobos: 'A+',
+  satori: 'A+',
+  alvanor: 'A',
   artemis: 'A',
   astrid: 'A',
-  chaba: 'A',
   cornelius: 'A',
-  dorian: 'A',
-  faceless: 'A',
-  fafnir: 'A',
-  fox: 'A',
+  daredevil: 'A',
   ginger: 'A',
-  helios: 'A',
-  jhu: 'A',
-  jorgen: 'A',
-  judge: 'A',
-  kai: 'A',
-  lars: 'A',
-  lian: 'A',
-  luther: 'A',
-  markus: 'A',
-  martha: 'A',
-  maya: 'A',
-  mojo: 'A',
-  morrigan: 'A',
-  peppy: 'A',
-  phobos: 'A',
-  satori: 'A',
-  tristan: 'A',
-  lilith: 'A',
-  xesha: 'A',
   jet: 'A',
-
-  // B Tier
-  ziri: 'B'
+  karkh: 'A',
+  maya: 'A',
+  tristan: 'A',
+  chaba: 'B',
+  darkstar: 'B',
+  elmir: 'B',
+  fox: 'B',
+  kai: 'B',
+  lilith: 'B',
+  luther: 'B',
+  markus: 'B',
+  peppy: 'B',
+  ziri: 'B',
 };
 
 export function getHeroTier(heroId) {
-  return HERO_TIERS[heroId] || 'A';
+  return HERO_TIERS[heroId] || 'B';
 }
