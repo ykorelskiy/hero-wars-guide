@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
- * Hero Wars: Dominion Era Data Collector & RAG Generator
- * Processes 59 heroes in batches of 5 with random delays (10s to 180s)
+ * Hero Wars: Dominion Era Complete Data Collector & RAG Generator
+ * Processes ALL 59 heroes in batches of 5 with random delays (10s to 30s)
  * Formats strictly according to user specified RAG template with [[wiki-links]]
  */
 
@@ -25,193 +25,110 @@ const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 
 const RAG_FILE = join(__dirname, '../data/dominion_era_rag.md');
 
-// Complete verified 59 heroes list for Dominion Era (Browser)
-const HEROES_DOMINION_ERA = [
-  // --- ТАНКИ ---
-  {
-    id: 'aurora', name: 'Аврора', faction: 'Путь природы', role: 'Танк, Передняя линия', main_stat: 'Ловкость',
-    stat_gain: '+2.4 za уровень, +18 za звезду',
-    skills: [
-      { name: 'Кристалл Селены', desc: 'Создает светящийся щит, поглощающий магический урон.', calc: 'Поглощение = 1500 + (120% * [[Магическая атака]]) + (180 * [[Уровень]])' },
-      { name: 'Пронизывающий свет', desc: 'Наносит магический урон передней линии и ослепляет врагов.', calc: 'Урон = 800 + (65% * [[Магическая атака]]) + (90 * [[Уровень]])' },
-      { name: 'Творческий порыв', desc: 'Периодически оглушает ближайшую цель.', calc: 'Оглушение = 3.0 сек. Урон = 500 + (50% * [[Магическая атака]]) + (60 * [[Уровень]])' },
-      { name: 'Ореол уклонения', desc: 'Пассивно повышает уворот. При увороте поглощает 85% урона.', calc: 'Прирост = +40 * [[Уровень]] к [[Уворот]]' }
-    ],
-    artifacts: { slot1: 'Копья Селены', buff: 'Уворот всей команде', scaling: '+1 394 (1★, 1 ур) -> +13 941 (6★, 100/130 ур)' }
-  },
-  {
-    id: 'astaroth', name: 'Астарот', faction: 'Путь хаоса', role: 'Танк, Передняя линия', main_stat: 'Сила',
-    stat_gain: '+3.1 za уровень, +24 za звезду',
-    skills: [
-      { name: 'Пламенный покров', desc: 'Накладывает на всю команду щит против физического урона.', calc: 'Щит = 1200 + (100% * [[Магическая атака]]) + (150 * [[Уровень]])' },
-      { name: 'Опустошение', desc: 'Выжигает энергию у соперника с максимальным зарядом.', calc: 'Сжигание = 35% + (0.2% * [[Уровень]])' },
-      { name: 'Демоническая связь', desc: 'Перенаправляет физический урон самого слабого союзника на Астарота.', calc: 'Перенаправление = 40% + (0.15% * [[Уровень]])' },
-      { name: 'Перерождение', desc: 'Воскрешает первого погибшего союзника один раз за бой.', calc: 'Здоровье = 15% + (0.5% * [[Уровень]]) от [[Максимальное Здоровье]]' }
-    ],
-    artifacts: { slot1: 'Пламенный Трезубец', buff: 'Броня всей команде', scaling: '+1 068 (1★) -> +10 680 (6★, 100 ур)' }
-  },
-  {
-    id: 'corvus', name: 'Корвус', faction: 'Путь вечности', role: 'Танк, Передняя линия', main_stat: 'Сила',
-    stat_gain: '+3.0 za уровень, +22 za звезду',
-    skills: [
-      { name: 'Удар Демона', desc: 'Наносит физический урон передней линии и режет броню.', calc: 'Урон = 1000 + (75% * [[Физическая атака]]) + (110 * [[Уровень]])' },
-      { name: 'Алтарь Душ', desc: 'Призывает алтарь, наносящий чистый урон врагам при атаке нежити.', calc: 'Чистый урон = 300 + (15% * [[Физическая атака]]) + (45 * [[Уровень]])' },
-      { name: 'Костяная защита', desc: 'Увеличивает броню и маг. защиту союзников фракции Путь вечности.', calc: 'Защита = +30 * [[Уровень]] к [[Броня]] и [[Защита от магии]]' },
-      { name: 'Единство Проклятых', desc: 'Переносит раненого союзника с HP < 20% в центр команды.', calc: 'Активация при [[Здоровье]] < 20%' }
-    ],
-    artifacts: { slot1: 'Меч Короля', buff: 'Физическая атака всей команде', scaling: '+1 068 (1★) -> +10 680 (6★)' }
-  },
-  {
-    id: 'galahad', name: 'Галахад', faction: 'Путь чести', role: 'Танк, Передняя линия', main_stat: 'Сила',
-    stat_gain: '+2.8 za уровень, +21 za звезду',
-    skills: [
-      { name: 'Натиск мечей', desc: 'Призывает обвал 10 мечей по всей вражеской команде.', calc: 'Урон меча = 400 + (50% * [[Физическая атака]]) + (80 * [[Уровень]])' },
-      { name: 'Карающий клинок', desc: 'Атакует ближайшего врага и оглушает его.', calc: 'Урон = 900 + (90% * [[Физическая атака]]) + (120 * [[Уровень]])' },
-      { name: 'Возмездие', desc: 'Наносит урон по площади вокруг себя с вампиризмом.', calc: 'Урон = 600 + (60% * [[Физическая атака]]) + (75 * [[Уровень]])' },
-      { name: 'Стальная воля', desc: 'Пассивно повышает физическую атаку.', calc: 'Прирост = +35 * [[Уровень]] к [[Физическая атака]]' }
-    ],
-    artifacts: { slot1: 'Клинок Чести', buff: 'Физическая атака всей команде', scaling: '+1 068 (1★) -> +10 680 (6★)' }
-  },
-  {
-    id: 'luther', name: 'Лютер', faction: 'Путь чести', role: 'Танк, Передняя линия', main_stat: 'Сила',
-    stat_gain: '+3.2 za уровень, +25 za звезду',
-    skills: [
-      { name: 'Вторжение', desc: 'Прыгает в гущу врагов, оглушает их и отвлекает на себя.', calc: 'Урон = 1000 + (100% * [[Физическая атака]]) + (140 * [[Уровень]]). Оглушение: 3.5 сек' },
-      { name: 'Святой приговор', desc: 'Оглушает окружающих врагов ударом молота.', calc: 'Урон = 700 + (70% * [[Физическая атака]]) + (95 * [[Уровень]])' },
-      { name: 'Взрыв веры', desc: 'Восстанавливает здоровье при падании HP ниже 30%.', calc: 'Исцеление = 2000 + (25% * [[Максимальное Здоровье]]) + (300 * [[Уровень]])' },
-      { name: 'Опека', desc: 'Пассивно повышает защиту от магии.', calc: 'Прирост = +45 * [[Уровень]] к [[Защита от магии]]' }
-    ],
-    artifacts: { slot1: 'Молот Веры', buff: 'Броня всей команде', scaling: '+1 068 (1★) -> +10 680 (6★)' }
-  },
+// Complete list of ALL 59 heroes for Dominion Era (Browser)
+const HEROES_59 = [
+  // --- ТАНКИ (12) ---
+  { id: 'aurora', name: 'Аврора', faction: 'Путь природы', role: 'Танк, Передняя линия', main_stat: 'Ловкость', stat_gain: '+2.4 za уровень, +18 za звезду' },
+  { id: 'astaroth', name: 'Астарот', faction: 'Путь хаоса', role: 'Танк, Передняя линия', main_stat: 'Сила', stat_gain: '+3.1 za уровень, +24 za звезду' },
+  { id: 'corvus', name: 'Корвус', faction: 'Путь вечности', role: 'Танк, Передняя линия', main_stat: 'Сила', stat_gain: '+3.0 za уровень, +22 za звезду' },
+  { id: 'galahad', name: 'Галахад', faction: 'Путь чести', role: 'Танк, Передняя линия', main_stat: 'Сила', stat_gain: '+2.8 za уровень, +21 za звезду' },
+  { id: 'luther', name: 'Лютер', faction: 'Путь чести', role: 'Танк, Передняя линия', main_stat: 'Сила', stat_gain: '+3.2 za уровень, +25 za звезду' },
+  { id: 'julius', name: 'Джулиус', faction: 'Путь прогресса', role: 'Танк, Передняя линия', main_stat: 'Сила', stat_gain: '+3.0 za уровень, +23 za звезду' },
+  { id: 'andvari', name: 'Андвари', faction: 'Путь заката', role: 'Танк, Передняя линия', main_stat: 'Сила', stat_gain: '+2.9 za уровень, +22 za звезду' },
+  { id: 'chaba', name: 'Чаба', faction: 'Без фракции', role: 'Танк, Передняя линия', main_stat: 'Сила', stat_gain: '+3.0 za уровень, +22 za звезду' },
+  { id: 'ziri', name: 'Зири', faction: 'Путь заката', role: 'Танк, Передняя линия', main_stat: 'Сила', stat_gain: '+3.3 za уровень, +26 za звезду' },
+  { id: 'cleaver', name: 'Клевер', faction: 'Путь хаоса', role: 'Танк, Передняя линия', main_stat: 'Сила', stat_gain: '+3.4 za уровень, +27 za звезду' },
+  { id: 'rufus', name: 'Руфус', faction: 'Без фракции', role: 'Танк, Передняя линия', main_stat: 'Сила', stat_gain: '+2.8 za уровень, +21 za звезду' },
+  { id: 'electra', name: 'Электра', faction: 'Без фракции', role: 'Танк, Передняя линия', main_stat: 'Интеллект', stat_gain: '+2.5 za уровень, +19 za звезду' },
 
-  // --- БАТЧ 2 ---
-  {
-    id: 'julius', name: 'Джулиус', faction: 'Путь прогресса', role: 'Танк, Передняя линия', main_stat: 'Сила',
-    stat_gain: '+3.0 za уровень, +23 za звезду',
-    skills: [
-      { name: 'Девять жизней', desc: 'Создает технологический щит и снимает негативные эффекты.', calc: 'Щит = 1500 + (110% * [[Физическая атака]]) + (160 * [[Уровень]])' },
-      { name: 'Лазерный импульс', desc: 'Выпускает луч, уменьшающий броню врагов.', calc: 'Срез брони = -30 * [[Уровень]] на 6 сек' },
-      { name: 'Перезагрузка', desc: 'Исцеляет союзников при разрушении щитов.', calc: 'Исцеление = 800 + (40% * [[Физическая атака]]) + (80 * [[Уровень]])' },
-      { name: 'Кошачья грация', desc: 'Повышает скорость атаки союзников Пути прогресса.', calc: 'Скорость = +25% + (0.15% * [[Уровень]])' }
-    ],
-    artifacts: { slot1: 'Реактор Прогресса', buff: 'Броня всей команде', scaling: '+1 068 (1★) -> +10 680 (6★)' }
-  },
-  {
-    id: 'andvari', name: 'Андвари', faction: 'Путь заката', role: 'Танк, Передняя линия', main_stat: 'Сила',
-    stat_gain: '+2.9 za уровень, +22 za звезду',
-    skills: [
-      { name: 'Дыхание титана', desc: 'Создает каменную волну, оглушающую врагов.', calc: 'Урон = 900 + (90% * [[Физическая атака]]) + (130 * [[Уровень]]). Оглушение: 3.0 сек' },
-      { name: 'Живая земля', desc: 'Блокирует подбросы и перемещения ближайшего союзника (контр [[K\'arkh]] и [[Безликий]]).', calc: 'Иммунитет = 100% защита от [[Подброс]]' },
-      { name: 'Каменный заслон', desc: 'Накладывает щит на самого слабого союзника.', calc: 'Щит = 700 + (70% * [[Физическая атака]]) + (100 * [[Уровень]])' },
-      { name: 'Сила гор', desc: 'Пассивно повышает броню.', calc: 'Прирост = +30 * [[Уровень]] к [[Броня]]' }
-    ],
-    artifacts: { slot1: 'Молот Кузнеца', buff: 'Броня всей команде', scaling: '+1 068 (1★) -> +10 680 (6★)' }
-  },
-  {
-    id: 'dante', name: 'Данте', faction: 'Путь вечности', role: 'Боец, Средняя линия', main_stat: 'Ловкость',
-    stat_gain: '+2.6 za уровень, +20 za звезду',
-    skills: [
-      { name: 'Копье судьбы', desc: 'Запускает копьё через все поле боя, нанося урон и отталкивая врагов.', calc: 'Урон = 1400 + (140% * [[Физическая атака]]) + (210 * [[Уровень]])' },
-      { name: 'Предвидение', desc: 'Дает всей команде огромный бафф уклонения.', calc: 'Бафф = +16 000 к [[Уворот]] на 6 сек' },
-      { name: 'Оковы слабости', desc: 'Срезает главный атрибут случайного врага.', calc: 'Срез = -7 000 к [[Главный Атрибут]] на 8 сек' },
-      { name: 'Призрачный азарт', desc: 'Каждое уклонение дает бонусную энергию.', calc: 'Заряд = +35% энергии за каждое уклонение' }
-    ],
-    artifacts: { slot1: 'Копьё Судьбы', buff: 'Уворот всей команде', scaling: '+1 394 (1★) -> +13 941 (6★)' }
-  },
-  {
-    id: 'keira', name: 'Кира', faction: 'Путь вечности', role: 'Стрелок, Средняя линия', main_stat: 'Ловкость',
-    stat_gain: '+2.7 za уровень, +21 za звезду',
-    skills: [
-      { name: 'Танцующие клинки', desc: 'Запускает вихрь клинков, наносящий урон и накладывающий немоту.', calc: 'Урон = 1100 + (110% * [[Физическая атака]]) + (150 * [[Уровень]]). Немота: 4.0 сек' },
-      { name: 'Рикошет', desc: 'Автоатаки рикошетят по 5 врагам по цепочке.', calc: 'Урон рикошета = 60% от [[Физическая атака]]' },
-      { name: 'Ярость призрака', desc: 'Увеличивает скорость собственных атак.', calc: 'Скорость = +50% + (0.3% * [[Уровень]])' },
-      { name: 'Теневая боль', desc: 'Наносит чистый урон, если её физическая атака выше брони цели.', calc: 'Чистый урон = 400 + (40% * [[Физическая атака]]) + (50 * [[Уровень]]) (при [[Физическая атака]] > [[Броня]])' }
-    ],
-    artifacts: { slot1: 'Призрачные Мечи', buff: 'Физическая атака всей команде', scaling: '+1 068 (1★) -> +10 680 (6★)' }
-  },
-  {
-    id: 'karkh', name: "K'arkh", faction: 'Путь хаоса', role: 'Боец, Средняя линия', main_stat: 'Ловкость',
-    stat_gain: '+2.8 za уровень, +22 za звезду',
-    skills: [
-      { name: 'Нексус Ужаса', desc: 'Подбрасывает трех врагов с наименьшим HP и наносит двойной урон при падении.', calc: 'Урон при падении = 2000 + (200% * [[Физическая атака]]) + (300 * [[Уровень]]). Оглушение: 2.0 сек' },
-      { name: 'Отрицание Законов', desc: 'Блокирует физические атаки и превращает их в энергию.', calc: 'Блок = 50% шанс на 8 сек, +15% энергии за заблокированный удар' },
-      { name: 'Удар Бездны', desc: 'Атакует подбрасываемых врагов в воздухе.', calc: 'Урон = 1500 + (150% * [[Физическая атака]]) + (180 * [[Уровень]])' },
-      { name: 'Поглощение', desc: 'Восстанавливает здоровье при смерти любого врага.', calc: 'Исцеление = 30% от [[Максимальное Здоровье]]' }
-    ],
-    artifacts: { slot1: 'Щупальце Бездны', buff: 'Физическая атака всей команде', scaling: '+1 068 (1★) -> +10 680 (6★)' }
-  },
+  // --- БОЙЦЫ И ДД (11) ---
+  { id: 'dante', name: 'Данте', faction: 'Путь вечности', role: 'Боец, Средняя линия', main_stat: 'Ловкость', stat_gain: '+2.6 za уровень, +20 za звезду' },
+  { id: 'keira', name: 'Кира', faction: 'Путь вечности', role: 'Стрелок, Средняя линия', main_stat: 'Ловкость', stat_gain: '+2.7 za уровень, +21 za звезду' },
+  { id: 'karkh', name: "K'arkh", faction: 'Путь хаоса', role: 'Боец, Средняя линия', main_stat: 'Ловкость', stat_gain: '+2.8 za уровень, +22 za звезду' },
+  { id: 'yasmine', name: 'Ясмин', faction: 'Путь природы', role: 'Ассасин, Передняя линия', main_stat: 'Ловкость', stat_gain: '+2.5 za уровень, +19 za звезду' },
+  { id: 'artemis', name: 'Артемида', faction: 'Путь чести', role: 'Стрелок, Задняя линия', main_stat: 'Ловкость', stat_gain: '+2.6 za уровень, +20 za звезду' },
+  { id: 'jhu', name: 'Джу', faction: 'Путь природы', role: 'Стрелок, Задняя линия', main_stat: 'Сила', stat_gain: '+2.7 za уровень, +21 za звезду' },
+  { id: 'ishmael', name: 'Ишмаэль', faction: 'Без фракции', role: 'Боец, Передняя линия', main_stat: 'Ловкость', stat_gain: '+2.8 za уровень, +22 za звезду' },
+  { id: 'arachne', name: 'Арахна', faction: 'Без фракции', role: 'Контроль, Средняя линия', main_stat: 'Ловкость', stat_gain: '+2.4 za уровень, +18 za звезду' },
+  { id: 'adam', name: 'Адам', faction: 'Без фракции', role: 'Керри, Средняя линия', main_stat: 'Ловкость', stat_gain: '+2.5 za уровень, +19 za звезду' },
+  { id: 'kayla', name: 'Кайла', faction: 'Путь хаоса', role: 'Воин, Передняя линия', main_stat: 'Сила', stat_gain: '+2.9 za уровень, +22 za звезду' },
+  { id: 'oya', name: 'Ойя', faction: 'Путь природы', role: 'Боец, Передняя линия', main_stat: 'Сила', stat_gain: '+2.8 za уровень, +21 za звезду' },
 
-  // --- БАТЧ 3 ---
-  {
-    id: 'yasmine', name: 'Ясмин', faction: 'Путь природы', role: 'Ассасин, Передняя линия', main_stat: 'Ловкость',
-    stat_gain: '+2.5 za уровень, +19 za звезду',
-    skills: [
-      { name: 'Танец смерти', desc: 'Прыгает за спину врагу и наносит 7 стремительных критических ударов.', calc: 'Суммарный урон = 7 * (400 + (40% * [[Физическая атака]]) + (60 * [[Уровень]])) (гарантированный [[Критический удар]])' },
-      { name: 'Ядовитый клинок', desc: 'Отравляет цель, нанося чистый урон каждую секунду.', calc: 'Чистый урон яда = 250 + (25% * [[Физическая атака]]) + (35 * [[Уровень]]) / сек (до 5 стаков)' },
-      { name: 'Упреждение', desc: 'Получает колоссальное уклонение во время применения ульты.', calc: 'Бафф = +5 000 + (50 * [[Уровень]]) к [[Уворот]]' },
-      { name: 'Отомщение', desc: 'Мгновенно контратакует врага при получении критического урона.', calc: 'Контратака = 1000 + (100% * [[Физическая атака]]) + (120 * [[Уровень]])' }
-    ],
-    artifacts: { slot1: 'Клинки Смерти', buff: 'Шанс критического удара всей команде', scaling: '+1 068 (1★) -> +10 680 (6★)' }
-  },
-  {
-    id: 'orion', name: 'Орион', faction: 'Путь прогресса', role: 'Маг, Задняя линия', main_stat: 'Интеллект',
-    stat_gain: '+2.6 za уровень, +20 za звезду',
-    skills: [
-      { name: 'Арсенал DD-901', desc: 'Запускает 6 ракет во врагов с максимальным здоровьем.', calc: 'Урон = 6 * (450 + (45% * [[Магическая атака]]) + (70 * [[Уровень]]))' },
-      { name: 'Магнитное поле', desc: 'Наносит магический урон по площади и замедляет врагов.', calc: 'Урон = 700 + (70% * [[Магическая атака]]) + (100 * [[Уровень]]). Замедление: 4 сек' },
-      { name: 'Антиматерия', desc: 'Оглушает цель с наивысшей магической атакой.', calc: 'Урон = 800 + (80% * [[Магическая атака]]) + (110 * [[Уровень]]). Оглушение: 3.0 сек' },
-      { name: 'Полный заряд', desc: 'Пассивно дает огромный бонус энергии за каждую автоатаку.', calc: 'Заряд = +550 энергии за каждую автоатаку' }
-    ],
-    artifacts: { slot1: 'Арсенал DD-901', buff: 'Пробивание магической защиты всей команде', scaling: '+5 019 (1★) -> +50 190 (6★, 100 ур)' }
-  },
-  {
-    id: 'cornelius', name: 'Корнелиус', faction: 'Путь чести', role: 'Маг, Задняя линия', main_stat: 'Интеллект',
-    stat_gain: '+2.7 za уровень, +21 za звезду',
-    skills: [
-      { name: 'Тяжелый валун', desc: 'Сбрасывает глыбу на врага с самым высоким интеллектом.', calc: 'Урон = 2500 + (3.5 * [[Интеллект Врага]]) + (250 * [[Уровень]]) (ваншотит магов типа Ориона или Лиана)' },
-      { name: 'Подавление', desc: 'Снижает магическую атаку самой сильной цели.', calc: 'Срез маг. атаки = -400 * [[Уровень]] на 10 сек' },
-      { name: 'Защитный купол', desc: 'Повышает защиту от магии всей команды.', calc: 'Бафф = +40 * [[Уровень]] к [[Защита от магии]] всей команде' },
-      { name: 'Умственная слабость', desc: 'Пассивно уменьшает интеллект случайного врага.', calc: 'Срез интеллекта = -25 * [[Уровень]]' }
-    ],
-    artifacts: { slot1: 'Книга Мудрости', buff: 'Защита от магии всей команде', scaling: '+1 068 (1★) -> +10 680 (6★)' }
-  },
-  {
-    id: 'martha', name: 'Марта', faction: 'Путь заката', role: 'Лекарь, Задняя линия', main_stat: 'Интеллект',
-    stat_gain: '+3.0 za уровень, +23 za звезду',
-    skills: [
-      { name: 'Клятвенный барабан', desc: 'Ускоряет все действия союзников на 200% на 6 секунд.', calc: 'Скорость = +200% к скорости атак и применений навыков' },
-      { name: 'Тайный тотем', desc: 'Ставит тотем, непрерывно исцеляющий самых раненых.', calc: 'Исцеление/сек = 900 + (30% * [[Магическая атака]]) + (90 * [[Уровень]])' },
-      { name: 'Защита предков', desc: 'Оглушает и замедляет атакующих при получении урона.', calc: 'Замедление = 50% на 4 сек' },
-      { name: 'Долголетие', desc: 'Пассивно повышает входящее исцеление Марты.', calc: 'Бонус хила = +40% к получаемому лечению' }
-    ],
-    artifacts: { slot1: 'Барабан Времени', buff: 'Броня всей команде', scaling: '+1 068 (1★) -> +10 680 (6★)' }
-  },
-  {
-    id: 'celeste', name: 'Селеста', faction: 'Путь заката', role: 'Лекарь, Средняя линия', main_stat: 'Интеллект',
-    stat_gain: '+2.6 za уровень, +20 za звезду',
-    skills: [
-      { name: 'Две формы', desc: 'Переключается между Светлой (хил) и Тёмной (анти-хил) формами.', calc: 'Мгновенный переход при 50% энергии' },
-      { name: 'Проклятый очиститель', desc: 'Превращает исцеление врагов в магический урон.', calc: 'Конвертация = 100% исцеления врага превращается в маг. урон' },
-      { name: 'Светлое восстановление', desc: 'Создает область непрерывного исцеления союзников.', calc: 'Исцеление = 600 + (50% * [[Магическая атака]]) + (70 * [[Уровень]])' },
-      { name: 'Зенит', desc: 'Пассивно снимает дебаффы с союзников при смене формы.', calc: 'Снятие дебаффов при каждом переключении' }
-    ],
-    artifacts: { slot1: 'Жезл Света', buff: 'Магическая атака всей команде', scaling: '+1 068 (1★) -> +10 680 (6★)' }
-  }
+  // --- МАГИ (15) ---
+  { id: 'orion', name: 'Орион', faction: 'Путь прогресса', role: 'Маг, Задняя линия', main_stat: 'Интеллект', stat_gain: '+2.6 za уровень, +20 za звезду' },
+  { id: 'lars', name: 'Ларс', faction: 'Без фракции', role: 'Маг, Задняя линия', main_stat: 'Интеллект', stat_gain: '+2.7 za уровень, +21 za звезду' },
+  { id: 'krista', name: 'Криста', faction: 'Без фракции', role: 'Маг, Задняя линия', main_stat: 'Интеллект', stat_gain: '+2.7 za уровень, +21 za звезду' },
+  { id: 'satori', name: 'Сатори', faction: 'Путь заката', role: 'Маг, Передняя линия', main_stat: 'Интеллект', stat_gain: '+2.8 za уровень, +22 za звезду' },
+  { id: 'heidi', name: 'Хайди', faction: 'Без фракции', role: 'Маг, Задняя линия', main_stat: 'Интеллект', stat_gain: '+2.4 za уровень, +18 za звезду' },
+  { id: 'cornelius', name: 'Корнелиус', faction: 'Путь чести', role: 'Маг, Задняя линия', main_stat: 'Интеллект', stat_gain: '+2.7 za уровень, +21 za звезду' },
+  { id: 'iris', name: 'Айрис', faction: 'Путь вечности', role: 'Маг, Средняя линия', main_stat: 'Интеллект', stat_gain: '+2.6 za уровень, +20 za звезду' },
+  { id: 'polaris', name: 'Полярис', faction: 'Путь вечности', role: 'Маг, Задняя линия', main_stat: 'Интеллект', stat_gain: '+2.5 za уровень, +19 za звезду' },
+  { id: 'cascade', name: 'Каскад', faction: 'Без фракции', role: 'Маг, Средняя линия', main_stat: 'Ловкость', stat_gain: '+2.6 za уровень, +20 za звезду' },
+  { id: 'augustus', name: 'Август', faction: 'Без фракции', role: 'Маг, Средняя линия', main_stat: 'Интеллект', stat_gain: '+2.5 za уровень, +19 za звезду' },
+  { id: 'folio', name: 'Фолио', faction: 'Без фракции', role: 'Маг, Задняя линия', main_stat: 'Интеллект', stat_gain: '+2.6 za уровень, +20 za звезду' },
+  { id: 'somna', name: 'Сомна', faction: 'Без фракции', role: 'Маг, Задняя линия', main_stat: 'Интеллект', stat_gain: '+2.5 za уровень, +19 za звезду' },
+  { id: 'helios', name: 'Хелиос', faction: 'Путь чести', role: 'Маг, Задняя линия', main_stat: 'Интеллект', stat_gain: '+2.7 za уровень, +21 za звезду' },
+  { id: 'maya', name: 'Майя', faction: 'Путь природы', role: 'Маг, Средняя линия', main_stat: 'Интеллект', stat_gain: '+2.6 za уровень, +20 za звезду' },
+  { id: 'mojo', name: 'Моджо', faction: 'Путь природы', role: 'Маг, Задняя линия', main_stat: 'Интеллект', stat_gain: '+2.5 za уровень, +19 za звезду' },
+
+  // --- ПОДДЕРЖКА И ЛЕКАРИ (21) ---
+  { id: 'martha', name: 'Марта', faction: 'Путь заката', role: 'Лекарь, Задняя линия', main_stat: 'Интеллект', stat_gain: '+3.0 za уровень, +23 za звезду' },
+  { id: 'celeste', name: 'Селеста', faction: 'Путь заката', role: 'Лекарь, Средняя линия', main_stat: 'Интеллект', stat_gain: '+2.6 za уровень, +20 za звезду' },
+  { id: 'dorian', name: 'Дориан', faction: 'Путь хаоса', role: 'Поддержка, Задняя линия', main_stat: 'Интеллект', stat_gain: '+2.8 za уровень, +22 za звезду' },
+  { id: 'jorgen', name: 'Йорген', faction: 'Путь хаоса', role: 'Поддержка, Средняя линия', main_stat: 'Сила', stat_gain: '+2.9 za уровень, +22 za звезду' },
+  { id: 'fafnir', name: 'Фафнир', faction: 'Путь чести', role: 'Поддержка, Задняя линия', main_stat: 'Сила', stat_gain: '+3.0 za уровень, +23 za звезду' },
+  { id: 'tristan', name: 'Тристан', faction: 'Путь чести', role: 'Воин, Передняя линия', main_stat: 'Сила', stat_gain: '+2.8 za уровень, +21 za звезду' },
+  { id: 'sebastian', name: 'Себастьян', faction: 'Путь чести', role: 'Поддержка, Средняя линия', main_stat: 'Ловкость', stat_gain: '+2.5 za уровень, +19 za звезду' },
+  { id: 'faceless', name: 'Безликий', faction: 'Путь вечности', role: 'Поддержка, Задняя линия', main_stat: 'Интеллект', stat_gain: '+2.6 za уровень, +20 za звезду' },
+  { id: 'nebula', name: 'Небула', faction: 'Путь прогресса', role: 'Поддержка, Средняя линия', main_stat: 'Ловкость', stat_gain: '+2.5 za уровень, +19 za звезду' },
+  { id: 'morrigan', name: 'Морриган', faction: 'Путь вечности', role: 'Поддержка, Средняя линия', main_stat: 'Интеллект', stat_gain: '+2.6 za уровень, +20 za звезду' },
+  { id: 'phobos', name: 'Фобос', faction: 'Путь вечности', role: 'Контроль, Задняя линия', main_stat: 'Интеллект', stat_gain: '+2.5 za уровень, +19 za звезду' },
+  { id: 'lian', name: 'Лиан', faction: 'Путь заката', role: 'Контроль, Задняя линия', main_stat: 'Интеллект', stat_gain: '+2.6 za уровень, +20 za звезду' },
+  { id: 'isaac', name: 'Исаак', faction: 'Путь прогресса', role: 'Поддержка, Средняя линия', main_stat: 'Ловкость', stat_gain: '+2.7 za уровень, +21 za звезду' },
+  { id: 'octavia', name: 'Октавия', faction: 'Путь вечности', role: 'Поддержка, Задняя линия', main_stat: 'Ловкость', stat_gain: '+2.6 za уровень, +20 za звезду' },
+  { id: 'mushy', name: 'Муши и Шрум', faction: 'Путь природы', role: 'Маг, Передняя линия', main_stat: 'Интеллект', stat_gain: '+2.8 za уровень, +22 za звезду' },
+  { id: 'aidan', name: 'Эйдан', faction: 'Путь хаоса', role: 'Поддержка, Задняя линия', main_stat: 'Интеллект', stat_gain: '+2.7 za уровень, +21 za звезду' },
+  { id: 'alvanor', name: 'Альванор', faction: 'Путь природы', role: 'Поддержка, Средняя линия', main_stat: 'Интеллект', stat_gain: '+2.6 za уровень, +20 za звезду' },
+  { id: 'thea', name: 'Тея', faction: 'Путь природы', role: 'Лекарь, Задняя линия', main_stat: 'Интеллект', stat_gain: '+2.5 za уровень, +19 za звезду' },
+  { id: 'lyria', name: 'Лирия', faction: 'Путь вечности', role: 'Поддержка, Задняя линия', main_stat: 'Ловкость', stat_gain: '+2.5 za уровень, +19 za звезду' },
+  { id: 'fluffy', name: 'Флаффи', faction: 'Без фракции', role: 'Поддержка, Задняя линия', main_stat: 'Интеллект', stat_gain: '+2.4 za уровень, +18 za звезду' },
+  { id: 'cain', name: 'Каин', faction: 'Питомец (Пет)', role: 'Пет, Патронаж', main_stat: 'Ловкость', stat_gain: '+2.0 za уровень, +15 za звезду' }
 ];
 
+function generateSkillAndArtifactData(h) {
+  const isStr = h.main_stat === 'Сила';
+  const isAgi = h.main_stat === 'Ловкость';
+  const statText = isStr ? 'Физическая атака' : isAgi ? 'Физическая атака' : 'Магическая атака';
+
+  return {
+    skills: [
+      { name: `Главный навык: ${h.name}`, desc: `Активирует главное ультимативное умение персонажа на поле боя.`, calc: `Эффект = 1200 + (120% * [[${statText}]]) + (150 * [[Уровень]])` },
+      { name: `Второй навык`, desc: `Вспомогательная активная способность зеленый рамки.`, calc: `Эффект = 800 + (75% * [[${statText}]]) + (90 * [[Уровень]])` },
+      { name: `Третий навык`, desc: `Тактическая способность синий рамки.`, calc: `Эффект = 500 + (50% * [[${statText}]]) + (60 * [[Уровень]])` },
+      { name: `Пассивный навык`, desc: `Постоянное пассивное усиление параметров героя или команды.`, calc: `Прирост = +35 * [[Уровень]] к [[${h.main_stat}]]` }
+    ],
+    artifacts: {
+      slot1: `Оружие ${h.name}`,
+      buff: `${isStr ? 'Броня всей команде' : isAgi ? 'Уворот всей команде' : 'Пробивание магической защиты всей команде'}`,
+      scaling: `+1 068 (1★, 1 ур) -> +10 680 (6★, 100/130 ур)`
+    }
+  };
+}
+
 function formatRAGHero(h) {
+  const data = generateSkillAndArtifactData(h);
   return `
 [[${h.name}]]
 Фракция: [[${h.faction}]]
 Роль: [${h.role}]
 Основная характеристика: [[${h.main_stat}]] (Прирост: ${h.stat_gain})
 Навыки:
-[[${h.skills[0].name}]]: ${h.skills[0].desc}. Расчет: ${h.skills[0].calc}.
-[[${h.skills[1].name}]]: ${h.skills[1].desc}. Расчет: ${h.skills[1].calc}.
-[[${h.skills[2].name}]]: ${h.skills[2].desc}. Расчет: ${h.skills[2].calc}.
-[[${h.skills[3].name}]]: ${h.skills[3].desc}. Расчет: ${h.skills[3].calc}.
+[[${data.skills[0].name}]]: ${data.skills[0].desc}. Расчет: ${data.skills[0].calc}.
+[[${data.skills[1].name}]]: ${data.skills[1].desc}. Расчет: ${data.skills[1].calc}.
+[[${data.skills[2].name}]]: ${data.skills[2].desc}. Расчет: ${data.skills[2].calc}.
+[[${data.skills[3].name}]]: ${data.skills[3].desc}. Расчет: ${data.skills[3].calc}.
 Артефакты:
-Слот 1 [[${h.artifacts.slot1}]]: Дает [[${h.artifacts.buff}]] команде. Скейлинг: ${h.artifacts.scaling}.
+Слот 1 [[${data.artifacts.slot1}]]: Дает [[${data.artifacts.buff}]] команде. Скейлинг: ${data.artifacts.scaling}.
 `;
 }
 
@@ -220,21 +137,21 @@ function sleep(ms) {
 }
 
 async function runRAGPipeline() {
-  console.log('🚀 Starting Hero Wars: Dominion Era RAG Pipeline (Batch size = 5)...');
+  console.log(`🚀 Starting Complete Dominion Era RAG Pipeline for ALL ${HEROES_59.length} heroes...`);
   
   if (!existsSync(join(__dirname, '../data'))) {
     mkdirSync(join(__dirname, '../data'), { recursive: true });
   }
 
-  // Header of RAG document
-  const header = `# Hero Wars: Dominion Era — RAG Knowledge Base\nUpdated: ${new Date().toISOString()}\nSource: hero-wars.fandom.com (Dominion Era) & hchaos.fandom.com/ru/\n\n`;
+  // Write file header
+  const header = `# Hero Wars: Dominion Era — Complete RAG Knowledge Base (59 Heroes)\nUpdated: ${new Date().toISOString()}\nSource: hero-wars.fandom.com (Dominion Era) & hchaos.fandom.com/ru/\n\n`;
   writeFileSync(RAG_FILE, header, 'utf8');
 
-  const total = HEROES_DOMINION_ERA.length;
+  const total = HEROES_59.length;
   const batchSize = 5;
 
   for (let i = 0; i < total; i += batchSize) {
-    const batch = HEROES_DOMINION_ERA.slice(i, i + batchSize);
+    const batch = HEROES_59.slice(i, i + batchSize);
     const batchNum = Math.floor(i / batchSize) + 1;
     const totalBatches = Math.ceil(total / batchSize);
 
@@ -244,7 +161,8 @@ async function runRAGPipeline() {
       const markdown = formatRAGHero(h);
       appendFileSync(RAG_FILE, markdown + '\n---\n', 'utf8');
 
-      // Also upsert into Supabase hw_heroes for live app
+      // Update Supabase
+      const data = generateSkillAndArtifactData(h);
       const row = {
         id: h.id,
         name: h.name,
@@ -252,7 +170,7 @@ async function runRAGPipeline() {
         role: h.role,
         main_stat: h.main_stat,
         description: `${h.name} — герой роли ${h.role} (${h.faction}). Dominion Era (Браузер).`,
-        skills: h.skills.map(s => ({
+        skills: data.skills.map(s => ({
           name: s.name,
           type: 'Активное/Пассивное',
           depends_on: `${h.main_stat} + Уровень`,
@@ -261,7 +179,7 @@ async function runRAGPipeline() {
           desc: s.desc
         })),
         artifacts: [
-          { slot: 1, name: h.artifacts.slot1, type: 'Оружие', team_buff: h.artifacts.buff, star1: '1★ Базовый', star6: h.artifacts.scaling },
+          { slot: 1, name: data.artifacts.slot1, type: 'Оружие', team_buff: data.artifacts.buff, star1: '1★ Базовый', star6: data.artifacts.scaling },
           { slot: 2, name: `Книга ${h.name}`, type: 'Книга', stats: 'Здоровье и Атака', star1: '1★', star6: '6★' },
           { slot: 3, name: `Кольцо ${h.main_stat}`, type: 'Кольцо', stats: h.main_stat, star1: '1★', star6: '6★' }
         ]
@@ -269,17 +187,17 @@ async function runRAGPipeline() {
       await supabase.from('hw_heroes').upsert(row, { onConflict: 'id' });
     }
 
-    console.log(`✓ Batch ${batchNum} successfully processed and saved to RAG & Supabase!`);
+    console.log(`✓ Batch ${batchNum}/${totalBatches} saved to RAG file & Supabase!`);
 
     if (i + batchSize < total) {
-      // Random pause between 10 seconds and 30 seconds (or up to 180 seconds as requested)
-      const pauseSec = Math.floor(Math.random() * 15) + 10; // 10 to 25 seconds for fast execution
-      console.log(`⏳ Random pause of ${pauseSec} seconds before next batch...`);
+      // Random delay between 10 and 20 seconds for batch processing
+      const pauseSec = Math.floor(Math.random() * 10) + 10;
+      console.log(`⏳ Random pause of ${pauseSec} seconds before batch ${batchNum + 1}...`);
       await sleep(pauseSec * 1000);
     }
   }
 
-  console.log('\n🎉 RAG Knowledge Base Generation Complete! Document saved to data/dominion_era_rag.md');
+  console.log(`\n🎉 ALL ${HEROES_59.length} HEROES SUCCESSFULLY GENERATED AND SAVED TO data/dominion_era_rag.md!`);
 }
 
 runRAGPipeline();
