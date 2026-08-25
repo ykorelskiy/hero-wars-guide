@@ -4,9 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Hero Wars — Мета-гайд и советчик по контрам 2026</title>
-<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div id="loadingOverlay" class="loading-overlay">
+  <div class="spinner"></div>
+  <p style="color:var(--muted);font-size:0.9rem">Загрузка базы знаний...</p>
+</div>
+
 <div class="wrap">
 
   <header>
@@ -70,7 +74,7 @@
   <section id="view-about" class="view">
     <h2>Как работает советчик</h2>
     <div class="about-content">
-      <p>Советчик работает по правилам, а не по ИИ-магии — это прозрачная база знаний, которую можно редактировать в <code>data.js</code>.</p>
+      <p>Советчик работает по прозрачным правилам базы знаний в Supabase.</p>
       <h4>Логика в 4 шага:</h4>
       <ol>
         <li><b>Распознавание архетипа.</b> У каждого героя в базе есть тег архетипа (например, K'arkh → архетип «karkh-jump»). Когда ты выбираешь героев врага, скрипт считает, какой архетип встречается чаще.</li>
@@ -78,13 +82,11 @@
         <li><b>Подбор ответа.</b> Для распознанного архетипа врага в базе заранее прописано, какие твои архетипы его контрят и почему (механика, а не просто «сильнее по циферкам»).</li>
         <li><b>Вывод.</b> Показывается рекомендуемая команда, причина, и предупреждения по остальным твоим командам.</li>
       </ol>
-      <p>Вся база данных — герои, команды, контры, замены — лежит в файле <code>data.js</code> в виде обычных JS-объектов. Расширяй смело: добавляй героев в <code>HEROES</code>, команды в <code>TEAMS</code>.</p>
     </div>
   </section>
 
 </div>
 
-<script src="data.js"></script>
-<script src="app.js"></script>
+<script type="module" src="/src/main.js"></script>
 </body>
 </html>

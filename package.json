@@ -1,0 +1,21 @@
+{
+  "name": "hero-wars-guide",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Hero Wars — Meta-guide & counter-pick advisor 2026. Vite + Supabase.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 3006 --host"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ykorelskiy/hero-wars-guide.git"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.112.4",
+    "vite": "^8.2.2"
+  }
+}
