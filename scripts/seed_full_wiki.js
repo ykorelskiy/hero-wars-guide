@@ -17,7 +17,7 @@ if (!SUPABASE_KEY) {
 
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 
-const getAvatar = (name) => `https://hero-wars.fandom.com/wiki/Special:Redirect/file/${encodeURIComponent(name)}_Icon.png`;
+const getAvatar = (heroId) => `/assets/heroes/${heroId}.png`;
 
 const FULL_HEROES = [
   // --- ТАНКИ ---
@@ -942,7 +942,10 @@ async function seedFullWiki() {
 
   // Insert in batches of 10
   for (let i = 0; i < FULL_HEROES.length; i += 10) {
-    const chunk = FULL_HEROES.slice(i, i + 10);
+    const chunk = FULL_HEROES.slice(i, i + 10).map(h => ({
+      ...h,
+      avatar_url: `/assets/heroes/${h.id}.png`
+    }));
     const { error } = await supabase.from('hw_heroes').insert(chunk);
     if (error) {
       console.error(`Batch ${i/10 + 1} insert failed:`, error.message);

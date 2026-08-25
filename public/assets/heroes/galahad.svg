@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+    <rect width="120" height="120" rx="20" fill="#e53e3e" />
+    <circle cx="60" cy="50" r="32" fill="rgba(255,255,255,0.2)" />
+    <text x="60" y="62" font-size="34" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-weight="bold">Г</text>
+    <rect x="0" y="90" width="120" height="30" fill="rgba(0,0,0,0.4)" />
+    <text x="60" y="110" font-size="13" text-anchor="middle" fill="#ffffff" font-family="sans-serif">🛡️ Галахад</text>
+  </svg>
