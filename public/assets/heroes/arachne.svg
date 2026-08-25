@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160">
     <defs>
       <linearGradient id="grad_arachne" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#38a169" stop-opacity="0.9"/>
-        <stop offset="100%" stop-color="#0e1322" stop-opacity="1"/>
+        <stop offset="0%" stop-color="#38a169" stop-opacity="0.95"/>
+        <stop offset="100%" stop-color="#0a0e1a" stop-opacity="1"/>
       </linearGradient>
     </defs>
-    <rect width="160" height="160" rx="28" fill="url(#grad_arachne)" stroke="#38a169" stroke-width="4"/>
-    <circle cx="80" cy="70" r="42" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.25)" stroke-width="2"/>
-    <text x="80" y="85" font-size="46" text-anchor="middle" fill="#ffffff" font-family="'Segoe UI', Roboto, sans-serif" font-weight="800">А</text>
-    <rect x="0" y="122" width="160" height="38" fill="rgba(8,10,18,0.75)"/>
-    <text x="80" y="146" font-size="15" text-anchor="middle" fill="#ffffff" font-family="'Segoe UI', Roboto, sans-serif" font-weight="bold">🏹 Арахна</text>
+    <rect width="160" height="160" rx="24" fill="url(#grad_arachne)" stroke="#38a169" stroke-width="4"/>
+    <circle cx="80" cy="68" r="40" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+    <text x="80" y="83" font-size="44" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="900">А</text>
+    <rect x="0" y="120" width="160" height="40" fill="rgba(6,8,14,0.85)"/>
+    <text x="80" y="145" font-size="14" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="bold">🏹 Арахна</text>
   </svg>

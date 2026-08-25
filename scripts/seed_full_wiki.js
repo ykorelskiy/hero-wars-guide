@@ -931,6 +931,13 @@ const FULL_HEROES = [
   }
 ];
 
+import { readFileSync, existsSync } from 'fs';
+import { join, dirname } from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
 async function seedFullWiki() {
   console.log(`Starting proofread seed for ${FULL_HEROES.length} heroes...`);
 
@@ -942,10 +949,20 @@ async function seedFullWiki() {
 
   // Insert in batches of 10
   for (let i = 0; i < FULL_HEROES.length; i += 10) {
-    const chunk = FULL_HEROES.slice(i, i + 10).map(h => ({
-      ...h,
-      avatar_url: `/assets/heroes/${h.id}.png`
-    }));
+    const chunk = FULL_HEROES.slice(i, i + 10).map(h => {
+      const pngPath = join(__dirname, `../public/assets/heroes/${h.id}.png`);
+      let ext = 'png';
+      if (existsSync(pngPath)) {
+        const buf = readFileSync(pngPath);
+        if (buf.length < 2000 || buf[0] === 0x3C) { // <svg
+          ext = 'svg';
+        }
+      }
+      return {
+        ...h,
+        avatar_url: `/assets/heroes/${h.id}.${ext}`
+      };
+    });
     const { error } = await supabase.from('hw_heroes').insert(chunk);
     if (error) {
       console.error(`Batch ${i/10 + 1} insert failed:`, error.message);
