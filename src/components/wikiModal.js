@@ -19,32 +19,50 @@ export function openWikiModal(heroId) {
   ovl.style.setProperty('--tc', statColor);
 
   const iconFallback = hero.main_stat === 'Сила' ? '🛡️' : hero.main_stat === 'Ловкость' ? '🏹' : '🔮';
-  const avatarSrc = hero.avatar_url || `https://hero-wars.fandom.com/wiki/Special:Redirect/file/${encodeURIComponent(hero.name)}_Icon.png`;
+  const avatarSrc = hero.avatar_url || `/assets/heroes/${hero.id}.png`;
 
   const skillsHtml = (hero.skills && hero.skills.length > 0)
     ? hero.skills.map((s, i) => `
-        <div class="stp">
-          <div class="stn" style="background:${statColor};color:#080a12;font-weight:900;">${i + 1}</div>
-          <div class="stt">
-            <b>${s.name} <span style="font-size:0.75rem;opacity:0.75;font-weight:normal;color:var(--gold2);">(${s.type})</span></b>
-            <span>${s.desc}</span>
+        <div class="stp" style="border-left:4px solid ${statColor};padding:14px;background:rgba(255,255,255,0.03);border-radius:12px;margin-bottom:12px;">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;">
+            <div style="display:flex;align-items:center;gap:10px;">
+              <div class="stn" style="background:${statColor};color:#080a12;font-weight:900;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;">${i + 1}</div>
+              <b style="font-size:1.05rem;">${s.name} <span style="font-size:0.8rem;opacity:0.8;font-weight:normal;color:var(--gold2);">(${s.type})</span></b>
+            </div>
+            ${s.max_val ? `<span class="hp key" style="background:rgba(255,255,255,0.08);font-size:0.75rem;">130 ур: ${s.max_val}</span>` : ''}
           </div>
+
+          <div style="font-size:0.88rem;color:var(--muted);line-height:1.5;margin-bottom:8px;">${s.desc}</div>
+
+          ${s.formula ? `
+            <div style="background:rgba(0,0,0,0.25);padding:8px 12px;border-radius:8px;font-size:0.82rem;display:flex;flex-wrap:wrap;gap:14px;align-items:center;border:1px solid rgba(255,255,255,0.06);">
+              <div>📐 <b>Формула:</b> <span style="color:var(--txt);">${s.formula}</span></div>
+              ${s.per_lvl ? `<div style="color:var(--gold2);">📈 <b>Прирост:</b> ${s.per_lvl}</div>` : ''}
+            </div>
+          ` : ''}
         </div>
       `).join('')
     : '<div class="bx info">Подробное описание умений обновляется...</div>';
 
   const artifactsHtml = (hero.artifacts && hero.artifacts.length > 0)
     ? hero.artifacts.map(a => `
-        <div class="bx info" style="border-left: 4px solid ${statColor};">
-          <b>Слот ${a.slot}: ${a.name}</b> <span style="opacity:0.8;">(${a.type})</span><br>
-          ${a.team_buff ? `<span style="color:var(--gold2);font-weight:600;">⚡ Командный эффект: ${a.team_buff}</span><br>` : ''}
-          ${a.stats ? `<span style="color:var(--muted);">📊 Характеристики: ${a.stats}</span>` : ''}
+        <div class="bx info" style="border-left: 4px solid ${statColor};margin-bottom:12px;padding:14px;background:rgba(255,255,255,0.03);border-radius:12px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+            <b>Слот ${a.slot}: ${a.name}</b>
+            <span style="opacity:0.8;font-size:0.8rem;background:rgba(255,255,255,0.08);padding:2px 8px;border-radius:6px;">${a.type}</span>
+          </div>
+          ${a.team_buff ? `<div style="color:var(--gold2);font-weight:600;font-size:0.9rem;margin-bottom:6px;">⚡ Активация на 9 сек: ${a.team_buff}</div>` : ''}
+          ${a.stats ? `<div style="color:var(--muted);font-size:0.85rem;margin-bottom:6px;">📊 Параметры: ${a.stats}</div>` : ''}
+          <div style="display:flex;gap:12px;font-size:0.8rem;background:rgba(0,0,0,0.2);padding:6px 10px;border-radius:6px;margin-top:6px;">
+            <div>⭐ <b>1★ (База):</b> ${a.star1 || 'Стартовый уровень'}</div>
+            <div>🌟 <b>6★ (Макс):</b> <span style="color:var(--green);font-weight:bold;">${a.star6 || '100% прокачка'}</span></div>
+          </div>
         </div>
       `).join('')
     : '<div class="bx info">Подробное описание артефактов обновляется...</div>';
 
   ovl.innerHTML = `
-    <div class="md">
+    <div class="md" style="max-width:680px;">
       <div class="mdh">
         <div style="display:flex;gap:16px;align-items:center;">
           <div class="hero-avatar-wrap" style="width:64px;height:64px;border-radius:14px;border:3px solid ${statColor};">
@@ -64,8 +82,8 @@ export function openWikiModal(heroId) {
 
       <div class="mdtabs">
         <button class="mdtb on" data-tab="overview">Обзор</button>
-        <button class="mdtb" data-tab="skills">Умения (${hero.skills ? hero.skills.length : 0})</button>
-        <button class="mdtb" data-tab="artifacts">Артефакты (${hero.artifacts ? hero.artifacts.length : 0})</button>
+        <button class="mdtb" data-tab="skills">Умения и Формулы (${hero.skills ? hero.skills.length : 0})</button>
+        <button class="mdtb" data-tab="artifacts">Артефакты 1-6★ (${hero.artifacts ? hero.artifacts.length : 0})</button>
       </div>
 
       <div class="mdpn on" data-pn="overview">
@@ -90,12 +108,12 @@ export function openWikiModal(heroId) {
       </div>
 
       <div class="mdpn" data-pn="skills">
-        <h4>Способности героического кита</h4>
+        <h4 style="margin-bottom:12px;">Способности и Расчёт Скалирования (1–130 ур.)</h4>
         ${skillsHtml}
       </div>
 
       <div class="mdpn" data-pn="artifacts">
-        <h4>3 Артефакта героя</h4>
+        <h4 style="margin-bottom:12px;">Прокачка 3 Артефактов (1★ → 6★ Звёзд)</h4>
         ${artifactsHtml}
       </div>
     </div>
