@@ -1,0 +1,1020 @@
+{
+  "aurora": {
+    "heroId": "aurora",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/aurora-en.html",
+    "overview": "Aurora’s radiant presence on the battlefield is more than just beautiful it's devastating to enemies. Whether you're building a magic-heavy team or seeking a frontline tank that can dance through danger, Aurora delivers. But what truly makes her so popular? Let’s dive into the magic behind the Paladin of Riversar and how you can unlock her full potential.",
+    "skins_priority": [],
+    "artifacts_priority": [
+      "Discover the optimal order to evolve Aurora's artifacts based on team buffs, personal durability, and skill synergy."
+    ],
+    "glyphs_priority": [
+      "Best glyph upgrade order for Aurora in Hero Wars Dominion Era, based on synergy with her skills and role as a magic-damage dodge tank."
+    ],
+    "skills_priority": [],
+    "best_allies": " Weak to Pure Damage: Heroes like Iris, Dante, Heidi, and Aidan bypass both Dodge and her magic shield with pure damage.\nRelies on Dodge RNG: If Dodge doesn’t activate at the right time, she can fall quickly in battle.\nLow Physical Durability: Aurora has no innate defense against strong physical teams if her Dodge fails.\nSynergy Dependent: She performs best when paired with Dodge-boosting or Magic-focused allies; otherwise, her impact is limited.\nAscension-Dependent Passives: Her full defensive potential only unlocks later in the game with ascension upgrades. Discover which of Aurora’s dazzling skills are worth upgrading first and how her Ascension powers elevate her battlefield dominance. #\nTable: Best Defense Teams for Aurora\n\n\nAurora, Guus, Dante, Orion, Augustus, Khorus\nAurora, Dante, Orion, Augustus, Aidan, Khorus\nAurora, Guus, Krista, Jorgen, Lars, Cain\nAurora, Karkh, Guus, Jorgen, Faceless, Cain\nAurora, Guus, Folio, Augustus, Polaris, Khorus",
+    "counters": " Aurora is a strong front-line tank who relies on Dodge and a magic-damage absorbing shield. However, she is vulnerable to heroes that deal pure damage, bypass her defenses, or disrupt her evasion-based mechanics.",
+    "pets_synergy": ""
+  },
+  "astaroth": {
+    "heroId": "astaroth",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/astaroth-en.html",
+    "overview": "Astaroth is a versatile tank and support hero in Hero Wars: Dominion Era, known for his ability to protect allies and disrupt enemies. This guide provides an in-depth look at his skills, optimal builds, and strategies to maximize his effectiveness on the battlefield. His versatility lies in his strong defensive abilities and his power to resurrect allies, making him one of the best choices for new and experienced players.",
+    "skins_priority": [
+      "Skins provide permanent stat boosts. Here's the evolution order for maximum effectiveness:"
+    ],
+    "artifacts_priority": [
+      "Prioritizing Astaroth's artifacts correctly is crucial - armor first (Scythe), then magic defense (Covenant), finally health (Ring). This order maximizes his survivability to trigger resurrection while blocking key damage types. Never upgrade randomly!"
+    ],
+    "glyphs_priority": [
+      "Maxing Astaroth's glyphs in the right order (Armor > Health > Magic Defense) is what separates good tanks from unkillable ones. These priorities directly boost his shielding and resurrection value - skip this at your team's peril!"
+    ],
+    "skills_priority": [],
+    "best_allies": " Here are some top-tier team compositions featuring Astaroth:",
+    "counters": "",
+    "pets_synergy": ""
+  },
+  "corvus": {
+    "heroId": "corvus",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/corvus-en.html",
+    "overview": "The ground trembles as Corvus marches forward - a king who refused to stay dead. In this ultimate guide, we'll show you how to harness his dark powers to crush your enemies and dominate the battlefield.",
+    "skins_priority": [],
+    "artifacts_priority": [
+      "Optimize Corvus' undead might by focusing on artifacts that enhance his tanking and team support capabilities first."
+    ],
+    "glyphs_priority": [
+      "Optimize your Undead King's performance by focusing on glyphs that enhance his tanking and damage output in battle."
+    ],
+    "skills_priority": [],
+    "best_allies": " Undead Dependency: Many skills (like Unity of the Damned) only benefit undead allies, limiting team options.\nMagic Defense: While decent (50,105), it's his weakest defensive stat against mages like Orion or Satori.\nPosition-Sensitive: As frontline tank, vulnerable to armor penetration (e.g., K'arkh) and control effects.\nPet Reliance: Needs Oliver (for healing) or Albus (for damage) to maximize potential.\nSlow Ramp-Up: Altar requires time to deal significant damage; weak against burst teams.\nResource Intensive: Requires 55,410 skin stones to max winter/spring skins and 30,825 for default. #\nTable: Best Defense Teams for Corvus\n\n\n\nCorvus, Mushy, Dante, Aidan, Khorus\n\nCorvus, Lyria, Dante, Aidan, Khorus\n\nCorvus, Lyria, Yasmine, Dante, Sebastian, Khorus\n\nCorvus, Lyria, Keira, Dante, Morrigan, Axel\n\nCorvus, Dante, Isaac, Sebastian, Martha, Axel Did you like our Corvus Guide for Hero Wars Web and Facebook? Is there something you didn't understand or would like to suggest changes to? We invite you to join our comment section on the Alexandre Games Blog page. Feel free to express your opinion, clarify your doubts, and share your suggestions. Click the button below to get started:",
+    "counters": " Discover the most effective heroes and strategies to defeat the Undead King by exploiting his weaknesses and countering his abilities. Did you like our Corvus Guide for Hero Wars Web and Facebook? Is there something you didn't understand or would like to suggest changes to? We invite you to join our comment section on the Alexandre Games Blog page. Feel free to express your opinion, clarify your doubts, and share your suggestions. Click the button below to get started:",
+    "pets_synergy": ""
+  },
+  "galahad": {
+    "heroId": "galahad",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/galahad-en.html",
+    "overview": "Are you ready to unleash the power of an unstoppable warrior? Galahad is the fearless tank your team needs in Hero Wars: Dominion Era. Known for his legendary resilience and devastating physical attacks, this Blessed Warrior charges into battle without hesitation, protecting allies while crushing enemies on the front line.",
+    "skins_priority": [],
+    "artifacts_priority": [
+      "Artifacts provide substantial stat boosts that can dramatically improve Galahad's performance, especially when prioritized correctly for his tank role."
+    ],
+    "glyphs_priority": [
+      "Prioritizing the right glyphs ensures Galahad maximizes his tank potential and stays alive to protect your team throughout intense battles."
+    ],
+    "skills_priority": [],
+    "best_allies": " Evolution Priority: Very High – This is Galahad's ultimate ability and your primary source of area damage. Every upgrade increases the damage significantly, affecting all enemies hit. Since it's your ultimate, it charges throughout battle and can turn fights around. Prioritize this skill first as it provides the best return on investment for both damage output and team fight impact. Evolution Priority: High – This skill keeps Galahad alive and fighting by removing crowd control effects that would otherwise neutralize him. The damage is respectable and it activates frequently due to the short cooldown. Upgrade this second to improve both survivability and sustained damage. The control-break mechanic is invaluable against teams with heavy crowd control. Evolution Priority: High – This skill has the highest base damage of all Galahad's abilities and automatically targets the most vulnerable enemy. It's extremely efficient for finishing off opponents that your team has weakened. Upgrade this alongside Unstoppable Charge, as the high damage multiplier means each level provides significant damage increases. This skill has no Ascension upgrade, so what you invest goes directly into proven, reliable damage. Passive Bonus Formula: 17,135 pure damage added to Iron Skies (20% physical attack + 25 × level) Electra - Best Team #1\n\n\n#1\n\n\n\nMara\n\n\n\n\nAlbus\n\n\n\n\nFenris\n\n\n\n\nOliver\n\n\n\n\nBiscuit\n\n\n\n\n\n\nAxel\n\n\n\n\nLara Croft\n\n\n\n\nSebastian\n\n\n\n\nTristan\n\n\n\n\nLyria\n\n\n\n\nGalahad\n\n\n\n\nTeam Strategy: This physical damage composition centers around Lyria as dodge counter, with Galahad providing front-line disruption and self-sustaining tankiness. Galahad's role is to absorb initial damage while using his Iron Skies ultimate to soften the entire enemy team, creating opportunities for Lyria and other damage dealers to finish weakened targets.\nCore Synergies: Sebastian's critical hit buffs amplify the physical damage output of both Galahad and Lyria, while his debuff removal protects the team from disruptive control effects. Tristan provides additional crowd control and magic damage to complement the physical focus. This team benefits significantly from the Warrior's Flag, which boosts cooldown speed for warrior-class heroes like Galahad.\nKey Strengths: Galahad's 45% Vampirism allows him to sustain through prolonged fights without requiring a dedicated healer. Lyria's high burst damage combines with Galahad's area-of-effect abilities to create overwhelming pressure. The team excels against balanced compositions that lack strong anti-healing or dodge mechanics.\nWeaknesses & Counters: This team struggles against high anti-healing heroes like Celeste completely shut down Galahad's sustainability. Energy-denial from Jorgen limits ultimate usage. Additionally, Helios can counter Lara Croft's critical damage, significantly reducing her physical damage effectiveness.\nInvestment Priority: This composition requires substantial investment to reach full potential. Focus on maxing Galahad's defensive stats (Health, Armor, Magic Defense) first, then enhance Lyria's damage capabilities. Sebastian should be developed enough to provide consistent critical buffs. The team performs moderately at lower power levels but becomes dominant when fully upgraded.",
+    "counters": " Verdict: Galahad excels as a self-sufficient, aggressive tank who dominates through raw survivability and damage. However, his reliance on Vampirism makes him vulnerable to specific counters. He's best used in compositions that can protect him from anti-healing or when facing teams lacking hard counters. Pair him with cleanser supports or energy generators to maximize his potential while mitigating his weaknesses. Verdict: Galahad excels as a self-sufficient, aggressive tank who dominates through raw survivability and damage. However, his reliance on Vampirism makes him vulnerable to specific counters. He's best used in compositions that can protect him from anti-healing or when facing teams lacking hard counters. Pair him with cleanser supports or energy generators to maximize his potential while mitigating his weaknesses. While Galahad is a formidable tank with high survivability and self-healing, several heroes can effectively counter him by exploiting his weaknesses. Healing Dependency: Galahad relies heavily on his 45% Vampirism to sustain himself. Anti-healing effects drastically reduce his survivability.\nEnergy Reliance: His ultimate Iron Skies is his main area damage and healing source. Preventing energy gain weakens him significantly.\nControl Vulnerability: While Unstoppable Charge breaks control, heavy crowd control can still lock him down and prevent healing.\nDodge-Based Heroes: Galahad is less effective against heroes with high dodge (Aurora, Dante, Heidi, Yasmine, Qing Mao) since missed attacks don't trigger vampirism. War Flags provide team-wide or role-specific bonuses that can significantly enhance Galahad's survivability and combat effectiveness as a self-sustaining tank. Investment Priority: This composition requires substantial investment to reach full potential. Focus on maxing Galahad's defensive stats (Health, Armor, Magic Defense) first, then enhance Lyria's damage capabilities. Sebastian should be developed enough to provide consistent critical buffs. The team performs moderately at lower power levels but becomes dominant when fully upgraded.",
+    "pets_synergy": ""
+  },
+  "luther": {
+    "heroId": "luther",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/luther-en.html",
+    "overview": "",
+    "skins_priority": [],
+    "artifacts_priority": [],
+    "glyphs_priority": [],
+    "skills_priority": [],
+    "best_allies": "",
+    "counters": "",
+    "pets_synergy": ""
+  },
+  "julius": {
+    "heroId": "julius",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/julius-en.html",
+    "overview": "Looking for a tank that's both adorable and deadly? Julius, the mech-suited space cat, might just be your team's ultimate front-line defender.",
+    "skins_priority": [],
+    "artifacts_priority": [
+      "Discover the best artifact upgrade order for Julius to maximize his survivability, shield strength, and team support in Hero Wars: Dominion Era."
+    ],
+    "glyphs_priority": [
+      "Explore the best glyph upgrade path for Julius to boost his shield power, survivability, and frontline effectiveness in Hero Wars: Dominion Era."
+    ],
+    "skills_priority": [],
+    "best_allies": " #\nTable: Best Defense Teams for Julius\n\n\nJulius, Amira, Nebula, Heidi, Polaris, Oliver\nJulius, Ishmael, Sebastian, Thea, Fafnir, Axel\nJulius, Dante, Sebastian, Iris, Martha, Axel\nJulius, Amira, Nebula, Heidi, Thea, Khorus\nJulius, Dante, Sebastian, Thea, Fafnir, Axel",
+    "counters": " Julius depends heavily on energy gain and shield uptime. These heroes can shut him down or eliminate him before he becomes effective.",
+    "pets_synergy": ""
+  },
+  "andvari": {
+    "heroId": "andvari",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/andvari-en.html",
+    "overview": "",
+    "skins_priority": [],
+    "artifacts_priority": [],
+    "glyphs_priority": [],
+    "skills_priority": [],
+    "best_allies": "",
+    "counters": "",
+    "pets_synergy": ""
+  },
+  "chaba": {
+    "heroId": "chaba",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/chaba-en.html",
+    "overview": "",
+    "skins_priority": [],
+    "artifacts_priority": [],
+    "glyphs_priority": [],
+    "skills_priority": [],
+    "best_allies": "",
+    "counters": "",
+    "pets_synergy": ""
+  },
+  "ziri": {
+    "heroId": "ziri",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/ziri-en.html",
+    "overview": "Meet Ziri, the desert guardian who channels the power of Akhreb Ummi to protect her allies! This powerful tank hero is more than just a wall she’s a fierce frontliner with unmatched endurance and the mystical ability to reflect damage and dodge death itself.",
+    "skins_priority": [],
+    "artifacts_priority": [
+      "Discover the optimal artifact upgrade order for Ziri in Hero Wars: Dominion Era. Boost her tank potential and survivability effectively in battles."
+    ],
+    "glyphs_priority": [
+      "Discover the best glyph upgrade order for Ziri in Hero Wars: Dominion Era to boost her tanking potential and battle survivability."
+    ],
+    "skills_priority": [],
+    "best_allies": " #\nTable: Best Defense Teams for Ziri\n\n\nZiri, Folio, Augustus, Polaris, Martha, Khorus\nZiri, Dante, Orion, Augustus, Thea, Khorus\nZiri, Lyria, Keira, Sebastian, Lara Croft, Khorus\nZiri, Lyria, Tristan, Keira, Sebastian, Axel",
+    "counters": "",
+    "pets_synergy": ""
+  },
+  "cleaver": {
+    "heroId": "cleaver",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/cleaver-en.html",
+    "overview": "",
+    "skins_priority": [],
+    "artifacts_priority": [],
+    "glyphs_priority": [],
+    "skills_priority": [],
+    "best_allies": "",
+    "counters": "",
+    "pets_synergy": ""
+  },
+  "rufus": {
+    "heroId": "rufus",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/rufus-en.html",
+    "overview": "Rufus is a front-line tank who once bet his soul against a demon and won by outdrinking him! Now, that same demon lives in his shield, protecting Rufus and his allies with immense magical resistance. What started as a drunken wager turned Rufus into one of the most dependable Guardians in Dominion.",
+    "skins_priority": [],
+    "artifacts_priority": [],
+    "glyphs_priority": [
+      "Learn the best glyphs to upgrade for Rufus in Hero Wars: Dominion Era. Priorities are based on how each stat helps his magic-based skills and tanking role."
+    ],
+    "skills_priority": [],
+    "best_allies": " #\nTable: Best Defense Teams for Rufus\n\n\nRufus, Dante, Sebastian, Iris, Martha, Axel\nRufus, Julius, Nebula, Heidi, Thea, Oliver\nRufus, Celeste, Isaac, Sebastian, Orion, Axel\nRufus, Dante, Sebastian, Augustus, Khorus\nRufus, Amira, Nebula, Heidi, Polaris, Khorus\nRufus, Dante, Sebastian, Thea, Fafnir, Axel\nRufus, Krista, Celeste, Sebastian, Lars, Axel",
+    "counters": " Learn which heroes can counter Rufus and how their abilities take advantage of his weaknesses in Hero Wars: Dominion Era. Did you like our Rufus Guide for Hero Wars Web and Facebook? Is there something you didn't understand or would like to suggest changes to? We invite you to join our comment section on the Alexandre Games Blog page. Feel free to express your opinion, clarify your doubts, and share your suggestions. Click the button below to get started:",
+    "pets_synergy": ""
+  },
+  "electra": {
+    "heroId": "electra",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/electra-en.html",
+    "overview": "Do you see that glimmer far away? A surge cutting through the night sky... It seems Electra von Grave is emerging from the shadows once again!",
+    "skins_priority": [],
+    "artifacts_priority": [
+      "Learn the real Hero Wars: Dominion Era electra artifact priority order to maximize her magic burst, defense scaling, and overall survivability in battles."
+    ],
+    "glyphs_priority": [
+      "Electra’s glyph priorities focus on maximizing survivability and shield power. Since several of her abilities scale directly with Health and Strength, while Immortal Shell converts Armor into Strength, defensive glyphs gain significantly more long-term value."
+    ],
+    "skills_priority": [],
+    "best_allies": " Below are the recommended teams for Electra in Hero Wars: Dominion Era. These compositions have proven effective for maximizing Electra's tanking and damage redirection capabilities. Remember that team power and hero investment also play a crucial role in success.",
+    "counters": " Electra is a high-risk, high-survivability damage redirector whose kit revolves around absorbing allies’ damage (Oath of Protection), sustaining herself through lifesteal (Spark of Life), and creating a massive control/mitigation window with Embrace of Pain and Immortal Shell. These strengths can be shut down by heroes who suppress healing, disrupt energy gain, or prevent her from cycling her defensive abilities. Below are the best counters and why they work.",
+    "pets_synergy": ""
+  },
+  "judge": {
+    "heroId": "judge",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/judge-en.html",
+    "overview": "",
+    "skins_priority": [],
+    "artifacts_priority": [],
+    "glyphs_priority": [],
+    "skills_priority": [],
+    "best_allies": "",
+    "counters": "",
+    "pets_synergy": ""
+  },
+  "dante": {
+    "heroId": "dante",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/dante-en.html",
+    "overview": "In Hero Wars: Dominion Era, Dante emerges as one of the most versatile and deadly marksmen in the game. With his agility-based attacks and mid-line positioning, Dante combines speed and power to strike down enemies before they even reach your tanks.",
+    "skins_priority": [],
+    "artifacts_priority": [
+      "Dante’s artifacts should first reinforce the dodge-based structure that makes his comps difficult to break, then improve his personal stat floor for longer and more reliable fights."
+    ],
+    "glyphs_priority": [
+      "Dante’s best glyphs are the ones that improve his spear damage first, then reinforce the dodge-and-survival pattern that lets him keep pressuring fights. The visual order below follows the game, but the priority field shows practical value."
+    ],
+    "skills_priority": [],
+    "best_allies": " What makes Dante special is that he does not rely on raw stats alone. He pressures multiple enemies with spectral spears, buffs team Dodge, punishes heavy hits with automatic counterattacks, and lowers enemy main stats at the same time. That package gives him damage, disruption, and survivability without needing to play like a standard backline glass cannon. Dependent on Dodge: Dante’s damage and utility heavily rely on successfully dodging attacks, making him less effective against accuracy or control-heavy enemies.\nSquishy Without Proper Builds: Without sufficient armor or health, Dante can be fragile and prone to burst damage.\nSituational Debuff: The stat reduction from Shackles of Weakness is useful but depends on landing hits from his spears, which can be interrupted. Dante continues to be one of the top damage dealers in Hero Wars, thanks to his high mobility, dodge, and powerful spear throws that hit multiple enemies. The best teams with Dante generally focus on increasing his survivability and amplifying his burst damage. Below are high-level defensive formations that maximize his performance in the arena and guild wars, as well as offensive compositions that make the most of his high damage and agility scaling.",
+    "counters": " Shackles of Weakness adds a debuff layer to Dante’s spear hits. Whenever a spectral spear from Instrument of Fate or Retribution lands, Dante reduces the enemy’s main stat by 7,022 for 5 seconds. That lowers enemy damage, defense scaling, or healing scaling depending on who gets hit, which gives Dante more value than a pure damage marksman in longer fights. Dante can be a dangerous opponent, but he has clear weaknesses you can exploit with the right heroes and tactics. Because his playstyle depends on dodging physical hits, crowd control abilities and magic damage are particularly effective.",
+    "pets_synergy": ""
+  },
+  "keira": {
+    "heroId": "keira",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/keira-en.html",
+    "overview": "Keira, a ghostly marksman who fights from the middle line, was once a brave royal guard. After falling in battle against Morth Chrone, \n    she was resurrected as a restless spirit, doomed to wander forever.",
+    "skins_priority": [],
+    "artifacts_priority": [
+      "Learn the optimal artifact upgrade order for Keira in Hero Wars: Dominion Era to maximize her physical damage and overall battle power."
+    ],
+    "glyphs_priority": [
+      "Discover the best glyph upgrade order for Keira in Hero Wars: Dominion Era to boost her damage, survivability, and battle efficiency."
+    ],
+    "skills_priority": [],
+    "best_allies": " #\nTable: Best Defense Teams for Keira\n\n\nCorvus, Lyria, Keira, Morrigan, Faceless, Khorus\nLyria, Keira, Morrigan, Faceless, Phobos, Khorus\nCorvus, Lyria, Nebula, Orion, Augustus, Khorus\nCorvus, Keira, Nebula, Orion, Augustus, Khorus\nCorvus, Keira, Morrigan, Sebastian, Jet, Fenris\nCorvus, Keira, Morrigan, Faceless, Phobos, Fenris\nAstaroth, Andvari, Keira, Morrigan, Sebastian, Jet, Fenris",
+    "counters": " Keira struggles against heroes who can disrupt or reflect area-of-effect damage, such as Corvus and Lian. Her performance also drops when facing heroes with high Dodge stats like Dante, Aurora, Heidi, Yasmine, and Qing Mao, making it harder for her to land consistent hits.",
+    "pets_synergy": ""
+  },
+  "karkh": {
+    "heroId": "karkh",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/karkh-en.html",
+    "overview": "",
+    "skins_priority": [],
+    "artifacts_priority": [],
+    "glyphs_priority": [],
+    "skills_priority": [],
+    "best_allies": "",
+    "counters": "",
+    "pets_synergy": ""
+  },
+  "yasmine": {
+    "heroId": "yasmine",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/yasmine-en.html",
+    "overview": "Yasmine is a powerful front-line warrior in Hero Wars: Dominion Era. With lethal damage, dodge and agility as her main stat, she's perfect for early progress in Campaign mode and also an outstanding choice for facing Osh, the boss of Asgard.",
+    "skins_priority": [],
+    "artifacts_priority": [
+      "Discover the artifact evolution priority for Yasmine in Hero Wars: Dominion Era, based on synergy with her critical-based assassin skills and overall battle performance."
+    ],
+    "glyphs_priority": [
+      "Discover the best glyph evolution priority for Yasmine in Hero Wars: Dominion Era. Focus on the glyphs that boost her critical damage, survivability, and assassin performance."
+    ],
+    "skills_priority": [],
+    "best_allies": " Discover the advantages and disadvantages of using Yasmine in battles, based on her skills and combat strategy in Hero Wars: Dominion Era. Yasmine - Best Team #1\n\n\n#1\n\n\n\nMerlin\n\n\n\n\nFenris\n\n\n\n\nAxel\n\n\n\n\nAlbus\n\n\n\n\nOliver\n\n\n\n\n\n\nAxel\n\n\n\n\nAidan\n\n\n\n\nSebastian\n\n\n\n\nGuus\n\n\n\n\nYasmine\n\n\n\n\nLyria Did you like our Yasmine Guide for Hero Wars Web and Facebook? Is there something you didn't understand or would like to suggest changes to? We invite you to join our comment section on the Alexandre Games Blog page. Feel free to express your opinion, clarify your doubts, and share your suggestions. Click the button below to get started:",
+    "counters": " Skills: Yasmine's deadly strikes explained\nLearn how Yasmine's abilities work in Hero Wars: Dominion Era and which ones to level up first for maximum efficiency.\n\n\n\nDance of Death\n\nYasmine paralyzes the last enemy who attacked her for 3 seconds, teleports behind them, strikes 7 times, and applies an Assassin’s Mark. While this skill is active, she cannot receive debuffs. After the attack, she returns to her original position and continues to attack the marked target.\nThis is Yasmine’s main damage skill and the core of her gameplay. It deals massive single-target damage and makes her untouchable while active.\nDamage Formula: 40% Physical Attack + 40 × Level per hit.\nCalculated Damage: 0.4 × 89,672 + 40 × 130 = 41,069 damage per hit. Since the skill hits 7 times, the total burst damage is approximately 287,482 before defenses.\nEvolution Priority: 1 (Highest) — This skill defines Yasmine’s entire strategy. Upgrading it first greatly increases her burst damage and survivability.\n\n\n\n\n\nDance of Death Skill, Hero Wars Dominion Era.\n\n\n\n\n\nAssassin's Instinct\n\nWhen Dance of Death is used, Yasmine gains bonus critical hit chance and Dodge for 10 seconds. This makes her harder to hit and increases her chances to land critical hits.\nThis skill boosts both her offense and defense, especially during her most dangerous moments right after using her ultimate skill.\nEffect Formula: 40% Physical Attack + 40 × Level + 500 for bonus Critical Hit Chance and Dodge.\nCalculated Bonus: 0.4 × 89,672 + 40 × 130 + 500 = 41,569 bonus Critical Hit Chance and 41,569 bonus Dodge for 10 seconds.\nEvolution Priority: 2 — A great follow-up to improve her survivability and ensure more poison stacks through critical hits.\n\n\n\n\n\n\n\n\nEmbrace of Pain\n\nYasmine’s critical hits poison enemies. If a poisoned enemy is hit again, the poison duration resets and the damage stacks up to 10 times. Each poison effect deals pure damage over time.\nThis skill adds consistent damage during long fights. The stacking poison can finish off enemies even if they survive her main skill.\nDamage Formula: 33% Physical Attack + 30 × Level pure damage per poison stack every 5 seconds.\nCalculated Damage: 0.33 × 89,672 + 30 × 130 = 33,492 pure damage per stack every 5 seconds. At 10 stacks, this reaches approximately 334,918 pure damage every 5 seconds before reductions or cleanses.\nEvolution Priority: 3 — While strong, it depends heavily on critical hits. Level it after boosting her main attack and crit rate.\n\n\n\n\n\nEmbrace of Pain Skill, Hero Wars Dominion Era.\n\n\n\n\n\nUnknown Toxin\n\nEnemies poisoned by Yasmine receive less healing. Each time they are healed, a portion of it is blocked based on Yasmine’s stats.\nWhile useful against healing-heavy teams, it is situational and doesn’t directly increase her damage output.\nHealing Block Formula: 20% Physical Attack + 30 × Level + 500 blocked healing per heal.\nCalculated Effect: 0.2 × 89,672 + 30 × 130 + 500 = 22,334 healing blocked each time a poisoned enemy is healed.\nEvolution Priority: 4 (Lowest) — It's helpful in specific fights, but it's the least important for raw damage. Upgrade this last. Amira – Counter Pick\n\nAmira disables Yasmine by making all her critical hits miss for 7 seconds. Since Yasmine’s poison and burst damage rely on landing crits, this completely shuts down her offensive power temporarily. Amira disables Yasmine by making all her critical hits miss for 7 seconds. Since Yasmine’s poison and burst damage rely on landing crits, this completely shuts down her offensive power temporarily. Celeste clears Yasmine’s poison and prevents debuffs with her \"Limbo\" skill. She keeps the team clean from Yasmine's damage-over-time and healing block effects. Faceless stuns Yasmine with \"Power Throw,\" interrupting her attack sequence. By repositioning her and delaying her damage, your team gains time to respond or eliminate her. Helios retaliates against critical hits with \"Flaming Retribution.\" Since Yasmine heavily depends on crits, she ends up taking severe magic damage every time she strikes, often leading to her own downfall.",
+    "pets_synergy": ""
+  },
+  "artemis": {
+    "heroId": "artemis",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/artemis-en.html",
+    "overview": "",
+    "skins_priority": [],
+    "artifacts_priority": [],
+    "glyphs_priority": [],
+    "skills_priority": [],
+    "best_allies": "",
+    "counters": "",
+    "pets_synergy": ""
+  },
+  "jhu": {
+    "heroId": "jhu",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/jhu-en.html",
+    "overview": "",
+    "skins_priority": [],
+    "artifacts_priority": [],
+    "glyphs_priority": [],
+    "skills_priority": [],
+    "best_allies": "",
+    "counters": "",
+    "pets_synergy": ""
+  },
+  "ishmael": {
+    "heroId": "ishmael",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/ishmael-en.html",
+    "overview": "Have you ever imagined fighting your own inner demon while leading your team to victory? Ishmael’s tale in Hero Wars: Dominion Era is both tragic and inspiring. Once forced to kill his own father to prevent a dark sacrifice, he now carries the shadow of that battle within himself. This makes him one of the most fascinating warriors in the game.",
+    "skins_priority": [],
+    "artifacts_priority": [
+      "Understanding which artifacts to prioritize for Ishmael ensures maximum damage and survivability. Here’s the best order to evolve them based on battle impact."
+    ],
+    "glyphs_priority": [
+      "Optimizing Ishmael’s glyphs maximizes his critical strike potential and survivability. Here’s the priority order with reasons based on battle performance."
+    ],
+    "skills_priority": [],
+    "best_allies": " Reliant on Critical Hits: His main damage depends on crits, making him vulnerable to anti-crit counters like Helios and Amira.\nWeak to Pure Damage: Enemies such as Arachne and Phobos bypass his dodge and defenses, quickly draining his health.\nNeeds Team Support: Without heroes who boost his stats or protect him, Ishmael struggles to reach his full potential.\nEnergy Drain in Demonic Form: His ultimate form is temporary and ends when energy runs out, limiting sustained burst.\nControl Vulnerability: Stuns, charms, and blinds (like from Lian and Mara) can completely shut him down mid-fight. #\nTable: Best Defense Teams for Ishamel\n\n\nLyria, Ishamel, Guus, Nebula, Sebastian, Axel\nLyria, Ishmael, Nebula, Sebastian, Aidan, Axel\nChabba, Ishmael, Arachne, Jorgen, Helios, Khorus\nAstaroth, Ishmael, Sebastian, Thea, Fafnir, Axel\nLyria, Ishmael, Arachne, Jorgen, Helios, Khorus",
+    "counters": " Ishmael is a high damage warrior who relies on critical hits, vampirism, and dodge to stay alive. To defeat him, focus on heroes who punish crits, deal pure damage, or disable him before he snowballs. Did you like our Ishmael Guide for Hero Wars Web and Facebook? Is there something you didn't understand or would like to suggest changes to? We invite you to join our comment section on the Alexandre Games Blog page. Feel free to express your opinion, clarify your doubts, and share your suggestions. Click the button below to get started:",
+    "pets_synergy": ""
+  },
+  "arachne": {
+    "heroId": "arachne",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/arachne-en.html",
+    "overview": "There's no trace of humanity left in her she's a perfect assassin now. Arachne in Hero Wars: Dominion Era is a lethal Control/Warrior hybrid who paralyzes enemies with her hypnotic gaze and shreds them with her venomous claws. If you're looking for a hero who combines crowd control with devastating pure damage, Arachne is your ultimate weapon.",
+    "skins_priority": [
+      "Space Skin – Magic Penetration +21,300 (Maximum priority) Mechanical Skin – Magic Attack +10,650 (Max damage) Romantic Skin – Magic Attack +10,650 (Max damage) Spring Skin – Magic Penetration +10,650 (Anti-tank) Winter Skin – Health +106,670 (Survivability) Default Skin – Agility +1,365 (Basic stats)"
+    ],
+    "artifacts_priority": [
+      "Artifacts significantly enhance Arachne's effectiveness. Prioritize the Weapon artifact for maximum Magic Penetration, followed by defensive artifacts for survivability.",
+      "Weapon - Hyper Booster DS-1 – Magic Penetration +50,190 (Max damage penetration) Book - Defender's Covenant – Armor/Magic Defense +12,546 each (Dual defense) Ring - Ring of Agility – Agility +6,249 (Mixed stats)"
+    ],
+    "glyphs_priority": [
+      "Prioritize glyphs that enhance Arachne's magic damage output and survivability. Focus on Magic Attack first to maximize her devastating pure damage abilities.",
+      "4th Glyph - Magic Attack +6,500 (Max damage) 2nd Glyph - Health +62,200 (Survivability + Vampirism synergy) 3rd Glyph - Armor +6,500 (Physical defense) 5th Glyph - Agility +1,135 (Mixed stats) 1st Glyph - Physical Attack +4,340 (Basic attacks only)"
+    ],
+    "skills_priority": [],
+    "best_allies": " ❌ Vulnerable to anti-control heroes\n❌ Requires proper team composition to maximize effectiveness\n❌ Can struggle against teams with high burst damage Arachne - Best Team #1\n\n\n#1\n\n\n\nMerlin\n\n\n\n\nAlbus\n\n\n\n\nCain\n\n\n\n\nFenris\n\n\n\n\nMara\n\n\n\n\n\n\nAxel\n\n\n\n\nDorian\n\n\n\n\nSebastian\n\n\n\n\nNebula\n\n\n\n\nDante\n\n\n\n\nArachne",
+    "counters": " Mara is an excellent choice for Arachne as a Control/Warrior! The 200% increase in control effect duration makes her crowd control abilities significantly more impactful. Arachne's Hyper Jump includes a stun component, and with Mara's patronage, that stun lasts much longer, keeping enemies disabled while she deals damage. The Magic Attack bonus also enhances her Hyper Jump and Demolition Robot abilities, while Magic Defense improves survivability. This pet is perfect for team compositions that need extended crowd control. Arachne's greatest weakness is her dependence on 80% Vampirism for survivability. Counters that block healing or remove debuffs significantly reduce her combat effectiveness. Here are the most effective counters in alphabetical order: The most effective strategy against Arachne is to block her healing (Celeste, Jet, Biscuit) to eliminate her 80% Vampirism sustain, or remove her control effects (Sebastian, Julius, Nebula) to prevent her from executing combos. Combining both strategies makes Arachne nearly ineffective in battle.",
+    "pets_synergy": ""
+  },
+  "kayla": {
+    "heroId": "kayla",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/kayla-en.html",
+    "overview": "Kayla, the fierce Fire Herald, blazes across the battlefield with unmatched rage and determination. Torn between her ashen elf heritage and demonic bloodline, she channels her fury into unstoppable attacks that burn through even the strongest defenses.",
+    "skins_priority": [],
+    "artifacts_priority": [
+      "Kayla’s artifacts enhance her burning damage and overall endurance. Her weapon artifact is essential for offense, while her ring boosts her main stats for stronger skill damage."
+    ],
+    "glyphs_priority": [
+      "Discover the best order to upgrade Kayla’s glyphs in Hero Wars: Dominion Era. Learn which stats most improve her fiery skills and survival in long battles."
+    ],
+    "skills_priority": [],
+    "best_allies": " This team focuses on maximizing Kayla's burn damage while Sebastian protects the team against negative effects. Lyria provides lifesteal for Kayla, and Aidan offers protection and synergy through War Flags. The chosen pets amplify Kayla's pure damage, making her a constant threat on the battlefield. This team focuses on maximizing Kayla's burn damage while Sebastian protects the team against negative effects. Lyria provides lifesteal for Kayla, and Aidan offers protection and synergy through War Flags. The chosen pets amplify Kayla's pure damage, making her a constant threat on the battlefield. This team places Dante directly behind Kayla, where he assumes the role of a second frontliner — acting as a Dante Tank. This composition is excellent for defense, especially in prolonged battles. When combined with the War Flag of Pet Strength, Axel's power is significantly boosted, further enhancing the team's overall performance and survivability.",
+    "counters": " These heroes are effective against Kayla by disrupting her positioning, reducing her burn damage uptime, or controlling her with crowd control abilities.",
+    "pets_synergy": ""
+  },
+  "oya": {
+    "heroId": "oya",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/oya-en.html",
+    "overview": "",
+    "skins_priority": [],
+    "artifacts_priority": [],
+    "glyphs_priority": [],
+    "skills_priority": [],
+    "best_allies": "",
+    "counters": "",
+    "pets_synergy": ""
+  },
+  "darkstar": {
+    "heroId": "darkstar",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/dark-star-en.html",
+    "overview": "",
+    "skins_priority": [],
+    "artifacts_priority": [],
+    "glyphs_priority": [],
+    "skills_priority": [],
+    "best_allies": "",
+    "counters": "",
+    "pets_synergy": ""
+  },
+  "ginger": {
+    "heroId": "ginger",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/ginger-en.html",
+    "overview": "",
+    "skins_priority": [],
+    "artifacts_priority": [],
+    "glyphs_priority": [],
+    "skills_priority": [],
+    "best_allies": "",
+    "counters": "",
+    "pets_synergy": ""
+  },
+  "fox": {
+    "heroId": "fox",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/fox-en.html",
+    "overview": "",
+    "skins_priority": [],
+    "artifacts_priority": [],
+    "glyphs_priority": [],
+    "skills_priority": [],
+    "best_allies": "",
+    "counters": "",
+    "pets_synergy": ""
+  },
+  "astrid": {
+    "heroId": "astrid",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/astrid-and-lucas-en.html",
+    "overview": "",
+    "skins_priority": [],
+    "artifacts_priority": [],
+    "glyphs_priority": [],
+    "skills_priority": [],
+    "best_allies": "",
+    "counters": "",
+    "pets_synergy": ""
+  },
+  "laracroft": {
+    "heroId": "laracroft",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/lara-croft-en.html",
+    "overview": "Teleported through an ancient portal, legendary adventurer Lara Croft now brings her unparalleled agility and deadly precision to the battlefields of Dominion. Ready to unlock her full potential?",
+    "skins_priority": [],
+    "artifacts_priority": [
+      "Maximize Lara's damage potential with the optimal artifact upgrade order. Prioritize artifacts that boost her critical hits and physical attack for maximum combat effectiveness."
+    ],
+    "glyphs_priority": [
+      "Understanding Lara Croft’s glyph priority in Hero Wars: Dominion Era is key to maximizing her physical damage, survivability, and skill effectiveness."
+    ],
+    "skills_priority": [],
+    "best_allies": " Countered by Anti-Crit Heroes – Heroes like Helios and Amira directly shut down Lara’s crit-dependent damage.\nReliant on Survivability – Needs health and defensive support; otherwise, she can be eliminated quickly by burst teams.\nArtifact Dependency – Her maximum potential requires heavy investment in artifacts, especially her weapon.\nVulnerable to Control – Stuns, silences, and disables can interrupt her damage cycle, lowering her effectiveness in prolonged fights.\nWeaker Without Crits – If her crit chance is suppressed, her overall damage drops significantly. #\nTable: Best Defense Teams for Lara Croft\n\n\nGalahad, Lyria, Tristan, Sebastian, Lara Croft, Axel\nAurora, Galahad, Tristan, Sebastian, Lara Croft, Axel\nQing Mao, Tristan, Sebastian, Heidi, Lara Croft, Thea, Axel\nQing Mao, Jhu, Sebastian, Lara Croft, Aidan, Fenris\nQing Mao, Lyria, Sebastian, Lara Croft, Aidan, Axel Did you like our Lara Croft Guide for Hero Wars Web and Facebook? Is there something you didn't understand or would like to suggest changes to? We invite you to join our comment section on the Alexandre Games Blog page. Feel free to express your opinion, clarify your doubts, and share your suggestions. Click the button below to get started:",
+    "counters": " Master Lara's skills in the right order to maximize her damage potential. This beginner-friendly guide explains which abilities to prioritize first for optimal performance. Counters to Lara Croft in Hero Wars: Dominion Era work by neutralizing her critical damage focus and agility scaling. These heroes exploit her reliance on crits and physical burst to shut down her effectiveness in battle.",
+    "pets_synergy": ""
+  },
+  "isaac": {
+    "heroId": "isaac",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/isaac-en.html",
+    "overview": "Isaac is not just another hero; he’s the genius engineer who makes mages tremble on the battlefield. With his \n      self-propelled vehicle Tes’Lin, disruptive drones, and unmatched control, Isaac brings both innovation and \n      devastation to his enemies.",
+    "skins_priority": [],
+    "artifacts_priority": [
+      "Isaac’s artifacts should be leveled to maximize his anti-mage utility and team support. Focus first on Armor Penetration and team buffs before investing in personal stats."
+    ],
+    "glyphs_priority": [
+      "Isaac’s glyphs should focus first on boosting his survivability against magic damage and then on maximizing his physical damage output. Defensive stats are important but secondary, while Agility offers the least benefit overall."
+    ],
+    "skills_priority": [],
+    "best_allies": " #\nTable: Best Defense Teams for Isaac\n\n\nAurora, Celeste, Isaac, Sebastian, Orion, Axel\nCorvus, Dante, Isaac, Sebastian, Martha, Axel\nAurora, Dante, Isaac, Sebastian, Jet, Axel",
+    "counters": " Isaac is a strong anti-mage hero, but several heroes can counter him effectively by cleansing silence, preventing debuffs, or exploiting mechanics that bypass his charge-based defense. Isaac is a physical damage dealer specialized in countering mages, and the right War Flags amplify his disruptive control and team synergy. Below are the best War Flags for Isaac in Hero Wars: Dominion Era. However, it is important to remember that Isaac is not a universal hero. His effectiveness drops against teams with little or no magic damage, and he can be countered by supports that remove debuffs, such as Sebastian, Celeste, or Nebula. For this reason, Isaac shines most in well-built physical lineups, especially when paired with durable tanks and supports that amplify his control abilities.",
+    "pets_synergy": ""
+  },
+  "tristan": {
+    "heroId": "tristan",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/tristan-en.html",
+    "overview": "",
+    "skins_priority": [],
+    "artifacts_priority": [],
+    "glyphs_priority": [],
+    "skills_priority": [],
+    "best_allies": "",
+    "counters": "",
+    "pets_synergy": ""
+  },
+  "sebastian": {
+    "heroId": "sebastian",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/sebastian-en.html",
+    "overview": "Sebastian isn’t just a bard he’s a battlefield artist. In Hero Wars: Dominion Era, his chords shield allies from crippling debuffs while powering up their critical hits. Every strum of his guitar reshapes combat, making him one of the most reliable supports in the game.",
+    "skins_priority": [],
+    "artifacts_priority": [
+      "Sebastian’s artifacts boost his team utility and damage potential. Here’s the real priority order for evolving his artifacts in Hero Wars: Dominion Era."
+    ],
+    "glyphs_priority": [
+      "Sebastian’s glyphs enhance his support capabilities and team damage. Prioritize stats that directly improve his skills and buff allies effectively."
+    ],
+    "skills_priority": [],
+    "best_allies": " #\nTable: Best Defense Teams for Sebastian\n\n\nDante, Nebula, Sebastian, Aidan, Fafnir, Khorus\nLyria, Ishmael, Nebula, Sebastian, Axel\nGalahad, Lyria, Tristan, Sebastian, Lara, Axel\nAstaroth, Ishmael, Sebastian, Thea, Fafnir, Axel\nRufus, Dante, Sebastian, Iris, Martha, Axel",
+    "counters": " Learn how to effectively counter Sebastian in Hero Wars: Dominion Era by understanding how his buffs and support skills are neutralized in battle. Did you like our Sebastian's Guide for Hero Wars Web and Facebook? Is there something you didn't understand or would like to suggest changes to? We invite you to join our comment section on the Alexandre Games Blog page. Feel free to express your opinion, clarify your doubts, and share your suggestions. Click the button below to get started:",
+    "pets_synergy": ""
+  },
+  "alvanor": {
+    "heroId": "alvanor",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/alvanor-en.html",
+    "overview": "",
+    "skins_priority": [],
+    "artifacts_priority": [],
+    "glyphs_priority": [],
+    "skills_priority": [],
+    "best_allies": "",
+    "counters": "",
+    "pets_synergy": ""
+  },
+  "lyria": {
+    "heroId": "lyria",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/lyria-en.html",
+    "overview": "Lyria is the latest addition to the Hero Wars: Dominion Era roster, and she's turning heads with her eerie powers and incredible utility on the battlefield.",
+    "skins_priority": [],
+    "artifacts_priority": [
+      "Lyria’s artifacts enhance her physical damage and survivability. Prioritizing the right ones will boost her impact in battle and support her core abilities."
+    ],
+    "glyphs_priority": [
+      "Lyria is a frontline Warrior and Support hero whose main stat is Strength. Investing in the right glyphs enhances her survivability, damage output, and vampirism synergy. If she's dying too quickly in battle, consider prioritizing defensive glyphs earlier. Here's the evolution priority of her glyphs based on their real combat value."
+    ],
+    "skills_priority": [],
+    "best_allies": " To get the most out of Lyria, pair her with heroes that either benefit from her vampirism or help trigger her passive skills. Phobos: Undead mage who benefits from her passive and supports magic teams.\nCorvus: Great tank with good physical attack and buffs. His synergy with undead is ideal for Lyria.\nMorrigan: The undead support who summons skeletons to feed Lyria's passive aura and reaping souls.\nKeira: As an undead hero with strong synergy with Lyria, Keira gains additional vampirism and benefits greatly from Lyria’s buffs. Here are a few team compositions where Lyria truly shines, mixing both synergy and strong counters. Discover the top War Flags to boost Lyria's support and healing potential in Hero Wars: Dominion Era. This team composition focuses on maximizing Lyria's healing potential while providing strong support and control through synergy with Ishmael vampirism. Did you like our Lyria Guide for Hero Wars Web and Facebook? Is there something you didn't understand or would like to suggest changes to? We invite you to join our comment section on the Alexandre Games Blog page. Feel free to express your opinion, clarify your doubts, and share your suggestions. Click the button below to get started: Did you like our Lyria Guide for Hero Wars Web and Facebook? Is there something you didn't understand or would like to suggest changes to? We invite you to join our comment section on the Alexandre Games Blog page. Feel free to express your opinion, clarify your doubts, and share your suggestions. Click the button below to get started:",
+    "counters": " Discover the top War Flags to boost Lyria's support and healing potential in Hero Wars: Dominion Era.",
+    "pets_synergy": ""
+  },
+  "kai": {
+    "heroId": "kai",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/kai-en.html",
+    "overview": "",
+    "skins_priority": [],
+    "artifacts_priority": [],
+    "glyphs_priority": [],
+    "skills_priority": [],
+    "best_allies": "",
+    "counters": "",
+    "pets_synergy": ""
+  },
+  "jet": {
+    "heroId": "jet",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/jet-en.html",
+    "overview": "Jet isn’t your average goblin he’s a mad scientist with a heart for healing and a mind for destruction! \n    Whether he’s boosting your team’s critical hits or shutting down enemy heals, Jet can turn the tide of any battle \n    with his unique mix of support and sabotage.",
+    "skins_priority": [],
+    "artifacts_priority": [
+      "Jet’s artifacts define how well he supports his allies. His Magic Attack directly boosts team critical chance and healing, making artifact prioritization crucial."
+    ],
+    "glyphs_priority": [
+      "Upgrade Jet’s glyphs smartly this guide keeps the game order and ranks each glyph by real battlefield impact so you know what to evolve first."
+    ],
+    "skills_priority": [],
+    "best_allies": " Jet thrives in backline support teams, especially when paired with heroes like Dante and Aurora. Aurora helps cover Dante’s vulnerability to magic, creating a balanced synergy that keeps the team resilient.",
+    "counters": " Learn which heroes are effective against Jet in Hero Wars: Dominion Era. These counters exploit his weaknesses, especially his reliance on Intelligence and support buffs. Cornelius\n\n\nWhy Cornelius counters Jet: Cornelius targets enemies with the highest Intelligence using Heavy Wisdom, dealing massive damage proportional to Intelligence. This directly punishes Jet’s high stat scaling, reducing his survivability and effectiveness in prolonged battles. Helios\n\n\nWhy Helios counters Jet: Helios’ Flaming Retribution punishes critical hits from enemies while Solar Wind is active. Since Jet buffs his allies’ critical hit chance, Helios reflects that aggression back onto Jet and his team, mitigating the impact of Jet’s passive and offensive support. Kayla\n\n\nWhy Kayla counters Jet: Kayla’s Possessed by Fire allows her to leap behind Jet and self-ignite, dealing sustained damage while renewing Phoenix Glyphs. Jet is a backline support and vulnerable to heroes who can bypass his front line, making Kayla’s mobility and damage over time highly effective against him. Jet Best War Flag Hero Wars\nDiscover the top War Flags for Jet in Hero Wars: Dominion Era, maximizing his healing, buffs, and energy support for backline allies.\n\n\n\n\nWar Flag of Recovery:\n\n.\nJet and Team Benefit: Increases all healing by 10%, directly enhancing Jet’s main role as a healer. This boosts his Elixir of Vigor effectiveness and keeps key allies alive longer, making it the top choice for support-focused battles.\n\n\n\n\n\nWar Flag of Decline:\n\n.\nJet and Team Benefit: Reduces enemy healing by 10%, synergizing perfectly with Jet’s healing and debuff abilities. By lowering enemy recovery, Jet’s team maintains the advantage in prolonged fights, increasing the overall value of his support skills.\n\n\n\n\n\nWar Flag of Readiness:\n\n.\nJet and Team Benefit: Grants 100 energy to the rearmost hero at the start of battle and every 20 seconds, perfectly supporting Jet in the backline. This allows him to use Elixir of Vigor and other skills faster, improving both his healing output and team buffs consistently throughout the fight. Did you like our Jet Guide for Hero Wars Web and Facebook? Is there something you didn't understand or would like to suggest changes to? We invite you to join our comment section on the Alexandre Games Blog page. Feel free to express your opinion, clarify your doubts, and share your suggestions. Click the button below to get started:",
+    "pets_synergy": ""
+  },
+  "peppy": {
+    "heroId": "peppy",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/peppy-en.html",
+    "overview": "",
+    "skins_priority": [],
+    "artifacts_priority": [],
+    "glyphs_priority": [],
+    "skills_priority": [],
+    "best_allies": "",
+    "counters": "",
+    "pets_synergy": ""
+  },
+  "lilith": {
+    "heroId": "lilith",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/lilith-en.html",
+    "overview": "",
+    "skins_priority": [],
+    "artifacts_priority": [],
+    "glyphs_priority": [],
+    "skills_priority": [],
+    "best_allies": "",
+    "counters": "",
+    "pets_synergy": ""
+  },
+  "xesha": {
+    "heroId": "xesha",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/xesha-en.html",
+    "overview": "",
+    "skins_priority": [],
+    "artifacts_priority": [],
+    "glyphs_priority": [],
+    "skills_priority": [],
+    "best_allies": "",
+    "counters": "",
+    "pets_synergy": ""
+  },
+  "orion": {
+    "heroId": "orion",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/orion-en.html",
+    "overview": "Orion wins fights by flooding the battlefield with fast magic hits before the enemy can stabilize. If you like back-line mages that snowball off tempo, this guide is for you.",
+    "skins_priority": [],
+    "artifacts_priority": [
+      "Orion's artifact order should favor permanent self-scaling first, then the teamwide magic burst that turns his ultimate into a stronger win condition."
+    ],
+    "glyphs_priority": [
+      "Orion's glyph priorities should make his spells hit harder first, then protect his back-line position enough to keep his casting cycle alive in real matches."
+    ],
+    "skills_priority": [],
+    "best_allies": " Fluffy + Augustus + Orion - Magic Defense Team Did you like our Orion Guide for Hero Wars Web and Facebook? Is there something you didn't understand or would like to suggest changes to? We invite you to join our comment section on the Alexandre Games Blog page. Feel free to express your opinion, clarify your doubts, and share your suggestions. Click the button below to get started:",
+    "counters": " Did you like our Orion Guide for Hero Wars Web and Facebook? Is there something you didn't understand or would like to suggest changes to? We invite you to join our comment section on the Alexandre Games Blog page. Feel free to express your opinion, clarify your doubts, and share your suggestions. Click the button below to get started:",
+    "pets_synergy": ""
+  },
+  "lars": {
+    "heroId": "lars",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/lars-en.html",
+    "overview": "",
+    "skins_priority": [],
+    "artifacts_priority": [],
+    "glyphs_priority": [],
+    "skills_priority": [],
+    "best_allies": "",
+    "counters": "",
+    "pets_synergy": ""
+  },
+  "krista": {
+    "heroId": "krista",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/krista-en.html",
+    "overview": "The long-awaited Krista rework has arrived in Hero Wars: Dominion Era, transforming her from a solid mage into a true game-changer. With revamped abilities, fresh Ascension Skills, and enhanced synergy with Marks of Water, Krista is now deadlier than ever — both on her own and when paired with Lars, Cascade\n, and other heroes.",
+    "skins_priority": [],
+    "artifacts_priority": [
+      "Krista’s artifacts are essential to maximize her team impact. Focus first on boosting her ultimate synergy and team damage, then add survivability and base stats for balanced progression."
+    ],
+    "glyphs_priority": [
+      "Krista’s glyphs significantly enhance her performance by amplifying her damage output and durability. Focus first on offensive power to maximize her Marks of Water synergy, then invest in survivability and secondary stats for balance."
+    ],
+    "skills_priority": [],
+    "best_allies": " Krista synergizes best with heroes that amplify Marks of Water effects. These allies enhance her damage output and crowd control, making team compositions more deadly. #\nTable: Best Defense Teams for Krista\n\n\nAurora, Krista, Celeste, Sebastian, Lars, Axel\nKrista, Jorgen, Folio, Lars, Lian, Khorus\nAstaroth, Krista, Jorgen, Lars, Lian, Khorus\nAstaroth, Krista, Jorgen, Lars, Martha, Khorus\nAurora, Krista, Jorgen, Lars, Thea, Khorus Did you like our Krista Guide for Hero Wars Web and Facebook? Is there something you didn't understand or would like to suggest changes to? We invite you to join our comment section on the Alexandre Games Blog page. Feel free to express your opinion, clarify your doubts, and share your suggestions. Click the button below to get started:",
+    "counters": " These heroes can counter Krista effectively by reducing her damage, blocking her spells, or limiting her Marks of Water synergy in battle. Understanding their skills helps you build a strategy against her.",
+    "pets_synergy": ""
+  },
+  "satori": {
+    "heroId": "satori",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/satori-en.html",
+    "overview": "",
+    "skins_priority": [],
+    "artifacts_priority": [],
+    "glyphs_priority": [],
+    "skills_priority": [],
+    "best_allies": "",
+    "counters": "",
+    "pets_synergy": ""
+  },
+  "heidi": {
+    "heroId": "heidi",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/heidi-en.html",
+    "overview": "Heidi might look harmless at first glance, but don’t be fooled behind that charming smile lies one of the deadliest mages in Dominion Era. Known for her swift strikes and nature’s fury, Heidi can turn the tide of battle with pure damage and unpredictable dodges.",
+    "skins_priority": [],
+    "artifacts_priority": [
+      "Heidi’s artifacts amplify her poison damage, survivability, and team support. Prioritizing the right artifacts enhances her offensive power and makes her harder to eliminate in battle."
+    ],
+    "glyphs_priority": [
+      "Heidi’s glyphs improve her poison strength, survivability, and dodge efficiency. Focusing on the right ones helps her strike harder while staying untouchable against physical and evasive teams like Dante and Aurora."
+    ],
+    "skills_priority": [],
+    "best_allies": " Recommended team composition for Heidi, combining heroes and pets that maximize her poison and pure damage potential while ensuring survivability and synergy.",
+    "counters": " These heroes are effective counters to Heidi, using their unique skills to limit her damage, control her abilities, and reduce her survivability in battle. Heidi excels at pure and poison damage, making the right War Flags crucial to boost her skills, energy generation, and team effectiveness in battles. Did you like our Heidi Guide for Hero Wars Web and Facebook? Is there something you didn't understand or would like to suggest changes to? We invite you to join our comment section on the Alexandre Games Blog page. Feel free to express your opinion, clarify your doubts, and share your suggestions. Click the button below to get started:",
+    "pets_synergy": ""
+  },
+  "cornelius": {
+    "heroId": "cornelius",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/cornelius-en.html",
+    "overview": "",
+    "skins_priority": [],
+    "artifacts_priority": [],
+    "glyphs_priority": [],
+    "skills_priority": [],
+    "best_allies": "",
+    "counters": "",
+    "pets_synergy": ""
+  },
+  "iris": {
+    "heroId": "iris",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/iris-en.html",
+    "overview": "Once a brilliant teacher of magic, Iris let her ambition lead her into forbidden power. Now, bound to the shadows, she’s back with unmatched destructive energy. This guide reveals how to build, equip, and unleash her full potential in Hero Wars: Dominion Era!",
+    "skins_priority": [],
+    "artifacts_priority": [
+      "Iris’s artifacts directly influence her magic damage, survivability, and overall combat consistency. Prioritizing the right ones greatly boosts her burst potential and support value for the team."
+    ],
+    "glyphs_priority": [
+      "Iris greatly benefits from glyphs that enhance her offensive magic potential, allowing her to destroy enemy souls faster. Secondary glyphs boost her survivability against strong teams."
+    ],
+    "skills_priority": [],
+    "best_allies": " Low Survivability: Iris is fragile and can be easily killed by physical damage dealers before using her skills.\nEnergy Dependent: Needs to charge energy to activate Expose Soul, making her vulnerable to heroes like Jorgen.\nWeak Against Magic Counters: Cornelius and Rufus can completely shut her down.\nPositioning Sensitive: Her effectiveness depends on team formation and how quickly she targets the main tank.\nNot Ideal for Long Fights: In extended battles, she may lose efficiency if her burst doesn’t finish key targets early. How it works: After the familiar returns to Iris, it transfers all the energy (Soul Fury) it collected from its bites. Each charge boosts Iris’s next basic attack, adding powerful Physical Attack. Iris is a highly destructive backline mage whose strength lies in her ability to deal massive Pure Damage and eliminate key targets quickly. Her skills, especially Expose Soul, allow her to bypass defenses and take down even the toughest tanks when properly supported. Did you like our Iris Guide for Hero Wars Web and Facebook? Is there something you didn't understand or would like to suggest changes to? We invite you to join our comment section on the Alexandre Games Blog page. Feel free to express your opinion, clarify your doubts, and share your suggestions. Click the button below to get started:",
+    "counters": " Learn how Iris’s skills work and which ones to upgrade first! This guide explains each ability in simple terms so you can build her power effectively. Learn the best heroes to counter Iris in Hero Wars: Dominion Era. Each counter takes advantage of Iris’s weaknesses, reducing her magic impact or preventing her deadly pure damage combo. Did you like our Iris Guide for Hero Wars Web and Facebook? Is there something you didn't understand or would like to suggest changes to? We invite you to join our comment section on the Alexandre Games Blog page. Feel free to express your opinion, clarify your doubts, and share your suggestions. Click the button below to get started:",
+    "pets_synergy": ""
+  },
+  "polaris": {
+    "heroId": "polaris",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/polaris-en.html",
+    "overview": "",
+    "skins_priority": [],
+    "artifacts_priority": [],
+    "glyphs_priority": [],
+    "skills_priority": [],
+    "best_allies": "",
+    "counters": "",
+    "pets_synergy": ""
+  },
+  "cascade": {
+    "heroId": "cascade",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/cascade-en.html",
+    "overview": "Few heroes in Hero Wars: Dominion Era are as mysterious and conflicted as Cascade. \n    Born of Titans yet raised as a human, his dual nature sparks curiosity and \n    makes players wonder which path he will ultimately choose.",
+    "skins_priority": [],
+    "artifacts_priority": [
+      "Discover the best artifact priority for Cascade in Hero Wars: Dominion Era. Learn which artifact upgrades matter most for battles and why."
+    ],
+    "glyphs_priority": [
+      "Optimizing Cascade’s glyphs in Hero Wars: Dominion Era is key to maximizing his Magic Attack and skill effectiveness, while keeping a balance of survivability and penetration."
+    ],
+    "skills_priority": [],
+    "best_allies": " Evolution Priority:\nMedium – Good in Intelligence-based magic teams, but weaker than Cascade's direct damage and anti-heal tools. Fluffy + Augustus + Cascade Team\n\n  The Fluffy–Augustus lineup is a defensive magic composition built to counter Sebastian, using the Sheep–Owl synergy to reduce his overall impact on the fight.\n\n  A key element that makes this team work is Cascade. She is essential for dealing with heroes like Rufus, who would normally shut down magic-based damage. By bypassing his protection, Cascade ensures that the team can keep applying pressure instead of getting completely stalled.\n\n  In addition to that, Cascade adds extra utility with her control and damage, helping the team maintain momentum during longer fights. This is especially important in a defensive setup, where consistency and control often matter more than burst damage.\n\n  Even though magic teams are usually vulnerable to Isaac, this composition adapts by using Orion or Polaris to break through Magic Defense, while Augustus converts that pressure into Pure Damage. Fluffy also helps protect the strategy by limiting the effectiveness of the Sebastian + Isaac combination.\n\n  Overall, without Cascade, this team would struggle against specific counters, making her one of the most important pieces in the entire composition.",
+    "counters": "",
+    "pets_synergy": ""
+  },
+  "augustus": {
+    "heroId": "augustus",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/augustus-en.html",
+    "overview": "Augustus is one of those heroes who immediately captures players’ curiosity   a calm, sky-touched ambassador who speaks softly but strikes with storms. \nIn this guide, you’ll learn how to unlock his true destructive potential, from his thunder bursts to his synergy with Orion, \nthe mighty pet Khorus, and even the newest frontline protector, Electra.  \nIf you love mages who mix elegance, raw power, and brilliant team synergy, Augustus will feel right at home in your roster.",
+    "skins_priority": [],
+    "artifacts_priority": [
+      "Discover the correct artifact evolution order for Augustus in Hero Wars: Dominion Era, ranked by how much each artifact improves his burst damage and overall team impact."
+    ],
+    "glyphs_priority": [
+      "Learn the real combat priority for Augustus’s glyphs in Hero Wars: Dominion Era, ranked by how much each one boosts his damage output and overall effectiveness."
+    ],
+    "skills_priority": [],
+    "best_allies": " This team is extremely strong because it combines high sustained damage, powerful magic bursts, and constant support. Dante is the main carry, and Jet plays a crucial role by providing both healing and a massive Critical Hit boost, allowing Dante to deal significantly higher damage with every attack.",
+    "counters": " Augustus relies heavily on Magic Attack, Intelligence scaling, and teamwide magical amplification. To counter him effectively, you must target his weaknesses: his high Intelligence, his dependence on uninterrupted skill casts, and his reliance on magic-damage–based team compositions. The counters below exploit these weaknesses directly through anti-magic mechanics, Intelligence destruction, and magic-damage shutdown. This team is extremely strong because it combines high sustained damage, powerful magic bursts, and constant support. Dante is the main carry, and Jet plays a crucial role by providing both healing and a massive Critical Hit boost, allowing Dante to deal significantly higher damage with every attack.",
+    "pets_synergy": ""
+  },
+  "folio": {
+    "heroId": "folio",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/folio-en.html",
+    "overview": "What would happen if a tome of powerful spells attained sentience? You'd get the no less powerful Folio. \n    He might prefer the quiet of the library to the chaos of battle, but an insatiable sense of curiosity drove him to join the ranks of the Guardians.",
+    "skins_priority": [],
+    "artifacts_priority": [
+      "Discover which of Folio’s artifacts should be evolved first to maximize his performance in battle by boosting his key magical abilities and survivability."
+    ],
+    "glyphs_priority": [
+      "Learn which Glyphs you should evolve first to boost Folio's skill efficiency and combat potential in Hero Wars: Dominion Era."
+    ],
+    "skills_priority": [],
+    "best_allies": " #\nTable: Best Defense Teams for Folio\n\n\nDante, Nebula, Orion, Folio, Augustus, Khorus\nDante, Nebula, Orion, Folio, Dorian, Khorus\nRufus, Lyria, Sebastian, Folio, Lara Croft, Axel\nAmira, Nebula, Folio, Aidan, Polaris, Khorus\nRufus, Lyria, Sebastian, Folio, Axe Did you like our Folio Guide for Hero Wars Web and Facebook? Is there something you didn't understand or would like to suggest changes to? We invite you to join our comment section on the Alexandre Games Blog page. Feel free to express your opinion, clarify your doubts, and share your suggestions. Click the button below to get started:",
+    "counters": "",
+    "pets_synergy": ""
+  },
+  "somna": {
+    "heroId": "somna",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/somna-en.html",
+    "overview": "Somna does not enter a fight to top the damage chart. She enters to steal time. One ultimate can put an entire enemy team to sleep, and every Sleepiness stack makes the next exchange safer for your side.",
+    "skins_priority": [],
+    "artifacts_priority": [
+      "Somna's artifacts pull in two directions: permanent survival and Physical Attack scaling for herself, or a temporary Magic Defense buff for the whole team."
+    ],
+    "glyphs_priority": [
+      "I prioritize Somna's utility scaling first: Physical Attack, then Agility, Health and Magic Defense. Armor Penetration comes last because damage is not her main job."
+    ],
+    "skills_priority": [],
+    "best_allies": " That low Independence score is not a criticism; it explains how to use her. Somna is an amplifier for a plan. Give her a team that profits from extra seconds and her value rises sharply. These are the two compositions that stood out in my tests. Both use Axel as the main pet, but one leans into Adam's long-fight physical pressure while the other supports a magic-heavy core. Did you like our Somna Guide for Hero Wars: Dominion Era? Is there something you didn't understand or would like to suggest changes to? We invite you to join our comment section on the Alexandre Games Blog page. Feel free to express your opinion, clarify your doubts, and share your suggestions. Click the button below to get started: Did you like our Somna Guide for Hero Wars: Dominion Era? Is there something you didn't understand or would like to suggest changes to? We invite you to join our comment section on the Alexandre Games Blog page. Feel free to express your opinion, clarify your doubts, and share your suggestions. Click the button below to get started:",
+    "counters": " Somna's threat is concentrated in control. The cleanest answer is a hero who prevents that control before her allies can exploit the free time.",
+    "pets_synergy": ""
+  },
+  "helios": {
+    "heroId": "helios",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/helios-en.html",
+    "overview": "",
+    "skins_priority": [],
+    "artifacts_priority": [],
+    "glyphs_priority": [],
+    "skills_priority": [],
+    "best_allies": "",
+    "counters": "",
+    "pets_synergy": ""
+  },
+  "maya": {
+    "heroId": "maya",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/maya-en.html",
+    "overview": "",
+    "skins_priority": [],
+    "artifacts_priority": [],
+    "glyphs_priority": [],
+    "skills_priority": [],
+    "best_allies": "",
+    "counters": "",
+    "pets_synergy": ""
+  },
+  "mojo": {
+    "heroId": "mojo",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/mojo-en.html",
+    "overview": "",
+    "skins_priority": [],
+    "artifacts_priority": [],
+    "glyphs_priority": [],
+    "skills_priority": [],
+    "best_allies": "",
+    "counters": "",
+    "pets_synergy": ""
+  },
+  "mushy": {
+    "heroId": "mushy",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/mushy-and-shroom-en.html",
+    "overview": "Mushy & Shroom are one of the most fascinating tanks in Hero Wars: Dominion Era, born from the ancient magic of the forest. As sentient fungi who evolved through pure woodland energy, they fight not as one but as many. Their gameplay revolves around creating additional copies that join the battle once they receive enough healing, opening up a unique strategy that rewards sustain-heavy teams.",
+    "skins_priority": [],
+    "artifacts_priority": [
+      "This guide explains the optimal artifact upgrade order for Mushy & Shroom in Hero Wars: Dominion Era, focusing on which artifacts provide the strongest impact in battle and best enhance their tank–mage hybrid role."
+    ],
+    "glyphs_priority": [
+      "This guide explains the optimal glyph upgrade order for Mushy & Shroom in Hero Wars: Dominion Era, focusing on which stats offer the highest impact in battle and why their tank–mage hybrid kit benefits more from survivability scaling."
+    ],
+    "skills_priority": [],
+    "best_allies": "",
+    "counters": "",
+    "pets_synergy": ""
+  },
+  "amira": {
+    "heroId": "amira",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/amira-en.html",
+    "overview": "Enter the shifting sands of the Dominion where illusion reigns and truths blur. Amira, a mysterious genie, tests the spirit of every hero who dares seek her power. With mesmerizing mirages and mind games, she challenges not just your strategy but your will. Are you clever enough to turn her deceptive magic into your greatest weapon?",
+    "skins_priority": [],
+    "artifacts_priority": [
+      "Discover the best artifact priority for Amira in Hero Wars and learn which upgrades enhance her illusions and damage in real combat situations."
+    ],
+    "glyphs_priority": [
+      "Discover the best glyphs for Amira in Hero Wars: Dominion Era. Learn which glyphs boost her illusion magic and battle impact most effectively."
+    ],
+    "skills_priority": [],
+    "best_allies": " #\nTable: Best Defense Teams for Amira\n\n\nRufus, Amira, Nebula, Heidi, Polaris, Khorus\nAmira, Nebula, Heidi, Aidan, Thea, Khorus\nJulius, Amira, Nebula, Heidi, Polaris, Oliver\nDante, Amira, Nebula, Aidan, Thea, Khorus",
+    "counters": "",
+    "pets_synergy": ""
+  },
+  "solaris": {
+    "heroId": "solaris",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/solaris-en.html",
+    "overview": "",
+    "skins_priority": [],
+    "artifacts_priority": [],
+    "glyphs_priority": [],
+    "skills_priority": [],
+    "best_allies": "",
+    "counters": "",
+    "pets_synergy": ""
+  },
+  "martha": {
+    "heroId": "martha",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/martha-en.html",
+    "overview": "",
+    "skins_priority": [],
+    "artifacts_priority": [],
+    "glyphs_priority": [],
+    "skills_priority": [],
+    "best_allies": "",
+    "counters": "",
+    "pets_synergy": ""
+  },
+  "celeste": {
+    "heroId": "celeste",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/celeste-en.html",
+    "overview": "Celeste is one of the most fascinating heroes in Hero Wars: Dominion Era, balancing between the powers of light and darkness. \n    She can switch forms mid-battle, making her one of the most versatile mages in the game.",
+    "skins_priority": [],
+    "artifacts_priority": [
+      "Understanding Celeste’s artifact priority is key to boosting both her support and damage potential. Focusing on the right ones maximizes her Light and Dark Form impact."
+    ],
+    "glyphs_priority": [
+      "Discover the best glyph upgrade priority for Celeste in Hero Wars Dominion Era to maximize her healing, damage, and survivability."
+    ],
+    "skills_priority": [],
+    "best_allies": " #\nTable: Best Defense Teams for Celeste\n\n\nLyria, Dante, Celeste, Orion, Augustus, Khorus\nAstaroth, Satori, Celeste, Jorgen, Faceless, Axel\nAstaroth, Satori, Celeste, Amira, Lian, Axel",
+    "counters": " Learn which heroes can effectively counter Celeste based on their skills and how they exploit her weaknesses in battle. Did you like our Celeste Guide for Hero Wars Web and Facebook? Is there something you didn't understand or would like to suggest changes to? We invite you to join our comment section on the Alexandre Games Blog page. Feel free to express your opinion, clarify your doubts, and share your suggestions. Click the button below to get started:",
+    "pets_synergy": ""
+  },
+  "dorian": {
+    "heroId": "dorian",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/dorian-en.html",
+    "overview": "",
+    "skins_priority": [],
+    "artifacts_priority": [],
+    "glyphs_priority": [],
+    "skills_priority": [],
+    "best_allies": "",
+    "counters": "",
+    "pets_synergy": ""
+  },
+  "jorgen": {
+    "heroId": "jorgen",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/jorgen-en.html",
+    "overview": "",
+    "skins_priority": [],
+    "artifacts_priority": [],
+    "glyphs_priority": [],
+    "skills_priority": [],
+    "best_allies": "",
+    "counters": "",
+    "pets_synergy": ""
+  },
+  "fafnir": {
+    "heroId": "fafnir",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/fafnir-en.html",
+    "overview": "",
+    "skins_priority": [],
+    "artifacts_priority": [],
+    "glyphs_priority": [],
+    "skills_priority": [],
+    "best_allies": "",
+    "counters": "",
+    "pets_synergy": ""
+  },
+  "faceless": {
+    "heroId": "faceless",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/faceless-en.html",
+    "overview": "",
+    "skins_priority": [],
+    "artifacts_priority": [],
+    "glyphs_priority": [],
+    "skills_priority": [],
+    "best_allies": "",
+    "counters": "",
+    "pets_synergy": ""
+  },
+  "nebula": {
+    "heroId": "nebula",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/nebula-en.html",
+    "overview": "Nebula is a powerful support and healer in Hero Wars: Dominion Era. Fighting from the middle line, she enhances nearby allies with her unique energy-balancing abilities. As stars collapse and new worlds form, she fights an eternal battle to ensure the Universe’s harmony.",
+    "skins_priority": [],
+    "artifacts_priority": [
+      "Nebula's artifacts should prioritize her support role (Equilibrium buffs, healing) over damage, with survival as secondary focus."
+    ],
+    "glyphs_priority": [
+      "Nebula's glyphs should maximize her support potential (Equilibrium buffs, healing) and survivability, as she rarely deals direct damage."
+    ],
+    "skills_priority": [],
+    "best_allies": " #\nTable: Best Defense Teams for Nebula\n\n\nDante, Nebula, Orion, Augustus, Dorian, Khorus\nDante, Nebula, Orion, Augustus, Jet, Khorus\nDante, Nebula, Orion, Augustus, Thea, Khorus\nDante, Nebula, Orion, Augustus, Aidan, Khorus\nDante, Nebula, Orion, Augustus, Martha, Khorus\nDante, Nebula, Sebastian, Aidan, Fafnir, Khorus\nDante, Nebula, Sebastian, Lara-Croft, Aidan, Khorus Strategic Limitations:\n\nPosition-Sensitive: Requires precise team placement (middle-line)\nEnergy Starved: Ult rarely activates without Cain pet\nFragile: Needs protection vs burst teams (Yasmine/K'arkh) Did you like our Nebula Guide for Hero Wars Web and Facebook? Is there something you didn't understand or would like to suggest changes to? We invite you to join our comment section on the Alexandre Games Blog page. Feel free to express your opinion, clarify your doubts, and share your suggestions. Click the button below to get started:",
+    "counters": " 1. Disrupt Her Positioning\nWhy it works:\n    Nebula's Equilibrium only buffs nearby allies. Forced repositioning breaks her synergies.\n\nMaya (3rd Skill - Living Sprouts)\nPulls far-left/right enemies together, potentially isolating Nebula from her core team.\nBonus: Poison deals pure damage every 6 seconds.\n\n\nLars (1st Skill - Cyclone)\nDisplaces enemies with AoE knockbacks, often moving Nebula away from her damage dealers. Pro Tip: Pair displacement (Maya) with burst damage (Keira) to overwhelm Nebula before she heals. Did you like our Nebula Guide for Hero Wars Web and Facebook? Is there something you didn't understand or would like to suggest changes to? We invite you to join our comment section on the Alexandre Games Blog page. Feel free to express your opinion, clarify your doubts, and share your suggestions. Click the button below to get started: Did you like our Nebula Guide for Hero Wars Web and Facebook? Is there something you didn't understand or would like to suggest changes to? We invite you to join our comment section on the Alexandre Games Blog page. Feel free to express your opinion, clarify your doubts, and share your suggestions. Click the button below to get started:",
+    "pets_synergy": ""
+  },
+  "morrigan": {
+    "heroId": "morrigan",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/morrigan-en.html",
+    "overview": "",
+    "skins_priority": [],
+    "artifacts_priority": [],
+    "glyphs_priority": [],
+    "skills_priority": [],
+    "best_allies": "",
+    "counters": "",
+    "pets_synergy": ""
+  },
+  "phobos": {
+    "heroId": "phobos",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/phobos-en.html",
+    "overview": "",
+    "skins_priority": [],
+    "artifacts_priority": [],
+    "glyphs_priority": [],
+    "skills_priority": [],
+    "best_allies": "",
+    "counters": "",
+    "pets_synergy": ""
+  },
+  "lian": {
+    "heroId": "lian",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/lian-en.html",
+    "overview": "",
+    "skins_priority": [],
+    "artifacts_priority": [],
+    "glyphs_priority": [],
+    "skills_priority": [],
+    "best_allies": "",
+    "counters": "",
+    "pets_synergy": ""
+  },
+  "octavia": {
+    "heroId": "octavia",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/octavia-en.html",
+    "overview": "",
+    "skins_priority": [],
+    "artifacts_priority": [],
+    "glyphs_priority": [],
+    "skills_priority": [],
+    "best_allies": "",
+    "counters": "",
+    "pets_synergy": ""
+  },
+  "aidan": {
+    "heroId": "aidan",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/aidan-en.html",
+    "overview": "Aidan isn't just a healer   he's a survivor of tragedy, bound by flame and fate to his sister Kayla. In Hero Wars: Dominion Era, Aidan brings both powerful healing and searing magic to the battlefield. But what makes him truly unique is the life he shares with his sister, forming one of the game’s most emotionally complex duos. Whether you’re here to master his mechanics or understand his story, you’re in for something special.",
+    "skins_priority": [],
+    "artifacts_priority": [
+      "Learn which artifacts to level first for Aidan to maximize his healing, magic damage, and team support effectiveness in Hero Wars: Dominion Era."
+    ],
+    "glyphs_priority": [
+      "Short summary: prioritize Magic Attack first, then Intelligence to boost healing and pure-damage scaling; after that focus on Magic Penetration, Health and finally Magic Defense."
+    ],
+    "skills_priority": [],
+    "best_allies": " Vulnerable to back-line assassins: Easily countered by heroes like Cleaver, Jhu, and Kayla.\nDependent on energy: Needs to cast his ultimate often to be effective   energy control or denial hurts him badly.\nNo crowd control: Offers no stuns, silences, or slows   purely reactive support.\nShared health risk: If Kayla or a bonded ally dies, Aidan can fall quickly due to the damage feedback.\nLow base durability: Without scaling defense, he relies entirely on shields and positioning to survive. Fire Wave Base Healing Formula: 7,307 healing per ally (4.3% Magic Attack + Level × 10)",
+    "counters": " Aidan's Best Teams #3\n\n\n#3\n\n\n\nKhorus\n\n\n\n\nAlbus\n\n\n\n\nMerlin\n\n\n\n\nFenris\n\n\n\n\nCain\n\n\n\n\n\n\nKhorus\n\n\n\n\nAidan\n\n\n\n\nAugustus\n\n\n\n\nOrion\n\n\n\n\nSebastian\n\n\n\n\nDante\n\n\n\n\nTeam #3 Strategy\nThis composition represents the defensive variant of the Augustus meta that gained widespread popularity in 2024. Augustus became rapidly adopted because players could seamlessly integrate him into their existing rosters with minimal restructuring — simply leveling him up was enough to create a competitive lineup.\nThe combination of Augustus + Orion delivers consistent pure damage that bypasses conventional defenses, while Dante provides the core defensive foundation through his dodge-based damage mitigation. Sebastian adds immunity protection, making this setup exceptionally resilient against control-heavy opponents. Aidan's sustained healing keeps Dante alive, allowing his dodge mechanics to shine throughout extended battles.",
+    "pets_synergy": ""
+  },
+  "thea": {
+    "heroId": "thea",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/thea-en.html",
+    "overview": "Thea is one of the most reliable healers in Hero Wars: Dominion Era. If you’re looking for a support hero that can keep your team alive through the toughest battles, Thea’s your girl. Positioned in the back line, she works behind the scenes, but don’t underestimate her impact her healing waves and silences can completely shift the tide of a fight.",
+    "skins_priority": [
+      "Enhancing Thea’s key attributes through proper upgrades greatly improves her healing and survivability in battle. Prioritize magic-related boosts for maximum team support."
+    ],
+    "artifacts_priority": [
+      "Focus on artifacts that strengthen Thea’s healing and support capabilities, ensuring better survivability for your entire team."
+    ],
+    "glyphs_priority": [
+      "Prioritize glyphs that enhance Thea’s healing power and durability to keep your team alive longer during battles."
+    ],
+    "skills_priority": [],
+    "best_allies": " Khorus, Thea, Augustus, Orion, Nebula, Lyria\nKhorus, Thea, Augustus, Orion, Dante, Lyria\nKhorus, Thea, Augustus, Orion, Nebula, Dante\nKhorus, Axel, Fafnir, Thea, Sebastian, Nebula, Dante\nKhorus, Axel, Fafnir, Thea, Sebastian, Ishmael, Astaroth\nThea, Iris, Sebastian, Dante, Rufus\nKhorus, Thea, Aidan, Dante, Mushy, Corvus",
+    "counters": " Cleaver: Can pull Thea out of the back line with his hook, making her an easy target.\nJhu: Deals huge damage to back line heroes like Thea with his critical hits.\nCeleste: Her Dark mode converts Thea’s heals into magic damage a direct counter.\nPet Biscuit: Prevents enemies from receiving healing and deals extra damage.",
+    "pets_synergy": ""
+  },
+  "markus": {
+    "heroId": "markus",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/markus-en.html",
+    "overview": "",
+    "skins_priority": [],
+    "artifacts_priority": [],
+    "glyphs_priority": [],
+    "skills_priority": [],
+    "best_allies": "",
+    "counters": "",
+    "pets_synergy": ""
+  },
+  "rigel": {
+    "heroId": "rigel",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/rigel-en.html",
+    "overview": "",
+    "skins_priority": [],
+    "artifacts_priority": [],
+    "glyphs_priority": [],
+    "skills_priority": [],
+    "best_allies": "",
+    "counters": "",
+    "pets_synergy": ""
+  },
+  "adam": {
+    "heroId": "adam",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/adam-en.html",
+    "overview": "Adam is a highly mobile Marksman hero in Hero Wars: Dominion Era, introduced as a temporary/event character. He excels at focused single-target burst damage, leveraging his unique Hunter's Mark mechanic to stack bonuses and destroy priority targets. His playstyle rewards fast skill rotations and synergy with team-wide buff providers.",
+    "skins_priority": [],
+    "artifacts_priority": [],
+    "glyphs_priority": [],
+    "skills_priority": [],
+    "best_allies": " Control: ⭐⭐\nDamage: ⭐⭐⭐⭐⭐\nSynergy: ⭐⭐⭐\nIndependence: ⭐⭐⭐⭐ Adam thrives alongside heroes who amplify physical attack, provide armor reduction, or protect him long enough to stack Hunter's Mark bonuses. Here are the top synergy heroes: Adam performs best in physical damage compositions that can support his mark-stacking playstyle. Below are the two recommended team setups:",
+    "counters": " Fluffy – Hard Counter",
+    "pets_synergy": ""
+  },
+  "fluffy": {
+    "heroId": "fluffy",
+    "url": "https://alexandregames.com/hero-wars-dominion-era/characters/fluffy-en.html",
+    "overview": "Wait… is that a soft bleat echoing across the battlefield? Meet Fluffy — an innocent-looking lamb hiding something far more sinister beneath his wool. 🐑🔥",
+    "skins_priority": [],
+    "artifacts_priority": [
+      "Fluffy’s artifacts reinforce her risky demon-support kit in Hero Wars: Dominion Era, adding teamwide magic defense, raw health and scaling damage."
+    ],
+    "glyphs_priority": [
+      "Recommended glyph order for Fluffy based on battlefield utility and synergies with her kit."
+    ],
+    "skills_priority": [],
+    "best_allies": " Risk of self-damage: Some counter mechanics (e.g., Usurpation when triggered) inflict self-damage; ensure sufficient HP and sustain.\nVulnerable to magic bursts: Heavy magic damage can outpace heals and bypass the ultimate's protection.\nAbility/CD dependency: Usurpation has a cooldown and a chance to cancel—not always reliable.\nPositioning is critical: Needs proper placement to take advantage of Readiness and resurrection windows.\nCounters: Silences, dispels and skill-level reduction greatly weaken Fluffy.",
+    "counters": "",
+    "pets_synergy": ""
+  }
+}

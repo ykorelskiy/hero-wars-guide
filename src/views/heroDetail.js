@@ -2,6 +2,7 @@ import { heroById } from '../data/dataService.js';
 import { getPatronPetsForHero } from '../data/petsData.js';
 import { navigateTo } from '../components/navigation.js';
 import { getHeroTier, TIER_RANKS } from '../data/tierData.js';
+import { getHeroGuide } from '../data/heroGuidesData.js';
 
 export function renderHeroDetail(heroId) {
   const wrap = document.getElementById('heroDetailWrap');
@@ -28,39 +29,31 @@ export function renderHeroDetail(heroId) {
 
   const tier = getHeroTier(hero.id);
   const tierInfo = TIER_RANKS[tier] || TIER_RANKS['A'];
+  const heroGuide = getHeroGuide(hero.id);
 
   // Compatible Pets for Patronage
   const patronPets = getPatronPetsForHero(hero.id);
 
-  const petsBadgesHtml = (patronPets.length > 0)
+  const petsBadgesHtml = patronPets.length > 0
     ? patronPets.map(p => `
-        <div class="pet-patron-badge" data-pet="${p.id}" style="display:flex; align-items:center; gap:10px; background:rgba(30, 41, 59, 0.85); border:1px solid rgba(245, 158, 11, 0.3); border-radius:12px; padding:10px 14px; cursor:pointer; transition:all 0.2s ease;">
-          <img src="${p.icon}" alt="${p.name}" style="width:36px; height:36px; border-radius:50%; object-fit:cover; border:2px solid #f59e0b;" onerror="this.src='/images/heroes/cain.png'" />
+        <div class="pet-badge-card" style="display:flex; align-items:center; gap:12px; background:rgba(30, 41, 59, 0.7); border:1px solid rgba(245, 158, 11, 0.3); border-radius:12px; padding:10px 14px; cursor:pointer;" data-pet-id="${p.id}">
+          <img src="${p.icon}" alt="${p.name}" style="width:44px; height:44px; object-fit:contain; border-radius:50%; background:rgba(0,0,0,0.3); border:2px solid #f59e0b;" onerror="this.src='/images/pets/fenris.png';" />
           <div>
-            <div style="font-weight:800; color:#ffffff; font-size:0.95rem;">🐾 ${p.name}</div>
-            <div style="color:#fbbf24; font-size:0.8rem;">${p.role}</div>
+            <div style="font-weight:700; color:#ffffff; font-size:0.95rem;">${p.name}</div>
+            <div style="font-size:0.8rem; color:#f59e0b;">${p.role}</div>
           </div>
-          <span style="margin-left:auto; color:#f59e0b; font-size:1.2rem;">→</span>
         </div>
       `).join('')
-    : '<div style="color:#94a3b8; font-size:0.9rem;">Нет информации по особым связям патронажа.</div>';
+    : '<div style="color:#94a3b8; font-size:0.9rem; padding:10px;">Нет прямых данных о патронаже питомцев</div>';
 
-  const skillsHtml = (hero.skills && hero.skills.length > 0)
-    ? hero.skills.map((s, i) => `
-        <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255, 255, 255, 0.12); border-left: 4px solid ${statColor}; border-radius: 14px; padding: 18px; margin-bottom: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
-          <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px; margin-bottom: 10px;">
-            <div style="display:flex; align-items:center; gap:10px;">
-              <span style="background:${statColor}; color:#0f172a; font-weight:900; width:32px; height:32px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:1rem;">${i + 1}</span>
-              <span style="font-size:1.2rem; font-weight:800; color:#ffffff;">${s.name}</span>
-              <span style="background:rgba(255,255,255,0.1); color:#f59e0b; padding:4px 12px; border-radius:12px; font-size:0.83rem; font-weight:600;">${s.type}</span>
-            </div>
-            ${s.max_val ? `<div style="background: rgba(245, 158, 11, 0.15); border: 1px solid rgba(245, 158, 11, 0.3); color: #fbbf24; padding: 4px 12px; border-radius: 8px; font-size: 0.88rem; font-weight: 700;">🏆 130 ур: ${s.max_val}</div>` : ''}
+  const skillsHtml = (hero.skills && hero.skills.length > 0) 
+    ? hero.skills.map(s => `
+        <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255, 255, 255, 0.12); border-left: 4px solid ${statColor}; border-radius: 12px; padding: 18px; margin-bottom: 16px;">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; flex-wrap:wrap; gap:8px;">
+            <b style="color: #ffffff; font-size: 1.15rem;">${s.name}</b>
+            <span style="background: rgba(255, 255, 255, 0.1); color: #cbd5e1; padding: 3px 12px; border-radius: 6px; font-size: 0.85rem; font-weight: 600;">${s.type}</span>
           </div>
-
-          <div style="color: #cbd5e1; font-size: 0.95rem; line-height: 1.6; margin-bottom: 12px; background: rgba(255,255,255,0.03); padding: 12px 16px; border-radius: 10px;">
-            ${s.desc}
-          </div>
-
+          <div style="color: #cbd5e1; font-size: 0.95rem; line-height: 1.6; margin-bottom: 12px;">${s.desc}</div>
           <div style="display:grid; grid-template-columns: 1fr; gap:10px;">
             ${s.depends_on ? `<div style="background: rgba(6, 182, 212, 0.1); border: 1px solid rgba(6, 182, 212, 0.25); color: #38bdf8; padding: 8px 14px; border-radius: 8px; font-size: 0.9rem; font-weight: 600;">🎯 <b>Зависит от:</b> <span style="color:#ffffff;">${s.depends_on}</span></div>` : ''}
             ${s.formula ? `<div style="background: rgba(30, 41, 59, 0.9); border: 1px solid rgba(255, 255, 255, 0.15); padding: 10px 14px; border-radius: 8px; font-size: 0.92rem; color: #f8fafc;">📐 <b>Формула расчёта:</b> <span style="color:#facc15; font-weight:700;">${s.formula}</span></div>` : ''}
@@ -86,6 +79,33 @@ export function renderHeroDetail(heroId) {
         </div>
       `).join('')
     : '<div class="bx info">Подробное описание артефактов обновляется...</div>';
+
+  // Skins HTML
+  const skinsHtml = (heroGuide.skins && heroGuide.skins.length > 0)
+    ? heroGuide.skins.map(sk => `
+        <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); padding:14px 18px; border-radius:12px; margin-bottom:10px;">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+            <b style="color:#ffffff; font-size:1.05rem;">${sk.name}</b>
+            <span style="color:#facc15; font-size:0.85rem; font-weight:700;">${sk.priority}</span>
+          </div>
+          <div style="color:#34d399; font-size:0.9rem; font-weight:600; margin-bottom:4px;">${sk.bonus}</div>
+          <div style="color:#cbd5e1; font-size:0.88rem; line-height:1.5;">${sk.reason}</div>
+        </div>
+      `).join('')
+    : '<div style="color:#cbd5e1; font-size:0.9rem;">Приоритет скинов рассчитывается исходя из ключевого профильного атрибута.</div>';
+
+  // Glyphs HTML
+  const glyphsHtml = (heroGuide.glyphs && heroGuide.glyphs.length > 0)
+    ? heroGuide.glyphs.map(gl => `
+        <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); padding:12px 16px; border-radius:10px; margin-bottom:8px; display:flex; justify-content:space-between; align-items:center;">
+          <div>
+            <b style="color:#ffffff; font-size:0.95rem;">${gl.name}</b>
+            <div style="color:#38bdf8; font-size:0.85rem;">${gl.bonus}</div>
+          </div>
+          <span style="background:rgba(250, 204, 21, 0.15); color:#facc15; border:1px solid rgba(250, 204, 21, 0.3); padding:4px 10px; border-radius:6px; font-size:0.82rem; font-weight:700;">${gl.priority}</span>
+        </div>
+      `).join('')
+    : '<div style="color:#cbd5e1; font-size:0.9rem;">Сначала прокачиваем Главный Атрибут и Пробивание, затем Здоровье и Защиту.</div>';
 
   wrap.innerHTML = `
     <div style="margin-bottom:20px;">
@@ -121,42 +141,54 @@ export function renderHeroDetail(heroId) {
     <!-- HERO DESCRIPTION SECTION -->
     <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(255, 255, 255, 0.14); border-radius: 16px; padding: 22px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
       <h3 style="color:#ffffff; font-size:1.3rem; margin-bottom:12px; display:flex; align-items:center; gap:8px;">
-        📜 Описание и Механика Персонажа
+        📜 Разбор Механики и Роли Персонажа
       </h3>
       <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); padding:16px 20px; border-radius:12px; color:#e2e8f0; font-size:1.02rem; line-height:1.75;">
-        ${hero.description || 'Подробное описание роли, истории и игровых синергий персонажа в игре Hero Wars: Dominion Era.'}
+        ${heroGuide.overview || hero.description || 'Подробный разбор роли персонажа в игре Hero Wars: Dominion Era.'}
       </div>
     </div>
 
     <!-- STRATEGIC GUIDE SECTION -->
     <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(16, 185, 129, 0.25); border-radius: 16px; padding: 22px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
       <h3 style="color:#34d399; font-size:1.3rem; margin-bottom:14px; display:flex; align-items:center; gap:8px;">
-        💡 Стратегический Гайд (Синергии, Контр-пики и Прокачка)
+        💡 Стратегический Гайд (Синергии, Контр-пики и Питомцы)
       </h3>
       <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:14px;">
         
         <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); padding:16px; border-radius:12px;">
           <b style="color:#facc15; font-size:1rem; display:block; margin-bottom:8px;">🎯 Лучшие Синергии и Напарники:</b>
           <p style="color:#cbd5e1; font-size:0.92rem; line-height:1.6; margin:0;">
-            Отлично сочетается с фракцией <b>${hero.faction || 'Путь вечности'}</b> и бафферами уворота/пробивания брони (Себастьян, Небула, Тристан, Октавия).
+            ${heroGuide.allies || `Отлично сочетается с героями фракции ${hero.faction || 'Путь вечности'} и бафферами своего главного атрибута.`}
           </p>
         </div>
 
         <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); padding:16px; border-radius:12px;">
           <b style="color:#ef4444; font-size:1rem; display:block; margin-bottom:8px;">⚔️ Опасные Контр-пики:</b>
           <p style="color:#cbd5e1; font-size:0.92rem; line-height:1.6; margin:0;">
-            Уязвим к героям с чистым уроном (Хайди, Ирис), эффектам глушения/контроля (Арахна) и блокировщикам ультимейтов (Флаффи).
+            ${heroGuide.counters || 'Уязвим к героям с противоположными типами урона и глушением.'}
           </p>
         </div>
 
         <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); padding:16px; border-radius:12px;">
-          <b style="color:#60a5fa; font-size:1rem; display:block; margin-bottom:8px;">📊 Приоритет Прокачки:</b>
+          <b style="color:#60a5fa; font-size:1rem; display:block; margin-bottom:8px;">🐾 Совместимость с Питомцами:</b>
           <p style="color:#cbd5e1; font-size:0.92rem; line-height:1.6; margin:0;">
-            Сначала качаем 1-й Ультимативный скил и Пассивный скейлинг урона, затем 1-й слот Артефакта (Пробивание) и Главный Атрибут (${hero.main_stat}).
+            ${heroGuide.pets || 'Подходят профильные питомцы на защиту, пробивание или набор энергии.'}
           </p>
         </div>
 
       </div>
+    </div>
+
+    <!-- SKINS EVOLUTION PRIORITY SECTION -->
+    <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(250, 204, 21, 0.25); border-radius: 16px; padding: 22px; margin-bottom: 24px;">
+      <h3 style="color:#facc15; font-size:1.3rem; margin-bottom:14px;">⭐ Приоритет Прокачки Обликов (Skins Upgrade Order)</h3>
+      ${skinsHtml}
+    </div>
+
+    <!-- GLYPHS PRIORITY SECTION -->
+    <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(56, 189, 248, 0.25); border-radius: 16px; padding: 22px; margin-bottom: 24px;">
+      <h3 style="color:#38bdf8; font-size:1.3rem; margin-bottom:14px;">💎 Приоритет Прокачки Символов (Glyphs Evolution Order)</h3>
+      ${glyphsHtml}
     </div>
 
     <!-- PATRONAGE SECTION -->
@@ -186,9 +218,9 @@ export function renderHeroDetail(heroId) {
   // Bind Events
   document.getElementById('heroBackBtn')?.addEventListener('click', () => navigateTo('wiki'));
 
-  wrap.querySelectorAll('.pet-patron-badge').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const petId = btn.dataset.pet;
+  wrap.querySelectorAll('.pet-badge-card').forEach(card => {
+    card.addEventListener('click', () => {
+      const petId = card.dataset.petId;
       if (petId) navigateTo('pet-detail', petId);
     });
   });
