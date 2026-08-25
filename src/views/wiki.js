@@ -91,15 +91,19 @@ export function renderWikiGrid() {
     const statColor = hero.main_stat === 'Сила' ? 'var(--s)' : 
                       hero.main_stat === 'Ловкость' ? 'var(--green)' : 
                       'var(--cyan)';
-    
+
+    const iconFallback = hero.main_stat === 'Сила' ? '🛡️' : hero.main_stat === 'Ловкость' ? '🏹' : '🔮';
+    const avatarSrc = hero.avatar_url || `https://hero-wars.fandom.com/wiki/Special:Redirect/file/${encodeURIComponent(hero.name)}_Icon.png`;
+
     const card = document.createElement('div');
-    card.className = 'card';
+    card.className = 'card wiki-hero-card';
     card.style.setProperty('--tc', statColor);
     card.innerHTML = `
       <div class="ctop">
         <div style="display:flex;gap:12px;align-items:center;">
-          <div style="width:42px;height:42px;border-radius:10px;background:rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:center;font-size:1.3rem;border:1px solid ${statColor}">
-            ${hero.main_stat === 'Сила' ? '🛡️' : hero.main_stat === 'Ловкость' ? '🏹' : '🔮'}
+          <div class="hero-avatar-wrap" style="border:2px solid ${statColor}">
+            <img src="${avatarSrc}" alt="${hero.name}" class="hero-avatar-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="hero-avatar-fallback" style="display:none;background:rgba(255,255,255,0.08);width:100%;height:100%;align-items:center;justify-content:center;font-size:1.4rem;">${iconFallback}</div>
           </div>
           <div>
             <div class="cname">${hero.name}</div>
@@ -114,7 +118,7 @@ export function renderWikiGrid() {
         <span class="hp">${hero.faction || 'Путь вечности'}</span>
       </div>
 
-      <div class="hook" style="font-size:0.83rem;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;">
+      <div class="hook" style="font-size:0.83rem;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;line-height:1.5;">
         ${hero.description || 'Описание героя доступно в Вики.'}
       </div>
 

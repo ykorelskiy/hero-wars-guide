@@ -35,9 +35,16 @@ function renderHeroGrid(filter = '') {
   
   getHeroes().forEach(h => {
     if (f && !h.name.toLowerCase().includes(f)) return;
+    const avatarSrc = h.avatar_url || `https://hero-wars.fandom.com/wiki/Special:Redirect/file/${encodeURIComponent(h.name)}_Icon.png`;
     const chip = document.createElement('div');
     chip.className = 'hero-chip' + (selected.has(h.id) ? ' picked' : '');
-    chip.innerHTML = `${h.name}<span class="role">${h.role}</span>`;
+    chip.innerHTML = `
+      <div style="display:flex;align-items:center;gap:6px;justify-content:center;">
+        <img src="${avatarSrc}" alt="${h.name}" class="chip-avatar-img" onerror="this.style.display='none'" />
+        <span>${h.name}</span>
+      </div>
+      <span class="role">${h.role}</span>
+    `;
     chip.addEventListener('click', () => toggleHero(h.id));
     grid.appendChild(chip);
   });
@@ -68,9 +75,14 @@ function renderSelList() {
   selected.forEach(id => {
     const h = heroById(id);
     if (!h) return;
+    const avatarSrc = h.avatar_url || `https://hero-wars.fandom.com/wiki/Special:Redirect/file/${encodeURIComponent(h.name)}_Icon.png`;
     const chip = document.createElement('div');
     chip.className = 'sel-chip';
-    chip.innerHTML = `${h.name}<span class="rm" data-id="${id}">×</span>`;
+    chip.innerHTML = `
+      <img src="${avatarSrc}" alt="${h.name}" class="chip-avatar-img" onerror="this.style.display='none'" />
+      <span>${h.name}</span>
+      <span class="rm" data-id="${id}">×</span>
+    `;
     chip.querySelector('.rm').addEventListener('click', (e) => {
       e.stopPropagation();
       toggleHero(id);

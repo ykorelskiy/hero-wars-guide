@@ -18,40 +18,44 @@ export function openWikiModal(heroId) {
 
   ovl.style.setProperty('--tc', statColor);
 
+  const iconFallback = hero.main_stat === 'Сила' ? '🛡️' : hero.main_stat === 'Ловкость' ? '🏹' : '🔮';
+  const avatarSrc = hero.avatar_url || `https://hero-wars.fandom.com/wiki/Special:Redirect/file/${encodeURIComponent(hero.name)}_Icon.png`;
+
   const skillsHtml = (hero.skills && hero.skills.length > 0)
     ? hero.skills.map((s, i) => `
         <div class="stp">
-          <div class="stn" style="background:${statColor};color:#080a12;">${i + 1}</div>
+          <div class="stn" style="background:${statColor};color:#080a12;font-weight:900;">${i + 1}</div>
           <div class="stt">
-            <b>${s.name} <span style="font-size:0.75rem;opacity:0.7;font-weight:normal;">(${s.type})</span></b>
+            <b>${s.name} <span style="font-size:0.75rem;opacity:0.75;font-weight:normal;color:var(--gold2);">(${s.type})</span></b>
             <span>${s.desc}</span>
           </div>
         </div>
       `).join('')
-    : '<div class="bx info">Информация об умениях обновляется...</div>';
+    : '<div class="bx info">Подробное описание умений обновляется...</div>';
 
   const artifactsHtml = (hero.artifacts && hero.artifacts.length > 0)
     ? hero.artifacts.map(a => `
-        <div class="bx info" style="border-left: 3px solid ${statColor};">
-          <b>Слот ${a.slot}: ${a.name}</b> (${a.type})<br>
-          ${a.team_buff ? `<span style="color:var(--gold2);">⚡ Командный эффект: ${a.team_buff}</span><br>` : ''}
-          ${a.stats ? `<span>📊 Характеристики: ${a.stats}</span>` : ''}
+        <div class="bx info" style="border-left: 4px solid ${statColor};">
+          <b>Слот ${a.slot}: ${a.name}</b> <span style="opacity:0.8;">(${a.type})</span><br>
+          ${a.team_buff ? `<span style="color:var(--gold2);font-weight:600;">⚡ Командный эффект: ${a.team_buff}</span><br>` : ''}
+          ${a.stats ? `<span style="color:var(--muted);">📊 Характеристики: ${a.stats}</span>` : ''}
         </div>
       `).join('')
-    : '<div class="bx info">Информация об артефактах обновляется...</div>';
+    : '<div class="bx info">Подробное описание артефактов обновляется...</div>';
 
   ovl.innerHTML = `
     <div class="md">
       <div class="mdh">
-        <div style="display:flex;gap:14px;align-items:center;">
-          <div style="width:54px;height:54px;border-radius:12px;background:rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;font-size:1.6rem;border:2px solid ${statColor}">
-            ${hero.main_stat === 'Сила' ? '🛡️' : hero.main_stat === 'Ловкость' ? '🏹' : '🔮'}
+        <div style="display:flex;gap:16px;align-items:center;">
+          <div class="hero-avatar-wrap" style="width:64px;height:64px;border-radius:14px;border:3px solid ${statColor};">
+            <img src="${avatarSrc}" alt="${hero.name}" class="hero-avatar-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="hero-avatar-fallback" style="display:none;background:rgba(255,255,255,0.08);width:100%;height:100%;align-items:center;justify-content:center;font-size:1.8rem;">${iconFallback}</div>
           </div>
           <div>
-            <h3>${hero.name}</h3>
+            <h3 style="font-size:1.5rem;margin-bottom:2px;">${hero.name}</h3>
             <div class="mm">${hero.role} · ${hero.main_stat} · ${hero.position || 'Передняя линия'}</div>
-            <div style="margin-top:4px;">
-              <span class="hp key" style="background:${statColor};">${hero.faction || 'Путь вечности'}</span>
+            <div style="margin-top:6px;">
+              <span class="hp key" style="background:${statColor};color:#080a12;font-weight:700;">${hero.faction || 'Путь вечности'}</span>
             </div>
           </div>
         </div>
@@ -66,9 +70,9 @@ export function openWikiModal(heroId) {
 
       <div class="mdpn on" data-pn="overview">
         <h4>Описание персонажа</h4>
-        <div class="bx info">${hero.description || 'Описание героя доступно в базе знания Hero Wars.'}</div>
+        <div class="bx info" style="font-size:0.92rem;line-height:1.6;">${hero.description || 'Описание героя доступно в Вики.'}</div>
         
-        <h4>Атрибуты</h4>
+        <h4>Ключевые Атрибуты</h4>
         <div class="lu" style="grid-template-columns: repeat(3, 1fr);">
           <div class="sl">
             <div class="sr">Главный стат</div>
