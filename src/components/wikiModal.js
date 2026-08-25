@@ -136,6 +136,12 @@ export function openWikiModal(heroId) {
       </div>
 
       <div class="mdpn on" data-pn="overview">
+        <!-- Полноразмерный Арт базового облика персонажа -->
+        <div style="text-align:center; margin-bottom:20px; position:relative; background: radial-gradient(circle at center, rgba(30, 41, 59, 0.7) 0%, rgba(15, 23, 42, 0.95) 100%); border:1px solid rgba(255,255,255,0.15); border-radius:16px; padding:20px; overflow:hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+          <img src="/images/heroes/${hero.id}.png" alt="Полноразмерный арт ${hero.name}" style="max-height:360px; max-width:100%; object-fit:contain; filter: drop-shadow(0 8px 24px ${statColor}66);" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+          <div style="display:none; color:#94a3b8; padding:15px; font-size:0.9rem;">🎨 Полноразмерный базовый арт ${hero.name}</div>
+        </div>
+
         <h4 style="color:#ffffff; margin-bottom:8px;">Описание персонажа</h4>
         <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); padding:14px; border-radius:10px; color:#cbd5e1; font-size:0.95rem; line-height:1.6;">${hero.description || 'Описание героя доступно в Вики.'}</div>
         
