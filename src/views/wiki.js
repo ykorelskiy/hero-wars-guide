@@ -94,7 +94,7 @@ export function renderWikiGrid() {
                       'var(--cyan)';
 
     const iconFallback = hero.main_stat === 'Сила' ? '🛡️' : hero.main_stat === 'Ловкость' ? '🏹' : '🔮';
-    const avatarSrc = `/images/heroes/${hero.id}.png`;
+    const avatarSrc = `/assets/heroes/${hero.id}.png`;
 
     const card = document.createElement('div');
     card.className = 'card wiki-hero-card';
