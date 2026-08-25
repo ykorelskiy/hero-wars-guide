@@ -28,7 +28,7 @@ export const PETS_DATA = [
         formula: 'Прирост = +42 * [[Уровень]] к [[Пробивание брони]] (до +5 460)'
       }
     },
-    patronage_heroes: ['galahad', 'ishmael', 'keira', 'artemis', 'jhu', 'dante', 'yasmine', 'kayla', 'tristan', 'astrid']
+    patronage_heroes: ['galahad', 'ishmael', 'keira', 'artemis', 'jhu', 'dante', 'yasmine', 'kayla', 'tristan', 'astrid', 'adam']
   },
   {
     id: 'cain',
@@ -54,7 +54,7 @@ export const PETS_DATA = [
         formula: 'Прирост = +38 * [[Уровень]] к [[Уворот]] (до +4 940)'
       }
     },
-    patronage_heroes: ['aurora', 'dante', 'yasmine', 'jet', 'lian', 'heidi', 'octavia', 'arachne', 'nebula']
+    patronage_heroes: ['aurora', 'dante', 'yasmine', 'jet', 'lian', 'heidi', 'octavia', 'arachne', 'nebula', 'adam']
   },
   {
     id: 'albus',
@@ -132,7 +132,7 @@ export const PETS_DATA = [
         formula: 'Прирост = +50 * [[Уровень]] к [[Броня]] (до +6 500)'
       }
     },
-    patronage_heroes: ['astaroth', 'luther', 'rufus', 'chaba', 'ziri', 'cleaver', 'corvus', 'andvari', 'julius']
+    patronage_heroes: ['astaroth', 'luther', 'rufus', 'chaba', 'ziri', 'cleaver', 'corvus', 'andvari', 'julius', 'adam']
   },
   {
     id: 'axel',
@@ -158,7 +158,7 @@ export const PETS_DATA = [
         formula: 'Прирост = +450 * [[Уровень]] к [[Здоровье]] (до +58 500 HP)'
       }
     },
-    patronage_heroes: ['martha', 'dorian', 'thea', 'celeste', 'maya', 'alvanor', 'markus', 'aidan', 'polaris']
+    patronage_heroes: ['martha', 'dorian', 'thea', 'celeste', 'maya', 'alvanor', 'markus', 'aidan', 'polaris', 'adam']
   },
   {
     id: 'merlin',

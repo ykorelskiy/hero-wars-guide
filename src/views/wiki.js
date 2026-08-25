@@ -94,7 +94,7 @@ export function renderWikiGrid() {
   });
 
   if (countBadge) {
-    countBadge.textContent = `Показано: ${filtered.length} из ${heroes.length} героев (Тир-Лист 2026 alexandregames.com)`;
+    countBadge.textContent = `Показано: ${filtered.length} из ${heroes.length} героев`;
   }
 
   if (filtered.length === 0) {

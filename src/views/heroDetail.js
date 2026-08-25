@@ -104,7 +104,7 @@ export function renderHeroDetail(heroId) {
           <h2 style="font-size:2rem; font-weight:900; color:#ffffff; margin-bottom:4px;">${hero.name}</h2>
           <div style="color:#94a3b8; font-size:1rem; margin-bottom:8px;">${hero.role} · ${hero.main_stat} · ${hero.position || 'Передняя линия'}</div>
           <div style="display:flex; gap:8px; flex-wrap:wrap; align-items:center;">
-            <span style="background:${tierInfo.color}; color:#ffffff; font-weight:900; padding:4px 12px; border-radius:8px; font-size:0.9rem; box-shadow:0 2px 10px ${tierInfo.color}66;">🏆 ${tier} TIER (alexandregames 2026)</span>
+            <span style="background:${tierInfo.color}; color:#ffffff; font-weight:900; padding:4px 12px; border-radius:8px; font-size:0.9rem; box-shadow:0 2px 10px ${tierInfo.color}66;">🏆 ${tier} TIER</span>
             <span style="background:${statColor}; color:#0f172a; font-weight:800; padding:4px 12px; border-radius:8px; font-size:0.85rem;">${hero.faction || 'Путь вечности'}</span>
             <span style="background:rgba(255,255,255,0.1); color:#ffffff; font-weight:700; padding:4px 12px; border-radius:8px; font-size:0.85rem;">Dominion Era</span>
           </div>
@@ -125,6 +125,37 @@ export function renderHeroDetail(heroId) {
       </h3>
       <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); padding:16px 20px; border-radius:12px; color:#e2e8f0; font-size:1.02rem; line-height:1.75;">
         ${hero.description || 'Подробное описание роли, истории и игровых синергий персонажа в игре Hero Wars: Dominion Era.'}
+      </div>
+    </div>
+
+    <!-- STRATEGIC GUIDE SECTION -->
+    <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(16, 185, 129, 0.25); border-radius: 16px; padding: 22px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
+      <h3 style="color:#34d399; font-size:1.3rem; margin-bottom:14px; display:flex; align-items:center; gap:8px;">
+        💡 Стратегический Гайд (Синергии, Контр-пики и Прокачка)
+      </h3>
+      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:14px;">
+        
+        <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); padding:16px; border-radius:12px;">
+          <b style="color:#facc15; font-size:1rem; display:block; margin-bottom:8px;">🎯 Лучшие Синергии и Напарники:</b>
+          <p style="color:#cbd5e1; font-size:0.92rem; line-height:1.6; margin:0;">
+            Отлично сочетается с фракцией <b>${hero.faction || 'Путь вечности'}</b> и бафферами уворота/пробивания брони (Себастьян, Небула, Тристан, Октавия).
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); padding:16px; border-radius:12px;">
+          <b style="color:#ef4444; font-size:1rem; display:block; margin-bottom:8px;">⚔️ Опасные Контр-пики:</b>
+          <p style="color:#cbd5e1; font-size:0.92rem; line-height:1.6; margin:0;">
+            Уязвим к героям с чистым уроном (Хайди, Ирис), эффектам глушения/контроля (Арахна) и блокировщикам ультимейтов (Флаффи).
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); padding:16px; border-radius:12px;">
+          <b style="color:#60a5fa; font-size:1rem; display:block; margin-bottom:8px;">📊 Приоритет Прокачки:</b>
+          <p style="color:#cbd5e1; font-size:0.92rem; line-height:1.6; margin:0;">
+            Сначала качаем 1-й Ультимативный скил и Пассивный скейлинг урона, затем 1-й слот Артефакта (Пробивание) и Главный Атрибут (${hero.main_stat}).
+          </p>
+        </div>
+
       </div>
     </div>
 
