@@ -3,6 +3,7 @@ import { getPatronPetsForHero } from '../data/petsData.js';
 import { navigateTo } from '../components/navigation.js';
 import { getHeroTier, TIER_RANKS } from '../data/tierData.js';
 import { getHeroGuide } from '../data/heroGuidesData.js';
+import { getHeroSkills } from '../data/heroSkillsData.js';
 
 export function renderHeroDetail(heroId) {
   const wrap = document.getElementById('heroDetailWrap');
@@ -46,8 +47,9 @@ export function renderHeroDetail(heroId) {
       `).join('')
     : '<div style="color:#94a3b8; font-size:0.9rem; padding:10px;">Нет прямых данных о патронаже питомцев</div>';
 
-  const skillsHtml = (hero.skills && hero.skills.length > 0) 
-    ? hero.skills.map(s => `
+  const officialSkills = (hero.skills && hero.skills.length > 0) ? hero.skills : getHeroSkills(hero.id);
+
+  const skillsHtml = officialSkills.map(s => `
         <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255, 255, 255, 0.12); border-left: 4px solid ${statColor}; border-radius: 12px; padding: 18px; margin-bottom: 16px;">
           <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; flex-wrap:wrap; gap:8px;">
             <b style="color: #ffffff; font-size: 1.15rem;">${s.name}</b>
@@ -60,8 +62,7 @@ export function renderHeroDetail(heroId) {
             ${s.per_lvl ? `<div style="background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.25); color: #34d399; padding: 8px 14px; border-radius: 8px; font-size: 0.9rem; font-weight: 600;">📈 <b>Прирост за уровень:</b> <span style="color:#ffffff;">${s.per_lvl}</span></div>` : ''}
           </div>
         </div>
-      `).join('')
-    : '<div class="bx info">Подробное описание умений обновляется...</div>';
+      `).join('');
 
   const artifactsHtml = (hero.artifacts && hero.artifacts.length > 0)
     ? hero.artifacts.map(a => `
