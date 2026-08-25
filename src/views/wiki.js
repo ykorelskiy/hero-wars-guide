@@ -125,7 +125,7 @@ export function renderWikiGrid() {
       <div class="card-more" style="margin-top:10px;">Открыть полную Вики ⭐ →</div>
     `;
     
-    card.addEventListener('click', () => openWikiModal(hero.id));
+    card.addEventListener('click', () => navigateTo('hero-detail', hero.id));
     grid.appendChild(card);
   });
 }

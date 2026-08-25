@@ -20,15 +20,66 @@
   </header>
 
   <nav id="mainNav">
-    <button class="nb on" data-view="advisor">🧭 Советчик по контрам</button>
-    <button class="nb" data-view="wiki">📚 Вики героев (60+)</button>
+    <button class="nb on" data-view="wiki">📚 Герои</button>
+    <button class="nb" data-view="pets">🐾 Питомцы</button>
+    <button class="nb" data-view="advisor">🧭 Советчик по контрам</button>
     <button class="nb" data-view="teams">📋 Все команды</button>
     <button class="nb" data-view="matrix">🔀 Матрица контр-пиков</button>
     <button class="nb" data-view="about">ℹ️ Как это работает</button>
   </nav>
 
+  <!-- ===================== WIKI VIEW (DEFAULT) ===================== -->
+  <section id="view-wiki" class="view on">
+    <div class="wiki-match-head">
+      <div>
+        <h2>Википедия героев (Dominion Era)</h2>
+        <p class="lead">Полный каталог всех 74 героев. Фильтруйте по атрибутам, ролям, линиям и фракциям. Клик по карточке откроет подробную отдельную страницу героя.</p>
+      </div>
+      <button id="wikiResetFilters" class="mini-btn" style="height:fit-content;padding:8px 16px;">🔄 Сбросить все фильтры</button>
+    </div>
+
+    <div class="wiki-filter-bar">
+      <!-- Search -->
+      <input type="text" id="wikiSearch" placeholder="🔍 Поиск по имени героя (например: Октавия, Корвус, Каскад, Карх)..." style="width:100%;padding:11px 16px;background:rgba(255,255,255,0.05);border:1px solid var(--line);border-radius:12px;color:var(--txt);font-family:inherit;">
+
+      <!-- Main Stat Filter -->
+      <div class="wiki-filter-row" id="wikiStatFilter">
+        <span class="clab">💎 Атрибут:</span>
+        <button class="fb on" data-val="all">Все</button>
+        <button class="fb" data-val="Сила">🔴 Сила</button>
+        <button class="fb" data-val="Ловкость">🟢 Ловкость</button>
+        <button class="fb" data-val="Интеллект">🔵 Интеллект</button>
+      </div>
+    </div>
+
+    <div style="margin-bottom:14px;color:var(--muted);font-size:0.9rem;" id="wikiMatchCount">Загрузка карточек героев...</div>
+
+    <div class="grid wiki-grid" id="wikiGrid"></div>
+  </section>
+
+  <!-- ===================== HERO DETAIL VIEW ===================== -->
+  <section id="view-hero-detail" class="view">
+    <div id="heroDetailWrap"></div>
+  </section>
+
+  <!-- ===================== PETS CATALOG VIEW ===================== -->
+  <section id="view-pets" class="view">
+    <div class="wiki-match-head">
+      <div>
+        <h2>🐾 База Знаний по Питомцам и Патронажу</h2>
+        <p class="lead">Полный справочник питомцев Dominion Era. Выберите питомца для просмотра всех 4 умений, точных формул и совместимых героев.</p>
+      </div>
+    </div>
+    <div class="grid wiki-grid" id="petsGrid"></div>
+  </section>
+
+  <!-- ===================== PET DETAIL VIEW ===================== -->
+  <section id="view-pet-detail" class="view">
+    <div id="petDetailWrap"></div>
+  </section>
+
   <!-- ===================== ADVISOR VIEW ===================== -->
-  <section id="view-advisor" class="view on">
+  <section id="view-advisor" class="view">
     <h2>Советчик: против кого выставляем?</h2>
     <p class="lead">Отметь героев, которых видишь во вражеской команде (или введи название команды противника, если знаешь архетип). Советчик определит вероятный архетип и подскажет, какую из твоих команд выставить и почему.</p>
 
@@ -49,71 +100,6 @@
 
     <div id="resultBox" class="result-box"></div>
   </section>
-
-  <!-- ===================== WIKI VIEW ===================== -->
-  <section id="view-wiki" class="view">
-    <div class="wiki-match-head">
-      <div>
-        <h2>Википедия героев (Хроники Хаоса)</h2>
-        <p class="lead">Полный каталог героев. Фильтруйте по главному атрибуту, роли, линии на поле боя и фракциям. Клик по карточке — полные умения и артефакты.</p>
-      </div>
-      <button id="wikiResetFilters" class="mini-btn" style="height:fit-content;padding:8px 16px;">🔄 Сбросить все фильтры</button>
-    </div>
-
-    <div class="wiki-filter-bar">
-      <!-- Search -->
-      <input type="text" id="wikiSearch" placeholder="🔍 Поиск по имени героя (например: Октавия, Корвус, Каскад, Карх)..." style="width:100%;padding:11px 16px;background:rgba(255,255,255,0.05);border:1px solid var(--line);border-radius:12px;color:var(--txt);font-family:inherit;">
-
-      <!-- Main Stat Filter -->
-      <div class="wiki-filter-row" id="wikiStatFilter">
-        <span class="clab">💎 Атрибут:</span>
-        <button class="fb on" data-val="all">Все</button>
-        <button class="fb" data-val="Сила">🔴 Сила</button>
-        <button class="fb" data-val="Ловкость">🟢 Ловкость</button>
-        <button class="fb" data-val="Интеллект">🔵 Интеллект</button>
-      </div>
-
-      <!-- Role Filter -->
-      <div class="wiki-filter-row" id="wikiRoleFilter">
-        <span class="clab">🛡️ Роль:</span>
-        <button class="fb on" data-val="all">Все</button>
-        <button class="fb" data-val="Танк">Танк</button>
-        <button class="fb" data-val="Боец">Боец / ДД</button>
-        <button class="fb" data-val="Маг">Маг</button>
-        <button class="fb" data-val="Стрелок">Стрелок</button>
-        <button class="fb" data-val="Лекарь">Лекарь</button>
-        <button class="fb" data-val="Поддержка">Поддержка</button>
-        <button class="fb" data-val="Контроль">Контроль</button>
-        <button class="fb" data-val="Ассасин">Ассасин</button>
-      </div>
-
-      <!-- Position Filter -->
-      <div class="wiki-filter-row" id="wikiPosFilter">
-        <span class="clab">📍 Линия:</span>
-        <button class="fb on" data-val="all">Все</button>
-        <button class="fb" data-val="Передняя линия">Передняя линия</button>
-        <button class="fb" data-val="Средняя линия">Средняя линия</button>
-        <button class="fb" data-val="Задняя линия">Задняя линия</button>
-      </div>
-
-      <!-- Faction Filter -->
-      <div class="wiki-filter-row" id="wikiFactionFilter">
-        <span class="clab">🔮 Фракция:</span>
-        <button class="fb on" data-val="all">Все</button>
-        <button class="fb" data-val="Нежить">Нежить</button>
-        <button class="fb" data-val="Путь чести">Честь</button>
-        <button class="fb" data-val="Путь хаоса">Хаос</button>
-        <button class="fb" data-val="Путь прогресса">Прогресс</button>
-        <button class="fb" data-val="Путь природы">Природа</button>
-        <button class="fb" data-val="Путь вечности">Вечность</button>
-        <button class="fb" data-val="Путь заката">Закат</button>
-      </div>
-    </div>
-
-    <div id="wikiMatchCount" style="margin-bottom:14px;color:var(--muted);font-size:0.88rem;font-weight:600;"></div>
-    <div class="grid" id="wikiGrid"></div>
-  </section>
-
   <!-- ===================== TEAMS VIEW ===================== -->
   <section id="view-teams" class="view">
     <h2>Все разобранные команды</h2>
