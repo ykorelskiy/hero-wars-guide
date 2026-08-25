@@ -14,17 +14,20 @@ let cache = {
 
 export async function loadAllData() {
   try {
-    const [hRes, tRes, aRes] = await Promise.all([
+    const timeout = new Promise((_, reject) => setTimeout(() => reject(new Error('Supabase request timeout')), 3000));
+    const loadPromise = Promise.all([
       supabase.from('hw_heroes').select('*'),
       supabase.from('hw_teams').select('*'),
       supabase.from('hw_advice').select('*'),
     ]);
 
+    const [hRes, tRes, aRes] = await Promise.race([loadPromise, timeout]);
+
     if (hRes.error || !hRes.data || hRes.data.length === 0) throw new Error('Heroes load error');
     if (tRes.error || !tRes.data || tRes.data.length === 0) throw new Error('Teams load error');
     if (aRes.error || !aRes.data || aRes.data.length === 0) throw new Error('Advice load error');
 
-    cache.heroes = hRes.data;
+    cache.heroes = hRes.data.map(h => ({ ...h, archetypes: h.archetypes || [] }));
     cache.teams = tRes.data;
     
     // Transform array of advice rows back to object key-value { archetype: { label, desc, counterTeams, reason } }
@@ -42,7 +45,7 @@ export async function loadAllData() {
     console.log('✓ Loaded data from Supabase');
   } catch (err) {
     console.warn('⚠️ Supabase load failed, using fallback offline data:', err.message || err);
-    cache.heroes = fallbackHeroes;
+    cache.heroes = fallbackHeroes.map(h => ({ ...h, archetypes: h.archetypes || [] }));
     cache.teams = fallbackTeams;
     cache.advice = fallbackAdvice;
     cache.isOffline = true;

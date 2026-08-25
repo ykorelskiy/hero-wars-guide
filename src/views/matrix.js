@@ -25,7 +25,7 @@ export function renderMatrix() {
         const rowIsGoodAnswer = adviceForCol && adviceForCol.counterTeams && adviceForCol.counterTeams.includes(rowTeam.id);
         const colHardCounters = rowTeam.counters && rowTeam.counters.some(c => {
           const h = heroById(c.hero);
-          return h && h.archetypes.includes(colTeam.id);
+          return h && h.archetypes && h.archetypes.includes(colTeam.id);
         });
 
         if (rowIsGoodAnswer && !colHardCounters) {

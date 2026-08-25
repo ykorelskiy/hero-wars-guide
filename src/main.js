@@ -24,19 +24,30 @@ function renderBadges() {
 }
 
 async function boot() {
-  await loadAllData();
-  initNavigation();
-  initAdvisor();
-  initWikiView();
-  initTeams();
-  initMatrix();
-  renderBadges();
+  const removeOverlay = () => {
+    const overlay = document.getElementById('loadingOverlay');
+    if (overlay) {
+      overlay.style.opacity = '0';
+      setTimeout(() => overlay.remove(), 300);
+    }
+  };
 
-  // Remove loading overlay
-  const overlay = document.getElementById('loadingOverlay');
-  if (overlay) {
-    overlay.style.opacity = '0';
-    setTimeout(() => overlay.remove(), 300);
+  // Fallback timer: max 3.5s loading overlay
+  const fallbackTimer = setTimeout(removeOverlay, 3500);
+
+  try {
+    await loadAllData();
+    initNavigation();
+    initAdvisor();
+    initWikiView();
+    initTeams();
+    initMatrix();
+    renderBadges();
+  } catch (err) {
+    console.error('Fatal boot error:', err);
+  } finally {
+    clearTimeout(fallbackTimer);
+    removeOverlay();
   }
 }
 

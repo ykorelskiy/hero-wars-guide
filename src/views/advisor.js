@@ -96,7 +96,7 @@ function detectArchetype() {
   selected.forEach(id => {
     const h = heroById(id);
     if (!h) return;
-    h.archetypes.forEach(a => {
+    (h.archetypes || []).forEach(a => {
       if (a === 'counter') return;
       counts[a] = (counts[a] || 0) + 1;
     });
