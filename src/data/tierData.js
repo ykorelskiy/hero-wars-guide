@@ -45,6 +45,8 @@ export const HERO_TIERS = {
   electra: 'S++',
   cascade: 'S++',
   fluffy: 'S++',
+  byrna: 'S++',
+  somna: 'S++',
 
   // S+ Tier
   aidan: 'S+',

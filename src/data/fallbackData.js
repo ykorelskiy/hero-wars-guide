@@ -21,6 +21,7 @@ export const HEROES = [
   {id:'folio',name:'Фолио',role:'AoE-керри',archetypes:['orion']},
   {id:'helios',name:'Хелиос',role:'Добивание/анти-крит',archetypes:['orion']},
   {id:'somna',name:'Сомна',role:'Контроль (сон)',archetypes:['orion']},
+  {id:'byrna',name:'Бырна',role:'Маг/лечение',archetypes:['orion']},
   {id:'fluffy',name:'Флаффи',role:'Саппорт (self-dmg)',archetypes:['orion']},
   {id:'nebula',name:'Небула',role:'Баффер статов',archetypes:['karkh','orion']},
   {id:'martha',name:'Марта',role:'Хилер',archetypes:['karkh','twins']},
