@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hero Wars — Мета-гайд и советчик по контрам 2026</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>⚔️ Hero Wars — Мета-гайд 2026</h1>
+    <p class="sub">Топ-команды, механики, контры и советчик: выбери героев вражеской команды — получи рекомендацию, что выставить против неё.</p>
+    <div class="badges" id="statBadges"></div>
+  </header>
+
+  <nav id="mainNav">
+    <button class="nb on" data-view="advisor">🧭 Советчик по контрам</button>
+    <button class="nb" data-view="teams">📋 Все команды</button>
+    <button class="nb" data-view="matrix">🔀 Матрица контр-пиков</button>
+    <button class="nb" data-view="about">ℹ️ Как это работает</button>
+  </nav>
+
+  <!-- ===================== ADVISOR VIEW ===================== -->
+  <section id="view-advisor" class="view on">
+    <h2>Советчик: против кого выставляем?</h2>
+    <p class="lead">Отметь героев, которых видишь во вражеской команде (или введи название команды противника, если знаешь архетип). Советчик определит вероятный архетип и подскажет, какую из твоих команд выставить и почему.</p>
+
+    <div class="advisor-box">
+      <div class="picker-col">
+        <input type="text" id="heroSearch" placeholder="🔍 Поиск героя (например: Данте, Лирия, Орион)...">
+        <div class="hero-grid" id="heroGrid"></div>
+      </div>
+      <div class="selected-col">
+        <div class="sel-head">
+          <span>Выбранные герои врага</span>
+          <button id="clearSel" class="mini-btn">Очистить</button>
+        </div>
+        <div class="sel-list" id="selList"><p class="empty-hint">Пока никто не выбран</p></div>
+        <button id="analyzeBtn" class="analyze-btn" disabled>🧭 Проанализировать и подсказать контр</button>
+      </div>
+    </div>
+
+    <div id="resultBox" class="result-box"></div>
+  </section>
+
+  <!-- ===================== TEAMS VIEW ===================== -->
+  <section id="view-teams" class="view">
+    <h2>Все разобранные команды</h2>
+    <p class="lead">Клик по карточке — полный разбор: механика, порядок сборки, контры, замены.</p>
+    <div class="ctrl-row" id="tierFilter">
+      <span class="clab">Тир:</span>
+      <button class="fb on" data-tier="all">Все</button>
+      <button class="fb" data-tier="S">S</button>
+      <button class="fb" data-tier="A">A</button>
+      <button class="fb" data-tier="B">B</button>
+    </div>
+    <div class="grid" id="teamsGrid"></div>
+  </section>
+
+  <!-- ===================== MATRIX VIEW ===================== -->
+  <section id="view-matrix" class="view">
+    <h2>Матрица контр-пиков</h2>
+    <p class="lead">Кто бьёт кого. Зелёная ячейка — твоя команда (строка) выигрывает у команды противника (столбец). Красная — проигрывает.</p>
+    <div class="matrix-wrap" id="matrixWrap"></div>
+  </section>
+
+  <!-- ===================== ABOUT VIEW ===================== -->
+  <section id="view-about" class="view">
+    <h2>Как работает советчик</h2>
+    <div class="about-content">
+      <p>Советчик работает по правилам, а не по ИИ-магии — это прозрачная база знаний, которую можно редактировать в <code>data.js</code>.</p>
+      <h4>Логика в 4 шага:</h4>
+      <ol>
+        <li><b>Распознавание архетипа.</b> У каждого героя в базе есть тег архетипа (например, K'arkh → архетип «karkh-jump»). Когда ты выбираешь героев врага, скрипт считает, какой архетип встречается чаще.</li>
+        <li><b>Поиск хард-контров.</b> Для каждой команды в базе есть список героев, которые её жёстко контрят. Если враг содержит такого героя — твоя команда получает пометку «риск».</li>
+        <li><b>Подбор ответа.</b> Для распознанного архетипа врага в базе заранее прописано, какие твои архетипы его контрят и почему (механика, а не просто «сильнее по циферкам»).</li>
+        <li><b>Вывод.</b> Показывается рекомендуемая команда, причина, и предупреждения по остальным твоим командам.</li>
+      </ol>
+      <p>Вся база данных — герои, команды, контры, замены — лежит в файле <code>data.js</code> в виде обычных JS-объектов. Расширяй смело: добавляй героев в <code>HEROES</code>, команды в <code>TEAMS</code>.</p>
+    </div>
+  </section>
+
+</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
