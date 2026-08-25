@@ -46,7 +46,6 @@ export const HERO_TIERS = {
   cascade: 'S++',
   fluffy: 'S++',
   byrna: 'S++',
-  somna: 'S++',
 
   // S+ Tier
   aidan: 'S+',
@@ -58,6 +57,7 @@ export const HERO_TIERS = {
   heidi: 'S+',
   isaac: 'S+',
   iris: 'S+',
+  somna: 'S+',
   ishmael: 'S+',
   julius: 'S+',
   krista: 'S+',
@@ -110,7 +110,6 @@ export const HERO_TIERS = {
   morrigan: 'A',
   peppy: 'A',
   phobos: 'A',
-  rigel: 'A',
   satori: 'A',
   tristan: 'A',
   lilith: 'A',

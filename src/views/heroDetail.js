@@ -47,13 +47,16 @@ export function renderHeroDetail(heroId) {
       `).join('')
     : '<div style="color:#94a3b8; font-size:0.9rem; padding:10px;">Нет прямых данных о патронаже питомцев</div>';
 
-  const officialSkills = (hero.skills && hero.skills.length > 0) ? hero.skills : getHeroSkills(hero.id);
+  const officialSkills = getHeroSkills(hero.id);
 
-  const skillsHtml = officialSkills.map(s => `
+  const skillsHtml = officialSkills.map((s, index) => `
         <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255, 255, 255, 0.12); border-left: 4px solid ${statColor}; border-radius: 12px; padding: 18px; margin-bottom: 16px;">
-          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; flex-wrap:wrap; gap:8px;">
-            <b style="color: #ffffff; font-size: 1.15rem;">${s.name}</b>
-            <span style="background: rgba(255, 255, 255, 0.1); color: #cbd5e1; padding: 3px 12px; border-radius: 6px; font-size: 0.85rem; font-weight: 600;">${s.type}</span>
+          <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:8px; flex-wrap:wrap; gap:8px;">
+            <div style="display:flex; align-items:center; gap:12px;">
+              <img src="/images/skills/${hero.id}_skill_${index + 1}.png" onerror="this.style.display='none'" style="width:48px;height:48px;border-radius:8px;border:1px solid rgba(255,255,255,0.15); object-fit:cover;" alt="Skill ${index + 1}" />
+              <b style="color: #ffffff; font-size: 1.15rem;">${s.name}</b>
+            </div>
+            <span style="background: rgba(255, 255, 255, 0.1); color: #cbd5e1; padding: 3px 12px; border-radius: 6px; font-size: 0.85rem; font-weight: 600; align-self:center;">${s.type}</span>
           </div>
           <div style="color: #cbd5e1; font-size: 0.95rem; line-height: 1.6; margin-bottom: 12px;">${s.desc}</div>
           <div style="display:grid; grid-template-columns: 1fr; gap:10px;">
