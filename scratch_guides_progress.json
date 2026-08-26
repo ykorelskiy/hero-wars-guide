@@ -1,8 +1,4 @@
-/* ======================================================================
-   HERO WARS — 100% RUSSIAN FULL HERO GUIDES DATABASE (Dominion Era)
-   ====================================================================== */
-
-export const HERO_GUIDES_DB = {
+{
   "electra": {
     "id": "electra",
     "name": "Электра",
@@ -2769,15 +2765,4 @@ export const HERO_GUIDES_DB = {
       ]
     }
   }
-};
-
-export function getHeroGuide(heroId) {
-  return HERO_GUIDES_DB[heroId] || {
-    overview: 'Полный разбор механик и роли персонажа на поле боя.',
-    pros: ['Эффективная роль в команде'],
-    cons: ['Требует правильной прокачки'],
-    best_teams: ['Мета-составы'],
-    counters: ['Контр-пики'],
-    priority_upgrades: { glyphs: ['Главный Атрибут'], skins: ['Базовый Облик'], artifacts: ['Оружие'] }
-  };
 }
