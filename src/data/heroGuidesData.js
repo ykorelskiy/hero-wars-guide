@@ -1756,6 +1756,96 @@ export const HERO_GUIDES_DB = {
     ],
     "best_teams": []
   },
+  "cascade": {
+    "cons": [
+      "Сильно зависит от союзников магической направленности для полного раскрытия своего потенциала.",
+      "Физические команды получают минимальную пользу от умений «Отток» и «Элементарный всплеск».",
+      "Расположение на средней линии делает его уязвимым перед мощным точечным уроном и мгновенными врывами.",
+      "Не имеет жесткого одиночного контроля для полного блокирования конкретной цели.",
+      "Без поддержки питомцев и союзников обладает умеренной или низкой автономностью."
+    ],
+    "pros": [
+      "Навык «Гидрокинез» наносит сильное урезание исцеления и блокирует воскрешение, что крайне важно против команд с мощными целителями.",
+      "Навык «Прибойная волна» наносит существенный урон и нарушает позиционирование врагов, обеспечивая контроль над темпом боя.",
+      "Навык «Отток» отлично сочетается с союзниками-магами и наносит дополнительный урон по меткам от заклинаний.",
+      "Навык «Элементарный всплеск» увеличивает урон союзников с основным параметром Интеллект, использующих физические автоатаки.",
+      "Превосходно масштабируется от Магической Атаки, Магического Пробивания и поддержки атакующих питомцев."
+    ],
+    "skins": [
+      {
+        "name": "Кибернетический облик",
+        "bonus": "Магическая Атака +10,650",
+        "priority": "Очень Высокий — лучший атакующий облик, напрямую усиливающий все навыки Каскада."
+      },
+      {
+        "name": "Базовый облик",
+        "bonus": "Интеллект +1,365",
+        "priority": "Высокий — дает эффективный прирост Магической Атаки и Защиты от Магии."
+      },
+      {
+        "name": "Звездный облик",
+        "bonus": "Здоровье +106,645",
+        "priority": "Средне-высокий — лучший защитный облик, позволяющий переживать массированный урон."
+      },
+      {
+        "name": "Мифический облик",
+        "bonus": "Броня +10,650",
+        "priority": "Низкий — увеличивает выживаемость против физического урона, но не дает прироста к атаке."
+      }
+    ],
+    "glyphs": [
+      {
+        "name": "Магическая Атака",
+        "priority": "Высокий — ключевая характеристика, от которой зависит эффективность всех навыков."
+      },
+      {
+        "name": "Пробивание Защиты от Магии",
+        "priority": "Высокий — необходим для полного нанесения урона по защищенным целям."
+      },
+      {
+        "name": "Интеллект",
+        "priority": "Высокий — увеличивает основной параметр героя, повышая атаку и защиты."
+      },
+      {
+        "name": "Здоровье",
+        "priority": "Средний — повышает выживаемость в бою."
+      },
+      {
+        "name": "Защита от Магии",
+        "priority": "Низкий — менее приоритетен по сравнению с атакующими символами."
+      }
+    ],
+    "counters": [],
+    "overview": "Каскад — загадочный и противоречивый герой средней линии, рожденный титанами и воспитанный людьми. Как маг поддержки и урона, он сочетает в себе сильный непрерывный магический урон, снижение входящего исцеления, блокирование воскрешения, контроль позиций врагов и усиление союзников с основным параметром Интеллект. Он идеально вписывается в магические составы, которым необходим высокий функциональный контроль без потери общего атакующего темпа.",
+    "artifacts": [
+      {
+        "desc": "Магическая Атака +50,190",
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/weapon-cascade-claws-of-the-river-spirits.webp",
+        "name": "Когти Духов Реки",
+        "slot": "Оружие",
+        "name_ru": "Когти Духов Реки",
+        "priority": "Очень Высокий — дает существенный прирост Магической Атаки для всей команды при активации ультимативного умения."
+      },
+      {
+        "desc": "Пробивание Защиты от Магии +10,680 | Магическая Атака +8,364",
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/manuscript-of-the-void.webp",
+        "name": "Манускрипт Бездны",
+        "slot": "Книга",
+        "name_ru": "Манускрипт Бездны",
+        "priority": "Высокий — позволяет эффективно пробивать магическую защиту вражеских танков и героев."
+      },
+      {
+        "desc": "Интеллект +6,249",
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/ring-of-intelligence.webp",
+        "name": "Кольцо Интеллекта",
+        "slot": "Кольцо",
+        "name_ru": "Кольцо Интеллекта",
+        "priority": "Средний — повышает базовый параметр, увеличивая Магическую Атаку и показатели защиты."
+      }
+    ],
+    "patronage": [],
+    "war_flags": []
+  },
   "maya": {
     "id": "maya",
     "cons": [
@@ -1772,147 +1862,6 @@ export const HERO_GUIDES_DB = {
     "artifacts": [],
     "patronage": [],
     "war_flags": [],
-    "best_teams": []
-  },
-  "cascade": {
-    "id": "cascade",
-    "cons": [
-      "Hydrokinesis applies strong anti-исцеление and blocks resurrection, which is extremely valuable against sustain teams.",
-      "Tidal Wave adds both burst урон and positioning disruption, giving Cascade tempo Контролёр in Маг lineups.",
-      "Refluence scales well in magic teams and rewards repeated spell hits with extra mark урон.",
-      "Elemental Surge adds useful Поддержка for Интеллект союзники who rely on physical basic attacks.",
-      "He scales cleanly with Магическая Атака, Пробивание Защиты от Магии, and offensive pet Поддержка."
-    ],
-    "name": "Каскад",
-    "pros": [
-      "Hydrokinesis applies strong anti-исцеление and blocks resurrection, which is extremely valuable against sustain teams.",
-      "Tidal Wave adds both burst урон and positioning disruption, giving Cascade tempo Контролёр in Маг lineups.",
-      "Refluence scales well in magic teams and rewards repeated spell hits with extra mark урон.",
-      "Elemental Surge adds useful Поддержка for Интеллект союзники who rely on physical basic attacks.",
-      "He scales cleanly with Магическая Атака, Пробивание Защиты от Магии, and offensive pet Поддержка."
-    ],
-    "skins": [
-      {
-        "desc": "Total of Интеллект Skin Stones for max level: 30,825",
-        "name": "Default Skin – Intelligence",
-        "bonus": "Stats gain: Интеллект +1365",
-        "priority": "Высокий – Essential, as Магическая Атака improves all of Cascade’s skills."
-      },
-      {
-        "desc": "Total of Skin Stones for max level: 55,410",
-        "name": "Mythic Skin – Armor",
-        "bonus": "Stats gain: Броня +10,650",
-        "priority": "Низкий – Useful for survivability against physical урон , but it does not increase Cascade’s offensive power."
-      },
-      {
-        "desc": "Total of Skin Stones for max level: 55,410",
-        "name": "Cybernetic Skin – Magic Attack",
-        "bonus": "Stats gain: Магическая Атака +10,650",
-        "priority": "Очень Высокий – The best offensive skin for Cascade. Магическая Атака directly boosts all his spells and dramatically increases his burst урон."
-      },
-      {
-        "desc": "Total of Skin Stones for max level: 55,410",
-        "name": "Stellar Skin – Health",
-        "bonus": "Stats gain: Здоровье +106,645",
-        "priority": "Средний Высокий – Stellar Skin is Cascade's best defensive skin because the extra Здоровье gives him much more room to survive burst, stay on the field, and keep applying anti-исцеление pressure."
-      }
-    ],
-    "glyphs": [
-      {
-        "desc": "Stats gain: Защита от Магии +6,500",
-        "name": "4th Glyph – Защита от Магии",
-        "name_en": "4th Glyph – Magic Defense",
-        "priority": "Низкий – Helps against enemy mages, but offers less value compared to offense-focused glyphs."
-      },
-      {
-        "desc": "Stats gain: Интеллект +1,135",
-        "name": "5th Glyph – Интеллект",
-        "name_en": "5th Glyph – Intelligence",
-        "priority": "Высокий – Boosts overall power since Интеллект is Cascade’s main stat, directly improving Магическая Атака and defenses."
-      }
-    ],
-    "counters": [],
-    "overview": "In this guide, we’ll uncover Cascade’s powers, explain his role as a Middle Line Маг, and share insights into how to harness his Интеллект-based abilities. If you’re eager to master a hero who blends humanity with titanic Сила, you’re in the right place. Cascade - Best Team #1 Khorus Mara Merlin Khorus Biscuit Oliver War Flag of Vanguard Orion Fluffy Cascade Krista Electra",
-    "artifacts": [
-      {
-        "desc": "Stats gain: Магическая Атака +6,500",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-attack.webp",
-        "name": "1st Glyph – Magic Attack",
-        "slot": "Оружие",
-        "desc_en": "Stats gain: Magic Attack +6,500",
-        "name_ru": "1st Glyph – Magic Attack (Оружие)",
-        "priority": "Высокий – Core stat for Cascade since all his skills scale directly with Магическая Атака.",
-        "priority_en": "High – Core stat for Cascade since all his skills scale directly with Magic Attack."
-      },
-      {
-        "desc": "Stats gain: Здоровье +62,200",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/health.webp",
-        "name": "2nd Glyph – Health",
-        "slot": "Книга",
-        "desc_en": "Stats gain: Health +62,200",
-        "name_ru": "2nd Glyph – Health (Книга)",
-        "priority": "Средний – Adds survivability, helping Cascade stay alive longer to cast his powerful abilities.",
-        "priority_en": "Medium – Adds survivability, helping Cascade stay alive longer to cast his powerful abilities."
-      },
-      {
-        "desc": "Stats gain: Пробивание Защиты от Магии +6,500",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-penetration.webp",
-        "name": "3rd Glyph – Magic Penetration",
-        "slot": "Кольцо",
-        "desc_en": "Stats gain: Magic Penetration +6,500",
-        "name_ru": "3rd Glyph – Magic Penetration (Кольцо)",
-        "priority": "Высокий – Essential to bypass enemy Защита от Магии, ensuring Cascade’s skills deal full урон.",
-        "priority_en": "High – Essential to bypass enemy Magic Defense, ensuring Cascade’s skills deal full damage."
-      },
-      {
-        "desc": "Stats gain: Магическая Атака +50,190",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/weapon-cascade-claws-of-the-river-spirits.webp",
-        "name": "Weapon Artifact: Claws of the River Spirits",
-        "slot": "Оружие",
-        "desc_en": "Stats gain: Magic Attack +50,190",
-        "name_ru": "Weapon Artifact: Claws of the River Spirits (Оружие)",
-        "priority": "Очень Высокий – This artifact boosts Cascade’s main skill, Hydrokinesis, which activates with his ultimate. It increases team-wide Магическая Атака, giving huge synergy to Cascade and other mages. Since it scales directly with his strongest ability, it should always be your top priority.",
-        "priority_en": "Very High – This artifact boosts Cascade’s main skill, Hydrokinesis, which activates with his ultimate. It increases team-wide Magic Attack, giving huge synergy to Cascade and other mages. Since it scales directly with his strongest ability, it should always be your top priority."
-      },
-      {
-        "desc": "Stats gain: Пробивание Защиты от Магии +10,680 | Магическая Атака +8,364",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/manuscript-of-the-void.webp",
-        "name": "Book Artifact: Manuscript of the Void",
-        "slot": "Книга",
-        "desc_en": "Stats gain: Magic Penetration +10,680 | Magic Attack +8,364",
-        "name_ru": "Book Artifact: Manuscript of the Void (Книга)",
-        "priority": "Высокий – The Книга artifact improves Cascade’s ability to cut through enemy magic defenses, ensuring his урон and Hydrokinesis healing reduction are effective even against tanky or resistant opponents. Important, but still secondary to the Оружие since it doesn’t buff the whole team.",
-        "priority_en": "High – The book artifact improves Cascade’s ability to cut through enemy magic defenses, ensuring his damage and Hydrokinesis healing reduction are effective even against tanky or resistant opponents. Important, but still secondary to the weapon since it doesn’t buff the whole team."
-      },
-      {
-        "desc": "Stats gain: Интеллект +6,249",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/ring-of-intelligence.webp",
-        "name": "Ring Artifact",
-        "slot": "Кольцо",
-        "desc_en": "Stats gain: Intelligence +6,249",
-        "name_ru": "Ring Artifact (Кольцо)",
-        "priority": "Средний – The Кольцо gives Cascade steady stat growth and survivability, but its impact is mostly personal. It makes him stronger, but doesn’t provide the same level of team utility or battle-changing effects as his Оружие or Книга. Upgrade after the other two.",
-        "priority_en": "Medium – The ring gives Cascade steady stat growth and survivability, but its impact is mostly personal. It makes him stronger, but doesn’t provide the same level of team utility or battle-changing effects as his Weapon or Book. Upgrade after the other two."
-      }
-    ],
-    "patronage": [],
-    "war_flags": [
-      {
-        "desc": "The War Flag of Frost lowers enemy skill levels every 18 seconds for 8 seconds. This effect makes opposing mages and healers significantly weaker, giving Cascade’s Hydrokinesis and Refluence more pressure.",
-        "name": "War Flag of Frost",
-        "benefit": "Excellent against strong enemy casters, as it weakens their урон and Контролёр while amplifying Cascade’s relative magical presence."
-      },
-      {
-        "desc": "The War Flag of Decline reduces enemy healing by 10%. When combined with Cascade’s Hydrokinesis (healing reduction + no resurrection), this creates strong anti-исцеление synergy.",
-        "name": "War Flag of Decline",
-        "benefit": "Perfect against Хилер-heavy teams. Makes it almost impossible for enemy supports to sustain under Cascade’s rain урон."
-      },
-      {
-        "desc": "This flag boosts Pet Skill Power by 10%. Since Cascade relies heavily on pets like Merlin and Biscuit for stronger magic урон and healing reduction, this flag directly enhances his effectiveness.",
-        "name": "War Flag of Pet Strength",
-        "benefit": "Highly recommended when using Cascade with Merlin or Biscuit, as it amplifies both offensive and utility patronage effects."
-      }
-    ],
     "best_teams": []
   },
   "dante": {
@@ -2526,145 +2475,41 @@ export const HERO_GUIDES_DB = {
     "best_teams": []
   },
   "aidan": {
-    "id": "aidan",
     "cons": [
-      "Versatile Поддержка: Combines healing, shielding, and area урон to protect and sustain the team.",
-      "Strong synergy with Kayla: Shared Здоровье mechanic can create powerful and durable back-line combos.",
-      "Back-line placement: Safely positioned away from the front, making him harder to reach in balanced matchups.",
-      "Burn and AoE урон: Can weaken multiple враги at once with Glyphs and Ignite effects.",
-      "Scales well with Магическая Атака: Easy to enhance via Книга, Glyphs, Skins, and Pets."
+      "Уязвим к убийцам задней линии (Клевер, Джу, Кайла)",
+      "Высокая зависимость от энергии и своевременного применения ультимативного умения",
+      "Полное отсутствие умений контроля (оглушения, молчания, замедления)",
+      "Риск гибели: при смерти связанного союзника Айдан быстро погибает сам из-за обратного урона",
+      "Низкая базовая выживаемость без раскачанных щитов и параметров"
     ],
-    "name": "Айдан",
     "pros": [
-      "Versatile Поддержка: Combines healing, shielding, and area урон to protect and sustain the team.",
-      "Strong synergy with Kayla: Shared Здоровье mechanic can create powerful and durable back-line combos.",
-      "Back-line placement: Safely positioned away from the front, making him harder to reach in balanced matchups.",
-      "Burn and AoE урон: Can weaken multiple враги at once with Glyphs and Ignite effects.",
-      "Scales well with Магическая Атака: Easy to enhance via Книга, Glyphs, Skins, and Pets."
+      "Универсальная поддержка: совмещает исцеление, защитные щиты и урон по области",
+      "Сильная синергия с Кайлой благодаря механике общего здоровья",
+      "Безопасное расположение на задней линии",
+      "Периодический чистый урон, игнорирующий броню и магическую защиту врагов",
+      "Превосходное масштабирование навыков от Магической Атаки"
     ],
     "skins": [
       {
-        "desc": "",
-        "name": "Default Skin (Intelligence)",
-        "bonus": "+1,365 Интеллект Each point = +3 Магическая Атака, +1 Защита от Магии",
-        "priority": "Очень Высокий – This skin boosts Aidan’s core stat. Интеллект improves both healing and урон output from all of his abilities. A must-max skin."
-      },
-      {
-        "desc": "",
-        "name": "Solar Skin",
-        "bonus": "+10,650 Магическая Атака",
-        "priority": "Высокий – Adds a large flat boost to all skill effects. It’s perfect after leveling the Интеллект skin. Strengthens both урон and healing effectiveness."
-      },
-      {
-        "desc": "",
-        "name": "Cybernetic Skin",
-        "bonus": "+106,645 Здоровье",
-        "priority": "Средний-Высокий – Increases Aidan’s survivability, which supports his passive healing mechanic and helps keep him alive longer. Great for PvP endurance."
-      },
-      {
-        "desc": "",
-        "name": "Masquerade Skin",
-        "bonus": "+10,650 Защита от Магии",
-        "priority": "Средний – Offers protection against magic-based враги, but doesn’t enhance healing or урон. Useful situationally, but not a top priority in general builds."
+        "name": "Базовый облик"
       }
     ],
     "glyphs": [
       {
-        "desc": "",
-        "name": "4th Glyph – Здоровье: +62,200",
-        "name_en": "4th Glyph – Health: +62,200",
-        "priority": "Средний-Высокий – Increases durability of the bonded duo; good for surviving bursts and allowing heals to take effect."
-      },
-      {
-        "desc": "",
-        "name": "5th Glyph – Защита от Магии: +6500",
-        "name_en": "5th Glyph – Magic Defense: +6500",
-        "priority": "Средний – Reduces magic урон taken; helpful in long combats but lower priority than stats that directly improve Aidan's healing and pure-урон output."
+        "name": "Магическая атака"
       }
     ],
     "counters": [],
-    "overview": "Aidan isn't just a Хилер he's a survivor of tragedy, bound by flame and fate to his sister Kayla. In Хроники Хаоса (Dominion Era), Aidan brings both powerful healing and searing magic to the battlefield. But what makes him truly unique is the life he shares with his sister, forming one of the game’s most emotionally complex duos. Whether you’re here to master his mechanics or understand his story, you’re in for something special. In this guide, you’ll discover Aidan’s strengths, his optimal roles in battle, and how to unleash his full potential as both a Хилер and a Fire Herald Маг. Let’s explore why Aidan’s flame burns brightest at the heart of your team. Aidan's Best Teams #1 #1 Merlin Albus Cain Fenris Oliver Axel Aidan Sebastian Nebula Ishmael Lyria Team #1 Strategy This composition combines Aidan's sustained healing with Ishmael's transformation урон output. Nebula amplifies Ishmael's critical-hit-based урон, significantly increasing his burst potential during transformation. Sebastian provides additional pure урон through his active skill while offering critical protection by removing all debuffs from the team, keeping your урон dealers alive during extended fights.",
+    "overview": "Айдан — герой поддержки задней линии, выполняющий роль целителя и мага Вестников Огня. Его главная особенность — уникальная ментальная и физическая связь с сестрой Кайлой, благодаря которой они разделяют жизненные силы в бою. Айдан способен наносить мощный чистый и магический урон по области, накладывать щиты и обеспечивать непрерывное исцеление команды, что делает его ключевым элементом многих сильных сборках как в PvP, так и в PvE.",
     "artifacts": [
       {
-        "desc": "Phoenix Sigil – Grants +50,190 Броня and +12,547 Skill Power. When Aidan uses his ultimate (Phoenix's Embrace), it activates this artifact, granting bonus Броня to the entire team for 9 seconds. The base Броня boost significantly improves Aidan's physical defense, while the Skill Power enhances all his abilities' effectiveness.",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/weapon-aidan-phoenix-sigil.webp",
-        "name": "Weapon Artifact:",
-        "slot": "Оружие",
-        "desc_en": "Phoenix Sigil – Grants +50,190 Armor and +12,547 Skill Power. When Aidan uses his ultimate (Phoenix's Embrace), it activates this artifact, granting bonus Armor to the entire team for 9 seconds. The base Armor boost significantly improves Aidan's physical defense, while the Skill Power enhances all his abilities' effectiveness.",
-        "name_ru": "Weapon Artifact: (Оружие)",
-        "priority": "Высокий – The permanent Броня and Skill Power make this artifact valuable. The Броня keeps Aidan alive against physical урон dealers, and the Skill Power boosts his healing and урон output. Upgrade this as your third priority after the Книга and Кольцо.",
-        "priority_en": "High – The permanent Armor and Skill Power make this artifact valuable. The Armor keeps Aidan alive against physical damage dealers, and the Skill Power boosts his healing and damage output. Upgrade this as your third priority after the Book and Ring."
-      },
-      {
-        "desc": "Tome of Arcane Knowledge – Grants +16,731 Магическая Атака and +83,649 Здоровье. Магическая Атака directly improves all of Aidan’s core skills, including healing, burn effects, shields, and explosion урон. The Здоровье boost helps him stay alive longer in battle, supporting more sustained healing and team utility.",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/tome-of-arcane-knowledge.webp",
-        "name": "Book Artifact:",
-        "slot": "Книга",
-        "desc_en": "Tome of Arcane Knowledge – Grants +16,731 Magic Attack and +83,649 Health. Magic Attack directly improves all of Aidan’s core skills, including healing, burn effects, shields, and explosion damage. The Health boost helps him stay alive longer in battle, supporting more sustained healing and team utility.",
-        "name_ru": "Book Artifact: (Книга)",
-        "priority": "Очень Высокий – This is Aidan’s most important artifact. The Магическая Атака bonus powers up every one of his abilities, while the Здоровье boost enhances his survivability on the battlefield.",
-        "priority_en": "Very High – This is Aidan’s most important artifact. The Magic Attack bonus powers up every one of his abilities, while the Health boost enhances his survivability on the battlefield."
-      },
-      {
-        "desc": "Кольцо of Интеллект – Grants +6,249 Интеллект, which converts into +18,747 Магическая Атака and +6,249 Защита от Магии. It passively strengthens all his skills and defenses.",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/ring-of-intelligence.webp",
-        "name": "Ring Artifact:",
-        "slot": "Кольцо",
-        "desc_en": "Ring of Intelligence – Grants +6,249 Intelligence, which converts into +18,747 Magic Attack and +6,249 Magic Defense. It passively strengthens all his skills and defenses.",
-        "name_ru": "Ring Artifact: (Кольцо)",
-        "priority": "Высокий – Интеллект boosts both Магическая Атака and Защита от Магии. This artifact enhances Aidan’s healing and resilience, making it the second best to level up.",
-        "priority_en": "High – Intelligence boosts both Magic Attack and Magic Defense. This artifact enhances Aidan’s healing and resilience, making it the second best to level up."
-      },
-      {
-        "desc": "",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-attack.webp",
-        "name": "1st Glyph – Magic Attack: +6500",
-        "slot": "Оружие",
-        "desc_en": "",
-        "name_ru": "1st Glyph – Magic Attack: +6500 (Оружие)",
-        "priority": "Очень Высокий – Amplifies щит explosions, Sparks and scaling healing; first priority to increase offensive and Поддержка impact.",
-        "priority_en": "Very High – Amplifies shield explosions, Sparks and scaling healing; first priority to increase offensive and support impact."
-      },
-      {
-        "desc": "",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/intelligence.webp",
-        "name": "2nd Glyph – Intelligence: +1135",
-        "slot": "Книга",
-        "desc_en": "",
-        "name_ru": "2nd Glyph – Intelligence: +1135 (Книга)",
-        "priority": "Высокий – Converts into Магическая Атака and Защита от Магии. For Aidan, the Магическая Атака conversion strongly benefits his healing and the pure-урон Burn, making this the best secondary choice for Поддержка-oriented builds.",
-        "priority_en": "High – Converts into Magic Attack and Magic Defense. For Aidan, the Magic Attack conversion strongly benefits his healing and the pure-damage Burn, making this the best secondary choice for support-oriented builds."
-      },
-      {
-        "desc": "",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-penetration.webp",
-        "name": "3rd Glyph – Magic Penetration: +6500",
-        "slot": "Кольцо",
-        "desc_en": "",
-        "name_ru": "3rd Glyph – Magic Penetration: +6500 (Кольцо)",
-        "priority": "Средний-Высокий – Makes attacks and explosions more effective against targets with Высокий Защита от Магии; pick this when the meta has many magic tanks, but consider Интеллект first for Aidan's healing/pure-урон scaling.",
-        "priority_en": "Medium-High – Makes attacks and explosions more effective against targets with high Magic Defense; pick this when the meta has many magic tanks, but consider Intelligence first for Aidan's healing/pure-damage scaling."
+        "name": "Печать Феникса",
+        "slot": "Оружие (1-й артефакт)",
+        "name_ru": "Печать Феникса"
       }
     ],
     "patronage": [],
-    "war_flags": [
-      {
-        "desc": "This flag boosts all healing by 10%, significantly amplifying Aidan's Inner Fire healing waves and regeneration. Since his primary role is to исцеление and protect his team, this flag enhances his overall impact in long fights.",
-        "name": "War Flag of Recovery",
-        "benefit": "Aidan’s healing becomes more effective across the board, helping his team survive burst урон and sustain through prolonged battles."
-      },
-      {
-        "desc": "This flag reduces the enemy team's healing by 10%, which helps counter enemy healers and outlast defensive compositions. When combined with Aidan’s burn урон and sustained healing, it gives your team a strategic edge.",
-        "name": "War Flag of Decline",
-        "benefit": "Weakens the opposing team's ability to recover while Aidan continues to Поддержка his own, giving your side the advantage in attrition fights."
-      },
-      {
-        "desc": "Increases pet Skill Power by 10%, indirectly enhancing Aidan's performance when supported by pets like Merlin or Khorus. These pets boost Aidan’s Магическая Атака and щит potential through patronage and aura effects.",
-        "name": "War Flag of Pet Strength",
-        "benefit": "Improves the effectiveness of Поддержка pets that boost Aidan’s skills and survivability, adding synergy and extra team utility."
-      }
-    ],
-    "best_teams": []
+    "war_flags": []
   },
   "guus": {
     "id": "guus",
@@ -3781,6 +3626,112 @@ export const HERO_GUIDES_DB = {
     ],
     "best_teams": []
   },
+  "adam": {
+    "cons": [
+      "Зависит от стаков Метки Охотника для достижения максимального урона",
+      "Жестко контрится механикой молчания Флаффи",
+      "Ограниченный урон по области (AOE)",
+      "Относительно низкий вклад в контроль вражеской команды"
+    ],
+    "pros": [
+      "Высокий взрывной урон по одиночной цели",
+      "Метка Охотника суммирует физическую атаку и пробивание брони",
+      "Сильная синергия с Лирией, Электрой и Фафниром",
+      "Встроенная выживаемость благодаря уклонению от умения Реактивный Экран",
+      "Отлично справляется с прочными героями передней линии"
+    ],
+    "skins": [
+      {
+        "name": "Базовый облик",
+        "bonus": "Ловкость +1,365",
+        "priority": "Очень высокий — повышает главную характеристику героя."
+      },
+      {
+        "name": "Церемониальный облик",
+        "bonus": "Здоровье +106,645",
+        "priority": "Высокий — дает значительный приток здоровья для выживаемости."
+      }
+    ],
+    "glyphs": [
+      {
+        "name": "Физическая Атака",
+        "priority": "Очень высокий — ключевой атакующий символ."
+      },
+      {
+        "name": "Пробивание Брони",
+        "priority": "Высокий — отлично сочетается с умением Адаптивный Калибр."
+      },
+      {
+        "name": "Ловкость",
+        "priority": "Высокий — качает главную характеристику."
+      },
+      {
+        "name": "Уклонение",
+        "priority": "Средне-высокий — улучшает выживаемость."
+      },
+      {
+        "name": "Броня",
+        "priority": "Средний — базовая защита от физического урона."
+      }
+    ],
+    "counters": [
+      {
+        "hero": "Fluffy",
+        "reason": "Флаффи является главным контр-пиком Адама. Его 4-е умение отменяет ультимативную способность врага в момент использования, нанося урон и срабатывая раз в 20 секунд. Отмена Захвата Цели сбрасывает наложение Метки Охотника и блокирует перезарядку умения, прерывая цепочку усиления Адама."
+      }
+    ],
+    "overview": "Адам — высокомобильный герой роли Стрелок в Hero Wars: Dominion Era, меткий стрелок из диких пограничных земель. Он наносит высокий взрывной урон по одиночным целям, используя уникальную механику Метки Охотника для накапливания бонусов и уничтожения приоритетных целей. С каждой меткой он эффективно разрушает защиту врагов, а его стиль игры награждает за быстрые ротации умений и синергию с героями усиления.",
+    "artifacts": [
+      {
+        "desc": "Физическая атака +33,459",
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/weapon-adam-starfang-adaptive-pistol.webp",
+        "name": "Адаптивный Пистолет Звездного Клыка",
+        "slot": "Оружие",
+        "name_ru": "Адаптивный Пистолет Звездного Клыка",
+        "priority": "Очень высокий — артефакт оружия дает огромный прирост физической атаки, что критично для максимального урона."
+      },
+      {
+        "desc": "Ловкость +6,249",
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/ring-of-agility.webp",
+        "name": "Кольцо Ловкости",
+        "slot": "Кольцо",
+        "name_ru": "Кольцо Ловкости",
+        "priority": "Высокий — усиливает основную характеристику Адама, увеличивая физическую атаку и уклонение."
+      },
+      {
+        "desc": "Здоровье +83,649 | Уклонение +4,647",
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/book-of-illusions.webp",
+        "name": "Фолиант Иллюзий",
+        "slot": "Книга",
+        "name_ru": "Фолиант Иллюзий",
+        "priority": "Средне-высокий — сбалансированное сочетание выживаемости и уклонения."
+      }
+    ],
+    "patronage": [],
+    "war_flags": [],
+    "best_teams": [
+      {
+        "hero": "Electra",
+        "reason": "Второе умение Электры наносит урон и превращает 399% этого урона в лечение команды, позволяя Адаму жить дольше и многократно сбрасывать перезарядку Захвата Цели."
+      },
+      {
+        "hero": "Fafnir",
+        "reason": "Рунический Клинок Фафнира добавляет плоский бонус к физической атаке на 8 секунд. При связи с Адамом каждый выстрел Захвата Цели и рикошет Веера Выстрелов получают существенную прибавку к урону."
+      },
+      {
+        "hero": "Iris",
+        "reason": "Первое умение Ирис обнажает душу врага, передавая весь урон в виде чистого урона. Когда Адам атакует обнаженную цель, его урон становится чистым, что значительно увеличивает взрывной урон."
+      },
+      {
+        "hero": "Lyria",
+        "reason": "Второе умение Лирии связывает ее с Адамом, давая вампиризм. Пассивное 4-е умение снижает уклонение всех врагов и добавляет физический урон, гарантируя попадания Адама."
+      },
+      {
+        "hero": "Polaris",
+        "reason": "Полярная Звезда Полярис снижает уровень реактивных и вероятностных навыков врага, ослабляя защитные срабатывания, а также продлевает эффекты контроля союзников."
+      }
+    ]
+  },
   "somna": {
     "id": "somna",
     "cons": [
@@ -3934,85 +3885,6 @@ export const HERO_GUIDES_DB = {
       }
     ],
     "best_teams": []
-  },
-  "adam": {
-    "cons": [
-      "Зависит от зарядов Метки Охотника для достижения максимального урона",
-      "Жестко контрится механикой молчания Пушка (Fluffy)",
-      "Ограниченные возможности нанесения урона по области",
-      "Низкий вклад в контроль вражеской команды"
-    ],
-    "pros": [
-      "Высокий взрывной урон по одиночной цели",
-      "Метка Охотника накапливает физическую атаку и пробивание брони",
-      "Сильная синергия с Лирией, Электрой и Фафниром",
-      "Встроенная выживаемость за счет уклонения от умения Реактивный Экран",
-      "Превосходно показывает себя против живучих героев передней линии"
-    ],
-    "skins": [
-      {
-        "name": "Базовый Облик",
-        "bonus": "Ловкость +1,365",
-        "priority": "Очень Высокий — прокачивается первым, так как увеличивает основную характеристику."
-      },
-      {
-        "name": "Церемониальный Облик",
-        "bonus": "Здоровье +106,645",
-        "priority": "Высокий — дает существенную прибавку к выживаемости в затяжных боях."
-      }
-    ],
-    "glyphs": [
-      {
-        "name": "Физическая Атака",
-        "priority": "Очень Высокий — главный атакующий символ, усиливающий все умения."
-      },
-      {
-        "name": "Пробивание Брони",
-        "priority": "Высокий — помогает эффективно пробивать защиту бронированных танков."
-      },
-      {
-        "name": "Ловкость",
-        "priority": "Высокий — повышает основную характеристику, давая прирост к урону и уклонению."
-      },
-      {
-        "name": "Уклонение",
-        "priority": "Средне-высокий — синергирует с умением Реактивный Экран для повышения защиты."
-      },
-      {
-        "name": "Броня",
-        "priority": "Средний — снижает получаемый физический урон, прокачивается в последнюю очередь."
-      }
-    ],
-    "counters": [],
-    "overview": "Адам — высокомобильный герой-стрелок в игре Хроники Хаоса: Эра Доминиона. Он отлично справляется с нанесением точечного взрывного урона по одиночным целям, используя уникальную механику Метки Охотника для накопления бонусов и уничтожения приоритетных врагов. Его стиль игры требует быстрой ротации умений и высокой синергии с героями, усиливающими команду.",
-    "artifacts": [
-      {
-        "desc": "Физическая атака +33,459",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/weapon-adam-starfang-adaptive-pistol.webp",
-        "name": "Адаптивный Пистолет Звездного Клыка",
-        "slot": "Оружие",
-        "name_ru": "Адаптивный Пистолет Звездного Клыка",
-        "priority": "Очень Высокий — основной артефакт для максимального увеличения физической атаки и общего урона."
-      },
-      {
-        "desc": "Ловкость +6,249",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/ring-of-agility.webp",
-        "name": "Кольцо Ловкости",
-        "slot": "Кольцо",
-        "name_ru": "Кольцо Ловкости",
-        "priority": "Высокий — усиливает главную характеристику, увеличивая физическую атаку и уклонение."
-      },
-      {
-        "desc": "Здоровье +83,649 | Уклонение +4,647",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/book-of-illusions.webp",
-        "name": "Книга Иллюзий",
-        "slot": "Книга",
-        "name_ru": "Книга Иллюзий",
-        "priority": "Средне-высокий — обеспечивает сбалансированную выживаемость за счет здоровья и уклонения."
-      }
-    ],
-    "patronage": [],
-    "war_flags": []
   },
   "corvus": {
     "id": "corvus",
@@ -4294,6 +4166,83 @@ export const HERO_GUIDES_DB = {
     "war_flags": [],
     "best_teams": []
   },
+  "electra": {
+    "cons": [
+      "Зависима от частоты применения ультимативного умения",
+      "Уязвима к эффектам блокировки исцеления (Селеста, Бисквит)",
+      "Может получить смертельный урон при перенаправлении атак без надлежащей поддержки"
+    ],
+    "pros": [
+      "Огромный запас здоровья благодаря конвертации защитных характеристик в Силу",
+      "Способность перенаправлять урон с союзников на себя, защищая команду",
+      "Высокий потенциал магического урона по области от взрыва щита",
+      "Встроенное исцеление и самолечение от умений"
+    ],
+    "skins": [
+      {
+        "name": "Базовый облик",
+        "bonus": "Сила +1,365",
+        "priority": "Высокий — увеличивает Силу и базовое Здоровье"
+      },
+      {
+        "name": "Демонический облик",
+        "bonus": "Защита от магии +10,650",
+        "priority": "Очень высокий — защита от магии конвертируется в огромный запас Силы"
+      }
+    ],
+    "glyphs": [
+      {
+        "name": "Здоровье",
+        "priority": "Очень высокий — максимальный приоритет для размера щита и выживаемости"
+      },
+      {
+        "name": "Сила",
+        "priority": "Очень высокий — увеличивает показатель здоровья и урон"
+      },
+      {
+        "name": "Броня",
+        "priority": "Высокий — полностью конвертируется в Силу в начале боя"
+      },
+      {
+        "name": "Пробивание защиты от магии",
+        "priority": "Выше среднего — повышает наносимый магический урон"
+      },
+      {
+        "name": "Магическая атака",
+        "priority": "Средний — усиливает умения и прочность щита"
+      }
+    ],
+    "counters": [],
+    "overview": "Электра — танк первой линии, рожденный из хаоса и объединяющий души павших героев. Ее уникальная механика превращает показатели брони, защиты от магии и уклонения в Силу, что дает ей невероятный запас здоровья. Электра способна принимать урон за союзников, защищать команду мощными щитами и наносить магический урон по области, преобразуя перенесенную боль в разрушительные взрывы.",
+    "artifacts": [
+      {
+        "desc": "Магическая Атака: +50,190",
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/weapon-electra-cage-of-pain.webp",
+        "name": "Клетка Боли",
+        "slot": "Оружие",
+        "name_ru": "Клетка Боли",
+        "priority": "Очень высокий — усиливает урон команды и взрыв ультимативного щита"
+      },
+      {
+        "desc": "Броня: +12,546, Защита от магии: +12,546",
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/book-defenders-covenant.webp",
+        "name": "Завет Защитника",
+        "slot": "Книга",
+        "name_ru": "Завет Защитника",
+        "priority": "Высокий — защитные характеристики конвертируются в Силу и Здоровье"
+      },
+      {
+        "desc": "Сила: +6,249",
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/ring-of-strength.webp",
+        "name": "Кольцо Силы",
+        "slot": "Кольцо",
+        "name_ru": "Кольцо Силы",
+        "priority": "Средний — прямая прибавка к Силе и Здоровью"
+      }
+    ],
+    "patronage": [],
+    "war_flags": []
+  },
   "polaris": {
     "id": "polaris",
     "cons": [
@@ -4312,7 +4261,6 @@ export const HERO_GUIDES_DB = {
     "war_flags": [],
     "best_teams": []
   },
-  "electra": {},
   "astaroth": {
     "id": "astaroth",
     "cons": [
@@ -4444,7 +4392,73 @@ export const HERO_GUIDES_DB = {
     "war_flags": [],
     "best_teams": []
   },
-  "byrna": {},
+  "byrna": {
+    "cons": [
+      "Намного менее эффективна в коротких боях против взрывного урона, так как не успевает набрать полную силу.",
+      "Эффективность существенно снижается, если союзники на передней линии погибают слишком быстро или в команде нет регулярного исцеления.",
+      "Уязвима к эффектам запрета лечения и безмолвию (сайленсу), которые блокируют ее ключевую механику."
+    ],
+    "pros": [
+      "Очень мощная поддержка и выживаемость в затяжных боях благодаря командному лечению, увеличению максимального здоровья и постоянному повышению Магической Атаки.",
+      "Дух-хранитель защищает переднюю линию, перенаправляя часть урона на себя и создавая второй барьер прочности.",
+      "Умение «Медвежья хватка» превращает исцеление одной цели в массовое лечение всей команды.",
+      "Отлично сочетается с магическими командами, так как и ее урон, и эффективное лечение напрямую зависят от Магической Атаки."
+    ],
+    "skins": [
+      {
+        "name": "skin_1",
+        "priority": "string"
+      },
+      {
+        "name": "skin_2",
+        "priority": "string"
+      },
+      {
+        "name": "skin_3",
+        "priority": "string"
+      }
+    ],
+    "glyphs": [
+      {
+        "name": "glyph_1",
+        "priority": "string"
+      },
+      {
+        "name": "glyph_2",
+        "priority": "string"
+      },
+      {
+        "name": "glyph_3",
+        "priority": "string"
+      },
+      {
+        "name": "glyph_4",
+        "priority": "string"
+      },
+      {
+        "name": "glyph_5",
+        "priority": "string"
+      }
+    ],
+    "counters": [],
+    "overview": "Бырна — целитель задней линии с приростом параметров мага и принадлежностью к Стражам Рощи. Ее механика строится вокруг непрерывного исцеления: пока команда восстанавливает здоровье, Бырна непрерывно усиливает свои характеристики. Это делает ее идеальным выбором для защитных составов, команд, ориентированных на выживаемость, и магических пачек, рассчитанных на долгие сражения. Она не просто лечит союзников, а создает дополнительный запас прочности для первой линии через духа-хранителя, распространяет лечение на всю команду и конвертирует каждый факт исцеления в дополнительную Магическую Атаку.",
+    "artifacts": [
+      {
+        "name": "artifact_1",
+        "slot": "string"
+      },
+      {
+        "name": "artifact_2",
+        "slot": "string"
+      },
+      {
+        "name": "artifact_3",
+        "slot": "string"
+      }
+    ],
+    "patronage": [],
+    "war_flags": []
+  },
   "dorian": {
     "id": "dorian",
     "cons": [

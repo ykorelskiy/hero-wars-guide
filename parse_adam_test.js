@@ -318,7 +318,9 @@ async function main() {
         progress = JSON.parse(fs.readFileSync(PROGRESS_FILE));
     }
     
-    for (const hero of HEROES) {
+    const hero = HEROES.find(h => h.id === "adam");
+    if (hero) {
+
         if (progress.includes(hero.id) || hero.id === 'adam') {
             continue;
         }
@@ -333,7 +335,7 @@ async function main() {
         await delay(DELAY_MS);
     }
     
-    console.log("Парсинг всех героев завершен!");
+    }
     
     // После завершения надо обновить локальные файлы
     const { data: allHeroes } = await supabase.from('hw_heroes').select('*');

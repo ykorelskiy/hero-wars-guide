@@ -65,6 +65,7 @@ export function renderHeroDetail(heroId) {
             </div>
           </div>
           <div style="color: #cbd5e1; font-size: 0.95rem; line-height: 1.6; margin-bottom: 12px;">${s.desc}</div>
+          ${s.explanation ? `<div style="background: rgba(14, 165, 233, 0.08); border-left: 3px solid rgba(14, 165, 233, 0.4); border-radius: 6px; padding: 12px 14px; margin-bottom: 12px; font-size: 0.92rem; color: #bae6fd; line-height: 1.5;">💡 <b>Разбор механики:</b> ${s.explanation}</div>` : ''}
           <div style="display:grid; grid-template-columns: 1fr; gap:8px;">
             ${s.depends_on ? `<div style="background: rgba(6, 182, 212, 0.1); border: 1px solid rgba(6, 182, 212, 0.25); color: #38bdf8; padding: 8px 14px; border-radius: 8px; font-size: 0.88rem; font-weight: 600;">🎯 <b>Зависит от:</b> <span style="color:#ffffff;">${s.depends_on}</span></div>` : ''}
             ${s.formula ? `<div style="background: rgba(30, 41, 59, 0.9); border: 1px solid rgba(255, 255, 255, 0.15); padding: 10px 14px; border-radius: 8px; font-size: 0.88rem; color: #f8fafc;">📐 <b>Формула:</b> <span style="color:#facc15; font-weight:700;">${s.formula}</span></div>` : ''}
@@ -188,6 +189,19 @@ export function renderHeroDetail(heroId) {
             ${heroGuide.cons.map(c => `<li>${c}</li>`).join('')}
           </ul>
         </div>` : ''}
+      </div>` : ''}
+
+      <!-- Synergy / Best Teams -->
+      ${Array.isArray(heroGuide.best_teams) && heroGuide.best_teams.length > 0 ? `
+      <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(16,185,129,0.2); padding:16px; border-radius:12px; margin-bottom:14px;">
+        <b style="color:#10b981; font-size:0.95rem; display:block; margin-bottom:10px;">🤝 Лучшая Синергия и Команды:</b>
+        <div style="display:flex; flex-direction:column; gap:8px;">
+          ${heroGuide.best_teams.map(t => `
+          <div style="background:rgba(16,185,129,0.06); padding:10px 14px; border-radius:8px; border-left:3px solid rgba(16,185,129,0.4);">
+            <b style="color:#6ee7b7; font-size:0.88rem;">${t.hero || t.name || t}</b>
+            ${t.reason || t.desc ? `<div style="color:#94a3b8; font-size:0.83rem; margin-top:3px;">${t.reason || t.desc}</div>` : ''}
+          </div>`).join('')}
+        </div>
       </div>` : ''}
 
       <!-- Counters -->

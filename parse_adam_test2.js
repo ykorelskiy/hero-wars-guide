@@ -319,7 +319,7 @@ async function main() {
     }
     
     for (const hero of HEROES) {
-        if (progress.includes(hero.id) || hero.id === 'adam') {
+        if (hero.id !== 'adam') {
             continue;
         }
         
