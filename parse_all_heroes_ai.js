@@ -8,7 +8,13 @@ import { GoogleGenAI } from '@google/genai';
 dotenv.config();
 
 const supabase = createClient(process.env.VITE_SUPABASE_URL, process.env.VITE_SUPABASE_ANON_KEY);
-const ai = new GoogleGenAI({});
+const KEYS = process.env.GEMINI_KEYS ? process.env.GEMINI_KEYS.split(',') : [];
+let currentKeyIndex = 0;
+function getAI() {
+    const key = KEYS[currentKeyIndex];
+    currentKeyIndex = (currentKeyIndex + 1) % KEYS.length;
+    return new GoogleGenAI({ apiKey: key });
+}
 
 const HEROES = [
   { id: 'electra',       ruName: 'Электра',            slug: 'electra' },
@@ -197,32 +203,45 @@ const SCHEMA = {
     required: ["id", "name", "overview", "pros", "cons", "main_stat", "counters", "best_teams", "skills", "artifacts", "skins", "glyphs"]
 };
 
-async function fetchHtml(url) {
-    const response = await fetch(url);
-    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+async function fetchHtml(heroId, url) {
+    let response = await fetch(url);
+    if (!response.ok) {
+        const url2 = `https://alexandregames.com/hero-wars-dominion-era/characters/${heroId}.html`;
+        response = await fetch(url2);
+        if (!response.ok) {
+            console.warn(`[${heroId}] Страница не найдена! ИИ сгенерирует данные из своей базы.`);
+            return '';
+        }
+    }
     return await response.text();
 }
 
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 async function parseHero(hero, url) {
+    const ai = getAI();
     const heroId = hero.id;
     console.log(`[${heroId}] Загрузка HTML...`);
-    const html = await fetchHtml(url);
-    const $ = cheerio.load(html);
-
-    $('script, style, header, footer, nav, .ad-fold-container, ins').remove();
-
+    const html = await fetchHtml(hero.slug, url);
+    let textContent = '';
     const images = [];
-    $('img').each((i, el) => {
-        let src = $(el).attr('src');
-        if (src) {
-            if (src.startsWith('../../')) src = src.replace('../../', 'https://alexandregames.com/');
-            images.push(src);
-        }
-    });
 
-    const textContent = $('body').text().replace(/\s+/g, ' ').trim();
+    if (html) {
+        const $ = cheerio.load(html);
+        $('script, style, header, footer, nav, .ad-fold-container, ins').remove();
+        
+        $('img').each((i, el) => {
+            let src = $(el).attr('src');
+            if (src) {
+                if (src.startsWith('../../')) src = src.replace('../../', 'https://alexandregames.com/');
+                images.push(src);
+            }
+        });
+        textContent = $('body').text().replace(/\s+/g, ' ').trim();
+    } else {
+        textContent = "Page text is missing. Please use your internal knowledge base about Hero Wars Dominion Era to generate the data for this hero.";
+    }
+
     
     const prompt = `
 Анализируй героя с ID: ${heroId}. Русское имя героя: ${hero.ruName}.
@@ -236,23 +255,46 @@ ${images.join('\n')}
 
     console.log(`[${heroId}] Отправка в Gemini AI...`);
     
-    const response = await ai.models.generateContent({
-        model: 'gemini-3.6-flash',
-        contents: prompt,
-        config: {
-            systemInstruction: SYSTEM_INSTRUCTION,
-            responseMimeType: 'application/json',
-            responseSchema: SCHEMA,
-            temperature: 0.1
+    let aiResult = '';
+    let retries = 5;
+    let success = false;
+    
+    while(retries > 0 && !success) {
+        try {
+            const response = await ai.models.generateContent({
+                model: 'gemini-3.5-flash',
+                contents: prompt,
+                config: {
+                    systemInstruction: SYSTEM_INSTRUCTION,
+                    responseMimeType: 'application/json',
+                    responseSchema: SCHEMA,
+                    temperature: 0.1
+                }
+            });
+            aiResult = response.text;
+            
+            const lower = aiResult.toLowerCase();
+            if (lower.includes('react') || lower.includes('<div') || lower.includes('tests pass')) {
+                console.warn(`[${heroId}] Обнаружена галлюцинация, пробуем еще раз...`);
+                retries--;
+                continue;
+            }
+            success = true;
+        } catch (e) {
+            if (e.message.includes('429') || e.message.includes('RESOURCE_EXHAUSTED')) {
+                console.log(`[${heroId}] Ошибка 429 (лимиты). Ждем 30 секунд...`);
+                await new Promise(r => setTimeout(r, 30000));
+                retries--;
+            } else {
+                console.error(`[${heroId}] Ошибка вызова ИИ:`, e.message);
+                retries--;
+                await new Promise(r => setTimeout(r, 10000));
+            }
         }
-    });
-
-    try {
-        return JSON.parse(response.text);
-    } catch (e) {
-        console.error(`[${heroId}] Ошибка парсинга JSON:`, e);
-        throw e;
     }
+    
+    if (!success) throw new Error('Не удалось получить корректный ответ от ИИ');
+    return JSON.parse(aiResult);
 }
 
 async function processHero(hero) {
@@ -323,9 +365,7 @@ async function main() {
     }
     
     for (const hero of HEROES) {
-        if (progress.includes(hero.id) || hero.id === 'adam') {
-            continue;
-        }
+        if (progress.includes(hero.id) || hero.id === 'adam') { continue; }
         
         const success = await processHero(hero);
         if (success) {

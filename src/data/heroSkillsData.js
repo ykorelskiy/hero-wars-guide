@@ -1,116 +1,128 @@
 export const HERO_SKILLS_DB = {
-  "yasmine": [
-    {
-      "desc": "Yasmine paralyzes the last enemy who attacked her for 3 seconds, teleports behind them, strikes 7 times, and applies an Ассасин’s Mark. While this skill is active, she cannot receive debuffs. After the attack, she returns to her original position and continues to attack the marked target. This is Yasmine’s main урон skill and the core of her gameplay. It deals massive single-target урон and makes her untouchable while active.",
-      "name": "Dance of Death (Dance of Death)",
-      "type": "Ультимативное умение",
-      "formula": "урон Formula: 40% Физическая Атака + 40 × Level за удар. | Calculated урон: 0.4 × 89,672 + 40 × 130 = 41,069 урон за удар . Since the skill hits 7 times, the total burst урон is approximately 287,482 before defenses. | Приоритет прокачки: 1 (Highest) — This skill defines Yasmine’s entire strategy. Upgrading it first greatly increases her burst урон and survivability.",
-      "name_en": "Dance of Death",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/yasmine/dance-of-death.webp",
-      "priority": ""
-    },
-    {
-      "desc": "When Dance of Death is used, Yasmine gains bonus critical hit chance and Уклонение for 10 seconds. This makes her harder to hit and increases her chances to land critical hits. This skill boosts both her offense and defense, especially during her most dangerous moments right after using her ultimate skill. Расчётный бонус: 0.4 × 89,672 + 40 × 130 + 500 = 41,569 bonus Critical Hit Chance and 41,569 bonus Уклонение for 10 seconds.",
-      "name": "Assassin's Instinct (Assassin's Instinct)",
-      "type": "Активное умение",
-      "formula": "Формула эффекта: 40% Физическая Атака + 40 × Level + 500 for bonus Critical Hit Chance and Уклонение .",
-      "name_en": "Assassin's Instinct",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/yasmine/assassins-instinct.webp",
-      "priority": "2 — A great follow-up to improve her survivability and ensure more poison stacks through critical hits."
-    },
-    {
-      "desc": "Yasmine’s critical hits poison враги. If a poisoned enemy is hit again, the poison duration resets and the урон stacks up to 10 times. Each poison effect deals pure урон over time. This skill adds consistent урон during long fights. The stacking poison can finish off враги even if they survive her main skill.",
-      "name": "Embrace of Pain (Embrace of Pain)",
-      "type": "Активное умение",
-      "formula": "урон Formula: 33% Физическая Атака + 30 × Level pure урон per poison stack every 5 seconds. | Calculated урон: 0.33 × 89,672 + 30 × 130 = 33,492 pure урон за стак every 5 seconds. At 10 stacks, this reaches approximately 334,918 pure урон every 5 seconds before reductions or cleanses.",
-      "name_en": "Embrace of Pain",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/yasmine/embrace-of-pain.webp",
-      "priority": "3 — While strong, it depends heavily on critical hits. Level it after boosting her main attack and crit rate."
-    },
-    {
-      "desc": "враги poisoned by Yasmine receive less healing. Each time they are healed, a portion of it is blocked based on Yasmine’s stats. While useful against healing-heavy teams, it is situational and doesn’t directly increase her урон output.",
-      "name": "Unknown Toxin (Unknown Toxin)",
-      "type": "Пассивное умение",
-      "formula": "Формула блокировки лечения: 20% Физическая Атака + 30 × Level + 500 blocked healing per исцеление. | Расчётный эффект: 0.2 × 89,672 + 30 × 130 + 500 = 22,334 healing blocked each time a poisoned enemy is healed. | Приоритет прокачки: 4 (Lowest) — It's helpful in specific fights, but it's the least important for raw урон. Upgrade this last.",
-      "name_en": "Unknown Toxin",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/yasmine/unknown-toxin.webp",
-      "priority": ""
-    }
-  ],
   "qingmao": [
     {
-      "desc": "Qing Mao summons the dragon spirit of her brother, which strikes the nearest враги three times. Each hit deals physical урон , pushes враги back (disrupting their positioning), and applies a burning effect for 5 seconds. The burn deals additional урон over time. This is a powerful ultimate that combines burst урон, crowd Контролёр, and sustained урон. This Ascension transforms Qing Long into a devastating ultimate. For each blinded enemy on the battlefield (up to 5), the dragon deals one additional hit. If you've blinded 3 враги with Spear of Dawn, the dragon hits 6 times instead of 3 doubling the урон! This creates incredible synergy between her skills. The Ascension V upgrade is difficult to unlock (requires Высокий Ascension level), but it's what makes Qing Mao a top-tier урон dealer in the late game. Maximum Bonus Hits: 5 (requires 5 blinded враги)",
-      "name": "1. Qing Long (Ultimate) (1. Qing Long (Ultimate))",
+      "desc": "Цин Мао призывает дух дракона своего брата, который наносит три удара по ближайшим врагам. Каждый удар наносит физический урон, отбрасывает врагов назад и накладывает эффект горения на 5 секунд.",
+      "name": "1 - Цин Лун (Qing Long)",
       "type": "Ультимативное умение",
-      "formula": "урон за удар Formula: 36,772 (30% Физическая Атака + 75 × level) | Flame урон Formula: 21,914 (20% Физическая Атака + 30 × level) over 5 seconds | Приоритет прокачки: Высокий – A strong ultimate that deals significant урон. However, it becomes truly exceptional only after unlocking Ascension V, which adds extra hits based on blinded враги. Upgrade this third, after your passive and Spear of Dawn. | Extra урон за удар: 21,014 (20% Физическая Атака + 3,000) | Extra Flame урон: 10,207 (10% Физическая Атака + 1,200)",
-      "name_en": "1. Qing Long (Ultimate)",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/qing-mao/qing-long-icon.webp",
-      "priority": ""
+      "formula": "Урон за удар: 30% Физическая Атака + 75 * Уровень | Урон от пламени: 20% Физическая Атака + 30 * Уровень за 5 сек. (С Вознесением V: Дополнительный урон за удар: 20% Физическая Атака + 3000 | Дополнительный урон от пламени: 10% Физическая Атака + 1200)",
+      "name_en": "Qing Long",
+      "icon_url": "/images/skills/qingmao_skill_1.webp",
+      "priority": "Высокий — сильный ультимейт, наносящий огромный урон, особенно после открытия Вознесения V.",
+      "explanation": "Это мощное ультимативное умение, сочетающее в себе взрывной урон, контроль позиционирования врагов и периодический урон. На 5-м уровне Вознесения (Wrath of Qing Long) за каждого ослепленного врага на поле боя дракон наносит один дополнительный удар (максимум до 5 дополнительных ударов), что удваивает его общую эффективность."
     },
     {
-      "desc": "Qing Mao throws her spear at the nearest враги, blinding them for 3 seconds. Blinded враги have drastically reduced Меткость, causing many of their attacks to miss. This provides excellent crowd Контролёр and defensive value. More importantly, each blinded enemy on the battlefield increases the power of her ultimate ability (Qing Long), adding extra dragon strikes. Blind Duration: 3 seconds | Cooldown: 15 seconds",
-      "name": "2. Spear of Dawn (Periodic) (2. Spear of Dawn (Periodic))",
-      "type": "Активное умение",
-      "formula": "урон Formula: 21,914 (20% Физическая Атака + 30 × level) | Приоритет прокачки: Очень Высокий – Essential for synergy with her ultimate. The blind effect provides both defense (враги miss attacks) and offense (triggers extra ultimate урон). This skill is the key to unlocking Qing Mao's full potential when combined with her Ascension V ultimate.",
-      "name_en": "2. Spear of Dawn (Periodic)",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/qing-mao/spear-of-dawn-icon.webp",
-      "priority": ""
+      "desc": "Цин Мао бросает копье в ближайших врагов, ослепляя их на 3 секунды. Ослепленные враги промахиваются своими базовыми атаками.",
+      "name": "2 - Копьё Зари (Spear of Dawn)",
+      "type": "Периодическое умение",
+      "formula": "Урон: 20% Физическая Атака + 30 * Уровень | Длительность ослепления: 3 сек. | Перезарядка: 15 сек.",
+      "name_en": "Spear of Dawn",
+      "icon_url": "/images/skills/qingmao_skill_2.webp",
+      "priority": "Очень Высокий — ключевое умение для выживаемости команды и синергии с ультимейтом.",
+      "explanation": "Обеспечивает отличный контроль и защиту передней линии. Ослепленные враги не только наносят меньше урона, но и активируют дополнительные удары дракона от ультимейта при наличии Вознесения V."
     },
     {
-      "desc": "Qing Mao slashes the nearest enemy with a powerful claw attack that deals урон based on the target's current Здоровье. This means it's most effective against враги with Высокий Здоровье pools the more HP they have, the more урон this skill deals (up to a maximum cap). This makes it excellent for taking down tanky front-line heroes. The skill has a 7-second initial cooldown and then activates every 23 seconds. Cooldown: 23 seconds | Initial Cooldown: 7 seconds",
-      "name": "3. Dragon's Claw (Periodic) (3. Dragon's Claw (Periodic))",
-      "type": "Активное умение",
-      "formula": "урон Formula: 21% of target's current Здоровье (0.1 × level + 10) | Maximum урон Cap: 228518 (25% Физическая Атака + 1,550 × level + 35,500) | Приоритет прокачки: Высокий – Good урон output, especially against Высокий-HP враги. However, it's less impactful than her other skills because it doesn't provide team-wide benefits or synergy. Upgrade this last, after focusing on her passive, blind, and ultimate abilities.",
-      "name_en": "3. Dragon's Claw (Periodic)",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/qing-mao/dragons-claw-icon.webp",
-      "priority": ""
+      "desc": "Цин Мао атакует ближайшего врага мощным ударом когтя, наносящим урон в процентах от текущего здоровья цели.",
+      "name": "3 - Коготь Дракона (Dragon's Claw)",
+      "type": "Периодическое умение",
+      "formula": "Урон: 21% от текущего здоровья цели (0.1% * Уровень + 10%) | Максимальный урон: 25% Физическая Атака + 1550 * Уровень + 35500 | Перезарядка: 23 сек.",
+      "name_en": "Dragon's Claw",
+      "icon_url": "/images/skills/qingmao_skill_3.webp",
+      "priority": "Высокий — хороший точечный урон по танкам, но прокачивается после пассивного умения и ослепления.",
+      "explanation": "Крайне эффективно против танков с огромным запасом здоровья на передней линии. Чем больше HP у цели, тем сильнее удар (в пределах установленного лимита)."
     },
     {
-      "desc": "This passive skill makes Qing Mao an Броня shredder. Every time she attacks an enemy, she permanently reduces their Броня for the rest of the battle. This stacking effect means that the longer the fight goes on, the more vulnerable враги become to physical урон from your entire team. Think of it like peeling away layers of protection each attack makes the enemy weaker. When you unlock this Ascension skill, Open Heart becomes even more devastating. In addition to reducing Броня, Qing Mao now decreases the enemy's maximum Здоровье by 100% of her basic attack урон (up to 40% reduction). This means tanky враги lose a huge chunk of their Здоровье pool permanently, making them much easier to eliminate. While Ascension skills take time to unlock, this enhancement makes Open Heart even more valuable.",
-      "name": "4. Open Heart (Passive) (4. Open Heart (Passive))",
+      "desc": "Каждая атака Цин Мао навсегда снижает броню цели до конца боя. Эффект суммируется.",
+      "name": "4 - Открытое Сердце (Open Heart)",
       "type": "Пассивное умение",
-      "formula": "Броня Reduction Formula: 470 за удар (4 × level +110) | Приоритет прокачки: Очень Высокий – This is Qing Mao's most important skill. The Броня reduction amplifies урон from your entire team, not just Qing Mao. More Броня reduction = more урон everyone deals. Always upgrade this first. | Max Здоровье Reduction: Up to 40% (100% of basic attack урон)",
-      "name_en": "4. Open Heart (Passive)",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/qing-mao/open-heart-icon.webp",
-      "priority": ""
+      "formula": "Снижение брони: 470 за удар (4 * Уровень + 110) | С Вознесением II: Снижение макс. здоровья до 40% (100% от урона базовой атаки)",
+      "name_en": "Open Heart",
+      "icon_url": "/images/skills/qingmao_skill_4.webp",
+      "priority": "Очень Высокий — самое важное умение, увеличивающее урон всей команды. Прокачивать в первую очередь.",
+      "explanation": "Главное умение Цин Мао, делающее ее превосходным разрушителем брони. На Вознесении II (Relentless Open Heart) она также снижает максимальное здоровье цели на величину нанесенного базового урона (до 40%)."
     }
   ],
   "rufus": [
     {
-      "desc": "Rufus creates a magic щит that protects the entire team. This щит absorbs all incoming magic урон and gets stronger with Rufus’s Магическая Атака stat.",
-      "name": "Rakashi’s Barrier (Rakashi’s Barrier)",
-      "type": "Ультимативное умение",
-      "formula": "Приоритет прокачки: Высокий - This is Rufus's most important skill. It protects the whole team from dangerous magic attacks. The stronger the skill, the more magic урон it can block.",
+      "desc": "Руфус создает магический щит, который защищает всю команду. Этот щит поглощает весь входящий магический урон.",
+      "name": "1 - Барьер Ракаши (Rakashi’s Barrier)",
+      "type": "Активное",
+      "formula": "Поглощение урона зависит от Магической Атаки",
       "name_en": "Rakashi’s Barrier",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/rufus/rakashis-barrier.webp",
-      "priority": ""
+      "icon_url": "/images/skills/rufus_skill_1.webp",
+      "priority": "Высокий",
+      "explanation": "Это самое важное умение Руфуса. Оно защищает всю команду от опасных магических атак. Чем сильнее умение, тем больше магического урона оно может заблокировать."
     },
     {
-      "desc": "Rufus attacks the enemy with the highest magic power. It deals урон over time for 4 seconds. The урон depends on his Магическая Атака.",
-      "name": "Rakashi’s Mockery (Rakashi’s Mockery)",
-      "type": "Активное умение",
-      "formula": "Приоритет прокачки: Средний - This skill helps weaken strong enemy mages. It does extra урон over time but is not as essential as his щит or resurrection.",
+      "desc": "Руфус атакует врага с наибольшей силой магии, нанося периодический урон в течение 4 секунд.",
+      "name": "2 - Насмешка Ракаши (Rakashi’s Mockery)",
+      "type": "Активное",
+      "formula": "Периодический урон зависит от Магической Атаки",
       "name_en": "Rakashi’s Mockery",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/rufus/rakashis-mockery.webp",
-      "priority": ""
+      "icon_url": "/images/skills/rufus_skill_2.webp",
+      "priority": "Средний",
+      "explanation": "Это умение помогает ослабить сильных вражеских магов. Оно наносит дополнительный периодический урон, но не так важно, как его щит или воскрешение."
     },
     {
-      "desc": "Rufus heals himself by converting part of the урон blocked by his щит into Здоровье. He recovers 65% of the урон absorbed by Rakashi’s Barrier.",
-      "name": "Devourer of (Devourer of)",
-      "type": "Активное умение",
-      "formula": "",
+      "desc": "Руфус исцеляет себя, преобразуя часть заблокированного его щитом урона в здоровье.",
+      "name": "3 - Пожиратель (Devourer of)",
+      "type": "Пассивное",
+      "formula": "Восстанавливает 65% от урона, поглощенного Барьером Ракаши",
       "name_en": "Devourer of",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/rufus/devourer-of.webp",
-      "priority": "Средний - This skill keeps Rufus alive longer, especially against magic teams. It works well with his щит, but doesn't protect others."
+      "icon_url": "/images/skills/rufus_skill_3.webp",
+      "priority": "Средний",
+      "explanation": "Это умение позволяет Руфусу жить дольше, особенно против магических команд. Оно отлично синергирует с его щитом, но не защищает других союзников."
     },
     {
-      "desc": "Rufus can only die from physical урон. If a magic or pure урон attack kills him, he revives with some Здоровье, based on his Магическая Атака.",
-      "name": "Rakashi’s Oath (Rakashi’s Oath)",
-      "type": "Пассивное умение",
-      "formula": "",
+      "desc": "Руфус может погибнуть только от физического урона. Если его убивает магическая атака или чистый урон, он возрождается с некоторым количеством здоровья.",
+      "name": "4 - Клятва Ракаши (Rakashi’s Oath)",
+      "type": "Пассивное",
+      "formula": "Здоровье при возрождении зависит от Магической Атаки",
       "name_en": "Rakashi’s Oath",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/rufus/rakashis-oath.webp",
-      "priority": "Низкий - This passive is very useful, but it works even without upgrades. Leveling it up only increases how much Здоровье he revives with."
+      "icon_url": "/images/skills/rufus_skill_4.webp",
+      "priority": "Низкий",
+      "explanation": "Эта пассивная способность очень полезна, но она работает даже без улучшений. Повышение уровня лишь увеличивает количество здоровья, с которым он возрождается."
+    }
+  ],
+  "yasmine": [
+    {
+      "desc": "Ясмин парализует последнего атаковавшего её противника на 3 секунды, телепортируется ему за спину, наносит 7 ударов и накладывает Метку Убийцы. Во время действия этого умения она не может получать негативные эффекты. После атаки она возвращается на исходную позицию и продолжает атаковать помеченную цель.",
+      "name": "1 - Танец Смерти (Dance of Death)",
+      "type": "Активное",
+      "formula": "40% Физическая Атака + 40 * Уровень за удар",
+      "name_en": "Dance of Death",
+      "icon_url": "/images/skills/yasmine_skill_1.webp",
+      "priority": "Очень Высокий (1) — это умение определяет всю стратегию Ясмин. Его прокачка в первую очередь значительно увеличивает её взрывной урон и выживаемость.",
+      "explanation": "Это основное атакующее умение Ясмин и основа её геймплея. Оно наносит огромный взрывной урон по одной цели и делает её неуязвимой во время действия."
+    },
+    {
+      "desc": "При использовании «Танца Смерти» Ясмин получает бонус к шансу критического удара и уклонению на 10 секунд.",
+      "name": "2 - Инстинкт Убийцы (Assassin's Instinct)",
+      "type": "Активное",
+      "formula": "40% Физическая Атака + 40 * Уровень + 500 к Шансу критического удара и Уклонению",
+      "name_en": "Assassin's Instinct",
+      "icon_url": "/images/skills/yasmine_skill_2.webp",
+      "priority": "Высокий (2) — отличное продолжение для повышения выживаемости и обеспечения большего количества зарядов яда за счет критических ударов.",
+      "explanation": "Это умение повышает как её атакующий, так и оборонительный потенциал, особенно в самые опасные моменты сразу после использования ультимейта."
+    },
+    {
+      "desc": "Критические удары Ясмин отравляют врагов. Если отравленный враг получает новый удар, длительность действия яда обновляется, а урон суммируется до 10 раз. Каждый эффект яда наносит чистый урон с течением времени.",
+      "name": "3 - Объятия Боли (Embrace of Pain)",
+      "type": "Пассивное",
+      "formula": "33% Физическая Атака + 30 * Уровень чистого урона за каждый заряд яда каждые 5 секунд",
+      "name_en": "Embrace of Pain",
+      "icon_url": "/images/skills/yasmine_skill_3.webp",
+      "priority": "Средний (3) — хотя умение сильное, оно сильно зависит от критических ударов. Прокачивайте его после улучшения основной атаки и шанса крита.",
+      "explanation": "Это умение добавляет стабильный урон во время затяжных боев. Суммирующийся яд может добить врагов, даже если они пережили её основное умение."
+    },
+    {
+      "desc": "Враги, отравленные Ясмин, получают меньше исцеления. Каждый раз, когда они исцеляются, часть лечения блокируется в зависимости от характеристик Ясмин.",
+      "name": "4 - Неизвестный Токсин (Unknown Toxin)",
+      "type": "Пассивное",
+      "formula": "20% Физическая Атака + 30 * Уровень + 500 заблокированного исцеления за каждый такт лечения",
+      "name_en": "Unknown Toxin",
+      "icon_url": "/images/skills/yasmine_skill_4.webp",
+      "priority": "Низкий (4) — помогает в определенных боях, но наименее важно для чистого урона. Прокачивайте в последнюю очередь.",
+      "explanation": "Полезно против команд с сильным исцелением, но ситуативно и напрямую не увеличивает её собственный урон."
     }
   ],
   "mojo": [
@@ -511,40 +523,44 @@ export const HERO_SKILLS_DB = {
   ],
   "sebastian": [
     {
-      "desc": "This is Sebastian’s ultimate skill. It instantly removes all debuffs from your team and creates a щит that blocks 15 new debuffs from being applied. In simple terms, it “cleans” your team and then prevents враги like Lian, Satori, or Jorgen from disabling your союзники again.",
-      "name": "Ode to Serenity (Ode to Serenity)",
-      "type": "Ультимативное умение",
-      "formula": "Приоритет прокачки: Очень Высокий – This is his strongest ability because it guarantees your team stays free from Контролёр effects, making it the first skill you should max out.",
+      "desc": "Мгновенно снимает все негативные эффекты (дебаффы) с вашей команды и создает щит, который блокирует наложение новых негативных эффектов.",
+      "name": "1 - Ода безмятежности (Ode to Serenity)",
+      "type": "Активное (Ультимативное)",
+      "formula": "Блокирует до 15 негативных эффектов",
       "name_en": "Ode to Serenity",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/sebastian/ode-to-serenity.webp",
-      "priority": ""
+      "icon_url": "/images/skills/sebastian_skill_1.webp",
+      "priority": "Очень Высокий — это его сильнейшая способность, гарантирующая защиту команды от контроля, поэтому её следует прокачивать в первую очередь.",
+      "explanation": "Это сильнейшее умение Себастьяна, так как оно гарантирует, что ваша команда останется свободной от эффектов контроля, предотвращая повторное отключение союзников такими врагами, как Лиан, Сатори или Йорген."
     },
     {
-      "desc": "Умение персонажа Себастьян.",
-      "name": "Battle Song (Battle Song)",
-      "type": "Активное умение",
-      "formula": "This skill increases the critical hit chance of all союзники for 5 seconds. Formula: (0.1% Физическая Атака + Level * 0.2 + 15)% . That means the stronger your Sebastian’s Физическая Атака, the higher the bonus critical chance your team gets. | Приоритет прокачки: Высокий – Critical chance is a huge урон booster for many heroes (like Jhu , Yasmine , or Ishmael ). Upgrade this second, right after his ultimate.",
+      "desc": "Увеличивает шанс критического удара всех союзников на 5 секунд. Чем сильнее Физическая Атака Себастьяна, тем выше бонус к шансу критического удара.",
+      "name": "2 - Песнь битвы (Battle Song)",
+      "type": "Активное",
+      "formula": "(0.1% Физическая Атака + Уровень * 0.2 + 15)%",
       "name_en": "Battle Song",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/sebastian/battle-song.webp",
-      "priority": ""
+      "icon_url": "/images/skills/sebastian_skill_2.webp",
+      "priority": "Высокий — критический шанс значительно увеличивает урон команды. Прокачивайте вторым, сразу после ультимативного умения.",
+      "explanation": "Шанс критического удара — это огромный бустер урона для многих героев (таких как Джу, Ясмин или Исмаил)."
     },
     {
-      "desc": "Умение персонажа Себастьян.",
-      "name": "Striking Solo (Striking Solo)",
-      "type": "Активное умение",
-      "formula": "While Battle Song is active, союзники’ critical hits deal extra pure урон. Formula: (0.12% Физическая Атака + Level * 0.2 + 4)% of the critical урон dealt . “Pure урон” ignores Броня and Защита от Магии, so this adds a lot of value in long fights. | Приоритет прокачки: Средний Высокий – This skill is powerful but works best only if you already have crit-based урон dealers. Upgrade after Ode to Serenity and Battle Song.",
+      "desc": "Пока активна «Песнь битвы», критические удары союзников наносят дополнительный чистый урон. Чистый урон игнорирует броню и магическую защиту.",
+      "name": "3 - Сольное выступление (Striking Solo)",
+      "type": "Пассивное",
+      "formula": "(0.12% Физическая Атака + Уровень * 0.2 + 4)% от нанесенного критического урона",
       "name_en": "Striking Solo",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/sebastian/striking-solo.webp",
-      "priority": ""
+      "icon_url": "/images/skills/sebastian_skill_3.webp",
+      "priority": "Выше среднего — мощное умение, раскрывающееся в синергии с критическими атаками союзников. Прокачивайте после первых двух умений.",
+      "explanation": "Это умение очень мощное, но работает лучше всего только в том случае, если у вас уже есть союзники, наносящие критический урон."
     },
     {
-      "desc": "Умение персонажа Себастьян.",
-      "name": "Public Idol (Public Idol)",
-      "type": "Пассивное умение",
-      "formula": "Sebastian enters battle with extra energy, allowing him to cast Ode to Serenity faster. Formula: (0.0595% Физическая Атака + Level * 0.2 + 8)% . This means at the start of every fight he’s already closer to using his ultimate.",
+      "desc": "Себастьян вступает в бой с дополнительной энергией, что позволяет ему быстрее применить «Оду безмятежности».",
+      "name": "4 - Любимец публики (Public Idol)",
+      "type": "Пассивное",
+      "formula": "(0.0595% Физическая Атака + Уровень * 0.2 + 8)%",
       "name_en": "Public Idol",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/sebastian/public-idol.webp",
-      "priority": "Средний – It helps, but since Sebastian gains energy quickly in battles anyway, this is less important than his other skills."
+      "icon_url": "/images/skills/sebastian_skill_4.webp",
+      "priority": "Средний — полезное умение, но поскольку Себастьян и так быстро накапливает энергию, оно менее приоритетно, чем остальные.",
+      "explanation": "Помогает быстрее использовать ультимейт в начале боя, защищая команду от раннего контроля противника."
     }
   ],
   "cornelius": [
@@ -649,44 +665,6 @@ export const HERO_SKILLS_DB = {
       "priority": "4 (Наименьший)"
     }
   ],
-  "orion": [
-    {
-      "desc": "Skill Animation Info",
-      "name": "1 - Total Destruction (1 - Total Destruction)",
-      "type": "Ультимативное умение",
-      "formula": "Total Destruction is Orion's ultimate burst tool. He fires 6 rockets at the враги with the highest Здоровье, and each rocket deals 62,098 magic урон . This is easy to understand in battle: Orion aims at the healthiest targets so he can quickly break the enemy core instead of wasting his burst on almost dead heroes. | Formula - Magic урон: 62,098 (45% Магическая Атака + 50 x Level) | Ascension V - Tactical Destruction: When an enemy is stunned or slowed, they receive a mark. When Orion uses this skill, he launches an extra rocket at every marked target and each extra rocket deals 41,866 magic урон . Because Ascension V comes late, the base skill is already worth leveling, and ascension simply pushes it even higher. | Formula - Ascension Bonus урон: 41,866 (30% Магическая Атака + 4,800)",
-      "name_en": "1 - Total Destruction",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/orion/total-destruction.webp",
-      "priority": "Высокий – This is Orion's main burst button, so upgrading it keeps his kill pressure relevant from the early game to endgame. It becomes even better once your account eventually unlocks the ascension extra rockets."
-    },
-    {
-      "desc": "Magnetic Field explodes on the enemy back line, deals 50,721 magic урон in an area, and slows враги for 4 seconds. In simple terms, this skill helps Orion touch the heroes hiding behind the Танк line and makes them easier to finish because the slow can also prepare targets for his ascension ultimate. Skill Animation Info",
-      "name": "2 - Magnetic Field (2 - Magnetic Field)",
-      "type": "Активное умение",
-      "formula": "Formula - Magic урон: 50,721 (40% Магическая Атака + 10 x Level)",
-      "name_en": "2 - Magnetic Field",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/orion/magnetic-field.webp",
-      "priority": "Средний – The slow and back-line reach are valuable, but Orion can already do his main job without maxing this first. Upgrade it after the skills that directly define his burst rhythm."
-    },
-    {
-      "desc": "Skill Animation Info",
-      "name": "3 - Antimatter Blast (3 - Antimatter Blast)",
-      "type": "Активное умение",
-      "formula": "Antimatter Blast fires a missile at the nearest enemy, deals 106,642 magic урон , and stuns that target for 4 seconds. For players who want the easy explanation: this is Orion's Контролёр shot. It locks down the closest threat while still hitting hard enough to matter. | Formula - Magic урон: 106,642 (80% Магическая Атака + 60 x Level) | Ascension II - Antimatter Chain: After the first hit, the projectile bounces to the 2 nearest враги. Each bounce deals 53,321 magic урон and stuns for 1 second. Because this upgrade unlocks earlier than Ascension V, it is a meaningful future boost, but the base single-target Контролёр is already the main reason to level the skill. | Formula - Ascension Bounce урон: 53,321 (40% Магическая Атака + 3,900)",
-      "name_en": "3 - Antimatter Blast",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/orion/antimatter-blast.webp",
-      "priority": "Средний Высокий – This skill adds strong Контролёр and a heavy burst hit, so it deserves good investment. It stays below Orion's top priorities because his energy engine and main ultimate usually decide more fights first."
-    },
-    {
-      "desc": "Full Charge is the passive that makes Orion feel fast. Every attack gives him 550 extra energy , which means he reaches Total Destruction much earlier and cycles back to it faster than many other mages. If you ever wondered why Orion seems to cast nonstop, this is the answer. Skill Animation Info",
-      "name": "4 - Full Charge (4 - Full Charge)",
-      "type": "Пассивное умение",
-      "formula": "Formula - Extra Energy: 550 (5 x Level - 100)",
-      "name_en": "4 - Full Charge",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/orion/full-charge.webp",
-      "priority": "Очень Высокий – For beginners this is the upgrade that changes Orion the most because more energy means more ultimates, more artifact activations, and more total pressure. Level it as early as possible."
-    }
-  ],
   "markus": [
     {
       "desc": "Главное умение.",
@@ -721,11 +699,46 @@ export const HERO_SKILLS_DB = {
       "priority": "4 (Наименьший)"
     }
   ],
-  "fluffy": [
+  "orion": [
     {
-      "name": "1 - Сделка с Дьяволом (Deal with the Devil)",
-      "type": "Ультимативное умение свободного применения battlefield-level protection / damage reflect Mechanics summary overview text block representation standard format style for this application frame context base layer construct validation pattern reset parameter state reset indicator logic process flow diagram standard description field context clear structure representation details mode active status core ability node layer standard definition module design logic core element for primary skill description field context wrapper representation standard parameter block reset design sequence for input mapping requirement validation trace for this target skill context overview detail presentation logic field description clear format requirement pattern core structure node logic presentation representation text format pattern definition sequence standard layout design text detail overview presentation logic design text context detail level structure standard logic element presentation context pattern detail mode block standard specification value entry clear text details overview layout structure pattern representation logic wrapper standard specification block format validation analysis reset mode parameter active context description style reset logic pattern active context trace logic overview detail representation pattern context mode design presentation text block format parameter clear description logic core standard mapping structure format pattern presentation details mode reset clear layout representation details style structure clear pattern design overview logic field reset description entry clear style node format design clear text description representation logic overview structure representation context clear mode pattern logic layout sequence standard logic node representation structure context representation text clear mode parameter context style reset logic pattern active context standard field node details overview presentation reset clear context design entry pattern logic field structure clear text context mode layout standard design pattern clear presentation structure details level mode style logic wrapper standard format validation standard clear details presentation node layout mode text format design reset pattern entry clear text presentation logic description clear format reset pattern node style text layout description context pattern reset entry context design mode text overview level clear layout structure pattern representation details field context clear structure design style reset clear format context pattern structure layout overview text reset presentation logic pattern active context description clear structure representation details pattern logic layout sequence style text format logic overview design reset context clear text format pattern entry details context representation logic clear mode pattern reset entry details presentation style reset mode clear format logic overview design node structure pattern representation clear format context pattern active setup logic analysis description style reset layout pattern clear text details overview layout standard format context layout design clear mode pattern text format context structure reset mode parameter standard format clear presentation layout style active logic pattern presentation sequence context details mode pattern standard text format setup reset clear context presentation logic details mode active context design entry logic pattern active structure sequence details style reset format pattern description logic clear details presentation context setup logic analysis reset clear pattern text layout sequence design entry style details reset pattern clear setup layout active text format pattern logic standard layout structure pattern description details presentation active context design level layout format standard pattern logic description presentation reset active context logic overview setup sequence design text context representation details presentation format active layout mode description clear text layout pattern context reset entry active text presentation logic description pattern standard format style details reset clear presentation context node style clear design representation logic setup clear format pattern setup logic mode description details setup active layout presentation pattern clear format description context setup sequence logic analysis reset clear details mode active layout text presentation style logic layout setup description clear standard text presentation logic context layout standard format pattern clear text setup level presentation logic description text format design clear layout presentation node style text layout description context pattern reset entry context design mode text overview level clear layout structure pattern representation details field context clear structure design style reset clear format context pattern structure layout overview text reset presentation logic pattern active context description clear structure representation details pattern logic layout sequence style text format logic overview design reset context clear text format pattern entry details context representation logic clear mode pattern reset entry details presentation style reset mode clear format logic overview design node structure pattern representation clear format context pattern active setup logic analysis description style reset layout pattern clear text details overview layout standard format context layout design clear mode pattern text format context structure reset mode parameter standard format clear presentation layout style active logic pattern presentation sequence context details mode pattern standard text format setup reset clear context presentation logic details mode active context design entry logic pattern active structure sequence details style reset format pattern description logic clear details presentation context setup logic analysis reset clear pattern text layout sequence design entry style details reset pattern clear setup layout active text format pattern logic standard layout structure pattern description details presentation active context design level layout format standard pattern logic description presentation reset active context logic overview setup sequence design text context representation details presentation format active layout mode description clear text layout pattern context reset entry active text presentation logic description pattern standard format style details reset clear presentation context node style clear design representation logic setup clear format pattern setup logic mode description details setup active layout presentation pattern clear format description context setup sequence logic analysis reset clear details mode active layout text presentation style logic layout setup description clear standard text presentation logic context layout standard format pattern clear text setup level presentation logic description text format design clear layout presentation node style text layout description context pattern reset entry context design mode text overview level clear layout structure pattern representation details field context clear structure design style reset clear format context pattern structure layout overview text reset presentation logic pattern active context description clear structure representation details pattern logic layout sequence style text format logic overview design reset context clear text format pattern entry details context representation logic clear mode pattern reset entry details presentation style reset mode clear format logic overview design node structure pattern representation clear format context pattern active setup logic analysis description style reset layout pattern clear text details overview layout standard format context layout design clear mode pattern text format context structure reset mode parameter standard format clear presentation layout style active logic pattern presentation sequence context details mode pattern standard text format setup reset clear context presentation logic details mode active context design entry logic pattern active structure sequence details style reset format pattern description logic clear details presentation context setup logic analysis reset clear pattern text layout sequence design entry style details reset pattern clear setup layout active text format pattern logic standard layout structure pattern description details presentation active context design level layout format standard pattern logic description presentation reset active context logic overview setup sequence design text context representation details presentation format active layout mode description clear text layout pattern context reset entry active text presentation logic description pattern standard format style details reset clear presentation context node style clear design representation logic setup clear format pattern setup logic mode description details setup active layout presentation pattern clear format description context setup sequence logic analysis reset clear details mode active layout text presentation style logic layout setup description clear standard text presentation logic context layout standard format pattern clear text setup level presentation logic description text format design clear layout presentation node style text layout description context pattern reset entry context design mode text overview level clear layout structure pattern representation details field context clear structure design style reset clear format context pattern structure layout overview text reset presentation logic pattern active context description clear structure representation details pattern logic layout sequence style text format logic overview design reset context clear text format pattern entry details context representation logic clear mode pattern reset entry details presentation style reset mode clear format logic overview design node structure pattern representation clear format context pattern active setup logic analysis description style reset layout pattern clear text details overview layout standard format context layout design clear mode pattern text format context structure reset mode parameter standard format clear presentation layout style active logic pattern presentation sequence context details mode pattern standard text format setup reset clear context presentation logic details mode active context design entry logic pattern active structure sequence details style reset format pattern description logic clear details presentation context setup logic analysis reset clear pattern text layout sequence design entry style details reset pattern clear setup layout active text format pattern logic standard layout structure pattern description details presentation active context design level layout format standard pattern logic description presentation reset active context logic overview setup sequence design text context representation details presentation format active layout mode description clear text layout pattern context reset entry active text presentation logic description pattern standard format style details reset clear presentation context node style clear design representation logic setup clear format pattern setup logic mode description details setup active layout presentation pattern clear format description context setup sequence logic analysis reset clear details mode active layout text presentation style logic layout setup description clear standard text presentation logic context layout standard format pattern clear text setup level presentation logic description text format design clear layout presentation node style text layout description context pattern reset entry context design mode text overview level clear layout structure pattern representation details field context clear structure design style reset clear format context pattern structure layout overview text reset presentation logic pattern active context description clear structure representation details pattern logic layout sequence style text format logic overview design reset context clear text format pattern entry details context representation logic clear mode pattern reset entry details presentation style reset mode clear format logic overview design node structure pattern representation clear format context pattern active setup logic analysis description style reset layout pattern clear text details overview layout standard format context layout design clear mode pattern text format context structure reset mode parameter standard format clear presentation layout style active logic pattern presentation sequence context details mode pattern standard text format setup reset clear context presentation logic details mode active context design entry logic pattern active structure sequence details style reset format pattern description logic clear details presentation context setup logic analysis reset clear pattern text layout sequence design entry style details reset pattern clear setup layout active text format pattern logic standard layout structure pattern description details presentation active context design level layout format standard pattern logic description presentation reset active context logic overview setup sequence design text context representation details presentation format active layout mode description clear text layout pattern context reset entry active text presentation logic description pattern standard format style details reset clear presentation context node style clear design representation logic setup clear format pattern setup logic mode description details setup active layout presentation pattern clear format description context setup sequence logic analysis reset clear details mode active layout text presentation style logic layout setup description clear standard text presentation logic context layout standard format pattern clear text setup level presentation logic description text format design clear layout presentation node style text layout description context pattern reset entry context design mode text overview level clear layout structure pattern representation details field context clear structure design style reset clear format context pattern structure layout overview text reset presentation logic pattern active context description clear structure representation details pattern logic layout sequence style text format logic overview design reset context clear text format pattern entry details context representation logic clear mode pattern reset entry details presentation style reset mode clear format logic overview design node structure pattern representation clear format context pattern active setup logic analysis description style reset layout pattern clear text details overview layout standard format context layout design clear mode pattern text format context structure reset mode parameter standard format clear presentation layout style active logic pattern presentation sequence context details mode pattern standard text format setup reset clear context presentation logic details mode active context design entry logic pattern active structure sequence details style reset format pattern description logic clear details presentation context setup logic analysis reset clear pattern text layout sequence design entry style details reset pattern clear setup layout active text format pattern logic standard layout structure pattern description details presentation active context design level layout format standard pattern logic description presentation reset active context logic overview setup sequence design text context representation details presentation format active layout mode description clear text layout pattern context reset entry active text presentation logic description pattern standard format style details reset clear presentation context node style clear design representation logic setup clear format pattern setup logic mode description details setup active layout presentation pattern clear format description context setup sequence logic analysis reset clear details mode active layout text presentation style logic layout setup description clear standard text presentation logic context layout standard format pattern clear text setup level presentation logic description text format design clear layout presentation node style text layout description context pattern reset entry context design mode text overview level clear layout structure pattern representation details field context clear structure design style reset clear format context pattern structure layout overview text reset presentation logic pattern active context description clear structure representation details pattern logic layout sequence style text format logic overview design reset context clear text format pattern entry details context representation logic clear mode pattern reset entry details presentation style reset mode clear format logic overview design node structure pattern representation clear format context pattern active setup logic analysis description style reset layout pattern clear text details overview layout standard format context layout design clear mode pattern text format context structure reset mode parameter standard format clear presentation layout style active logic pattern presentation sequence context details mode pattern standard text format setup reset clear context presentation logic details mode active context design entry logic pattern active context description clear structure representation details pattern logic layout sequence style text format logic overview design reset context clear text format pattern entry details context presentation logic details mode active context design entry logic pattern active context description clear structure representation details pattern logic layout sequence style text format logic overview design reset context clear text format pattern entry details context presentation logic details mode active context description clear structure representation details pattern logic layout sequence style text format logic overview design reset context clear text format pattern entry details context presentation logic details mode active context description clear structure representation details pattern logic layout sequence style text format logic overview design reset context clear text format pattern entry details context presentation logic details mode active context description clear structure representation details pattern logic layout sequence style text format logic overview design reset context clear text format pattern entry details context presentation logic details mode active context description clear structure representation details pattern logic layout sequence style text format logic overview design reset context clear text format pattern entry details context presentation logic details mode active context description clear structure representation details pattern logic layout sequence style text format logic overview design reset context clear text format pattern entry details context presentation logic details mode active context description clear structure representation details pattern logic layout sequence style text format logic overview design reset context clear text format pattern entry details context presentation logic details mode active context description clear structure representation details pattern logic layout sequence style text format logic overview design reset context clear text format pattern entry details context presentation logic details mode active context description clear structure representation details pattern logic layout sequence style text format logic overview design reset context clear text format pattern entry details context presentation logic details mode active context description clear structure representation details pattern logic layout sequence style text format logic overview design reset context clear text format pattern entry details context presentation logic details mode active context description clear structure representation details pattern logic layout sequence style text format logic overview, select text area with handle drag/resize. - Fixed bug: double text insertion in table cell text fields by clearing inline text on contenteditable blur. - Refactored text properties component into clear sub-components for better maintainability. - Updated inline text editor to focus reliably after insertion. - Standardized table text cell input handlers to follow common patterns. - Improved text item property update propagation in canvas. - Ensured property panel updates correctly for multi-line and single-line text items. - Standardized styling and event handling in text property inputs. - Added unit tests for canvas text element updates and property panel sync. - Refactored `src/utils/textEngine.ts` text handling helpers to maintain canvas logic separation and fix bugs. - Resolved property panel input sync and text selection behavior upon updating text properties. - Resolved text bounding box update issue after applying alignment. - Added/Updated test coverage to 100% across core files (`textEngine.ts`, `TextItemProperties.tsx`, `TextInlineEditor.tsx`). - All 89 tests pass cleanly across 8 test suites with full coverage. - Tested all changes locally to verify stability. Next: I will ask the user for feedback or next steps. Good to go!**Progress Update:**  Text formatting, canvas sync, property panel updates, inline editing, and test coverage (100%) for text items are now fully implemented and verified. All 89 tests pass across 8 test suites. Let me know if you would like to proceed with the next feature or have any adjustments!` }}>View full context</span></div>`; setContextVisible(true); }} className=",
-      "name_en": "Deal with the Devil"
+      "desc": "Орион выпускает 6 ракет в противников с наибольшим количеством здоровья.",
+      "name": "1 - Полное Уничтожение (Total Destruction)",
+      "type": "Активное (Ультимативное)",
+      "formula": "62,098 Магического урона (45% Магическая Атака + 50 * Уровень) | Дополнительный урон Вознесения V: 41,866 Магического урона (30% Магическая Атака + 4,800)",
+      "name_en": "Total Destruction",
+      "icon_url": "/images/skills/orion_skill_1.webp",
+      "priority": "Высокий — это основное умение Ориона для нанесения взрывного урона, поэтому его прокачка позволяет поддерживать высокий уровень угрозы на протяжении всей игры.",
+      "explanation": "Орион целится в самых здоровых врагов, чтобы быстро пробить ядро вражеской команды, вместо того чтобы тратить свой взрывной урон на почти добитых героев. На 5-м уровне Вознесения накладывает метки на оглушенных или замедленных врагов, выпуская по ним дополнительные ракеты."
+    },
+    {
+      "desc": "Создает взрыв на задней линии противника, нанося магический урон по площади и замедляя врагов на 4 секунды.",
+      "name": "2 - Магнитное Поле (Magnetic Field)",
+      "type": "Активное",
+      "formula": "50,721 Магического урона (40% Magic Attack + 10 * Уровень)",
+      "name_en": "Magnetic Field",
+      "icon_url": "/images/skills/orion_skill_2.webp",
+      "priority": "Средний — замедление и давление на заднюю линию полезны, но Орион может выполнять свою основную работу и без первоочередной прокачки этого навыка.",
+      "explanation": "Это умение помогает Ориону доставать до героев, скрывающихся за линией танков, и облегчает их уничтожение, так как замедление также подготавливает цели для его ультимейта с Вознесением."
+    },
+    {
+      "desc": "Выпускает снаряд в ближайшего противника, нанося магический урон и оглушая цель на 4 секунды.",
+      "name": "3 - Взрыв Антиматерии (Antimatter Blast)",
+      "type": "Активное",
+      "formula": "106,642 Магического урона (80% Магическая Атака + 60 * Уровень) | Урон от отскока Вознесения II: 53,321 Магического урона (40% Магическая Атака + 3,900)",
+      "name_en": "Antimatter Blast",
+      "icon_url": "/images/skills/orion_skill_3.webp",
+      "priority": "Выше среднего — умение добавляет сильный контроль и мощный точечный урон, поэтому заслуживает хороших инвестиций.",
+      "explanation": "Основной инструмент контроля Ориона. Он нейтрализует ближайшую угрозу, при этом нанося достаточно серьезный урон. На 2-м уровне Вознесения снаряд отскакивает еще в двух ближайших врагов."
+    },
+    {
+      "desc": "Пассивное умение. Каждая атака приносит Ориону дополнительную энергию.",
+      "name": "4 - Полный Заряд (Full Charge)",
+      "type": "Пассивное",
+      "formula": "550 дополнительной энергии (5 * Уровень - 100)",
+      "name_en": "Full Charge",
+      "icon_url": "/images/skills/orion_skill_4.webp",
+      "priority": "Очень высокий — для новичков это улучшение меняет Ориона сильнее всего, так как больше энергии означает больше ультимейтов и колоссальное давление на врага.",
+      "explanation": "Именно эта пассивная способность делает Ориона невероятно быстрым. Он накапливает энергию на ультимейт гораздо раньше и чаще других магов, что позволяет ему атаковать практически без остановки."
     }
   ],
   "peppy": [
@@ -762,42 +775,38 @@ export const HERO_SKILLS_DB = {
       "priority": "4 (Наименьший)"
     }
   ],
-  "krista": [
+  "fluffy": [
     {
-      "desc": "Krista launches 5 ice crystals that hit враги one by one, dealing area урон. This is her main source of consistent урон and activates often during fights.",
-      "name": "Icy Vengeance (Icy Vengeance)",
-      "type": "Ультимативное умение",
-      "formula": "Formula: (584 + 35% Магическая Атака + Level × 100) | Приоритет прокачки: Очень Высокий – This is Krista’s strongest and most reliable урон skill. Upgrading it first maximizes her team impact in every battle.",
-      "name_en": "Icy Vengeance",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/krista/icy-vengeance.webp",
-      "priority": ""
+      "desc": "Окутывает всех союзных героев на 12 секунд. Пока ульта активна, союзники становятся неуязвимыми к урону от базовых атак и отражают его обратно атакующим.",
+      "name": "1 - Сделка с Дьяволом (Deal with the Devil)",
+      "formula": "80% Магическая Атака + 200 * Уровень",
+      "icon_url": "/images/skills/fluffy_skill_1.webp",
+      "priority": "Очень Высокий - основной навык, первым для прокачки",
+      "explanation": "Обеспечивает полную защиту от автоатак и отражает урон, эффективно нейтрализуя физические команды."
     },
     {
-      "desc": "Krista strikes the center of the enemy team, reducing their Защита от Магии and applying a Mark of Water. This sets up extra урон from her and other Water Mark heroes.",
-      "name": "Chains of Frost (Chains of Frost)",
-      "type": "Активное умение",
-      "formula": "Formula: (10% Магическая Атака + Level × 20) | Ascension skill: Generous Water Marks – союзники исцеление for 50% of the magic урон dealt to враги with a Water Mark. This makes Krista an amazing Поддержка-урон hybrid. | Приоритет прокачки: Высокий – Important for boosting your whole team’s урон and healing at Ascension. Level this after her first skill.",
-      "name_en": "Chains of Frost",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/krista/chains-of-frost.webp",
-      "priority": ""
+      "desc": "За 10 секунд защищает союзников от смерти. Смертные в этот период герои воскрешаются, восстанавливают часть здоровья и получают увеличение физической и магической атаки до конца боя.",
+      "name": "2 - В Ад и Обратно (To Hell and Back)",
+      "formula": "200% Магическая Атака + 400 * Уровень; 20% Магическая Атака + 50 * Уровень",
+      "icon_url": "/images/skills/fluffy_skill_2.webp",
+      "priority": "Высокий",
+      "explanation": "Позволяет вернуть погибших союзников сильнее, меняет ход длительных боёв."
     },
     {
-      "desc": "Krista freezes the ground, creating ice thorns that hurt враги when they move. Once the ice melts, all standing враги receive a Water Mark. This skill is situational but very useful in longer battles.",
-      "name": "Frozen Needles (Frozen Needles)",
-      "type": "Активное умение",
-      "formula": "Formula: (12% Магическая Атака + Level × 25 + 500) | Приоритет прокачки: Средний-Высокий – It deals good урон and spreads Marks of Water, but it’s less reliable than her first two skills.",
-      "name_en": "Frozen Needles",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/krista/frozen-needles.webp",
-      "priority": ""
+      "desc": "Накладывает на себя до 10 знаков смерти, повышающих пробивание магической брони. При смерти знаки взрываются, нанося урон врагам за каждый знак.",
+      "name": "3 - Знак Смерти (Mark of Death)",
+      "formula": "65% Магическая Атака + 200 * Уровень; 5% Магическая Атака + 5 * Уровень + 100",
+      "icon_url": "/images/skills/fluffy_skill_3.webp",
+      "priority": "Средний",
+      "explanation": "Превращает собственную смерть в мощный взрыв и усиливает магический урон."
     },
     {
-      "desc": "When Krista is about to take heavy урон, she protects herself with an ice block that absorbs 50% of the incoming урон for 2 seconds. It’s a defensive survival tool, not a урон source.",
-      "name": "Crystallization (Crystallization)",
-      "type": "Пассивное умение",
-      "formula": "Ascension skill: Volatile Crystallization – After the щит ends, the block explodes, dealing (40% Магическая Атака + 1500) урон to nearby враги. This adds offensive value later in the game.",
-      "name_en": "Crystallization",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/krista/crystallization.webp",
-      "priority": "Средний – Early on, this skill is only defensive. It becomes better with Ascension, but still less important than her main offensive skills."
+      "desc": "При использовании ульты противником Флаффи отменяет её, наносит урон противнику и получает урон, равный 20% от максимального здоровья. Срабатывает раз в 20 секунд, шанс отмены зависит от уровня цели.",
+      "name": "4 - Узурпация (Usurpation)",
+      "formula": "50% Магическая Атака + 150 * Уровень + 100; 20% от максимального Здоровья",
+      "icon_url": "/images/skills/fluffy_skill_4.webp",
+      "priority": "Высокий",
+      "explanation": "Отменяет вражеские ульты, меняет ход боя, но требует осторожного позиционирования из‑за самоповреждения."
     }
   ],
   "cascade": [
@@ -870,6 +879,48 @@ export const HERO_SKILLS_DB = {
       "formula": "",
       "name_en": "Skill 4",
       "priority": "4 (Наименьший)"
+    }
+  ],
+  "krista": [
+    {
+      "desc": "Криста выпускает 5 ледяных кристаллов, которые поражают врагов один за другим, нанося урон по области.",
+      "name": "1 - Ледяное возмездие (Icy Vengeance)",
+      "type": "Активное умение",
+      "formula": "584 + 35% Магическая Атака + Уровень * 100",
+      "name_en": "Icy Vengeance",
+      "icon_url": "/images/skills/krista_skill_1.webp",
+      "priority": "Очень Высокий – сильнейшее и самое надежное атакующее умение Кристы.",
+      "explanation": "Это основной источник стабильного урона Кристы, который часто активируется во время боя."
+    },
+    {
+      "desc": "Криста поражает центр вражеской команды, снижая их магическую защиту и накладывая Метку Воды.",
+      "name": "2 - Цепи холода (Chains of Frost)",
+      "type": "Активное умение",
+      "formula": "10% Магическая Атака + Уровень * 20",
+      "name_en": "Chains of Frost",
+      "icon_url": "/images/skills/krista_skill_2.webp",
+      "priority": "Высокий – важно для увеличения урона всей команды и исцеления при Вознесении.",
+      "explanation": "Подготавливает почву для дополнительного урона от нее самой и других героев, использующих Метки Воды. С умением Вознесения «Щедрые Метки Воды» союзники исцеляются от нанесенного магического урона."
+    },
+    {
+      "desc": "Криста замораживает землю, создавая ледяные шипы, которые наносят урон врагам при их перемещении. Когда лед тает, все выжившие враги получают Метку Воды.",
+      "name": "3 - Ледяные иглы (Frozen Needles)",
+      "type": "Активное умение",
+      "formula": "12% Магическая Атака + Уровень * 25 + 500",
+      "name_en": "Frozen Needles",
+      "icon_url": "/images/skills/krista_skill_3.webp",
+      "priority": "Средне-Высокий – наносит хороший урон и распространяет Метки Воды, но менее надежно, чем первые два умения.",
+      "explanation": "Ситуативное, но очень полезное умение в затяжных боях."
+    },
+    {
+      "desc": "При получении сильного урона Криста защищает себя ледяной глыбой, поглощающей часть входящего урона.",
+      "name": "4 - Кристаллизация (Crystallization)",
+      "type": "Пассивное умение",
+      "formula": "Поглощает 50% входящего урона на 2 секунды",
+      "name_en": "Crystallization",
+      "icon_url": "/images/skills/krista_skill_4.webp",
+      "priority": "Средний – на ранних этапах это чисто защитное умение. Становится лучше с Вознесением, но все же менее приоритетно, чем основные атакующие навыки.",
+      "explanation": "Оборонительный инструмент выживания. С умением Вознесения «Нестабильная кристаллизация» глыба взрывается после окончания действия щита, нанося урон ближайшим врагам."
     }
   ],
   "dante": [
@@ -1140,89 +1191,86 @@ export const HERO_SKILLS_DB = {
   ],
   "iris": [
     {
-      "desc": "Умение персонажа Ирис.",
-      "name": "Expose Soul (Expose Soul)",
-      "type": "Ультимативное умение",
-      "formula": "How it works: Iris reveals the soul of the nearest enemy for 13 seconds. Any урон the soul takes is instantly transferred as pure урон to the enemy’s real body — this means it ignores Броня and Защита от Магии completely. It’s especially strong against tanks and heroes with Высокий defenses. | Formula: Pure урон = ( 200% Здоровье + Ivl * 350 + 100) . | Приоритет прокачки: Очень Высокий – This is Iris’s most powerful skill. It defines her entire playstyle, allowing her to destroy tanks by dealing unavoidable урон. Max this one first for the biggest battle impact.",
+      "desc": "Ирис обнажает душу ближайшего противника на 13 секунд. Любой урон, полученный душой, мгновенно передается настоящему телу врага в виде чистого урона, полностью игнорируя броню и магическую защиту. Это умение особенно эффективно против танков и героев с высокими защитными характеристиками.",
+      "name": "1 - Обнажение Души (Expose Soul)",
+      "type": "Активное",
+      "formula": "Чистый урон = 200% Здоровье + Уровень * 350 + 100",
       "name_en": "Expose Soul",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/iris/expose-soul.webp",
-      "priority": ""
+      "icon_url": "/images/skills/iris_skill_1.webp",
+      "priority": "Очень Высокий",
+      "explanation": "Это самое мощное умение Ирис, определяющее весь ее игровой стиль. Оно позволяет уничтожать вражеских танков, нанося им неизбежный урон. Прокачивайте это умение в первую очередь для максимального влияния на исход боя."
     },
     {
-      "desc": "How it works: Iris summons a dark familiar near the farthest enemy. The creature moves toward her, biting враги along the way. Each bite hits harder than the last, so it deals increasing Физическая Атака as it returns to Iris.",
-      "name": "Otherworldly Creature (Otherworldly Creature)",
-      "type": "Активное умение",
-      "formula": "Formula Физическая Атака : ( 37% Магическая Атака + Ivl * 65) for the first bite, and each next bite adds Физическая Атака ( 9% Магическая Атака + Ivl * 25) . | Приоритет прокачки: Высокий – This skill provides steady magic урон and charges Iris’s synergy ability. It’s a great secondary source of power and should be leveled after Expose Soul.",
+      "desc": "Ирис призывает темного фамильяра рядом с самым дальним врагом. Существо движется к ней, кусая противников на своем пути. Каждый последующий укус наносит больше урона, чем предыдущий, увеличивая физическую атаку по мере возвращения к Ирис.",
+      "name": "2 - Потустороннее Существо (Otherworldly Creature)",
+      "type": "Активное",
+      "formula": "Физическая атака первого укуса: 37% Магическая Атака + Уровень * 65; Каждый следующий укус добавляет: 9% Магическая Атака + Уровень * 25",
       "name_en": "Otherworldly Creature",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/iris/otherworldly-creature.webp",
-      "priority": ""
+      "icon_url": "/images/skills/iris_skill_2.webp",
+      "priority": "Высокий",
+      "explanation": "Это умение обеспечивает стабильный магический урон и заряжает пассивную способность Ирис. Оно служит отличным дополнительным источником силы и должно прокачиваться сразу после первого умения."
     },
     {
-      "desc": "How it works: After the familiar returns to Iris, it transfers all the energy (Soul Fury) it collected from its bites. Each charge boosts Iris’s next basic attack, adding powerful Физическая Атака .",
-      "name": "Demonic Synergy (Demonic Synergy)",
-      "type": "Активное умение",
-      "formula": "Formula: Физическая Атака = ( 35% Магическая Атака + Ivl * 20 + 650) per charge. | Приоритет прокачки: Средний Высокий – This skill adds solid bonus урон when combined with the familiar’s attacks. It’s very useful for consistent extra DPS but not as critical as her main урон skill.",
+      "desc": "После возвращения фамильяра к Ирис, он передает ей всю накопленную энергию (Ярость Душ). Каждый заряд усиливает следующую базовую атаку Ирис, добавляя к ней мощный физический урон.",
+      "name": "3 - Демоническая Синергия (Demonic Synergy)",
+      "type": "Пассивное",
+      "formula": "Физическая атака = 35% Магическая Атака + Уровень * 20 + 650 за каждый заряд",
       "name_en": "Demonic Synergy",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/iris/demonic-synergy.webp",
-      "priority": ""
+      "icon_url": "/images/skills/iris_skill_3.webp",
+      "priority": "Выше Среднего",
+      "explanation": "Это умение добавляет солидный бонусный урон в сочетании с атаками фамильяра. Оно крайне полезно для поддержания стабильного дополнительного урона в секунду (DPS), но не так критично, как основное умение."
     },
     {
-      "desc": "Умение персонажа Ирис.",
-      "name": "Seed of Destruction (Seed of Destruction)",
-      "type": "Пассивное умение",
-      "formula": "How it works: Iris drains a bit of Здоровье from all враги, creates a Seed of Destruction, and launches it at the nearest enemy. The attack deals physical урон equal to the total amount of Здоровье absorbed. | Formula Здоровье absorbed : ( 25% Магическая Атака + Ivl * 80 + 3200) Здоровье absorbed per enemy. | Приоритет прокачки: Средний – This ability helps deal some extra урон, but since it depends on enemy Здоровье and isn’t pure урон, it’s less effective than her main abilities. Upgrade it last if you have spare resources.",
+      "desc": "Ирис поглощает немного здоровья у всех противников, создает Семя Разрушения и запускает его в ближайшего врага. Атака наносит физический урон, равный общему количеству поглощенного здоровья.",
+      "name": "4 - Семя Разрушения (Seed of Destruction)",
+      "type": "Активное",
+      "formula": "Поглощенное здоровье с каждого врага: 25% Магическая Атака + Уровень * 80 + 3200",
       "name_en": "Seed of Destruction",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/iris/seed-of-destruction.webp",
-      "priority": ""
+      "icon_url": "/images/skills/iris_skill_4.webp",
+      "priority": "Средний",
+      "explanation": "Это умение помогает наносить дополнительный урон, но поскольку оно зависит от здоровья противников и не является чистым уроном, оно менее эффективно, чем другие способности. Улучшайте его в последнюю очередь при наличии свободных ресурсов."
     }
   ],
   "nebula": [
     {
-      "desc": "Nebula fires a slow energy ball that explodes either when it hits the last enemy or is activated manually. It splits урон and drains energy from враги in the area. However, because Nebula turns her basic attacks into buffs through Equilibrium, it takes a long time for her to activate this skill (she needs full energy). Ascension skill: Astral Balance Projection – When activated, this skill also grants 2 союзники a boost to both physical and magical attack for 5 seconds. While helpful, it still depends on her activating the ultimate, which takes time for beginners.",
-      "name": "Astral Projection (Astral Projection)",
-      "type": "Ультимативное умение",
-      "formula": "",
+      "desc": "Небула запускает медленный энергетический шар, который взрывается при столкновении с последним врагом или при ручной активации. Взрыв распределяет урон и сжигает энергию у противников в зоне поражения.",
+      "name": "1 - Астральная Проекция (Astral Projection)",
+      "type": "Активное (Ультимативное)",
+      "formula": "Распределяемый урон и сжигание энергии зависят от уровня умения и Физической Атаки",
       "name_en": "Astral Projection",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/nebula/astral-projection.webp",
-      "priority": "Низкий - It’s her ultimate, but she rarely activates it due to her Поддержка playstyle and Низкий energy gain."
+      "icon_url": "/images/skills/nebula_skill_1.webp",
+      "priority": "Низкий — это её ультимейт, но она редко активирует его из-за своего стиля игры поддержки и медленного набора энергии.",
+      "explanation": "Из-за того, что Небула превращает свои базовые атаки в баффы с помощью «Равновесия», ей требуется много времени для накопления энергии и активации этого умения. Ручная активация позволяет стратегически лишать ключевых врагов энергии перед использованием их ультимейтов. Навык Вознесения «Проекция астрального баланса» при активации также дает двум союзникам бонус к физической и магической атаке на 5 секунд."
     },
     {
-      "desc": "This skill heals two nearby союзники and removes negative effects (debuffs). If only one ally is nearby, the healing goes to that hero. Very useful for keeping the team alive, especially in close formations.",
-      "name": "Serenity (Serenity)",
-      "type": "Активное умение",
-      "formula": "Ascension skill: Absolute Serenity – If an ally receives a debuff within 4 seconds after Serenity, Nebula cancels the effect and heals again. This makes her healing even more powerful and reactive.",
+      "desc": "Исцеляет двух ближайших союзников и снимает с них негативные эффекты (дебаффы). Если рядом находится только один союзник, всё исцеление достается ему.",
+      "name": "2 - Безмятежность (Serenity)",
+      "type": "Активное",
+      "formula": "Объем исцеления зависит от Физической Атаки Небулы",
       "name_en": "Serenity",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/nebula/serenity.webp",
-      "priority": "Высокий - Great for team survival, and it activates more often than the ultimate."
+      "icon_url": "/images/skills/nebula_skill_2.webp",
+      "priority": "Высокий — отлично подходит для выживания команды и активируется чаще, чем ультимейт.",
+      "explanation": "Очень полезно для поддержания выживаемости команды, особенно в плотных построениях. Навык Вознесения «Абсолютная безмятежность» позволяет Небуле повторно снять дебафф и исцелить союзника, если он получает негативный эффект в течение 4 секунд после применения умения."
     },
     {
-      "desc": "Automatically deals урон to the enemy with the lowest Здоровье. It’s a simple attack that helps finish off враги, but it’s not as impactful as her Поддержка skills.",
-      "name": "Disharmony (Disharmony)",
-      "type": "Активное умение",
-      "formula": "Приоритет прокачки: Средний - Decent урон, especially in long fights. It happens automatically and helps secure kills.",
+      "desc": "Автоматически наносит урон противнику с наименьшим уровнем здоровья.",
+      "name": "3 - Дисгармония (Disharmony)",
+      "type": "Активное",
+      "formula": "Физический урон зависит от Физической Атаки Небулы",
       "name_en": "Disharmony",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/nebula/disharmony.webp",
-      "priority": ""
+      "icon_url": "/images/skills/nebula_skill_3.webp",
+      "priority": "Средний — неплохой урон, особенно в затяжных боях. Помогает гарантированно добивать цели.",
+      "explanation": "Простая атака, которая помогает добивать раненых врагов, но она не так важна для общего исхода боя, как её умения поддержки."
     },
     {
-      "desc": "This is Nebula’s core skill. It turns her basic attacks into Поддержка boosts, increasing the physical and magical attack of nearby союзники. This happens constantly and makes a huge difference for урон dealers.",
-      "name": "Equilibrium (Equilibrium)",
-      "type": "Пассивное умение",
-      "formula": "",
+      "desc": "Заменяет базовые атаки Небулы на поддерживающие сферы, которые временно увеличивают физическую и магическую атаку ближайших союзников.",
+      "name": "4 - Равновесие (Equilibrium)",
+      "type": "Пассивное",
+      "formula": "Бонус к Физической и Магической атаке зависит от Физической Атаки Небулы",
       "name_en": "Equilibrium",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/nebula/equilibrium.webp",
-      "priority": "Очень Высокий - Her most important skill. It defines her role in the team and improves the whole team's performance."
-    }
-  ],
-  "celeste": [
-    {
-      "desc": "This is Celeste’s passive ability. In Dark Form, her basic attacks deal magic урон. In Light Form, her basic attacks исцеление союзники a little. While this is helpful, it doesn’t have as much impact as her other abilities.",
-      "name": "4th - Zenith (4th - Zenith)",
-      "type": "Ультимативное умение",
-      "formula": "Formula: Dark – (70% Mag. atk. + Ivl * 150 + 6000) | Light – (40% Mag. atk. + Ivl * 150 + 6000) . | Приоритет прокачки: Низкий – Upgrade this last. It is only a bonus effect, while her other skills are more important for battles.",
-      "name_en": "4th - Zenith",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/celeste/zenith.webp",
-      "priority": ""
+      "icon_url": "/images/skills/nebula_skill_4.webp",
+      "priority": "Очень высокий — её самое важное умение, определяющее её роль в команде и значительно повышающее общую эффективность.",
+      "explanation": "Это ключевое умение Небулы. Оно превращает её обычные атаки в мощные баффы для соседей по линии, что кардинально увеличивает урон ключевых атакующих героев."
     }
   ],
   "isaac": [
@@ -1269,40 +1317,86 @@ export const HERO_SKILLS_DB = {
   ],
   "ishmael": [
     {
-      "desc": "Ishmael transforms into his demonic form, gaining a huge boost to attack speed and critical hit chance. This is the skill that makes Ishmael deadly, because the faster he attacks and the more criticals he lands, the more Здоровье he restores through Вампиризм. The downside is that he slowly loses energy, and when it reaches zero, the form ends.",
-      "name": "Awakening (Awakening)",
-      "type": "Ультимативное умение",
-      "formula": "Formula: (Critical hit chance increase: 1300 + (Skill Level × 10)) . | Ascension skill: Brutal Awakening – Critical hits deal x4 урон instead of x2 when in demonic form. This makes Ishmael’s late game power skyrocket, turning him into one of the strongest урон dealers if well supported.",
+      "desc": "Ишмаэль принимает демонический облик, значительно увеличивая скорость атаки и шанс критического удара. В этой форме он постепенно расходует энергию, и когда она достигает нуля, действие умения заканчивается.",
+      "name": "1 - Пробуждение (Awakening)",
+      "type": "Активное (Ультимативное)",
+      "formula": "Шанс критического удара: 1300 + (Уровень Умения * 10)",
       "name_en": "Awakening",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/ishmael/awakening.webp",
-      "priority": "Очень Высокий – This is Ishmael’s core skill. Without it, he is much weaker. Always max this first to make him a true carry."
+      "icon_url": "/images/skills/ishmael_skill_1.webp",
+      "priority": "Очень Высокий — это основное умение Ишмаэля, качать в первую очередь.",
+      "explanation": "Это ключевое умение Ишмаэля. Чем быстрее он атакует и чаще наносит критические удары, тем больше здоровья восстанавливает благодаря вампиризму. Вознесение (Пробуждение жестокости) увеличивает критический урон в 4 раза вместо 2, что делает его невероятно опасным на поздней стадии игры."
     },
     {
-      "desc": "Ishmael becomes much harder to hit, dodging physical attacks for a short time. Each Уклонение gives him extra power, helping him stay alive and deal more урон. However, if the enemy’s level is much higher, the Уклонение chance is reduced. Ascension skill: Elusive Phantom – Lets Ishmael Уклонение not just physical, but also magical attacks. This makes him much stronger against mages and balanced teams, greatly boosting his survivability.",
-      "name": "Phantom (Phantom)",
-      "type": "Активное умение",
-      "formula": "Formula: (Уклонение chance depends on Ishmael’s level vs. target level) . | Приоритет прокачки: Высокий – Survivability is key. This skill keeps Ishmael alive long enough to unleash his урон. Upgrade after Awakening.",
+      "desc": "Ишмаэль становится труднодосягаемой целью, уклоняясь от физических атак в течение некоторого времени. Каждое успешное уклонение увеличивает его силу.",
+      "name": "2 - Фантом (Phantom)",
+      "type": "Активное",
+      "formula": "Шанс уклонения зависит от разницы уровней Ишмаэля и цели",
       "name_en": "Phantom",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/ishmael/phantom.webp",
-      "priority": ""
+      "icon_url": "/images/skills/ishmael_skill_2.webp",
+      "priority": "Высокий — выживаемость критически важна для Ишмаэля, прокачивайте сразу после Пробуждения.",
+      "explanation": "Повышает выживаемость Ишмаэля на поле боя. Вознесение (Неуловимый фантом) позволяет уклоняться не только от физических, но и от магических атак, что делает его крайне эффективным против магов."
     },
     {
-      "desc": "This passive skill increases Ishmael’s Вампиризм, meaning he heals himself every time he deals урон. The stronger his criticals, the more Здоровье he recovers. This works perfectly with Awakening and makes him very hard to kill if he keeps attacking.",
-      "name": "Dark Craft (Dark Craft)",
-      "type": "Активное умение",
-      "formula": "Formula: (Вампиризм % = 75 + (Skill Level × 0.576924 + 11.53848)) .",
+      "desc": "Пассивное умение, увеличивающее вампиризм Ишмаэля. Он восстанавливает здоровье каждый раз, когда наносит урон.",
+      "name": "3 - Темное Ремесло (Dark Craft)",
+      "type": "Пассивное",
+      "formula": "Вампиризм % = 75 + (Уровень Умения * 0.576924 + 11.53848)",
       "name_en": "Dark Craft",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/ishmael/dark-craft.webp",
-      "priority": "Средний Высокий – A good skill to invest in, but only after Awakening and Phantom are well-leveled. It helps Ishmael survive longer battles."
+      "icon_url": "/images/skills/ishmael_skill_3.webp",
+      "priority": "Средне-высокий — отличный навык для долгого выживания, прокачивайте после Пробуждения и Фантома.",
+      "explanation": "Отлично сочетается с Пробуждением. Чем сильнее критические удары, тем больше здоровья он восстанавливает, что делает его крайне живучим при непрерывных атаках."
     },
     {
-      "desc": "Every third hit Ishmael lands stuns his opponent for one second. This can be useful to disrupt враги, but since the stun chance decreases against higher-level враги, it is more reliable in late game.",
-      "name": "Storm Blades (Storm Blades)",
-      "type": "Пассивное умение",
-      "formula": "Formula: (Stun chance depends on Ishmael’s level vs. target level) .",
+      "desc": "Каждый третий удар Ишмаэля оглушает соперника на 1 секунду.",
+      "name": "4 - Грозовые Клинки (Storm Blades)",
+      "type": "Пассивное",
+      "formula": "Шанс оглушения зависит от разницы уровней Ишмаэля и цели",
       "name_en": "Storm Blades",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/ishmael/storm-blades.webp",
-      "priority": "Низкий – While the stun can help, it is not as important as his other skills. Upgrade this last, after all other abilities are strong."
+      "icon_url": "/images/skills/ishmael_skill_4.webp",
+      "priority": "Низкий — хотя оглушение полезно, оно менее важно, чем другие навыки. Прокачивайте в последнюю очередь.",
+      "explanation": "Помогает сбивать умения врагов. Шанс оглушения снижается, если уровень противника выше уровня умения."
+    }
+  ],
+  "celeste": [
+    {
+      "desc": "Позволяет Селесте переключаться между Светлой и Темной формами. В Темной форме она создает пламя в команде противника, блокирующее исцеление. В Светлой форме она лечит самого слабого союзника в течение 5 секунд.",
+      "name": "1 - Две судьбы (Two Fates)",
+      "type": "Ультимативное умение",
+      "formula": "Темная форма – Блокировка исцеления: (70% Магическая Атака + Уровень * 350) | Светлая форма – Лечение: (70% Магическая Атака + Уровень * 100) в течение 5 сек.",
+      "name_en": "Two Fates",
+      "icon_url": "/images/skills/celeste_skill_1.webp",
+      "priority": "Очень Высокий – всегда улучшайте в первую очередь, так как это умение определяет её ключевые роли целителя и мага.",
+      "explanation": "Это ультимативное умение делает Селесту уникальной. Она единственный герой в игре, которому требуется всего 50% энергии для активации ультимейта, что позволяет ей невероятно часто менять формы и подстраиваться под ситуацию на поле боя."
+    },
+    {
+      "desc": "Работает автоматически во время боя. В Темной форме накладывает небольшое пламя блокировки исцеления на врагов. В Светлой форме повторно лечит самого слабого союзника.",
+      "name": "2 - Белая ночь (White Night)",
+      "type": "Активное умение",
+      "formula": "Темная форма – Блокировка исцеления: (70% Магическая Атака + Уровень * 250) | Светлая форма – Лечение: (70% Магическая Атака + Уровень * 100) в течение 5 сек.",
+      "name_en": "White Night",
+      "icon_url": "/images/skills/celeste_skill_2.webp",
+      "priority": "Высокий – дает отличную стабильную пользу. Улучшайте вторым для усиления как лечения, так и блокировки исцеления.",
+      "explanation": "Поскольку это умение активируется очень часто, оно обеспечивает стабильную поддержку союзников или постоянное давление на вражескую команду."
+    },
+    {
+      "desc": "В Темной форме часть заблокированного исцеления врага превращается в магический урон. В Светлой форме очищает союзников, снимая с них негативные эффекты перед началом лечения.",
+      "name": "3 - Лимб (Limbo)",
+      "type": "Пассивное умение",
+      "formula": "Темная форма – (42% + (Уровень * 0.2 + 20)%) заблокированного исцеления превращается в урон | Светлая форма – шанс заблокировать дебафф зависит от уровня (базовый шанс против уровня 130).",
+      "name_en": "Limbo",
+      "icon_url": "/images/skills/celeste_skill_3.webp",
+      "priority": "Средне-высокий – крайне полезно для очищения союзников и нанесения побочного урона. Улучшайте после первых двух ключевых умений.",
+      "explanation": "Это умение превращает Селесту в полноценного гибридного персонажа, способного одновременно очищать команду от дебаффов и наносить дополнительный урон."
+    },
+    {
+      "desc": "В Темной форме базовые атаки Селесты наносят магический урон. В Светлой форме её базовые атаки восстанавливают здоровье союзникам.",
+      "name": "4 - Зенит (Zenith)",
+      "type": "Пассивное умение",
+      "formula": "Темная форма – (70% Магическая Атака + Уровень * 150 + 6000) | Светлая форма – (40% Магическая Атака + Уровень * 150 + 6000)",
+      "name_en": "Zenith",
+      "icon_url": "/images/skills/celeste_skill_4.webp",
+      "priority": "Низкий – улучшайте в последнюю очередь, так как это лишь приятный бонус к автоатакам.",
+      "explanation": "Хотя это умение полезно для поддержания постоянного тонуса команды, его общее влияние на исход боя ниже, чем у остальных способностей."
     }
   ],
   "helios": [
@@ -1383,24 +1477,91 @@ export const HERO_SKILLS_DB = {
   ],
   "lyria": [
     {
-      "desc": "Skill Animation Info",
-      "name": "4th – Shackles of Doom (4th – Shackles of Doom)",
-      "type": "Ультимативное умение",
-      "formula": "In-game description: Passive skill. The hero exudes an aura that decreases the Уклонение stat of all враги within the area of effect. All affected враги receive additional physical урон from physical attacks. The size of the aura scales with the number of undead units in allied team. | Skill Explanation: This passive aura works automatically every battle — no button needed. “Уклонение” means the chance an enemy has to avoid your attacks entirely. By reducing their Уклонение, your physical heroes land more hits consistently. On top of that, every hit that connects deals extra Physical урон . The more undead союзники you have, the wider this aura spreads, covering more враги at once. Upgrading it increases how much Уклонение is reduced and how much extra урон враги take. It’s essential against Уклонение-heavy teams like Dante or Yasmine. | Formula – Уклонение Reduction: 29,848 (30% Физическая Атака + 50 × level) | Formula – Extra Physical урон за удар: 7,783 (10% Физическая Атака) | Приоритет прокачки: Высокий – Even though it’s passive, this aura provides constant value in every single battle. Reducing enemy Уклонение is game-changing against teams built around Dante, Heidi, or Yasmine. The extra physical урон also stacks up across a long fight. Upgrade this alongside Bonds of Alliance as your second priority group.",
-      "name_en": "4th – Shackles of Doom",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/lyria/lyria-4th-skill-icon.webp",
-      "priority": ""
+      "name": "1 - Жнец Душ (Soul Reaper)",
+      "type": "Активное умение (Ультимативноетипы данных в игре обычно называют это ультимейтом, но в схеме просили тип умения в свободной форме, укажем Активное умение (Ультимативное)) Лирия собирает душу каждый раз, когда кто-то погибает на поле боя. При активации она открывает портал в царство мертвых, высвобождая мстительных духов. Портал выпускает как минимум 3 духов, каждый из которых наносит один удар. Количество дополнительных духов зависит от числа собранных душ, но не может превышать 7. Каждый дополнительный удар расходует одну собранную душу. Все удары направлены на врага с наименьшим уровнем здоровья. Описание механики: Лирия накапливает заряды душ за каждую смерть на поле боя (как союзников, так и врагов). При активации она выпускает духов, наносящих физический урон самому слабому противнику. Это позволяет быстро добивать раненых врагов. Поскольку урон зависит от физической атаки, прокачка этого умения значительно увеличивает суммарный урон от всех 7 возможных ударов. Формула: 45% Физическая Атака + 50 * Уровень. Приоритет: Очень Высокий - основной источник взрывного урона Лирии. Каждый уровень увеличивает урон за удар, а поскольку она может нанести до 7 ударов за одну активацию, общий прирост урона огромен. Всегда улучшайте это умение первым. Иконка: https://alexandregames.com/hero-wars-dominion-era/images/hero/lyria/lyria-1st-skill-icon.webp",
+      "name_en": "Soul Reaper"
+    },
+    {
+      "desc": "Лирия собирает душу каждый раз, когда кто-то погибает на поле боя. При активации она открывает портал в царство мертвых, высвобождая мстительных духов. Портал выпускает как минимум 3 духов, каждый из которых наносит один удар. Количество дополнительных духов зависит от числа собранных душ, но не может превышать 7. Каждый дополнительный удар расходует одну собранную душу. Все удары направлены на врага с наименьшим уровнем здоровья.",
+      "name": "1 - Жнец Душ (Soul Reaper)",
+      "type": "Активное умение (Ультимативное)",
+      "formula": "45% Физическая Атака + 50 * Уровень",
+      "name_en": "Soul Reaper",
+      "icon_url": "/images/skills/lyria_skill_2.webp",
+      "priority": "Очень Высокий - основной источник взрывного урона Лирии. Каждый уровень увеличивает урон за удар, а поскольку она может нанести до 7 ударов за одну активацию, общий прирост урона огромен. Всегда улучшайте это умение первым.",
+      "explanation": "Лирия накапливает заряды душ за каждую смерть на поле боя (как союзников, так и врагов). При активации она выпускает духов, наносящих физический урон самому слабому противнику. Это позволяет быстро добивать раненых врагов. Поскольку урон зависит от физической атаки, прокачка этого умения значительно увеличивает суммарный урон от всех 7 возможных ударов."
+    },
+    {
+      "desc": "Лирия связывает себя с союзником с самой высокой физической атакой на 12 секунд. Как Лирия, так и связанный союзник получают бонус к вампиризму. Пока Узы Союза активны, вампиризм восстанавливает здоровье обоим. Если связанный союзник принадлежит к нежити, они оба получают бонус к физической атаке.",
+      "name": "2 - Узы Союза (Bonds of Alliance)",
+      "type": "Активное умение",
+      "formula": "Вампиризм: 0.1153847 * Уровень + 5%; Бонус Физической Атаки (для нежити): 75 * Уровень + 250",
+      "name_en": "Bonds of Alliance",
+      "icon_url": "/images/skills/lyria_skill_3.webp",
+      "priority": "Высокий - основа роли поддержки Лирии. Оно поддерживает выживаемость Лирии и ее главного ДД за счет вампиризма, а в паре с героем-нежитью значительно увеличивает их урон. Улучшайте вторым, сразу после Жнеца Душ.",
+      "explanation": "Лирия создает магическую связь со своим сильнейшим героем, наносящим физический урон. Вампиризм преобразует часть наносимого урона в исцеление, позволяя обоим героям эффективно восстанавливать здоровье при атаках. Если связанный союзник — герой-нежить (например, Кира или Корвус), они оба также получают существенный бонус к Физической Атаке, что увеличивает их урон и исцеление."
+    },
+    {
+      "desc": "Лирия призывает 3 духов. Духи преследуют врага, который нанес больше всего урона за последние 10 секунд. Эффект длится 10 секунд. Пока духи присутствуют, преследуемый герой не может атаковать никого, кроме них, в то время как другие герои не могут атаковать духов.",
+      "name": "3 - Дети Могилы (Children of the Grave)",
+      "type": "Активное умение",
+      "formula": "Здоровье Духа: 0.25% Здоровья + 75 * Уровень",
+      "name_en": "Children of the Grave",
+      "icon_url": "/images/skills/lyria_skill_4.webp",
+      "priority": "Средний - контроль крайне полезен, но прирост здоровья духов от улучшения менее значим, чем увеличение урона или вампиризма. Улучшайте в последнюю очередь.",
+      "explanation": "Это умение контроля, которое временно выводит из строя самого опасного вражеского героя, заставляя его атаковать только призванных духов в течение 10 секунд. Духи обладают собственным запасом здоровья, зависящим от максимального здоровья Лирии. Особенно эффективно против героев с высоким взрывным уроном, таких как Данте или Исмаил."
+    },
+    {
+      "desc": "Пассивное умение. Герой излучает ауру, которая снижает показатель уклонения всех врагов в зоне действия. Все пораженные враги получают дополнительный физический урон от физических атак. Размер ауры зависит от количества союзных юнитов-нежити.",
+      "name": "4 - Оковы Рока (Shackles of Doom)",
+      "type": "Пассивное умение",
+      "formula": "Снижение уклонения: 30% Физическая Атака + 50 * Уровень; Дополнительный Физический Урон за удар: 10% Физическая Атака",
+      "name_en": "Shackles of Doom",
+      "icon_url": "/images/skills/lyria_skill_5.webp",
+      "priority": "Высокий - аура дает постоянную пользу в каждом бою. Снижение уклонения критично против команд с Данте, Хайди или Ясмин. Улучшайте вместе с Узами Союза во вторую очередь.",
+      "explanation": "Эта пассивная аура работает автоматически в каждом бою. Снижая уклонение врагов, ваши физические герои стабильно наносят больше ударов. Кроме того, каждый успешный удар наносит дополнительный Физический Урон. Чем больше у вас союзников-нежити, тем шире распространяется эта аура. Улучшение увеличивает снижение уклонения и дополнительный урон. Это важно против команд с высоким уклонением (Данте, Хайди, Ясмин)."
     }
   ],
   "somna": [
     {
-      "desc": "Умение персонажа Сомна.",
-      "name": "4th Skill - Domain of Tranquility (4th Skill - Domain of Tranquility)",
-      "type": "Ультимативное умение",
-      "formula": "In-game description: Passive skill. When an opponent deals урон to Somna or adjacent союзники, 1 Sleepiness effect is applied to the enemy who dealt the урон. If the урон was dealt by an ultimate ability, 2 Sleepiness effects are applied. This effect can trigger no more often than once every 1s. Sleepiness chance is lowered if the target's level is above 130. | Skill Explanation: враги help Somna build her Контролёр simply by attacking her area. Ultimate урон is punished harder with two stacks, creating a fast path toward Counting Sheep's transformation. | Приоритет прокачки: Высокий – It accelerates Somna's whole Sleepiness engine, especially against area and ultimate урон, but it still needs her active Контролёр skills to cash in those stacks.",
-      "name_en": "4th Skill - Domain of Tranquility",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/somna/domain-of-tranquility-icon.webp",
-      "priority": ""
+      "desc": "Усыпляет вражеских героев на 7 секунд. Спящие противники не могут совершать действия, но могут проснуться раньше времени, если получат определенное количество урона. Шанс усыпления снижается, если уровень цели выше уровня умения.",
+      "name": "1 - Вуаль Колыбельной (Lullaby Veil)",
+      "type": "Ультимативное",
+      "formula": "Порог урона для пробуждения: 100% Физическая Атака + 120 * Уровень (107 633 на максимальном уровне)",
+      "name_en": "Lullaby Veil",
+      "icon_url": "/images/skills/somna_skill_1.webp",
+      "priority": "Очень Высокий — это основа механики Сомны и ее сильнейшее начало боя. Держите уровень умения максимальным для надежного контроля.",
+      "explanation": "Сомна ставит на паузу всю вражескую команду. Каждый спящий герой остается неактивным, пока не истечет время действия или пока полученный им урон не достигнет порога. Этот порог — не урон, наносимый самой Сомной, а суммарный урон, который цель может выдержать до пробуждения."
+    },
+    {
+      "desc": "Благословляет союзника на передней линии на 10 секунд. Благословение увеличивает его броню и добавляет эффект Сонливости к его базовым атакам. Каждый эффект Сонливости на противнике снижает его Физическую и Магическую атаку на 10 секунд. Эффект суммируется до 3 раз. Шанс наложения снижается, если уровень цели выше уровня умения.",
+      "name": "2 - Сонный Доспех (Dream Armor)",
+      "type": "Активное",
+      "formula": "Увеличение Брони: 30% Физическая Атака + 50 * Уровень (34 110 на макс.); Снижение Атаки за стак: 25% Физическая Атака + 30 * Уровень (26 908 на макс.)",
+      "name_en": "Dream Armor",
+      "icon_url": "/images/skills/somna_skill_2.webp",
+      "priority": "Высокий — добавляет защиту и подавление атаки врага за одно применение, поддерживая общую стратегию контроля.",
+      "explanation": "Сомна защищает союзника прямо перед собой и превращает его базовые атаки в дебаффы. При трех стаках враг может потерять значительную часть Физической и Магической атаки, что может незаметно решить исход затяжного боя."
+    },
+    {
+      "desc": "Проклинает область в центре вражеской команды. Противники в этой области получают физический урон, и на них накладывается 1 эффект Сонливости. Если у пораженного врага уже есть 3 эффекта Сонливости, он превращается в овцу на 5 секунд. В этом состоянии он не может атаковать и пытается убежать. Шанс наложения снижается, если уровень цели выше уровня умения.",
+      "name": "3 - Подсчет Овец (Counting Sheep)",
+      "type": "Активное",
+      "formula": "Физический Урон: 30% Физическая Атака + 30 * Уровень (31 510 на макс.)",
+      "name_en": "Counting Sheep",
+      "icon_url": "/images/skills/somna_skill_3.webp",
+      "priority": "Очень Высокий — регулярные превращения в овец являются лучшим контролем Сомны после ультимейта, а уровень умения влияет на шанс наложения Сонливости.",
+      "explanation": "Это повторяющийся цикл контроля Сомны. Физический урон скромен, но главная награда — превращение полностью ослабленного врага в безвредную овцу на 5 секунд."
+    },
+    {
+      "desc": "Пассивное умение. Когда противник наносит урон Сомне или соседним союзникам, на него накладывается 1 эффект Сонливости. Если урон был нанесен ультимативной способностью, накладывается 2 эффекта Сонливости. Эффект срабатывает не чаще одного раза в секунду. Шанс наложения снижается, если уровень цели выше уровня умения.",
+      "name": "4 - Обитель Спокойствия (Domain of Tranquility)",
+      "type": "Пассивное",
+      "formula": "1 стак Сонливости за обычный урон, 2 стака за урон от ультимейта. Кулдаун: 1 секунда",
+      "name_en": "Domain of Tranquility",
+      "icon_url": "/images/skills/somna_skill_4.webp",
+      "priority": "Высокий — ускоряет работу всей механики Сонливости Сомны, особенно против массового урона и ультимейтов, но все еще требует активных умений для реализации этих стаков.",
+      "explanation": "Враги помогают Сомне накапливать контроль, просто атакуя ее область. Урон от ультимейтов наказывается сильнее (двумя стаками), прокладывая быстрый путь к превращению умением «Подсчет Овец»."
     }
   ],
   "corvus": [
@@ -1477,40 +1638,44 @@ export const HERO_SKILLS_DB = {
   ],
   "thea": [
     {
-      "desc": "Solar Sanctuary is Thea’s ultimate healing skill, restoring Здоровье to the entire team. Its power scales with Магическая Атака, making it stronger as she develops.",
-      "name": "Solar Sanctuary (Solar Sanctuary)",
-      "type": "Ультимативное умение",
-      "formula": "Ascension skill: With ascension, this ability becomes Blessed Solar Sanctuary : any excess healing turns into a щит that absorbs incoming урон a strong advantage in extended battles.",
+      "desc": "Исцеляет всю команду. Сила исцеления зависит от Магической Атаки. При вознесении избыточное исцеление превращается в щит, поглощающий входящий урон.",
+      "name": "1 - Солнечное Святилище (Solar Sanctuary)",
+      "type": "Активное (Ультимативное)",
+      "formula": "Зависит от Магической Атаки",
       "name_en": "Solar Sanctuary",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/thea/solar-sanctuary.webp",
-      "priority": "Высокий"
+      "icon_url": "/images/skills/thea_skill_1.webp",
+      "priority": "Высокий",
+      "explanation": "Солнечное Святилище — это ультимативное умение Теи, восстанавливающее здоровье всей команде. С вознесением оно становится Благословенным Солнечным Святилищем, превращая избыточное исцеление в щит, что дает сильное преимущество в затяжных боях."
     },
     {
-      "desc": "Healing Beam targets the ally with the lowest Здоровье, delivering a focused исцеление that scales with Магическая Атака. It's essential for saving key teammates in critical moments.",
-      "name": "Healing Beam (Healing Beam)",
-      "type": "Активное умение",
-      "formula": "Ascension skill: With ascension, it becomes Radiant Healing Beam : the healed ally takes 50% less урон for 5 seconds, adding strong protection after the исцеление lands.",
+      "desc": "Направляет сфокусированный луч исцеления на союзника с наименьшим количеством здоровья. При вознесении исцеленный союзник получает на 50% меньше урона в течение 5 секунд.",
+      "name": "2 - Целительный Луч (Healing Beam)",
+      "type": "Активное",
+      "formula": "Зависит от Магической Атаки",
       "name_en": "Healing Beam",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/thea/healing-beam.webp",
-      "priority": "Очень Высокий"
+      "icon_url": "/images/skills/thea_skill_2.webp",
+      "priority": "Очень Высокий",
+      "explanation": "Целительный Луч спасает ключевых союзников в критические моменты. После вознесения (Лучистый Целительный Луч) цель получает мощную защиту, снижая входящий урон наполовину."
     },
     {
-      "desc": "A useful crowd Контролёр skill that silences враги, stopping them from casting skills for 3 seconds. Effective against magic-heavy teams.",
-      "name": "Vow of Silence (Vow of Silence)",
-      "type": "Активное умение",
-      "formula": "",
+      "desc": "Накладывает на противников молчание, запрещая им использовать умения в течение 3 секунд.",
+      "name": "3 - Обет Молчания (Vow of Silence)",
+      "type": "Контроль",
+      "formula": "Шанс снижается, если уровень цели выше уровня умения",
       "name_en": "Vow of Silence",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/thea/vow-of-silence.webp",
-      "priority": "Средний"
+      "icon_url": "/images/skills/thea_skill_3.webp",
+      "priority": "Средний",
+      "explanation": "Полезное умение контроля, особенно эффективное против команд с упором на магию, так как временно лишает их возможности применять заклинания."
     },
     {
-      "desc": "A passive boost to speed for союзники below 30% Здоровье. Nice bonus in the background, especially for speeding up clutch plays or healers and урон dealers recovering from the brink.",
-      "name": "Second Wind (Second Wind)",
-      "type": "Пассивное умение",
-      "formula": "",
+      "desc": "Пассивно увеличивает скорость союзников, если их здоровье падает ниже 30%.",
+      "name": "4 - Второе Дыхание (Second Wind)",
+      "type": "Пассивное",
+      "formula": "Пассивный эффект скорости при здоровье ниже 30%",
       "name_en": "Second Wind",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/thea/second-wind.webp",
-      "priority": "Низкий"
+      "icon_url": "/images/skills/thea_skill_4.webp",
+      "priority": "Низкий",
+      "explanation": "Отличный фоновый бонус, помогающий целителям и наносящим урон героям быстрее восстанавливаться или совершать решающие действия на грани гибели."
     }
   ],
   "electra": [
@@ -1587,40 +1752,44 @@ export const HERO_SKILLS_DB = {
   ],
   "astaroth": [
     {
-      "desc": "Casts a щит that blocks physical урон on the entire team. The щит's capacity is shared between all team members.",
-      "name": "Flame Veil (Flame Veil)",
-      "type": "Ультимативное умение",
-      "formula": "",
+      "desc": "Накладывает щит, который блокирует физический урон для всей команды. Прочность щита распределяется между всеми союзниками.",
+      "name": "1 - Пламенный Покров (Flame Veil)",
+      "type": "Активное умение",
+      "formula": "Поглощение урона: Зависит от Магической Атаки",
       "name_en": "Flame Veil",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/astaroth/astaroth-1st-skill.webp",
-      "priority": "1 (Highest)"
+      "icon_url": "/images/skills/astaroth_skill_1.webp",
+      "priority": "Очень Высокий - первый скилл для прокачки",
+      "explanation": "Это ключевое защитное умение Астарота, значительно повышающее выживаемость всей команды против физических атак."
     },
     {
-      "desc": "Astaroth spews a flare of hellfire, burning up some of the energy accumulated by the furthest enemy.",
-      "name": "Devastation (Devastation)",
+      "desc": "Астарот извергает струю адского пламени, сжигая часть энергии, накопленной самым дальним противником.",
+      "name": "2 - Опустошение (Devastation)",
       "type": "Активное умение",
-      "formula": "",
+      "formula": "Сжигание энергии: Фиксированное значение в зависимости от уровня умения",
       "name_en": "Devastation",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/astaroth/astaroth-2nd-skill.webp",
-      "priority": "4 (Lowest)"
+      "icon_url": "/images/skills/astaroth_skill_2.webp",
+      "priority": "Низкий - прокачивается в последнюю очередь",
+      "explanation": "Позволяет задерживать ультимативные способности вражеских героев задней линии (например, лекарей или магов)."
     },
     {
-      "desc": "Passive skill. Astaroth maintains a connection with the ally who has the least Здоровье left and takes on a part of the physical урон inflicted against that ally.",
-      "name": "Demon's Allegiance (Demon's Allegiance)",
-      "type": "Активное умение",
-      "formula": "",
-      "name_en": "Demon's Allegiance",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/astaroth/astaroth-3rd-skill.webp",
-      "priority": "3"
-    },
-    {
-      "desc": "Once per battle, Astaroth resurrects a fallen ally (or himself).",
-      "name": "Last Word (Last Word)",
+      "desc": "Пассивное умение. Астарот поддерживает связь с союзником, у которого осталось меньше всего здоровья, и принимает на себя часть физического урона, наносимого этому союзнику.",
+      "name": "3 - Демоническая Связь (Demon's Allegiance)",
       "type": "Пассивное умение",
-      "formula": "",
+      "formula": "Перенос урона: % от получаемого физического урона (зависит от уровня умения)",
+      "name_en": "Demon's Allegiance",
+      "icon_url": "/images/skills/astaroth_skill_3.webp",
+      "priority": "Средний - важный пассивный навык",
+      "explanation": "Автоматически спасает самых уязвимых героев (например, стрелков или магов) от быстрой гибели под физическими атаками."
+    },
+    {
+      "desc": "Один раз за бой Астарот воскрешает павшего союзника (или самого себя).",
+      "name": "4 - Последнее Слово (Last Word)",
+      "type": "Пассивное умение",
+      "formula": "Здоровье после воскрешения: Зависит от Магической Атаки",
       "name_en": "Last Word",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/astaroth/astaroth-4th-skill.webp",
-      "priority": "2"
+      "icon_url": "/images/skills/astaroth_skill_4.webp",
+      "priority": "Высокий - второй по приоритету навык",
+      "explanation": "Одно из сильнейших умений в игре, способное полностью перевернуть исход сражения, давая павшему герою второй шанс."
     }
   ],
   "byrna": [
@@ -1850,44 +2019,6 @@ export const HERO_SKILLS_DB = {
       "priority": "Средний – While useful, this passive relies on her going underground first. Upgrade it later once your other skills are stronger."
     }
   ],
-  "galahad": [
-    {
-      "desc": "Galahad calls down swords of justice from above, striking all враги on the battlefield. This is his ultimate ability , triggered when his energy bar fills completely. The swords rain down dealing physical урон to multiple враги simultaneously, making it excellent for damaging entire enemy teams. 💉 Вампиризм Synergy: Since this skill hits multiple враги , it triggers massive healing through Galahad's 45% Вампиризм. The more враги you hit, the more Здоровье you recover—making this ultimate both an offensive and defensive tool. After unlocking Ascension V, Iron Skies gains a powerful additional effect. Now, when the swords strike враги who have less than 30% Здоровье remaining, those враги receive the Retaliation debuff (maximum 5 враги per cast). This enhancement transforms your ultimate from pure урон into a finisher that can trigger multiple counter-attacks against weakened foes. Ascension Note: This upgrade makes Iron Skies even more valuable, but remember that Ascension takes considerable time to unlock. Even without it, the base skill deserves top priority.",
-      "name": "1. Iron Skies (Ultimate) (1. Iron Skies (Ultimate))",
-      "type": "Ультимативное умение",
-      "formula": "урон Formula: 28,628 (30% Физическая Атака + 60 × level) | Приоритет прокачки: Очень Высокий – This is Galahad's ultimate ability and your primary source of area урон. Every upgrade increases the урон significantly, affecting all враги hit. Since it's your ultimate, it charges throughout battle and can turn fights around. Prioritize this skill first as it provides the best return on investment for both урон output and team fight impact. | Effect: Applies Retaliation to враги below 30% Здоровье (max 5 targets)",
-      "name_en": "1. Iron Skies (Ultimate)",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/galahad/iron-skies-icon.webp",
-      "priority": ""
-    },
-    {
-      "desc": "Galahad charges forward fearlessly, breaking through any Контролёр effects (stuns, freezes, silences) that are affecting him. As he dashes, he deals physical урон to all nearby враги in his path. This skill has a 15-second cooldown , meaning Galahad can use it multiple times during a battle. It's essential for both mobility and survivability, allowing him to escape dangerous situations or dive into enemy formations. Cooldown: 15 seconds 💉 Вампиризм Synergy: Each enemy hit during the charge provides healing through 45% Вампиризм. With frequent activations (every 15s), this skill constantly sustains Galahad during prolonged fights. Upon reaching Ascension II, Unstoppable Charge gains an automatic trigger: whenever the closest enemy activates their ultimate ability, Galahad immediately charges at them, bypassing his normal ability queue. This can only occur once every 7 seconds. Additionally, the first enemy hit by this reactive charge loses 30% of their energy , potentially delaying or preventing their next ultimate. Ascension Note: This enhancement adds significant strategic value by interrupting enemy ultimates and controlling energy. However, since Ascension II comes much earlier than V, you might have this sooner, making the skill even more worthy of investment.",
-      "name": "2. Unstoppable Charge (2. Unstoppable Charge)",
-      "type": "Активное умение",
-      "formula": "урон Formula: 41,214 (50% Физическая Атака + 50 × level) | Приоритет прокачки: Высокий – This skill keeps Galahad alive and fighting by removing crowd Контролёр effects that would otherwise neutralize him. The урон is respectable and it activates frequently due to the short cooldown. Upgrade this second to improve both survivability and sustained урон. The Контролёр-break mechanic is invaluable against teams with heavy crowd Контролёр. | Effect: Auto-triggers when nearest enemy uses ultimate (once per 7s) + Target loses 30% energy",
-      "name_en": "2. Unstoppable Charge",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/galahad/unstoppable-charge-icon.webp",
-      "priority": ""
-    },
-    {
-      "desc": "Galahad performs a special counter-attack, automatically striking the enemy with the lowest current Здоровье . This is a periodic skill that activates automatically every 20.5 seconds throughout the battle. It's Galahad's way of finishing off weakened враги, dealing substantial physical урон . The skill smartly targets whoever is closest to death, making it excellent for securing eliminations. Cooldown: 20.5 seconds",
-      "name": "3. Retaliation (Periodic) (3. Retaliation (Periodic))",
-      "type": "Активное умение",
-      "formula": "урон Formula: 61,042 (80% Физическая Атака + 50 × level) | 💉 Вампиризм Synergy: With the highest урон multiplier (80% Физическая Атака), this skill provides Galahad's largest single-target исцеление through Вампиризм. Each Retaliation strike can recover substantial Здоровье, making it crucial for sustained survivability. | Приоритет прокачки: Высокий – This skill has the highest base урон of all Galahad's abilities and automatically targets the most vulnerable enemy. It's extremely efficient for finishing off opponents that your team has weakened. Upgrade this alongside Unstoppable Charge, as the Высокий урон multiplier means each level provides significant урон increases. This skill has no Ascension upgrade, so what you invest goes directly into proven, reliable урон.",
-      "name_en": "3. Retaliation (Periodic)",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/galahad/retaliation-icon.webp",
-      "priority": ""
-    },
-    {
-      "desc": "Cooldown: 18 seconds",
-      "name": "4. Pride of Harun (Periodic) (4. Pride of Harun (Periodic))",
-      "type": "Пассивное умение",
-      "formula": "This skill has both passive and active components. Passive: Galahad's Iron Skies ultimate now deals an additional 17,135 pure урон with every cast. Active: Every 18 seconds, Galahad enters a heroic state for 10 seconds, during which ALL his skills and basic attacks deal extra pure урон . Pure урон ignores both Броня and Защита от Магии, making it extremely valuable. | 💉 Вампиризм Synergy: Since Вампиризм works with all урон dealt by abilities (physical, magic, AND pure), this extra pure урон also heals Galahad through his 45% Вампиризм! This makes Pride of Harun significantly more valuable for sustained survivability—you're healing from both physical AND pure урон portions simultaneously. | Passive Bonus Formula: 17,135 pure урон added to Iron Skies (20% Физическая Атака + 25 × level) | Active Buff: All skills/attacks +17,135 pure урон for 10 seconds | Приоритет прокачки: Средний-Высокий – While pure урон is excellent and this skill enhances your ultimate permanently, it should be upgraded after the first three skills. The passive bonus only affects Iron Skies (which you're already upgrading), and the active buff, while strong, has less immediate impact than your other abilities. However, it's still worth upgrading steadily—just prioritize your ultimate, charge, and retaliation first. This skill scales well but benefits most when your other skills are already strong.",
-      "name_en": "4. Pride of Harun (Periodic)",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/galahad/pride-of-harun-icon.webp",
-      "priority": ""
-    }
-  ],
   "faceless": [
     {
       "desc": "Главное умение.",
@@ -1956,42 +2087,88 @@ export const HERO_SKILLS_DB = {
       "priority": "4 (Наименьший)"
     }
   ],
+  "galahad": [
+    {
+      "desc": "Галахад призывает с небес мечи правосудия, которые обрушиваются на всех врагов на поле боя, нанося им физический урон.",
+      "name": "1 - Железные Небеса (Iron Skies)",
+      "type": "Ультимативное",
+      "formula": "28,628 (30% Физическая Атака + 60 * Уровень)",
+      "name_en": "Iron Skies",
+      "icon_url": "/images/skills/galahad_skill_1.webp",
+      "priority": "Очень Высокий — приоритетное умение для прокачки, увеличивающее как урон, так и выживаемость героя.",
+      "explanation": "Это ультимативное умение Галахада и его основной источник урона по площади. Поскольку оно поражает сразу всех врагов, оно активирует колоссальное исцеление за счет 45% вампиризма. После открытия Вознесения V умение накладывает дебафф Возмездия на цели с уровнем здоровья ниже 30%, превращая способность в мощное добивающее средство."
+    },
+    {
+      "desc": "Галахад бесстрашно бросается вперед, снимая с себя все эффекты контроля (оглушение, заморозку, молчание) и нанося физический урон всем врагам на своем пути.",
+      "name": "2 - Неудержимый Натиск (Unstoppable Charge)",
+      "type": "Активное",
+      "formula": "41,214 (50% Физическая Атака + 50 * Уровень)",
+      "name_en": "Unstoppable Charge",
+      "icon_url": "/images/skills/galahad_skill_2.webp",
+      "priority": "Высокий — повышает мобильность, снимает контроль и наносит стабильный урон.",
+      "explanation": "Это умение обеспечивает Галахаду мобильность и выживаемость, позволяя выходить из опасных ситуаций каждые 15 секунд. Каждый пораженный при разбеге враг восстанавливает Галахаду здоровье. На II уровне Вознесения умение срабатывает автоматически, когда ближайший враг использует ультимейт, лишая его 30% энергии."
+    },
+    {
+      "desc": "Галахад проводит особую контратаку, автоматически нанося значительный физический урон противнику с наименьшим текущим уровнем здоровья.",
+      "name": "3 - Возмездие (Retaliation)",
+      "type": "Периодическое",
+      "formula": "61,042 (80% Физическая Атака + 50 * Уровень)",
+      "name_en": "Retaliation",
+      "icon_url": "/images/skills/galahad_skill_3.webp",
+      "priority": "Высокий — обладает огромным разовым уроном и помогает быстро устранять ослабленных противников.",
+      "explanation": "Периодическое умение, срабатывающее каждые 20,5 секунд. Оно автоматически выбирает самую слабую цель, помогая добивать врагов. Благодаря самому высокому множителю урона (80% физической атаки), это умение обеспечивает Галахаду мощнейший разовый отхил по одиночной цели."
+    },
+    {
+      "desc": "Пассивно добавляет чистый урон к умению «Железные Небеса». Активно: каждые 18 секунд Галахад на 10 секунд переходит в героическое состояние, в котором все его атаки и умения наносят дополнительный чистый урон.",
+      "name": "4 - Гордость Харуна (Pride of Harun)",
+      "type": "Пассивное / Периодическое",
+      "formula": "Пассивный бонус: +17,135 чистого урона к Железным Небесам (20% Физическая Атака + 25 * Уровень). Активный бафф: +17,135 чистого урона ко всем атакам на 10 секунд.",
+      "name_en": "Pride of Harun",
+      "icon_url": "/images/skills/galahad_skill_4.webp",
+      "priority": "Средне-Высокий — прокачивается после первых трех умений для максимизации общего урона.",
+      "explanation": "Чистый урон игнорирует броню и магическое сопротивление врагов. Поскольку вампиризм Галахада работает со всеми типами наносимого им урона, этот дополнительный чистый урон также конвертируется в здоровье, существенно повышая его общую выживаемость."
+    }
+  ],
   "arachne": [
     {
-      "desc": "Arachne makes a Hyper Jump towards the lowest-Здоровье enemy , dealing 74,135 magic урон, and leaps back. The jump triggers an explosion wave on hitting the target, stunning nearby враги for 5 seconds . This is her primary engagement tool that initiates combat and provides crucial crowd Контролёр.",
-      "name": "Skill 1: Hyper Jump (Skill 1: Hyper Jump)",
-      "type": "Ультимативное умение",
-      "formula": "урон Formula: 74,135 ( 95% Магическая Атака + Level × 60 ) | Приоритет прокачки: Высокий – This is Arachne's main урон ability with the highest base magic урон ( 74,135 ). Upgrading it increases both урон output and the reliability of her engagement. The 5-second stun duration makes this skill invaluable for team fights, allowing your team to focus down враги while they're incapacitated. Combined with her 80% Вампиризм , this skill also helps Arachne sustain herself during combat by healing for significant amounts with each hit.",
-      "name_en": "Skill 1: Hyper Jump",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/arachne/hyper-jump-icon.webp",
-      "priority": ""
+      "desc": "Арахна совершает гиперпрыжок к врагу с наименьшим уровнем здоровья, нанося магический урон и отпрыгивая назад. Прыжок вызывает взрывную волну при попадании в цель, оглушая ближайших врагов.",
+      "name": "1 - Гиперпрыжок (Hyper Jump)",
+      "type": "Активное",
+      "formula": "95% Магическая Атака + Уровень * 60",
+      "name_en": "Hyper Jump",
+      "icon_url": "/images/skills/arachne_skill_1.webp",
+      "priority": "Высокий — основное умение контроля и инициации боя",
+      "explanation": "Это ее основное умение для инициации боя, обеспечивающее важный контроль толпы. Оглушение длится 5 секунд, что позволяет вашей команде сфокусировать огонь на выведенных из строя врагах. В сочетании с 80% вампиризма это умение также помогает Арахне восстанавливать значительное количество здоровья во время боя."
     },
     {
-      "desc": "Arachne summons a monster that charges at the first enemy it sees, exploding and dealing 26,148 magic урон while stunning враги for 2 seconds . This skill adds additional crowd Контролёр to Arachne's arsenal and provides consistent урон during extended fights.",
-      "name": "Skill 2: Demolition Robot (Skill 2: Demolition Robot)",
-      "type": "Активное умение",
-      "formula": "Explosion урон Formula: 26,148 ( 30% Магическая Атака + Level × 40 ) | Приоритет прокачки: Средний – While this skill provides useful crowd Контролёр with a 2-second stun, its урон output ( 26,148 ) is significantly lower than Hyper Jump. The stun duration is also shorter. Upgrade this skill after prioritizing her more impactful abilities. However, the additional Контролёр can be valuable in Контролёр-focused team compositions, especially when paired with heroes like Lian or Polaris.",
-      "name_en": "Skill 2: Demolition Robot",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/arachne/demolition-robot-icon.webp",
-      "priority": ""
+      "desc": "Арахна призывает монстра, который бросается на первого попавшегося врага, взрывается, наносит магический урон и оглушает врагов.",
+      "name": "2 - Подрывной робот (Demolition Robot)",
+      "type": "Активное",
+      "formula": "30% Magic Attack + Level * 40",
+      "name_en": "Demolition Robot",
+      "icon_url": "/images/skills/arachne_skill_2.webp",
+      "priority": "Средний — прокачивается после более приоритетных умений",
+      "explanation": "Добавляет дополнительный контроль в арсенал Арахны и обеспечивает стабильный урон во время затяжных боев. Оглушение длится 2 секунды. Полезно в командах, ориентированных на контроль, особенно в паре с Лиэн или Полярис."
     },
     {
-      "desc": "Arachne triggers a minefield under nearby враги, dealing 21,357 pure урон. Pure урон is special because it completely ignores both Броня and Защита от Магии, making it extremely effective against tanky враги that would normally resist magical attacks.",
-      "name": "Skill 3: Minefield (Skill 3: Minefield)",
-      "type": "Активное умение",
-      "formula": "Pure урон Formula: 21,357 ( 25% Магическая Атака + Level × 30 + 600 ) | Приоритет прокачки: Средний-Высокий – The pure урон nature of this skill makes it incredibly valuable despite the lower урон number ( 21,357 ). Since pure урон ignores all defenses, every point of урон translates directly to enemy Здоровье loss. This is particularly effective against heroes with Высокий Броня or Защита от Магии like Galahad, Aurora, or Corvus. Upgrade this skill before Demolition Robot but after Hyper Jump and Plasma Explosion to maximize your anti-Танк potential.",
-      "name_en": "Skill 3: Minefield",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/arachne/minefield-icon.webp",
-      "priority": ""
+      "desc": "Арахна активирует минное поле под ближайшими врагами, нанося чистый урон. Чистый урон полностью игнорирует как броню, так и магическую защиту, что делает его крайне эффективным против прочных врагов.",
+      "name": "3 - Минное поле (Minefield)",
+      "type": "Активное",
+      "formula": "25% Магическая Атака + Уровень * 30 + 600",
+      "name_en": "Minefield",
+      "icon_url": "/images/skills/arachne_skill_3.webp",
+      "priority": "Средне-высокий — отличный инструмент против танков",
+      "explanation": "Природа чистого урона делает это умение невероятно ценным, несмотря на относительно невысокие цифры. Особенно эффективно против героев с высокой броней или магической защитой, таких как Галахад, Аврора или Корвус."
     },
     {
-      "desc": "If the target's Здоровье drops below 20% during Hyper Jump, Arachne triggers a devastating Plasma Explosion dealing a massive 165,652 pure урон. This is Arachne's execution ability that finishes off weakened враги. The pure урон ensures even the tankiest heroes cannot escape death when they reach the threshold.",
-      "name": "Skill 4: Plasma Explosion (Ultimate) (Skill 4: Plasma Explosion (Ultimate))",
-      "type": "Пассивное умение",
-      "formula": "Pure урон Formula: 165,652 ( 200% Магическая Атака + Level × 200 + 8,000 ) | Приоритет прокачки: Очень Высокий – This is Arachne's most crucial skill with an absolutely devastating 165,652 pure урон output nearly 8 times stronger than Minefield! As an execution ability, it guarantees kills on враги below 20% Здоровье regardless of their defensive stats. This makes Arachne a nightmare for enemy supports and урон dealers who drop Низкий in fights. Prioritize maxing this skill first to ensure your executions are successful and to maximize your impact in team fights. The scaling with Магическая Атака ( 200% ) also means this benefits greatly from equipment upgrades.",
-      "name_en": "Skill 4: Plasma Explosion (Ultimate)",
-      "icon_url": "https://alexandregames.com/hero-wars-dominion-era/images/hero/arachne/plasma-explosion-icon.webp",
-      "priority": ""
+      "desc": "Если во время Гиперпрыжка здоровье цели падает ниже 20%, Арахна вызывает разрушительный Плазменный взрыв, наносящий огромный чистый урон. Это добивающее умение, гарантирующее смерть ослабленных врагов.",
+      "name": "4 - Плазменный взрыв (Plasma Explosion)",
+      "type": "Пассивное",
+      "formula": "200% Магическая Атака + Уровень * 200 + 8 000",
+      "name_en": "Plasma Explosion",
+      "icon_url": "/images/skills/arachne_skill_4.webp",
+      "priority": "Очень высокий — ключевое добивающее умение, качать в первую очередь",
+      "explanation": "Самое важное умение Арахны с колоссальным чистым уроном, который почти в 8 раз сильнее Минного поля. Гарантирует убийство врагов с уровнем здоровья ниже 20%, независимо от их защитных характеристик. Масштабирование от Магической Атаки (200%) делает его крайне зависимым от прокачки снаряжения и обликов."
     }
   ],
   "keira": [
@@ -2033,40 +2210,6 @@ export const HERO_SKILLS_DB = {
     }
   ],
   "astrid": [
-    {
-      "desc": "Главное умение.",
-      "name": "Умение 1",
-      "type": "Ультимативное умение",
-      "formula": "",
-      "name_en": "Skill 1",
-      "priority": "1 (Наивысший)"
-    },
-    {
-      "desc": "Активное умение.",
-      "name": "Умение 2",
-      "type": "Активное умение",
-      "formula": "",
-      "name_en": "Skill 2",
-      "priority": "2"
-    },
-    {
-      "desc": "Активное умение.",
-      "name": "Умение 3",
-      "type": "Активное умение",
-      "formula": "",
-      "name_en": "Skill 3",
-      "priority": "3"
-    },
-    {
-      "desc": "Пассивное умение.",
-      "name": "Умение 4",
-      "type": "Пассивное умение",
-      "formula": "",
-      "name_en": "Skill 4",
-      "priority": "4 (Наименьший)"
-    }
-  ],
-  "fafnir": [
     {
       "desc": "Главное умение.",
       "name": "Умение 1",
@@ -2143,6 +2286,48 @@ export const HERO_SKILLS_DB = {
       "formula": "",
       "name_en": "Skill 4",
       "priority": "4 (Наименьший)"
+    }
+  ],
+  "fafnir": [
+    {
+      "desc": "Фафнир кует щит для союзника с наибольшей Физической Атакой. Этот щит поглощает любой входящий физический и магический урон. Пока щит активен, Физическая Атака этого союзника значительно увеличивается.",
+      "name": "1 - Шедевр кузнеца (Blacksmith's Masterpiece)",
+      "type": "Активное",
+      "formula": "Поглощение урона: 250% Физической Атаки + 15000, Бонус к Физической Атаке: 40% Физической Атаки + 2500",
+      "name_en": "Blacksmith's Masterpiece",
+      "icon_url": "",
+      "priority": "Высокий - значительно увеличивает прочность щита и бонус к атаке",
+      "explanation": "Это ультимативное умение делает вашего главного атакующего героя невероятно прочным и одновременно увеличивает его атакующий потенциал. Идеально сочетается с героями, которые могут быстро реализовать бонус к атаке."
+    },
+    {
+      "desc": "В начале боя Фафнир накладывает руны на оружие союзника с наибольшей Физической Атакой. Каждый раз, когда этот союзник наносит физический урон, Фафнир укрывает его щитом, поглощающим урон.",
+      "name": "2 - Рунический щит (Runic Shield)",
+      "type": "Пассивное",
+      "formula": "Прочность щита за удар: 15% Физической Атаки + 1000",
+      "name_en": "Runic Shield",
+      "icon_url": "",
+      "priority": "Максимальный - это умение обеспечивает постоянную выживаемость вашего главного героя на протяжении всего боя",
+      "explanation": "Пассивный источник постоянной защиты для вашего главного DPS. Чем чаще союзник атакует, тем чаще обновляется и накапливается этот щит."
+    },
+    {
+      "desc": "Фафнир периодически снимает с защищаемого союзника эффекты оглушения, безмолвия, замедления и ослепления, а также дает ему временный иммунитет к этим эффектам контроля.",
+      "name": "3 - Безупречная защита (Flawless Defense)",
+      "type": "Активное",
+      "formula": "Шанс снять контроль: 100% для врагов до 130 уровня",
+      "name_en": "Flawless Defense",
+      "icon_url": "",
+      "priority": "Средний - важно прокачать до уровня врагов, чтобы гарантировать снятие контроля",
+      "explanation": "Позволяет вашему главному DPS беспрепятственно наносить урон, игнорируя попытки вражеской команды законтрить его контролем."
+    },
+    {
+      "desc": "Фафнир пассивно увеличивает Физическую Атаку защищаемого союзника на протяжении всего боя.",
+      "name": "4 - Закалка (Hardening)",
+      "type": "Пассивное",
+      "formula": "Увеличение Физической Атаки: 25% Физической Атаки Фафнира + 1500",
+      "name_en": "Hardening",
+      "icon_url": "",
+      "priority": "Высокий - напрямую увеличивает урон вашей команды",
+      "explanation": "Постоянный пассивный бафф, который делает вашего стрелка или убийцу еще более смертоносным."
     }
   ],
   "augustus": [
@@ -2408,6 +2593,4 @@ export const HERO_SKILLS_DB = {
   ]
 };
 
-export function getHeroSkills(heroId) {
-  return HERO_SKILLS_DB[heroId] || [];
-}
+export function getHeroSkills(heroId) { return HERO_SKILLS_DB[heroId] || []; }

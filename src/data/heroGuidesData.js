@@ -1,464 +1,405 @@
 export const HERO_GUIDES_DB = {
-  "yasmine": {
-    "id": "yasmine",
+  "qingmao": {
     "cons": [
-      "Контролёр: ⭐⭐⭐",
-      "урон: ⭐⭐⭐⭐⭐",
-      "Synergy: ⭐⭐⭐⭐⭐",
-      "Independence: ⭐⭐"
+      "Крайне уязвима к героям, способным снимать дебаффы (Себастьян, Селеста)",
+      "Испытывает серьезные трудности в боях против магических команд",
+      "Низкий базовый показатель магической защиты"
     ],
-    "name": "Ясмин",
     "pros": [
-      "Высокий Single-Target урон: Her skill “Dance of Death” deals massive burst урон to a single target, making her excellent at eliminating key враги quickly.",
-      "Debuff Immunity During Ultimate: While using “Dance of Death,” Yasmine cannot receive debuffs, making her immune to stuns, slows, or silences during that time.",
-      "Critical Poison урон: “Embrace of Pain” adds stacking pure урон over time with every critical hit, allowing урон to keep applying even after the main attack.",
-      "Good Уклонение and Survivability: “Ассасин’s Instinct” grants extra Уклонение and critical hit chance, helping her survive and deal more consistent урон.",
-      "Anti-Healing Utility: Her passive skill “Unknown Toxin” blocks healing on poisoned враги, making her strong against teams with heavy sustain."
+      "Постоянное снижение брони значительно увеличивает физический урон всей команды",
+      "Эффект ослепления эффективно срывает атаки противников",
+      "Высокий показатель уклонения обеспечивает отличную выживаемость против физического урона"
     ],
     "skins": [
       {
-        "desc": "",
-        "name": "Default Skin (Agility +1,365)",
-        "bonus": "Boosts Ловкость, Yasmine's main stat. Each point adds 3 Физическая Атака and 1 Броня stats point, making this skin an excellent overall boost to her offense and survivability.",
-        "priority": "Высокий - Great overall value, boosting all primary stats and enhancing skill effectiveness."
+        "name": "Базовый облик",
+        "bonus": "Ловкость +1,365",
+        "priority": "Средне-Высокий"
       },
       {
-        "desc": "",
-        "name": "Demonic Skin (Physical Attack +7,095)",
-        "bonus": "Directly increases Yasmine’s урон. Essential for maximizing Dance of Death and other physical-based abilities.",
-        "priority": "Очень Высокий - Maximizes урон output and synergy with offensive builds."
+        "name": "Облик Феникса",
+        "bonus": "Уклонение +2,960",
+        "priority": "Средний"
       },
       {
-        "desc": "",
-        "name": "Romantic Skin (Critical Hit Chance +2,960)",
-        "bonus": "Increases critical hit rate, making it easier to apply poison effects with her Embrace of Pain ability.",
-        "priority": "Средний - Good for crit builds and boosting poison урон but situational."
+        "name": "Весенний облик",
+        "bonus": "Физическая атака +7,095",
+        "priority": "Очень Высокий"
       },
       {
-        "desc": "",
-        "name": "Masquerade Skin (Armor +10,650)",
-        "bonus": "Adds a Высокий amount of Броня, helping Yasmine survive against physical урон teams, but doesn’t enhance offensive power.",
-        "priority": "Низкий - Defensive but lacks offensive contribution for her Ассасин role."
+        "name": "Маскарадный облик",
+        "bonus": "Пробивание брони +10,650",
+        "priority": "Высокий"
       },
       {
-        "desc": "",
-        "name": "Cybernetic Skin (Dodge +2,960)",
-        "bonus": "Improves Уклонение, synergizing with Cain and Yasmine’s ability to avoid basic attacks, giving her a chance to stay alive longer.",
-        "priority": "Средний-Низкий - Useful against basic attackers, but secondary to урон-based skins."
+        "name": "Демонический облик",
+        "bonus": "Здоровье +106,645",
+        "priority": "Низкий"
+      },
+      {
+        "name": "Лунный облик",
+        "bonus": "Физическая атака +14,190",
+        "priority": "Самый Высокий"
       }
     ],
     "glyphs": [
       {
-        "desc": "Уклонение allows Yasmine to avoid basic physical attacks, boosting survivability against physical teams. However, its effectiveness is situational.",
-        "name": "Уклонение",
-        "name_en": "Dodge",
-        "priority": "Низкий - Useful defensively, but not essential early on."
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/physical-attack.webp",
+        "name": "Физическая атака"
       },
       {
-        "desc": "While increasing Здоровье helps Yasmine survive longer, her best defense is fast elimination of threats. She depends more on evasion than tanking урон.",
-        "name": "Здоровье",
-        "name_en": "Health",
-        "priority": "Very Низкий - Least impactful for her Ассасин role."
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/health.webp",
+        "name": "Здоровье"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/armor-penetration.webp",
+        "name": "Пробивание брони"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/dodge.webp",
+        "name": "Уклонение"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/agility.webp",
+        "name": "Ловкость"
+      }
+    ],
+    "counters": [
+      {
+        "hero": "Celeste",
+        "reason": "Селеста жестко контрит Цин Мао своей <a href=\"#hero/celeste?skill=2\" style=\"color:#38bdf8; text-decoration:underline;\">Очищающей сферой</a>, которая снимает и блокирует все негативные эффекты. Это полностью нивелирует снижение брони от пассивного умения Цин Мао и ослепление от ее способностей."
+      },
+      {
+        "hero": "Julius",
+        "reason": "Джулиус защищает свою команду умением <a href=\"#hero/julius?skill=2\" style=\"color:#38bdf8; text-decoration:underline;\">Девять жизней</a>. Когда союзники теряют щиты, с них снимаются все негативные эффекты, из-за чего дебаффы Цин Мао на снижение брони постоянно очищаются."
+      },
+      {
+        "hero": "Nebula",
+        "reason": "Небула использует умение <a href=\"#hero/nebula?skill=2\" style=\"color:#38bdf8; text-decoration:underline;\">Безмятежность</a>, чтобы восстанавливать здоровье двум ближайшим союзникам и снимать с них негативные эффекты, нейтрализуя ослепление и снижение брони."
+      },
+      {
+        "hero": "Sebastian",
+        "reason": "Себастьян является одним из сильнейших контр-пиков благодаря умению <a href=\"#hero/sebastian?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">Песнь Очищения</a>. Оно мгновенно снимает все дебаффы со всей команды и создает щит, блокирующий наложение новых негативных эффектов."
+      }
+    ],
+    "overview": "Цин Мао — свирепый боец с основной характеристикой Ловкость, сражающийся на передовой в Hero Wars: Dominion Era. Связанная трагической судьбой со своим павшим братом Цин Луном, она направляет свою боль в разрушительные атаки, сокрушающие защиту врагов. Ее история — это история утраты, решимости и нерушимой сестринской связи, которая преодолевает саму смерть. В этом руководстве вы узнаете все необходимое для освоения Цин Мао: ее уникальные способности, оптимальные составы команд, приоритеты характеристик и продвинутые стратегии.",
+    "artifacts": [
+      {
+        "desc": "Пробивание брони +50,190 при активации ультимейта",
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/weapon-qing-mao-spear-of-the-crimson-dawn.webp",
+        "name": "Копьё Багряной Зари",
+        "slot": "Оружие",
+        "name_ru": "Копьё Багряной Зари",
+        "priority": "Очень Высокий — дает колоссальное пробивание брони всей команде при использовании ультимейта."
+      },
+      {
+        "desc": "Здоровье +83,649 | Уклонение +4,647",
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/book-of-illusions.webp",
+        "name": "Книга Иллюзий",
+        "slot": "Книга",
+        "name_ru": "Книга Иллюзий",
+        "priority": "Средне-Высокий — повышает выживаемость на передней линии за счет уклонения."
+      },
+      {
+        "desc": "Ловкость +6,249 (Физическая атака +18,747, Броня +6,249)",
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/ring-of-agility.webp",
+        "name": "Кольцо Ловкости",
+        "slot": "Кольцо",
+        "name_ru": "Кольцо Ловкости",
+        "priority": "Высокий — значительно увеличивает физическую атаку и урон всех способностей."
+      }
+    ],
+    "patronage": [],
+    "war_flags": [],
+    "best_teams": [
+      {
+        "hero": "Sebastian",
+        "reason": "Предоставляет щиты, иммунитет к дебаффам и значительно увеличивает шанс критического удара, отлично синергируя с физическим уроном Цин Мао."
+      },
+      {
+        "hero": "Heidi",
+        "reason": "Выступает в роли основного DPS, нанося огромный урон по целям, чья броня была снижена Цин Мао."
+      },
+      {
+        "hero": "Lara Croft",
+        "reason": "Добавляет постоянный физический урон и дополнительный контроль, извлекая максимум выгоды из пробивания брони Цин Мао."
+      },
+      {
+        "hero": "Thea",
+        "reason": "Обеспечивает исцеление и ускорение набора энергии, позволяя Цин Мао чаще активировать свое ультимативное умение."
+      }
+    ],
+    "conclusion": "Цин Мао — это универсальный и крайне полезный боец передней линии, чья главная сила заключается в постоянном снижении брони врагов и контроле ослеплением. Ее пассивное умение «Открытое Сердце» делает ее незаменимой против живучих, бронированных команд, позволяя вашим физическим ДД наносить максимальный урон. Для раскрытия ее полного потенциала критически важно инвестировать в физическую атаку, пробивание брони и ловкость, а также использовать покровительство Фенриса. Остерегайтесь команд с Себастьяном или Селестой, способных быстро очищать ее дебаффы, и Цин Мао станет сокрушительным оружием в вашем арсенале."
+  },
+  "rufus": {
+    "cons": [
+      "Слаб против физического урона: не имеет защиты от физических атак, из-за чего его легко победить физическими командами.",
+      "Узкая специализация: наиболее эффективен только против врагов с упором на магию. Менее полезен в других противостояниях.",
+      "Отсутствие контроля или усилений: не приносит команде оглушений, безмолвия или баффов.",
+      "Условное воскрешение: его пассивное умение активируется только при смерти от магического или чистого урона и не помогает против физического.",
+      "Низкий атакующий потенциал: Руфус не наносит много урона в бою."
+    ],
+    "pros": [
+      "Отличная защита от магии: его первое умение, Барьер Ракаши, блокирует весь входящий магический урон для всей команды.",
+      "Самоисцеление: умение Пожиратель позволяет ему лечиться на основе поглощенного магического урона, повышая выживаемость.",
+      "Нацеленность на ключевых магов: Насмешка Ракаши наносит периодический урон врагу с наибольшей силой магии.",
+      "Воскрешение от магического урона: Клятва Ракаши позволяет Руфусу возвращаться к жизни, если он был убит магическим или чистым уроном.",
+      "Прочный танк первой линии: его очень трудно убить в боях против магических команд."
+    ],
+    "skins": [
+      {
+        "name": "Базовый облик",
+        "bonus": "Сила (+1,365)",
+        "priority": "Средний - хороший универсальный прирост к здоровью, но не так сильно влияет на его умения, как характеристики, связанные с магией."
+      },
+      {
+        "name": "Варварский облик",
+        "bonus": "Магическая Атака (+10,650)",
+        "priority": "Высокий - напрямую усиливает все ключевые умения Руфуса, делая его защитные способности намного сильнее."
+      },
+      {
+        "name": "Ангельский облик",
+        "bonus": "Здоровье (+106,645)",
+        "priority": "Средне-высокий - отлично подходит для выживаемости, особенно в сочетании с лечением или Акселем в качестве покровителя."
+      },
+      {
+        "name": "Зимний облик",
+        "bonus": "Броня (+10,665)",
+        "priority": "Средне-низкий - помогает компенсировать слабость Руфуса к физическому урону, но не усиливает его магические умения."
+      },
+      {
+        "name": "Пляжный облик",
+        "bonus": "Защита от Магии (+10,650)",
+        "priority": "Низкий - наименее полезный облик, так как защита от магии и так отлично обеспечивается умениями Руфуса."
+      }
+    ],
+    "glyphs": [
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-attack.webp",
+        "name": "Магическая Атака"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/health.webp",
+        "name": "Здоровье"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-defense.webp",
+        "name": "Защита от Магии"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/armor.webp",
+        "name": "Броня"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/strength.webp",
+        "name": "Сила"
+      }
+    ],
+    "counters": [
+      {
+        "hero": "Morrigan",
+        "reason": "Морриган может полностью заблокировать воскрешение Руфуса с помощью своего пассивного умения <a href=\"#hero/morrigan?skill=4\" style=\"color:#38bdf8; text-decoration:underline;\">Некромантия</a>, что сводит на нет одну из его ключевых способностей к выживанию."
+      },
+      {
+        "hero": "Artemis",
+        "reason": "Артемида наносит огромный взрывной физический урон, который Руфус не может заблокировать своим магическим щитом, что делает ее крайне эффективной против него."
+      },
+      {
+        "hero": "Dante",
+        "reason": "Физические атаки Данте игнорируют магическую защиту, а его набор умений с уклонением позволяет избегать многих контр-мер поддержки. Его быстрые удары легко обходят защиту Руфуса."
+      },
+      {
+        "hero": "Ishmael",
+        "reason": "Исмаил — мощный боец с физическим уроном, который может быстро истощить здоровье Руфуса, особенно учитывая, что Руфус не может защититься щитом от физических атак."
+      },
+      {
+        "hero": "Keira",
+        "reason": "Быстрый физический урон Киры по площади перегружает щит и запас здоровья Руфуса, что делает ее отличным выбором против него."
+      }
+    ],
+    "overview": "Руфус — танк первой линии, который однажды поспорил на свою душу с демоном и выиграл, перепив его! Теперь этот самый демон живет в его щите, защищая Руфуса и его союзников огромным сопротивлением магии. То, что началось как пьяное пари, превратило Руфуса в одного из самых надежных Стражей в Доминионе. В Hero Wars: Dominion Era Руфус выделяется как первоклассный танк S-ранга, превосходно показывающий себя в командах, созданных для противодействия магическим составам. Его уникальная способность воскресать при поражении от магического урона делает его надежным краеугольным камнем во многих оборонительных стратегиях, особенно против таких боссов, как Ош, и таких героев, как Август или Орион.",
+    "artifacts": [
+      {
+        "desc": "Дает всей команде бонус к Броне при активации первого умения (+50,190 брони на максимальном уровне).",
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/weapon-rufus-rakashis-shield.webp",
+        "name": "Щит Ракаши",
+        "slot": "Оружие",
+        "name_ru": "Щит Ракаши",
+        "priority": "Высокий - лучший артефакт для прокачки в первую очередь, так как он поддерживает всю команду и компенсирует главную слабость Руфуса: физическую защиту."
+      },
+      {
+        "desc": "Дает Магическую Атаку (+16,731) и Здоровье (+83,649).",
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/tome-of-arcane-knowledge.webp",
+        "name": "Том Тайных Знаний",
+        "slot": "Книга",
+        "name_ru": "Том Тайных Знаний",
+        "priority": "Средний - важен для увеличения силы умений Руфуса и его прочности, но не так критичен, как бонус брони для всей команды от оружия."
+      },
+      {
+        "desc": "Дает Силу (+6,249).",
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/ring-of-strength.webp",
+        "name": "Кольцо Силы",
+        "slot": "Кольцо",
+        "name_ru": "Кольцо Силы",
+        "priority": "Низкий - наименее эффективный артефакт для Руфуса. Бонус в основном дает здоровье и незначительную физическую атаку, которая ему не нужна."
+      }
+    ],
+    "patronage": [],
+    "war_flags": [],
+    "best_teams": [
+      {
+        "hero": "Dante",
+        "reason": "Отлично сочетается в защитных командах, где Данте компенсирует физическую уязвимость Руфуса своим уклонением и мощным физическим уроном."
+      },
+      {
+        "hero": "Orion",
+        "reason": "Хорошо работает в атакующих магических пачках, где Руфус надежно прикрывает магов от ответного магического урона."
+      },
+      {
+        "hero": "Celeste",
+        "reason": "Помогает Руфусу поддерживать здоровье на высоком уровне и блокировать вражеское исцеление, создавая синергию в затяжных боях."
+      },
+      {
+        "hero": "Amira",
+        "reason": "В связке с Амирой и другими магами Руфус обеспечивает идеальный фронтлайн, поглощая магические угрозы, пока Амира наносит сокрушительный урон."
+      }
+    ],
+    "conclusion": "Руфус — универсальный и мощный герой, чьи уникальные способности делают его надежным защитником от магического урона и стойким бойцом на поле боя. Правильный приоритет прокачки его умений, артефактов и символов значительно повышает его выживаемость и способность поддерживать команду. Сочетание его с подходящей командой и питомцем (особенно Акселем) позволяет максимально раскрыть его потенциал, делая Руфуса бесценным активом как в оборонительных, так и в атакующих стратегиях. При правильном планировании и развитии Руфус способен переломить ход многих сражений в вашу пользу."
+  },
+  "yasmine": {
+    "cons": [
+      "Уязвимость вне ультимейта: когда она не использует «Танец Смерти», её легко оглушить или убить с помощью эффектов контроля или взрывного урона.",
+      "Слабость против танков с уклонением: Ясмин полагается на попадания и критические удары; герои с высоким уклонением, такие как Аврора или Данте, могут снизить её эффективность.",
+      "Низкий урон по площади (AoE): все её умения сосредоточены на одной цели, что ограничивает её эффективность против нескольких врагов или команд с призываемыми существами.",
+      "Требует высокой Физической Атаки: её урон масштабируется от физической атаки, а значит, ей нужна сильная поддержка команды и значительные вложения в символы и артефакты.",
+      "Легко контрится героями поддержки: без защиты она может быть нейтрализована такими героями поддержки, как Амира или Гелиос."
+    ],
+    "pros": [
+      "Высокий урон по одиночной цели: её умение «Танец Смерти» наносит огромный взрывной урон по одной цели, что позволяет быстро устранять ключевых противников.",
+      "Иммунитет к негативным эффектам во время ультимейта: во время действия «Танца Смерти» Ясмин не может получать дебаффы, что делает её невосприимчивой к оглушению, замедлению или молчанию в этот период.",
+      "Критический урон ядом: умение «Объятия Боли» добавляет суммирующийся чистый урон с течением времени при каждом критическом ударе, позволяя наносить урон даже после завершения основной атаки.",
+      "Хорошее уклонение и выживаемость: «Инстинкт Убийцы» дает дополнительное уклонение и шанс критического удара, помогая ей выживать и наносить стабильный урон.",
+      "Блокирование исцеления: её пассивное умение «Неизвестный Токсин» блокирует лечение отравленных врагов, что делает её сильной против команд с мощным исцелением."
+    ],
+    "skins": [
+      {
+        "name": "Базовый облик",
+        "bonus": "Ловкость (+1,365)",
+        "priority": "Высокий — отличная общая ценность, повышает все основные характеристики и эффективность умений."
+      },
+      {
+        "name": "Демонический облик",
+        "bonus": "Физическая атака (+7,095)",
+        "priority": "Очень Высокий — максимизирует наносимый урон и отлично синергирует с атакующими сборками."
+      },
+      {
+        "name": "Романтический облик",
+        "bonus": "Шанс критического удара (+2,960)",
+        "priority": "Средний — хорош для крит-сборок и усиления урона от яда, но ситуативен."
+      },
+      {
+        "name": "Маскарадный облик",
+        "bonus": "Броня (+10,650)",
+        "priority": "Низкий — защитный облик, но ему не хватает атакующего вклада для её роли убийцы."
+      },
+      {
+        "name": "Кибернетический облик",
+        "bonus": "Уклонение (+2,960)",
+        "priority": "Средне-низкий — полезен против врагов с базовыми атаками, но уступает обликам на урон."
+      }
+    ],
+    "glyphs": [
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/physical-attack.webp",
+        "name": "Физическая атака"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/crit-hit-chance.webp",
+        "name": "Шанс критического удара"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/agility.webp",
+        "name": "Ловкость"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/dodge.webp",
+        "name": "Уклонение"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/health.webp",
+        "name": "Здоровье"
       }
     ],
     "counters": [
       {
         "hero": "Amira",
-        "reason": "Amira disables Yasmine by making all her critical hits miss for 7 seconds. Since Yasmine’s poison and burst урон rely on landing crits, this completely shuts down her offensive power temporarily."
+        "reason": "Амира нейтрализует Ясмин, заставляя все её критические удары промахиваться в течение 7 секунд. Поскольку яд и взрывной урон Ясмин зависят от критов, это временно полностью лишает её атакующей силы."
       },
       {
         "hero": "Celeste",
-        "reason": "Celeste clears Yasmine’s poison and prevents debuffs with her \"Limbo\" skill. She keeps the team clean from Yasmine's урон-over-time and healing block effects."
+        "reason": "Селеста снимает яд Ясмин и предотвращает наложение дебаффов с помощью своего умения <a href=\"#hero/celeste?skill=4\" style=\"color:#38bdf8; text-decoration:underline;\">«Лимб»</a>. Она очищает команду от периодического урона Ясмин и эффектов блокировки исцеления."
       },
       {
         "hero": "Corvus",
-        "reason": "Corvus punishes Yasmine for her fast multi-strike attacks. His \"Altar of Souls\" reflects pure урон whenever she hits his союзники, making her kill herself quickly."
+        "reason": "Корвус наказывает Ясмин за её быстрые многоударные атаки. Его умение <a href=\"#hero/corvus?skill=4\" style=\"color:#38bdf8; text-decoration:underline;\">«Алтарь Душ»</a> отражает чистый урон каждый раз, когда она бьет его союзников, заставляя её быстро убивать саму себя."
       },
       {
         "hero": "Faceless",
-        "reason": "Faceless stuns Yasmine with \"Power Throw,\" interrupting her attack sequence. By repositioning her and delaying her урон, your team gains time to respond or eliminate her."
+        "reason": "Безликий оглушает Ясмин с помощью умения <a href=\"#hero/faceless?skill=2\" style=\"color:#38bdf8; text-decoration:underline;\">«Бросок Силы»</a>, прерывая её серию атак. Перемещая её и задерживая урон, он дает вашей команде время среагировать или уничтожить её."
       },
       {
         "hero": "Helios",
-        "reason": "Helios retaliates against critical hits with \"Flaming Retribution.\" Since Yasmine heavily depends on crits, she ends up taking severe magic урон every time she strikes, often leading to her own downfall."
+        "reason": "Гелиос мстит за критические удары с помощью умения <a href=\"#hero/helios?skill=4\" style=\"color:#38bdf8; text-decoration:underline;\">«Пламенное Возмездие»</a>. Поскольку Ясмин сильно зависит от критов, она получает огромный магический урон при каждом ударе, что часто приводит к её гибели."
       }
     ],
-    "overview": "Yasmine is a powerful front-line Боец in Хроники Хаоса (Dominion Era). With lethal урон, Уклонение and Ловкость as her main stat, she's perfect for early progress in Campaign mode and also an outstanding choice for facing Osh, the boss of Asgard. For beginners, she’s often available at a discount early in the game, making her a valuable asset from the start. If not, she can be acquired through events or special chests. This guide covers everything you need to know to make the most of Yasmine’s deadly skills. Yasmine - Best Team #1 #1 Merlin Fenris Axel Albus Oliver Axel Aidan Sebastian Guus Yasmine Lyria",
+    "overview": "Ясмин — мощный боец первой линии в Hero Wars: Dominion Era. Обладая смертоносным уроном, уклонением и ловкостью в качестве основной характеристики, она идеально подходит для быстрого прохождения Кампании на ранних этапах игры, а также является отличным выбором для сражения с Ошем, боссом Асгарда. Для новичков она часто доступна со скидкой в начале игры, что делает её ценным приобретением с самого старта. В противном случае её можно получить в ходе событий или из специальных сундуков. Годы, проведённые в рабстве, заставили её забыть о любви, заменив нежные чувства горечью и неповиновением. Любимая танцовщица своего господина и его самое опасное оружие — вот кем была Ясмин. Теперь, когда девушка сбежала, её израненная душа жаждет мести!",
     "artifacts": [
       {
-        "desc": "This artifact increases Yasmine's Critical Hit Chance and has a 100% activation rate in battle. Since Yasmine relies heavily on crits to trigger poison effects and deal burst урон, this Оружие is essential for maximizing her offensive impact.",
+        "desc": "Шанс критического удара",
         "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/weapon-yasmine-concubines-khanjars.webp",
-        "name": "Concubine's Khanjars",
+        "name": "Кинжалы Наложницы",
         "slot": "Оружие",
-        "desc_en": "This artifact increases Yasmine's Critical Hit Chance and has a 100% activation rate in battle. Since Yasmine relies heavily on crits to trigger poison effects and deal burst damage, this weapon is essential for maximizing her offensive impact.",
-        "name_ru": "Concubine's Khanjars (Оружие)",
-        "priority": "Очень Высокий - Core to Yasmine’s урон output and poison mechanics. First to max out.",
-        "priority_en": "Very High - Core to Yasmine’s damage output and poison mechanics. First to max out."
+        "name_ru": "Кинжалы Наложницы",
+        "priority": "Очень Высокий (1) — основа урона Ясмин и механики яда. Максите в первую очередь."
       },
       {
-        "desc": "This artifact boosts both Critical Hit Chance and Физическая Атака. It passively supports Yasmine’s burst potential and scales well with her Ловкость-based kit.",
+        "desc": "Шанс критического удара, Физическая атака",
         "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/warriors-code.webp",
-        "name": "Warrior's Code",
+        "name": "Кодекс Воина",
         "slot": "Книга",
-        "desc_en": "This artifact boosts both Critical Hit Chance and Physical Attack. It passively supports Yasmine’s burst potential and scales well with her agility-based kit.",
-        "name_ru": "Warrior's Code (Книга)",
-        "priority": "Высокий - A strong secondary boost to her critical and physical урон, amplifying her Ассасин role.",
-        "priority_en": "High - A strong secondary boost to her critical and physical damage, amplifying her assassin role."
+        "name_ru": "Кодекс Воина",
+        "priority": "Высокий (2) — пассивно поддерживает взрывной потенциал Ясмин и отлично масштабируется с её ловкостью."
       },
       {
-        "desc": "The Кольцо increases Ловкость, Yasmine's main stat. Each point of Ловкость grants her +2 Физическая Атака, +1 Броня, and an extra +1 Физическая Атака since Ловкость is her main stat, giving her a total of +3 Физическая Атака per point. While this is a strong stat booster, it's passive and less impactful than the crit-focused artifacts.",
+        "desc": "Ловкость",
         "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/ring-of-agility.webp",
-        "name": "Ring of Agility",
+        "name": "Кольцо Ловкости",
         "slot": "Кольцо",
-        "desc_en": "The ring increases Agility, Yasmine's main stat. Each point of Agility grants her +2 physical attack, +1 armor, and an extra +1 physical attack since Agility is her main stat, giving her a total of +3 physical attack per point. While this is a strong stat booster, it's passive and less impactful than the crit-focused artifacts.",
-        "name_ru": "Ring of Agility (Кольцо)",
-        "priority": "Средний - Important for long-term scaling, but less urgent than crit-based artifacts for immediate урон.",
-        "priority_en": "Medium - Important for long-term scaling, but less urgent than crit-based artifacts for immediate damage."
-      },
-      {
-        "desc": "Yasmine's core урон comes from physical attacks, especially her multi-strike ultimate and poison-based critical hits. Boosting her Физическая Атака directly improves all offensive skills.",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/physical-attack.webp",
-        "name": "1st - Glyph: Physical Attack",
-        "slot": "Оружие",
-        "desc_en": "Yasmine's core damage comes from physical attacks, especially her multi-strike ultimate and poison-based critical hits. Boosting her physical attack directly improves all offensive skills.",
-        "name_ru": "1st - Glyph: Physical Attack (Оружие)",
-        "priority": "Очень Высокий - Crucial for maximizing урон output.",
-        "priority_en": "Very High - Crucial for maximizing damage output."
-      },
-      {
-        "desc": "Yasmine relies heavily on critical hits to trigger her poison effect and burst down враги. Increasing Шанс Крит. Удара enhances her ability to finish враги quickly.",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/crit-hit-chance.webp",
-        "name": "2nd - Glyph: Crit Hit Chance",
-        "slot": "Книга",
-        "desc_en": "Yasmine relies heavily on critical hits to trigger her poison effect and burst down enemies. Increasing Crit Hit Chance enhances her ability to finish enemies quickly.",
-        "name_ru": "2nd - Glyph: Crit Hit Chance (Книга)",
-        "priority": "Высокий - Supports skill synergy and poison effects.",
-        "priority_en": "High - Supports skill synergy and poison effects."
-      },
-      {
-        "desc": "Ловкость is Yasmine’s main stat, increasing her Физическая Атака and Уклонение. Each point grants +2 Физическая Атака, +1 Броня, and +1 extra Физическая Атака for Ловкость-based heroes.",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/agility.webp",
-        "name": "3rd - Glyph: Agility",
-        "slot": "Кольцо",
-        "desc_en": "Agility is Yasmine’s main stat, increasing her physical attack and dodge. Each point grants +2 physical attack, +1 armor, and +1 extra physical attack for agility-based heroes.",
-        "name_ru": "3rd - Glyph: Agility (Кольцо)",
-        "priority": "Средний - Solid stat scaling, but less immediate impact than crit and direct attack.",
-        "priority_en": "Medium - Solid stat scaling, but less immediate impact than crit and direct attack."
-      }
-    ],
-    "patronage": [
-      {
-        "pet": "Fenris",
-        "desc": "is the best pet for Yasmine due to its strong synergy with her burst-focused style. Fenris increases Физическая Атака and Броня Penetration both essential for Yasmine’s skills, especially “Dance of Death.” Additionally, his bonus skill gives Yasmine a chance to blind враги with basic attacks, which not only disrupts opponents but also enhances her survivability during sustained fights.",
-        "place": "1st Place: Fenris"
-      },
-      {
-        "pet": "Cain",
-        "desc": "is a strong alternative, especially if you want to maximize Yasmine’s Уклонение. Cain increases both Уклонение and Физическая Атака, which works well with her skill “Ассасин’s Instinct.” More Уклонение means more energy gain from Cain’s bonus ability, allowing Yasmine to activate her ultimate faster. However, it’s slightly less impactful than Fenris in raw урон output.",
-        "place": "2nd Place: Cain"
-      }
-    ],
-    "war_flags": [
-      {
-        "desc": "Speeds up skill cooldowns for Warriors by 5%, increasing Yasmine's ultimate frequency and overall урон cadence.",
-        "name": "War Flag of Swift Warriors",
-        "benefit": "Faster cooldowns let Yasmine use \"Dance of Death\" more often to burst priority враги and refresh poison stacks, amplifying both single-target kills and sustained урон phases."
-      },
-      {
-        "desc": "Reduces enemy team healing by 10%, which synergizes strongly with Yasmine's poison and anti-исцеление utility.",
-        "name": "War Flag of Decline",
-        "benefit": "Decline makes poison stacks and pure урон far more lethal versus sustain-heavy opponents, helping Yasmine secure kills that would otherwise be healed back."
-      },
-      {
-        "desc": "Periodically reduces enemy skill levels by 2 for several seconds, disrupting opponents' combos and delaying key enemy ultimates.",
-        "name": "War Flag of Frost",
-        "benefit": "Frost helps Yasmine survive and capitalize on windows where враги cannot counter or stun her; ideal in PvP to interrupt Хилер or crowd-Контролёр timings while Yasmine finishes targets."
-      }
-    ],
-    "best_teams": [
-      {
-        "name": "Yasmine - Best Team #1",
-        "heroes": [
-          "Merlin",
-          "Fenris",
-          "Axel",
-          "Albus",
-          "Oliver"
-        ]
-      }
-    ]
-  },
-  "qingmao": {
-    "id": "qingmao",
-    "cons": [
-      "Физическая Атака from Ловкость: +3,405",
-      "Броня from Ловкость: +1,135"
-    ],
-    "name": "Цин Мао",
-    "pros": [
-      "Эффективная роль на поле боя"
-    ],
-    "skins": [
-      {
-        "desc": "Total of Ловкость Skin Stones for max level: 30,825",
-        "name": "Default Skin",
-        "bonus": "Stats gain: Ловкость +1,365",
-        "priority": "Средний-Высокий – Provides balanced stats with both offensive (Физическая Атака) and defensive (Броня) benefits. Essential baseline stats but not as impactful as specialized attack skins."
-      },
-      {
-        "desc": "Total of Ловкость Skin Stones for max level: 55,410",
-        "name": "Phoenix Skin",
-        "bonus": "Stats gain: Уклонение +2,960",
-        "priority": "Средний – Increases survivability by improving Уклонение rating, which is useful for a front-line fighter. However, doesn't directly amplify her урон-dealing role, making it less critical than attack-focused skins."
-      },
-      {
-        "desc": "Total of Ловкость Skin Stones for max level: 55,410",
-        "name": "Spring Skin",
-        "bonus": "Stats gain: Физическая Атака +7,095",
-        "priority": "Очень Высокий – Directly increases her Физическая Атака, dramatically boosting all her урон abilities including her ultimate, Dragon's Claw, and basic attacks. Upgrade this after the Lunar Skin."
-      },
-      {
-        "desc": "Total of Ловкость Skin Stones for max level: 55,410",
-        "name": "Masquerade Skin",
-        "bonus": "Stats gain: Броня Penetration +10,650",
-        "priority": "Высокий – Excellent synergy with her Open Heart passive that already reduces enemy Броня. The Броня penetration helps cut through heavily armored tanks even faster. Upgrade this after the Lunar and Spring skins."
-      },
-      {
-        "desc": "Total of Ловкость Skin Stones for max level: 55,410",
-        "name": "Demonic Skin",
-        "bonus": "Stats gain: Здоровье +106,645",
-        "priority": "Низкий – While extra Здоровье improves survivability, Qing Mao already has Высокий Уклонение to avoid урон. This skin doesn't enhance her primary role as a урон dealer and Броня shredder. Consider this only after maxing attack-oriented skins."
-      },
-      {
-        "desc": "Power gain: +10,642 Total of Ловкость Skin Stones for max level: 110,520",
-        "name": "Lunar Skin",
-        "bonus": "Stats gain: Физическая Атака +14,190",
-        "priority": "Top Priority – Qing Mao's strongest offensive skin. Its exceptional Физическая Атака bonus directly increases her basic attacks and every урон ability, making it the first skin to prioritize for maximum урон."
-      }
-    ],
-    "glyphs": [
-      {
-        "desc": "The Уклонение glyph improves Qing Mao's already impressive evasion rating, allowing her to avoid even more physical attacks. This increases her survivability as a front-line fighter, helping her stay alive longer to apply Броня reduction stacks. Stats gain: Уклонение +1,995",
-        "name": "4th Glyph - Уклонение",
-        "name_en": "4th Glyph - Dodge",
-        "priority": "Средний – Useful for survivability but not essential. Qing Mao already has Высокий natural Уклонение, so this glyph provides diminishing returns. While it helps her survive longer against physical урон dealers, it doesn't increase her урон output. Upgrade this after your offensive glyphs (Физическая Атака, Броня Penetration, and Ловкость) are maxed."
-      },
-      {
-        "desc": "Ловкость is Qing Mao's primary stat, providing multiple benefits. Each point of Ловкость grants Физическая Атака and Броня. Since Ловкость is her main stat, she gains bonus Физическая Атака, making this glyph particularly efficient for her. Stats gain: Ловкость +1,135 Each Ловкость point grants: two points to Физическая Атака, one point to Броня, and one extra point to Физическая Атака if Ловкость is the main stat of a hero.",
-        "name": "5th Glyph - Ловкость",
-        "name_en": "5th Glyph - Agility",
-        "priority": "Средний-Высокий – Strong balanced option for both offense and defense. This glyph provides +3,405 Физическая Атака (good for урон) plus +1,135 Броня (minor defensive boost). While the attack gain is lower than the direct Физическая Атака glyph, it's still valuable. Upgrade this as your third priority, after Физическая Атака and Броня Penetration glyphs."
-      }
-    ],
-    "counters": [],
-    "overview": "Qing Mao is a fierce Ловкость Боец who fights on the front lines in Хроники Хаоса (Dominion Era). Bound by a tragic destiny to her fallen brother Qing Long, she channels her pain into devastating attacks that cripple enemy defenses. Her story is one of loss, determination, and an unbreakable sisterly bond that transcends death itself. In this comprehensive guide, you'll discover everything you need to master Qing Mao: her unique abilities, optimal team compositions, stat priorities, and advanced strategies. Whether you're building your first front-line team or looking to optimize your roster, understanding Qing Mao's strengths and weaknesses is essential for success in the Land of a Thousand Dawns.",
-    "artifacts": [
-      {
-        "desc": "The Физическая Атака glyph directly enhances Qing Mao's primary урон source. Every skill she has from her ultimate Qing Long to Dragon's Claw and basic attacks scales with Физическая Атака. This glyph provides the highest immediate impact on her overall урон output. Stats gain: Физическая Атака +4,340",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/physical-attack.webp",
-        "name": "1st Glyph - Physical Attack",
-        "slot": "Оружие",
-        "desc_en": "The Physical Attack glyph directly enhances Qing Mao's primary damage source. Every skill she has from her ultimate Qing Long to Dragon's Claw and basic attacks scales with physical attack. This glyph provides the highest immediate impact on her overall damage output. Stats gain: Physical Attack +4,340",
-        "name_ru": "1st Glyph - Physical Attack (Оружие)",
-        "priority": "Очень Высокий – This is the most important glyph for Qing Mao. Физическая Атака directly multiplies the effectiveness of all her урон abilities. Since she's a урон dealer and Броня shredder, maximizing her attack stat should always be your top priority. This glyph alone can increase her ultimate урон by thousands of points за удар.",
-        "priority_en": "Very High – This is the most important glyph for Qing Mao. Physical attack directly multiplies the effectiveness of all her damage abilities. Since she's a damage dealer and armor shredder, maximizing her attack stat should always be your top priority. This glyph alone can increase her ultimate damage by thousands of points per hit."
-      },
-      {
-        "desc": "The Здоровье glyph increases Qing Mao's survivability by adding to her HP pool. While more Здоровье helps her stay in fights longer, it doesn't leverage her natural Высокий Уклонение rating or enhance her core role as a урон dealer. Stats gain: Здоровье +62,200",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/health.webp",
-        "name": "2nd Glyph - Health",
-        "slot": "Книга",
-        "desc_en": "The Health glyph increases Qing Mao's survivability by adding to her HP pool. While more health helps her stay in fights longer, it doesn't leverage her natural high dodge rating or enhance her core role as a damage dealer. Stats gain: Health +62,200",
-        "name_ru": "2nd Glyph - Health (Книга)",
-        "priority": "Низкий – Здоровье is the least valuable glyph for Qing Mao. Her defensive Сила comes from Высокий Уклонение, not HP tanking. Since she already avoids many attacks through evasion, raw Здоровье doesn't provide as much value. Prioritize this glyph only after maxing all offensive glyphs, or if you specifically need her to survive burst урон in certain matchups.",
-        "priority_en": "Low – Health is the least valuable glyph for Qing Mao. Her defensive strength comes from high dodge, not HP tanking. Since she already avoids many attacks through evasion, raw health doesn't provide as much value. Prioritize this glyph only after maxing all offensive glyphs, or if you specifically need her to survive burst damage in certain matchups."
-      },
-      {
-        "desc": "Броня Penetration allows Qing Mao to ignore a portion of enemy Броня when dealing урон. This creates powerful synergy with her Open Heart passive, which already reduces enemy Броня with each attack. Together, they make her incredibly effective against heavily armored tanks. Stats gain: Броня Penetration +6,500",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/armor-penetration.webp",
-        "name": "3rd Glyph - Armor Penetration",
-        "slot": "Кольцо",
-        "desc_en": "Armor Penetration allows Qing Mao to ignore a portion of enemy armor when dealing damage. This creates powerful synergy with her Open Heart passive, which already reduces enemy armor with each attack. Together, they make her incredibly effective against heavily armored tanks. Stats gain: Armor Penetration +6,500",
-        "name_ru": "3rd Glyph - Armor Penetration (Кольцо)",
-        "priority": "Высокий – Excellent synergy with her kit. Since Qing Mao already shreds Броня with her passive, Броня penetration compounds this effect, allowing her to cut through even the toughest front-line defenders. This is your second priority after Физическая Атака. The combination of Броня reduction (from her passive) and Броня penetration (from this glyph) creates devastating урон against tanks.",
-        "priority_en": "High – Excellent synergy with her kit. Since Qing Mao already shreds armor with her passive, armor penetration compounds this effect, allowing her to cut through even the toughest front-line defenders. This is your second priority after Physical Attack. The combination of armor reduction (from her passive) and armor penetration (from this glyph) creates devastating damage against tanks."
-      },
-      {
-        "desc": "The Spear of the Crimson Dawn activates whenever Qing Mao uses her ultimate ability (Qing Long), triggering a powerful Shieldbreaker effect. This grants bonus stats to the entire team for 9 seconds with a 100% activation chance. The massive Броня penetration boost amplifies her ability to cut through enemy defenses. Stats gain: Броня Penetration +50,190 Activation: 100% chance when using ultimate ability Effect Duration: 9 seconds (team-wide buff)",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/weapon-qing-mao-spear-of-the-crimson-dawn.webp",
-        "name": "Weapon Artifact: Spear of the Crimson Dawn",
-        "slot": "Оружие",
-        "desc_en": "The Spear of the Crimson Dawn activates whenever Qing Mao uses her ultimate ability (Qing Long), triggering a powerful Shieldbreaker effect. This grants bonus stats to the entire team for 9 seconds with a 100% activation chance. The massive armor penetration boost amplifies her ability to cut through enemy defenses. Stats gain: Armor Penetration +50,190 Activation: 100% chance when using ultimate ability Effect Duration: 9 seconds (team-wide buff)",
-        "name_ru": "Weapon Artifact: Spear of the Crimson Dawn (Оружие)",
-        "priority": "Очень Высокий – This is Qing Mao's most valuable artifact. The combination of massive Броня penetration (+50,190) with her passive Броня reduction creates devastating synergy. Even better, it activates with 100% reliability when she uses her ultimate, providing a team-wide buff that enhances everyone's урон. The Shieldbreaker effect makes your entire team hit harder for 9 seconds. This should always be your first artifact priority.",
-        "priority_en": "Very High – This is Qing Mao's most valuable artifact. The combination of massive armor penetration (+50,190) with her passive armor reduction creates devastating synergy. Even better, it activates with 100% reliability when she uses her ultimate, providing a team-wide buff that enhances everyone's damage. The Shieldbreaker effect makes your entire team hit harder for 9 seconds. This should always be your first artifact priority."
-      },
-      {
-        "desc": "The Книга of Illusions provides additional Здоровье and Уклонение rating. The Здоровье helps Qing Mao survive longer in battles, while the Уклонение synergizes with her naturally Высокий evasion stat, making her even harder to hit with physical attacks. Stats gain: Здоровье +83,649 | Уклонение +4,647",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/book-of-illusions.webp",
-        "name": "Book Artifact: Book of Illusions",
-        "slot": "Книга",
-        "desc_en": "The Book of Illusions provides additional health and dodge rating. The health helps Qing Mao survive longer in battles, while the dodge synergizes with her naturally high evasion stat, making her even harder to hit with physical attacks. Stats gain: Health +83,649 | Dodge +4,647",
-        "name_ru": "Book Artifact: Book of Illusions (Книга)",
-        "priority": "Средний-Высокий – Solid defensive option but not critical. The Уклонение bonus works well with her already Высокий evasion, making her even more slippery against physical урон dealers. However, the large Здоровье boost is less valuable since she relies more on avoiding урон than tanking it. Upgrade this as your third priority, after the Оружие and Кольцо artifacts.",
-        "priority_en": "Medium-High – Solid defensive option but not critical. The dodge bonus works well with her already high evasion, making her even more slippery against physical damage dealers. However, the large health boost is less valuable since she relies more on avoiding damage than tanking it. Upgrade this as your third priority, after the weapon and ring artifacts."
-      },
-      {
-        "desc": "The Ловкость Кольцо boosts Qing Mao's primary stat, providing substantial Физическая Атака and Броня. Since Ловкость is her main attribute, she gains bonus Физическая Атака points, making this artifact incredibly efficient for increasing her overall урон output. Stats gain: Ловкость +6,249 Each Ловкость point grants: two points to Физическая Атака, one point to Броня, and one extra point to Физическая Атака if Ловкость is the main stat of a hero.",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/ring-of-agility.webp",
-        "name": "Ring Artifact: Agility Ring",
-        "slot": "Кольцо",
-        "desc_en": "The Agility Ring boosts Qing Mao's primary stat, providing substantial physical attack and armor. Since Agility is her main attribute, she gains bonus physical attack points, making this artifact incredibly efficient for increasing her overall damage output. Stats gain: Agility +6,249 Each agility point grants: two points to physical attack, one point to armor, and one extra point to physical attack if agility is the main stat of a hero.",
-        "name_ru": "Ring Artifact: Agility Ring (Кольцо)",
-        "priority": "Высокий – Excellent offensive artifact that directly amplifies her урон. The +18,747 Физическая Атака significantly boosts all her abilities ultimate, Dragon's Claw, Spear of Dawn, and basic attacks. The bonus Броня also provides some defensive value. This should be your second priority after the Оружие artifact, as it provides the best direct урон increase.",
-        "priority_en": "High – Excellent offensive artifact that directly amplifies her damage. The +18,747 physical attack significantly boosts all her abilities ultimate, Dragon's Claw, Spear of Dawn, and basic attacks. The bonus armor also provides some defensive value. This should be your second priority after the weapon artifact, as it provides the best direct damage increase."
-      }
-    ],
-    "patronage": [],
-    "war_flags": [
-      {
-        "desc": "Speeds up skill cooldown for Warriors by 5%.",
-        "name": "War Flag of Swift Warriors",
-        "benefit": "This is the best War Flag for Qing Mao. Since she is a Боец-class hero, she benefits directly from the 5% cooldown reduction. This means her periodic skills Spear of Dawn (deals physical урон + applies stacks) and Dragon's Claw (blinds враги) activate more frequently. Faster skill rotation equals more урон output, more blind applications for crowd Контролёр, and more Броня reduction stacks from her Open Heart passive. If your team composition includes multiple Warriors (like K'arkh, Cleaver, Galahad, etc.), this flag provides massive value by accelerating everyone's offensive abilities."
-      },
-      {
-        "desc": "Once every 4 seconds, heals the front Hero in your team for 1.6% of their Max Здоровье, plus an additional 0.3% for every inserted red pattern.",
-        "name": "War Flag of Vanguard",
-        "benefit": "Since Qing Mao is typically positioned on the front line (Position 1 or 2), she directly benefits from this consistent healing every 4 seconds. This War Flag significantly improves her survivability in prolonged battles, allowing her to stay alive longer to continue applying Броня reduction and blind debuffs. The healing scales with Max Здоровье and gets even stronger with red patterns inserted. This is especially valuable in Guild Wars, Grand Arena, and other extended combat scenarios where sustain matters. If you're running Qing Mao as your frontmost hero, this flag keeps her in the fight longer."
-      }
-    ],
-    "best_teams": []
-  },
-  "rufus": {
-    "id": "rufus",
-    "cons": [
-      "Excellent Magic Protection: His first skill, Rakashi’s Barrier , blocks all incoming magic урон for the entire team.",
-      "Self-Healing: Devourer of allows him to исцеление based on absorbed magic урон, improving survivability.",
-      "Targets Key Маг враги: Rakashi’s Mockery deals урон over time to the enemy with the highest magic power.",
-      "Resurrects from Magic урон: Rakashi’s Oath allows Rufus to come back to life if killed by magic or pure урон.",
-      "Durable Frontliner: Very hard to kill in magic-based fights."
-    ],
-    "name": "Руфус",
-    "pros": [
-      "Excellent Magic Protection: His first skill, Rakashi’s Barrier , blocks all incoming magic урон for the entire team.",
-      "Self-Healing: Devourer of allows him to исцеление based on absorbed magic урон, improving survivability.",
-      "Targets Key Маг враги: Rakashi’s Mockery deals урон over time to the enemy with the highest magic power.",
-      "Resurrects from Magic урон: Rakashi’s Oath allows Rufus to come back to life if killed by magic or pure урон.",
-      "Durable Frontliner: Very hard to kill in magic-based fights."
-    ],
-    "skins": [
-      {
-        "desc": "",
-        "name": "Default Skin (Strength +1,365)",
-        "bonus": "Boosts overall Здоровье and adds Физическая Атака due to Сила stat. It indirectly improves Rufus’s survivability in all types of fights.",
-        "priority": "Средний - Good universal boost to Здоровье, but not as impactful as magic-related stats for his skills."
-      },
-      {
-        "desc": "",
-        "name": "Barbarian Skin (Magic Attack +10,650)",
-        "bonus": "Increases the power of his щит, resurrection, self-healing, and DoT attack all of which scale with Магическая Атака.",
-        "priority": "Высокий - Directly enhances all of Rufus’s key skills and makes his defensive abilities much stronger."
-      },
-      {
-        "desc": "",
-        "name": "Angelic Skin (Health +106,645)",
-        "bonus": "Improves Rufus’s durability by increasing total Здоровье. Useful for sustaining longer fights and staying alive for resurrection effects.",
-        "priority": "Средний-Высокий - Great for survivability, especially combined with healing or Axel as patron, but not as vital as Магическая Атака."
-      },
-      {
-        "desc": "",
-        "name": "Winter Skin (Armor +10,665)",
-        "bonus": "Gives protection against physical урон Rufus’s main weakness but less useful if you pair him with pets like Axel for the same role.",
-        "priority": "Средний-Низкий - Helps cover Rufus’s physical weakness but doesn’t boost his magic-based skills."
-      },
-      {
-        "desc": "",
-        "name": "Beach Skin (Magic Defense +10,650)",
-        "bonus": "Rufus already blocks most magic урон with his skills, so this stat is redundant and less impactful in battle.",
-        "priority": "Низкий - Least useful skin since Защита от Магии is already covered by Rufus’s abilities."
-      }
-    ],
-    "glyphs": [
-      {
-        "desc": "Броня reduces physical урон, Rufus’s main weakness. This helps him survive longer against heroes like Ishmael or Keira who can burst him down physically.",
-        "name": "4th - Броня:",
-        "name_en": "4th - Armor:",
-        "priority": "Средний - Solid defensive stat for physical урон, but situational based on враги."
-      },
-      {
-        "desc": "Сила adds a bit of Здоровье and Физическая Атака, but Rufus doesn’t benefit much from Физическая Атака. The bonus is minor compared to the other glyphs.",
-        "name": "5th - Сила:",
-        "name_en": "5th - Strength:",
-        "priority": "Низкий - Least effective glyph; offers only a slight boost to Здоровье and irrelevant physical урон."
-      }
-    ],
-    "counters": [],
-    "overview": "Rufus is a front-line Танк who once bet his soul against a demon and won by outdrinking him! Now, that same demon lives in his щит, protecting Rufus and his союзники with immense magical resistance. What started as a drunken wager turned Rufus into one of the most dependable Guardians in Dominion. In Хроники Хаоса (Dominion Era), Rufus stands out as a top-tier S-rank Танк, excelling in teams built to counter magic-heavy compositions. His unique ability to resurrect when defeated by magic урон makes him a reliable cornerstone in many defensive strategies, especially against bosses like Osh and heroes like Augustus or Orion.",
-    "artifacts": [
-      {
-        "desc": "This artifact activates at the start of the battle and provides +50,190 Броня to the entire team. It’s especially effective against physical attackers—Rufus’s main weakness. As a Танк, giving your whole team Броня helps survivability and lets Rufus front-line longer.",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/weapon-rufus-rakashis-shield.webp",
-        "name": "1st - Rakashi’s Shield (Weapon):",
-        "slot": "Оружие",
-        "desc_en": "This artifact activates at the start of the battle and provides +50,190 armor to the entire team. It’s especially effective against physical attackers—Rufus’s main weakness. As a tank, giving your whole team armor helps survivability and lets Rufus front-line longer.",
-        "name_ru": "1st - Rakashi’s Shield (Weapon): (Оружие)",
-        "priority": "Высокий - Best artifact to evolve first because it supports the whole team and fixes Rufus’s weak point: physical defense.",
-        "priority_en": "High - Best artifact to evolve first because it supports the whole team and fixes Rufus’s weak point: physical defense."
-      },
-      {
-        "desc": "Grants +16,731 Магическая Атака and +83,649 Здоровье. Магическая Атака increases the Сила of Rufus’s щит, healing, and resurrection abilities. Здоровье helps with tanking but is secondary to the Броня bonus from his Оружие artifact.",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/tome-of-arcane-knowledge.webp",
-        "name": "2nd - Tome of Arcane Knowledge (Book):",
-        "slot": "Книга",
-        "desc_en": "Grants +16,731 magic attack and +83,649 health. Magic attack increases the strength of Rufus’s shield, healing, and resurrection abilities. Health helps with tanking but is secondary to the armor bonus from his weapon artifact.",
-        "name_ru": "2nd - Tome of Arcane Knowledge (Book): (Книга)",
-        "priority": "Средний - Important for boosting Rufus’s skill power and durability, but not as impactful as the full-team Броня bonus from the Оружие.",
-        "priority_en": "Medium - Important for boosting Rufus’s skill power and durability, but not as impactful as the full-team armor bonus from the weapon."
-      },
-      {
-        "desc": "Provides +6,249 Сила. This indirectly gives Rufus more Здоровье (because each Сила point adds 40 Здоровье) and a bit of Физическая Атака—but Физическая Атака isn't important for Rufus. It helps, but much less than the other two artifacts.",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/ring-of-strength.webp",
-        "name": "3rd - Ring of Strength (Ring):",
-        "slot": "Кольцо",
-        "desc_en": "Provides +6,249 Strength. This indirectly gives Rufus more health (because each Strength point adds 40 health) and a bit of physical attack—but physical attack isn't important for Rufus. It helps, but much less than the other two artifacts.",
-        "name_ru": "3rd - Ring of Strength (Ring): (Кольцо)",
-        "priority": "Низкий - Least impactful artifact for Rufus. The bonus is mostly Здоровье, and it doesn’t enhance his magic-based skills directly.",
-        "priority_en": "Low - Least impactful artifact for Rufus. The bonus is mostly health, and it doesn’t enhance his magic-based skills directly."
-      },
-      {
-        "desc": "This glyph boosts Rufus’s щит absorption, healing from Devourer, and resurrection power. It’s essential for maximizing the effectiveness of his main skills.",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-attack.webp",
-        "name": "1st - Magic Attack:",
-        "slot": "Оружие",
-        "desc_en": "This glyph boosts Rufus’s shield absorption, healing from Devourer, and resurrection power. It’s essential for maximizing the effectiveness of his main skills.",
-        "name_ru": "1st - Magic Attack: (Оружие)",
-        "priority": "Высокий - Most important glyph because it directly enhances all of Rufus's key abilities.",
-        "priority_en": "High - Most important glyph because it directly enhances all of Rufus's key abilities."
-      },
-      {
-        "desc": "Здоровье increases Rufus’s durability, allowing him to stay alive longer and absorb more magic урон through his щит. Great synergy with his resurrection skill.",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/health.webp",
-        "name": "2nd - Health:",
-        "slot": "Книга",
-        "desc_en": "Health increases Rufus’s durability, allowing him to stay alive longer and absorb more magic damage through his shield. Great synergy with his resurrection skill.",
-        "name_ru": "2nd - Health: (Книга)",
-        "priority": "Высокий - Important for tanking and surviving burst урон, especially before the щит activates.",
-        "priority_en": "High - Important for tanking and surviving burst damage, especially before the shield activates."
-      },
-      {
-        "desc": "Although Rufus is already strong against magic thanks to his skills, extra Защита от Магии can help when facing overwhelming magic teams or враги who bypass his щит.",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-defense.webp",
-        "name": "3rd - Magic Defense:",
-        "slot": "Кольцо",
-        "desc_en": "Although Rufus is already strong against magic thanks to his skills, extra magic defense can help when facing overwhelming magic teams or enemies who bypass his shield.",
-        "name_ru": "3rd - Magic Defense: (Кольцо)",
-        "priority": "Средний - Useful in magic-heavy matchups, but less critical than Здоровье and урон output.",
-        "priority_en": "Medium - Useful in magic-heavy matchups, but less critical than health and damage output."
+        "name_ru": "Кольцо Ловкости",
+        "priority": "Средний (3) — важно для долгосрочного масштабирования характеристик, но менее критично для немедленного урона, чем артефакты на крит."
       }
     ],
     "patronage": [],
     "war_flags": [],
-    "best_teams": []
+    "best_teams": [
+      {
+        "hero": "Sebastian",
+        "reason": "Себастьян значительно увеличивает критический урон Ясмин и защищает её от контроля, что делает их дуэт смертоносным."
+      },
+      {
+        "hero": "Aidan",
+        "reason": "Эйдан обеспечивает отличную выживаемость и исцеление, помогая Ясмин оставаться в живых на передовой."
+      },
+      {
+        "hero": "Lyria",
+        "reason": "Лирия усиливает атакующий потенциал Ясмин и помогает быстрее расправляться с целями."
+      },
+      {
+        "hero": "Guus",
+        "reason": "Гюс ослабляет защиту противников, позволяя Ясмин наносить максимальный урон."
+      }
+    ],
+    "conclusion": "Ясмин — смертоносный убийца в Hero Wars: Dominion Era, способный устранять врагов на задней линии мощными критическими ударами. Чтобы максимизировать её эффективность, разумно инвестируйте в её символы, артефакты и облики, а также создавайте команды, которые усиливают её сильные стороны и закрывают слабости. При правильной поддержке и стратегии она может кардинально изменить ход боя как в атаке, так и в защите."
   },
   "mojo": {
     "id": "mojo",
@@ -973,154 +914,148 @@ export const HERO_GUIDES_DB = {
     "best_teams": []
   },
   "sebastian": {
-    "id": "sebastian",
     "cons": [
-      "Excels against heroes that heavily rely on debuffs, making him a strong counter in magic and debuff-heavy teams.",
-      "Enhances союзники’ critical hit урон through his Поддержка skills, boosting overall team урон output.",
-      "Synergizes well with союзники who also increase critical hit chance, amplifying team-wide урон potential.",
-      "Provides extra pure урон on ally critical hits, helping to pierce through tanky враги."
+      "Зависит от критических ударов союзников для максимальной эффективности; менее полезен в командах без синергии критического урона.",
+      "Уязвим к атакам с высоким уроном или атакам по задней линии от таких героев, как Кливьер, Джу, Кайла, Йорген и Лютер.",
+      "Полярис может снизить его эффективность поддержки, мешая снятию дебаффов с помощью своего умения <a href=\"#hero/polaris?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">Пульсирующая комета</a>."
     ],
-    "name": "Себастьян",
     "pros": [
-      "Excels against heroes that heavily rely on debuffs, making him a strong counter in magic and debuff-heavy teams.",
-      "Enhances союзники’ critical hit урон through his Поддержка skills, boosting overall team урон output.",
-      "Synergizes well with союзники who also increase critical hit chance, amplifying team-wide урон potential.",
-      "Provides extra pure урон on ally critical hits, helping to pierce through tanky враги."
+      "Отлично противостоит героям, которые сильно полагаются на наложение негативных эффектов (дебаффов), являясь сильным контр-пиком в магических и дебафф-ориентированных командах.",
+      "Увеличивает критический урон союзников с помощью своих поддерживающих умений, повышая общий урон команды.",
+      "Отлично синергирует с союзниками, которые также увеличивают шанс критического удара, усиливая общий потенциал урона команды.",
+      "Наносит дополнительный чистый урон при критических ударах союзников, помогая пробивать прочных врагов (танков)."
     ],
     "skins": [
       {
-        "desc": "Total of Ловкость Skin Stone for max level: 30,825",
-        "name": "Default Skin (Agility +1,365)",
-        "bonus": "The default skin boosts Sebastian’s Ловкость, his main stat. Each point in Ловкость increases Физическая Атака, Броня, and gives bonus attack since Ловкость is his primary stat. This improves his урон scaling and survivability.",
-        "priority": "Высокий – A strong investment that enhances Sebastian’s overall performance."
+        "name": "Базовый облик",
+        "bonus": "Ловкость (+1,365)",
+        "priority": "Высокий — увеличивает основную характеристику, что дает прирост к физической атаке и броне."
       },
       {
-        "desc": "Total of Ловкость Skin Stone for max level: 55,410",
-        "name": "Romantic Skin (Physical Attack +7,095)",
-        "bonus": "The Romantic Skin greatly increases Sebastian’s Физическая Атака, which directly boosts his skills Battle Song and Striking Solo . This is the best offensive option for maximizing his impact.",
-        "priority": "Очень Высокий – Best skin overall for empowering Sebastian’s skill formulas and team synergy."
+        "name": "Романтический облик",
+        "bonus": "Физическая атака (+7,095)",
+        "priority": "Очень Высокий — лучший атакующий облик, напрямую усиливающий формулы его умений поддержки."
       },
       {
-        "desc": "Total of Ловкость Skin Stone for max level: 55,410",
-        "name": "Dark Depths Skin (Armor +10,650)",
-        "bonus": "This skin increases Sebastian’s Броня, making him tougher against physical attackers. Useful in PvP battles against crit-heavy opponents.",
-        "priority": "Средний – Great defensive boost but situational compared to offensive skins."
+        "name": "Облик Темных Глубин",
+        "bonus": "Броня (+10,650)",
+        "priority": "Средний — повышает выживаемость против физических атак, полезен в PvP против критических команд."
       },
       {
-        "desc": "Total of Ловкость Skin Stone for max level: 55,410",
-        "name": "Spring Skin (Magic Defense +10,650)",
-        "bonus": "This skin raises Sebastian’s Защита от Магии, protecting him from mages like Lars and Orion. Helpful if you face a lot of magic teams.",
-        "priority": "Низкий – Situational, only worth upgrading if you fight many magic-урон teams."
+        "name": "Весенний облик",
+        "bonus": "Магическая защита (+10,650)",
+        "priority": "Низкий — ситуативный облик, полезен только против команд с сильным магическим уроном."
       },
       {
-        "desc": "Total of Ловкость Skin Stone for max level: 55,410",
-        "name": "Stellar Skin (Health +106,645)",
-        "bonus": "The Stellar Skin boosts Sebastian’s Здоровье pool, making him harder to kill. Since Здоровье helps against both physical and magical урон, it’s a more balanced defensive choice.",
-        "priority": "Средний-Высокий – Good for overall survival, though still not as important as Ловкость or Физическая Атака."
+        "name": "Звездный облик",
+        "bonus": "Здоровье (+106,645)",
+        "priority": "Выше среднего — сбалансированный защитный облик, значительно увеличивающий общий запас здоровья."
       }
     ],
     "glyphs": [
       {
-        "desc": "Improves resistance against magic урон. Situationally useful against Маг-heavy teams, but not critical for his main Поддержка role. Защита от Магии: +6,500",
-        "name": "4th Glyph - Защита от Магии:",
-        "name_en": "4th Glyph - Magic Defense:",
-        "priority": "Средний – Situational defensive stat."
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/physical-attack.webp",
+        "name": "Физическая атака"
       },
       {
-        "desc": "Increases Sebastian’s personal crit chance, but he rarely deals direct урон. Its effect is negligible for his team Поддержка role. Шанс Крит. Удара: +1,995",
-        "name": "5th Glyph - Шанс Крит. Удара:",
-        "name_en": "5th Glyph - Crit Hit Chance:",
-        "priority": "Низкий – Minimal impact on союзники or skill performance, should be upgraded last."
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/agility.webp",
+        "name": "Ловкость"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/health.webp",
+        "name": "Здоровье"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-defense.webp",
+        "name": "Магическая защита"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/crit-hit-chance.webp",
+        "name": "Шанс критического удара"
       }
     ],
-    "counters": [],
-    "overview": "Sebastian isn’t just a bard he’s a battlefield artist. In Хроники Хаоса (Dominion Era) , his chords щит союзники from crippling debuffs while powering up their critical hits. Every strum of his guitar reshapes combat, making him one of the most reliable supports in the game. In this guide, we’ll explore Sebastian’s stats, skills, and team synergies so you can use him to his full potential. If you’re looking to counter heroes like Lian, Satori, or Jorgen while empowering your урон dealers with devastating crits, Sebastian is the perfect choice.",
+    "counters": [
+      {
+        "hero": "Amira",
+        "reason": "Умение Амиры <a href=\"#hero/amira?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">Отчаянная ярость</a> нацелено на героев с основной характеристикой Ловкость, временно увеличивая их шанс критического удара, но заставляя все их критические удары промахиваться. Это напрямую нейтрализует эффекты умений Себастьяна на союзниках."
+      },
+      {
+        "hero": "Cleaver",
+        "reason": "Использует свой крюк, чтобы притянуть самого дальнего врага на передовую. Это нарушает позиционирование Себастьяна в средней линии, мешая ему безопасно поддерживать союзников."
+      },
+      {
+        "hero": "Helios",
+        "reason": "Его пассивное умение наносит урон атакующим огненным лучом каждый раз, когда его союзники получают критический удар. Поскольку Себастьян увеличивает критический урон союзников, Гелиос напрямую наказывает их за это."
+      },
+      {
+        "hero": "Jhu",
+        "reason": "Атакует самого дальнего врага, часто нацеливаясь на Себастьяна в средней линии. Быстро устраняя его или оказывая давление, Джу мешает Себастьяну безопасно накладывать баффы."
+      },
+      {
+        "hero": "Kayla",
+        "reason": "Прыгает на заднюю линию и атакует самого дальнего врага, часто Себастьяна, прерывая его ротацию поддержки и быстро снижая его выживаемость."
+      },
+      {
+        "hero": "Jorgen",
+        "reason": "Перенаправляет урон от своих союзников на самого дальнего врага. Это заставляет Себастьяна поглощать непреднамеренный урон, мешая ему безопасно поддерживать команду и разрушая его щиты."
+      },
+      {
+        "hero": "Luther",
+        "reason": "Прыгает в центр вражеской команды и атакует заднюю линию, нарушая позиционирование Себастьяна и мешая ему эффективно применять умения поддержки."
+      },
+      {
+        "hero": "Polaris",
+        "reason": "Её умение <a href=\"#hero/polaris?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">Пульсирующая комета</a> атакует самого дальнего врага, нанося урон по площади и мешая Себастьяну снимать дебаффы с команды."
+      }
+    ],
+    "overview": "Себастьян — это не просто бард, он настоящий художник поля боя. В Hero Wars: Dominion Era его аккорды защищают союзников от изнурительных негативных эффектов, одновременно усиливая их критические удары. Каждое созвучие его гитары меняет ход сражения, делая его одним из самых надежных героев поддержки в игре. Он превосходно противостоит таким героям контроля, как Лиан, Сатори или Йорген, одновременно наделяя ваших атакующих героев сокрушительными критическими ударами.",
     "artifacts": [
       {
-        "desc": "This Оружие artifact increases Critical Hit Chance for the whole team when Sebastian casts his ultimate. Since his Shieldbreaker skill removes debuffs and empowers the team, boosting crits is extremely valuable in both offense and defense. Шанс Крит. Удара: +13941",
+        "desc": "Увеличивает Шанс критического удара для всей команды при активации ультимейта.",
         "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/weapon-sebastian-old-lute.webp",
-        "name": "Weapon Artifact: Old Lute",
+        "name": "Старая лютня",
         "slot": "Оружие",
-        "desc_en": "This weapon artifact increases Critical Hit Chance for the whole team when Sebastian casts his ultimate. Since his Shieldbreaker skill removes debuffs and empowers the team, boosting crits is extremely valuable in both offense and defense. Crit Hit Chance: +13941",
-        "name_ru": "Weapon Artifact: Old Lute (Оружие)",
-        "priority": "Высокий – Essential, as it synergizes directly with his skills and significantly increases team урон output.",
-        "priority_en": "High – Essential, as it synergizes directly with his skills and significantly increases team damage output."
+        "name_ru": "Старая лютня",
+        "priority": "Высокий — важнейший артефакт, который напрямую синергирует с его умениями и значительно увеличивает общий урон команды."
       },
       {
-        "desc": "This Книга boosts Sebastian’s own stats with Critical Hit Chance and Физическая Атака. It improves his personal урон but doesn’t affect the team directly like the Оружие artifact does. Шанс Крит. Удара: +4647 Физическая Атака: +5577",
+        "desc": "Увеличивает Шанс критического удара и Физическую атаку Себастьяна.",
         "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/warriors-code.webp",
-        "name": "Book Artifact: Warrior's Code",
+        "name": "Кодекс воина",
         "slot": "Книга",
-        "desc_en": "This book boosts Sebastian’s own stats with Critical Hit Chance and Physical Attack. It improves his personal damage but doesn’t affect the team directly like the weapon artifact does. Crit Hit Chance: +4647 Physical attack: +5577",
-        "name_ru": "Book Artifact: Warrior's Code (Книга)",
-        "priority": "Средний – Good for boosting Sebastian’s individual performance, but not as impactful as the team-wide buff from Old Lute.",
-        "priority_en": "Medium – Good for boosting Sebastian’s individual performance, but not as impactful as the team-wide buff from Old Lute."
+        "name_ru": "Кодекс воина",
+        "priority": "Средний — улучшает личные характеристики Себастьяна, но не влияет на команду напрямую так сильно, как оружие."
       },
       {
-        "desc": "The Кольцо increases Sebastian’s Ловкость, improving Физическая Атака and Броня. This boosts the effectiveness of his Поддержка skills, like Battle Song and Striking Solo, by increasing the extra critical урон союзники deal. Ловкость: +6249 - Физическая Атака: +18,747 - Броня: +6249",
+        "desc": "Увеличивает Ловкость, что повышает Физическую атаку и Броню Себастьяна.",
         "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/ring-of-agility.webp",
-        "name": "Ring Artifact: Agility",
+        "name": "Кольцо ловкости",
         "slot": "Кольцо",
-        "desc_en": "The ring increases Sebastian’s Agility, improving Physical Attack and Armor. This boosts the effectiveness of his support skills, like Battle Song and Striking Solo, by increasing the extra critical damage allies deal. Agility: +6249 - Physical attack: +18,747 - Armor: +6249",
-        "name_ru": "Ring Artifact: Agility (Кольцо)",
-        "priority": "Средний Высокий – Improves Sebastian’s Поддержка capabilities and scaling of critical урон, making it more impactful than Боец’s Code in many team setups.",
-        "priority_en": "Medium High – Improves Sebastian’s support capabilities and scaling of critical damage, making it more impactful than Warrior’s Code in many team setups."
-      },
-      {
-        "desc": "Boosts Sebastian’s Физическая Атака, which directly improves the урон bonus from Battle Song and Striking Solo . This enhances союзники’ critical урон and overall team performance. Физическая Атака: +4340",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/physical-attack.webp",
-        "name": "1st Glyph - Physical Attack:",
-        "slot": "Оружие",
-        "desc_en": "Boosts Sebastian’s Physical Attack, which directly improves the damage bonus from Battle Song and Striking Solo . This enhances allies’ critical damage and overall team performance. Physical Attack: +4340",
-        "name_ru": "1st Glyph - Physical Attack: (Оружие)",
-        "priority": "Очень Высокий – Core stat for maximizing Поддержка effectiveness and scaling ally critical hits.",
-        "priority_en": "Very High – Core stat for maximizing support effectiveness and scaling ally critical hits."
-      },
-      {
-        "desc": "Each Ловкость point increases Физическая Атака and Броня. Since Ловкость is Sebastian’s main stat, it further enhances his Поддержка skills, boosting союзники’ урон and his durability. Ловкость: +1,135 Физическая Атака from Ловкость: +3,405 Броня from Ловкость: +1,135",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/agility.webp",
-        "name": "2nd Glyph - Agility:",
-        "slot": "Книга",
-        "desc_en": "Each Agility point increases Physical Attack and Armor. Since Agility is Sebastian’s main stat, it further enhances his support skills, boosting allies’ damage and his durability. Agility: +1,135 Physical Attack from Agility: +3,405 Armor from Agility: +1,135",
-        "name_ru": "2nd Glyph - Agility: (Книга)",
-        "priority": "Высокий – Improves skill effectiveness and provides defensive scaling.",
-        "priority_en": "High – Improves skill effectiveness and provides defensive scaling."
-      },
-      {
-        "desc": "Increases Sebastian’s Здоровье pool, letting him survive longer in the middle line and maintain buffs for союзники during combat. Здоровье: +62,200",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/health.webp",
-        "name": "3rd Glyph - Health:",
-        "slot": "Кольцо",
-        "desc_en": "Increases Sebastian’s Health pool, letting him survive longer in the middle line and maintain buffs for allies during combat. Health: +62,200",
-        "name_ru": "3rd Glyph - Health: (Кольцо)",
-        "priority": "Средний Высокий – Useful for durability and consistent Поддержка uptime.",
-        "priority_en": "Medium High – Useful for durability and consistent support uptime."
+        "name_ru": "Кольцо ловкости",
+        "priority": "Выше среднего — увеличивает Ловкость, что усиливает масштабирование его поддерживающих умений и повышает выживаемость."
       }
     ],
     "patronage": [],
-    "war_flags": [
+    "war_flags": [],
+    "best_teams": [
       {
-        "desc": "This War Flag reduces enemy skill levels by 2 every 18 seconds for 8 seconds, weakening opponents’ ability to counter Sebastian’s buffs.",
-        "name": "War Flag of Frost",
-        "benefit": "Lowers the effectiveness of enemy debuffers and урон dealers, allowing Sebastian to maintain buffs and increase союзники’ critical hit урон safely."
+        "hero": "Yasmine",
+        "reason": "Ясмин обладает врожденным высоким шансом критического удара, который Себастьян значительно усиливает, добавляя огромный чистый урон к каждой её критической атаке."
       },
       {
-        "desc": "Speeds up skill cooldowns for Боец-class heroes by 5%, allowing them to attack more frequently.",
-        "name": "War Flag of Swift Warriors",
-        "benefit": "Faster skill rotations increase the number of critical hits triggered by Sebastian’s Battle Song and Striking Solo, amplifying team-wide урон."
+        "hero": "Ishmael",
+        "reason": "Исмаил полагается на критические удары для нанесения урона и выживания за счет вампиризма. Себастьян делает его критические атаки смертоносными благодаря чистому урону."
       },
       {
-        "desc": "Reduces enemy team healing by 10%, limiting sustain for tough opponents.",
-        "name": "War Flag of Decline",
-        "benefit": "Makes it easier for Sebastian’s союзники to eliminate priority targets quickly, maximizing the effectiveness of critical hit buffs and pure урон enhancements."
+        "hero": "Jhu",
+        "reason": "Джу наносит частые критические удары по задней линии врага. С баффами Себастьяна этот урон становится непреодолимым для вражеских лекарей и магов."
       },
       {
-        "desc": "Increases all healing received by 10%, improving team sustainability during prolonged fights.",
-        "name": "War Flag of Recovery",
-        "benefit": "Supports Sebastian’s middle-line survival, ensuring he can continue casting buffs and enhancing союзники’ critical hits throughout battles. Note: Sebastian is not a Хилер himself, so having a dedicated Хилер in the team is essential to fully benefit from this War Flag."
+        "hero": "Nebula",
+        "reason": "Небула увеличивает физическую атаку Себастьяна, что напрямую масштабирует силу его баффов на критический шанс и чистый урон."
       }
     ],
-    "best_teams": []
+    "conclusion": "Себастьян — универсальный и незаменимый герой поддержки в Hero Wars: Dominion Era, который превосходно увеличивает критический урон союзников и добавляет чистый урон. Его способности делают его особенно эффективным против врагов, полагающихся на дебаффы, и он отлично синергирует с героями, ориентированными на критический урон. Хотя сам он не наносит огромного урона, присутствие Себастьяна может переломить ход битвы, усиливая эффективность команды и поддерживая баффы. Сочетание его с правильными союзниками, боевыми флагами и артефактами максимизирует его полезность и гарантирует силу вашей команды как в атаке, так и в обороне."
   },
   "cornelius": {
     "id": "cornelius",
@@ -1176,157 +1111,6 @@ export const HERO_GUIDES_DB = {
     "war_flags": [],
     "best_teams": []
   },
-  "orion": {
-    "id": "orion",
-    "cons": [
-      "Excellent burst Маг with repeated casts thanks to his passive energy gain.",
-      "Very strong synergy with heroes and pets that improve magic урон, slows, or survival.",
-      "Can pressure both PvP and PvE because his урон starts fast and scales well with upgrades.",
-      "His Оружие artifact improves the whole team's magic урон output, not only his own."
-    ],
-    "name": "Орион",
-    "pros": [
-      "Excellent burst Маг with repeated casts thanks to his passive energy gain.",
-      "Very strong synergy with heroes and pets that improve magic урон, slows, or survival.",
-      "Can pressure both PvP and PvE because his урон starts fast and scales well with upgrades.",
-      "His Оружие artifact improves the whole team's magic урон output, not only his own."
-    ],
-    "skins": [
-      {
-        "desc": "Total of Интеллект Skin Stones for max level: 30,825",
-        "name": "Default Skin",
-        "bonus": "Stats gain: Интеллект +1,365",
-        "priority": "Высокий – Default Skin is a reliable early investment because Интеллект improves several useful stats at once. It gives Orion more урон while also making him less fragile against enemy mages."
-      },
-      {
-        "desc": "Total of Интеллект Skin Stones for max level: 55,410",
-        "name": "Mechanical Skin",
-        "bonus": "Stats gain: Магическая Атака +10,650",
-        "priority": "Очень Высокий – This is Orion's best skin to rush because every important урон skill scales with Магическая Атака. It makes Total Destruction, Magnetic Field, and Antimatter Blast hit harder immediately."
-      },
-      {
-        "desc": "Total of Интеллект Skin Stones for max level: 55,410",
-        "name": "Cybernetic Skin",
-        "bonus": "Stats gain: Защита от Магии +10,650",
-        "priority": "Низкий – Защита от Магии helps only in specific Маг mirrors. It does not improve Orion's pressure, so it usually comes after his offensive and more universal survival upgrades."
-      },
-      {
-        "desc": "Total of Интеллект Skin Stones for max level: 55,410",
-        "name": "Romantic Skin",
-        "bonus": "Stats gain: Броня +10,650",
-        "priority": "Средний – Броня matters against physical assassins and fast burst teams, especially because Orion stands far back and can be jumped or clipped by splash урон. It is useful, but still secondary to урон skins."
-      },
-      {
-        "desc": "Total of Интеллект Skin Stones for max level: 55,410",
-        "name": "Winter Skin",
-        "bonus": "Stats gain: Пробивание Защиты от Магии +10,650",
-        "priority": "Высокий – Winter Skin is one of Orion's strongest late-game skins because it helps his spells cut through Защита от Магии. It becomes especially valuable in meta fights where durable teams try to outlast Маг burst."
-      },
-      {
-        "desc": "Total of Интеллект Skin Stones for max level: 55,410",
-        "name": "Lunar Skin",
-        "bonus": "Stats gain: Здоровье +106,645",
-        "priority": "Средний Высокий – Здоровье gives Orion more margin to survive splash урон, anti-Маг focus, and slower fights. It is not as explosive as урон skins, but it is often the best defensive stat to add once his main урон is online."
-      }
-    ],
-    "glyphs": [
-      {
-        "desc": "Stats gain: Защита от Магии +6,500",
-        "name": "4th Glyph - Защита от Магии",
-        "name_en": "4th Glyph - Magic Defense",
-        "priority": "Низкий – Защита от Магии is useful only in certain matchups. It helps, but it usually gives less value than the offensive glyphs and less universal safety than Здоровье."
-      },
-      {
-        "desc": "Stats gain: Интеллект +1,135",
-        "name": "5th Glyph - Интеллект",
-        "name_en": "5th Glyph - Intelligence",
-        "priority": "Высокий – Интеллект gives Orion balanced growth across offense and defense. Even though it appears fifth visually, the actual value is strong enough that many players should invest in it before purely defensive glyphs are finished."
-      }
-    ],
-    "counters": [],
-    "overview": "Orion wins fights by flooding the battlefield with fast magic hits before the enemy can stabilize. If you like back-line mages that snowball off tempo, this guide is for you. Here you will find Orion's real skill урон, upgrade priorities, colored max stats, best glyphs, artifacts, patronage, war flags, counters, and team ideas for the current meta. Orion - Best Team #1 Khorus Albus Merlin Biscuit Khorus Oliver War Flag of Vanguard Augustus Orion Fluffy Byrna Electra",
-    "artifacts": [
-      {
-        "desc": "Stats gain: Магическая Атака +6,500",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-attack.webp",
-        "name": "1st Glyph - Magic Attack",
-        "slot": "Оружие",
-        "desc_en": "Stats gain: Magic Attack +6,500",
-        "name_ru": "1st Glyph - Magic Attack (Оружие)",
-        "priority": "Очень Высокий – This is the best glyph because every important Orion skill scales with Магическая Атака. If you want the biggest direct increase in урон, start here.",
-        "priority_en": "Very High – This is the best glyph because every important Orion skill scales with Magic Attack. If you want the biggest direct increase in damage, start here."
-      },
-      {
-        "desc": "Stats gain: Здоровье +62,200",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/health.webp",
-        "name": "2nd Glyph - Health",
-        "slot": "Книга",
-        "desc_en": "Stats gain: Health +62,200",
-        "name_ru": "2nd Glyph - Health (Книга)",
-        "priority": "Средний Высокий – Здоровье is one of Orion's most practical defensive upgrades because it helps against both physical and magic burst. It usually gives better survival value than narrower defensive stats.",
-        "priority_en": "Medium High – Health is one of Orion's most practical defensive upgrades because it helps against both physical and magic burst. It usually gives better survival value than narrower defensive stats."
-      },
-      {
-        "desc": "Stats gain: Пробивание Защиты от Магии +6,500",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-penetration.webp",
-        "name": "3rd Glyph - Magic Penetration",
-        "slot": "Кольцо",
-        "desc_en": "Stats gain: Magic Penetration +6,500",
-        "name_ru": "3rd Glyph - Magic Penetration (Кольцо)",
-        "priority": "Высокий – This glyph is a big урон upgrade whenever the enemy team stacks Защита от Магии. It is slightly behind Магическая Атака because Orion wants raw scaling first, but it stays a top offensive investment.",
-        "priority_en": "High – This glyph is a big damage upgrade whenever the enemy team stacks magic defense. It is slightly behind Magic Attack because Orion wants raw scaling first, but it stays a top offensive investment."
-      },
-      {
-        "desc": "Stats gain: Пробивание Защиты от Магии +50,190",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/weapon-orion-dd-901-arsenal.webp",
-        "name": "DD-901 Arsenal Artifact",
-        "slot": "?",
-        "desc_en": "Stats gain: Magic Penetration +50,190",
-        "name_ru": "DD-901 Arsenal Artifact (?)",
-        "priority": "Высокий – Orion activates this Оружие with his ultimate, giving the whole team a very relevant Пробивание Защиты от Магии boost for 9 seconds. It is excellent in Маг teams, but still comes after the Книга because the Книга improves Orion in every second of the fight.",
-        "priority_en": "High – Orion activates this weapon with his ultimate, giving the whole team a very relevant magic penetration boost for 9 seconds. It is excellent in mage teams, but still comes after the book because the book improves Orion in every second of the fight."
-      },
-      {
-        "desc": "Stats gain: Магическая Атака +8,364 Пробивание Защиты от Магии +16,731",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/manuscript-of-the-void.webp",
-        "name": "Manuscript of the Void Artifact",
-        "slot": "?",
-        "desc_en": "Stats gain: Magic Attack +8,364 Magic Penetration +16,731",
-        "name_ru": "Manuscript of the Void Artifact (?)",
-        "priority": "Очень Высокий – This is Orion's best artifact to evolve first because it boosts his own урон all the time. More Магическая Атака and Пробивание Защиты от Магии directly improve every important spell in his kit.",
-        "priority_en": "Very High – This is Orion's best artifact to evolve first because it boosts his own damage all the time. More Magic Attack and Magic Penetration directly improve every important spell in his kit."
-      },
-      {
-        "desc": "Stats gain: Интеллект +6,249",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/ring-of-intelligence.webp",
-        "name": "Ring of Intelligence Artifact",
-        "slot": "Кольцо",
-        "desc_en": "Stats gain: Intelligence +6,249",
-        "name_ru": "Ring of Intelligence Artifact (Кольцо)",
-        "priority": "Средний – The Кольцо is still useful because Интеллект scales several Orion stats at once, but it does not swing fights as clearly as the Книга and does not Поддержка the whole team like the Оружие.",
-        "priority_en": "Medium – The ring is still useful because Intelligence scales several Orion stats at once, but it does not swing fights as clearly as the book and does not support the whole team like the weapon."
-      }
-    ],
-    "patronage": [],
-    "war_flags": [
-      {
-        "desc": "Readiness is excellent for Orion because he fights in the back line and is often the rearmost hero in his teams. The extra Energy helps him reach Total Destruction earlier, which means earlier burst, earlier Оружие artifact activation, and faster pressure on the enemy core.",
-        "name": "War Flag of Readiness",
-        "benefit": "Faster first ultimate and better early tempo for magic burst teams."
-      },
-      {
-        "desc": "Frost is one of Orion's smartest secondary flags because the slow effect helps create marked targets for Tactical Destruction after Ascension V. Even before that, lowering enemy skill levels and slowing the fight down makes it easier for Orion to keep Контролёр of the tempo.",
-        "name": "War Flag of Frost",
-        "benefit": "Better setup for slow-based synergy and safer windows for repeated missile pressure."
-      },
-      {
-        "desc": "Pet Сила is very good when Orion is paired with Merlin, Axel, or Khorus. It increases pet skill power by 10%, which improves the patronage value that often decides whether Orion survives burst or pushes enough extra magic pressure to win.",
-        "name": "War Flag of Pet Strength",
-        "benefit": "Stronger patronage effects for burst, shielding, or survivability depending on the chosen pet."
-      }
-    ],
-    "best_teams": []
-  },
   "markus": {
     "id": "markus",
     "cons": [
@@ -1345,54 +1129,67 @@ export const HERO_GUIDES_DB = {
     "war_flags": [],
     "best_teams": []
   },
-  "fluffy": {
+  "orion": {
     "cons": [
-      "Риск нанесения урона самому себе при срабатывании способности «Узурпация»",
-      "Уязвимость к мощному магическому взрывному урону",
-      "Зависимость от перезарядки и шанса отмены ультимейтов",
-      "Критичность правильного позиционирования и таймингов на поле боя",
-      "Слабость против эффектов немоты (Silence), развеивания (Dispel) и снижение уровня умений"
+      "Средняя выживаемость на задней линии, из-за чего он может быстро погибнуть от взрывного урона или специализированных противников-магов.",
+      "Сильно зависит от поддержки союзников и менее эффективен в одиночку, особенно против врагов с высоким сопротивлением магии.",
+      "Умения контроля полезны, но не всегда надежны против противников, превосходящих его по уровню.",
+      "Если его первые атаки задерживаются, команда может потерять преимущество в темпе, которое делает Ориона опасным."
     ],
     "pros": [
-      "Отличный выбор против команд с автоатаками: ультимейт даёт иммунитет к базовым атакам и отражает урон",
-      "Воскрешение всей команды: умение «В ад и обратно» возвращает павших союзников к жизни с бонусами",
-      "Прерывание ультимейтов: способность «Узурпация» может отменять ультимативные умения противников",
-      "Хорошее масштабирование урона и пробивания магической защиты в поздней игре",
-      "Отличная синергия с боевыми флагами на исцеление и энергию"
+      "Отличный взрывной маг с возможностью частого использования ультимейта благодаря пассивному получению энергии.",
+      "Превосходная синергия с героями и питомцами, которые увеличивают магический урон, замедляют врагов или повышают выживаемость.",
+      "Эффективен как в PvP, так и в PvE, поскольку быстро начинает наносить урон, который отлично масштабируется с прокачкой.",
+      "Первый артефакт (оружие) увеличивает магическую атаку всей команды, а не только его собственную."
     ],
     "skins": [
       {
         "name": "Базовый облик",
-        "bonus": "Интеллект +1,365",
-        "priority": "Очень высокий"
-      },
-      {
-        "name": "Облик Библиотекаря",
-        "bonus": "Броня +10,650",
-        "priority": "Очень высокий"
-      },
-      {
-        "name": "Маскарадный облик",
-        "bonus": "Защита от магии +10,650",
+        "bonus": "Интеллект (+1,365)",
         "priority": "Высокий"
+      },
+      {
+        "name": "Механический облик",
+        "bonus": "Магическая атака (+10,650)",
+        "priority": "Очень высокий"
+      },
+      {
+        "name": "Кибернетический облик",
+        "bonus": "Защита от магии (+10,650)",
+        "priority": "Низкий"
+      },
+      {
+        "name": "Романтический облик",
+        "bonus": "Броня (+10,650)",
+        "priority": "Средний"
+      },
+      {
+        "name": "Зимний облик",
+        "bonus": "Пробивание магии (+10,650)",
+        "priority": "Высокий"
+      },
+      {
+        "name": "Лунный облик",
+        "bonus": "Здоровье (+106,645)",
+        "priority": "Выше среднего"
       }
     ],
     "glyphs": [
       {
         "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-attack.webp",
-        "name": "Магическая Атака"
+        "name": "Магическая атака"
       },
       {
         "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/health.webp",
         "name": "Здоровье"
       },
       {
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/armor.webp",
-        "name": "Броня"
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-penetration.webp",
+        "name": "Пробивание магии"
       },
       {
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-penetration.webp",
-        "name": "Пробивание защиты от магии"
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-defense.webp",
+        "name": "Защита от магии"
       },
       {
         "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/intelligence.webp",
@@ -1401,46 +1198,86 @@ export const HERO_GUIDES_DB = {
     ],
     "counters": [
       {
-        "hero": "Герои с Немотой и Развеиванием",
-        "reason": "Эффекты немоты, блокировка умений и снятие баффов мешают Флаффи своевременно применять ультимейт и воскрешение."
+        "hero": "Cornelius",
+        "reason": "Корнелиус легко побеждает Ориона, так как его <a href=\"#hero/cornelius?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">ультимативная способность</a> нацелена на героев с высоким интеллектом. Огромный показатель интеллекта Ориона делает его одной из самых легких целей для быстрого уничтожения еще до того, как он успеет накопить энергию."
+      },
+      {
+        "hero": "Isaac",
+        "reason": "Айзек — один из самых жестких контр-пиков для Ориона, так как он наказывает за частый магический урон. Орион постоянно заряжает антимагические умения Айзека, позволяя тому превращать магическое давление Ориона в преимущество для своей команды."
+      },
+      {
+        "hero": "Lian",
+        "reason": "Лиэн наказывает Ориона за его атаки по площади. Ее контроль может прервать агрессивных заклинателей, которые постоянно задевают ее своими ударами, из-за чего Орион может случайно заблокировать сам себя."
+      },
+      {
+        "hero": "Rufus",
+        "reason": "Руфус полностью блокирует стратегии, основанные на магическом уроне, от которого Орион полностью зависит. Когда Руфус поглощает или выдерживает магический взрыв, Орион тратит слишком много времени на бесполезные атаки по защищенной цели."
+      },
+      {
+        "hero": "Satori",
+        "reason": "Сатори наказывает героев, которые быстро накапливают энергию, а Орион делает это постоянно благодаря своему пассивному умению. Чем быстрее Орион играет, тем проще Сатори уничтожить его с помощью <a href=\"#hero/satori?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">меток Лисьего Огня</a>."
+      },
+      {
+        "hero": "Ziri",
+        "reason": "Зири способна поглотить первую волну давления Ориона и затянуть бой. Как только она принимает его взрывной урон на свою броню, задняя линия противника получает драгоценное время для выживания и ответного удара."
       }
     ],
-    "overview": "Снаружи Флаффи выглядит как невинный ягнёнок, но под его шерстью скрывается нечто гораздо более зловещее. В результате тёмного ритуала, пошедшего не по плану, обычный ягнёнок стал сосудом для архидемона Бальтазара. Не имея возможности взять полный контроль, Бальтазар и Флаффи вынуждены сосуществовать. Флаффи выполняет роль Мага и Поддержки, обладая уникальными механиками отражения атак, отмены ультимативных умений врага и воскрешения всей команды.",
+    "overview": "Орион — это классический маг задней линии, ориентированный на взрывной магический урон, частые атаки и быстрое уничтожение противников до того, как они успеют занять оборонительные позиции. Благодаря уникальной пассивной способности к накоплению энергии, Орион способен непрерывно засыпать поле боя ракетами, диктуя темп сражения без необходимости находиться на передовой.",
     "artifacts": [
       {
-        "desc": "Защита от магии +50,190 для всей команды на 9 секунд при применении ультимативного умения.",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/weapon-fluffy-baalthazars-skull.webp",
-        "name": "Череп Бальтазара",
+        "desc": "Пробивание магии",
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/weapon-orion-dd-901-arsenal.webp",
+        "name": "Арсенал DD-901",
         "slot": "Оружие",
-        "name_ru": "Череп Бальтазара",
-        "priority": "Очень высокий — дает важную защиту всей команде от магического урона."
+        "name_ru": "Арсенал DD-901",
+        "priority": "Высокий — Орион активирует это оружие своим ультимейтом, давая всей команде отличный бонус к пробиванию магии на 9 секунд."
       },
       {
-        "desc": "Здоровье +83,649, Магическая Атака +16,731",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/tome-of-arcane-knowledge.webp",
-        "name": "Фолиант Тайных Знаний",
+        "desc": "Магическая атака, Пробивание магии",
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/manuscript-of-the-void.webp",
+        "name": "Манускрипт Пустоты",
         "slot": "Книга",
-        "name_ru": "Фолиант Тайных Знаний",
-        "priority": "Высокий — существенно увеличивает выживаемость и урон Флаффи."
+        "name_ru": "Манускрипт Пустоты",
+        "priority": "Очень высокий — лучший артефакт для прокачки в первую очередь, так как он постоянно увеличивает собственный урон Ориона."
       },
       {
-        "desc": "Интеллект +6,249",
+        "desc": "Интеллект",
         "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/ring-of-intelligence.webp",
         "name": "Кольцо Интеллекта",
         "slot": "Кольцо",
         "name_ru": "Кольцо Интеллекта",
-        "priority": "Средне-высокий — базовый прирост характеристик мага."
+        "priority": "Средний — полезно для общего сбалансированного роста характеристик Ориона, но не так сильно влияет на исход боя, как книга или оружие."
       }
     ],
     "patronage": [],
     "war_flags": [],
     "best_teams": [
       {
-        "hero": "Герои с мощным исцелением и щитами",
-        "reason": "Помогают компенсировать урон, который Флаффи наносит сам себе, и поддерживают команду до момента активации массового воскрешения."
+        "hero": "Fluffy",
+        "reason": "Синергия Пушистика и Августа создает надежную магическую защиту, специально разработанную для нейтрализации Себастьяна. Используя <a href=\"#hero/fluffy?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">механику Овцы-Совы</a>, эта связка сохраняет тактический контроль даже против традиционных контр-пиков."
+      },
+      {
+        "hero": "Augustus",
+        "reason": "Август помогает обходить высокое магическое сопротивление врагов, преобразуя урон Ориона в <a href=\"#hero/augustus?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">чистый урон</a>, что позволяет эффективно уничтожать переднюю линию противника."
+      },
+      {
+        "hero": "Polaris",
+        "reason": "Полярис отлично сочетается с Орионом, помогая преодолевать сильную магическую защиту вражеской команды и усиливая общий контроль на поле боя."
+      },
+      {
+        "hero": "Byrna",
+        "reason": "Бирна выступает в роли специализированного целителя, обеспечивая Ориону и всей команде необходимую выживаемость в затяжных сражениях."
+      },
+      {
+        "hero": "Electra",
+        "reason": "Электра используется в тактических вариациях команды для изоляции и нейтрализации опасных врагов, таких как Лирия."
+      },
+      {
+        "hero": "Cascade",
+        "reason": "Каскад помогает обходить магический щит Руфуса, гарантируя победу над командами с этим сложным танком."
       }
     ],
-    "conclusion": "Флаффи — специализированный герой поддержки и маг, который прекрасно проявляет себя против команд, полагающихся на физические автоатаки, благодаря умению «Сделка с Дьяволом», а также способен переломить ход боя с помощью воскрешения «В ад и обратно». В первую очередь прокачивайте выживаемость (символы на Здоровье и Броню, защитные облики), повышайте уровень ультимейта и воскрешения, а также используйте артефакт «Череп Бальтазара» для защиты команды. Остерегайтесь сильного магического урона и контроля — правильный выбор времени и позиционирование критически важны для победы."
+    "conclusion": "Орион остается одним из лучших примеров темпового мага в Hero Wars: Dominion Era. Когда его система накопления энергии, масштабирование магического урона и защита работают слаженно, он способен завершать бои еще до того, как команда соперника успеет стабилизировать свое положение. Если вы в первую очередь инвестируете в его ключевые атакующие улучшения, обеспечите поддержку правильного питомца и выберете военные флаги на ускорение первой атаки, Орион гарантированно останется крайне опасным и эффективным героем в текущей мете."
   },
   "peppy": {
     "id": "peppy",
@@ -1460,158 +1297,85 @@ export const HERO_GUIDES_DB = {
     "war_flags": [],
     "best_teams": []
   },
-  "krista": {
-    "id": "krista",
+  "fluffy": {
     "cons": [
-      "Strong synergy with Marks of Water, boosting урон for herself and союзники like Lars and Cascade.",
-      "Высокий magic урон output thanks to Icy Vengeance and Frozen Needles.",
-      "Crystallization provides a protective щит, adding survivability in burst-heavy fights.",
-      "Ascension Skills enhance both урон and utility, making her more effective in team battles.",
-      "Reliable against враги who cannot cleanse or block Marks of Water effects."
+      "Самоповреждения при срабатывании некоторых механик (например, Usurpation)",
+      "Уязвим к магическим всплескам, которые могут преодолеть защиту ульты",
+      "Зависимость от кулдауна и шанса отмены ульты делает Usurpation ненадёжным в некоторых ситуациях",
+      "Требует правильного позиционирования для использования Readiness и окон воскрешения"
     ],
-    "name": "Криста",
     "pros": [
-      "Strong synergy with Marks of Water, boosting урон for herself and союзники like Lars and Cascade.",
-      "Высокий magic урон output thanks to Icy Vengeance and Frozen Needles.",
-      "Crystallization provides a protective щит, adding survivability in burst-heavy fights.",
-      "Ascension Skills enhance both урон and utility, making her more effective in team battles.",
-      "Reliable against враги who cannot cleanse or block Marks of Water effects."
-    ],
-    "skins": [
-      {
-        "desc": "Total of Интеллект Skin Stone for max level: 30,825",
-        "name": "Default Skin",
-        "bonus": "Stats gain: Интеллект +1,365",
-        "priority": "Низкий Priority – Provides base stats but less impactful compared to specialized skins."
-      },
-      {
-        "desc": "Total of Интеллект Skin Stone for max level: 55,410",
-        "name": "Masquerade Skin",
-        "bonus": "Stats gain: Магическая Атака +10,650",
-        "priority": "Высокий Priority – Core урон boost, Krista’s most important offensive skin."
-      },
-      {
-        "desc": "Total of Интеллект Skin Stone for max level: 55,410",
-        "name": "Demonic Skin",
-        "bonus": "Stats gain: Броня +10,650",
-        "priority": "Средний Priority – Adds physical defense, useful against strong урон dealers."
-      },
-      {
-        "desc": "Total of Интеллект Skin Stone for max level: 55,410",
-        "name": "Cybernetic Skin",
-        "bonus": "Stats gain: Здоровье +106,645",
-        "priority": "Средний Priority – Increases survivability in long or burst-heavy battles."
-      },
-      {
-        "desc": "Total of Интеллект Skin Stone for max level: 55,410",
-        "name": "Solar Skin",
-        "bonus": "Stats gain: Магическая Атака +10,650",
-        "priority": "Средний Priority – Provides additional Магическая Атака but secondary to Masquerade."
-      },
-      {
-        "desc": "Total of Интеллект Skin Stone for max level: 55,410 Note: Can be obtained only during the Seer’s Game event .",
-        "name": "Angelic Skin",
-        "bonus": "Stats gain: Пробивание Защиты от Магии +21,300",
-        "priority": "Высокий Priority – Vital for breaking through enemy Защита от Магии, great synergy with Lars."
-      }
+      "Отлично против команд, полагающихся на базовые атаки: ульта даёт иммунитет к обычным атакам и отражает урон",
+      "Воскрешение команды позволяет превратить поражения в новые атаки",
+      "Умение Usurpation может отменять вражеские ульты, что полезно против композиций, зависящих от ульт",
+      "Хороший поздний рост за счёт Mark of Death и артефактов, увеличивающих урон и пробивание брони",
+      "Синергия с артефактами Recovery, Readiness и защитными артефактами уменьшает самоповреждения"
     ],
     "glyphs": [
       {
-        "desc": "Защита от Магии: +6,500",
-        "name": "4th Glyph - Защита от Магии:",
-        "name_en": "4th Glyph - Magic Defense:",
-        "priority": "Средний – Provides extra protection against magic attackers. While helpful, Krista usually pairs with Lars and other mages, meaning her враги are often countered in other ways. Still worth upgrading over time."
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-attack.webp",
+        "name": "Magic Attack",
+        "stats": "Магическая Атака +6 500",
+        "priority": "Высокий"
       },
       {
-        "desc": "Stats gain: Интеллект +1,135",
-        "name": "5th Glyph - Интеллект:",
-        "name_en": "5th Glyph - Intelligence:",
-        "priority": "Низкий – While Интеллект boosts multiple stats, its overall impact is less direct compared to raw Магическая Атака or survivability glyphs. Upgrade this last, after her main offensive and defensive glyphs are developed."
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/health.webp",
+        "name": "Health",
+        "stats": "Здоровье +62 200",
+        "priority": "Очень Высокий"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/armor.webp",
+        "name": "Armor",
+        "stats": "Броня +6 500",
+        "priority": "Средне-Высокий"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-penetration.webp",
+        "name": "Magic Penetration",
+        "stats": "Пробивание Магической Брони +6 500",
+        "priority": "Высокий"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/intelligence.webp",
+        "name": "Intelligence",
+        "stats": "Интеллект +1 135 (Маг. Атака +3 405, Маг. Защита +1 135, Физ. Атака +1 135)",
+        "priority": "Средний"
       }
     ],
-    "counters": [],
-    "overview": "The long-awaited Krista rework has arrived in Хроники Хаоса (Dominion Era) , transforming her from a solid Маг into a true game-changer. With revamped abilities, fresh Ascension Skills, and enhanced synergy with Marks of Water, Krista is now deadlier than ever — both on her own and when paired with Lars, Cascade , and other heroes. In this guide, we’ll explore Krista’s new kit, her lore, and her best synergies, while breaking down how the rework reshapes her role in the current meta. If you’re curious whether Krista deserves a spot in your main team, keep reading — the answer may surprise you!",
+    "counters": [
+      "Силиенсы, диспеллы и снижение уровня умений сильно ослабляют Флаффи"
+    ],
     "artifacts": [
       {
-        "desc": "Магическая Атака: +50,190",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/weapon-krista-permafrost-flail.webp",
-        "name": "Weapon Artifact: Permafrost Flail",
-        "slot": "Оружие",
-        "desc_en": "Magic Attack: +50,190",
-        "name_ru": "Weapon Artifact: Permafrost Flail (Оружие)",
-        "priority": "Очень Высокий – This artifact boosts the entire team’s Магическая Атака when Krista casts her ultimate. Since her rework revolves around урон through Marks of Water, evolving this first maximizes both Krista’s and her союзники’ effectiveness in battle.",
-        "priority_en": "Very High – This artifact boosts the entire team’s Magic Attack when Krista casts her ultimate. Since her rework revolves around damage through Marks of Water, evolving this first maximizes both Krista’s and her allies’ effectiveness in battle."
+        "desc": "При активации ульты (Shieldbreaker) дает всей команде бонус к магической защите на 9 секунд.",
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/weapon-fluffy-baalthazars-skull.webp",
+        "name": "Baalthazar's Skull",
+        "type": "Weapon",
+        "stats": "Магическая Защита +50 190",
+        "priority": "Очень Высокий"
       },
       {
-        "desc": "Stats gain: Здоровье +83,649 / Магическая Атака +16,731",
+        "desc": "Увеличивает здоровье и магическую атаку Флаффи, усиливая все её умения.",
         "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/tome-of-arcane-knowledge.webp",
-        "name": "Book Artifact: Tome of Arcane Knowledge",
-        "slot": "Книга",
-        "desc_en": "Stats gain: Health +83,649 / Magic Attack +16,731",
-        "name_ru": "Book Artifact: Tome of Arcane Knowledge (Книга)",
-        "priority": "Высокий – Provides a balance between survivability and Магическая Атака. This makes Krista less fragile against burst урон while still increasing her spell power. Important, but secondary compared to the team-wide bonus of her Оружие artifact.",
-        "priority_en": "High – Provides a balance between survivability and Magic Attack. This makes Krista less fragile against burst damage while still increasing her spell power. Important, but secondary compared to the team-wide bonus of her weapon artifact."
+        "name": "Tome of Arcane Knowledge",
+        "type": "Book",
+        "stats": "Здоровье +83 649; Магическая Атака +16 731",
+        "priority": "Высокий"
       },
       {
-        "desc": "Stats gain: Интеллект +6,249",
+        "desc": "Увеличивает интеллект, что повышает магическую атаку, магическую защиту и физическую атаку (поскольку интеллект — главная характеристика).",
         "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/ring-of-intelligence.webp",
-        "name": "Ring Artifact",
-        "slot": "Кольцо",
-        "desc_en": "Stats gain: Intelligence +6,249",
-        "name_ru": "Ring Artifact (Кольцо)",
-        "priority": "Средний – Adds consistent base stats and improves her урон output, but it only benefits Krista herself. While useful, it should be the last focus after her team-impacting artifacts are upgraded.",
-        "priority_en": "Medium – Adds consistent base stats and improves her damage output, but it only benefits Krista herself. While useful, it should be the last focus after her team-impacting artifacts are upgraded."
-      },
-      {
-        "desc": "Магическая Атака: +6,500",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-attack.webp",
-        "name": "1st Glyph - Magic Attack:",
-        "slot": "Оружие",
-        "desc_en": "Magic Attack: +6,500",
-        "name_ru": "1st Glyph - Magic Attack: (Оружие)",
-        "priority": "Очень Высокий – This is Krista’s most impactful glyph. Boosting Магическая Атака directly increases the урон of her skills and improves the effectiveness of the Marks of Water, making it her top priority.",
-        "priority_en": "Very High – This is Krista’s most impactful glyph. Boosting Magic Attack directly increases the damage of her skills and improves the effectiveness of the Marks of Water, making it her top priority."
-      },
-      {
-        "desc": "Здоровье: +62,200",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/health.webp",
-        "name": "2nd Glyph - Health:",
-        "slot": "Книга",
-        "desc_en": "Health: +62,200",
-        "name_ru": "2nd Glyph - Health: (Книга)",
-        "priority": "Высокий – Increasing Krista’s survivability ensures she can stay alive long enough to cast multiple skills and ultimates. This glyph is crucial against burst and physical-heavy teams.",
-        "priority_en": "High – Increasing Krista’s survivability ensures she can stay alive long enough to cast multiple skills and ultimates. This glyph is crucial against burst and physical-heavy teams."
-      },
-      {
-        "desc": "Броня: +6,500",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/armor.webp",
-        "name": "3rd Glyph - Armor:",
-        "slot": "Кольцо",
-        "desc_en": "Armor: +6,500",
-        "name_ru": "3rd Glyph - Armor: (Кольцо)",
-        "priority": "Средний – Helps mitigate incoming physical урон. Useful, but situational compared to Здоровье since it does not protect against magic-heavy compositions.",
-        "priority_en": "Medium – Helps mitigate incoming physical damage. Useful, but situational compared to Health since it does not protect against magic-heavy compositions."
+        "name": "Ring of Intelligence",
+        "type": "Stat",
+        "stats": "Интеллект +6 249; Магическая Атака +18 747; Магическая Защита +6 249; Физическая Атака +6 249",
+        "priority": "Средне-Высокий"
       }
     ],
     "patronage": [],
-    "war_flags": [
-      {
-        "desc": "Every 18 seconds, Frost is cast on враги, reducing their skill levels by 2 for 8 seconds.",
-        "name": "War Flag of Frost",
-        "benefit": "Reduces enemy skill levels, limiting counterplay against Krista’s magic attacks and Marks of Water. This makes it easier for Krista and her союзники to land spells consistently."
-      },
-      {
-        "desc": "Decreases enemy team’s healing by 10%.",
-        "name": "War Flag of Decline",
-        "benefit": "Reduces the effectiveness of enemy healers, increasing the impact of Krista’s magic урон and Marks of Water. Excellent for offensive mid-line compositions."
-      },
-      {
-        "desc": "Increases all healing by 10%.",
-        "name": "War Flag of Recovery",
-        "benefit": "Useful if Krista is paired with self-sustaining союзники or pets that rely on healing. Helps her survive longer in prolonged battles, though less critical than Frost or Decline."
-      }
-    ],
-    "best_teams": []
+    "war_flags": [],
+    "best_teams": [],
+    "conclusion": ""
   },
   "cascade": {
     "cons": [
@@ -1720,6 +1484,138 @@ export const HERO_GUIDES_DB = {
     "patronage": [],
     "war_flags": [],
     "best_teams": []
+  },
+  "krista": {
+    "cons": [
+      "Зависит от характеристики «Интеллект» и магического урона, что делает ее уязвимой к магическим щитам и противникам, поглощающим магию.",
+      "Стратегия Меток Воды зависит от координации с союзниками для максимальной эффективности.",
+      "Умения Вознесения требуют времени для разблокировки, что задерживает раскрытие ее полного потенциала для новых игроков.",
+      "Менее эффективна против героев с высоким магическим сопротивлением или механиками сжигания/блокировки энергии.",
+      "Хрупкая на ранних стадиях игры, если не сочетается с защитными союзниками или питомцами."
+    ],
+    "pros": [
+      "Сильная синергия с Метками Воды, увеличивающая урон для нее самой и таких союзников, как Ларс и Каскад.",
+      "Высокий магический урон благодаря умениям «Ледяное возмездие» и «Ледяные иглы».",
+      "«Кристаллизация» дает защитный щит, повышая выживаемость в боях с высоким взрывным уроном.",
+      "Умения Вознесения увеличивают как урон, так и полезность, делая ее более эффективной в командных боях.",
+      "Надежна против врагов, которые не могут снять или заблокировать эффекты Меток Воды."
+    ],
+    "skins": [
+      {
+        "name": "Базовый облик",
+        "bonus": "Интеллект +1,365",
+        "priority": "Низкий"
+      },
+      {
+        "name": "Маскарадный облик",
+        "bonus": "Магическая Атака +10,650",
+        "priority": "Высокий"
+      },
+      {
+        "name": "Демонический облик",
+        "bonus": "Броня +10,650",
+        "priority": "Средний"
+      },
+      {
+        "name": "Кибернетический облик",
+        "bonus": "Здоровье +106,645",
+        "priority": "Средний"
+      },
+      {
+        "name": "Солнечный облик",
+        "bonus": "Магическая Атака +10,650",
+        "priority": "Средний"
+      },
+      {
+        "name": "Ангельский облик",
+        "bonus": "Пробивание защиты от магии +21,300",
+        "priority": "Высокий"
+      }
+    ],
+    "glyphs": [
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-attack.webp",
+        "name": "Магическая Атака"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/health.webp",
+        "name": "Здоровье"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/armor.webp",
+        "name": "Броня"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-defense.webp",
+        "name": "Защита от магии"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/intelligence.webp",
+        "name": "Интеллект"
+      }
+    ],
+    "counters": [
+      {
+        "hero": "Amira",
+        "reason": "<a href=\"#hero/amira?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">Умением Амиры «Искусство обмана»</a> накладывает дебафф на героев с основным статом Интеллект, снижая их Магическую Атаку и мешая синергии исцеления."
+      },
+      {
+        "hero": "Cornelius",
+        "reason": "<a href=\"#hero/cornelius?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">Умением Корнелиуса «Тяжелая мудрость»</a> бьет по герою с самым высоким Интеллектом, нанося урон пропорционально Интеллекту, что напрямую угрожает выживаемости Кристы."
+      },
+      {
+        "hero": "Isaac",
+        "reason": "<a href=\"#hero/isaac?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">Умением Айзека «Тесла-конденсатор MP-300»</a> поглощает магический урон, превращая его в заряд, что снижает эффективность Кристы."
+      },
+      {
+        "hero": "Jorgen",
+        "reason": "<a href=\"#hero/jorgen?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">Умением Йоргена «Пытка бессилием»</a> запрещает получать энергию на 9 секунд, задерживая ультимейт Кристы."
+      },
+      {
+        "hero": "Rufus",
+        "reason": "<a href=\"#hero/rufus?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">Умением Руфуса «Барьер Ракаши»</a> поглощает весь магический урон, сводя на нет атаки Кристы."
+      }
+    ],
+    "overview": "Долгожданный реворк Кристы в Hero Wars: Dominion Era превратил ее из обычного мага в героя, способного полностью изменить ход игры. Благодаря обновленным способностям, новым умениям Вознесения и улучшенной синергии с Метками Воды, Криста стала опаснее, чем когда-либо — как сама по себе, так и в связке с Ларсом, Каскадом и другими героями. Метки Воды, которые раньше считались негативными эффектами, теперь невозможно заблокировать или снять с помощью Себастьяна, Небулы или подобных героев. Это делает способности Кристы гораздо более надежными и эффективными в каждом бою. С этим обновлением Криста не только увеличила свой урон и полезность, но и получила возможность усиливать целые команды, построенные на Метках Воды.",
+    "artifacts": [
+      {
+        "desc": "Магическая Атака: +50,190",
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/weapon-krista-permafrost-flail.webp",
+        "name": "Цеп Вечной Мерзлоты",
+        "slot": "Оружие",
+        "name_ru": "Цеп Вечной Мерзлоты",
+        "priority": "Очень Высокий"
+      },
+      {
+        "desc": "Здоровье +83,649 / Магическая Атака +16,731",
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/tome-of-arcane-knowledge.webp",
+        "name": "Том Тайных Знаний",
+        "slot": "Книга",
+        "name_ru": "Том Тайных Знаний",
+        "priority": "Высокий"
+      },
+      {
+        "desc": "Интеллект +6,249 (Магическая Атака +18,747, Магическая Защита +6,249, Физическая Атака +6,249)",
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/ring-of-intelligence.webp",
+        "name": "Кольцо Интеллекта",
+        "slot": "Кольцо",
+        "name_ru": "Кольцо Интеллекта",
+        "priority": "Средний"
+      }
+    ],
+    "patronage": [],
+    "war_flags": [],
+    "best_teams": [
+      {
+        "hero": "Cascade",
+        "reason": "Благодаря <a href=\"#hero/cascade?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">умению Каскада «Отлив»</a> накладывает Метку Воды, увеличивая урон по помеченным целям."
+      },
+      {
+        "hero": "Lars",
+        "reason": "Благодаря <a href=\"#hero/lars?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">умению Ларса «Проводимость»</a> наносит дополнительный урон по целям с Меткой Воды и увеличивает длительность оглушения."
+      }
+    ],
+    "conclusion": "Реворк Кристы превратил ее в грозного мага средней линии, способного контролировать поле боя с помощью Меток Воды и сокрушительных магических атак. Ее синергия с такими героями, как Ларс и Каскад, делает ее краеугольным камнем в атакующих составах, а умения Вознесения, приоритетные артефакты, символы и облики гарантируют ее высокую эффективность на всех этапах игры. Чтобы максимально раскрыть потенциал Кристы, сосредоточьтесь на прокачке ее основных атакующих способностей, подберите правильных питомцев, боевые знамена и облики, а также сочетайте ее с союзниками, усиливающими Метки Воды. Правильное позиционирование и командная синергия — ключ к раскрытию ее полного потенциала урона и превращению ее в настоящего лидера как в PvE, так и в PvP боях."
   },
   "dante": {
     "cons": [
@@ -2396,462 +2292,263 @@ export const HERO_GUIDES_DB = {
     "best_teams": []
   },
   "iris": {
-    "id": "iris",
     "cons": [
-      "Высокий Burst урон: Iris’s Expose Soul can instantly eliminate even strong tanks when properly timed.",
-      "Pure урон Output: Her урон bypasses Броня and Защита от Магии, making her effective against Высокий-defense heroes.",
-      "Strong Synergy: Works extremely well with heroes who can focus or finish weakened враги, such as Dante, Keira, or K’arkh.",
-      "Effective in Both Offense and Defense: Can be used in Arena and Guild Wars for versatile team compositions."
+      "Низкая выживаемость: Ирис хрупкая и может быть легко уничтожена физическими убийцами до того, как успеет применить свои умения.",
+      "Зависимость от энергии: ей необходимо накопить энергию для активации 'Обнажения Души', что делает ее уязвимой для таких героев, как Йорген.",
+      "Слабость против магических контр-пиков: Корнелиус и Руфус могут полностью нейтрализовать ее в бою.",
+      "Чувствительность к позиционированию: ее эффективность сильно зависит от построения команды и того, насколько быстро она сможет нацелиться на главного танка.",
+      "Не подходит для затяжных боев: в длительных сражениях ее эффективность падает, если взрывной урон не уничтожил ключевые цели на ранней стадии."
     ],
-    "name": "Ирис",
     "pros": [
-      "Высокий Burst урон: Iris’s Expose Soul can instantly eliminate even strong tanks when properly timed.",
-      "Pure урон Output: Her урон bypasses Броня and Защита от Магии, making her effective against Высокий-defense heroes.",
-      "Strong Synergy: Works extremely well with heroes who can focus or finish weakened враги, such as Dante, Keira, or K’arkh.",
-      "Effective in Both Offense and Defense: Can be used in Arena and Guild Wars for versatile team compositions."
+      "Высокий взрывной урон: умение 'Обнажение Души' способно мгновенно уничтожить даже самых прочных танков при правильном расчете времени.",
+      "Чистый урон: ее урон полностью игнорирует броню и магическую защиту, что делает ее крайне эффективной против героев с высокими защитными показателями.",
+      "Отличная синергия: великолепно работает в связке с героями, способными быстро добивать ослабленных врагов, такими как Данте, Кира или Карх.",
+      "Эффективность в атаке и обороне: универсальный герой, подходящий для различных составов команд на Арене и в Войне Гильдий."
     ],
     "skins": [
       {
-        "desc": "- Магическая Атака from Интеллект: +4,095 - Защита от Магии from Интеллект: +1,365 - Физическая Атака from Интеллект: +1,365 Total of Интеллект Skin Stone for max level: 30,825",
-        "name": "Default Skin (Intelligence)",
-        "bonus": "Stats gain: Интеллект +1,365",
-        "priority": "Высокий – Boosts Iris’s main stat, enhancing all her урон scaling and defenses."
-      },
-      {
-        "desc": "Total of Интеллект Skin Stone for max level: 55,410",
-        "name": "Cybernetic Skin",
-        "bonus": "Stats gain: Магическая Атака +10,650",
-        "priority": "Очень Высокий – A core offensive skin that strengthens every skill, especially her pure урон scaling."
-      },
-      {
-        "desc": "Total of Интеллект Skin Stone for max level: 55,410",
-        "name": "Beach Skin",
-        "bonus": "Stats gain: Здоровье +106,645",
-        "priority": "Средний – Adds survivability, mostly useful vs AoE урон."
-      },
-      {
-        "desc": "Total of Интеллект Skin Stone for max level: 55,410",
-        "name": "Stellar Skin",
-        "bonus": "Stats gain: Броня +10,650",
-        "priority": "Низкий – Minor defensive boost; lowest impact for a backline Маг."
-      },
-      {
-        "desc": "Total of Интеллект Skin Stone for max level: 55,410",
-        "name": "Masquerade Skin",
-        "bonus": "Stats gain: Броня Penetration +10,650",
-        "priority": "Средний Высокий – Improves the physical portion of Seed of Destruction, adding versatility."
-      },
-      {
-        "desc": "Total of Интеллект Skin Stone for max level: 55,410 Note: Iris’s Chompiris Skin can be unlocked during the Seer's Game event.",
-        "name": "Chompiris Skin",
-        "bonus": "Stats gain: Магическая Атака +21,300",
-        "priority": "Очень Высокий – Her strongest offensive skin; massive Магическая Атака boosts all skills and overall урон output."
-      }
-    ],
-    "glyphs": [
-      {
-        "desc": "Stats gain: +6,500",
-        "name": "4th Glyph - Броня Penetration",
-        "name_en": "4th Glyph - Armor Penetration",
-        "priority": "Высокий – Броня Penetration helps her physical урон components and synergy effects deal consistent урон against armored враги, making it a valuable secondary offensive stat."
-      },
-      {
-        "desc": "Stats gain: +1,135",
-        "name": "5th Glyph - Интеллект",
-        "name_en": "5th Glyph - Intelligence",
-        "priority": "Высокий – Интеллект gives a strong bonus to Магическая Атака (+3,405), making it almost half as effective as a Магическая Атака skin, plus a boost to Защита от Магии. A solid stat for balanced power and durability."
-      }
-    ],
-    "counters": [],
-    "overview": "Once a brilliant teacher of magic, Iris let her ambition lead her into forbidden power. Now, bound to the shadows, she’s back with unmatched destructive energy. This guide reveals how to build, equip, and unleash her full potential in Хроники Хаоса (Dominion Era) ! From devastating pure урон that cuts through tanks to strategic team setups that amplify her dark arts, you’ll learn how to make Iris one of your most lethal Mages. Whether you’re a beginner or veteran player, this guide will help you master her every spell.",
-    "artifacts": [
-      {
-        "desc": "Stats gain: +6,500",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-attack.webp",
-        "name": "1st Glyph - Magic Attack",
-        "slot": "Оружие",
-        "desc_en": "Stats gain: +6,500",
-        "name_ru": "1st Glyph - Magic Attack (Оружие)",
-        "priority": "Очень Высокий – Магическая Атака directly boosts all of Iris’s offensive skills, making this glyph her top priority to maximize overall урон output.",
-        "priority_en": "Very High – Magic Attack directly boosts all of Iris’s offensive skills, making this glyph her top priority to maximize overall damage output."
-      },
-      {
-        "desc": "Stats gain: +62,200",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/health.webp",
-        "name": "2nd Glyph - Health",
-        "slot": "Книга",
-        "desc_en": "Stats gain: +62,200",
-        "name_ru": "2nd Glyph - Health (Книга)",
-        "priority": "Средний-Высокий – Здоровье gives Iris better survivability, allowing her to survive long enough to cast her deadly burst combo, especially useful in Arena and CoW fights.",
-        "priority_en": "Medium-High – Health gives Iris better survivability, allowing her to survive long enough to cast her deadly burst combo, especially useful in Arena and CoW fights."
-      },
-      {
-        "desc": "Stats gain: +6,500",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-defense.webp",
-        "name": "3rd Glyph - Magic Defense",
-        "slot": "Кольцо",
-        "desc_en": "Stats gain: +6,500",
-        "name_ru": "3rd Glyph - Magic Defense (Кольцо)",
-        "priority": "Средний – Защита от Магии is situationally helpful when facing strong mages, but doesn’t affect Iris’s offensive output directly.",
-        "priority_en": "Medium – Magic Defense is situationally helpful when facing strong mages, but doesn’t affect Iris’s offensive output directly."
-      },
-      {
-        "desc": "Stats gain: Магическая Атака +50,190",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/weapon-iris-grimoire-of-enslaved-souls.webp",
-        "name": "Weapon Artifact – Grimoire of Enslaved Souls",
-        "slot": "Оружие",
-        "desc_en": "Stats gain: Magic Attack +50,190",
-        "name_ru": "Weapon Artifact – Grimoire of Enslaved Souls (Оружие)",
-        "priority": "Очень Высокий – This artifact activates with Iris’s ultimate skill “Shieldbreaker” and grants a strong Магическая Атака buff to the entire team for 9 seconds. It directly scales her burst урон and is essential for both PvP and PvE battles. Upgrading this artifact first provides the biggest урон increase.",
-        "priority_en": "Very High – This artifact activates with Iris’s ultimate skill “Shieldbreaker” and grants a strong Magic Attack buff to the entire team for 9 seconds. It directly scales her burst damage and is essential for both PvP and PvE battles. Upgrading this artifact first provides the biggest damage increase."
-      },
-      {
-        "desc": "Stats gain: Здоровье +83,649, Магическая Атака +16,731",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/tome-of-arcane-knowledge.webp",
-        "name": "Book Artifact – Tome of Arcane Knowledge",
-        "slot": "Книга",
-        "desc_en": "Stats gain: Health +83,649, Magic Attack +16,731",
-        "name_ru": "Book Artifact – Tome of Arcane Knowledge (Книга)",
-        "priority": "Высокий – The Книга offers valuable Здоровье for survivability and extra Магическая Атака for consistent scaling. It helps Iris stay alive long enough to activate her main урон combo. A great balance between power and durability, making it her second priority.",
-        "priority_en": "High – The book offers valuable Health for survivability and extra Magic Attack for consistent scaling. It helps Iris stay alive long enough to activate her main damage combo. A great balance between power and durability, making it her second priority."
-      },
-      {
-        "desc": "Stats gain: Интеллект +6,249",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/ring-of-intelligence.webp",
-        "name": "Ring Artifact – Ring of Intelligence",
-        "slot": "Кольцо",
-        "desc_en": "Stats gain: Intelligence +6,249",
-        "name_ru": "Ring Artifact – Ring of Intelligence (Кольцо)",
-        "priority": "Средний-Высокий – The Интеллект Кольцо provides a solid passive boost to Магическая Атака and Защита от Магии, improving overall performance. However, it doesn’t have a team-wide effect or activate with skills, so it comes after the Оружие and Книга in upgrade order.",
-        "priority_en": "Medium-High – The Intelligence ring provides a solid passive boost to Magic Attack and Magic Defense, improving overall performance. However, it doesn’t have a team-wide effect or activate with skills, so it comes after the weapon and book in upgrade order."
-      }
-    ],
-    "patronage": [],
-    "war_flags": [
-      {
-        "desc": "The War Flag of Readiness is one of the best options for Iris. It grants 100 energy to the rearmost hero every 20 seconds, helping Iris activate Expose Soul more frequently. Since Iris is positioned in the backline, she can benefit from this bonus effectively.",
-        "name": "War Flag of Readiness",
-        "benefit": "This flag allows Iris to start dealing Pure урон much earlier, supporting her team by quickly weakening the enemy Танк and opening a path for урон dealers to finish the fight."
-      },
-      {
-        "desc": "Every 18 seconds, this flag casts Frost on враги, reducing their skill levels by 2 for 8 seconds. This significantly weakens the enemy’s урон output and survivability, giving Iris more time to activate her Pure урон skills safely.",
-        "name": "War Flag of Frost",
-        "benefit": "Works well in Контролёр-based or defensive teams where Iris can capitalize on weakened враги to maximize her burst potential."
-      },
-      {
-        "desc": "This flag decreases the enemy team's healing by 10%, making it easier for Iris to finish off heroes whose souls she exposes. It’s particularly useful against исцеление-heavy teams.",
-        "name": "War Flag of Decline",
-        "benefit": "Complements Iris’s burst урон perfectly by preventing healers like Martha or Celeste from saving exposed targets."
-      }
-    ],
-    "best_teams": []
-  },
-  "nebula": {
-    "id": "nebula",
-    "cons": [
-      "Pros: Boosts both Physical and Магическая Атака of nearby союзники with Equilibrium , making her extremely versatile in hybrid teams.",
-      "Serenity heals two nearby союзники and removes debuffs, greatly increasing team survivability.",
-      "Disharmony helps secure kills by targeting the enemy with the lowest Здоровье.",
-      "Astral Projection can burn enemy energy, preventing key ultimates if activated strategically.",
-      "Strong synergy with main урон dealers (Dante, K'arkh, Yasmine, Ishmael, Keira, Jhu).",
-      "Useful in multiple game modes: Campaign, Tower, Pet Adventures, Guild Wars, Arena, and Asgard (Osh fights)."
-    ],
-    "name": "Небула",
-    "pros": [
-      "Pros: Boosts both Physical and Магическая Атака of nearby союзники with Equilibrium , making her extremely versatile in hybrid teams.",
-      "Serenity heals two nearby союзники and removes debuffs, greatly increasing team survivability.",
-      "Disharmony helps secure kills by targeting the enemy with the lowest Здоровье.",
-      "Astral Projection can burn enemy energy, preventing key ultimates if activated strategically.",
-      "Strong synergy with main урон dealers (Dante, K'arkh, Yasmine, Ishmael, Keira, Jhu).",
-      "Useful in multiple game modes: Campaign, Tower, Pet Adventures, Guild Wars, Arena, and Asgard (Osh fights)."
-    ],
-    "skins": [
-      {
-        "desc": "",
-        "name": "Default Skin",
-        "bonus": "Ловкость: +1,365 Each Ловкость point grants: two points to Физическая Атака; one point to Броня; one extra point to Физическая Атака if Ловкость is the main stat of a hero.",
-        "priority": "Очень Высокий – The Физическая Атака increase from Ловкость massively boosts Equilibrium, allowing союзники to deal extreme урон, especially when paired with Orion (magic урон), Dante (physical урон), Keira , and Sebastian (critical hit chance bonus)."
-      },
-      {
-        "desc": "",
-        "name": "Winter Skin",
-        "bonus": "Физическая Атака: +7,120",
-        "priority": "Высокий – Greatly enhances Equilibrium, increasing burst potential of союзники like Dante , Orion , Keira , and Sebastian."
-      },
-      {
-        "desc": "",
-        "name": "Romantic Skin",
-        "bonus": "Физическая Атака: +7,095",
-        "priority": "Высокий – Nearly as strong as the Winter Skin, boosting Nebula’s supporting power for Dante , Orion , Keira , and Sebastian."
-      },
-      {
-        "desc": "",
-        "name": "Spring Skin",
-        "bonus": "Уклонение: +2,960",
-        "priority": "Средний – Offers synergy with Cain's energy boost mechanic through dodges. Useful for survival, but doesn’t enhance Equilibrium or team burst урон directly."
-      },
-      {
-        "desc": "",
-        "name": "Celestial Skin",
-        "bonus": "Броня: +10,650",
-        "priority": "Низкий – Helps Nebula survive against physical teams, but offers no offensive boost. Least effective in enhancing her Поддержка role."
-      }
-    ],
-    "glyphs": [
-      {
-        "desc": "Increases max HP. Why? Universal survivability against all урон types. Essential for supports.",
-        "name": "4th - Здоровье:",
-        "name_en": "4th - Health:",
+        "name": "Базовый облик",
+        "bonus": "Интеллект +1,365",
         "priority": "Высокий"
       },
       {
-        "desc": "Boosts Физическая Атака and Броня. Why? Doubly valuable: enhances Equilibrium/Serenity AND provides defense.",
-        "name": "5th - Ловкость:",
-        "name_en": "5th - Agility:",
+        "name": "Кибернетический облик",
+        "bonus": "Магическая Атака +10,650",
+        "priority": "Очень Высокий"
+      },
+      {
+        "name": "Пляжный облик",
+        "bonus": "Здоровье +106,645",
+        "priority": "Средний"
+      },
+      {
+        "name": "Звездный облик",
+        "bonus": "Броня +10,650",
+        "priority": "Низкий"
+      },
+      {
+        "name": "Маскарадный облик",
+        "bonus": "Пробивание Брони +10,650",
+        "priority": "Выше Среднего"
+      },
+      {
+        "name": "Облик Чомпирис",
+        "bonus": "Магическая Атака +21,300",
         "priority": "Очень Высокий"
       }
     ],
-    "counters": [],
-    "overview": "Nebula is a powerful Поддержка and Хилер in Хроники Хаоса (Dominion Era). Fighting from the middle line, she enhances nearby союзники with her unique energy-balancing abilities. As stars collapse and new worlds form, she fights an eternal battle to ensure the Universe’s harmony. With her iconic skill \"Equilibrium\", Nebula grants a significant boost to both physical and magical attack stats of adjacent союзники, making her a top-tier choice in many meta compositions. Whether you're progressing through the Campaign, battling in PvP Guild Wars, climbing the Tower, or facing Osh in Asgard, Nebula's utility is exceptional.",
+    "glyphs": [
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-attack.webp",
+        "name": "Магическая Атака"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/health.webp",
+        "name": "Здоровье"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-defense.webp",
+        "name": "Магическая Защита"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/armor-penetration.webp",
+        "name": "Пробивание Брони"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/intelligence.webp",
+        "name": "Интеллект"
+      }
+    ],
+    "counters": [
+      {
+        "hero": "Cornelius",
+        "reason": "Корнелиус является сильным контр-пиком для Ирис, так как его умение <a href=\"#hero/cornelius?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">Тяжелая Мудрость</a> нацелено на противника с самым высоким показателем Интеллекта, что позволяет мгновенно уничтожить ее. Кроме того, его руна подавления снижает магическую атаку Ирис, ослабляя ее урон."
+      },
+      {
+        "hero": "Jorgen",
+        "reason": "Йорген мешает Ирис накапливать энергию с помощью своего умения <a href=\"#hero/jorgen?skill=3\" style=\"color:#38bdf8; text-decoration:underline;\">Муки Бессилия</a>. Поскольку Ирис сильно зависит от ультимейта, это задерживает ее взрывной урон и дает вашей команде время устранить ее."
+      },
+      {
+        "hero": "Rufus",
+        "reason": "Руфус — самый сложный противник для Ирис, так как его умение <a href=\"#hero/rufus?skill=4\" style=\"color:#38bdf8; text-decoration:underline;\">Клятва Ракаши</a> делает его невосприимчивым к магическому и чистому урону. Когда Ирис пытается атаковать его, Руфус просто возрождается, сводя на нет все ее усилия."
+      }
+    ],
+    "overview": "Ирис — маг задней линии, основной характеристикой которой является Интеллект. Когда-то уважаемый наставник, она стала сосудом для запретной магии после кражи фолианта Умбры Архидемона, что навсегда превратило ее в чернокнижника, движимого жаждой силы и мести. Своим первым умением Ирис наносит сокрушительный чистый урон, игнорирующий защиту, что делает ее одним из немногих героев, способных быстро уничтожать таких танков, как Корвус или Джулиус. В сочетании с Небулой или Селестой, усиливающими ее магическую силу, она становится грозным основным бойцом, способным переломить ход любого сражения.",
     "artifacts": [
       {
-        "desc": "Физическая Атака +33,459 Boosts Serenity's healing and Equilibrium's buff, but Nebula's energy gain are slow due to her Поддержка focus. Upgrade after core artifacts.",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/weapon-nebula-unborn-stars.webp",
-        "name": "1st - Unborn Stars (Weapon):",
+        "desc": "Магическая Атака +50,190",
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/weapon-iris-grimoire-of-enslaved-souls.webp",
+        "name": "Гримуар Плененных Душ",
         "slot": "Оружие",
-        "desc_en": "Physical Attack +33,459 Boosts Serenity's healing and Equilibrium's buff, but Nebula's energy gain are slow due to her support focus. Upgrade after core artifacts.",
-        "name_ru": "1st - Unborn Stars (Weapon): (Оружие)",
-        "priority": "Средний",
-        "priority_en": "Medium"
+        "name_ru": "Гримуар Плененных Душ",
+        "priority": "Очень Высокий"
       },
       {
-        "desc": "Уклонение +4,647 Здоровье +83,649 Critical for survival. Уклонение synergizes with Cain (energy gain), while Здоровье protects against AoE. Upgrade after Кольцо.",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/book-of-illusions.webp",
-        "name": "2nd - Book of Illusions (Book):",
+        "desc": "Здоровье +83,649, Магическая Атака +16,731",
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/tome-of-arcane-knowledge.webp",
+        "name": "Том Тайных Знаний",
         "slot": "Книга",
-        "desc_en": "Dodge +4,647 Health +83,649 Critical for survival. Dodge synergizes with Cain (energy gain), while health protects against AoE. Upgrade after Ring.",
-        "name_ru": "2nd - Book of Illusions (Book): (Книга)",
-        "priority": "Высокий",
-        "priority_en": "High"
+        "name_ru": "Том Тайных Знаний",
+        "priority": "Высокий"
       },
       {
-        "desc": "Ловкость +6,249",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/ring-of-agility.webp",
-        "name": "3rd - Ring of Agility (Ring):",
+        "desc": "Интеллект +6,249 (Магическая Атака +18,747, Магическая Оборона +6,249, Физическая Атака +6,249)",
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/ring-of-intelligence.webp",
+        "name": "Кольцо Интеллекта",
         "slot": "Кольцо",
-        "desc_en": "Agility +6,249",
-        "name_ru": "3rd - Ring of Agility (Ring): (Кольцо)",
-        "priority": "Очень Высокий",
-        "priority_en": "Very High"
-      },
-      {
-        "desc": "Boosts Equilibrium's buff Сила and Serenity's healing. Why? Directly enhances both her Поддержка skills. Core stat for her role.",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/physical-attack.webp",
-        "name": "1st - Physical Attack:",
-        "slot": "Оружие",
-        "desc_en": "Boosts Equilibrium's buff strength and Serenity's healing. Why? Directly enhances both her support skills. Core stat for her role.",
-        "name_ru": "1st - Physical Attack: (Оружие)",
-        "priority": "Очень Высокий",
-        "priority_en": "Very High"
-      },
-      {
-        "desc": "Reduces physical урон taken. Why? Helps survival but less critical than Ловкость/Здоровье for a mid-line hero.",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/armor.webp",
-        "name": "2nd - Armor:",
-        "slot": "Книга",
-        "desc_en": "Reduces physical damage taken. Why? Helps survival but less critical than Agility/Health for a mid-line hero.",
-        "name_ru": "2nd - Armor: (Книга)",
-        "priority": "Средний",
-        "priority_en": "Medium"
-      },
-      {
-        "desc": "Reduces magic урон taken. Why? Nebula faces fewer magic threats in current meta. Upgrade last.",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-defense.webp",
-        "name": "3rd - Magic Defense:",
-        "slot": "Кольцо",
-        "desc_en": "Reduces magic damage taken. Why? Nebula faces fewer magic threats in current meta. Upgrade last.",
-        "name_ru": "3rd - Magic Defense: (Кольцо)",
-        "priority": "Низкий",
-        "priority_en": "Low"
+        "name_ru": "Кольцо Интеллекта",
+        "priority": "Выше Среднего"
       }
     ],
     "patronage": [],
     "war_flags": [],
-    "best_teams": []
-  },
-  "celeste": {
-    "id": "celeste",
-    "cons": [
-      "Dual forms allow her to switch between healing (Light Form) and Высокий magic урон with anti-исцеление effects (Dark Form).",
-      "Ultimate skill “Two Fates” can be used with only 50% energy, letting her constantly change forms and adapt to the battle.",
-      "Strong synergy with heroes like Nebula and Iris for maximizing magic урон output.",
-      "Light Form heals союзники and removes debuffs, making her a versatile Поддержка in physical урон teams.",
-      "Dark Form blocks enemy healing and converts it into урон, making her effective against sustain-heavy teams.",
-      "Высокий Магическая Атака and Пробивание Защиты от Магии growth with artifacts, pets, and glyphs, enhancing both урон and utility."
+    "best_teams": [
+      {
+        "hero": "Nebula",
+        "reason": "Небула значительно увеличивает магическую атаку Ирис, что позволяет ее чистому урону достигать колоссальных значений."
+      },
+      {
+        "hero": "Celeste",
+        "reason": "Селеста обеспечивает постоянное усиление магической атаки и предотвращает исцеление противников, помогая Ирис быстрее добивать цели."
+      },
+      {
+        "hero": "Dante",
+        "reason": "Данте отлично синергирует с Ирис, нанося огромный физический урон по целям с обнаженной душой и быстро завершая бой."
+      }
     ],
-    "name": "Селеста",
+    "conclusion": "Ирис — чрезвычайно разрушительный маг задней линии, чья сила заключается в способности наносить огромный чистый урон и быстро устранять ключевые цели. Ее умения, особенно 'Обнажение Души', позволяют ей обходить любые защитные барьеры и уничтожать даже самых прочных танков при должной поддержке команды. Чтобы максимизировать ее эффективность, отдавайте приоритет символам и артефактам на Магическую Атаку и Интеллект, используйте Альбуса в качестве покровителя для дополнительного чистого урона и выбирайте Военные Флаги, ускоряющие получение энергии. Несмотря на ее хрупкость и зависимость от позиционирования, правильно подобранная команда способна полностью раскрыть ее потенциал, сделав Ирис ключевым героем как в PvE, так и в PvP битвах."
+  },
+  "nebula": {
+    "cons": [
+      "Требует правильного позиционирования в команде для максимальной эффективности баффов от «Равновесия».",
+      "«Астральная проекция» долго заряжается и может быть потрачена впустую, если не активировать её вручную.",
+      "Имеет ограниченную эффективность без сильных героев урона в команде.",
+      "Сила исцеления зависит от её Физической Атаки, что требует значительных вложений в характеристики.",
+      "Ручная активация умений может быть сложной для новичков или в режиме автобоя."
+    ],
     "pros": [
-      "Dual forms allow her to switch between healing (Light Form) and Высокий magic урон with anti-исцеление effects (Dark Form).",
-      "Ultimate skill “Two Fates” can be used with only 50% energy, letting her constantly change forms and adapt to the battle.",
-      "Strong synergy with heroes like Nebula and Iris for maximizing magic урон output.",
-      "Light Form heals союзники and removes debuffs, making her a versatile Поддержка in physical урон teams.",
-      "Dark Form blocks enemy healing and converts it into урон, making her effective against sustain-heavy teams.",
-      "Высокий Магическая Атака and Пробивание Защиты от Магии growth with artifacts, pets, and glyphs, enhancing both урон and utility."
+      "Увеличивает Физическую и Магическую атаку ближайших союзников с помощью умения «Равновесие» (Equilibrium), что делает её крайне универсальной в гибридных командах.",
+      "Умение «Безмятежность» (Serenity) исцеляет двух ближайших союзников и снимает с них негативные эффекты, значительно повышая выживаемость команды.",
+      "Умение «Дисгармония» (Disharmony) помогает добивать врагов, автоматически нанося урон цели с наименьшим здоровьем.",
+      "«Астральная проекция» (Astral Projection) может сжигать энергию противников, предотвращая использование ключевых ультимативных умений при стратегически правильной активации.",
+      "Отличная синергия с главными героями, наносящими урон (Данте, Карх, Ясмин, Исмаил, Кира, Джу).",
+      "Полезна во множестве игровых режимов: Кампания, Башня, Приключения питомцев, Война Гильдий, Арена и Асгард (сражения с Ошем)."
     ],
     "skins": [
       {
-        "desc": "- Магическая Атака from Интеллект: +4,095 - Защита от Магии from Интеллект: +1,365 - Физическая Атака from Интеллект: +1,365 Total of Интеллект Skin Stones for max level: 30,825",
-        "name": "Default Skin – Intelligence",
-        "bonus": "Stats gain: Интеллект +1365",
-        "priority": "Высокий – This skin improves overall stats and scales her healing and урон, making it a solid early upgrade."
+        "name": "Базовый облик",
+        "bonus": "Ловкость (+1,365)",
+        "priority": "Очень высокий"
       },
       {
-        "desc": "Total of Интеллект Skin Stones for max level: 53,412",
-        "name": "Winter Skin – Magic Attack",
-        "bonus": "Stats gain: Магическая Атака +10,650",
-        "priority": "Очень Высокий – Directly boosts both her Light Form healing and Dark Form урон, making this the most impactful skin for Celeste."
+        "name": "Зимний облик",
+        "bonus": "Физическая атака (+7,120)",
+        "priority": "Высокий"
       },
       {
-        "desc": "Total of Интеллект Skin Stones for max level: 55,410",
-        "name": "Spring Skin – Magic Attack",
-        "bonus": "Stats gain: Магическая Атака +10,650",
-        "priority": "Средний Высокий – Also improves her healing and урон, but since Winter Skin already covers Магическая Атака, this becomes a secondary upgrade."
+        "name": "Романтический облик",
+        "bonus": "Физическая атака (+7,095)",
+        "priority": "Высокий"
       },
       {
-        "desc": "Total of Интеллект Skin Stones for max level: 55,410",
-        "name": "Romantic Skin – Magic Defense",
-        "bonus": "Stats gain: Защита от Магии +10,650",
-        "priority": "Средний – Provides survivability against magic урон teams, useful in specific matchups but not as universally strong as offensive skins."
+        "name": "Весенний облик",
+        "bonus": "Уклонение (+2,960)",
+        "priority": "Средний"
       },
       {
-        "desc": "Total of Интеллект Skin Stones for max level: 55,410",
-        "name": "Masquerade Skin – Magic Penetration",
-        "bonus": "Stats gain: Пробивание Защиты от Магии +10,650",
-        "priority": "Низкий – Helps bypass enemy Защита от Магии, but Celeste’s main role is healing and utility, making this less critical than her Магическая Атака skins."
+        "name": "Небесный облик",
+        "bonus": "Броня (+10,650)",
+        "priority": "Низкий"
       }
     ],
     "glyphs": [
       {
-        "desc": "Stats gain: +6,500 Пробивание Защиты от Магии",
-        "name": "4th Glyph - Пробивание Защиты от Магии:",
-        "name_en": "4th Glyph - Magic Penetration:",
-        "priority": "Высокий – Ensures Dark Form урон reaches Высокий-resistance враги. Vital for team fights against tanks or mages."
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/physical-attack.webp",
+        "name": "Физическая атака"
       },
       {
-        "desc": "Stats gain: Интеллект +1,135",
-        "name": "5th Glyph - Интеллект:",
-        "name_en": "5th Glyph - Intelligence:",
-        "priority": "Средний – Balanced stat but less direct impact than Магическая Атака or Penetration. Upgrade after key offensive glyphs."
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/agility.webp",
+        "name": "Ловкость"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/health.webp",
+        "name": "Здоровье"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/armor.webp",
+        "name": "Броня"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-defense.webp",
+        "name": "Защита от магии"
       }
     ],
-    "counters": [],
-    "overview": "Celeste is one of the most fascinating heroes in Хроники Хаоса (Dominion Era) , balancing between the powers of light and darkness. She can switch forms mid-battle, making her one of the most versatile mages in the game. In her Light Form, Celeste shines as a Хилер, removing debuffs and restoring her союзники’ Сила. In her Dark Form, she turns into a fearsome Маг, blocking enemy healing and converting it into raw урон. This delicate balance makes her essential in both physical and magic-based teams.",
+    "counters": [
+      {
+        "hero": "Maya",
+        "reason": "Нарушает позиционирование Небулы с помощью своего <a href=\"#hero/maya?skill=3\" style=\"color:#38bdf8; text-decoration:underline;\">третьего умения</a>, притягивая крайних союзников друг к другу и изолируя Небулу от её ключевых целей для баффа."
+      },
+      {
+        "hero": "Lars",
+        "reason": "Своим <a href=\"#hero/lars?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">первым умением</a> отбрасывает врагов назад, нарушая строй и отдаляя Небулу от её союзников, что ломает действие пассивного баффа."
+      },
+      {
+        "hero": "Amira",
+        "reason": "Её <a href=\"#hero/amira?skill=2\" style=\"color:#38bdf8; text-decoration:underline;\">второе умение</a> заставляет героев с основной характеристикой Ловкость промахиваться критическими ударами, что снижает эффективность физических союзников Небулы."
+      },
+      {
+        "hero": "Dante",
+        "reason": "Наносит огромный физический взрывной урон, быстро уничтожая Небулу из-за её невысокой выживаемости."
+      }
+    ],
+    "overview": "Небула — мощный герой поддержки и целитель в Hero Wars: Dominion Era. Сражаясь на средней линии, она усиливает ближайших союзников своими уникальными способностями балансировки энергии. Небула — универсальный саппорт, который отлично справляется с увеличением общего урона вашей команды. Её способность распределять энергию между двумя ближайшими союзниками может значительно повысить эффективность ваших основных бойцов или целителей. Она лучше всего раскрывается в паре с сильными героями урона, такими как Данте, Орион, Кира или Себастьян. Помимо усиления союзников, Небула может снимать негативные эффекты и сжигать энергию врагов, обеспечивая контроль на поле боя.",
     "artifacts": [
       {
-        "desc": "This is Celeste’s ultimate and the main reason she is so unique. It allows her to switch between Light Form and Dark Form. In Dark Form, she creates a large flame in the enemy team that blocks healing. In Light Form, she heals the weakest ally for 5 seconds. Without this skill, Celeste cannot change forms, so she loses her main power. Another special trait of this skill is that Celeste is the only hero in Хроники Хаоса (Dominion Era) who needs just 50% of her energy bar (instead of the usual 100%) to activate her ultimate. This means she can switch forms more frequently than any other hero, constantly balancing healing and anti-healing effects during battle. Formula: Dark – Healing Block: (70% Mag. atk. + Ivl * 350) | Light – исцеление: (70% Mag. atk. + Ivl * 100) over 5s .",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/hero/celeste/two-fates.webp",
-        "name": "1st - Two Fates",
+        "desc": "Физическая Атака +33,459",
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/weapon-nebula-unborn-stars.webp",
+        "name": "Нерожденные Звезды",
         "slot": "Оружие",
-        "desc_en": "This is Celeste’s ultimate and the main reason she is so unique. It allows her to switch between Light Form and Dark Form. In Dark Form, she creates a large flame in the enemy team that blocks healing. In Light Form, she heals the weakest ally for 5 seconds. Without this skill, Celeste cannot change forms, so she loses her main power. Another special trait of this skill is that Celeste is the only hero in Hero Wars: Dominion Era who needs just 50% of her energy bar (instead of the usual 100%) to activate her ultimate. This means she can switch forms more frequently than any other hero, constantly balancing healing and anti-healing effects during battle. Formula: Dark – Healing Block: (70% Mag. atk. + Ivl * 350) | Light – Heal: (70% Mag. atk. + Ivl * 100) over 5s .",
-        "name_ru": "1st - Two Fates (Оружие)",
-        "priority": "Очень Высокий – Always upgrade this first because it unlocks both her Хилер and урон roles.",
-        "priority_en": "Very High – Always upgrade this first because it unlocks both her healer and damage roles."
+        "name_ru": "Нерожденные Звезды",
+        "priority": "Средний"
       },
       {
-        "desc": "This skill works automatically during battle. In Dark Form, it places a smaller healing block flame on враги. In Light Form, it heals the weakest ally again. Because it activates often, it adds steady Поддержка or pressure on the enemy. Formula: Dark – Healing Block: (70% Mag. atk. + Ivl * 250) | Light – исцеление: (70% Mag. atk. + Ivl * 100) over 5s .",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/hero/celeste/white-night.webp",
-        "name": "2nd - White Night",
+        "desc": "Уклонение +4,647, Здоровье +83,649",
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/book-of-illusions.webp",
+        "name": "Фолиант Иллюзий",
         "slot": "Книга",
-        "desc_en": "This skill works automatically during battle. In Dark Form, it places a smaller healing block flame on enemies. In Light Form, it heals the weakest ally again. Because it activates often, it adds steady support or pressure on the enemy. Formula: Dark – Healing Block: (70% Mag. atk. + Ivl * 250) | Light – Heal: (70% Mag. atk. + Ivl * 100) over 5s .",
-        "name_ru": "2nd - White Night (Книга)",
-        "priority": "Высокий – Great consistent value. Upgrade this second to improve both her healing and anti-исцеление effects.",
-        "priority_en": "High – Great consistent value. Upgrade this second to improve both her healing and anti-heal effects."
+        "name_ru": "Фолиант Иллюзий",
+        "priority": "Высокий"
       },
       {
-        "desc": "Limbo adds extra power to Celeste’s forms. In Dark Form, part of the enemy’s blocked healing is turned into magic урон. In Light Form, it cleanses союзники by removing negative effects before healing. This makes her a hybrid урон-dealer and Поддержка hero. Formula: Dark – (42% + (Ivl * 0.2 + 20)%) healing blocked converted to урон | Light – chance to block debuff ~130 .",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/hero/celeste/limbo.webp",
-        "name": "3rd - Limbo",
+        "desc": "Ловкость +6,249",
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/ring-of-agility.webp",
+        "name": "Кольцо Ловкости",
         "slot": "Кольцо",
-        "desc_en": "Limbo adds extra power to Celeste’s forms. In Dark Form, part of the enemy’s blocked healing is turned into magic damage. In Light Form, it cleanses allies by removing negative effects before healing. This makes her a hybrid damage-dealer and support hero. Formula: Dark – (42% + (Ivl * 0.2 + 20)%) healing blocked converted to damage | Light – chance to block debuff ~130 .",
-        "name_ru": "3rd - Limbo (Кольцо)",
-        "priority": "Средний Высокий – Useful for cleansing and extra урон. Upgrade after her first two main skills.",
-        "priority_en": "Medium High – Useful for cleansing and extra damage. Upgrade after her first two main skills."
-      },
-      {
-        "desc": "Магическая Атака: +50,190",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/weapon-celestes-crown.webp",
-        "name": "Weapon Artifact: Celeste’s Crown",
-        "slot": "Оружие",
-        "desc_en": "Magic Attack: +50,190",
-        "name_ru": "Weapon Artifact: Celeste’s Crown (Оружие)",
-        "priority": "Очень Высокий – This is Celeste’s most important artifact because it activates with her ultimate ability, frequently boosting the entire team’s Магическая Атака for 9 seconds. Since her ultimate costs only 50% energy, this buff is triggered often, greatly enhancing team performance.",
-        "priority_en": "Very High – This is Celeste’s most important artifact because it activates with her ultimate ability, frequently boosting the entire team’s Magic Attack for 9 seconds. Since her ultimate costs only 50% energy, this buff is triggered often, greatly enhancing team performance."
-      },
-      {
-        "desc": "Пробивание Защиты от Магии: +10,680 | Магическая Атака: +8,364",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/manuscript-of-the-void.webp",
-        "name": "Book Artifact: Manuscript of the Void",
-        "slot": "Книга",
-        "desc_en": "Magic Penetration: +10,680 | Magic Attack: +8,364",
-        "name_ru": "Book Artifact: Manuscript of the Void (Книга)",
-        "priority": "Высокий – Пробивание Защиты от Магии is crucial for Celeste’s Dark Form урон, ensuring her flames and healing block break through enemy defenses. The additional Магическая Атака also improves both her offensive and healing abilities, making this her second most important artifact.",
-        "priority_en": "High – Magic Penetration is crucial for Celeste’s Dark Form damage, ensuring her flames and healing block break through enemy defenses. The additional Magic Attack also improves both her offensive and healing abilities, making this her second most important artifact."
-      },
-      {
-        "desc": "Stats gain: Интеллект: +6249 - Магическая Атака from Интеллект: +18.747 - Защита от Магии from from Интеллект: +6249 - Физическая Атака from Интеллект: +6249",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/ring-of-intelligence.webp",
-        "name": "Ring Artifact: Ring of Intelligence",
-        "slot": "Кольцо",
-        "desc_en": "Stats gain: Intelligence: +6249 - magic attack from Intelligence: +18.747 - Magic Defense from from Intelligence: +6249 - Physical Attack from Intelligence: +6249",
-        "name_ru": "Ring Artifact: Ring of Intelligence (Кольцо)",
-        "priority": "Средний – The Кольцо provides excellent scaling stats through Интеллект, boosting both her healing and урон. However, its impact is more general and less team-focused than her Оружие and Книга, so it should be upgraded after those.",
-        "priority_en": "Medium – The ring provides excellent scaling stats through Intelligence, boosting both her healing and damage. However, its impact is more general and less team-focused than her Weapon and Book, so it should be upgraded after those."
-      },
-      {
-        "desc": "Stats gain: +6,500 Магическая Атака",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-attack.webp",
-        "name": "1st Glyph - Magic Attack:",
-        "slot": "Оружие",
-        "desc_en": "Stats gain: +6,500 Magic Attack",
-        "name_ru": "1st Glyph - Magic Attack: (Оружие)",
-        "priority": "Очень Высокий – Boosts both Light Form healing and Dark Form урон. Always upgrade first for maximum battle impact.",
-        "priority_en": "Very High – Boosts both Light Form healing and Dark Form damage. Always upgrade first for maximum battle impact."
-      },
-      {
-        "desc": "Stats gain: +62,200 Здоровье",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/health.webp",
-        "name": "2nd Glyph - Health:",
-        "slot": "Книга",
-        "desc_en": "Stats gain: +62,200 Health",
-        "name_ru": "2nd Glyph - Health: (Книга)",
-        "priority": "Средний – Improves survivability but doesn’t enhance healing or урон directly. Upgrade after offensive glyphs are maxed if you face heavy burst teams.",
-        "priority_en": "Medium – Improves survivability but doesn’t enhance healing or damage directly. Upgrade after offensive glyphs are maxed if you face heavy burst teams."
-      },
-      {
-        "desc": "Stats gain: +6,500 Защита от Магии",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-defense.webp",
-        "name": "3rd Glyph - Magic Defense:",
-        "slot": "Кольцо",
-        "desc_en": "Stats gain: +6,500 Magic Defense",
-        "name_ru": "3rd Glyph - Magic Defense: (Кольцо)",
-        "priority": "Низкий – Protects against enemy mages but has the least impact on her core roles. Upgrade only for survivability in magic-heavy battles.",
-        "priority_en": "Low – Protects against enemy mages but has the least impact on her core roles. Upgrade only for survivability in magic-heavy battles."
+        "name_ru": "Кольцо Ловкости",
+        "priority": "Очень высокий"
       }
     ],
     "patronage": [],
-    "war_flags": [
+    "war_flags": [],
+    "best_teams": [
       {
-        "desc": "This flag boosts all healing by 10%, perfectly enhancing Celeste's Light Form and making her healing more effective for the entire team.",
-        "name": "War Flag of Recovery",
-        "benefit": "Increased healing output allows Celeste to keep союзники alive longer, synergizing with physical урон and hybrid teams."
+        "hero": "Dante",
+        "reason": "Небула значительно увеличивает его физическую атаку, позволяя Данте наносить колоссальный урон по всей вражеской команде."
       },
       {
-        "desc": "This flag reduces enemy healing by 10%, maximizing the effectiveness of Celeste’s Dark Form and her anti-исцеление mechanics.",
-        "name": "War Flag of Decline",
-        "benefit": "Weakening enemy sustain allows Celeste and her союзники to deal more урон over time and Контролёр the flow of the battle."
+        "hero": "Orion",
+        "reason": "Получает огромный прирост к магической атаке от баффов Небулы, что позволяет ему мгновенно уничтожать пачки врагов своими ракетами."
+      },
+      {
+        "hero": "Sebastian",
+        "reason": "Отличная синергия критических ударов. Совместное использование Небулы и Себастьяна увеличивает общий урон команды на 42%."
+      },
+      {
+        "hero": "Keira",
+        "reason": "Получает колоссальное усиление физической атаки, что делает её рикошетящие атаки смертоносными для всей команды противника."
       }
     ],
-    "best_teams": []
+    "conclusion": "Небула — это герой поддержки тира SS, который остается обязательным для прокачки абсолютно всем игрокам. Её уникальная механика усиления союзников и невероятная гибкость в гибридных командах гарантируют ей доминирование в мете на долгие годы. Она отлично вписывается в большинство топовых связок (встречается в 83% сильнейших команд по статистике Глобальной Арены) и незаменима в таких режимах, как Война Гильдий, Асгард (битва с Ошем) и Башня. Главное — обеспечить ей надежную защиту от взрывного урона и правильно подобрать соседей по линии для максимальной реализации её баффов."
   },
   "isaac": {
     "cons": [
@@ -2983,163 +2680,281 @@ export const HERO_GUIDES_DB = {
     "conclusion": "Исаак — один из самых сильнейших героев для нейтрализации магических составов. Его способности подавляют врагов массовым молчанием, поглощением урона и ускоренной зарядкой. Он незаменим в физических сборках и является опорным героем в борьбе с боссом Ошем в Асгарде."
   },
   "ishmael": {
-    "id": "ishmael",
     "cons": [
-      "Высокий урон Output: Ishmael’s critical hits and attack speed in demonic form allow him to shred враги quickly.",
-      "Sustain through Вампиризм: He restores Здоровье while dealing урон, giving him great survivability in long fights.",
-      "Frontline Боец: Can function both as a урон dealer and semi-bruiser thanks to his lifesteal and Ловкость scaling.",
-      "Synergy with Buffers: Works exceptionally well with heroes who boost crit chance and Физическая Атака, like Sebastian, Nebula, and Jet.",
-      "Ascension Power Spike: Brutal Awakening makes his crits deal 4x урон, turning him into a true late-game carry."
+      "Зависимость от критических ударов: основной урон зависит от критов, что делает его уязвимым перед анти-крит героями, такими как Гелиос и Амира.",
+      "Слабость к чистому урону: такие враги, как Арахна и Фобос, обходят его уклонение и броню, быстро снижая его здоровье.",
+      "Зависимость от поддержки команды: без героев, усиливающих его характеристики или защищающих его, Ишмаэлю трудно полностью раскрыть свой потенциал.",
+      "Расход энергии в демонической форме: его ультимативная форма временна и прекращает действие, когда заканчивается энергия.",
+      "Уязвимость к контролю: оглушения, очарования и ослепления (например, от Лиэн) могут полностью вывести его из строя посреди боя."
     ],
-    "name": "Ишмаэль",
     "pros": [
-      "Высокий урон Output: Ishmael’s critical hits and attack speed in demonic form allow him to shred враги quickly.",
-      "Sustain through Вампиризм: He restores Здоровье while dealing урон, giving him great survivability in long fights.",
-      "Frontline Боец: Can function both as a урон dealer and semi-bruiser thanks to his lifesteal and Ловкость scaling.",
-      "Synergy with Buffers: Works exceptionally well with heroes who boost crit chance and Физическая Атака, like Sebastian, Nebula, and Jet.",
-      "Ascension Power Spike: Brutal Awakening makes his crits deal 4x урон, turning him into a true late-game carry."
+      "Высокий урон: критические удары и огромная скорость атаки в демонической форме позволяют ему быстро уничтожать врагов.",
+      "Выживаемость за счет вампиризма: восстанавливает здоровье при нанесении урона, что гарантирует отличную живучесть в долгих боях.",
+      "Универсальный боец передней линии: может выступать как в роли основного наносящего урон героя, так и в роли полу-танка благодаря уклонению и вампиризму.",
+      "Отличная синергия с бафферами: великолепно работает в связке с героями, увеличивающими шанс критического удара и физическую атаку (Себастьян, Небула, Джет).",
+      "Огромный скачок силы после Вознесения: умение «Пробуждение жестокости» увеличивает критический урон в 4 раза, превращая его в сокрушительного бойца на поздней стадии игры."
     ],
     "skins": [
       {
-        "desc": "- Физическая Атака from Ловкость: +4,095 - Броня from Ловкость: +1,365 Each Ловкость point grants: two points to Физическая Атака; one point to Броня; one extra point to Физическая Атака if Ловкость is the main stat of a hero. Total of Ловкость Skin Stone for max level: 30,825",
-        "name": "Default Skin",
-        "bonus": "Stats gain: Ловкость: +1,365",
-        "priority": "Очень Высокий – Boosting Ishmael’s main stat increases both his урон and survivability. Always upgrade this skin first."
+        "name": "Базовый облик",
+        "bonus": "Ловкость: +1,365",
+        "priority": "Очень Высокий — прокачка главной характеристики увеличивает и урон, и выживаемость. Качайте в первую очередь."
       },
       {
-        "desc": "Total of Ловкость Skin Stone for max level: 55,410",
-        "name": "Romantic Skin",
-        "bonus": "Stats gain: Critical Hit Chance: +2,960",
-        "priority": "Высокий – Critical hits are the core of Ishmael’s урон output, especially when combined with Awakening and Brutal Awakening ascension. This skin makes him far deadlier."
+        "name": "Романтический облик",
+        "bonus": "Шанс критического удара: +2,960",
+        "priority": "Высокий — критические удары лежат в основе урона Ишмаэля, особенно в сочетании с Пробуждением."
       },
       {
-        "desc": "Total of Ловкость Skin Stone for max level: 55,410",
-        "name": "Champion Skin",
-        "bonus": "Stats gain: Физическая Атака: +7,117",
-        "priority": "Средний Высокий – Directly boosts Ishmael’s raw урон. Strong, but slightly less impactful than the Ловкость and Critical Chance skins."
+        "name": "Чемпионский облик",
+        "bonus": "Физическая атака: +7,117",
+        "priority": "Средне-высокий — напрямую увеличивает базовый урон."
       },
       {
-        "desc": "Total of Ловкость Skin Stone for max level: 55,410",
-        "name": "Solar Skin",
-        "bonus": "Stats gain: Броня Penetration: +10,650",
-        "priority": "Средний – Helps Ishmael punch through Танк defenses. Good when facing armored frontlines, but less useful against magic-heavy teams."
+        "name": "Солнечный облик",
+        "bonus": "Пробивание брони: +10,650",
+        "priority": "Средний — помогает пробивать защиту бронированных танков."
       },
       {
-        "desc": "Total of Ловкость Skin Stone for max level: 55,410",
-        "name": "Spring Skin",
-        "bonus": "Stats gain: Физическая Атака: +7,095",
-        "priority": "Средний – Adds more Физическая Атака but is not as essential as the Champion or Romantic skins. Nice extra урон but not a priority."
+        "name": "Весенний облик",
+        "bonus": "Физическая атака: +7,095",
+        "priority": "Средний — дает дополнительную физическую атаку, но менее приоритетен, чем Чемпионский или Романтический."
       },
       {
-        "desc": "Total of Ловкость Skin Stone for max level: 55,410",
-        "name": "Masquerade Skin",
-        "bonus": "Stats gain: Здоровье: +106,645",
-        "priority": "Низкий – Provides survivability, but Ishmael relies more on Вампиризм and урон. This skin is situational and the last one to upgrade."
+        "name": "Маскарадный облик",
+        "bonus": "Здоровье: +106,645",
+        "priority": "Низкий — дает выживаемость, но Ишмаэль больше полагается на вампиризм и урон. Качайте в последнюю очередь."
       },
       {
-        "desc": "Total of Ловкость Skin Stone for max level: N/A (visual skin) Note: This skin can only be obtained during a special event using an Event Ticket .",
-        "name": "Shredder Skin",
-        "bonus": "Stats gain: None (Visual Only)",
-        "priority": "Very Низкий – This skin is purely cosmetic and has no effect on Ishmael’s stats or gameplay."
+        "name": "Облик Шреддера",
+        "bonus": "Нет (только внешний вид)",
+        "priority": "Очень Низкий — чисто косметический облик."
       }
     ],
     "glyphs": [
       {
-        "desc": "Stats gain: Critical Hit Chance: +1,995",
-        "name": "4th Glyph - Critical Hit Chance:",
-        "name_en": "4th Glyph - Critical Hit Chance:",
-        "priority": "Средний – Critical hits are central to Ishmael’s урон output, but his kit and artifacts already provide strong crit boosts. This glyph is still important but not as urgent as Физическая Атака or Броня Penetration."
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/physical-attack.webp",
+        "name": "Физическая атака"
       },
       {
-        "desc": "Stats gain: Ловкость: +1,135 - Физическая Атака from Ловкость: +3,405 - Броня from Ловкость: +1,135 Each Ловкость point grants: two points to Физическая Атака; one point to Броня; one extra point to Физическая Атака if Ловкость is the main stat of a hero.",
-        "name": "5th Glyph - Ловкость:",
-        "name_en": "5th Glyph - Agility:",
-        "priority": "Средний-Низкий – Ловкость provides both урон and Броня, but the gains are smaller compared to direct Физическая Атака or Броня Penetration. Useful for balance, but should be evolved last."
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/health.webp",
+        "name": "Здоровье"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/armor-penetration.webp",
+        "name": "Пробивание брони"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/crit-hit-chance.webp",
+        "name": "Шанс критического удара"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/agility.webp",
+        "name": "Ловкость"
       }
     ],
-    "counters": [],
-    "overview": "Have you ever imagined fighting your own inner demon while leading your team to victory? Ishmael’s tale in Хроники Хаоса (Dominion Era) is both tragic and inspiring. Once forced to kill his own father to prevent a dark sacrifice, he now carries the shadow of that battle within himself. This makes him one of the most fascinating warriors in the game. In this guide, we’ll dive into Ishmael’s abilities, stats, strengths, and the best ways to maximize his potential in battle. Whether you are a beginner or a seasoned player, understanding how to build and Поддержка Ishmael can make the difference between victory and defeat.",
+    "counters": [
+      {
+        "hero": "Amira",
+        "reason": "Амира нацелена на героев с основной характеристикой Ловкость. Ее <a href=\"#hero/amira?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">заклинание желаний</a> превращает все его критические удары в автоматические промахи на несколько секунд, полностью лишая его основного источника урона."
+      },
+      {
+        "hero": "Arachne",
+        "reason": "Умения Арахны наносят чистый урон и оглушают цели. Поскольку Ишмаэль не может уклониться от чистого урона, он быстро теряет здоровье, несмотря на свой вампиризм, а оглушение прерывает его непрерывные атаки."
+      },
+      {
+        "hero": "Helios",
+        "reason": "Гелиос наказывает за критические удары своим <a href=\"#hero/helios?skill=4\" style=\"color:#38bdf8; text-decoration:underline;\">пассивным умением «Пламенное Возмездие»</a>. Так как Ишмаэль полагается на криты, Гелиос отражает огромный магический урон обратно, заставляя Ишмаэля уничтожать самого себя."
+      },
+      {
+        "hero": "Lian",
+        "reason": "Лиэн <a href=\"#hero/lian?skill=4\" style=\"color:#38bdf8; text-decoration:underline;\">очаровывает</a> атакующих ее врагов, заставляя Ишмаэля прекратить атаки. Она также наносит чистый урон, который обходит его защиту."
+      },
+      {
+        "hero": "Phobos",
+        "reason": "Фобос нацеливается на ближайшего врага (обычно Ишмаэля), снижая его физическую атаку и нанося чистый урон, что подрывает его выживаемость."
+      }
+    ],
+    "overview": "Ишмаэль — это боец передней линии, чья сила зависит от ловкости и стойкости. Его уникальная история трагедии и внутренней борьбы делает его не только мощным героем на поле боя, но и одним из самых интересных персонажей в Hero Wars: Dominion Era. Обладая высокой выживаемостью, Ишмаэль исцеляет себя во время нанесения урона, что делает его постоянной угрозой в затяжных боях. Его потенциал раскрывается в полной мере при поддержке союзников, увеличивающих урон и шанс критического удара, таких как Себастьян, Небула, Джет и Фафнир. Освоение Ишмаэля требует баланса: раскрытия его огромного атакующего потенциала при обеспечении надежной поддержки для доминирования на поле боя.",
     "artifacts": [
       {
-        "desc": "Stats gain: Critical Hit Chance: +13,941",
+        "desc": "Шанс критического удара: +13,941",
         "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/weapon-ishmael-hidden-demons-katars.webp",
-        "name": "Weapon Artifact: Hidden Demon’s Katars",
+        "name": "Катары Скрытого Демона",
         "slot": "Оружие",
-        "desc_en": "Stats gain: Critical Hit Chance: +13,941",
-        "name_ru": "Weapon Artifact: Hidden Demon’s Katars (Оружие)",
-        "priority": "Очень Высокий – This artifact activates with Ishmael’s ultimate skill, boosting critical hit chance for the whole team. Since Ishmael’s main Сила is dealing devastating critical hits, this artifact is essential and should always be prioritized first.",
-        "priority_en": "Very High – This artifact activates with Ishmael’s ultimate skill, boosting critical hit chance for the whole team. Since Ishmael’s main strength is dealing devastating critical hits, this artifact is essential and should always be prioritized first."
+        "name_ru": "Катары Скрытого Демона",
+        "priority": "Очень Высокий — активируется при использовании ультимейта, увеличивая шанс критического удара для всей команды. Это ключевой артефакт."
       },
       {
-        "desc": "Stats gain: Броня Penetration: +16,731, Физическая Атака: +5,577",
+        "desc": "Пробивание брони: +16,731, Физическая атака: +5,577",
         "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/alchemists-folio.webp",
-        "name": "Book Artifact: Alchemist’s Folio",
+        "name": "Фолиант Алхимика",
         "slot": "Книга",
-        "desc_en": "Stats gain: Armor Penetration: +16,731, Physical Attack: +5,577",
-        "name_ru": "Book Artifact: Alchemist’s Folio (Книга)",
-        "priority": "Высокий – Increases Ishmael’s ability to bypass enemy Броня and boosts his raw урон. This synergizes perfectly with his fast critical strikes, making him more effective against tanky opponents. Upgrade after his Оружие artifact.",
-        "priority_en": "High – Increases Ishmael’s ability to bypass enemy armor and boosts his raw damage. This synergizes perfectly with his fast critical strikes, making him more effective against tanky opponents. Upgrade after his weapon artifact."
+        "name_ru": "Фолиант Алхимика",
+        "priority": "Высокий — позволяет Ишмаэлю игнорировать броню танков и наносить сокрушительный урон. Прокачивайте вторым."
       },
       {
-        "desc": "Stats gain: Ловкость: +6,249 - Физическая Атака from Ловкость: +18,747 - Броня from Ловкость: +6,249 Each Ловкость point grants: two points to Физическая Атака; one point to Броня; one extra point to Физическая Атака if Ловкость is the main stat of a hero.",
+        "desc": "Ловкость: +6,249 (Физическая атака: +18,747, Броня: +6,249)",
         "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/ring-of-agility.webp",
-        "name": "Ring Artifact: Ring of Agility",
+        "name": "Кольцо Ловкости",
         "slot": "Кольцо",
-        "desc_en": "Stats gain: Agility: +6,249 - Physical attack from Agility: +18,747 - Armor from Agility: +6,249 Each agility point grants: two points to physical attack; one point to armor; one extra point to physical attack if agility is the main stat of a hero.",
-        "name_ru": "Ring Artifact: Ring of Agility (Кольцо)",
-        "priority": "Средний Высокий – This artifact boosts Ishmael’s main stat, giving both offense and defense. While useful, it doesn’t provide as much team-wide advantage as his Оружие or Книга, so it’s evolved third.",
-        "priority_en": "Medium High – This artifact boosts Ishmael’s main stat, giving both offense and defense. While useful, it doesn’t provide as much team-wide advantage as his weapon or book, so it’s evolved third."
-      },
-      {
-        "desc": "Stats gain: Физическая Атака: +4,340",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/physical-attack.webp",
-        "name": "1st Glyph - Physical Attack:",
-        "slot": "Оружие",
-        "desc_en": "Stats gain: Physical Attack: +4,340",
-        "name_ru": "1st Glyph - Physical Attack: (Оружие)",
-        "priority": "Очень Высокий – Ishmael relies on raw physical урон to trigger massive critical hits. Increasing Физическая Атака directly scales his DPS, making this the top glyph to evolve first.",
-        "priority_en": "Very High – Ishmael relies on raw physical damage to trigger massive critical hits. Increasing physical attack directly scales his DPS, making this the top glyph to evolve first."
-      },
-      {
-        "desc": "Stats gain: Здоровье: +62,200",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/health.webp",
-        "name": "2nd Glyph - Health:",
-        "slot": "Книга",
-        "desc_en": "Stats gain: Health: +62,200",
-        "name_ru": "2nd Glyph - Health: (Книга)",
-        "priority": "Высокий – While Ishmael excels in offense, he can be fragile. Extra Здоровье significantly boosts his survivability, allowing him to stay alive long enough to unleash critical strikes. Prioritize after Физическая Атака.",
-        "priority_en": "High – While Ishmael excels in offense, he can be fragile. Extra health significantly boosts his survivability, allowing him to stay alive long enough to unleash critical strikes. Prioritize after Physical Attack."
-      },
-      {
-        "desc": "Stats gain: Броня Penetration: +6,500",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/armor-penetration.webp",
-        "name": "3rd Glyph - Armor Penetration:",
-        "slot": "Кольцо",
-        "desc_en": "Stats gain: Armor Penetration: +6,500",
-        "name_ru": "3rd Glyph - Armor Penetration: (Кольцо)",
-        "priority": "Высокий – This ensures Ishmael’s attacks can cut through Танк defenses, making him lethal even against armored teams. A strong offensive stat, upgraded right after Здоровье for balance.",
-        "priority_en": "High – This ensures Ishmael’s attacks can cut through tank defenses, making him lethal even against armored teams. A strong offensive stat, upgraded right after Health for balance."
+        "name_ru": "Кольцо Ловкости",
+        "priority": "Средне-высокий — увеличивает основную характеристику, давая прирост к атаке и броне. Прокачивайте в третью очередь."
       }
     ],
     "patronage": [],
-    "war_flags": [
+    "war_flags": [],
+    "best_teams": [
       {
-        "desc": "",
-        "name": "War Flag of Swift Warriors",
-        "benefit": "Speeds up skill cooldown for Warriors by 5%, allowing Ishmael to use his Высокий-урон abilities more frequently and stay at peak DPS in the frontline."
+        "hero": "Sebastian",
+        "reason": "Увеличивает шанс критического удара и физическую атаку, что идеально сочетается с критическими ударами Ишмаэля."
       },
       {
-        "desc": "",
-        "name": "War Flag of Decline",
-        "benefit": "Reduces enemy healing by 10%, making it easier for Ishmael to finish off враги quickly despite their sustain abilities."
+        "hero": "Nebula",
+        "reason": "Значительно увеличивает физическую атаку Ишмаэля, повышая его общий урон."
       },
       {
-        "desc": "",
-        "name": "War Flag of Frost",
-        "benefit": "Reduces enemy skill levels by 2 every 18 seconds. This directly hinders enemy урон and disables powerful abilities, keeping Ishmael safer in the frontline while he deals урон."
+        "hero": "Jet",
+        "reason": "Повышает шанс критического удара всей команды, помогая Ишмаэлю чаще активировать вампиризм."
+      },
+      {
+        "hero": "Fafnir",
+        "reason": "Предоставляет щиты для защиты на передней линии и усиливает физический урон."
+      },
+      {
+        "hero": "Lyria",
+        "reason": "Отлично дополняет Ишмаэля в атакующих и защитных сборках, помогая контролировать поле боя."
       }
     ],
-    "best_teams": []
+    "conclusion": "Ишмаэль — грозный боец передней линии в Hero Wars: Dominion Era, способный наносить огромный критический урон и восстанавливать здоровье за счет вампиризма. Его сила раскрывается в синергии с героями, увеличивающими шанс критического удара и физическую атаку, а также при использовании правильных флагов и артефактов. Однако он уязвим к чистому урону, контролю и анти-крит механикам, поэтому правильный подбор команды имеет решающее значение. Приоритетное развитие правильных умений, артефактов, символов, обликов и флагов позволит игрокам полностью раскрыть потенциал Ишмаэля и доминировать как в PvP, так и в PvE сражениях."
+  },
+  "celeste": {
+    "cons": [
+      "Сильно зависит от Магического Урона; страдает против невосприимчивых к магии героев, таких как Руфус.",
+      "Механики группового исцеления и блокировки исцеления менее эффективны против точечного взрывного урона.",
+      "Уязвима к щитам и эффектам поглощения урона (например, Корвус, Исаак).",
+      "Переключение форм требует управления энергией; потеря эффективности «Двух судеб» может снизить общее влияние на бой.",
+      "Хрупкая на передней линии; правильное позиционирование критически важно для выживания."
+    ],
+    "pros": [
+      "Двойная форма позволяет переключаться между лечением (Светлая форма) и высоким магическим уроном с эффектами блокировки исцеления (Темная форма).",
+      "Ультимативное умение «Две судьбы» можно использовать всего при 50% энергии, что позволяет ей постоянно менять формы и адаптироваться к бою.",
+      "Сильная синергия с такими героями, как Небула и Ирис, для максимизации магического урона.",
+      "Светлая форма лечит союзников и снимает дебаффы, что делает её универсальной поддержкой в командах с физическим уроном.",
+      "Темная форма блокирует исцеление противника и превращает его в урон, что делает её эффективной против живучих команд.",
+      "Высокий прирост Магической Атаки и Пробивания Магической Защиты благодаря артефактам, питомцам и символам."
+    ],
+    "skins": [
+      {
+        "name": "Базовый облик",
+        "bonus": "Интеллект +1,365",
+        "priority": "Высокий – увеличивает базовые характеристики, полезен для ранней прокачки."
+      },
+      {
+        "name": "Зимний облик",
+        "bonus": "Магическая Атака +10,650",
+        "priority": "Очень Высокий – напрямую увеличивает как исцеление в Светлой форме, так и урон в Темной форме. Самый важный облик."
+      },
+      {
+        "name": "Весенний облик",
+        "bonus": "Магическая Атака +10,650",
+        "priority": "Средне-высокий – также увеличивает Магическую Атаку, но прокачивается после Зимнего облика."
+      },
+      {
+        "name": "Романтический облик",
+        "bonus": "Магическая Защита +10,650",
+        "priority": "Средний – повышает выживаемость против магических команд, полезен в определенных матчапах."
+      },
+      {
+        "name": "Маскарадный облик",
+        "bonus": "Пробивание Магической Защиты +10,650",
+        "priority": "Низкий – помогает преодолевать защиту врагов, но для Селесты приоритетнее чистая Магическая Атака."
+      }
+    ],
+    "glyphs": [
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-attack.webp",
+        "name": "Магическая Атака"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-penetration.webp",
+        "name": "Пробивание Магической Защиты"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/intelligence.webp",
+        "name": "Интеллект"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/health.webp",
+        "name": "Здоровье"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-defense.webp",
+        "name": "Магическая Защита"
+      }
+    ],
+    "counters": [
+      {
+        "hero": "Cornelius",
+        "reason": "Корнелиус бьет по врагу с самым высоким показателем Интеллекта своим <a href=\"#hero/cornelius?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">монолитом</a>, нанося огромный урон. Поскольку главной характеристикой Селесты является Интеллект, она получает тяжелейшие повреждения."
+      },
+      {
+        "hero": "Corvus",
+        "reason": "Его <a href=\"#hero/corvus?skill=4\" style=\"color:#38bdf8; text-decoration:underline;\">алтарь</a> наносит чистый урон всем врагам. Поскольку Селеста полагается на периодический урон от блокировки исцеления, Корвус обходит её сильные стороны и сурово наказывает её."
+      },
+      {
+        "hero": "Isaac",
+        "reason": "Его способность <a href=\"#hero/isaac?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">Тес'Лин</a> поглощает часть любого магического урона, включая урон Селесты, и преобразует его в заряд. Это мешает ей эффективно наносить урон Исааку и его союзникам."
+      },
+      {
+        "hero": "Rufus",
+        "reason": "Руфус полностью <a href=\"#hero/rufus?skill=4\" style=\"color:#38bdf8; text-decoration:underline;\">невосприимчив к магическому урону</a>, а поскольку Селеста наносит исключительно магический урон (даже своими базовыми атаками), она ни при каких обстоятельствах не способна его победить."
+      }
+    ],
+    "overview": "Селеста — один из самых завораживающих героев в Hero Wars: Dominion Era, балансирующий между силами света и тьмы. Она может менять форму прямо посреди боя, что делает её одним из самых универсальных магов в игре. В Светлой форме Селеста блистает как целитель, снимая дебаффы и восстанавливая силы своих союзников. В Темной форме она превращается в грозного мага, блокирующего исцеление противника и преобразующего его в чистый урон. Этот тонкий баланс делает её незаменимой как в физических, так и в магических командах.",
+    "artifacts": [
+      {
+        "desc": "Магическая Атака: +50,190",
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/weapon-celestes-crown.webp",
+        "name": "Корона Селесты",
+        "slot": "Оружие",
+        "name_ru": "Корона Селесты",
+        "priority": "Очень Высокий – активируется при использовании ультимейта. Поскольку Селесте нужно всего 50% энергии, этот артефакт дает практически постоянный бонус к Магической Атаке для всей команды."
+      },
+      {
+        "desc": "Пробивание Магической Защиты: +10,680 | Магическая Атака: +8,364",
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/manuscript-of-the-void.webp",
+        "name": "Гримуар Пустоты",
+        "slot": "Книга",
+        "name_ru": "Гримуар Пустоты",
+        "priority": "Высокий – Пробивание Магической Защиты критически важно для Темной формы, чтобы её пламя пробивало защиту врагов, а Магическая Атака усиливает лечение."
+      },
+      {
+        "desc": "Интеллект: +6,249 (Магическая Атака: +18,747, Магическая Защита: +6,249, Физическая Атака: +6,249)",
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/ring-of-intelligence.webp",
+        "name": "Кольцо Интеллекта",
+        "slot": "Кольцо",
+        "name_ru": "Кольцо Интеллекта",
+        "priority": "Средний – дает отличный прирост характеристик от Интеллекта, но имеет менее выраженный командный эффект по сравнению с Оружием и Книгой."
+      }
+    ],
+    "patronage": [],
+    "war_flags": [],
+    "best_teams": [
+      {
+        "hero": "Nebula",
+        "reason": "Значительно увеличивает Магическую Атаку Селесты, что существенно усиливает как её исцеление, так и наносимый урон."
+      },
+      {
+        "hero": "Iris",
+        "reason": "Отлично сочетается с Селестой для создания мощного магического давления и быстрого уничтожения вражеской передней линии."
+      },
+      {
+        "hero": "Satori",
+        "reason": "Селеста обеспечивает Сатори надежное выживание на ранних секундах боя и помогает быстрее накапливать метки за счет блокировки вражеского исцеления."
+      }
+    ],
+    "conclusion": "Уникальная способность Селесты быстро накапливать энергию позволяет ей часто менять формы, предоставляя команде гибкое сочетание исцеления и магического урона. Однако бонус от её артефактного оружия длится ограниченное время, поэтому для максимального эффекта важен точный расчет времени. В настоящее время Селеста лучше всего проявляет себя в кампаниях, особенно на поздних уровнях, где у врагов сильные способности к исцелению, что делает её блокировку исцеления и взрывную поддержку неоценимыми. Тем не менее, в текущей PvP-мете она используется ограниченно, так как многие соревновательные команды предпочитают более быстрых или стабильных дилеров урона."
   },
   "helios": {
     "id": "helios",
@@ -3267,322 +3082,227 @@ export const HERO_GUIDES_DB = {
     "conclusion": "Адам — точный и сокрушительный стрелок, способный быстро ликвидировать ключевые цели врага. Механика Метки охотника награждает игрока за правильный подбор команды, обеспечивающей Адаму время и ресурсы для раскрытия потенциала. При правильной сборке с упором на первое и второе умения, а также поддержке таких героев, как Фафнир, Лирия и Электра, Адам становится смертоносной силой в Hero Wars: Dominion Era."
   },
   "lyria": {
-    "id": "lyria",
     "cons": [
-      "Strong synergy with undead союзники.",
-      "Great at shutting down Уклонение-based heroes.",
-      "Passive aura provides consistent team buffs.",
-      "Can исцеление herself and a key ally with Вампиризм."
+      "Требует наличия союзников-нежити для полного раскрытия своего потенциала",
+      "Менее эффективна без четкой координации и синергии в команде",
+      "Ограниченный урон, если в бою погибает мало существ для сбора душ"
     ],
-    "name": "Лирия",
     "pros": [
-      "Strong synergy with undead союзники.",
-      "Great at shutting down Уклонение-based heroes.",
-      "Passive aura provides consistent team buffs.",
-      "Can исцеление herself and a key ally with Вампиризм."
+      "Сильная синергия с союзниками из фракции Нежити",
+      "Отлично нейтрализует героев, полагающихся на уклонение",
+      "Пассивная аура обеспечивает постоянные полезные эффекты для всей команды",
+      "Способна эффективно исцелять себя и ключевого союзника с помощью вампиризма"
     ],
     "skins": [
       {
-        "desc": "",
-        "name": "Default Skin: Strength +1365",
-        "bonus": "Boosts both Физическая Атака and max Здоровье. Since Сила is her main stat, this skin increases her survivability and also enhances her Вампиризм-based healing. It’s essential if Lyria is dying too quickly in the front line.",
+        "name": "Базовый облик",
+        "bonus": "Сила +1365",
         "priority": "Высокий"
       },
       {
-        "desc": "",
-        "name": "Masquerade Skin: Physical Attack +7095",
-        "bonus": "Greatly increases her урон output and synergizes with her Вампиризм ability, but does not improve survivability. Best upgraded after boosting Сила with the Default Skin.",
+        "name": "Маскарадный облик",
+        "bonus": "Физическая атака +7095",
         "priority": "Средний"
       },
       {
-        "desc": "",
-        "name": "Winter Skin: Health +106,670",
-        "bonus": "Provides a massive Здоровье boost, significantly improving Lyria's durability on the front line. A great secondary upgrade after the Default Skin if you need extra survivability.",
+        "name": "Зимний облик",
+        "bonus": "Здоровье +106,670",
         "priority": "Высокий"
       },
       {
-        "desc": "",
-        "name": "Ceremonial Skin: Armor Penetration +10,650",
-        "bonus": "Increases Броня penetration, improving her physical урон against heavily armored targets. Obtainable from the Tournament of Hero Power. Upgrade after the Default and Winter skins.",
+        "name": "Церемониальный облик",
+        "bonus": "Пробивание брони +10,650",
         "priority": "Средний"
       }
     ],
     "glyphs": [
       {
-        "desc": "Improves her durability but is less efficient than Сила, which already grants Здоровье and Физическая Атака.",
-        "name": "4th – Здоровье:",
-        "name_en": "4th – Health:",
-        "priority": "Средний"
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/physical-attack.webp",
+        "name": "Физическая атака"
       },
       {
-        "desc": "Situationally useful against mages but the least impactful glyph overall for her core role.",
-        "name": "5th – Защита от Магии:",
-        "name_en": "5th – Magic Defense:",
-        "priority": "Низкий"
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/strength.webp",
+        "name": "Сила"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/armor.webp",
+        "name": "Броня"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/health.webp",
+        "name": "Здоровье"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-defense.webp",
+        "name": "Защита от магии"
       }
     ],
-    "counters": [],
-    "overview": "Lyria is the latest addition to the Хроники Хаоса (Dominion Era) roster, and she's turning heads with her eerie powers and incredible utility on the battlefield. This guide is here to walk you through everything you need to know about her from skills and artifacts to the best союзники and counters. Whether you’re a beginner or a seasoned player, get ready to discover how Lyria can shake up your team comps and maybe even the entire meta. Lyria - Best Team #1 Axel Merlin Albus Cain Fenris Oliver Vanguard Aidan Sebastian Nebula Ishmael Lyria",
+    "counters": [
+      {
+        "hero": "Dante",
+        "reason": "Пассивная аура Лирии снижает уклонение Данте и увеличивает получаемый им физический урон, делая его крайне уязвимым."
+      },
+      {
+        "hero": "Heidi",
+        "reason": "Лирия эффективно лишает Хайди его главного преимущества — уклонения, позволяя физическим атакам беспрепятственно достигать цели."
+      },
+      {
+        "hero": "Yasmine",
+        "reason": "Снижая показатель уклонения, Лирия мешает Ясмин избегать атак и значительно увеличивает входящий по ней физический урон."
+      }
+    ],
+    "overview": "Лирия — новейшее дополнение к списку героев Hero Wars: Dominion Era, привлекающее внимание своими жуткими потусторонними силами и невероятной полезностью на поле боя. С ранних лет ей пришлось учиться справляться со своим леденящим душу даром: слышать навязчивые стоны призраков повсюду. Со временем она поняла, что сделки с мертвыми — отличное решение, дарующее огромную силу. Одна из таких сделок помогла могущественному духу Киры избавиться от проклятия. Лирия выступает в роли бойца передней линии, обладающего синергией с нежитью, способностью снижать уклонение врагов и поддерживать союзников вампиризмом.",
     "artifacts": [
       {
-        "desc": "In-game description: Lyria collects a soul every time someone dies on the battlefield. Once activated, Lyria opens a portal to the realm of the dead, unleashing vengeful spirits. The portal releases at least 3 spirits, with each of them dealing one strike. The number of extra spirits scales with the number of reaped souls but cannot exceed 7. Each extra hit consumes one reaped soul. All hits target the enemy with the lowest Здоровье. Skill Explanation: Think of Soul Reaper like charging up power by saving souls during battle — every death (yours or the enemy’s) adds a charge. When you activate it, Lyria sends out ghost spirits that each deal one hit of Physical урон to the weakest enemy. She always launches at least 3 hits, and up to 7 if you’ve collected enough souls. Since the урон formula is based on her Физическая Атака, every upgrade directly makes each hit stronger — and with up to 7 hits, those gains multiply fast. Formula – Physical урон за удар: 41,521 (45% Физическая Атака + 50 × level) Skill Animation Info",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/hero/lyria/lyria-1st-skill-icon.webp",
-        "name": "1st – Soul Reaper",
-        "slot": "Оружие",
-        "desc_en": "In-game description: Lyria collects a soul every time someone dies on the battlefield. Once activated, Lyria opens a portal to the realm of the dead, unleashing vengeful spirits. The portal releases at least 3 spirits, with each of them dealing one strike. The number of extra spirits scales with the number of reaped souls but cannot exceed 7. Each extra hit consumes one reaped soul. All hits target the enemy with the lowest health. Skill Explanation: Think of Soul Reaper like charging up power by saving souls during battle — every death (yours or the enemy’s) adds a charge. When you activate it, Lyria sends out ghost spirits that each deal one hit of Physical Damage to the weakest enemy. She always launches at least 3 hits, and up to 7 if you’ve collected enough souls. Since the damage formula is based on her Physical Attack, every upgrade directly makes each hit stronger — and with up to 7 hits, those gains multiply fast. Formula – Physical Damage per hit: 41,521 (45% Physical Attack + 50 × level) Skill Animation Info",
-        "name_ru": "1st – Soul Reaper (Оружие)",
-        "priority": "Очень Высокий – This is Lyria’s main source of burst урон. Each level increases урон за удар, and since she can deal up to 7 hits in a single activation, the total урон boost per upgrade is enormous. Always upgrade this skill first.",
-        "priority_en": "Very High – This is Lyria’s main source of burst damage. Each level increases damage per hit, and since she can deal up to 7 hits in a single activation, the total damage boost per upgrade is enormous. Always upgrade this skill first."
-      },
-      {
-        "desc": "In-game description: Lyria binds herself to the ally with the highest Физическая Атака for 12s. Both Lyria and the bonded ally receive a Вампиризм bonus. While the Bonds of Alliance are active, Вампиризм restores Здоровье for them both. If the bonded ally is undead, they both get a Физическая Атака bonus. Skill Explanation: Lyria creates a magical bond with her strongest physical урон dealer. “Вампиризм” means that a portion of the урон dealt is converted into healing — so both heroes исцеление themselves simply by attacking. If the bonded ally is an undead hero like Keira or Corvus, they both also receive a bonus to Физическая Атака , making them hit harder and исцеление even more. Upgrading this skill increases both the Вампиризм percentage and the Физическая Атака bonus. Formula – Вампиризм Bonus: 20% (0.1153847 × level + 5) Formula – Физическая Атака Bonus (undead ally): 10,000 (75 × level + 250) Skill Animation Info",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/hero/lyria/lyria-2nd-skill-icon.webp",
-        "name": "2nd – Bonds of Alliance",
-        "slot": "Книга",
-        "desc_en": "In-game description: Lyria binds herself to the ally with the highest physical attack for 12s. Both Lyria and the bonded ally receive a vampirism bonus. While the Bonds of Alliance are active, vampirism restores health for them both. If the bonded ally is undead, they both get a physical attack bonus. Skill Explanation: Lyria creates a magical bond with her strongest physical damage dealer. “Vampirism” means that a portion of the damage dealt is converted into healing — so both heroes heal themselves simply by attacking. If the bonded ally is an undead hero like Keira or Corvus, they both also receive a bonus to Physical Attack , making them hit harder and heal even more. Upgrading this skill increases both the vampirism percentage and the physical attack bonus. Formula – Vampirism Bonus: 20% (0.1153847 × level + 5) Formula – Physical Attack Bonus (undead ally): 10,000 (75 × level + 250) Skill Animation Info",
-        "name_ru": "2nd – Bonds of Alliance (Книга)",
-        "priority": "Высокий – This is the backbone of Lyria’s Поддержка role. It keeps both her and her main DPS ally alive through Вампиризм, and when paired with an undead hero the attack bonus amplifies their урон significantly. Upgrade this second, right after Soul Reaper.",
-        "priority_en": "High – This is the backbone of Lyria’s support role. It keeps both her and her main DPS ally alive through vampirism, and when paired with an undead hero the attack bonus amplifies their damage significantly. Upgrade this second, right after Soul Reaper."
-      },
-      {
-        "desc": "In-game description: Lyria summons 3 spirits. The spirits chase the enemy who has dealt the most урон in the last 10 seconds. The effect lasts 10 seconds. While the spirits are present, the chased hero cannot attack anyone except them, while other heroes cannot target the spirits. Skill Explanation: This skill is crowd Контролёр — it forces the most dangerous enemy hero to attack only the 3 summoned spirits for 10 seconds, effectively removing them from the fight. Think of it as putting a threat in “time-out” while Lyria’s team focuses on others. The spirits have their own Здоровье based on Lyria’s total Здоровье. Upgrading this skill increases the spirits’ Здоровье, making them survive longer before the targeted enemy breaks free. Especially powerful against Высокий-burst attackers like Dante or Ishmael. Formula – Spirit Здоровье: 12,426 (0.25% Здоровье + 75 × level) Skill Animation Info",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/hero/lyria/lyria-3rd-skill-icon.webp",
-        "name": "3rd – Children of the Grave",
-        "slot": "Кольцо",
-        "desc_en": "In-game description: Lyria summons 3 spirits. The spirits chase the enemy who has dealt the most damage in the last 10 seconds. The effect lasts 10 seconds. While the spirits are present, the chased hero cannot attack anyone except them, while other heroes cannot target the spirits. Skill Explanation: This skill is crowd control — it forces the most dangerous enemy hero to attack only the 3 summoned spirits for 10 seconds, effectively removing them from the fight. Think of it as putting a threat in “time-out” while Lyria’s team focuses on others. The spirits have their own Health based on Lyria’s total health. Upgrading this skill increases the spirits’ health, making them survive longer before the targeted enemy breaks free. Especially powerful against high-burst attackers like Dante or Ishmael. Formula – Spirit Health: 12,426 (0.25% Health + 75 × level) Skill Animation Info",
-        "name_ru": "3rd – Children of the Grave (Кольцо)",
-        "priority": "Средний – The crowd Контролёр is useful, but the upgrade gain (spirit Здоровье) is less impactful than increasing урон or Вампиризм. Upgrade this last, after Soul Reaper, Bonds of Alliance, and Shackles of Doom are already leveled up.",
-        "priority_en": "Medium – The crowd control is useful, but the upgrade gain (spirit health) is less impactful than increasing damage or vampirism. Upgrade this last, after Soul Reaper, Bonds of Alliance, and Shackles of Doom are already leveled up."
-      },
-      {
-        "desc": "Grants Броня Penetration to boost physical урон output.",
+        "desc": "Пробивание брони",
         "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/lyria-weapon.webp",
-        "name": "1st - Khopesh of Speaker with the Dead:",
+        "name": "Хопеш Говорящей с Мертвыми",
         "slot": "Оружие",
-        "desc_en": "Grants Armor Penetration to boost physical damage output.",
-        "name_ru": "1st - Khopesh of Speaker with the Dead: (Оружие)",
-        "priority": "1",
-        "priority_en": "1"
+        "name_ru": "Хопеш Говорящей с Мертвыми",
+        "priority": "1 (Высокий)"
       },
       {
-        "desc": "Increases both Броня and Защита от Магии. Great for frontliners.",
+        "desc": "Броня и Защита от магии",
         "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/book-defenders-covenant.webp",
-        "name": "2nd - Defender's Covenant:",
+        "name": "Завет Защитника",
         "slot": "Книга",
-        "desc_en": "Increases both Armor and Magic Defense. Great for frontliners.",
-        "name_ru": "2nd - Defender's Covenant: (Книга)",
-        "priority": "3",
-        "priority_en": "3"
+        "name_ru": "Завет Защитника",
+        "priority": "3 (Средний)"
       },
       {
-        "desc": "Boosts Сила, which increases her Физическая Атака power and Здоровье.",
+        "desc": "Сила",
         "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/ring-of-strength.webp",
-        "name": "3rd - Ring of Strength:",
+        "name": "Кольцо Силы",
         "slot": "Кольцо",
-        "desc_en": "Boosts Strength, which increases her physical attack power and health.",
-        "name_ru": "3rd - Ring of Strength: (Кольцо)",
-        "priority": "2",
-        "priority_en": "2"
-      },
-      {
-        "desc": "",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/physical-attack.webp",
-        "name": "1st – Physical Attack:",
-        "slot": "Оружие",
-        "desc_en": "",
-        "name_ru": "1st – Physical Attack: (Оружие)",
-        "priority": "This directly boosts Lyria’s skill урон and the effectiveness of her Вампиризм, making it the top priority.",
-        "priority_en": "This directly boosts Lyria’s skill damage and the effectiveness of her vampirism, making it the top priority."
-      },
-      {
-        "desc": "As her main stat, Сила gives Lyria +1 Физическая Атака and +40 Здоровье per point, making it a great all-around stat for урон and survivability.",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/strength.webp",
-        "name": "2nd – Strength:",
-        "slot": "Книга",
-        "desc_en": "As her main stat, Strength gives Lyria +1 Physical Attack and +40 Health per point, making it a great all-around stat for damage and survivability.",
-        "name_ru": "2nd – Strength: (Книга)",
-        "priority": "Высокий",
-        "priority_en": "High"
-      },
-      {
-        "desc": "Boosts her resistance against physical attackers, which is important for a frontline Танк-Поддержка hybrid like Lyria.",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/armor.webp",
-        "name": "3rd – Armor:",
-        "slot": "Кольцо",
-        "desc_en": "Boosts her resistance against physical attackers, which is important for a frontline tank-support hybrid like Lyria.",
-        "name_ru": "3rd – Armor: (Кольцо)",
-        "priority": "Средний",
-        "priority_en": "Medium"
+        "name_ru": "Кольцо Силы",
+        "priority": "2 (Высокий)"
       }
     ],
     "patronage": [],
-    "war_flags": [
+    "war_flags": [],
+    "best_teams": [
       {
-        "desc": "This flag increases all healing effects by 10%, directly enhancing Lyria’s core role as a Хилер and Поддержка unit. Her healing-over-time abilities and burst heals benefit greatly from this bonus, improving her effectiveness in keeping союзники alive during drawn-out fights.",
-        "name": "War Flag of Recovery",
-        "benefit": "Amplifies Lyria’s healing output for both single-target and team-wide heals, making her a much more impactful Поддержка unit, especially in Высокий-sustain compositions. This flag is the top choice when using Lyria in any healing-focused strategy."
+        "hero": "Phobos",
+        "reason": "Маг-нежить, который извлекает выгоду из пассивной ауры Лирии и отлично дополняет команду контроля."
       },
       {
-        "desc": "This flag reduces enemy healing by 10%, weakening enemy sustain while Lyria maintains strong healing Поддержка on her own team. This effect is especially valuable in mirror matches or against teams with powerful Поддержка heroes like Aidan or Markus.",
-        "name": "War Flag of Decline",
-        "benefit": "Complements Lyria’s healing by ensuring that the enemy team cannot easily recover, giving your team a sustained edge in longer fights. It’s particularly useful in Контролёр-heavy or poke teams that aim to slowly wear down opponents."
+        "hero": "Corvus",
+        "reason": "Превосходный танк-нежить с хорошей физической атакой, чьи защитные и атакующие умения идеально сочетаются с механиками Лирии."
+      },
+      {
+        "hero": "Morrigan",
+        "reason": "Поддержка фракции нежити, которая активно <a href=\"#hero/morrigan?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">призывает скелетов</a>, что помогает Лирии быстрее накапливать души для ультимативной способности."
+      },
+      {
+        "hero": "Keira",
+        "reason": "Получает огромный бонус к вампиризму и физической атаке от связи с Лирией, превращаясь в неуязвимую машину для нанесения урона."
       }
     ],
-    "best_teams": []
+    "conclusion": "Лирия — уникальный и универсальный боец передней линии, который процветает в битвах, где собираются души и заключаются стратегические союзы. Ее способность взаимодействовать с союзниками-нежитью, применять вампиризм и наказывать врагов, полагающихся на уклонение, делает ее мощным дополнением ко многим составам команд. Независимо от того, поддерживает ли она героев с высоким физическим уроном, таких как Данте или Исмаил (усиливая команду <a href=\"#hero/ishmael?skill=3\" style=\"color:#38bdf8; text-decoration:underline;\">вампиризмом Исмаила</a>), или укрепляет синергию нежити с такими героями, как Корвус и Морриган, Лирия доказывает свою ценность как меняющий правила игры герой. При правильном развитии умений и артефактов она может стать краеугольным камнем как агрессивных команд, так и команд контроля."
   },
   "somna": {
-    "id": "somna",
     "cons": [
-      "Main Role: Контролёр",
-      "Main Stat: Ловкость",
-      "Position: Fights at the middle line",
-      "Patronage: Fenris, Oliver, Axel",
-      "Soul Stones: Temporarily unobtainable"
+      "Низкий собственный урон: Сомна контролирует бой, но для убийства врагов ей требуются сильные союзники.",
+      "Сон может прерваться раньше времени: противники просыпаются при получении определенного количества урона, поэтому неконтролируемый урон по площади может сократить паузу.",
+      "Себастьян является прямым контр-пиком: его защита от контроля может заблокировать ключевой эффект ультимейта Сомны.",
+      "Зависимость от уровня: шансы наложить контроль снижаются против врагов, чей уровень выше уровня умения.",
+      "Ограниченная доступность: ее камни душ временно недоступны."
     ],
-    "name": "Сомна",
     "pros": [
-      "Main Role: Контролёр",
-      "Main Stat: Ловкость",
-      "Position: Fights at the middle line",
-      "Patronage: Fenris, Oliver, Axel",
-      "Soul Stones: Temporarily unobtainable"
+      "Контроль всей команды: умение «Вуаль колыбельной» способно усыпить всю вражескую команду на 7 секунд.",
+      "Отличная поддержка темпа: эффекты сна и превращения в овец дают время союзникам раскрыть свой потенциал.",
+      "Снижение обоих типов урона: эффект «Сонливость» снижает как физическую, так и магическую атаку врагов.",
+      "Защита передней линии: «Сонный доспех» дает значительный бонус к броне союзнику, стоящему впереди Сомны.",
+      "Гибкость в подборе команды: показывает отличные результаты как в физических, так и в магических пачках."
     ],
     "skins": [
       {
-        "desc": "Total of Ловкость Skin Stones for max level: 30,825",
-        "name": "Default Skin",
-        "bonus": "Stats Gain: Ловкость +1,365",
-        "priority": "Высокий – Ловкость gives Somna Физическая Атака for her formulas and Броня for survival, making it a strong all-around second priority."
+        "name": "Базовый облик",
+        "bonus": "Ловкость +1 365",
+        "priority": "Высокий — дает Сомне Физическую атаку для формул и Броню для выживания, отличный сбалансированный выбор."
       },
       {
-        "desc": "Total of Ловкость Skin Stones for max level: 55,410 Note: The Solar Skin is exclusive on July 24 and is scheduled to become generally unlockable on December 1.",
-        "name": "Solar Skin",
-        "bonus": "Stats Gain: Физическая Атака +7,095",
-        "priority": "Очень Высокий – Физическая Атака raises Lullaby Veil's wake-up threshold, Dream Броня's Броня buff and Attack reduction, and Counting Sheep's урон. No other Somna skin touches this many formulas."
+        "name": "Солнечный облик",
+        "bonus": "Физическая атака +7 095",
+        "priority": "Очень Высокий — увеличивает порог пробуждения «Вуали колыбельной», бонус к броне и снижение атаки от «Сонного доспеха», а также урон от «Подсчета овец»."
       }
     ],
     "glyphs": [
       {
-        "desc": "Stats Gain: Защита от Магии +6,500",
-        "name": "4th Glyph - Защита от Магии",
-        "name_en": "4th Glyph - Magic Defense",
-        "priority": "Средний – Useful against magic burst, but it is narrower than Здоровье and does not improve Somna's Контролёр formulas."
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/physical-attack.webp",
+        "name": "Физическая атака"
       },
       {
-        "desc": "Stats Gain: Ловкость +1,135",
-        "name": "5th Glyph - Ловкость",
-        "name_en": "5th Glyph - Agility",
-        "priority": "Высокий – Ловкость is the best second upgrade in practice because it improves both Somna's scaling and her physical durability."
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/armor-penetration.webp",
+        "name": "Пробивание брони"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/health.webp",
+        "name": "Здоровье"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-defense.webp",
+        "name": "Защита от магии"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/agility.webp",
+        "name": "Ловкость"
       }
     ],
-    "counters": [],
-    "overview": "Somna does not enter a fight to top the урон chart. She enters to steal time. One ultimate can put an entire enemy team to sleep, and every Sleepiness stack makes the next exchange safer for your side. In my tests, that Контролёр translated surprisingly well into both physical and magic teams. Somna gave Adam the long battle he wants, while Fluffy, Cascade and Krista gained a Поддержка who could interrupt the enemy before their pressure collapsed. Somna - Best Team #1 Axel Fenris Cain Axel Merlin Oliver Pet Сила Somna Adam Fluffy Byrna Julius",
+    "counters": [
+      {
+        "hero": "Sebastian",
+        "reason": "Себастьян является прямым контр-пиком Сомны, так как его защита от контроля через <a href=\"#hero/sebastian?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">Оды Садам</a> может заблокировать Сон и предотвратить заморозку всей команды от ее ультимейта. Без этой долгой паузы у Сомны гораздо меньше времени для накопления Сонливости и превращения врагов в овец."
+      }
+    ],
+    "overview": "Сомна — герой контроля средней линии, чья механика построена вокруг Сна и Сонливости. Она не стремится возглавить таблицу нанесенного урона, ее главная задача — красть время у противника. Ее ультимативная способность способна усыпить всю вражескую команду, а каждый наложенный эффект Сонливости делает последующие размены ударами более безопасными для ваших союзников. Сомна выступает в роли мощного усилителя общей стратегии команды, создавая паузы между атаками врагов, чтобы ваши ключевые герои могли раскрыть свой потенциал.",
     "artifacts": [
       {
-        "desc": "In-game description: Puts enemy Heroes to sleep for 7s. Sleeping opponents cannot act but can wake up prematurely if they receive 107,633 урон. Sleep chance is lowered if the target's level is above 130. Skill Explanation: Somna pauses the whole enemy team. Each sleeping hero stays inactive until the 7 seconds end or incoming урон reaches the threshold. The threshold is not урон dealt by Somna; it is how much урон the sleeping target can take before waking. Formula - урон Threshold: 107,633 (100% Физическая Атака + 120 × level)",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/hero/somna/lullaby-veil-icon.webp",
-        "name": "1st Skill - Lullaby Veil",
-        "slot": "Оружие",
-        "desc_en": "In-game description: Puts enemy Heroes to sleep for 7s. Sleeping opponents cannot act but can wake up prematurely if they receive 107,633 damage. Sleep chance is lowered if the target's level is above 130. Skill Explanation: Somna pauses the whole enemy team. Each sleeping hero stays inactive until the 7 seconds end or incoming damage reaches the threshold. The threshold is not damage dealt by Somna; it is how much damage the sleeping target can take before waking. Formula - Damage Threshold: 107,633 (100% Physical Attack + 120 × level)",
-        "name_ru": "1st Skill - Lullaby Veil (Оружие)",
-        "priority": "Очень Высокий – This is Somna's identity and strongest opening for the team. Keep it leveled so its Контролёр check remains as reliable as possible.",
-        "priority_en": "Very High – This is Somna's identity and strongest opening for the team. Keep it leveled so its control check remains as reliable as possible."
-      },
-      {
-        "desc": "In-game description: Blesses the ally in the front for 10s. The blessing increases their Броня by 34,110 and adds the Sleepiness effect to their basic attacks. Each Sleepiness effect on an opponent decreases their Physical and Магическая Атака by 26,908. The effect lasts for 10s and can be applied up to 3 times. Sleepiness chance is lowered if the target's level is above 130. Skill Explanation: Somna protects the ally directly ahead of her and turns that ally's basic attacks into debuffs. At three stacks, the enemy can lose up to 80,724 Physical and Магическая Атака , which is why this skill can quietly decide a long fight. Formula - Броня Increase: 34,110 (30% Физическая Атака + 50 × level) Formula - Attack Decrease за стак: 26,908 (25% Физическая Атака + 30 × level)",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/hero/somna/dream-armor-icon.webp",
-        "name": "2nd Skill - Dream Armor",
-        "slot": "Книга",
-        "desc_en": "In-game description: Blesses the ally in the front for 10s. The blessing increases their Armor by 34,110 and adds the Sleepiness effect to their basic attacks. Each Sleepiness effect on an opponent decreases their Physical and Magic Attack by 26,908. The effect lasts for 10s and can be applied up to 3 times. Sleepiness chance is lowered if the target's level is above 130. Skill Explanation: Somna protects the ally directly ahead of her and turns that ally's basic attacks into debuffs. At three stacks, the enemy can lose up to 80,724 Physical and Magic Attack , which is why this skill can quietly decide a long fight. Formula - Armor Increase: 34,110 (30% Physical Attack + 50 × level) Formula - Attack Decrease per Stack: 26,908 (25% Physical Attack + 30 × level)",
-        "name_ru": "2nd Skill - Dream Armor (Книга)",
-        "priority": "Высокий – It adds defense and offensive suppression in one cast, but it supports Somna's Контролёр plan rather than starting it.",
-        "priority_en": "High – It adds defense and offensive suppression in one cast, but it supports Somna's control plan rather than starting it."
-      },
-      {
-        "desc": "In-game description: Curses an area in the center of the enemy team. Opponents in the area receive 31,510 урон, and 1 Sleepiness effect is applied to them. If an affected enemy already has 3 Sleepiness effects, they turn into a sheep for 5s. They cannot attack and try to run for their lives. Sleepiness chance is lowered if the target's level is above 130. Skill Explanation: This is Somna's repeating Контролёр loop. The 31,510 physical урон is modest, but the real reward is turning a fully stacked enemy into a harmless sheep for 5 seconds. Formula - Physical урон: 31,510 (30% Физическая Атака + 30 × level)",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/hero/somna/counting-sheep-icon.webp",
-        "name": "3rd Skill - Counting Sheep",
-        "slot": "Кольцо",
-        "desc_en": "In-game description: Curses an area in the center of the enemy team. Opponents in the area receive 31,510 damage, and 1 Sleepiness effect is applied to them. If an affected enemy already has 3 Sleepiness effects, they turn into a sheep for 5s. They cannot attack and try to run for their lives. Sleepiness chance is lowered if the target's level is above 130. Skill Explanation: This is Somna's repeating control loop. The 31,510 physical damage is modest, but the real reward is turning a fully stacked enemy into a harmless sheep for 5 seconds. Formula - Physical Damage: 31,510 (30% Physical Attack + 30 × level)",
-        "name_ru": "3rd Skill - Counting Sheep (Кольцо)",
-        "priority": "Очень Высокий – Repeated sheep transformations are Somna's best Контролёр after her ultimate, and skill level affects whether Sleepiness lands.",
-        "priority_en": "Very High – Repeated sheep transformations are Somna's best control after her ultimate, and skill level affects whether Sleepiness lands."
-      },
-      {
-        "desc": "Stats Gain: Физическая Атака +4,340",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/physical-attack.webp",
-        "name": "1st Glyph - Physical Attack",
-        "slot": "Оружие",
-        "desc_en": "Stats Gain: Physical Attack +4,340",
-        "name_ru": "1st Glyph - Physical Attack (Оружие)",
-        "priority": "Очень Высокий – This directly improves every numerical formula in Somna's active skills, including two defensive effects.",
-        "priority_en": "Very High – This directly improves every numerical formula in Somna's active skills, including two defensive effects."
-      },
-      {
-        "desc": "Stats Gain: Броня Penetration +6,500",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/armor-penetration.webp",
-        "name": "2nd Glyph - Armor Penetration",
-        "slot": "Книга",
-        "desc_en": "Stats Gain: Armor Penetration +6,500",
-        "name_ru": "2nd Glyph - Armor Penetration (Книга)",
-        "priority": "Низкий – It only helps Somna's modest physical урон and does nothing for Sleep, Sleepiness, Броня protection or Attack reduction.",
-        "priority_en": "Low – It only helps Somna's modest physical damage and does nothing for Sleep, Sleepiness, Armor protection or Attack reduction."
-      },
-      {
-        "desc": "Stats Gain: Здоровье +62,200",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/health.webp",
-        "name": "3rd Glyph - Health",
-        "slot": "Кольцо",
-        "desc_en": "Stats Gain: Health +62,200",
-        "name_ru": "3rd Glyph - Health (Кольцо)",
-        "priority": "Средний Высокий – A living Somna keeps stacking Sleepiness. Здоровье is especially valuable against mixed and pure урон that cannot be solved by one defense stat.",
-        "priority_en": "Medium High – A living Somna keeps stacking Sleepiness. Health is especially valuable against mixed and pure damage that cannot be solved by one defense stat."
-      },
-      {
-        "desc": "Team Buff: Защита от Магии +50,190",
+        "desc": "Магическая защита +50 190",
         "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/weapon-somna-a-thousand-and-one-lullaby.webp",
-        "name": "A Thousand and One Lullaby Artifact",
-        "slot": "?",
-        "desc_en": "Team Buff: Magic Defense +50,190",
-        "name_ru": "A Thousand and One Lullaby Artifact (?)",
-        "priority": "Средний Высокий – It activates with Lullaby Veil and can protect the whole team from magic retaliation, but the value is temporary and matchup-dependent.",
-        "priority_en": "Medium High – It activates with Lullaby Veil and can protect the whole team from magic retaliation, but the value is temporary and matchup-dependent."
+        "name": "Тысяча и одна колыбельная",
+        "slot": "Оружие",
+        "name_ru": "Тысяча и одна колыбельная",
+        "priority": "Средне-высокий — активируется при использовании «Вуали колыбельной» и защищает команду от магического ответа, но эффект временный и зависит от соперника."
       },
       {
-        "desc": "Stats Gain: Броня +12,546 Защита от Магии +12,546",
+        "desc": "Броня +12 546, Магическая защита +12 546",
         "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/defenders-covenant.webp",
-        "name": "Defender's Covenant Artifact",
-        "slot": "?",
-        "desc_en": "Stats Gain: Armor +12,546 Magic Defense +12,546",
-        "name_ru": "Defender's Covenant Artifact (?)",
-        "priority": "Высокий – Balanced defenses keep Somna active against both physical and magic teams, which is more valuable than chasing her personal урон.",
-        "priority_en": "High – Balanced defenses keep Somna active against both physical and magic teams, which is more valuable than chasing her personal damage."
+        "name": "Завет защитника",
+        "slot": "Книга",
+        "name_ru": "Завет защитника",
+        "priority": "Высокий — сбалансированная защита помогает Сомне выживать как против физических, так и против магических команд, что важнее, чем разгон ее личного урона."
       },
       {
-        "desc": "Stats Gain: Ловкость +6,249",
+        "desc": "Ловкость +6 249 (Физическая атака +18 747, Броня +6 249)",
         "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/ring-of-agility.webp",
-        "name": "Ring of Agility Artifact",
+        "name": "Кольцо ловкости",
         "slot": "Кольцо",
-        "desc_en": "Stats Gain: Agility +6,249",
-        "name_ru": "Ring of Agility Artifact (Кольцо)",
-        "priority": "Очень Высокий – This is the most complete Somna artifact: it strengthens all Физическая Атака formulas and adds Броня at the same time.",
-        "priority_en": "Very High – This is the most complete Somna artifact: it strengthens all Physical Attack formulas and adds Armor at the same time."
+        "name_ru": "Кольцо ловкости",
+        "priority": "Очень Высокий — самый полезный артефакт для Сомны: одновременно усиливает все формулы от Физической атаки и добавляет броню."
       }
     ],
     "patronage": [],
-    "war_flags": [
+    "war_flags": [],
+    "best_teams": [
       {
-        "desc": "",
-        "name": "War Flag of Pet Strength",
-        "benefit": "Both tested teams use Axel as the main pet. Increasing pet Skill Power by 10% improves the protection that helps these long-fight compositions survive until Somna and her урон dealers take Контролёр."
+        "hero": "Adam",
+        "reason": "Адам получает прямую выгоду от Сомны, так как каждый дополнительный цикл контроля дает ему больше времени, чтобы накопить силу с помощью своего <a href=\"#hero/adam?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">первого умения</a> в затяжном бою."
       },
       {
-        "desc": "",
-        "name": "War Flag of Frost",
-        "benefit": "Frost reduces enemy skill levels every 18 seconds for 8 seconds. It fits Somna's disruptive identity and makes the opponent's key skill windows weaker while her team plays for a longer battle."
+        "hero": "Fluffy",
+        "reason": "Флаффи отлично синергирует с Сомной, получая безопасные окна для нанесения урона, пока Сомна прерывает атаки противника."
+      },
+      {
+        "hero": "Cascade",
+        "reason": "Каскад извлекает пользу из контроля Сомны, который создает безопасные условия для реализации его магического потенциала."
+      },
+      {
+        "hero": "Krista",
+        "reason": "Криста получает надежную поддержку контроля, позволяющую ей безопасно подготавливать и проводить свои атаки."
       }
     ],
-    "best_teams": []
+    "conclusion": "Сомна — это герой, чья лучшая работа происходит в незаметные, но решающие моменты боя. Она прерывает ультимейты, ослабляет атакующих, защищает союзника впереди, и внезапно ваш основной боец выживает достаточно долго, чтобы принести победу. По результатам тестов, не стоит ограничивать ее рамками одного архетипа. Она показала себя убедительно как рядом с Адамом в физической пачке на затяжной бой, так и в качестве поддержки контроля для Флаффи, Каскада и Кристы. Если вам нравятся команды, побеждающие за счет тайминга и давления, а не одного взрывного открытия, Сомна определенно заслуживает вашего внимания."
   },
   "corvus": {
     "id": "corvus",
@@ -3752,117 +3472,130 @@ export const HERO_GUIDES_DB = {
     "best_teams": []
   },
   "thea": {
-    "id": "thea",
     "cons": [
-      "Pros: Exceptional team-wide healing, useful silence, strong synergy with magic-based teams.",
-      "Cons: Vulnerable if pulled to the front line, not effective against healing block or burst урон."
+      "Уязвима при притягивании на переднюю линию",
+      "Неэффективна против блокировки исцеления и взрывного урона"
     ],
-    "name": "Тея",
     "pros": [
-      "Pros: Exceptional team-wide healing, useful silence, strong synergy with magic-based teams.",
-      "Cons: Vulnerable if pulled to the front line, not effective against healing block or burst урон."
+      "Исключительное исцеление всей команды",
+      "Полезный эффект молчания для контроля противников",
+      "Отличная синергия с магическими командами"
     ],
     "skins": [
       {
-        "desc": "",
-        "name": "Angelic Skin",
-        "bonus": "Boosts Магическая Атака by 10,665 this significantly improves Thea’s healing.",
+        "name": "Ангельский облик",
+        "bonus": "Магическая Атака (+10,665)",
         "priority": "Очень Высокий"
       },
       {
-        "desc": "",
-        "name": "Champion Skin",
-        "bonus": "Another solid boost to Магическая Атака, complementing the Angelic Skin.",
+        "name": "Облик Чемпиона",
+        "bonus": "Магическая Атака",
         "priority": "Высокий"
       },
       {
-        "desc": "",
-        "name": "Default Skin",
-        "bonus": "Increases Интеллект, which slightly boosts Магическая Атака and defense.",
+        "name": "Базовый облик",
+        "bonus": "Интеллект",
         "priority": "Высокий"
       },
       {
-        "desc": "",
-        "name": "Masquerade Skin",
-        "bonus": "Increases Здоровье useful for her survivability.",
+        "name": "Маскарадный облик",
+        "bonus": "Здоровье",
         "priority": "Средний"
       },
       {
-        "desc": "",
-        "name": "Winter Skin",
-        "bonus": "Adds Броня, giving her more resistance against physical attacks.",
+        "name": "Зимний облик",
+        "bonus": "Броня",
         "priority": "Низкий"
       }
     ],
     "glyphs": [
       {
-        "desc": "",
-        "name": "Магическая Атака",
-        "name_en": "Magic Attack",
-        "priority": "Очень Высокий"
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-attack.webp",
+        "name": "Магическая Атака"
       },
       {
-        "desc": "",
-        "name": "Здоровье",
-        "name_en": "Health",
-        "priority": "Высокий"
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/health.webp",
+        "name": "Здоровье"
       },
       {
-        "desc": "",
-        "name": "Защита от Магии",
-        "name_en": "Magic Defense",
-        "priority": "Низкий"
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-defense.webp",
+        "name": "Магическая Защита"
       },
       {
-        "desc": "",
-        "name": "Броня",
-        "name_en": "Armor",
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/armor.webp",
+        "name": "Броня"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/intelligence.webp",
+        "name": "Интеллект"
+      }
+    ],
+    "counters": [
+      {
+        "hero": "Cleaver",
+        "reason": "Может вытащить Тею с задней линии своим <a href=\"#hero/cleaver?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">ржавым крюком</a>, делая ее легкой мишенью."
+      },
+      {
+        "hero": "Jhu",
+        "reason": "Наносит огромный урон героям задней линии, таким как Тея, своими критическими ударами."
+      },
+      {
+        "hero": "Celeste",
+        "reason": "Ее темная форма, активируемая <a href=\"#hero/celeste?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">первым умением Селесты</a>, превращает исцеление Теи в магический урон, что является прямой контрой."
+      },
+      {
+        "hero": "Pet Biscuit",
+        "reason": "Препятствует получению исцеления целями и наносит дополнительный урон."
+      }
+    ],
+    "overview": "Тея — один из самых надежных целителей в Hero Wars: Dominion Era. Если вы ищете героя поддержки, способного поддерживать жизнь вашей команды в самых тяжелых битвах, Тея — отличный выбор. Располагаясь на задней линии, она действует незаметно, но не стоит недооценивать ее вклад: ее исцеляющие волны и наложение молчания могут полностью изменить ход сражения. Данное руководство поможет вам максимально эффективно использовать ее умения, подобрать подходящих питомцев, облики, артефакты и узнать, каких противников ей стоит избегать.",
+    "artifacts": [
+      {
+        "desc": "Магическая защита",
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/weapom-thea-staff-of-rebirth.webp",
+        "name": "Посох Возрождения",
+        "slot": "Оружие",
+        "name_ru": "Посох Возрождения",
         "priority": "Средний"
       },
       {
-        "desc": "",
-        "name": "Интеллект",
-        "name_en": "Intelligence",
-        "priority": "Высокий"
-      }
-    ],
-    "counters": [],
-    "overview": "Thea is one of the most reliable healers in Хроники Хаоса (Dominion Era). If you’re looking for a Поддержка hero that can keep your team alive through the toughest battles, Thea’s your girl. Positioned in the back line, she works behind the scenes, but don’t underestimate her impact her healing waves and silences can completely shift the tide of a fight. This guide will walk you through how to make the most of her skills, which pets to pair her with, her best skins and artifacts, and even which heroes to avoid putting her up against.",
-    "artifacts": [
-      {
-        "desc": "Boosts team Защита от Магии with her ultimate.",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/weapom-thea-staff-of-rebirth.webp",
-        "name": "1st - Staff of Rebirth:",
-        "slot": "Оружие",
-        "desc_en": "Boosts team magic defense with her ultimate.",
-        "name_ru": "1st - Staff of Rebirth: (Оружие)",
-        "priority": "Средний",
-        "priority_en": "Medium"
-      },
-      {
-        "desc": "Gives Магическая Атака and Здоровье, perfect for stronger healing and durability.",
+        "desc": "Магическая Атака, Здоровье",
         "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/tome-of-arcane-knowledge.webp",
-        "name": "2nd - Tome of Arcane Knowledge:",
+        "name": "Гримуар Тайных Знаний",
         "slot": "Книга",
-        "desc_en": "Gives Magic Attack and Health, perfect for stronger healing and durability.",
-        "name_ru": "2nd - Tome of Arcane Knowledge: (Книга)",
-        "priority": "Очень Высокий",
-        "priority_en": "Very High"
+        "name_ru": "Гримуар Тайных Знаний",
+        "priority": "Очень Высокий"
       },
       {
-        "desc": "Boosts Магическая Атака and Защита от Магии stats.",
+        "desc": "Интеллект",
         "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/ring-of-intelligence.webp",
-        "name": "3rd - Ring of Intelligence:",
+        "name": "Кольцо Интеллекта",
         "slot": "Кольцо",
-        "desc_en": "Boosts magic attack and magic defense stats.",
-        "name_ru": "3rd - Ring of Intelligence: (Кольцо)",
-        "priority": "Высокий",
-        "priority_en": "High"
+        "name_ru": "Кольцо Интеллекта",
+        "priority": "Высокий"
       }
     ],
     "patronage": [],
     "war_flags": [],
-    "best_teams": []
+    "best_teams": [
+      {
+        "hero": "Khorus",
+        "reason": "Обеспечивает защиту от контроля, помогая Тее беспрепятственно применять свои умения."
+      },
+      {
+        "hero": "Dante",
+        "reason": "Отлично сочетается в сбалансированных командах, снижая характеристики врагов и повышая выживаемость Теи."
+      },
+      {
+        "hero": "Orion",
+        "reason": "Получает огромную пользу от ускорения Теи и помогает быстро накапливать энергию для совместных атак."
+      },
+      {
+        "hero": "Nebula",
+        "reason": "Усиливает Магическую Атаку Теи, что значительно увеличивает ее общие показатели исцеления."
+      }
+    ],
+    "conclusion": "Тея — мощный целитель, который отлично раскрывает себя в командах, полагающихся на длительное исцеление и устойчивость к контролю. Ее способности делают ее превосходным выбором против сильного массового урона и эффектов молчания, особенно в паре с героями, способными защитить ее во время применения ультимейта. Чтобы максимизировать эффективность Теи, уделите приоритетное внимание увеличению ее Здоровья и Магической Атаки, а также сосредоточьтесь на символах, улучшающих показатели исцеления. В качестве покровителя лучшую синергию предлагает Аксель, повышая ее выживаемость и гарантируя, что исцеление дойдет до союзников даже в моменты получения сильного взрывного урона. Мерлина можно использовать ситуативно для ускорения применения умений, в то время как Мара остается нишевым вариантом с более низким приоритетом. В целом, Тея лучше всего подходит для оборонительных или сбалансированных составов команд, где ключевыми факторами являются долговечность и сопротивление контролю."
   },
   "electra": {
     "cons": [
@@ -3960,135 +3693,138 @@ export const HERO_GUIDES_DB = {
     "best_teams": []
   },
   "astaroth": {
-    "id": "astaroth",
     "cons": [
-      "Best resurrection ability in the game",
-      "Team-wide physical урон щит",
-      "Protects weakest ally automatically",
-      "Works in nearly any team composition",
-      "Excellent against physical урон teams"
+      "Слаб против команд с упором на магический урон",
+      "Воскрешение может быть заблокировано или законтрено",
+      "Низкий собственный наносимый урон",
+      "Умение выжигания энергии малоэффективно"
     ],
-    "name": "Астарот",
     "pros": [
-      "Best resurrection ability in the game",
-      "Team-wide physical урон щит",
-      "Protects weakest ally automatically",
-      "Works in nearly any team composition",
-      "Excellent against physical урон teams"
+      "Лучшее умение воскрешения в игре",
+      "Щит от физического урона на всю команду",
+      "Автоматически защищает самого слабого союзника",
+      "Подходит практически для любого состава команды",
+      "Отличен против команд с физическим уроном"
     ],
     "skins": [
       {
-        "desc": "Reinforces his front-line presence.",
-        "name": "Barbarian Skin",
+        "name": "Варварский облик",
         "bonus": "Броня +10687",
         "priority": "Очень Высокий"
       },
       {
-        "desc": "Gives a massive HP boost, key for Танк durability.",
-        "name": "Cybernetic Skin",
+        "name": "Кибернетический облик",
         "bonus": "Здоровье +106645",
         "priority": "Высокий"
       },
       {
-        "desc": "Boosts tankiness and improves survivability.",
-        "name": "Default Skin",
+        "name": "Базовый облик",
         "bonus": "Сила +1365",
         "priority": "Средний"
       },
       {
-        "desc": "Useful for щит Сила and resurrection power.",
-        "name": "Demonic Skin",
+        "name": "Демонический облик",
         "bonus": "Магическая Атака +10650",
         "priority": "Низкий"
       },
       {
-        "desc": "Also increases skills impact.",
-        "name": "Lunar Skin",
+        "name": "Лунный облик",
         "bonus": "Магическая Атака +10650",
         "priority": "Низкий"
       }
     ],
     "glyphs": [
       {
-        "desc": "",
-        "name": "4th - Сила Glyph",
-        "name_en": "4th - Strength Glyph",
-        "priority": "4"
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/armor.webp",
+        "name": "Символ Брони"
       },
       {
-        "desc": "",
-        "name": "5th - Магическая Атака Glyph",
-        "name_en": "5th - Magic Attack Glyph",
-        "priority": "5"
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/health.webp",
+        "name": "Символ Здоровья"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-defense.webp",
+        "name": "Символ Защиты от Магии"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/strength.webp",
+        "name": "Символ Силы"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-attack.webp",
+        "name": "Символ Магической Атаки"
       }
     ],
-    "counters": [],
-    "overview": "Astaroth is a versatile Танк and Поддержка hero in Хроники Хаоса (Dominion Era), known for his ability to protect союзники and disrupt враги. This guide provides an in-depth look at his skills, optimal builds, and strategies to maximize his effectiveness on the battlefield. His versatility lies in his strong defensive abilities and his power to resurrect союзники, making him one of the best choices for new and experienced players. Astaroth can serve as a frontline guardian who absorbs massive amounts of урон while providing invaluable Поддержка through his passive and active skills. Understanding how to build and position Astaroth correctly can make a huge difference in both PvE and PvP scenarios.",
+    "counters": [
+      {
+        "hero": "Morrigan",
+        "reason": "Является лучшим контр-пиком благодаря своему <a href=\"#hero/morrigan?skill=3\" style=\"color:#38bdf8; text-decoration:underline;\">пассивному умению Морриган</a>, которое полностью блокирует воскрешение."
+      },
+      {
+        "hero": "Amira",
+        "reason": "Может выманить его воскрешение на ложную <a href=\"#hero/amira?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">иллюзию Амиры</a>, потратив его впустую."
+      },
+      {
+        "hero": "Celeste",
+        "reason": "Накладывает эффекты запрета исцеления своими <a href=\"#hero/celeste?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">умениями Селесты</a>, мешая только что воскрешенному герою восстановить здоровье."
+      },
+      {
+        "hero": "Jet",
+        "reason": "Снижает эффективность лечения и накладывает запрет на исцеление своими <a href=\"#hero/jet?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">умениями Джета</a>."
+      },
+      {
+        "hero": "Yasmine",
+        "reason": "Накладывает эффект запрета исцеления своими <a href=\"#hero/yasmine?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">умениями Ясмин</a>, нейтрализуя пользу от воскрешения."
+      }
+    ],
+    "overview": "Астарот — универсальный танк и герой поддержки в Hero Wars: Dominion Era, известный своей способностью защищать союзников и мешать врагам. Его универсальность заключается в мощных оборонительных способностях и возможности воскрешать союзников, что делает его одним из лучших выборов как для новичков, так и для опытных игроков. Астарот выступает в роли защитника первой линии, который поглощает огромное количество урона, оказывая неоценимую поддержку с помощью своих пассивных и активных умений. Понимание того, как правильно развивать и позиционировать Астарота, может сыграть решающую роль как в PvE, так и в PvP сражениях.",
     "artifacts": [
       {
-        "desc": "Provides massive Броня boost with 100% activation chance.",
+        "desc": "Дает бонус к Броне для всей команды при активации.",
         "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/weapon-astaroth-scythe-of-redemption.webp",
-        "name": "1st - Scythe of Redemption",
+        "name": "Коса Искупления",
         "slot": "Оружие",
-        "desc_en": "Provides massive armor boost with 100% activation chance.",
-        "name_ru": "1st - Scythe of Redemption (Оружие)",
-        "priority": "1",
-        "priority_en": "1"
+        "name_ru": "Коса Искупления",
+        "priority": "1 (Наивысший)"
       },
       {
-        "desc": "Boosts both Броня and Защита от Магии.",
+        "desc": "Увеличивает Броню и Защиту от Магии.",
         "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/defenders-covenant.webp",
-        "name": "2nd - Defender's Covenant",
+        "name": "Завет Защитника",
         "slot": "Книга",
-        "desc_en": "Boosts both armor and magic defense.",
-        "name_ru": "2nd - Defender's Covenant (Книга)",
-        "priority": "2",
-        "priority_en": "2"
+        "name_ru": "Завет Защитника",
+        "priority": "2 (Высокий)"
       },
       {
-        "desc": "Increases Сила for more Здоровье.",
+        "desc": "Увеличивает Силу (что дает дополнительное Здоровье и Физическую Атаку).",
         "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/ring-of-strength.webp",
-        "name": "3rd - Ring of Strength",
+        "name": "Кольцо Силы",
         "slot": "Кольцо",
-        "desc_en": "Increases strength for more health.",
-        "name_ru": "3rd - Ring of Strength (Кольцо)",
-        "priority": "3",
-        "priority_en": "3"
-      },
-      {
-        "desc": "",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/armor.webp",
-        "name": "1st - Armor Glyph",
-        "slot": "Оружие",
-        "desc_en": "",
-        "name_ru": "1st - Armor Glyph (Оружие)",
-        "priority": "1",
-        "priority_en": "1"
-      },
-      {
-        "desc": "",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/health.webp",
-        "name": "2nd - Health Glyph",
-        "slot": "Книга",
-        "desc_en": "",
-        "name_ru": "2nd - Health Glyph (Книга)",
-        "priority": "2",
-        "priority_en": "2"
-      },
-      {
-        "desc": "",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-defense.webp",
-        "name": "3rd - Magic Defense Glyph",
-        "slot": "Кольцо",
-        "desc_en": "",
-        "name_ru": "3rd - Magic Defense Glyph (Кольцо)",
-        "priority": "3",
-        "priority_en": "3"
+        "name_ru": "Кольцо Силы",
+        "priority": "3 (Средний)"
       }
     ],
     "patronage": [],
     "war_flags": [],
-    "best_teams": []
+    "best_teams": [
+      {
+        "hero": "Dante",
+        "reason": "Астарот обеспечивает надежную защиту на передней линии, позволяя Данте безопасно накапливать энергию и уклоняться от атак."
+      },
+      {
+        "hero": "K'arkh",
+        "reason": "Предоставляет Карху необходимую выживаемость и защиту от физического урона, позволяя ему дожить до ультимативной способности."
+      },
+      {
+        "hero": "Amira",
+        "reason": "Отлично сочетается в магических командах контроля, где Астарот сдерживает натиск врагов."
+      },
+      {
+        "hero": "Aidan",
+        "reason": "Синергия переноса урона и дополнительного исцеления делает команду практически неуязвимой."
+      }
+    ],
+    "conclusion": "Астарот остается одним из самых универсальных и мощных танков в Hero Wars по уважительной причине. Его сочетание щитов, снижения урона и воскрешения делает его ценным практически во всех игровых режимах. Хотя у него есть несколько контр-пиков, правильное построение команды может минимизировать эти слабости. Сосредоточьтесь на прокачке его умений «Пламенный Покров» и «Последнее Слово» в первую очередь, сочетайте его с Акселем или Оливером, и вы увидите, как выживаемость вашей команды взлетит до небес!"
   },
   "byrna": {
     "cons": [
@@ -4525,165 +4261,6 @@ export const HERO_GUIDES_DB = {
     ],
     "best_teams": []
   },
-  "galahad": {
-    "id": "galahad",
-    "cons": [
-      "Exceptional Self-Sustain: With 45% Вампиризм, Galahad heals himself constantly through combat, making him one of the most self-sufficient tanks who doesn't rely on external healers.",
-      "Высокий Physical урон Output: Unlike purely defensive tanks, Galahad deals substantial physical урон with all his skills, making him a legitimate offensive threat.",
-      "Контролёр Immunity: Unstoppable Charge breaks all crowd Контролёр effects, allowing him to escape stuns, freezes, and silences that would neutralize other tanks.",
-      "Area-of-Effect Ultimate: Iron Skies hits all враги simultaneously, providing excellent team fight урон and massive healing through Вампиризм when hitting multiple targets.",
-      "Pure урон Penetration: Pride of Harun adds pure урон that ignores all Броня and Защита от Магии, ensuring he remains threatening even against heavily armored враги.",
-      "Backline Disruption: His mobility and aggressive playstyle allow him to dive enemy backlines and pressure vulnerable урон dealers and supports.",
-      "Strong Early-to-Mid Game: Galahad performs exceptionally well before враги acquire strong anti-healing capabilities, making him dominant in early progression.",
-      "Низкий Gear Dependency: Unlike some tanks requiring specific artifacts or extensive Поддержка, Galahad functions effectively with basic upgrades thanks to his innate Вампиризм."
-    ],
-    "name": "Галахад",
-    "pros": [
-      "Exceptional Self-Sustain: With 45% Вампиризм, Galahad heals himself constantly through combat, making him one of the most self-sufficient tanks who doesn't rely on external healers.",
-      "Высокий Physical урон Output: Unlike purely defensive tanks, Galahad deals substantial physical урон with all his skills, making him a legitimate offensive threat.",
-      "Контролёр Immunity: Unstoppable Charge breaks all crowd Контролёр effects, allowing him to escape stuns, freezes, and silences that would neutralize other tanks.",
-      "Area-of-Effect Ultimate: Iron Skies hits all враги simultaneously, providing excellent team fight урон and massive healing through Вампиризм when hitting multiple targets.",
-      "Pure урон Penetration: Pride of Harun adds pure урон that ignores all Броня and Защита от Магии, ensuring he remains threatening even against heavily armored враги.",
-      "Backline Disruption: His mobility and aggressive playstyle allow him to dive enemy backlines and pressure vulnerable урон dealers and supports.",
-      "Strong Early-to-Mid Game: Galahad performs exceptionally well before враги acquire strong anti-healing capabilities, making him dominant in early progression.",
-      "Низкий Gear Dependency: Unlike some tanks requiring specific artifacts or extensive Поддержка, Galahad functions effectively with basic upgrades thanks to his innate Вампиризм."
-    ],
-    "skins": [
-      {
-        "desc": "Total of Сила Skin Stones for max level: 30,825",
-        "name": "Default Skin",
-        "bonus": "Stats Gain: Сила +1,365",
-        "priority": "Средний – The default skin provides balanced stats but in smaller amounts compared to specialized skins. It's worth upgrading gradually, but prioritize the more impactful skins first. This gives a solid foundation with both survivability (Здоровье) and урон (Физическая Атака), making it a decent all-around choice when you're starting out."
-      },
-      {
-        "desc": "Total of Сила Skin Stones for max level: 55,410",
-        "name": "Angelic Skin",
-        "bonus": "Stats Gain: Физическая Атака +7,095",
-        "priority": "Средний-Высокий – While Galahad benefits from extra Физическая Атака to increase his урон output, as a Танк his primary role is survival and protection. This skin significantly boosts his offensive capabilities, making him hit harder with all his physical урон skills. Important note: Thanks to Galahad's 45% Вампиризм , increased Физическая Атака also means increased self-healing —the more урон he deals, the more Здоровье he recovers. Upgrade this after securing your defensive skins (Champion, Romantic, Celestial) to transform Galahad into a threatening урон-dealing Танк who sustains himself through combat."
-      },
-      {
-        "desc": "Total of Сила Skin Stones for max level: 54,330",
-        "name": "Champion Skin",
-        "bonus": "Stats Gain: Здоровье +106,870",
-        "priority": "Очень Высокий – This is THE most important skin for Galahad. As a front-line Танк, his primary job is to absorb урон and stay alive to protect his team. The massive Здоровье boost of over 100,000 HP dramatically increases his survivability, allowing him to withstand enemy ultimates, sustained урон, and focus fire. This should be your absolute first priority when upgrading Galahad's skins. More Здоровье means more time on the battlefield doing his job."
-      },
-      {
-        "desc": "Total of Сила Skin Stones for max level: 55,410",
-        "name": "Romantic Skin",
-        "bonus": "Stats Gain: Броня +10,650",
-        "priority": "Высокий – Броня directly reduces physical урон received, which is crucial since many enemy урон dealers rely on physical attacks. This skin makes Galahad significantly tankier against physical threats like enemy warriors and marksmen. Upgrade this as your second priority (after Champion skin) to maximize his defensive capabilities. Combined with his Высокий Здоровье, this Броня makes him extremely difficult to take down with physical урон."
-      },
-      {
-        "desc": "Total of Сила Skin Stones for max level: 55,410",
-        "name": "Celestial Skin",
-        "bonus": "Stats Gain: Защита от Магии +10,650",
-        "priority": "Высокий – Защита от Магии is equally important as Броня for a well-rounded Танк. Many powerful enemy heroes deal magic урон (mages, supports with damaging abilities), and without adequate Защита от Магии, Galahad can be melted quickly despite his Здоровье. This should be your third priority, right after Romantic skin. Having both Высокий Броня and Высокий Защита от Магии ensures Galahad can Танк against any team composition, whether physical or magical урон-focused."
-      },
-      {
-        "desc": "Total of Сила Skin Stones for max level: 55,410",
-        "name": "Thundering Skin",
-        "bonus": "Stats Gain: Физическая Атака +7,095",
-        "priority": "Средний-Высокий – Similar to the Angelic skin, this provides a substantial Физическая Атака boost. While it enhances Galahad's урон potential with his Retaliation and other skills, it's not as critical as defensive stats for his Танк role. However , remember that his 45% Вампиризм converts this extra урон into additional healing, improving his sustain in prolonged fights. Consider this your fourth or fifth priority. If you have both Angelic and Thundering skins, you might alternate upgrading them after you've maxed out your defensive skins, as they provide identical benefits. Having both will make Galahad a true bruiser—hard to kill AND hitting hard, constantly healing himself through Вампиризм."
-      }
-    ],
-    "glyphs": [
-      {
-        "desc": "Reduces all incoming magic урон from enemy mages and magic-based abilities. Essential for balanced tanking against magic-heavy enemy compositions. Stats Gain: Защита от Магии +6,500",
-        "name": "4th Glyph - Защита от Магии",
-        "name_en": "4th Glyph - Magic Defense",
-        "priority": "Высокий – Защита от Магии is equally important as Броня for a well-rounded Танк. Many powerful враги deal magic урон, and without adequate Защита от Магии, Galahad can be melted quickly despite his Здоровье. Upgrade this as your third priority, right after Броня. Having both Высокий Броня and Высокий Защита от Магии ensures Galahad can handle any team composition, whether the enemy focuses on physical or magical урон."
-      },
-      {
-        "desc": "Сила is Galahad's main stat, providing dual benefits: additional Здоровье and Физическая Атака. Each point of Сила grants 40 Здоровье points and 1 Физическая Атака point (since Сила is his main stat). Stats Gain: Сила +1,135",
-        "name": "5th Glyph - Сила",
-        "name_en": "5th Glyph - Strength",
-        "priority": "Средний-Высокий – This glyph is excellent because it provides both survivability (Здоровье) and урон (Физическая Атака), making it very efficient. The +45,400 Здоровье significantly boosts tankiness, while the +1,135 Физическая Атака increases both урон and Вампиризм healing. Upgrade this as your fourth priority. While not as impactful as pure Здоровье, Броня, or Защита от Магии glyphs individually, the dual benefit makes it valuable for overall performance. It's the perfect middle-ground glyph after securing your core defensive stats."
-      }
-    ],
-    "counters": [],
-    "overview": "Are you ready to unleash the power of an unstoppable Боец? Galahad is the fearless Танк your team needs in Хроники Хаоса (Dominion Era) . Known for his legendary resilience and devastating physical attacks, this Blessed Боец charges into battle without hesitation, protecting союзники while crushing враги on the front line. In this comprehensive guide, you'll discover everything about Galahad—from his maximum stats and core abilities to the best artifacts, glyphs, and team compositions. Whether you're building your first Танк or looking to optimize your strategy, this guide will help you unlock Galahad's true potential and dominate the battlefield! Electra - Best Team #1 #1 Mara Albus Fenris Oliver Biscuit Axel Lara Croft Sebastian --> Tristan Lyria Galahad Team Strategy: This physical урон composition centers around Lyria as Уклонение counter, with Galahad providing front-line disruption and self-sustaining tankiness. Galahad's role is to absorb initial урон while using his Iron Skies ultimate to soften the entire enemy team, creating opportunities for Lyria and other урон dealers to finish weakened targets. Core Synergies: Sebastian's critical hit buffs amplify the physical урон output of both Galahad and Lyria, while his debuff removal protects the team from disruptive Контролёр effects. Tristan provides additional crowd Контролёр and magic урон to complement the physical focus. This team benefits significantly from the Боец's Flag, which boosts cooldown speed for Боец-class heroes like Galahad. Key Strengths: Galahad's 45% Вампиризм allows him to sustain through prolonged fights without requiring a dedicated Хилер. Lyria's Высокий burst урон combines with Galahad's area-of-effect abilities to create overwhelming pressure. The team excels against balanced compositions that lack strong anti-healing or Уклонение mechanics. Weaknesses & Counters: This team struggles against Высокий anti-healing heroes like Celeste completely shut down Galahad's sustainability. Energy-denial from Jorgen limits ultimate usage. Additionally, Helios can counter Lara Croft's critical урон, significantly reducing her physical урон effectiveness. Investment Priority: This composition requires substantial investment to reach full potential. Focus on maxing Galahad's defensive stats (Здоровье, Броня, Защита от Магии) first, then enhance Lyria's урон capabilities. Sebastian should be developed enough to provide consistent critical buffs. The team performs moderately at lower power levels but becomes dominant when fully upgraded.",
-    "artifacts": [
-      {
-        "desc": "Increases Galahad's урон output with all his physical урон skills, including Iron Skies, Unstoppable Charge, and Retaliation. Higher Физическая Атака also means stronger healing through his 45% Вампиризм. Stats Gain: Физическая Атака +4,340",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/physical-attack.webp",
-        "name": "1st Glyph - Physical Attack",
-        "slot": "Оружие",
-        "desc_en": "Increases Galahad's damage output with all his physical damage skills, including Iron Skies, Unstoppable Charge, and Retaliation. Higher physical attack also means stronger healing through his 45% Vampirism. Stats Gain: Physical Attack +4,340",
-        "name_ru": "1st Glyph - Physical Attack (Оружие)",
-        "priority": "Средний – While Физическая Атака benefits Galahad by increasing both урон and Вампиризм healing, as a Танк his primary role is survival, not урон dealing. This glyph is valuable but should be upgraded after securing his defensive stats. The Вампиризм synergy makes it more useful than it would be otherwise, but Здоровье and resistances come first.",
-        "priority_en": "Medium – While physical attack benefits Galahad by increasing both damage and vampirism healing, as a tank his primary role is survival, not damage dealing. This glyph is valuable but should be upgraded after securing his defensive stats. The vampirism synergy makes it more useful than it would be otherwise, but health and resistances come first."
-      },
-      {
-        "desc": "Directly reduces all incoming physical урон. With many enemy урон dealers relying on physical attacks (warriors, marksmen), Броня is essential for Galahad's survivability on the front line. Stats Gain: Броня +6,500",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/armor.webp",
-        "name": "2nd Glyph - Armor",
-        "slot": "Книга",
-        "desc_en": "Directly reduces all incoming physical damage. With many enemy damage dealers relying on physical attacks (warriors, marksmen), armor is essential for Galahad's survivability on the front line. Stats Gain: Armor +6,500",
-        "name_ru": "2nd Glyph - Armor (Книга)",
-        "priority": "Высокий – Броня is one of Galahad's most important defensive stats. The higher his Броня, the less physical урон penetrates through, allowing him to Танк longer against physical-heavy teams. Upgrade this as your second priority after Здоровье. Combined with his massive Здоровье pool and Вампиризм, Высокий Броня makes Galahad nearly invincible against physical attackers.",
-        "priority_en": "High – Armor is one of Galahad's most important defensive stats. The higher his armor, the less physical damage penetrates through, allowing him to tank longer against physical-heavy teams. Upgrade this as your second priority after Health. Combined with his massive health pool and vampirism, high armor makes Galahad nearly invincible against physical attackers."
-      },
-      {
-        "desc": "Increases Galahad's maximum Здоровье pool, allowing him to absorb more урон before falling. Здоровье is the foundation of any Танк's survivability—more HP means more time on the battlefield protecting союзники. Stats Gain: Здоровье +62,200",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/health.webp",
-        "name": "3rd Glyph - Health",
-        "slot": "Кольцо",
-        "desc_en": "Increases Galahad's maximum health pool, allowing him to absorb more damage before falling. Health is the foundation of any tank's survivability—more HP means more time on the battlefield protecting allies. Stats Gain: Health +62,200",
-        "name_ru": "3rd Glyph - Health (Кольцо)",
-        "priority": "Очень Высокий – This is THE most important glyph for Galahad. With over 62,000 additional Здоровье, this glyph provides massive survivability that benefits against ALL урон types—physical, magic, and pure. Здоровье should always be your first priority when evolving glyphs. A bigger Здоровье pool means Galahad can withstand enemy ultimates, survive focus fire, and use his Вампиризм longer to sustain himself. Prioritize this above everything else.",
-        "priority_en": "Very High – This is THE most important glyph for Galahad. With over 62,000 additional health, this glyph provides massive survivability that benefits against ALL damage types—physical, magic, and pure. Health should always be your first priority when evolving glyphs. A bigger health pool means Galahad can withstand enemy ultimates, survive focus fire, and use his vampirism longer to sustain himself. Prioritize this above everything else."
-      },
-      {
-        "desc": "Galahad's signature Оружие artifact provides a massive boost to Физическая Атака. When Galahad uses his Iron Skies ultimate ability, this artifact has a 100% activation chance to trigger an effect that grants bonus stats to the entire team for 9 seconds, making it both a personal and team-wide buff. Stats Gain: Физическая Атака +33,459 Activation: 100% chance when using ultimate ability Effect Duration: 9 seconds team-wide buff",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/weapon-galahad-harunian-sword.webp",
-        "name": "Weapon Artifact: Harunian Sword",
-        "slot": "Оружие",
-        "desc_en": "Galahad's signature weapon artifact provides a massive boost to physical attack. When Galahad uses his Iron Skies ultimate ability, this artifact has a 100% activation chance to trigger an effect that grants bonus stats to the entire team for 9 seconds, making it both a personal and team-wide buff. Stats Gain: Physical Attack +33,459 Activation: 100% chance when using ultimate ability Effect Duration: 9 seconds team-wide buff",
-        "name_ru": "Weapon Artifact: Harunian Sword (Оружие)",
-        "priority": "Средний-Высокий – While this artifact provides an enormous Физическая Атака boost and synergizes excellently with Galahad's 45% Вампиризм (more attack = more healing), as a Танк his primary function is survival. The Оружие artifact is valuable and should definitely be upgraded, but after ensuring his defensive artifacts are strong. The 100% activation with his ultimate and team buff make it more valuable than a pure урон artifact would be. Upgrade this as your third priority, after securing Книга and Кольцо artifacts for maximum survivability.",
-        "priority_en": "Medium-High – While this artifact provides an enormous physical attack boost and synergizes excellently with Galahad's 45% Vampirism (more attack = more healing), as a tank his primary function is survival. The weapon artifact is valuable and should definitely be upgraded, but after ensuring his defensive artifacts are strong. The 100% activation with his ultimate and team buff make it more valuable than a pure damage artifact would be. Upgrade this as your third priority, after securing Book and Ring artifacts for maximum survivability."
-      },
-      {
-        "desc": "The Defender's Covenant perfectly lives up to its name, providing balanced defensive stats that protect against both physical and magical threats. This is the quintessential Танк artifact. Stats Gain:",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/book-defenders-covenant.webp",
-        "name": "Book Artifact: Defender's Covenant",
-        "slot": "Книга",
-        "desc_en": "The Defender's Covenant perfectly lives up to its name, providing balanced defensive stats that protect against both physical and magical threats. This is the quintessential tank artifact. Stats Gain:",
-        "name_ru": "Book Artifact: Defender's Covenant (Книга)",
-        "priority": "Очень Высокий – This is THE most important artifact for Galahad. As a front-line Танк, he needs both Броня and Защита от Магии to handle any enemy composition. This artifact alone provides over 12,000 points in BOTH defensive stats, making Galahad significantly tankier against all урон types. The dual defensive benefit means every upgrade point provides incredible value. Prioritize this artifact first above all others. Combined with his massive Здоровье pool from glyphs and skins, these resistances make Galahad nearly unkillable. A Танк that can't survive can't protect the team—make this your absolute first priority.",
-        "priority_en": "Very High – This is THE most important artifact for Galahad. As a front-line tank, he needs both armor and magic defense to handle any enemy composition. This artifact alone provides over 12,000 points in BOTH defensive stats, making Galahad significantly tankier against all damage types. The dual defensive benefit means every upgrade point provides incredible value. Prioritize this artifact first above all others. Combined with his massive health pool from glyphs and skins, these resistances make Galahad nearly unkillable. A tank that can't survive can't protect the team—make this your absolute first priority."
-      },
-      {
-        "desc": "The Кольцо of Сила boosts Galahad's main stat, providing dual benefits just like the Сила glyph but on a much larger scale. Since Сила is his primary attribute, every point grants both survivability and offensive power. Stats Gain: Сила +6,249 (Each Сила point grants: 40 Здоровье points + 1 Физическая Атака point when Сила is the hero's main stat)",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/ring-of-strength.webp",
-        "name": "Ring Artifact: Ring of Strength",
-        "slot": "Кольцо",
-        "desc_en": "The Ring of Strength boosts Galahad's main stat, providing dual benefits just like the Strength glyph but on a much larger scale. Since Strength is his primary attribute, every point grants both survivability and offensive power. Stats Gain: Strength +6,249 (Each Strength point grants: 40 health points + 1 physical attack point when Strength is the hero's main stat)",
-        "name_ru": "Ring Artifact: Ring of Strength (Кольцо)",
-        "priority": "Высокий – This artifact is exceptionally valuable for Galahad, providing nearly 250,000 additional Здоровье plus over 6,000 Физическая Атака. The Здоровье boost dramatically improves survivability—it's like adding another Здоровье glyph's worth of HP. Meanwhile, the Физическая Атака increase boosts both урон output and Вампиризм healing. Upgrade this as your second priority, right after the Книга artifact. The combination of massive Здоровье and урон that converts to healing through Вампиризм makes this artifact perfect for Galahad's bruiser-Танк playstyle. It bridges the gap between pure survivability and sustainable урон dealing.",
-        "priority_en": "High – This artifact is exceptionally valuable for Galahad, providing nearly 250,000 additional health plus over 6,000 physical attack. The health boost dramatically improves survivability—it's like adding another health glyph's worth of HP. Meanwhile, the physical attack increase boosts both damage output and vampirism healing. Upgrade this as your second priority, right after the Book artifact. The combination of massive health and damage that converts to healing through vampirism makes this artifact perfect for Galahad's bruiser-tank playstyle. It bridges the gap between pure survivability and sustainable damage dealing."
-      }
-    ],
-    "patronage": [],
-    "war_flags": [
-      {
-        "desc": "Effect: Once every 4 seconds, heals the front Hero in your team for 1.6% of their Max Здоровье (plus an additional 0.3% for every inserted red pattern).",
-        "name": "War Flag of Vanguard",
-        "benefit": "This is THE best War Flag for Galahad. As a front-line Танк, he is always the \"front Hero\" receiving this healing every 4 seconds. With Galahad's massive Здоровье pool (often exceeding 500,000+ HP when fully upgraded), this flag provides 8,000+ HP regeneration every 4 seconds (2,000 HP/second). This constant passive healing perfectly complements his 45% Вампиризм, creating a dual-healing system: Вампиризм heals him when he attacks, while War Flag of Vanguard provides steady regeneration even when he's not attacking or is under crowd Контролёр. The healing is based on his MAX Здоровье, so every Здоровье investment (glyphs, skins, artifacts) makes this flag more powerful. Combined with his tankiness and self-sustain, this flag makes Galahad nearly unkillable in prolonged fights. The flag essentially gives him a permanent regeneration buff throughout the entire battle, drastically improving his survivability against sustained урон and burst attempts."
-      },
-      {
-        "desc": "Effect: Increases all healing received by your team by 10%.",
-        "name": "War Flag of Recovery",
-        "benefit": "This War Flag is exceptionally valuable for Galahad because it amplifies ALL sources of healing he receives, making it a universal multiplier for his sustain. The 10% bonus applies to his 45% Вампиризм (making it effectively ~49.5% healing from урон dealt), any healing from Oliver patronage (if used), healing from War Flag of Vanguard (if combined), and healing from ally supports like Martha or Thea. Since Galahad's entire strategy revolves around self-sustain through multiple healing sources, this 10% increase compounds across all of them, resulting in significantly more total healing per second. In prolonged battles, this extra 10% healing can be the difference between surviving and falling. This flag benefits not just Galahad but your entire team, making it extremely valuable if you have multiple heroes who rely on healing (tanks, bruisers, or teams with healers). The War Flag of Recovery synergizes perfectly with Galahad's kit and can be combined with War Flag of Vanguard for maximum healing output."
-      },
-      {
-        "desc": "Effect: Increases Energy Gain for Tanks by 10%.",
-        "name": "War Flag of Fervor",
-        "benefit": "This War Flag directly accelerates Galahad's ultimate ability activation. As a Танк, Galahad benefits from the 10% increased energy gain, allowing him to charge his Iron Skies ultimate faster. More frequent ultimates mean more area-of-effect урон across the entire enemy team, which directly translates to massive healing through Вампиризм since he's hitting all враги simultaneously. Iron Skies also repositions him to the enemy backline, allowing him to disrupt enemy formations and target vulnerable урон dealers. Faster energy gain = more ultimates = more урон = more healing = better survivability and more impact in battle. This flag is especially powerful in longer fights where ultimate abilities are used multiple times. Additionally, if your team has other Танк heroes (like Cleaver, Aurora, or Chabba), they also benefit from the increased energy gain, making this flag valuable for Танк-heavy or double-Танк compositions. The War Flag of Fervor synergizes excellently with Galahad's aggressive playstyle and ensures he can use his most powerful ability as often as possible."
-      }
-    ],
-    "best_teams": []
-  },
   "faceless": {
     "id": "faceless",
     "cons": [
@@ -4720,156 +4297,282 @@ export const HERO_GUIDES_DB = {
     "war_flags": [],
     "best_teams": []
   },
-  "arachne": {
-    "id": "arachne",
+  "galahad": {
     "cons": [
-      "✅ Great survivability due to Контролёр effects and 80% Вампиризм",
-      "✅ Deals pure урон , can execute враги with Низкий Здоровье",
-      "✅ Great Поддержка for Высокий-урон characters of any type",
-      "✅ Amazing synergy with Контролёр heroes (Lian, Phobos, Polaris) and pet Mara"
+      "Уязвимость к блокировке исцеления: вся его выживаемость зависит от вампиризма. Такие герои, как Селеста, питомец Бисквит или Флаг увядания полностью лишают его возможности лечиться.",
+      "Зависимость от энергии: его сильнейшее умение требует полной шкалы энергии. Герои вроде Йоргена могут заблокировать набор энергии, снизив его эффективность.",
+      "Слабость против уклонения: против героев с высоким уклонением (Аврора, Данте, Хайди, Ясмин, Цин Мао) Галахад малоэффективен, так как промахи не активируют вампиризм.",
+      "Отсутствие поддержки команды: Галахад не дает щитов, баффов или воскрешения союзникам — он полностью эгоистичный танк.",
+      "Уязвимость к магическому урону: без серьезных вложений в магическую защиту Галахад быстро погибает под натиском сильных магов.",
+      "Уязвимость к чистому урону: герои вроде Айрис, способные вытягивать душу, легко обходят его высокие показатели брони."
     ],
-    "name": "Арахна",
     "pros": [
-      "✅ Great survivability due to Контролёр effects and 80% Вампиризм",
-      "✅ Deals pure урон , can execute враги with Низкий Здоровье",
-      "✅ Great Поддержка for Высокий-урон characters of any type",
-      "✅ Amazing synergy with Контролёр heroes (Lian, Phobos, Polaris) and pet Mara"
+      "Исключительное самоисцеление: благодаря 45% вампиризму Галахад постоянно лечится в бою, не полагаясь исключительно на лекарей.",
+      "Высокий физический урон: в отличие от чисто защитных танков, Галахад наносит существенный физический урон всеми своими умениями.",
+      "Иммунитет к контролю: умение «Неудержимый натиск» снимает все эффекты контроля, позволяя избегать оглушений, заморозок и молчания.",
+      "Ультимейт по площади: умение «Железные небеса» поражает всех врагов одновременно, обеспечивая огромный отхил через вампиризм.",
+      "Пробивание чистым уроном: умение «Гордость Харуна» добавляет чистый урон, игнорирующий броню и магическую защиту врагов.",
+      "Нарушение позиций задней линии: высокая мобильность позволяет ему врываться в ряды противника и оказывать давление на уязвимых героев поддержки и стрелков.",
+      "Силен на ранней и средней стадиях игры: до появления у противников мощных средств против исцеления Галахад доминирует на поле боя.",
+      "Низкая зависимость от снаряжения: эффективно выполняет свою роль даже при базовых улучшениях благодаря врожденному вампиризму."
     ],
     "skins": [
       {
-        "desc": "Total of Ловкость Skin Stones for max level: 30,825",
-        "name": "Default Skin",
-        "bonus": "Stats gain: Ловкость +1,365",
-        "priority": "Средний – The Default Skin provides Ловкость bonuses which grant Физическая Атака and Броня. While Броня helps with survivability, Arachne's урон scales primarily with Магическая Атака, making this skin less impactful than others. Each Ловкость point grants: 2 points to Физическая Атака, 1 point to Броня, and 1 extra point to Физическая Атака if Ловкость is the main stat."
+        "name": "Базовый облик",
+        "bonus": "Сила +1,365",
+        "priority": "Средний"
       },
       {
-        "desc": "Total of Ловкость Skin Stones for max level: 55,410",
-        "name": "Mechanical Skin",
-        "bonus": "Stats gain: Магическая Атака +10,650",
-        "priority": "Очень Высокий – This is Arachne's best skin! Магическая Атака directly increases the урон of ALL her skills: Hyper Jump (95% scaling), Demolition Robot (30% scaling), Minefield (25% scaling), and most importantly, Plasma Explosion (200% scaling). With +10,650 Магическая Атака, your Plasma Explosion gains approximately +21,300 pure урон! Combined with her 80% Вампиризм , this also increases her healing significantly. Prioritize maxing this skin first."
+        "name": "Ангельский облик",
+        "bonus": "Физическая атака +7,095",
+        "priority": "Средне-Высокий"
       },
       {
-        "desc": "Total of Ловкость Skin Stones for max level: 55,410",
-        "name": "Romantic Skin",
-        "bonus": "Stats gain: Магическая Атака +10,650",
-        "priority": "Очень Высокий – Identical in power to the Mechanical Skin, the Romantic Skin provides the same massive +10,650 Магическая Атака boost. This translates to devastating increases across all her abilities. If you already have the Mechanical Skin maxed, this should be your second priority for the same reasons: maximum урон output and healing through Вампиризм. Either Mechanical or Romantic can be your top choice depending on availability."
+        "name": "Облик Чемпиона",
+        "bonus": "Здоровье +106,870",
+        "priority": "Очень Высокий"
       },
       {
-        "desc": "Total of Ловкость Skin Stones for max level: 53,412 Note: Arachne's Winter Skin can be obtained only during the Winterfest event .",
-        "name": "Winter Skin",
-        "bonus": "Stats gain: Здоровье +106,670",
-        "priority": "Средний-Высокий – The Winter Skin provides substantial survivability with +106,670 Здоровье. This is particularly valuable for Arachne because: 1) More Здоровье means she can survive longer to deal урон, and 2) With 80% Вампиризм , a larger Здоровье pool allows her to sustain through extended fights. However, prioritize Магическая Атака skins first since dead враги can't hurt you. Upgrade this skin after maxing Mechanical and Romantic skins."
+        "name": "Романтический облик",
+        "bonus": "Броня +10,650",
+        "priority": "Высокий"
       },
       {
-        "desc": "Total of Ловкость Skin Stones for max level: 55,410",
-        "name": "Spring Skin",
-        "bonus": "Stats gain: Пробивание Защиты от Магии +10,650",
-        "priority": "Высокий – Пробивание Защиты от Магии makes Arachne's magic урон abilities (Hyper Jump and Demolition Robot) more effective against враги with Высокий Защита от Магии. With +10,650 Пробивание Защиты от Магии, her magical attacks bypass enemy defenses more effectively. However, note that her most powerful abilities (Minefield and Plasma Explosion) deal pure урон which already ignores all defenses, making this skin less critical than direct Магическая Атака boosts. Upgrade after Mechanical/Romantic skins but before Winter Skin if you face tanky magic-resistant teams."
+        "name": "Небесный облик",
+        "bonus": "Магическая защита +10,650",
+        "priority": "Высокий"
       },
       {
-        "desc": "Total of Ловкость Skin Stones for max level: 55,410 Note: Arachne's Space Skin can be obtained only during the Seers game event .",
-        "name": "Space Skin",
-        "bonus": "Stats gain: Пробивание Защиты от Магии +21,300",
-        "priority": "Очень Высокий – The revolutionary Space Skin provides a massive +21,300 Пробивание Защиты от Магии boost, bringing Arachne's total Пробивание Защиты от Магии to 40,950 – practically doubling this statistic! This dramatic increase makes not only her magical abilities (Skills 1 and 2) significantly more lethal against Высокий Защита от Магии враги, but also enhances Skills 3 and 4 which, despite dealing pure урон, also scale with Магическая Атака. The result is devastating урон output across her entire skill set. Prioritize this skin above all others when available."
+        "name": "Грозовой облик",
+        "bonus": "Физическая атака +7,095",
+        "priority": "Средне-Высокий"
       }
     ],
     "glyphs": [
       {
-        "desc": "Stats gain: Магическая Атака +6,500",
-        "name": "4th Glyph - Магическая Атака",
-        "name_en": "4th Glyph - Magic Attack",
-        "priority": "Очень Высокий – This is Arachne's MOST IMPORTANT glyph! Магическая Атака directly increases ALL her ability урон: Hyper Jump (95% scaling = +6,175 magic урон), Demolition Robot (30% scaling = +1,950 magic урон), Minefield (25% scaling = +1,625 pure урон), and especially Plasma Explosion (200% scaling = +13,000 pure урон!). This glyph massively boosts her burst урон and, combined with 80% Вампиризм , also increases her healing. MAX THIS FIRST!"
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/health.webp",
+        "name": "Здоровье"
       },
       {
-        "desc": "Stats gain: Ловкость +1,135 Each Ловкость point grants: 2 points to Физическая Атака, 1 point to Броня, and 1 extra point to Физическая Атака if Ловкость is the main stat.",
-        "name": "5th Glyph - Ловкость",
-        "name_en": "5th Glyph - Agility",
-        "priority": "Средний – Ловкость provides both Физическая Атака and Броня. While the +1,135 Броня is helpful for defense, the Физическая Атака bonus only affects basic attacks, not her powerful abilities. This makes it less valuable than Магическая Атака or Здоровье glyphs. However, the defensive stat contribution keeps it above Физическая Атака glyph priority. Upgrade this in the middle of your progression."
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/armor.webp",
+        "name": "Броня"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-defense.webp",
+        "name": "Магическая защита"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/strength.webp",
+        "name": "Сила"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/physical-attack.webp",
+        "name": "Физическая атака"
       }
     ],
-    "counters": [],
-    "overview": "There's no trace of humanity left in her she's a perfect Ассасин now. Arachne in Хроники Хаоса (Dominion Era) is a lethal Контролёр/Боец hybrid who paralyzes враги with her hypnotic gaze and shreds them with her venomous claws. If you're looking for a hero who combines crowd Контролёр with devastating pure урон, Arachne is your ultimate Оружие. What makes Arachne truly exceptional is her incredible survivability through Вампиризм (80%) and Контролёр effects. She can execute Низкий-Здоровье враги with pure урон, making her a nightmare for Танк-heavy teams. Her synergy with other Контролёр heroes like Lian, Phobos, and Polaris creates devastating lock-down combos. Ready to unleash the spider's fury? Let's dive into everything you need to dominate with Arachne! Arachne - Best Team #1 #1 Merlin Albus Cain Fenris Mara Axel --> Dorian Sebastian Nebula Dante Arachne",
+    "counters": [
+      {
+        "hero": "Celeste",
+        "reason": "Селеста является одним из самых жестких контр-пиков Галахада. Ее умение <a href=\"#hero/celeste?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">Проклятое пламя</a> блокирует все получаемое исцеление, превращая заблокированное лечение в магический урон. Поскольку Галахад полностью зависит от вампиризма, Селеста превращает его главный плюс в смертельную слабость."
+      },
+      {
+        "hero": "Iris",
+        "reason": "Айрис уничтожает Галахада с помощью умения <a href=\"#hero/iris?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">Хранилище душ</a>, обнажая душу танка. Весь урон, наносимый по этой душе, передается Галахаду в виде чистого урона, полностью игнорируя его броню и магическую защиту."
+      },
+      {
+        "hero": "Jorgen",
+        "reason": "Йорген лишает Галахада возможности накапливать энергию своими <a href=\"#hero/jorgen?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">умениями Йоргена</a>, не позволяя ему вовремя активировать ультимейт «Железные небеса» для массового отхила."
+      }
+    ],
+    "overview": "Галахад — это танк, основанный на Силе, который олицетворяет мужество и непоколебимую решимость. Прочный, как харунийская сталь, и не знающий страха или сомнений, он движется в бой только вперед. Его уверенность в себе и своих союзниках делает его одним из самых надежных защитников передовой в Hero Wars: Dominion Era. Уникальной особенностью Галахада является его 45% Вампиризм — важнейшая характеристика, позволяющая ему восстанавливать здоровье в зависимости от наносимого им урона. Чем больше врагов он поражает, тем сильнее исцеляет себя, превращаясь в самодостаточного танка, которого становится все труднее убить по ходу боя. Этот вампиризм идеально синергирует с его высокой физической атакой, превращая его атакующий потенциал в оборонительную мощь.",
     "artifacts": [
       {
-        "desc": "Stats gain: Физическая Атака +4,340",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/physical-attack.webp",
-        "name": "1st Glyph - Physical Attack",
+        "desc": "Физическая атака +33,459 (при активации ультимейта дает бонус к физической атаке всей команде на 9 секунд)",
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/weapon-galahad-harunian-sword.webp",
+        "name": "Меч Харуна",
         "slot": "Оружие",
-        "desc_en": "Stats gain: Physical Attack +4,340",
-        "name_ru": "1st Glyph - Physical Attack (Оружие)",
-        "priority": "Низкий – Физическая Атака only affects Arachne's basic attacks, not her abilities. Since her урон comes primarily from her magic and pure урон skills (Hyper Jump, Demolition Robot, Minefield, Plasma Explosion), investing in Физическая Атака provides minimal benefit. This glyph should be your last priority.",
-        "priority_en": "LOW – Physical Attack only affects Arachne's basic attacks, not her abilities. Since her damage comes primarily from her magic and pure damage skills (Hyper Jump, Demolition Robot, Minefield, Plasma Explosion), investing in Physical Attack provides minimal benefit. This glyph should be your last priority."
+        "name_ru": "Меч Харуна",
+        "priority": "Средне-Высокий — третья очередь прокачки, увеличивает урон и отхил всей команды."
       },
       {
-        "desc": "Stats gain: Здоровье +62,200",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/health.webp",
-        "name": "2nd Glyph - Health",
-        "slot": "Книга",
-        "desc_en": "Stats gain: Health +62,200",
-        "name_ru": "2nd Glyph - Health (Книга)",
-        "priority": "Высокий – Здоровье is crucial for Arachne due to her 80% Вампиризм . More Здоровье means she can survive longer in battles to исцеление back through lifesteal. The massive +62,200 Здоровье boost significantly increases her durability, allowing her to stay alive and continuously deal урон. With Высокий Вампиризм, survivability translates directly into sustained урон output. Prioritize this after Магическая Атака.",
-        "priority_en": "HIGH – Health is crucial for Arachne due to her 80% Vampirism . More health means she can survive longer in battles to heal back through lifesteal. The massive +62,200 health boost significantly increases her durability, allowing her to stay alive and continuously deal damage. With high Vampirism, survivability translates directly into sustained damage output. Prioritize this after Magic Attack."
-      },
-      {
-        "desc": "Stats gain: Броня +6,500",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/armor.webp",
-        "name": "3rd Glyph - Armor",
-        "slot": "Кольцо",
-        "desc_en": "Stats gain: Armor +6,500",
-        "name_ru": "3rd Glyph - Armor (Кольцо)",
-        "priority": "Средний-Высокий – Броня helps Arachne survive against physical урон dealers. With +6,500 Броня, she becomes significantly more resilient against physical attacks. Combined with her 80% Вампиризм , better defense means she can исцеление more efficiently without taking excessive урон. However, this is less critical than Магическая Атака (урон) or Здоровье (raw survivability), making it a Средний-Высокий priority.",
-        "priority_en": "MEDIUM-HIGH – Armor helps Arachne survive against physical damage dealers. With +6,500 Armor, she becomes significantly more resilient against physical attacks. Combined with her 80% Vampirism , better defense means she can heal more efficiently without taking excessive damage. However, this is less critical than Magic Attack (damage) or Health (raw survivability), making it a medium-high priority."
-      },
-      {
-        "desc": "Stats gain: Пробивание Защиты от Магии +50,190 Activation: 100% chance when using the Shieldbreaker skill (activates with ultimate ability) Effect: Grants bonus stats to the whole team for 9 seconds",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/weapon-arachne-hyper-booters-ds1.webp",
-        "name": "Weapon Artifact: Hyper Booster DS-1",
-        "slot": "Оружие",
-        "desc_en": "Stats gain: Magic Penetration +50,190 Activation: 100% chance when using the Shieldbreaker skill (activates with ultimate ability) Effect: Grants bonus stats to the whole team for 9 seconds",
-        "name_ru": "Weapon Artifact: Hyper Booster DS-1 (Оружие)",
-        "priority": "Очень Высокий – This is Arachne's BEST artifact! The massive +50,190 Пробивание Защиты от Магии makes her magic урон abilities (Hyper Jump and Demolition Robot) devastatingly effective against Высокий Защита от Магии враги. The artifact activates with her ultimate ability, providing team-wide buffs. With such Высокий penetration, her magical attacks ignore most enemy defenses, significantly increasing урон output. This should be your top priority to maximize her offensive potential.",
-        "priority_en": "VERY HIGH – This is Arachne's BEST artifact! The massive +50,190 Magic Penetration makes her magic damage abilities (Hyper Jump and Demolition Robot) devastatingly effective against high Magic Defense enemies. The artifact activates with her ultimate ability, providing team-wide buffs. With such high penetration, her magical attacks ignore most enemy defenses, significantly increasing damage output. This should be your top priority to maximize her offensive potential."
-      },
-      {
-        "desc": "Stats gain: Броня +12,546 , Защита от Магии +12,546",
+        "desc": "Броня +12,546, Магическая защита +12,546",
         "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/book-defenders-covenant.webp",
-        "name": "Book Artifact: Defender's Covenant",
+        "name": "Завет Защитника",
         "slot": "Книга",
-        "desc_en": "Stats gain: Armor +12,546 , Magic Defense +12,546",
-        "name_ru": "Book Artifact: Defender's Covenant (Книга)",
-        "priority": "Высокий – The Книга provides dual defenses with +12,546 to both Броня and Защита от Магии. This makes Arachne significantly tankier against all урон types. Combined with her 80% Вампиризм , better defenses mean she takes less урон while healing, drastically improving her survivability in extended fights. Prioritize this after the Оружие artifact to create a balanced урон dealer who can survive long enough to utilize her devastating abilities.",
-        "priority_en": "HIGH – The Book provides dual defenses with +12,546 to both Armor and Magic Defense. This makes Arachne significantly tankier against all damage types. Combined with her 80% Vampirism , better defenses mean she takes less damage while healing, drastically improving her survivability in extended fights. Prioritize this after the Weapon artifact to create a balanced damage dealer who can survive long enough to utilize her devastating abilities."
+        "name_ru": "Завет Защитника",
+        "priority": "Очень Высокий — первая очередь прокачки, дает важнейшие защитные характеристики для выживания на передовой."
       },
       {
-        "desc": "Stats gain: Ловкость +6,249 Each Ловкость point grants: 2 points to Физическая Атака, 1 point to Броня, and 1 extra point to Физическая Атака if Ловкость is the main stat.",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/ring-of-agility.webp",
-        "name": "Ring Artifact: Ring of Agility",
+        "desc": "Сила +6,249 (дает +249,960 Здоровья и +6,249 Физической атаки)",
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/ring-of-strength.webp",
+        "name": "Кольцо Силы",
         "slot": "Кольцо",
-        "desc_en": "Stats gain: Agility +6,249 Each Agility point grants: 2 points to Physical Attack, 1 point to Armor, and 1 extra point to Physical Attack if Agility is the main stat.",
-        "name_ru": "Ring Artifact: Ring of Agility (Кольцо)",
-        "priority": "Средний – The Кольцо provides +6,249 Ловкость, translating to Физическая Атака and Броня. While the +6,249 Броня boost helps with survivability, the Физическая Атака component only affects her basic attacks, not her powerful magic and pure урон abilities. This makes it less impactful than the Оружие's Пробивание Защиты от Магии or the Книга's dual defenses. Upgrade this artifact last, after maximizing the Оружие and Книга artifacts.",
-        "priority_en": "MEDIUM – The Ring provides +6,249 Agility, translating to Physical Attack and Armor. While the +6,249 Armor boost helps with survivability, the Physical Attack component only affects her basic attacks, not her powerful magic and pure damage abilities. This makes it less impactful than the Weapon's Magic Penetration or the Book's dual defenses. Upgrade this artifact last, after maximizing the Weapon and Book artifacts."
+        "name_ru": "Кольцо Силы",
+        "priority": "Высокий — вторая очередь прокачки, значительно увеличивает максимальный запас здоровья и урон."
       }
     ],
     "patronage": [],
-    "war_flags": [
+    "war_flags": [],
+    "best_teams": [
       {
-        "desc": "Effect: Increases all healing by 10% .",
-        "name": "War Flag of Recovery",
-        "benefit": "This is Arachne's BEST War Flag! The 10% healing increase directly amplifies her 80% Вампиризм , making her significantly more sustainable in extended fights. For example, when dealing 74,135 урон with Hyper Jump, she normally heals for 59,308 HP. With War Flag of Recovery, this becomes approximately 65,239 HP – an extra 5,931 healing per skill! Combined with her devastating Plasma Explosion (165,652 урон) , the healing boost becomes enormous: 145,437 HP instead of 132,217 . This War Flag transforms Arachne into an unkillable урон dealer, allowing her to outlast враги while continuously dealing pure урон. Additionally, any team healers (Martha, Thea, Dorian) also benefit from the 10% boost, improving overall team survivability."
+        "hero": "Tristan",
+        "reason": "Тристан отлично синергирует с Галахадом благодаря принадлежности к фракции Благословенных. Галахад помогает Тристану быстрее накапливать энергию, а Тристан обеспечивает команду пробиванием брони."
       },
       {
-        "desc": "Effect: Speeds up skill cooldown for Warriors by 5% .",
-        "name": "War Flag of Swift Warriors",
-        "benefit": "Excellent choice for Arachne since she is a Боец ! The 5% cooldown reduction means she can cast her powerful abilities more frequently: Hyper Jump , Demolition Robot , Minefield , and especially Plasma Explosion (165,652 pure урон) become available faster. More skill casts = more урон = more healing through 80% Вампиризм . The 5% cooldown reduction also means she can apply crowd Контролёр (stuns, slows) more often, keeping враги locked down. This War Flag is particularly strong in teams with multiple Warriors (Corvus, K'arkh, Cleaver), as all benefit from the cooldown reduction simultaneously."
+        "hero": "Sebastian",
+        "reason": "Себастьян защищает Галахада от дебаффов и контроля, а также увеличивает его критический урон, что напрямую повышает эффективность вампиризма."
       },
       {
-        "desc": "Effect: Every 18 seconds, Frost is cast on враги, reducing their skill levels by 2 . The effect lasts for 8 seconds.",
-        "name": "War Flag of Frost",
-        "benefit": "Strong defensive/offensive War Flag that weakens enemy abilities. Reducing enemy skill levels by 2 means враги deal less урон, исцеление less, and have weaker crowd Контролёр effects. This gives Arachne more time to execute her combos without being interrupted or burst down. The 8-second duration covers a significant portion of most fights, and the 18-second cooldown ensures frequent application. This War Flag is particularly valuable against Высокий-урон enemy teams or teams with strong Поддержка abilities, as it directly reduces their effectiveness. Combined with Arachne's 80% Вампиризм , the reduced incoming урон allows her to sustain even better. Teams with Контролёр heroes (Astaroth, Faceless, Jorgen) also benefit, as their crowd Контролёр becomes more effective relative to weakened враги."
+        "hero": "Lara Croft",
+        "reason": "Лара Крофт отлично дополняет физические команды, усиливая атакующий потенциал Галахада и помогая быстрее пробивать переднюю линию врага."
       }
     ],
-    "best_teams": []
+    "conclusion": "Галахад — отличный агрессивный танк, способный выживать за счет собственного урона и вампиризма. Он идеально подходит для команд, которые могут защитить его от эффектов блокировки исцеления, или для сражений против соперников без жестких контр-пиков. Сочетайте его с героями поддержки, снимающими дебаффы, или генераторами энергии, чтобы полностью раскрыть его потенциал."
+  },
+  "arachne": {
+    "cons": [
+      "Уязвима к героям, снимающим или блокирующим эффекты контроля",
+      "Требует правильно подобранного состава команды для максимальной эффективности",
+      "Может испытывать трудности против команд с высоким мгновенным (взрывным) уроном"
+    ],
+    "pros": [
+      "Отличная выживаемость благодаря эффектам контроля и 80% вампиризма",
+      "Наносит чистый урон и способна добивать врагов с низким уровнем здоровья",
+      "Прекрасная поддержка для героев с высоким уроном любого типа",
+      "Великолепная синергия с героями контроля (Лиэн, Фобос, Полярис) и питомцем Марой"
+    ],
+    "skins": [
+      {
+        "name": "Космический облик",
+        "bonus": "Пробивание магии +21 300",
+        "priority": "Максимальный — практически удваивает пробивание магии"
+      },
+      {
+        "name": "Механический облик",
+        "bonus": "Магическая атака +10 650",
+        "priority": "Очень высокий — напрямую увеличивает урон всех умений и вампиризм"
+      },
+      {
+        "name": "Романтический облик",
+        "bonus": "Магическая атака +10 650",
+        "priority": "Очень высокий — идентичен по силе Механическому облику"
+      },
+      {
+        "name": "Весенний облик",
+        "bonus": "Пробивание магии +10 650",
+        "priority": "Высокий — помогает преодолевать защиту танков"
+      },
+      {
+        "name": "Зимний облик",
+        "bonus": "Здоровье +106 670",
+        "priority": "Средне-высокий — увеличивает запас здоровья для синергии с вампиризмом"
+      },
+      {
+        "name": "Базовый облик",
+        "bonus": "Ловкость +1 365",
+        "priority": "Средний — дает базовые характеристики"
+      }
+    ],
+    "glyphs": [
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-attack.webp",
+        "name": "Магическая атака"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/health.webp",
+        "name": "Здоровье"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/armor.webp",
+        "name": "Броня"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/agility.webp",
+        "name": "Ловкость"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/physical-attack.webp",
+        "name": "Физическая атака"
+      }
+    ],
+    "counters": [
+      {
+        "hero": "Biscuit",
+        "reason": "Полностью блокирует вампиризм Арахны с помощью своих умений, лишая ее основного источника выживаемости в затяжных боях."
+      },
+      {
+        "hero": "Celeste",
+        "reason": "Представляет двойную угрозу: снимает дебаффы с союзников своими <a href=\"#hero/celeste?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">умениями Селесты</a>, нейтрализуя контроль Арахны, и блокирует исцеление, сводя на нет ее 80% вампиризм."
+      },
+      {
+        "hero": "Jet",
+        "reason": "Ослабляет Арахну своим <a href=\"#hero/jet?skill=3\" style=\"color:#38bdf8; text-decoration:underline;\">Зельем Усталости</a>, которое запрещает регенерацию здоровья на 8 секунд, лишая ее выживаемости."
+      },
+      {
+        "hero": "Julius",
+        "reason": "Защищает команду от взрывного урона. Когда союзники теряют щиты, Джулиус снимает все негативные эффекты (включая оглушение от Гиперпрыжка) с помощью своего <a href=\"#hero/julius?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">первого умения</a>."
+      },
+      {
+        "hero": "Nebula",
+        "reason": "Снимает дебаффы с двух ближайших союзников своим <a href=\"#hero/nebula?skill=4\" style=\"color:#38bdf8; text-decoration:underline;\">четвертым умением</a>, нейтрализуя оглушение Арахны и мешая ей проводить комбинации."
+      },
+      {
+        "hero": "Sebastian",
+        "reason": "Крайне эффективен против Арахны благодаря своему умению <a href=\"#hero/sebastian?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">Песнь Свободы</a>, которое снимает все дебаффы с союзников и дает щит, блокирующий наложение новых эффектов контроля."
+      }
+    ],
+    "overview": "Арахна — смертоносный гибрид Контроля и Бойца, сражающийся на средней линии. Она специализируется на парализации врагов своим гипнотическим взглядом и нанесении сокрушительного чистого урона своими ядовитыми когтями. Обладая невероятной выживаемостью благодаря высокому показателю вампиризма (80%) и эффектам контроля, она способна эффективно добивать ослабленных противников чистым уроном, что делает ее настоящим кошмаром для плотных команд с обилием танков. Ее синергия с другими героями контроля, такими как Лиэн, Фобос и Полярис, позволяет создавать разрушительные цепочки блокировки противника.",
+    "artifacts": [
+      {
+        "desc": "Пробивание магии +50 190 при активации",
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/weapon-arachne-hyper-booters-ds1.webp",
+        "name": "Гиперускоритель DS-1",
+        "slot": "Оружие",
+        "name_ru": "Гиперускоритель DS-1",
+        "priority": "Очень высокий — дает огромное пробивание магии для всей команды"
+      },
+      {
+        "desc": "Броня +12 546, Защита от магии +12 546",
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/book-defenders-covenant.webp",
+        "name": "Завет Защитника",
+        "slot": "Книга",
+        "name_ru": "Завет Защитника",
+        "priority": "Высокий — значительно увеличивает выживаемость"
+      },
+      {
+        "desc": "Ловкость +6 249",
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/ring-of-agility.webp",
+        "name": "Кольцо Ловкости",
+        "slot": "Кольцо",
+        "name_ru": "Кольцо Ловкости",
+        "priority": "Средний — прокачивается в последнюю очередь"
+      }
+    ],
+    "patronage": [],
+    "war_flags": [],
+    "best_teams": [
+      {
+        "hero": "Lian",
+        "reason": "Отличная синергия контроля. Позволяет держать команду противника в постоянной блокировке, пока Арахна наносит урон."
+      },
+      {
+        "hero": "Phobos",
+        "reason": "Помогает изолировать и контролировать ключевые цели противника, продлевая время действия эффектов контроля."
+      },
+      {
+        "hero": "Polaris",
+        "reason": "Увеличивает длительность и эффективность эффектов контроля Арахны, создавая непреодолимые цепочки оглушения."
+      },
+      {
+        "hero": "Nebula",
+        "reason": "Увеличивает показатели атаки Арахны, значительно повышая ее урон, и обеспечивает своевременное снятие негативных эффектов."
+      },
+      {
+        "hero": "Albus",
+        "reason": "Лучший питомец-покровитель, который напрямую увеличивает наносимый Арахной чистый урон от Минного поля и Плазменного взрыва."
+      }
+    ],
+    "conclusion": "Арахна в Hero Wars: Dominion Era — это грозный гибрид Контроля и Бойца, чья сила заключается в способности оглушать врагов и наносить чистый урон. Оптимизируя ее артефакты, покровительство питомцев, боевые знамена и составы команд, игроки могут максимизировать ее эффективность как в PvP, так и в PvE-сценариях. Однако понимание ее контр-пиков и стратегических ограничений имеет решающее значение для успешного использования в соревновательной игре. При правильной настройке Арахна может полностью изменить ход сражения."
   },
   "keira": {
     "id": "keira",
@@ -5015,24 +4718,6 @@ export const HERO_GUIDES_DB = {
     "glyphs": [],
     "counters": [],
     "overview": "Полный разбор механик, роли и стратегий для персонажа Астрид и Лукас в игре Хроники Хаоса (Dominion Era).",
-    "artifacts": [],
-    "patronage": [],
-    "war_flags": [],
-    "best_teams": []
-  },
-  "fafnir": {
-    "id": "fafnir",
-    "cons": [
-      "Требует правильного подбора команды"
-    ],
-    "name": "Фафнир",
-    "pros": [
-      "Эффективная роль на поле боя"
-    ],
-    "skins": [],
-    "glyphs": [],
-    "counters": [],
-    "overview": "Полный разбор механик, роли и стратегий для персонажа Фафнир в игре Хроники Хаоса (Dominion Era).",
     "artifacts": [],
     "patronage": [],
     "war_flags": [],
@@ -5226,6 +4911,117 @@ export const HERO_GUIDES_DB = {
     "patronage": [],
     "war_flags": [],
     "best_teams": []
+  },
+  "fafnir": {
+    "cons": [
+      "Практически бесполезен в чисто магических командах",
+      "Полностью зависит от выживаемости и силы атаки основного DPS героя",
+      "Может испытывать трудности против героев, которые наказывают за частые атаки"
+    ],
+    "pros": [
+      "Исключительная защита для главного физического DPS героя в команде",
+      "Огромное увеличение Физической Атаки защищаемого союзника",
+      "Систематическое снятие эффектов контроля (оглушение, безмолвие, ослепление) и предоставление временного иммунитета к ним",
+      "Отличная синергия с героями, наносящими частые физические удары"
+    ],
+    "skins": [
+      {
+        "name": "Базовый облик",
+        "bonus": "Сила",
+        "priority": "Средний"
+      },
+      {
+        "name": "Облик Чемпиона Гильдии",
+        "bonus": "Физическая атака",
+        "priority": "Высокий"
+      },
+      {
+        "name": "Лунный облик",
+        "bonus": "Здоровье",
+        "priority": "Средний"
+      },
+      {
+        "name": "Маскарадный облик",
+        "bonus": "Физическая атака",
+        "priority": "Высокий"
+      }
+    ],
+    "glyphs": [
+      {
+        "icon": "",
+        "name": "Физическая атака"
+      },
+      {
+        "icon": "",
+        "name": "Сила"
+      },
+      {
+        "icon": "",
+        "name": "Здоровье"
+      },
+      {
+        "icon": "",
+        "name": "Броня"
+      },
+      {
+        "icon": "",
+        "name": "Защита от магии"
+      }
+    ],
+    "counters": [
+      {
+        "hero": "Corvus",
+        "reason": "Алтарю Корвуса очень легко уничтожить команду с Фафниром, так как защищаемый Фафниром союзник наносит множество частых ударов и получает огромный ответный урон от алтаря."
+      },
+      {
+        "hero": "Amira",
+        "reason": "Амира способна наносить колоссальный магический урон, который может мгновенно уничтожить щиты Фафнира, а ее дебаффы снижают эффективность критических ударов физических героев."
+      }
+    ],
+    "overview": "Фафнир — один из сильнейших героев поддержки в игре Hero Wars: Dominion Era. Он специализируется на защите и колоссальном усилении физических атакующих героев, особенно тех, кто наносит частые и быстрые удары. Благодаря своим уникальным руническим щитам и значительному увеличению Физической Атаки, Фафнир превращает союзных стрелков и убийц в практически неуязвимые машины для уничтожения врагов. Он является ключевым компонентом многих популярнейших и мощнейших синергий на арене.",
+    "artifacts": [
+      {
+        "desc": "Дает всей команде бонус к Физической Атаке при активации ультимативного умения.",
+        "icon": "",
+        "name": "Молот Фафнира",
+        "slot": "Оружие",
+        "name_ru": "Молот Фафнира",
+        "priority": "Высокий - помогает всей команде наносить больше урона"
+      },
+      {
+        "desc": "Увеличивает Броню и Защиту от магии Фафнира, повышая его собственную выживаемость.",
+        "icon": "",
+        "name": "Завет Защитника",
+        "slot": "Книга",
+        "name_ru": "Завет Защитника",
+        "priority": "Средний - прокачивается после оружия для повышения живучести"
+      },
+      {
+        "desc": "Увеличивает Силу Фафнира, что повышает его здоровье и физическую атаку.",
+        "icon": "",
+        "name": "Кольцо Силы",
+        "slot": "Кольцо",
+        "name_ru": "Кольцо Силы",
+        "priority": "Средний - дает прирост к основной характеристике"
+      }
+    ],
+    "patronage": [],
+    "war_flags": [],
+    "best_teams": [
+      {
+        "hero": "Artemis",
+        "reason": "Основа знаменитой связки FART. Артемида совершает множество выстрелов своим <a href=\"#hero/artemis?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">первым умением</a>, мгновенно заряжая рунический щит Фафнира, что делает ее невероятно живучей и увеличивает ее урон до небес."
+      },
+      {
+        "hero": "Tristan",
+        "reason": "Тристан обеспечивает команду огромным пробиванием брони и быстро накапливает энергию, помогая Фафниру и основному DPS герою быстрее уничтожать врагов."
+      },
+      {
+        "hero": "Yasmine",
+        "reason": "Ясмин наносит быстрые серии ударов своим <a href=\"#hero/yasmine?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">первым умением</a>, постоянно активируя щиты Фафнира, что компенсирует ее естественную хрупкость и позволяет ей выживать под фокусом врага."
+      }
+    ],
+    "conclusion": "Фафнир — это незаменимый герой поддержки для любой физической команды. Его способность превращать хрупких героев, таких как Артемида или Ясмин, в неуязвимых и сверхмощных бойцов делает его одним из самых ценных приобретений для любого игрока. Инвестиции в Фафнира окупаются сполна, так как он остается актуальным на всех этапах игры и доминирует в текущей мете."
   },
   "augustus": {
     "cons": [
@@ -5776,6 +5572,4 @@ export const HERO_GUIDES_DB = {
   }
 };
 
-export function getHeroGuide(heroId) {
-  return HERO_GUIDES_DB[heroId] || { overview: '', pros: [], cons: [], artifacts: [], skins: [], glyphs: [], counters: [], best_teams: [] };
-}
+export function getHeroGuide(heroId) { return HERO_GUIDES_DB[heroId] || null; }
