@@ -6078,3 +6078,18 @@ export const HERO_GUIDES_DB = {
     "best_teams": []
   }
 };
+
+export function getHeroGuide(heroId) {
+  return HERO_GUIDES_DB[heroId] || {
+    overview: 'Полный разбор механик и роли персонажа.',
+    pros: ['Эффективная роль в команде'],
+    cons: ['Требует правильной прокачки'],
+    artifacts: [],
+    skins: [],
+    glyphs: [],
+    patronage: [],
+    war_flags: [],
+    counters: [],
+    best_teams: [],
+  };
+}
