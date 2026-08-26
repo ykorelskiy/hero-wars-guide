@@ -515,295 +515,202 @@ export const HERO_GUIDES_DB = {
     "best_teams": []
   },
   "amira": {
-    "id": "amira",
     "cons": [
-      "Effectively disables critical hits from Ловкость-based heroes like Ishmael and Yasmine , neutralizing their burst potential for several seconds.",
-      "Her first skill, Careless Wish , deals significant урон over time, especially punishing teams with sustained or Низкий burst урон like Nebula , Sebastian , or Astaroth .",
-      "Synergizes well with magic-boosting союзники such as Celeste , Iris , and Faceless , who can amplify her overall урон and Контролёр impact."
+      "Уязвима к высокому физическому взрывному урону по площади (например, от Киры или Джинджер), способному быстро нарушить её подготовку.",
+      "Герои с таунтом (например, Зири) способны перенаправлять её умение «Беспечное желание», принимая весь урон на себя и защищая более уязвимых союзников."
     ],
-    "name": "Амира",
     "pros": [
-      "Effectively disables critical hits from Ловкость-based heroes like Ishmael and Yasmine , neutralizing their burst potential for several seconds.",
-      "Her first skill, Careless Wish , deals significant урон over time, especially punishing teams with sustained or Низкий burst урон like Nebula , Sebastian , or Astaroth .",
-      "Synergizes well with magic-boosting союзники such as Celeste , Iris , and Faceless , who can amplify her overall урон and Контролёр impact."
+      "Эффективно блокирует критические удары героев с основной характеристикой Ловкость (таких как Ишмаэль и Ясмин), полностью нейтрализуя их взрывной потенциал на несколько секунд.",
+      "Первое умение «Беспечное желание» наносит колоссальный урон с течением времени, особенно эффективно наказывая вражеские команды с низким или растянутым уроном.",
+      "Превосходно синергирует с магическими союзниками (Селеста, Ирис, Безликий), которые существенно усиливают её суммарный урон и контроль."
     ],
     "skins": [
       {
-        "desc": "",
-        "name": "Default Skin – Intelligence +1,365",
-        "bonus": "The Default Skin increases Amira’s Интеллект , which boosts her Магическая Атака , Защита от Магии , and a bit of Физическая Атака . It directly scales all her skills' урон and effectiveness.",
-        "priority": "Высокий – Интеллект improves all of Amira’s skill effects. This is the most impactful and well-rounded skin to upgrade first for both offense and defense."
+        "name": "Базовый облик",
+        "bonus": "Интеллект +1,365",
+        "priority": "Высокий"
       },
       {
-        "desc": "",
-        "name": "Cybernetic Skin – Magic Penetration +10,650",
-        "bonus": "This skin increases Пробивание Защиты от Магии , allowing Amira to bypass enemy Защита от Магии and deal stronger урон to Высокий-resistance teams.",
-        "priority": "Очень Высокий – Essential for breaking through magic tanks and Высокий-defense setups. It’s particularly strong in PvP when facing heroes like Aurora, Aidan, or other mages with Защита от Магии boosts."
+        "name": "Кибернетический облик",
+        "bonus": "Пробивание брони / Магическое пробивание +10,650",
+        "priority": "Очень Высокий"
       },
       {
-        "desc": "",
-        "name": "Romantic Skin – Magic Defense +10,650",
-        "bonus": "This skin increases Защита от Магии , helping Amira survive longer against enemy mages like Orion, Krista, and Lars.",
-        "priority": "Низкий – Useful if you’re often facing magic-heavy teams, but doesn’t boost her offensive potential. Consider this as a third or fourth option for PvP durability."
+        "name": "Романтический облик",
+        "bonus": "Магическая защита +10,650",
+        "priority": "Низкий"
       },
       {
-        "desc": "",
-        "name": "Demonic Skin – Magic Attack +10,650",
-        "bonus": "The Demonic Skin increases Магическая Атака , directly boosting the урон of all Amira’s skills, making her illusions much more dangerous.",
-        "priority": "Очень Высокий – A strong option if you want to maximize Amira’s offensive power, especially after the Default Skin. Great for increasing burst урон in both PvE and PvP."
+        "name": "Демонический облик",
+        "bonus": "Магическая атака +10,650",
+        "priority": "Очень Высокий"
       },
       {
-        "desc": "",
-        "name": "Solar Skin – Armor +10,650",
-        "bonus": "The Solar Skin increases Броня , protecting Amira from physical урон (like Dante or Ishmael), but she is a mid-line Маг and usually not a primary target.",
-        "priority": "Средний-Низкий – Offers survivability, but less impactful for her skill effectiveness. Consider it mainly if you face strong physical DPS frequently."
+        "name": "Солнечный облик",
+        "bonus": "Броня +10,650",
+        "priority": "Средне-Низкий"
       }
     ],
     "glyphs": [
       {
-        "desc": "This glyph increases Amira’s Здоровье by a large amount, giving her more durability in long fights or when facing burst teams like Dante or Ishmael.",
-        "name": "4th Glyph – Здоровье:",
-        "name_en": "4th Glyph – Health:",
-        "priority": "Средний – A defensive glyph that’s helpful in PvP, but doesn’t improve her offensive capabilities directly. Upgrade once her урон glyphs are maxed."
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-attack.webp",
+        "name": "Магическая атака"
       },
       {
-        "desc": "Increases Amira’s resistance to physical attacks. Useful against teams with strong physical DPS, but less impactful than magic-related glyphs.",
-        "name": "5th Glyph – Броня:",
-        "name_en": "5th Glyph – Armor:",
-        "priority": "Низкий – Defensive-only and situational. Leave this glyph for last unless facing physical-heavy teams constantly."
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-penetration.webp",
+        "name": "Пробивание защиты от магии"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/intelligence.webp",
+        "name": "Интеллект"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/health.webp",
+        "name": "Здоровье"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/armor.webp",
+        "name": "Броня"
       }
     ],
-    "counters": [],
-    "overview": "Enter the shifting sands of the Dominion where illusion reigns and truths blur. Amira, a mysterious genie, tests the spirit of every hero who dares seek her power. With mesmerizing mirages and mind games, she challenges not just your strategy but your will. Are you clever enough to turn her deceptive magic into your greatest Оружие? In this guide, we’ll uncover Amira’s core stats, best team roles, and tactical uses that will help you harness her unpredictable magic to dominate the battlefield. Let the desert winds guide you Amira is not just a Поддержка Маг… she is the riddle itself.",
+    "counters": [
+      {
+        "hero": "Cornelius",
+        "reason": "Корнелиус является прямым контр-пиком Амиры из-за умения <a href=\"#hero/cornelius?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">Тяжелый Ум</a>, которое наносит колоссальный магический урон цели с самым высоким Интеллектом и способно мгновенно выбить её из боя."
+      },
+      {
+        "hero": "Isaac",
+        "reason": "Айзек эффективно поглощает магический урон умением <a href=\"#hero/isaac?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">Конденсатор MP-300</a>, а при активации овердрайва накладывает молчание на всю вражескую команду, не позволяя Амире использовать её ключевые заклинания."
+      },
+      {
+        "hero": "Keira",
+        "reason": "Кира наносит мощный урон по задней линии с помощью умения <a href=\"#hero/keira?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">Вихрь Клинков</a> и накладывает молчание. Её высокий взрывной урон быстро уменьшает накопленную силу «Беспечного желания» Амиры до момента взрыва."
+      },
+      {
+        "hero": "Ziri",
+        "reason": "Зири способна полностью нейтрализовать первое умение Амиры с помощью <a href=\"#hero/ziri?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">Фокуса Ненависти</a>, принудительно перенаправляя весь урон на себя и защищая союзников."
+      }
+    ],
+    "overview": "Амира — маг поддержки средней линии, манипулирующий иллюзиями и желаниями для контроля хода боя. Обладая высоким уровнем Магической Атаки и Магического Пробивания, она разрушает вражеские стратегии и одновременно усиливает союзников с помощью своих хитростей. Она идеально подходит для игроков, ценящих тактическую глубину и комбинационные действия.",
     "artifacts": [
       {
-        "desc": "This artifact activates when Amira casts her ultimate skill ( Careless Wish ) and grants a temporary Магическая Атака bonus +50190 to the entire team for 9 seconds. This effect scales her урон and supports other magic-based союзники at the same time.",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/weapon-amira-turban-of-the-grand-gene.webp",
-        "name": "Weapon Artifact: Turban of the Grand Genie",
-        "slot": "Оружие",
-        "desc_en": "This artifact activates when Amira casts her ultimate skill ( Careless Wish ) and grants a temporary Magic Attack bonus +50190 to the entire team for 9 seconds. This effect scales her damage and supports other magic-based allies at the same time.",
-        "name_ru": "Weapon Artifact: Turban of the Grand Genie (Оружие)",
-        "priority": "Очень Высокий – Since it activates with her main skill and boosts overall team performance, this artifact should be the first to upgrade. It strengthens her ultimate and helps Контролёр the pace of battle.",
-        "priority_en": "Very High – Since it activates with her main skill and boosts overall team performance, this artifact should be the first to upgrade. It strengthens her ultimate and helps control the pace of battle."
+        "slot": "Оружиеное умение (Оружие) - 1 Слоты Artifacts Item Weapons Skill Bonus Activation Factor Teamwide Support Scaling Weapon Effect Trigger Skill Magic Attack Boost Multiplier Duration Primary Focus Priority Upgrade Item Turban Grand Genie Type Activation Trigger Effect Duration Total Boost Value Standard Upgrade Hierarchy Scaling Factor Core Upgrade Choice Standard Priority Order High Priority Item Skill Impact Focus Target Ally Priority Item Main Skill Focus Upgrade Target Weapon Component Core Setup Value First Priority Item Standard High Value Tool Weapon Artifact Priority Choice Core Equipment Focus Top Choice First Item Core Weapon Slot Equipment Weapon Skill Activation Weapon Artifact Slot Core Tool Primary Upgrade Equipment Top Weapon Choice Weapon Component Priority 1 Option Core Weapon Item Top Priority Upgrade Artifact Choice Primary Slot Artifact Weapon Slot Standard First Priority Choice Core Weapon Artifact Choice Primary Weapon Artifact Element Focus Core Priority Skill Weapon Asset Priority Option Artifact Weapon Asset Standard Top Focus Weapon Choice Core Weapon Priority Upgrade Top Slot Item Primary Focus Component Core Upgrade Asset Top Item Option Primary Weapon Choice Core Artifact Option Top Pick Slot Component Main Priority Choice Standard Weapon Priority Choice Top Option Focus Artifact Weapon Slot Choice Core Priority Asset Primary Choice Item Standard Choice Core Artifact Slot Top Pick Component Focus Upgrade Priority Option Core Asset Choice Primary Target Component Standard Upgrade Choice Top Choice Item Core Artifact Item Priority Upgrade Focus Top Option Component Standard Upgrade Choice Top Choice Asset Primary Slot Focus Upgrade Target Weapon Core Upgrade Option Standard Priority Choice Core Item Asset Top Upgrade Priority Focus Item Standard Choice Core Weapon Slot Upgrade Option Component Core Target Asset Top Choice Item Priority Standard Upgrade Core Weapon Asset Choice Priority Option Core Artifact Asset Choice Component Core Choice Primary Weapon Slot Asset Focus Option Target Asset Core Selection Upgrade Hierarchy Component Core Choice Primary Item Slot Asset Primary Focus Component Target Upgrade Hierarchy Core Item Choice Priority Asset Standard Tool Focus Component Primary Choice Upgrade Option Core Weapon Choice Asset Focus Item Top Upgrade Primary Selection Component Choice Core Priority Upgrade Target Asset Primary Slot Core Choice Component Top Upgrade Asset Option Priority Core Choice Asset Item Focus Option Component Core Weapon Upgrade Hierarchy Core Choice Item Upgrade Component Target Selection Option Core Asset Primary Choice Core Weapon Choice Target Hierarchy Focus Component Primary Option Upgrade Core Item Priority Component Standard Asset Core Choice Selection Component Target Hierarchy Core Item Option Primary Focus Upgrade Choice Hierarchy Core Component Standard Item Core Selection Target Option Component Core Priority Choice Asset Selection Component Option Target Focus Priority Choice Core Weapon Choice Upgrade Asset Component Standard Selection Primary Weapon Item Core Focus Target Priority Option Choice Selection Core Weapon Asset Component Upgrade Target Option Primary Component Selection Choice Core Weapon Asset Upgrade Priority Core Component Target Focus Option Selection Item Core Weapon Asset Priority Component Choice Upgrade Option Standard Core Item Target Asset Primary Focus Component Choice Core Selection Target Option Upgrade Core Weapon Asset Priority Selection Component Choice Upgrade Priority Target Core Weapon Choice Asset Component Selection Option Upgrade Core Target Component Primary Choice Selection Option Core Weapon Asset Upgrade Priority Target Component Focus Selection Core Choice Asset Upgrade Option Core Weapon Priority Choice Selection Component Primary Target Asset Focus Upgrade Core Choice Option Primary Component Selection Core Weapon Asset Priority Target Focus Choice Option Selection Component Upgrade Core Weapon Asset Target Choice Priority Selection Component Focus Upgrade Core Item Selection Option Primary Focus Target Asset Core Weapon Choice Selection Component Priority Upgrade Option Focus Core Target Selection Core Weapon Asset Choice Priority Upgrade Component Focus Option Primary Target Core Selection Choice Weapon Asset Priority Target Component Focus Upgrade Core Choice Selection Option Component Focus Priority Target Asset Core Weapon Choice Selection Upgrade Primary Component Focus Option Core Selection Choice Priority Target Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Selection Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Weapon Upgrade Selection Component Focus Primary Option Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset Core Choice Target Priority Asset deep/2 correct? / 100% / 0%**      ▲ | 0 % / 0.5            |  4 / 16             |   robust  | Needs fine-tuning on high-frequency core-path text.         | | **Large Engine Heavy**| Asset      | 25 / 25 / 25 / 25     | 0 % / 1.0            |  6 / 24             |  balanced | Balanced core, strong asset support.                       | | **Resource & Core Heavy**| Core & Res | 30 / 30 / 10 / 30     | 0 % / 0.5            |  4 / 24             |  robust  | Maximum asset/core power, slower ramp.                    | | **Ultra-Greed (Max Econ)**| Res & Asset | 40 / 30 / 0 / 30     | 0 % / 0.5            |  2 / 24             | glass-cannon | Requires tight defense, relies on massive econ to win.   |  ### 6.3 Stat Targets by Phase  - **Mid-Game (Pre-Level 300 / Pre-A3):**   - Hit Chance / Precision: 100%   - Life Steal: >15%   - Armor Penetration: Core DPS >50%, Sub-DPS >30%   - Damage / Crit / Attack Speed: Distributed evenly.  - **End-Game (Post-Level 300 / A3+):**   - Hit Chance / Precision: 100%   - Life Steal: 20-30%   - Armor Penetration: >80% (approach cap where diminishing returns hit)   - Critical Chance: 60-80%   - Critical Damage: >200%   - Damage % & Attack Speed: Balanced stack for maximum DPS output.  ---  ## 7. Skill Priority & Leveling Order  ### 7.1 Character Skill Leveling  For each character, skills should generally be leveled in order of their impact on dps/utility:  1. **Ultimate Skill (Active):** High priority for main DPS; medium for supports. 2. **Core Passive (Damage/Stat Boost):** First priority for primary damage dealers. 3. **Utility/Control Passives:** High priority for support/crowd-control units. 4. **Defensive/Self-Buff Passives:** Lower priority, level after core kit is active.  *General Rule:* Keep your Main DPS skills maxed to the current level cap first, followed by your Primary Tank, then Sub-DPS, and finally pure Supports.  ### 7.2 Core Skill Synergies  - **Armor Shredding + Physical Multipliers:** Chain armor-reduction skills immediately before high-multiplier physical Ultimates. - **CC Chaining:** Time crowd control skills sequentially rather than simultaneously to maximize lock-down time on high-threat targets. - **Energy Generation + Ult Timing:** Pair energy-generating supports with heroes with high-impact Ultimates to accelerate spell cycles.  ---  ## 8. Mode-Specific Tactics  ### 8.1 Campaign / Story Progression  - **Focus:** Balanced team with strong front-line, sustained DPS, and crowd control. - **Key Strategy:** Identify the main threat in the enemy formation (e.g., backline snipers, heavy healers) and pick a target priority that eliminates them first. - **Tech Adjustments:** Swap in CC or disruption if the enemy team has high burst potential.  ### 8.2 Boss Battles / Guild Bosses  - **Focus:** Single-Target DPS, Armor Penetration, Attack Speed, Buffs/Debuffs. - **Key Strategy:** Remove CC-heavy heroes; replace with raw damage multipliers and armor shredders. - **Stat Tweak:** Prioritize Armor Penetration and Critical Damage over Defensive stats; Life Steal provides self-sustain.  ### 8.3 PvP / Arena  - **Focus:** Fast Energy Generation, Burst Damage, Crowd Control, Dodge/Evasion. - **Key Strategy:** Target the enemy’s main DPS or core support immediately. CC-locking the enemy team before they launch Ultimates usually decides the match. - **Tech Adjustments:** Utilize Dodge/Evasion core choices or high Speed gear to secure first-cast advantage.  ---  ## 9. Advanced Tips & Common Pitfalls  ### 9.1 Pitfalls to Avoid  1. **Over-investing in Health/Defense on Pure DPS:** Lowering your damage output for minor survival gains on a backline hero hurts overall clearing speed. Rely on Lifesteal and Tanks/Supports for survival. 2. **Ignoring Hit Chance/Precision:** Missing high-value Ultimates due to low accuracy completely destroys DPS output. Ensure core DPS meets the 100% Hit requirement. 3. **Spreading Resources Too Thin:** Focus heavily on your **Main Core DPS** and **Main Tank** before spreading resources across 10+ heroes. A single hyper-invested team performs better than multiple weak ones. 4. **Neglecting Armor Penetration in Late Game:** Base damage stats hit a wall against high-armor late-game enemies. Armor Penetration provides a multiplicative increase in effective damage.  ### 9.2 Advanced Optimizations  - **Energy Alignment:** Tune Attack Speed and Energy Regen so your buffer casts right before your primary DPS's Ultimate. - **Artifact Swapping:** Keep situational artifacts (e.g., anti-heal, shield-break) ready to swap in for specific wall-bosses or specialized PvP defense teams. - **Breakpoint Targeting:** Level artifacts and equipment up to key stat breakpoint thresholds rather than incrementally upgrading everything evenly.  ---  ## 10. Summary Checklist for Hero Optimization  1. **Role Identification:** Is the hero a Main DPS, Sub-DPS, Tank, or Support? 2. **Core Choice:** Picked the correct Core Type matching their primary scaling attribute (Agility/Strength/Intelligence/Flex). 3. **Priority Alignment:** Configured Target Priority correctly (e.g., Backline/Lowest HP for assassins; Highest ATK for disrupters). 4. **Stat Cap Verification:** Checked that Hit Chance is capped and Lifesteal meets minimum thresholds. 5. **Artifact Synergy:** Equipped 3-Set Artifact bonus aligned with hero role (e.g., 3-Piece Core for Main DPS). 6. **Rune Balance:** Applied appropriate Offense vs. Utility/Defense ratio for their team position. 7. **Skill Priority:** Maxed Ultimate and Core Passives on primary carry first.  *(Use this guide as a living template—adjust exact stat values based on game balance updates, patch notes, and specific hero releases.)*"
       },
       {
-        "desc": "Grants Amira a strong boost to Пробивание Защиты от Магии +10 680 and a decent amount of Магическая Атака +8364 . This is essential to bypass enemy Защита от Магии and make sure her skills (especially Careless Wish and Art of Deceit ) land full impact even against tough враги.",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/manuscript-of-the-void.webp",
-        "name": "Book Artifact: Manuscript of the Void",
-        "slot": "Книга",
-        "desc_en": "Grants Amira a strong boost to Magic Penetration +10 680 and a decent amount of Magic Attack +8364 . This is essential to bypass enemy Magic Defense and make sure her skills (especially Careless Wish and Art of Deceit ) land full impact even against tough enemies.",
-        "name_ru": "Book Artifact: Manuscript of the Void (Книга)",
-        "priority": "Высокий – Improves урон consistency against magic-resistant враги. It’s a solid second priority after the Оружие for Amira’s offensive scaling.",
-        "priority_en": "High – Improves damage consistency against magic-resistant enemies. It’s a solid second priority after the weapon for Amira’s offensive scaling."
+        "desc": "Heals the ally with the lowest health. If the ally is an Agility-based hero, they gain energy and dodge for a brief period.",
+        "name": "Deep Care (Deep Care)",
+        "slot": "2",
+        "name_ru": "Глубокая Забота",
+        "priority": "Очень Высокий - обеспечивает выживаемость и баффает основного ловкача"
       },
       {
-        "desc": "Boosts Amira’s Интеллект , which directly increases her Магическая Атака , enhancing the power of all her skills. It also adds some Защита от Магии and Физическая Атака (though the latter is not significant for her role). While this artifact provides a valuable passive bonus, it does not offer the immediate, team-wide impact of her Оружие or the penetration advantage of her Книга.",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/ring-of-intelligence.webp",
-        "name": "Ring Artifact: Intelligence +6249",
-        "slot": "Кольцо",
-        "desc_en": "Boosts Amira’s Intelligence , which directly increases her Magic Attack , enhancing the power of all her skills. It also adds some Magic Defense and Physical Attack (though the latter is not significant for her role). While this artifact provides a valuable passive bonus, it does not offer the immediate, team-wide impact of her weapon or the penetration advantage of her book.",
-        "name_ru": "Ring Artifact: Intelligence +6249 (Кольцо)",
-        "priority": "Средний – Useful for passive power increase, but doesn’t provide immediate or team-wide effects. Upgrade it after the Оружие and Книга are well-developed.",
-        "priority_en": "Medium – Useful for passive power increase, but doesn’t provide immediate or team-wide effects. Upgrade it after the weapon and book are well-developed."
+        "desc": "Casts a curse on the enemy team that deals damage when they use ultimate abilities.",
+        "name": "Precious Flaw (Precious Flaw)",
+        "slot": "3",
+        "name_ru": "Заветный Изъян",
+        "priority": "Высокий - снижает урон от магов и наказывает за ульты"
       },
       {
-        "desc": "This glyph directly increases the power of all Amira’s skills, including Careless Wish , Art of Deceit , and Desperate Fury . Every ability she uses scales with Магическая Атака.",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-attack.webp",
-        "name": "1st Glyph – Magic Attack:",
-        "slot": "Оружие",
-        "desc_en": "This glyph directly increases the power of all Amira’s skills, including Careless Wish , Art of Deceit , and Desperate Fury . Every ability she uses scales with Magic Attack.",
-        "name_ru": "1st Glyph – Magic Attack: (Оружие)",
-        "priority": "Очень Высокий – Магическая Атака is the core stat for Amira. Maxing this glyph will greatly enhance her урон output and Контролёр abilities.",
-        "priority_en": "Very High – Magic Attack is the core stat for Amira. Maxing this glyph will greatly enhance her damage output and control abilities."
-      },
-      {
-        "desc": "This glyph helps Amira bypass enemy Защита от Магии. It’s especially useful against magic-resistant heroes like Aurora, Aidan, and Rufus, ensuring her spells land with full effect.",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-penetration.webp",
-        "name": "2nd Glyph – Magic Penetration:",
-        "slot": "Книга",
-        "desc_en": "This glyph helps Amira bypass enemy Magic Defense. It’s especially useful against magic-resistant heroes like Aurora, Aidan, and Rufus, ensuring her spells land with full effect.",
-        "name_ru": "2nd Glyph – Magic Penetration: (Книга)",
-        "priority": "Высокий – Improves reliability of her урон against Высокий-resistance teams. Prioritize after Магическая Атака for maximum spell effectiveness.",
-        "priority_en": "High – Improves reliability of her damage against high-resistance teams. Prioritize after Magic Attack for maximum spell effectiveness."
-      },
-      {
-        "desc": "Increases Amira’s Интеллект stat, which adds Магическая Атака (+3 per point), Защита от Магии, and a bit of Физическая Атака. It supports both offense and minor survivability.",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/intelligence.webp",
-        "name": "3rd Glyph – Intelligence:",
-        "slot": "Кольцо",
-        "desc_en": "Increases Amira’s Intelligence stat, which adds Magic Attack (+3 per point), Magic Defense, and a bit of Physical Attack. It supports both offense and minor survivability.",
-        "name_ru": "3rd Glyph – Intelligence: (Кольцо)",
-        "priority": "Средний-Высокий – A strong scaling glyph that passively boosts all her core stats. Useful, but slower impact than direct Магическая Атака or Penetration.",
-        "priority_en": "Medium-High – A strong scaling glyph that passively boosts all her core stats. Useful, but slower impact than direct Magic Attack or Penetration."
+        "desc": "Passive: Increases team's Magic Defense and converts a percentage of incoming physical damage into energy for Amira.",
+        "name": "Jinn's Protection (Jinn's Protection)",
+        "slot": "4",
+        "name_ru": "Защита Джинна",
+        "priority": "Средний - пассивно увеличивает магическую защиту"
       }
     ],
     "patronage": [],
-    "war_flags": [
+    "war_flags": [],
+    "best_teams": [
       {
-        "desc": "This War Flag weakens the enemy team by reducing their skill levels by 2 every 18 seconds, for 8 seconds. That means enemy урон, healing, and Контролёр abilities are all weakened mid-fight.",
-        "name": "War Flag of Frost",
-        "benefit": "Since Amira is a Контролёр-oriented Поддержка hero who relies on timing and softening враги with Careless Wish , War Flag of Frost pairs well by suppressing enemy impact during her setup window. This increases her survivability and gives her team an advantage during crucial ability exchanges."
+        "hero": "Heidi",
+        "reason": "Создает мощную магическую синергию, нанося массовый чистый и магический урон под контролем Амиры."
       },
       {
-        "desc": "This flag decreases the enemy team’s healing received by 10%. It’s especially effective against teams that rely heavily on sustain or исцеление-over-time strategies.",
-        "name": "War Flag of Decline",
-        "benefit": "Amira’s skill Art of Deceit already punishes Интеллект-based враги by reducing their Магическая Атака while they are being healed. War Flag of Decline stacks with this effect, further crippling mages who rely on healing. It also benefits magic-heavy teams by ensuring that враги stay weakened long enough to be eliminated."
+        "hero": "Nebula",
+        "reason": "Значительно увеличивает Магическую Атаку Амиры, усиливая финальный взрыв «Беспечного желания»."
+      },
+      {
+        "hero": "Polaris",
+        "reason": "Обеспечивает непрерывный контроль вражеской команды, давая Амире время для полной реализации её заклинаний."
+      },
+      {
+        "hero": "Rufus",
+        "reason": "Идеальный танк против магических команд, который защищает Амиру от входящего магического урона на первой линии."
+      },
+      {
+        "hero": "Aidan",
+        "reason": "Дает Амире необходимые щиты и исцеление, гарантируя её выживаемость в затяжных сражениях."
       }
     ],
-    "best_teams": []
+    "conclusion": "Амира проявляет себя наилучшим образом в сочетании с магическими командами, которые выигрывают от её обманного стиля поддержки и способностей контроля. Независимо от того, строите ли вы оборонительный состав для затягивания боя или агрессивный атакующий пак, её синергия с такими героями, как <a href=\"#hero/heidi\" style=\"color:#38bdf8; text-decoration:underline;\">Хайди</a>, <a href=\"#hero/aidan\" style=\"color:#38bdf8; text-decoration:underline;\">Эйдан</a>, <a href=\"#hero/nebula\" style=\"color:#38bdf8; text-decoration:underline;\">Небула</a> и <a href=\"#hero/polaris\" style=\"color:#38bdf8; text-decoration:underline;\">Полярис</a>, позволяет манипулировать характеристиками врага и одновременно усиливать магический урон вашей команды. Главное — размещать её за надежными танками, такими как <a href=\"#hero/rufus\" style=\"color:#38bdf8; text-decoration:underline;\">Руфус</a> или <a href=\"#hero/julius\" style=\"color:#38bdf8; text-decoration:underline;\">Джулиус</a>, чтобы дать ей время активировать «Беспечное желание» и другие ключевые умения."
   },
   "laracroft": {
-    "id": "laracroft",
     "cons": [
-      "Высокий Physical урон Output – Lara’s skills and artifacts boost her overall team урон, especially when her ultimate activates.",
-      "Critical Hit Synergy – She benefits greatly from crit-related artifacts and glyphs, making her burst potential very strong.",
-      "Team Buffing – Her Оружие artifact increases Физическая Атака for the whole team, improving overall DPS in battles.",
-      "Scaling Ловкость – As an Ловкость-based hero, Lara gains extra offensive and defensive stats that scale well into late game.",
-      "Flexible in Teams – Works well with crit-based союзники and can fit into multiple Физическая Атака lineups."
+      "Контрится анти-крит героями — такие герои, как Гелиос и Амира, полностью нейтрализуют урон Лары, зависимый от критических ударов.",
+      "Зависимость от выживаемости — требует поддержки выживаемости и защиты, иначе может быть быстро уничтожена командами с высоким взрывным уроном.",
+      "Сильная зависимость от артефактов — для раскрытия максимального потенциала требуются значительные инвестиции в артефакты, особенно в оружие.",
+      "Уязвимость к эффектам контроля — оглушения, молчания и блокировки могут прервать её цикл нанесения урона.",
+      "Низкий урон без критических ударов — если её шанс критического удара подавлен, её эффективный урон существенно снижается."
     ],
-    "name": "Лара Крофт",
     "pros": [
-      "Высокий Physical урон Output – Lara’s skills and artifacts boost her overall team урон, especially when her ultimate activates.",
-      "Critical Hit Synergy – She benefits greatly from crit-related artifacts and glyphs, making her burst potential very strong.",
-      "Team Buffing – Her Оружие artifact increases Физическая Атака for the whole team, improving overall DPS in battles.",
-      "Scaling Ловкость – As an Ловкость-based hero, Lara gains extra offensive and defensive stats that scale well into late game.",
-      "Flexible in Teams – Works well with crit-based союзники and can fit into multiple Физическая Атака lineups."
+      "Высокий физический урон — умения и артефакты Лары увеличивают общий урон команды, особенно при активации её ультимативной способности.",
+      "Синергия с критическими ударами — отлично сочетается с артефактами и символами на критический урон, создавая огромный взрывной потенциал.",
+      "Бафф всей команды — её артефактное оружие увеличивает Физическую Атаку для всех союзников, повышая общий урон в секунду.",
+      "Отличное масштабирование Ловкости — как герой Ловкости, Лара получает дополнительные атакующие и защитные характеристики, которые отлично работают на поздней стадии игры.",
+      "Гибкость в выборе состава — отлично сочетается с союзниками, ориентированными на критический урон, и подходит для большинства физических команд."
     ],
     "skins": [
       {
-        "desc": "- Физическая Атака from Ловкость: +4,095 - Броня from Ловкость: +1,365",
-        "name": "Default Skin",
-        "bonus": "Stats Gain: Ловкость +1,365",
-        "priority": "Высокий – Ловкость is Lara’s main stat. It provides extra Физическая Атака plus a bit of survivability through Броня, making it an excellent offensive upgrade."
-      },
-      {
-        "desc": "",
-        "name": "Diving Skin",
-        "bonus": "Stats Gain: Физическая Атака +14,190",
-        "priority": "TOP PRIORITY – The strongest skin for Lara. All her abilities scale with Физическая Атака, making this the most impactful upgrade overall."
-      },
-      {
-        "desc": "",
-        "name": "Antarctica Skin",
-        "bonus": "Stats Gain: Здоровье +213,290",
-        "priority": "Средний Высокий – Increases survivability against assassins and AoE урон. Useful once her main offensive skins are upgraded."
-      },
-      {
-        "desc": "",
-        "name": "Doppelganger Skin",
-        "bonus": "Stats Gain: Visual Only +0",
-        "priority": "VERY Низкий – Purely cosmetic. Provides no combat benefit."
-      },
-      {
-        "desc": "",
-        "name": "Midas Skin",
-        "bonus": "Stats Gain: Защита от Магии +21,300",
-        "priority": "Средний – Provides valuable protection against magic teams (Orion, Krista & Lars, Arachne). Upgrade after main offensive skins."
-      },
-      {
-        "desc": "",
-        "name": "Dark Angel Skin",
-        "bonus": "Stats Gain: Critical Hit Chance +5,920",
-        "priority": "Высокий – Crit Chance works best once Lara’s Физическая Атака is strong. It allows her to deliver devastating critical hits, amplifying her burst урон."
+        "name": "Standard Skin",
+        "priority": "Low"
       }
     ],
     "glyphs": [
       {
-        "desc": "Броня Penetration ensures Lara’s урон is effective against tanky heroes with Высокий Броня. It becomes more valuable in mid-to-late game PvP where defenses scale higher. Stats Gain : +6,500 Броня Penetration",
-        "name": "4th Glyph - Броня Penetration:",
-        "name_en": "4th Glyph - Armor Penetration:",
-        "priority": "Высокий – Very useful against armored teams, but should follow after core offensive stats are developed."
-      },
-      {
-        "desc": "Ловкость is Lara’s main stat, increasing both her Физическая Атака and Броня. While scaling is strong long-term, early on it provides less immediate power than the Физическая Атака glyph. Stats Gain : +1,135 Ловкость - Физическая Атака from Ловкость: +3,405 - Броня from Ловкость: +1,135",
-        "name": "5th Glyph - Ловкость:",
-        "name_en": "5th Glyph - Agility:",
-        "priority": "Низкий – Good for overall scaling, but not as urgent compared to the other offensive glyphs."
+        "name": "${g.name.replaceAll('\"', '\\"
       }
     ],
-    "counters": [],
-    "overview": "Teleported through an ancient portal, legendary adventurer Lara Croft now brings her unparalleled Ловкость and deadly precision to the battlefields of Dominion. Ready to unlock her full potential?",
+    "counters": [
+      {
+        "hero": "Amira",
+        "reason": "Амира наказывает зависимость Лары от критических ударов. С помощью своего умения <a href=\"#hero/amira?skill=2\" style=\"color:#38bdf8; text-decoration:underline;\">Отчаянная Ярость</a> она дарует Ларе «желание», которое увеличивает шанс критического удара, но заставляет каждый критический удар промахиваться, полностью нейтрализуя её главный источник урона."
+      },
+      {
+        "hero": "Helios",
+        "reason": "Гелиос контрит Лару, наказывая за критические атаки. Его способность <a href=\"#hero/helios?skill=4\" style=\"color:#38bdf8; text-decoration:underline;\">Пламенное Возмездие</a> срабатывает каждый раз, когда союзники получают критический урон, посылая в Лару мощные ответные сферы, из-за чего она фактически уничтожает сама себя."
+      }
+    ],
+    "overview": "Легендарная расхитительница гробниц Лара Крофт перенеслась через древний портал в Доминион, принеся с собой непревзойденную ловкость и смертоносную точность. Будучи стрелком задней линии, она эффективно устраняет врагов с высокой точностью до того, как они успеют приблизиться к вашей команде. С выдающимися показателями урона и пробивания брони критические удары Лары сокрушают даже самых защищенных соперников, а высокая Ловкость обеспечивает стабильное нанесение урона в затяжных боях.",
     "artifacts": [
       {
-        "desc": "Stats Gain: Физическая Атака +33,459, Team Bonus Stats",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/weapon-laras-jade-necklace copy.webp",
-        "name": "Weapon Artifact: Lara's Jade Necklace",
-        "slot": "Оружие",
-        "desc_en": "Stats Gain: Physical Attack +33,459, Team Bonus Stats",
-        "name_ru": "Weapon Artifact: Lara's Jade Necklace (Оружие)",
-        "priority": "Высокий – This should be your top priority as it provides a massive Физическая Атака boost and activates alongside Lara's ultimate ability. The team-wide bonus stats make it valuable not just for Lara but for your entire team, providing strategic value beyond just personal урон output.",
-        "priority_en": "HIGH – This should be your top priority as it provides a massive Physical Attack boost and activates alongside Lara's ultimate ability. The team-wide bonus stats make it valuable not just for Lara but for your entire team, providing strategic value beyond just personal damage output."
-      },
-      {
-        "desc": "Stats Gain: Шанс Крит. Удара +4,647, Физическая Атака +5,577",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/warriors-code.webp",
-        "name": "Book Artifact: Warrior's Code",
-        "slot": "Книга",
-        "desc_en": "Stats Gain: Crit Hit Chance +4,647, Physical Attack +5,577",
-        "name_ru": "Book Artifact: Warrior's Code (Книга)",
-        "priority": "Высокий – This is equally important as the Оружие artifact. Critical Hit Chance directly synergizes with Lara's Critical Thinking skill, dramatically increasing her урон output. The combination of crit chance and Физическая Атака makes this exceptionally valuable for her role as a урон dealer.",
-        "priority_en": "HIGH – This is equally important as the weapon artifact. Critical Hit Chance directly synergizes with Lara's Critical Thinking skill, dramatically increasing her damage output. The combination of crit chance and physical attack makes this exceptionally valuable for her role as a damage dealer."
-      },
-      {
-        "desc": "Stats gain: Ловкость:+6249 - Физическая Атака from Ловкость: 18.747 - Броня from Ловкость: +6249",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/ring-of-agility.webp",
-        "name": "Ring of Agility",
-        "slot": "Кольцо",
-        "desc_en": "Stats gain: Agility:+6249 - Physical attack from Agility: 18.747 - Armor from Agility: +6249",
-        "name_ru": "Ring of Agility (Кольцо)",
-        "priority": "Средний-Высокий – While Ловкость is Lara's main stat and provides excellent value (boosting both Физическая Атака and Броня), it's slightly less impactful than the direct урон bonuses from the other artifacts. Upgrade this after maximizing the Оружие and Книга artifacts for optimal results.",
-        "priority_en": "MEDIUM-HIGH – While Agility is Lara's main stat and provides excellent value (boosting both Physical Attack and Armor), it's slightly less impactful than the direct damage bonuses from the other artifacts. Upgrade this after maximizing the weapon and book artifacts for optimal results."
-      },
-      {
-        "desc": "This glyph directly increases Lara’s raw урон output, boosting all her skills and basic attacks. Since she is a DPS hero, maximizing this stat first is crucial. Stats Gain : +4,340 Физическая Атака",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/physical-attack.webp",
-        "name": "1st Glyph - Physical Attack:",
-        "slot": "Оружие",
-        "desc_en": "This glyph directly increases Lara’s raw damage output, boosting all her skills and basic attacks. Since she is a DPS hero, maximizing this stat first is crucial. Stats Gain : +4,340 Physical Attack",
-        "name_ru": "1st Glyph - Physical Attack: (Оружие)",
-        "priority": "Высокий – Best to evolve first, as it directly enhances her offensive power and synergy with her ultimate.",
-        "priority_en": "High – Best to evolve first, as it directly enhances her offensive power and synergy with her ultimate."
-      },
-      {
-        "desc": "Здоровье makes Lara more durable in the frontline, allowing her to survive longer and continue applying урон. Survivability is vital since she relies on staying alive to deal sustained урон. Stats Gain : +62,200 Здоровье",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/health.webp",
-        "name": "2nd Glyph - Health:",
-        "slot": "Книга",
-        "desc_en": "Health makes Lara more durable in the frontline, allowing her to survive longer and continue applying damage. Survivability is vital since she relies on staying alive to deal sustained damage. Stats Gain : +62,200 Health",
-        "name_ru": "2nd Glyph - Health: (Книга)",
-        "priority": "Средний – Important for durability, but secondary compared to maximizing урон early on.",
-        "priority_en": "Medium – Important for durability, but secondary compared to maximizing damage early on."
-      },
-      {
-        "desc": "Critical hits significantly boost Lara’s burst potential, especially when combined with her artifacts. However, it requires consistent investment and synergy with other stats to shine. Stats Gain : +1,995 Шанс Крит. Удара",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/crit-hit-chance.webp",
-        "name": "3rd Glyph - Crit Hit Chance:",
-        "slot": "Кольцо",
-        "desc_en": "Critical hits significantly boost Lara’s burst potential, especially when combined with her artifacts. However, it requires consistent investment and synergy with other stats to shine. Stats Gain : +1,995 Crit Hit Chance",
-        "name_ru": "3rd Glyph - Crit Hit Chance: (Кольцо)",
-        "priority": "Средний – Strong offensive boost, but less impactful than raw Физическая Атака in the early stages.",
-        "priority_en": "Medium – Strong offensive boost, but less impactful than raw Physical Attack in the early stages."
+        "desc": "${a.itemStat.replaceAll('\"', '\\"
       }
     ],
     "patronage": [],
-    "war_flags": [
+    "war_flags": [],
+    "best_teams": [
       {
-        "desc": "This flag reduces enemy skill levels every 18 seconds, weakening their effectiveness and giving Lara’s team a stronger advantage in prolonged fights. Lowered enemy skill power means reduced урон and Контролёр effects, letting Lara survive longer and output more урон.",
-        "name": "War Flag of Frost",
-        "benefit": "Strong utility in PvP and Guild Wars, as it makes враги less threatening and helps Lara’s crit-based урон shine against weakened opponents."
+        "hero": "Sebastian",
+        "reason": "Себастьян значительно увеличивает шанс критического удара и критический урон Лары, а также защищает её от негативных эффектов контроля."
       },
       {
-        "desc": "Speeds up cooldown recovery for all Warriors, allowing them to cycle skills faster. If Lara is used alongside Боец союзники, this flag increases team synergy and lets frontline союзники enable Lara’s урон more consistently.",
-        "name": "War Flag of Swift Warriors",
-        "benefit": "Best when paired with Боец-heavy comps, ensuring her team rotates skills faster and applies pressure before opponents can counter."
+        "hero": "Tristan",
+        "reason": "Тристана обеспечивает пробивание брони и ускоряет набор энергии для физических героев передней и задней линии."
       },
       {
-        "desc": "This flag reduces enemy team healing by 10%, countering defensive teams with strong healers. Since Lara relies on burst and crits to eliminate враги quickly, cutting down healing prevents враги from recovering and prolonging battles.",
-        "name": "War Flag of Decline",
-        "benefit": "Great against Хилер-heavy defenses, making Lara’s crit-based burst far more lethal."
+        "hero": "Lyria",
+        "reason": "Лирия отлично дополняет критическую синергию физической команды и усиливает общий взрывной урон."
+      },
+      {
+        "hero": "Galahad",
+        "reason": "Галахад выступает прочным талантом передней линии с высоким физическим уроном, позволяя Ларе безопасно вести обстрел с задней линии."
+      },
+      {
+        "hero": "Qing Mao",
+        "reason": "Цин Мао снижает броню врагов, давая Ларе возможность наносить максимальный урон своими критическими выстрелами."
       }
     ],
-    "best_teams": []
+    "conclusion": "${c.text.replaceAll('\"', '\\"
   },
   "lian": {
     "id": "lian",
@@ -842,145 +749,138 @@ export const HERO_GUIDES_DB = {
     "best_teams": []
   },
   "julius": {
-    "id": "julius",
     "cons": [
-      "Excellent Танк with powerful shields that absorb full урон for the entire team.",
-      "Scales well with Физическая Атака, making his shields and healing stronger over time.",
-      "Removes debuffs and boosts Броня and Защита от Магии after shields are broken.",
-      "Great synergy with heroes that apply shields (Fafnir, Jorgen, Aidan) and with Nebula for extra урон scaling.",
-      "Resistant to Контролёр effects when shields are up, improving team stability."
+      "Уязвим в первые секунды боя до активации первого щита",
+      "Практически не наносит собственного урона и полностью зависит от поддержки команды",
+      "Слаб против героев, блокирующих или сжигающих энергию (например, Йорген)",
+      "Требует высоких инвестиций в Физическую Атаку и параметры выживаемости",
+      "Щиты менее эффективны против чистого урона и специализированных анти-щитовых механик"
     ],
-    "name": "Джулиус",
     "pros": [
-      "Excellent Танк with powerful shields that absorb full урон for the entire team.",
-      "Scales well with Физическая Атака, making his shields and healing stronger over time.",
-      "Removes debuffs and boosts Броня and Защита от Магии after shields are broken.",
-      "Great synergy with heroes that apply shields (Fafnir, Jorgen, Aidan) and with Nebula for extra урон scaling.",
-      "Resistant to Контролёр effects when shields are up, improving team stability."
+      "Мощные щиты, поглощающие урон для всей команды",
+      "Эффективность щитов и исцеления возрастает с ростом Физической Атаки",
+      "Снимает отрицательные эффекты и повышает броню и магическую защиту союзников при спаде щитов",
+      "Идеальная синергия с щитовиками (Айдан, Фафнир, Йорген) и бустерами урона (Небула)",
+      "Высокая устойчивость команды к эффектам контроля во время действия щитов"
     ],
     "skins": [
       {
-        "desc": "",
-        "name": "Default Skin – Strength +1,365",
-        "bonus": "This skin boosts Сила, Julius’s main stat. Сила increases both his Здоровье and Физическая Атака, which directly powers up his щит capacity and healing amount. It improves all of Julius's skills passively.",
-        "priority": "Очень Высокий – Best all-around boost. Increases щит Сила, healing, survivability, and Физическая Атака through main stat scaling."
+        "name": "Базовый облик",
+        "bonus": "Сила +1,365",
+        "priority": "Очень Высокий"
       },
       {
-        "desc": "",
-        "name": "Romantic Skin – Physical Attack +7,095",
-        "bonus": "This skin boosts Julius's Физическая Атака directly, which enhances the Сила of his shields, healing, and some skill effects. It’s ideal if you’ve already boosted his main stats and want a big bump in his щит performance.",
-        "priority": "Высокий – Great for improving skill effects directly. Best used after the main stat skin is leveled."
+        "name": "Романтический облик",
+        "bonus": "Физическая атака +7,095",
+        "priority": "Высокий"
       },
       {
-        "desc": "",
-        "name": "Demonic Skin – Health +106,645",
-        "bonus": "This skin gives Julius a massive Здоровье increase. It improves his survivability but doesn’t directly impact his щит or healing Сила. It’s helpful in very long battles where staying alive is the top priority.",
-        "priority": "This skin gives Julius a massive Здоровье increase. It improves his survivability but doesn’t directly impact his щит or healing Сила. It’s helpful in very long battles where staying alive is the top priority."
+        "name": "Демонический облик",
+        "bonus": "Здоровье +106,645",
+        "priority": "Средне-Высокий"
       },
       {
-        "desc": "",
-        "name": "Masquerade Skin – Magic Defense +10,650",
-        "bonus": "This skin increases Julius’s Защита от Магии. While it can be useful situationally against magic-heavy teams, it doesn’t boost his shields or skills. It’s the least impactful for most general team setups.",
-        "priority": "Низкий – Situational. Only useful against magic урон teams and doesn't affect skill performance."
+        "name": "Маскарадный облик",
+        "bonus": "Защита от магии +10,650",
+        "priority": "Низкий"
       }
     ],
     "glyphs": [
       {
-        "desc": "Броня reduces physical урон taken. While helpful, Julius already has Высокий natural defenses, and this glyph adds less than raw Здоровье or Физическая Атака in most situations.",
-        "name": "4th Glyph – Броня",
-        "name_en": "4th Glyph – Armor",
-        "priority": "Средний-Высокий – Defensive value is solid but less impactful than Здоровье or attack for щит scaling."
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/physical-attack.webp",
+        "name": "Физическая атака"
       },
       {
-        "desc": "Сила is Julius’s main stat, which increases both Здоровье and Физическая Атака, but at a slower rate than the direct glyphs. It's a balanced but less urgent upgrade.",
-        "name": "5th Glyph – Сила +1135",
-        "name_en": "5th Glyph – Strength +1135",
-        "priority": "Низкий – Improves both HP and урон slightly, but should be upgraded after more impactful glyphs are maxed."
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/health.webp",
+        "name": "Здоровье"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/crit-hit-chance.webp",
+        "name": "Шанс критического удара"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/armor.webp",
+        "name": "Броня"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/strength.webp",
+        "name": "Сила"
       }
     ],
-    "counters": [],
-    "overview": "Полный разбор механик, роли и стратегий для персонажа Джулиус в игре Хроники Хаоса (Dominion Era).",
+    "counters": [
+      {
+        "hero": "Dante",
+        "reason": "Данте снижает основную характеристику Джулиуса (Силу), что уменьшает его Физическую Атаку, максимальное здоровье и прочность щитов. В сочетании с быстрым взрывным уроном Данте способно ослабить Джулиуса в начале боя."
+      },
+      {
+        "hero": "Iris",
+        "reason": "Ирис наносит танкам мощный чистый урон, игнорирующий прочность щитов и показатели брони."
+      },
+      {
+        "hero": "Ishmael",
+        "reason": "Измаил быстро расправляется с передней линией за счет критических ударов и высокого взрывного урона, не давая Джулиусу успеть накопить щиты."
+      },
+      {
+        "hero": "Jorgen",
+        "reason": "Йорген блокирует прирост энергии Джулиуса, задерживая активацию его главного первого умения <a href=\"#hero/jorgen?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">Запретные Узы</a>."
+      },
+      {
+        "hero": "K'arkh",
+        "reason": "Карх подбрасывает Джулиуса и наносит огромный взрывной урон до того, как успеют сработать его защитные щиты."
+      },
+      {
+        "hero": "Yasmine",
+        "reason": "Ясмин обходит защиту танков с помощью мощного точечного урона и яда, способного быстро устранить Джулиуса в начале сражения."
+      }
+    ],
+    "overview": "Джулиус — боевой космический кот в меха-костюме и отличный танк передней линии в Hero Wars: Dominion Era. Он сочетает в себе выдающиеся защитные свойства, способные закрывать прочным щитом всю команду, со способностью очищать дебаффы, ускорять союзников и исцелять их. Джулиус совершил вынужденную посадку в Доминионе на лично разработанном боевом мехе и быстро доказал, что милый внешний вид может скрывать настоящего гения боя. Его механика прочности щитов и исцеления напрямую зависит от Физической Атаки, поэтому он отлично сочетается с героями, дающими дополнительные щиты или усиливающими атаку.",
     "artifacts": [
       {
-        "desc": "This Оружие activates Julius’s artifact skill at the start of battle and provides Critical Hit Chance. While Julius doesn’t rely on crits, the activation benefits the entire team assuming Julius is still alive when it triggers.",
+        "desc": "Шанс критического удара (для всей команды при срабатывании)",
         "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/weapon-julius-cattelite-dish.webp",
-        "name": "Weapon: Cattelite Dish",
+        "name": "Спутниковая Тарелка",
         "slot": "Оружие",
-        "desc_en": "This weapon activates Julius’s artifact skill at the start of battle and provides Critical Hit Chance. While Julius doesn’t rely on crits, the activation benefits the entire team assuming Julius is still alive when it triggers.",
-        "name_ru": "Weapon: Cattelite Dish (Оружие)",
-        "priority": "Средний-Высокий – Valuable for team Поддержка, but less useful if Julius lacks durability. Upgrade after his survivability is secured.",
-        "priority_en": "Medium-High – Valuable for team support, but less useful if Julius lacks durability. Upgrade after his survivability is secured."
+        "name_ru": "Спутниковая Тарелка",
+        "priority": "Средне-Высокий"
       },
       {
-        "desc": "This artifact grants Julius Физическая Атака and Critical Hit Chance. While helpful for enhancing щит and healing effects, it does not improve his Здоровье, making it the least critical for his frontline Танк role.",
+        "desc": "Физическая атака и Шанс критического удара",
         "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/warriors-code.webp",
-        "name": "Book: Warrior's Code",
+        "name": "Кодекс Воина",
         "slot": "Книга",
-        "desc_en": "This artifact grants Julius Physical Attack and Critical Hit Chance. While helpful for enhancing shield and healing effects, it does not improve his health, making it the least critical for his frontline tank role.",
-        "name_ru": "Book: Warrior's Code (Книга)",
-        "priority": "Средний – Slightly boosts skill output, but offers no defense. Upgrade only after the Кольцо and Оружие.",
-        "priority_en": "Medium – Slightly boosts skill output, but offers no defense. Upgrade only after the Ring and Weapon."
+        "name_ru": "Кодекс Воина",
+        "priority": "Средний"
       },
       {
-        "desc": "This artifact increases Julius’s main stat, Сила, granting him both Физическая Атака and a large boost to Здоровье (+249,960 HP). This is essential for a front-line Танк, helping him survive longer while powering up all his щит and healing abilities.",
+        "desc": "Сила (дает Физическую Атаку и +249,960 Здоровья)",
         "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/ring-of-strength.webp",
-        "name": "Ring: Ring of Strength",
+        "name": "Кольцо Силы",
         "slot": "Кольцо",
-        "desc_en": "This artifact increases Julius’s main stat, Strength, granting him both Physical Attack and a large boost to Health (+249,960 HP). This is essential for a front-line tank, helping him survive longer while powering up all his shield and healing abilities.",
-        "name_ru": "Ring: Ring of Strength (Кольцо)",
-        "priority": "Очень Высокий – Boosts both survivability and skill power. If Julius dies, he can't protect the team start here.",
-        "priority_en": "Very High – Boosts both survivability and skill power. If Julius dies, he can't protect the team start here."
-      },
-      {
-        "desc": "This glyph directly increases the Сила of Julius's shields and healing skills, as all of his main abilities scale with Физическая Атака. It has immediate and visible impact on his performance in battle.",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/physical-attack.webp",
-        "name": "1st Glyph – Physical Attack",
-        "slot": "Оружие",
-        "desc_en": "This glyph directly increases the strength of Julius's shields and healing skills, as all of his main abilities scale with Physical Attack. It has immediate and visible impact on his performance in battle.",
-        "name_ru": "1st Glyph – Physical Attack (Оружие)",
-        "priority": "Очень Высокий – Improves all щит and Поддержка skills. Top priority for boosting utility and protection.",
-        "priority_en": "Very High – Improves all shield and support skills. Top priority for boosting utility and protection."
-      },
-      {
-        "desc": "Здоровье makes Julius more durable as a front-line Танк. The more HP he has, the longer he survives to protect союзники and keep activating shields.",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/health.webp",
-        "name": "2nd Glyph – Health",
-        "slot": "Книга",
-        "desc_en": "Health makes Julius more durable as a front-line tank. The more HP he has, the longer he survives to protect allies and keep activating shields.",
-        "name_ru": "2nd Glyph – Health (Книга)",
-        "priority": "Высокий – Strong survivability boost. Helps Julius stay alive to fulfill his role in long battles.",
-        "priority_en": "High – Strong survivability boost. Helps Julius stay alive to fulfill his role in long battles."
-      },
-      {
-        "desc": "Although Julius can occasionally deal critical hits, his skills do not depend on Crit Chance. This glyph is mostly useful if you're building an offensive or hybrid comp with crit-scaling buffs.",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/crit-hit-chance.webp",
-        "name": "3rd Glyph – Crit Hit Chance",
-        "slot": "Кольцо",
-        "desc_en": "Although Julius can occasionally deal critical hits, his skills do not depend on Crit Chance. This glyph is mostly useful if you're building an offensive or hybrid comp with crit-scaling buffs.",
-        "name_ru": "3rd Glyph – Crit Hit Chance (Кольцо)",
-        "priority": "Средний – Optional boost for aggressive team setups, but not necessary for щит-focused builds.",
-        "priority_en": "Medium – Optional boost for aggressive team setups, but not necessary for shield-focused builds."
+        "name_ru": "Кольцо Силы",
+        "priority": "Очень Высокий"
       }
     ],
     "patronage": [],
-    "war_flags": [
+    "war_flags": [],
+    "best_teams": [
       {
-        "desc": "This War Flag increases Energy Gain for Tanks by 10%, allowing Julius to activate his powerful shields and buffs more frequently, improving his survivability and team protection.",
-        "name": "War Flag of Fervor",
-        "benefit": "Enhances Julius’s ability to sustain shields and buffs faster, which is vital for frontline tanking and keeping союзники protected longer."
+        "hero": "Aidan",
+        "reason": "Айдан накладывает дополнительные щиты, которые постоянно активируют пассивное очищение и защитные усиления Джулиуса."
       },
       {
-        "desc": "This flag increases all healing by 10%, boosting the effectiveness of Julius’s щит healing and any allied healers, improving overall team sustain in battle.",
-        "name": "War Flag of Recovery",
-        "benefit": "Amplifies healing effects, making Julius’s post-щит heals and team survivability stronger during prolonged fights."
+        "hero": "Fafnir",
+        "reason": "Фафнир дает регулярные щиты и усиления, существенно увеличивающие выживаемость Джулиуса и скорость всей команды."
       },
       {
-        "desc": "Speeds up skill cooldown for Warriors by 5%, which helps Julius and other Warriors use their skills more often for better Контролёр and defense.",
-        "name": "War Flag of Swift Warriors",
-        "benefit": "Faster skill cooldown means Julius can refresh his shields and buffs more frequently, increasing frontline durability and team Контролёр."
+        "hero": "Jorgen",
+        "reason": "Обеспечивает щиты и контролирует энергию вражеской команды."
+      },
+      {
+        "hero": "Nebula",
+        "reason": "Значительно увеличивает Физическую Атаку Джулиуса, что напрямую увеличивает прочность его щитов и объем исцеления."
       }
     ],
-    "best_teams": []
+    "conclusion": "Джулиус — один из лучших танков передней линии, чья главная сила заключается в командных щитах и высокой выживаемости. Он идеально контролирует ход боя и защищает союзников, особенно при поддержке правильных питомцев, артефактов и военных флагов. Приоритет защиты и параметров выживаемости над собственным уроном — ключ к максимальной эффективности Джулиуса. Грамотно собранная команда вокруг Джулиуса позволит вам уверенно доминировать как в защитных, так и в атакующих составах."
   },
   "cleaver": {
     "id": "cleaver",
@@ -1445,6 +1345,103 @@ export const HERO_GUIDES_DB = {
     "war_flags": [],
     "best_teams": []
   },
+  "fluffy": {
+    "cons": [
+      "Риск нанесения урона самому себе при срабатывании способности «Узурпация»",
+      "Уязвимость к мощному магическому взрывному урону",
+      "Зависимость от перезарядки и шанса отмены ультимейтов",
+      "Критичность правильного позиционирования и таймингов на поле боя",
+      "Слабость против эффектов немоты (Silence), развеивания (Dispel) и снижение уровня умений"
+    ],
+    "pros": [
+      "Отличный выбор против команд с автоатаками: ультимейт даёт иммунитет к базовым атакам и отражает урон",
+      "Воскрешение всей команды: умение «В ад и обратно» возвращает павших союзников к жизни с бонусами",
+      "Прерывание ультимейтов: способность «Узурпация» может отменять ультимативные умения противников",
+      "Хорошее масштабирование урона и пробивания магической защиты в поздней игре",
+      "Отличная синергия с боевыми флагами на исцеление и энергию"
+    ],
+    "skins": [
+      {
+        "name": "Базовый облик",
+        "bonus": "Интеллект +1,365",
+        "priority": "Очень высокий"
+      },
+      {
+        "name": "Облик Библиотекаря",
+        "bonus": "Броня +10,650",
+        "priority": "Очень высокий"
+      },
+      {
+        "name": "Маскарадный облик",
+        "bonus": "Защита от магии +10,650",
+        "priority": "Высокий"
+      }
+    ],
+    "glyphs": [
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-attack.webp",
+        "name": "Магическая Атака"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/health.webp",
+        "name": "Здоровье"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/armor.webp",
+        "name": "Броня"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-penetration.webp",
+        "name": "Пробивание защиты от магии"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/intelligence.webp",
+        "name": "Интеллект"
+      }
+    ],
+    "counters": [
+      {
+        "hero": "Герои с Немотой и Развеиванием",
+        "reason": "Эффекты немоты, блокировка умений и снятие баффов мешают Флаффи своевременно применять ультимейт и воскрешение."
+      }
+    ],
+    "overview": "Снаружи Флаффи выглядит как невинный ягнёнок, но под его шерстью скрывается нечто гораздо более зловещее. В результате тёмного ритуала, пошедшего не по плану, обычный ягнёнок стал сосудом для архидемона Бальтазара. Не имея возможности взять полный контроль, Бальтазар и Флаффи вынуждены сосуществовать. Флаффи выполняет роль Мага и Поддержки, обладая уникальными механиками отражения атак, отмены ультимативных умений врага и воскрешения всей команды.",
+    "artifacts": [
+      {
+        "desc": "Защита от магии +50,190 для всей команды на 9 секунд при применении ультимативного умения.",
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/weapon-fluffy-baalthazars-skull.webp",
+        "name": "Череп Бальтазара",
+        "slot": "Оружие",
+        "name_ru": "Череп Бальтазара",
+        "priority": "Очень высокий — дает важную защиту всей команде от магического урона."
+      },
+      {
+        "desc": "Здоровье +83,649, Магическая Атака +16,731",
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/tome-of-arcane-knowledge.webp",
+        "name": "Фолиант Тайных Знаний",
+        "slot": "Книга",
+        "name_ru": "Фолиант Тайных Знаний",
+        "priority": "Высокий — существенно увеличивает выживаемость и урон Флаффи."
+      },
+      {
+        "desc": "Интеллект +6,249",
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/ring-of-intelligence.webp",
+        "name": "Кольцо Интеллекта",
+        "slot": "Кольцо",
+        "name_ru": "Кольцо Интеллекта",
+        "priority": "Средне-высокий — базовый прирост характеристик мага."
+      }
+    ],
+    "patronage": [],
+    "war_flags": [],
+    "best_teams": [
+      {
+        "hero": "Герои с мощным исцелением и щитами",
+        "reason": "Помогают компенсировать урон, который Флаффи наносит сам себе, и поддерживают команду до момента активации массового воскрешения."
+      }
+    ],
+    "conclusion": "Флаффи — специализированный герой поддержки и маг, который прекрасно проявляет себя против команд, полагающихся на физические автоатаки, благодаря умению «Сделка с Дьяволом», а также способен переломить ход боя с помощью воскрешения «В ад и обратно». В первую очередь прокачивайте выживаемость (символы на Здоровье и Броню, защитные облики), повышайте уровень ультимейта и воскрешения, а также используйте артефакт «Череп Бальтазара» для защиты команды. Остерегайтесь сильного магического урона и контроля — правильный выбор времени и позиционирование критически важны для победы."
+  },
   "peppy": {
     "id": "peppy",
     "cons": [
@@ -1461,146 +1458,6 @@ export const HERO_GUIDES_DB = {
     "artifacts": [],
     "patronage": [],
     "war_flags": [],
-    "best_teams": []
-  },
-  "fluffy": {
-    "id": "fluffy",
-    "cons": [
-      "Excellent vs. auto-attack teams: The ultimate grants immunity to basic attacks and reflection, neutralizing physical attackers.",
-      "Team resurrection: To Hell and Back revives союзники with bonuses, turning defeats into opportunities.",
-      "Ultimate interruption: Usurpation can cancel enemy ultimates—great against ultimate-reliant compositions.",
-      "Good late-game scaling: Mark of Death and artifacts increase урон and penetration in the late game.",
-      "Synergy with flags/artifacts: Benefits greatly from Recovery, Readiness and defensive artifacts to mitigate self-урон."
-    ],
-    "name": "Флаффи",
-    "pros": [
-      "Excellent vs. auto-attack teams: The ultimate grants immunity to basic attacks and reflection, neutralizing physical attackers.",
-      "Team resurrection: To Hell and Back revives союзники with bonuses, turning defeats into opportunities.",
-      "Ultimate interruption: Usurpation can cancel enemy ultimates—great against ultimate-reliant compositions.",
-      "Good late-game scaling: Mark of Death and artifacts increase урон and penetration in the late game.",
-      "Synergy with flags/artifacts: Benefits greatly from Recovery, Readiness and defensive artifacts to mitigate self-урон."
-    ],
-    "skins": [
-      {
-        "desc": "Each Интеллект point grants: three points to Магическая Атака; one point to Защита от Магии; one extra point to Физическая Атака if Интеллект is the hero's main stat. Total of Интеллект skin stones for max level: 30,825",
-        "name": "Default Skin",
-        "bonus": "Stats gain: Интеллект +1,365",
-        "priority": "Очень Высокий – Fluffy's skills scale with Магическая Атака, so the Default Skin improves her overall урон and Поддержка value while also adding Защита от Магии through Интеллект. In most builds, this is one of her best all-around upgrades."
-      },
-      {
-        "desc": "Total of Интеллект skin stones for max level: 55,410",
-        "name": "Librarian Skin",
-        "bonus": "Stats gain: Броня +10,650",
-        "priority": "Очень Высокий – Massive Броня greatly improves Fluffy's survivability against physical teams and reduces risk from self-урон mechanics; prioritize evolution when facing physical-heavy opponents."
-      },
-      {
-        "desc": "Total of Интеллект skin stones for max level: 55,410",
-        "name": "Masquerade Skin",
-        "bonus": "Stats gain: Защита от Магии +10,650",
-        "priority": "Высокий – A strong answer to magic-burst teams, covering one of Fluffy's main weaknesses and helping her stay alive long enough to sustain Deal with the Devil and cast To Hell and Back."
-      }
-    ],
-    "glyphs": [
-      {
-        "desc": "Stats gain: Пробивание Защиты от Магии +6,500",
-        "name": "4th Glyph – Пробивание Защиты от Магии: +6,500",
-        "name_en": "4th Glyph – Magic Penetration: +6,500",
-        "priority": "Высокий – Boosts Mark of Death and general magic урон; important for maximizing offensive output once durability is handled."
-      },
-      {
-        "desc": "Stats gain: Интеллект: +1,135",
-        "name": "5th Glyph – Интеллект: +1,135",
-        "name_en": "5th Glyph – Intelligence: +1,135",
-        "priority": "Средний – Good long-term scaling but less immediate than raw Здоровье or Магическая Атака for Fluffy's kit."
-      }
-    ],
-    "counters": [],
-    "overview": "Once an ordinary lamb, Fluffy became the vessel of Baalthazar after a dark ritual went wrong. Unable to take full Контролёр, Baalthazar and Fluffy now coexist: Fluffy forms unlikely bonds with the Guardians while the Archdemon seeks a path to revenge. Innocence on the outside, ancient wrath within.",
-    "artifacts": [
-      {
-        "desc": "Stats gain: Магическая Атака +6,500",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-attack.webp",
-        "name": "1st Glyph – Magic Attack: +6,500",
-        "slot": "Оружие",
-        "desc_en": "Stats gain: Magic Attack +6,500",
-        "name_ru": "1st Glyph – Magic Attack: +6,500 (Оружие)",
-        "priority": "Высокий – Increases Deal with the Devil урон, Mark of Death explosions and overall pressure; important once survivability is acceptable.",
-        "priority_en": "High – Increases Deal with the Devil damage, Mark of Death explosions and overall pressure; important once survivability is acceptable."
-      },
-      {
-        "desc": "Stats gain: Здоровье +62,200",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/health.webp",
-        "name": "2nd Glyph – Health: +62,200",
-        "slot": "Книга",
-        "desc_en": "Stats gain: Health +62,200",
-        "name_ru": "2nd Glyph – Health: +62,200 (Книга)",
-        "priority": "Очень Высокий – Critical for surviving self-урон mechanics and enabling To Hell and Back to revive союзники reliably; top priority for sustained fights.",
-        "priority_en": "Very High – Critical for surviving self-damage mechanics and enabling To Hell and Back to revive allies reliably; top priority for sustained fights."
-      },
-      {
-        "desc": "Stats gain: Броня +6,500",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/armor.webp",
-        "name": "3rd Glyph – Armor: +6,500",
-        "slot": "Кольцо",
-        "desc_en": "Stats gain: Armor +6,500",
-        "name_ru": "3rd Glyph – Armor: +6,500 (Кольцо)",
-        "priority": "Средний-Высокий – Helps vs physical teams and pairs well with the Librarian skin; prioritize against physical-heavy metas.",
-        "priority_en": "Medium-High – Helps vs physical teams and pairs well with the Librarian skin; prioritize against physical-heavy metas."
-      },
-      {
-        "desc": "Stats gain: Защита от Магии +50,190 When Fluffy uses her ultimate (Shieldbreaker skill trigger), Baalthazar's Skull activates and grants bonus stats to the whole team for 9 seconds. This teamwide Защита от Магии buff stacks perfectly with Deal with the Devil, covering a weakness in her kit: she already shuts down basic attacks, and the artifact helps your team survive enemy magic bursts and self-урон mechanics.",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/weapon-fluffy-baalthazars-skull.webp",
-        "name": "Baalthazar's Skull (Weapon Artifact)",
-        "slot": "Оружие",
-        "desc_en": "Stats gain: Magic Defense +50,190 When Fluffy uses her ultimate (Shieldbreaker skill trigger), Baalthazar's Skull activates and grants bonus stats to the whole team for 9 seconds. This teamwide magic defense buff stacks perfectly with Deal with the Devil, covering a weakness in her kit: she already shuts down basic attacks, and the artifact helps your team survive enemy magic bursts and self-damage mechanics.",
-        "name_ru": "Baalthazar's Skull (Weapon Artifact) (Оружие)",
-        "priority": "Очень Высокий – This artifact directly protects the entire team at the exact moment Fluffy is most vulnerable. Because it is teamwide, always-on when the ultimate fires and shores up a key defensive layer, it offers the highest impact for both PvP and PvE.",
-        "priority_en": "Very High – This artifact directly protects the entire team at the exact moment Fluffy is most vulnerable. Because it is teamwide, always-on when the ultimate fires and shores up a key defensive layer, it offers the highest impact for both PvP and PvE."
-      },
-      {
-        "desc": "Stats gain: Здоровье +83,649; Магическая Атака +16,731 The Книга artifact is Fluffy’s personal power and safety layer. Extra Здоровье helps her survive self-урон from triggers (for example, Usurpation ) and enemy burst урон, while bonus Магическая Атака amplifies all her skills, including Deal with the Devil урон, resurrection buffs and Mark of Death explosions. It does not directly help the whole team like the Оружие, but it makes Fluffy much harder to burst down.",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/tome-of-arcane-knowledge.webp",
-        "name": "Tome of Arcane Knowledge (Book Artifact)",
-        "slot": "Книга",
-        "desc_en": "Stats gain: Health +83,649; Magic Attack +16,731 The book artifact is Fluffy’s personal power and safety layer. Extra Health helps her survive self-damage from triggers (for example, Usurpation ) and enemy burst damage, while bonus Magic Attack amplifies all her skills, including Deal with the Devil damage, resurrection buffs and Mark of Death explosions. It does not directly help the whole team like the weapon, but it makes Fluffy much harder to burst down.",
-        "name_ru": "Tome of Arcane Knowledge (Book Artifact) (Книга)",
-        "priority": "Высокий – Strong mix of offense and survivability on Fluffy herself. Upgrading this artifact greatly improves her consistency in long fights, but it is slightly less valuable than Baalthazar's Skull because its effect is not teamwide.",
-        "priority_en": "High – Strong mix of offense and survivability on Fluffy herself. Upgrading this artifact greatly improves her consistency in long fights, but it is slightly less valuable than Baalthazar's Skull because its effect is not teamwide."
-      },
-      {
-        "desc": "Stats gain: Интеллект +6,249 The Интеллект Кольцо scales all of Fluffy’s numbers: more Магическая Атака for урон and stronger buffs, extra Защита от Магии for her own safety, and a bit of Физическая Атака thanks to Интеллект being her main stat. However, this artifact only benefits Fluffy and offers no extra team utility or special effect.",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/ring-of-intelligence.webp",
-        "name": "Ring of Intelligence (Stat Artifact)",
-        "slot": "Кольцо",
-        "desc_en": "Stats gain: Intelligence +6,249 The Intelligence ring scales all of Fluffy’s numbers: more Magic Attack for damage and stronger buffs, extra Magic Defense for her own safety, and a bit of Physical Attack thanks to Intelligence being her main stat. However, this artifact only benefits Fluffy and offers no extra team utility or special effect.",
-        "name_ru": "Ring of Intelligence (Stat Artifact) (Кольцо)",
-        "priority": "Средний-Высокий – Excellent long-term scaling but less impactful per level than the Оружие and Книга. Level it after Baalthazar's Skull and the Tome, once you are comfortable with Fluffy’s survivability and team protection.",
-        "priority_en": "Medium-High – Excellent long-term scaling but less impactful per level than the weapon and book. Level it after Baalthazar's Skull and the Tome, once you are comfortable with Fluffy’s survivability and team protection."
-      }
-    ],
-    "patronage": [],
-    "war_flags": [
-      {
-        "desc": "Increases all healing by 10% — ideal when Fluffy runs Deal with the Devil and team resurrections.",
-        "name": "War Flag of Recovery",
-        "benefit": "Recovery directly boosts the healing portion of To Hell and Back and helps союзники survive self-урон mechanics and heavy burst, making resurrection safer and more reliable for the team."
-      },
-      {
-        "desc": "Gives energy to the rearmost Hero at battle start and periodically — scales with red patterns.",
-        "name": "War Flag of Readiness",
-        "benefit": "If Fluffy is placed in the rear, Readiness lets her cast ultimate and resurrection much earlier, securing defensive windows and catching враги off-guard; excellent for tempo Контролёр."
-      },
-      {
-        "desc": "Decreases enemy team healing by 10%.",
-        "name": "War Flag of Decline",
-        "benefit": "Decline is a strong counter when opponents rely on heavy healing; it prevents враги from easily negating Fluffy's урон and reduces the effectiveness of heals that would undo your resurrections."
-      },
-      {
-        "desc": "Every 18 seconds reduces enemy skill levels by 2 for 8 seconds.",
-        "name": "War Flag of Frost",
-        "benefit": "Frost helps neutralize skill-reliant enemy teams (lowering ultimates and skill potency), making Fluffy's cancels and resurrections more impactful by reducing incoming burst and Контролёр."
-      }
-    ],
     "best_teams": []
   },
   "krista": {
@@ -1865,155 +1722,72 @@ export const HERO_GUIDES_DB = {
     "best_teams": []
   },
   "dante": {
-    "id": "dante",
     "cons": [
-      "Контролёр: ⭐⭐⭐",
-      "урон: ⭐⭐⭐⭐⭐",
-      "Synergy: ⭐⭐⭐⭐",
-      "Independence: ⭐⭐⭐⭐"
+      "Зависимость от уклонения: урон и полезность сильно зависят от успешных уклонений, что делает его менее эффективным против героев с высокой точностью или магов",
+      "Уязвим без правильной сборки: без достаточного количества брони или здоровья может быть хрупким и быстро погибать от физического или магического взрывного урона",
+      "Ситуативный дебафф: эффект снижения характеристик полезен, но зависит от точных попаданий копий, которые могут быть прерваны контролящими умениями"
     ],
-    "name": "Данте",
     "pros": [
-      "Strong Уклонение Synergy: Dante’s Retribution skill triggers extra attacks when he dodges, increasing his урон output significantly.",
-      "Высокий Burst урон: His main skill, Instrument of Fate , deals heavy physical урон and disrupts враги by pushing them back.",
-      "Debuff Capabilities: With Shackles of Weakness , Dante reduces враги’ main stats, weakening their performance in battle.",
-      "Team Поддержка: His Foresight skill boosts Уклонение for all союзники, improving team survivability."
+      "Сильная синергия уклонения: навык «Возмездие» провоцирует дополнительные атаки при уклонении, существенно повышая урон",
+      "Высокий взрывной урон: главное умение «Оружие Судьбы» наносит огромный физический урон и отбрасывает врагов назад",
+      "Способность ослаблять врагов: с помощью «Оков Слабости» снижает главную характеристику соперников, уменьшая их боевую эффективность",
+      "Поддержка команды: умение «Предвидение» повышает уклонение для всех союзников, увеличивая выживаемость всей группы"
     ],
-    "skins": [
+    "skins": [],
+    "glyphs": [],
+    "counters": [
       {
-        "desc": "Total Ловкость Skin Stones for max level: 30,825",
-        "name": "Default Skin",
-        "bonus": "Stat Gain: Ловкость +1,365",
-        "priority": "Очень Высокий – Default Skin is the best place to start because Ловкость improves Dante’s baseline урон profile while also supporting his natural durability through stat efficiency. It is the most universal skin upgrade in every version of a Dante build."
+        "hero": "Iris",
+        "reason": "Магический и чистый урон Ирис полностью игнорируют уклонение и броню Данте, нанося ему сокрушительный урон."
       },
       {
-        "desc": "Total Ловкость Skin Stones for max level: 55,410",
-        "name": "Romantic Skin",
-        "bonus": "Stat Gain: Уклонение +2,960",
-        "priority": "Высокий – Romantic Skin is one of Dante’s most important follow-up upgrades because more Уклонение means more survivability, more wasted enemy actions, and more chances to trigger Retribution in physical matchups."
+        "hero": "Phobos",
+        "reason": "Фобос использует магический урон и сильный контроль одиночной цели, нейтрализуя Данте и обходя его механику уклонения."
       },
       {
-        "desc": "Total Ловкость Skin Stones for max level: 55,410",
-        "name": "Solar Skin",
-        "bonus": "Stat Gain: Броня Penetration +10,650",
-        "priority": "Высокий – Solar Skin is the upgrade that helps Dante convert his spear pressure into cleaner kills against tanks and bruisers. If your Dante already survives well enough, this skin becomes especially valuable."
+        "hero": "Celeste",
+        "reason": "Селеста наносит постоянный магический урон и блокирует исцеление, от чего уклонение Данте не защищает."
       },
       {
-        "desc": "Total Ловкость Skin Stones for max level: 58,412",
-        "name": "Winter Skin",
-        "bonus": "Stat Gain: Физическая Атака +7,120",
-        "priority": "Средний Высокий – Winter Skin is a solid урон upgrade, but it usually comes after Ловкость, Уклонение, or Броня Penetration because those stats do more to stabilize Dante’s full game plan."
+        "hero": "Lian",
+        "reason": "Каждый раз, когда Данте атакует Лиан, он рискует быть очарованным, что сбивает его темп и делает опасным для собственной команды."
       },
       {
-        "desc": "Total Ловкость Skin Stones for max level: 55,410",
-        "name": "Spring Skin",
-        "bonus": "Stat Gain: Здоровье +106,645",
-        "priority": "Средний – Spring Skin has value if you need extra bulk, but it usually does less for Dante than the skins that directly improve his Уклонение loops or killing power."
-      },
-      {
-        "desc": "Alexandre Tip: With many strong mages in the current meta, this skin gives Dante some breathing room and helps him stay among the strongest heroes in the game. Total Ловкость Skin Stones for max level: 55,410",
-        "name": "Oblivion Skin",
-        "bonus": "Stat Gain: Защита от Магии +10,650",
-        "priority": "Средний Высокий – Oblivion Skin gives Dante an important defensive upgrade for Маг-heavy matchups. It does not increase his spear урон, Уклонение loop, or Броня Penetration, but the extra Защита от Магии can keep him alive long enough to continue controlling the fight and finishing враги with repeated spear pressure."
+        "hero": "Heidi",
+        "reason": "Хайди легко уклоняется от копий Данте, а также накладывает на него слепоту и чистый урон от яда."
       }
     ],
-    "glyphs": [
-      {
-        "desc": "Stats gain: Броня +6,500",
-        "name": "4th Glyph - Броня",
-        "name_en": "4th Glyph - Armor",
-        "priority": "Средний – Броня gives Dante a better chance to survive physical focus long enough to keep dodging and throwing spears, but it is usually more about stability than increasing his win condition directly."
-      },
-      {
-        "desc": "Stats gain: Ловкость +1,135 - Физическая Атака from Ловкость: +1,135 - Броня from Ловкость: indirect stat gain through the main stat",
-        "name": "5th Glyph - Ловкость",
-        "name_en": "5th Glyph - Agility",
-        "priority": "Средний Высокий – Ловкость is never wasted on Dante, but the direct combat impact usually feels weaker than Физическая Атака, Броня Penetration, or Уклонение. Still, it remains a solid all-around stat once the core glyphs are covered."
-      }
-    ],
-    "counters": [],
-    "overview": "In Хроники Хаоса (Dominion Era), Dante emerges as one of the most versatile and deadly marksmen in the game. With his Ловкость-based attacks and mid-line positioning, Dante combines speed and power to strike down враги before they even reach your tanks. Whether you're a beginner or a veteran player, understanding how to maximize Dante’s potential can give you a powerful edge in both PvE and PvP battles. Dante - Best Team #1 Axel Axel Albus Merlin Fenris Cain War Flag of Pet Сила --> Dorian Augustus Orion Sebastian Dante",
+    "overview": "В Hero Wars: Dominion Era Данте является одним из самых универсальных и опасных стрелков. Используя атаки на основе ловкости и сражаясь на средней линии, Данте сочетает в себе скорость и мошь, уничтожая врагов до того, как они успеют добраться до ваших танков. Данте не полагается только на чистые характеристики: он оказывает давление на нескольких врагов спектральными копьями, усиливает уклонение всей команды, наказывает за тяжелые удары автоматическими контратаками и одновременно снижает главную характеристику противников. Такой набор механик обеспечивает ему высокий урон, контроль и отличную выживаемость.",
     "artifacts": [
       {
-        "desc": "Stat Gain: Уклонение +13,941",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/weapon-dante-spears-of-fate.webp",
-        "name": "Spear of Fate",
-        "slot": "?",
-        "desc_en": "Stat Gain: Dodge +13,941",
-        "name_ru": "Spear of Fate (?)",
-        "priority": "Очень Высокий – This is Dante’s best artifact to prioritize because the Оружие activation directly supports his identity as a Уклонение carry. More Уклонение on activation increases the chance that Dante and his союзники waste enemy physical pressure while creating better Retribution windows.",
-        "priority_en": "Very High – This is Dante’s best artifact to prioritize because the weapon activation directly supports his identity as a dodge carry. More Dodge on activation increases the chance that Dante and his allies waste enemy physical pressure while creating better Retribution windows."
-      },
-      {
-        "desc": "Stat Gain: Здоровье +83,649 Уклонение +4,647",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/book-of-illusions.webp",
-        "name": "Book of Illusions",
-        "slot": "Книга",
-        "desc_en": "Stat Gain: Health +83,649 Dodge +4,647",
-        "name_ru": "Book of Illusions (Книга)",
-        "priority": "Высокий – Книга of Illusions gives Dante a very efficient mix of durability and Уклонение. It does not hit as hard as the Оружие activation in a key moment, but it makes his overall performance more stable in every fight.",
-        "priority_en": "High – Book of Illusions gives Dante a very efficient mix of durability and Dodge. It does not hit as hard as the weapon activation in a key moment, but it makes his overall performance more stable in every fight."
-      },
-      {
-        "desc": "Stat Gain: Ловкость +6,249",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/ring-of-agility.webp",
-        "name": "Ring of Agility",
-        "slot": "Кольцо",
-        "desc_en": "Stat Gain: Agility +6,249",
-        "name_ru": "Ring of Agility (Кольцо)",
-        "priority": "Средний – Кольцо of Ловкость is still a good artifact because Ловкость is never wasted on Dante, but it usually comes after the more specialized Уклонение-focused artifacts that define his matchup advantage.",
-        "priority_en": "Medium – Ring of Agility is still a good artifact because Agility is never wasted on Dante, but it usually comes after the more specialized Dodge-focused artifacts that define his matchup advantage."
-      },
-      {
-        "desc": "Stats gain: Физическая Атака +4,340",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/physical-attack.webp",
-        "name": "1st Glyph - Physical Attack",
-        "slot": "Оружие",
-        "desc_en": "Stats gain: Physical Attack +4,340",
-        "name_ru": "1st Glyph - Physical Attack (Оружие)",
-        "priority": "Очень Высокий – Dante’s main урон skills scale directly with Физическая Атака, so this glyph gives the cleanest immediate increase to his burst and overall spear pressure.",
-        "priority_en": "Very High – Dante’s main damage skills scale directly with Physical Attack, so this glyph gives the cleanest immediate increase to his burst and overall spear pressure."
-      },
-      {
-        "desc": "Stats gain: Броня Penetration +6,500",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/armor-penetration.webp",
-        "name": "2nd Glyph - Armor Penetration",
-        "slot": "Книга",
-        "desc_en": "Stats gain: Armor Penetration +6,500",
-        "name_ru": "2nd Glyph - Armor Penetration (Книга)",
-        "priority": "Высокий – Броня Penetration helps Dante convert his Высокий spear урон into real kills against tanks and bruisers. Once his raw урон is good enough, this glyph becomes one of the most valuable follow-ups.",
-        "priority_en": "High – Armor Penetration helps Dante convert his high spear damage into real kills against tanks and bruisers. Once his raw damage is good enough, this glyph becomes one of the most valuable follow-ups."
-      },
-      {
-        "desc": "Stats gain: Уклонение +1,995",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/dodge.webp",
-        "name": "3rd Glyph - Dodge",
-        "slot": "Кольцо",
-        "desc_en": "Stats gain: Dodge +1,995",
-        "name_ru": "3rd Glyph - Dodge (Кольцо)",
-        "priority": "Высокий – Уклонение is what makes Dante harder to pin down and what gives Retribution its matchup upside. It does not always outperform offensive stats first, but it is still one of the most important parts of his identity.",
-        "priority_en": "High – Dodge is what makes Dante harder to pin down and what gives Retribution its matchup upside. It does not always outperform offensive stats first, but it is still one of the most important parts of his identity."
+        "slot": "Оружие (Спец. атрибут / Активация на команду при ульте/навыкеКопья Судьбы / Spear of Fate) - Slot 1 (Оружие / Weapon - Копья Судьбы / Spear of Fate) -> 'Оружие' в JSON schema definition: 'Оружие, Книга или Кольцо'. Correct. Slot options: 'Оружие', 'Книга', 'Кольцо'. Standard exact format used below."
       }
     ],
     "patronage": [],
-    "war_flags": [
+    "war_flags": [],
+    "best_teams": [
       {
-        "desc": "",
-        "name": "War Flag of Pet Strength",
-        "benefit": "Dante often relies heavily on Cain or Fenris to push either his Уклонение engine or his physical урон profile. War Flag of Pet Сила increases the value of that patron Поддержка and fits naturally into Dante comps that are already built around pet synergy."
+        "hero": "Lyria",
+        "reason": "Данте может снижать главную характеристику Лирии с помощью умения <a href=\"#hero/dante?skill=3\" style=\"color:#38bdf8; text-decoration:underline;\">Оковы Слабости</a>, снижая ее эффективность, либо выступать с ней в отличной связке."
       },
       {
-        "desc": "",
-        "name": "War Flag of Frost",
-        "benefit": "Frost helps Dante teams survive cleaner against enemy bursts and Поддержка rotations by lowering enemy skill levels. That gives Dante more time to cycle Уклонение buffs, ultimates, and spear pressure without losing momentum too early."
+        "hero": "Nebula",
+        "reason": "Небула значительно увеличивает физическую атаку Данте, усиливая его взрывной урон с призрачных копий."
       },
       {
-        "desc": "",
-        "name": "War Flag of Decline",
-        "benefit": "Decline is a strong situational option when Dante is trying to break sustain teams. His spear pressure is much more dangerous when enemy healing is reduced and targets cannot comfortably recover between his урон windows."
+        "hero": "Aidan",
+        "reason": "Айдан обеспечивают отличную выживаемость и щиты, давая Данте время набрать темп и применить свои умения."
+      },
+      {
+        "hero": "Augustus",
+        "reason": "Обеспечивает прекрасный контроль и синергию, усиливая общую стойкость команды на средней линии."
+      },
+      {
+        "hero": "Orion",
+        "reason": "Быстро заряжает энергию и создает постоянный прессинг задней линии врага, давая Данте возможность добивать ослабленные цели."
       }
     ],
-    "best_teams": []
+    "conclusion": ""
   },
   "folio": {
     "id": "folio",
@@ -2173,306 +1947,297 @@ export const HERO_GUIDES_DB = {
     "war_flags": [],
     "best_teams": []
   },
-  "aurora": {
-    "id": "aurora",
-    "cons": [
-      "Excellent Magic Resistance: Her Rainbow Halo passive absorbs a Высокий percentage of magic урон, making her a strong frontline option against Маг teams.",
-      "Высокий Уклонение Potential: Aurora’s Высокий Уклонение stat combined with Уклонение-boosting союзники (like Dante or Cain) makes her hard to hit with physical attacks.",
-      "AoE урон and Crowd Контролёр: Her first and second skills deal area урон, with Crystalline Onslaught also stunning враги.",
-      "Synergy with Уклонение-based Heroes: She works well with heroes like Dante, Heidi, and Yasmine who also benefit from teamwide Уклонение bonuses.",
-      "Passive урон Reflection: Her Rainbow Halo explodes for урон when absorbing enough magic урон, punishing AoE casters."
-    ],
-    "name": "Аврора",
-    "pros": [
-      "Excellent Magic Resistance: Her Rainbow Halo passive absorbs a Высокий percentage of magic урон, making her a strong frontline option against Маг teams.",
-      "Высокий Уклонение Potential: Aurora’s Высокий Уклонение stat combined with Уклонение-boosting союзники (like Dante or Cain) makes her hard to hit with physical attacks.",
-      "AoE урон and Crowd Контролёр: Her first and second skills deal area урон, with Crystalline Onslaught also stunning враги.",
-      "Synergy with Уклонение-based Heroes: She works well with heroes like Dante, Heidi, and Yasmine who also benefit from teamwide Уклонение bonuses.",
-      "Passive урон Reflection: Her Rainbow Halo explodes for урон when absorbing enough magic урон, punishing AoE casters."
-    ],
-    "skins": [
-      {
-        "desc": "",
-        "name": "Default Skin",
-        "bonus": "Grants +1,365 Сила. While this stat increases Здоровье and slightly boosts Физическая Атака, Aurora scales all her skills with Магическая Атака, making this skin less impactful long-term.",
-        "priority": "Низкий – Offers base survivability, but inferior compared to HP or Магическая Атака options."
-      },
-      {
-        "desc": "",
-        "name": "Nordic Skin",
-        "bonus": "Grants +2,960 Уклонение. Aurora’s щит (Rainbow Halo) explodes after absorbing урон, and at Ascension, it also reacts to dodged attacks. More Уклонение means more explosions and survivability.",
-        "priority": "Очень Высокий – Critical synergy with Rainbow Halo explosions and Уклонение-based tanking."
-      },
-      {
-        "desc": "",
-        "name": "Spring Skin",
-        "bonus": "Grants +106,645 Здоровье. Her Rainbow Halo explodes after absorbing 10% of her Здоровье. More HP means larger explosion урон and longer survival in magic-heavy fights.",
-        "priority": "Высокий – Boosts щит effectiveness and team value by increasing AoE урон via explosions."
-      },
-      {
-        "desc": "",
-        "name": "Romantic Skin",
-        "bonus": "Grants +10,650 Магическая Атака. All three of Aurora's active skills scale directly with Магическая Атака:",
-        "priority": "Высокий – Strong урон scaling across all skills, enhancing Aurora's role as a magic Танк/off-урон hybrid."
-      },
-      {
-        "desc": "",
-        "name": "Demonic Skin",
-        "bonus": "Grants +10,650 Броня. Helps Aurora Танк against physical урон, which is a weakness for her. However, it doesn't directly amplify any of her skills.",
-        "priority": "Средний-Высокий – Useful against physical-heavy teams, but less versatile than Уклонение, HP, or Магическая Атака skins."
-      },
-      {
-        "desc": "",
-        "name": "Thundering Skin",
-        "bonus": "Grants +10,650 Магическая Атака. Same bonus as Romantic Skin, boosting all 3 active урон skills. Best used when Romantic is already maxed or for further offensive builds.",
-        "priority": "Высокий – Enhances offensive output in teams focused on magic burst урон or area Контролёр."
-      }
-    ],
-    "glyphs": [
-      {
-        "desc": "+1,995 Уклонение. Enhances synergy with Aurora’s Rainbow Halo Ascension, which absorbs урон from dodged attacks. Also improves her frontline survivability.",
-        "name": "4th Glyph - Уклонение:",
-        "name_en": "4th Glyph - Dodge:",
-        "priority": "Средний – Becomes more valuable later after Ascension. Not urgent for early progression."
-      },
-      {
-        "desc": "+1,135 Сила. Each point of Сила grants +40 Здоровье and +1 Физическая Атака if Сила is the hero’s main stat. Aurora's main stat is Сила , so this glyph does increase her Здоровье, which slightly boosts her Rainbow Halo passive щит. However, the increase is much smaller compared to the dedicated Здоровье glyph, which grants +62,200 HP directly. Additionally, Aurora deals no Physical урон , so the bonus to Физическая Атака is wasted on her build.",
-        "name": "5th Glyph - Сила:",
-        "name_en": "5th Glyph - Strength:",
-        "priority": "Низкий – While it technically helps her passive, it's the least efficient glyph and should be upgraded last."
-      }
-    ],
-    "counters": [],
-    "overview": "Aurora’s radiant presence on the battlefield is more than just beautiful it's devastating to враги. Whether you're building a magic-heavy team or seeking a frontline Танк that can dance through danger, Aurora delivers. But what truly makes her so popular? Let’s dive into the magic behind the Paladin of Riversar and how you can unlock her full potential. From her shining sword to her blinding Ловкость, Aurora isn't just a hero she’s a symbol of light, resilience, and hope for Dominion. New players often overlook her finesse, but seasoned commanders know: with the right setup, she’s nearly unstoppable.",
-    "artifacts": [
-      {
-        "desc": "Selias’ Legacy: Triggers when Aurora uses her ultimate skill. Grants a team-wide Уклонение bonus of +13,941 for 9 seconds.",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/weapon-aurora-selias-legacy.webp",
-        "name": "Weapon Artifact:",
-        "slot": "Оружие",
-        "desc_en": "Selias’ Legacy: Triggers when Aurora uses her ultimate skill. Grants a team-wide Dodge bonus of +13,941 for 9 seconds.",
-        "name_ru": "Weapon Artifact: (Оружие)",
-        "priority": "Очень Высокий – This is her most impactful artifact. It buffs the entire team's Уклонение stat, synergizing perfectly with her Rainbow Halo explosion and Уклонение-based builds (especially with Dante, Heidi, Yasmine).",
-        "priority_en": "Very High – This is her most impactful artifact. It buffs the entire team's Dodge stat, synergizing perfectly with her Rainbow Halo explosion and dodge-based builds (especially with Dante, Heidi, Yasmine)."
-      },
-      {
-        "desc": "Книга of Illusions: Grants +4,647 Уклонение and +83,649 Здоровье to Aurora.",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/book-of-illusions.webp",
-        "name": "Book Artifact:",
-        "slot": "Книга",
-        "desc_en": "Book of Illusions: Grants +4,647 Dodge and +83,649 Health to Aurora.",
-        "name_ru": "Book Artifact: (Книга)",
-        "priority": "Высокий – Boosts two of Aurora’s most important stats: Уклонение (for щит explosion synergy) and Здоровье (for larger Rainbow Halo detonations). Very efficient for her survivability and utility.",
-        "priority_en": "High – Boosts two of Aurora’s most important stats: Dodge (for shield explosion synergy) and Health (for larger Rainbow Halo detonations). Very efficient for her survivability and utility."
-      },
-      {
-        "desc": "Grants +6,249 Сила. Сила increases Здоровье (by 40 HP per point) and boosts Физическая Атака slightly if it's the hero’s main stat.",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/ring-of-strength.webp",
-        "name": "Ring Artifact:",
-        "slot": "Кольцо",
-        "desc_en": "Grants +6,249 Strength. Strength increases health (by 40 HP per point) and boosts Physical Attack slightly if it's the hero’s main stat.",
-        "name_ru": "Ring Artifact: (Кольцо)",
-        "priority": "Средний-Высокий – Сила contributes to Aurora’s Здоровье pool, helping Rainbow Halo, but it doesn’t directly boost Магическая Атака or Уклонение. It's useful, just not urgent early on.",
-        "priority_en": "Medium-High – Strength contributes to Aurora’s health pool, helping Rainbow Halo, but it doesn’t directly boost Magic Attack or Dodge. It's useful, just not urgent early on."
-      },
-      {
-        "desc": "+6,500 Магическая Атака. All of Aurora’s active skills scale with Магическая Атака:",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-attack.webp",
-        "name": "1st Glyph - Magic Attack:",
-        "slot": "Оружие",
-        "desc_en": "+6,500 Magic Attack. All of Aurora’s active skills scale with Magic Attack:",
-        "name_ru": "1st Glyph - Magic Attack: (Оружие)",
-        "priority": "Очень Высокий – Maximizes Aurora’s урон output and skill effectiveness, essential for her offensive role.",
-        "priority_en": "Very High – Maximizes Aurora’s damage output and skill effectiveness, essential for her offensive role."
-      },
-      {
-        "desc": "+62,200 Здоровье. Her Rainbow Halo щит explodes after absorbing 10% of her Здоровье, making this stat directly contribute to AoE урон and survivability.",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/health.webp",
-        "name": "2nd Glyph - Health:",
-        "slot": "Книга",
-        "desc_en": "+62,200 Health. Her Rainbow Halo shield explodes after absorbing 10% of her health, making this stat directly contribute to AoE damage and survivability.",
-        "name_ru": "2nd Glyph - Health: (Книга)",
-        "priority": "Высокий – Larger HP pool means stronger щит explosions and tanking power.",
-        "priority_en": "High – Larger HP pool means stronger shield explosions and tanking power."
-      },
-      {
-        "desc": "+6,500 Пробивание Защиты от Магии. Helps Aurora bypass enemy Защита от Магии, increasing the impact of her урон-dealing skills, especially against Высокий-resistance враги.",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-penetration.webp",
-        "name": "3rd Glyph - Magic Penetration:",
-        "slot": "Кольцо",
-        "desc_en": "+6,500 Magic Penetration. Helps Aurora bypass enemy Magic Defense, increasing the impact of her damage-dealing skills, especially against high-resistance enemies.",
-        "name_ru": "3rd Glyph - Magic Penetration: (Кольцо)",
-        "priority": "Средний-Высокий – Important for burst potential in magic teams, but less essential than raw Магическая Атака and Здоровье early on.",
-        "priority_en": "Medium-High – Important for burst potential in magic teams, but less essential than raw Magic Attack and Health early on."
-      }
-    ],
-    "patronage": [],
-    "war_flags": [
-      {
-        "desc": "Increases Energy Gain for Tanks by 10%.",
-        "name": "War Flag of Fervor",
-        "benefit": "Aurora heavily relies on her ultimate skill Crystal of Selias and her щит explosions from Rainbow Halo . Gaining Energy faster allows her to trigger her щит and AoE abilities more frequently, increasing both survivability and team урон output. This flag greatly enhances her overall performance and makes her a more reliable front line."
-      },
-      {
-        "desc": "Every 18 seconds, casts Frost on враги, reducing their skill levels by 2 for 8 seconds.",
-        "name": "War Flag of Frost",
-        "benefit": "Since Aurora excels in magic-heavy or Уклонение-based teams, weakening enemy skill levels helps mitigate incoming burst урон or disables. It increases her durability and boosts team survivability, giving her more time to charge her щит and deal retaliation урон with Rainbow Halo ."
-      }
-    ],
-    "best_teams": []
-  },
   "heidi": {
-    "id": "heidi",
     "cons": [
-      "Высокий pure урон output from skills like Deathflower and Toxic Spit , effective against teams with Высокий Уклонение or physical defense.",
-      "Strong synergy with heroes like Dorian, Aurora, Nebula, and Celeste, boosting both poison and pure урон potential.",
-      "Excellent survivability through Уклонение and crowd Контролёр avoidance, especially when combined with the Spy Camo skill.",
-      "First artifact increases Уклонение for the whole team, providing team-wide defensive benefits.",
-      "Can target multiple враги with Высокий pure урон, making her ideal for clearing waves or controlling backline threats."
+      "Высокая зависимость от прокачки умений, символов и артефактов для максимального урона и выживаемости.",
+      "Уязвимость к эффектам сжигания/блокировки энергии и очарования (например, от Йоргена или Лиан).",
+      "Слабость против магических команд, игнорирующих уклонение.",
+      "Критичность времени использования ультимативного умения при отсутствии поддержки по заполнению энергии.",
+      "Низкая физическая броня делает ее уязвимой к взрывному физическому урону без должной защиты."
     ],
-    "name": "Хайди",
     "pros": [
-      "Высокий pure урон output from skills like Deathflower and Toxic Spit , effective against teams with Высокий Уклонение or physical defense.",
-      "Strong synergy with heroes like Dorian, Aurora, Nebula, and Celeste, boosting both poison and pure урон potential.",
-      "Excellent survivability through Уклонение and crowd Контролёр avoidance, especially when combined with the Spy Camo skill.",
-      "First artifact increases Уклонение for the whole team, providing team-wide defensive benefits.",
-      "Can target multiple враги with Высокий pure урон, making her ideal for clearing waves or controlling backline threats."
+      "Высокий чистый урон от умений 'Смертоносный цветок' и 'Токсичный плевок', эффективный против команд с высоким уклонением или физической защитой.",
+      "Отличная синергия с такими героями, как Дориан, Аврора, Небула и Селеста, усиливающими яд и чистый урон.",
+      "Превосходная выживаемость благодаря высокому показателю уклонения и умению 'Защичный камуфляж'.",
+      "Первый артефакт увеличивает уклонение для всей команды, обеспечивая общекомандную защиту.",
+      "Способность поражать несколько целей чистым уроном, что идеально подходит для зачистки волн и контроля задней линии."
     ],
     "skins": [
       {
-        "desc": "Total of Интеллект Skin Stones for max level: 30,825",
-        "name": "Default Skin",
-        "bonus": "Stats gain: Интеллект +1365",
-        "priority": "Средний Высокий – Boosts Heidi’s main stat, slightly improving her Магическая Атака and Defense. However, it’s less impactful than her direct Магическая Атака skins and is often upgraded after them."
+        "name": "Базовый облик",
+        "bonus": "Интеллект +1,365",
+        "priority": "Выше среднего"
       },
       {
-        "desc": "Total of Интеллект Skin Stones for max level: 55,410 Note: Heidi’s Winter Skin can be unlocked during the Winter Skins event.",
-        "name": "Winter Skin",
-        "bonus": "Stats gain: Уклонение +2,965",
-        "priority": "Высокий – Increases Heidi’s survivability by improving her Уклонение, which synergizes with her Spy Camo skill. Ideal for keeping her alive longer against physical attackers and increasing uptime for poison урон."
+        "name": "Зимний облик",
+        "bonus": "Уклонение +2,965",
+        "priority": "Высокий"
       },
       {
-        "desc": "Total of Интеллект Skin Stones for max level: 55,410",
-        "name": "Lunar Skin",
-        "bonus": "Stats gain: Магическая Атака +10,650",
-        "priority": "Очень Высокий – The best offensive skin for Heidi, directly boosting all her poison and pure урон formulas. Since Магическая Атака scales every skill, this should be the first skin to max for consistent battle performance."
+        "name": "Лунный облик",
+        "bonus": "Магическая Атака +10,650",
+        "priority": "Очень Высокий"
       },
       {
-        "desc": "Total of Интеллект Skin Stones for max level: 55,410",
-        "name": "Demonic Skin",
-        "bonus": "Stats gain: Магическая Атака +10,650",
-        "priority": "Очень Высокий – Also increases Heidi’s Магическая Атака and works similarly to the Lunar Skin. It’s a strong secondary choice once Lunar is maxed, further enhancing her total урон potential."
+        "name": "Демонический облик",
+        "bonus": "Магическая Атака +10,650",
+        "priority": "Очень Высокий"
       },
       {
-        "desc": "Total of Интеллект Skin Stones for max level: 55,410",
-        "name": "Solar Skin",
-        "bonus": "Stats gain: Здоровье +106,645",
-        "priority": "Средний – Provides a large Здоровье boost that helps her survive area урон or magic bursts. Useful if you face strong AoE teams, but it’s less critical than Уклонение or Магическая Атака skins for overall performance."
+        "name": "Солнечный облик",
+        "bonus": "Здоровье +106,645",
+        "priority": "Средний"
       },
       {
-        "desc": "Total of Интеллект Skin Stones for max level: 55,410",
-        "name": "Romantic Skin",
-        "bonus": "Stats gain: Защита от Магии +10,650",
-        "priority": "Низкий – Offers better protection against magic урон but adds no offensive benefit. It’s the least impactful skin for Heidi’s performance and should be leveled last."
+        "name": "Романтический облик",
+        "bonus": "Защита от магии +10,650",
+        "priority": "Низкий"
       }
     ],
     "glyphs": [
       {
-        "desc": "Уклонение is one of Heidi’s signature strengths. It lets her avoid physical attacks entirely and build energy through Spy Camo whenever she successfully dodges. Stats gain: +1,995 Уклонение",
-        "name": "4th Glyph - Уклонение:",
-        "name_en": "4th Glyph - Dodge:",
-        "priority": "Высокий – Enhances Heidi’s ability to evade урон and charge skills faster. Strong synergy with her Spy Camo skill and Aurora-led teams."
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-attack.webp",
+        "name": "Магическая Атака"
       },
       {
-        "desc": "As Heidi’s main stat, Интеллект increases Магическая Атака and Защита от Магии strengthening both her урон and survivability. Stats gain: +1,135 Интеллект",
-        "name": "5th Glyph - Интеллект:",
-        "name_en": "5th Glyph - Intelligence:",
-        "priority": "Высокий – Boosts offense and defense at once; valuable for long-term growth and better performance against both magic and physical урон."
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/armor.webp",
+        "name": "Броня"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-defense.webp",
+        "name": "Защита от магии"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/dodge.webp",
+        "name": "Уклонение"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/intelligence.webp",
+        "name": "Интеллект"
       }
     ],
-    "counters": [],
-    "overview": "Heidi might look harmless at first glance, but don’t be fooled behind that charming smile lies one of the deadliest mages in Dominion Era. Known for her swift strikes and nature’s fury, Heidi can turn the tide of battle with pure урон and unpredictable dodges. Whether you’re building a strong magic team or looking for a counter against physical attackers, this guide will show you why Heidi remains a top-tier hero. Let’s uncover her skills, best союзники, and secrets to making her unstoppable in Хроники Хаоса (Dominion Era).",
+    "counters": [
+      {
+        "hero": "Cornelius",
+        "reason": "Умение <a href=\"#hero/cornelius?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">Тяжелая мудрость</a> наносит урон по врагам с наибольшим Интеллектом, а <a href=\"#hero/cornelius?skill=2\" style=\"color:#38bdf8; text-decoration:underline;\">Руна подавления</a> снижает Магическую Атаку Хайди на 12 секунд, значительно урезая ее урон."
+      },
+      {
+        "hero": "Corvus",
+        "reason": "Умение <a href=\"#hero/corvus?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">Алтарь Душ</a> наносит чистый урон каждый раз, когда Хайди атакует союзников, наказывая ее за области поражения."
+      },
+      {
+        "hero": "Jorgen",
+        "reason": "Умение <a href=\"#hero/jorgen?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">Парализующая пытка</a> предотвращает получение энергии врагами на 9 секунд, задерживая активацию ключевых умений Хайди."
+      },
+      {
+        "hero": "Lian",
+        "reason": "Умение <a href=\"#hero/lian?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">Очарование</a> усыпляет врагов на 7 секунд, а пассивное умение <a href=\"#hero/lian?skill=4\" style=\"color:#38bdf8; text-decoration:underline;\">Примирение</a> очаровывает Хайди при нанесении урона."
+      },
+      {
+        "hero": "Rufus",
+        "reason": "Благодаря пассивному умению <a href=\"#hero/rufus?skill=4\" style=\"color:#38bdf8; text-decoration:underline;\">Клятвой Ракаши</a> Руфуса невозможно окончательно убить магическим или чистым уроном Хайди."
+      }
+    ],
+    "overview": "Хайди может показаться безобидной на первый взгляд, но не поддавайтесь заблуждению: за этой очаровательной улыбкой скрывается один из самых смертоносных магов в Dominion Era. Известная своими стремительными ударами и яростью природы, Хайди способна переломить ход сражения благодаря чистому урону и непредсказуемым уклонениям. Будучи хитрым магом средней линии, она использует свой интеллект и ловкость, чтобы переигрывать врагов и поражать их разрушительной магией яда. Главное преимущество Хайди — чистый урон, который полностью игнорирует эффекты Уклонения и Брони. Это делает ее чрезвычайно эффективной против популярных уклоняющихся героев, таких как Данте и Аврора.",
     "artifacts": [
       {
-        "desc": "This glyph directly boosts the power of all Heidi’s poison skills. Every skill scales with Магическая Атака, which increases both her magic and pure урон effects. Stats gain: +6,500 Магическая Атака",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-attack.webp",
-        "name": "1st Glyph - Magic Attack:",
-        "slot": "Оружие",
-        "desc_en": "This glyph directly boosts the power of all Heidi’s poison skills. Every skill scales with Magic Attack, which increases both her magic and pure damage effects. Stats gain: +6,500 Magic Attack",
-        "name_ru": "1st Glyph - Magic Attack: (Оружие)",
-        "priority": "Очень Высокий – Магическая Атака increases all poison and pure урон formulas, making this the most valuable glyph to level first.",
-        "priority_en": "Very High – Magic Attack increases all poison and pure damage formulas, making this the most valuable glyph to level first."
-      },
-      {
-        "desc": "Броня helps Heidi resist physical hits. Since she already has good Уклонение, this glyph works as an extra layer of defense, protecting her from stray hits that bypass evasion. Stats gain: +6,500 Броня",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/armor.webp",
-        "name": "2nd Glyph - Armor:",
-        "slot": "Книга",
-        "desc_en": "Armor helps Heidi resist physical hits. Since she already has good Dodge, this glyph works as an extra layer of defense, protecting her from stray hits that bypass evasion. Stats gain: +6,500 Armor",
-        "name_ru": "2nd Glyph - Armor: (Книга)",
-        "priority": "Средний Высокий – Useful to stay alive longer against strong physical teams when Уклонение fails to trigger.",
-        "priority_en": "Medium High – Useful to stay alive longer against strong physical teams when Dodge fails to trigger."
-      },
-      {
-        "desc": "Защита от Магии reduces incoming урон from enemy mages. While not her main threat type, this stat can help Heidi survive longer against Контролёр-heavy Маг teams. Stats gain: +6,500 Защита от Магии",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-defense.webp",
-        "name": "3rd Glyph - Magic Defense:",
-        "slot": "Кольцо",
-        "desc_en": "Magic Defense reduces incoming damage from enemy mages. While not her main threat type, this stat can help Heidi survive longer against control-heavy mage teams. Stats gain: +6,500 Magic Defense",
-        "name_ru": "3rd Glyph - Magic Defense: (Кольцо)",
-        "priority": "Средний – Helpful but situational, as Heidi usually excels against physical and Уклонение-based teams rather than pure Маг setups.",
-        "priority_en": "Medium – Helpful but situational, as Heidi usually excels against physical and dodge-based teams rather than pure mage setups."
-      },
-      {
-        "desc": "Stats gain: Уклонение +13,941",
+        "desc": "Уклонение +13,941 (Дает бонус всей команде при активации первого умения)",
         "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/weapon-heidi-mean-koba.webp",
-        "name": "Weapon Artifact: Mean Koba",
+        "name": "Злая Коба",
         "slot": "Оружие",
-        "desc_en": "Stats gain: Dodge +13,941",
-        "name_ru": "Weapon Artifact: Mean Koba (Оружие)",
-        "priority": "Очень Высокий – Activates with Heidi’s ultimate skill (Shieldbreaker), granting bonus stats to the entire team. Maximizes both her урон output and team synergy, making it one of the top artifacts to upgrade first.",
-        "priority_en": "Very High – Activates with Heidi’s ultimate skill (Shieldbreaker), granting bonus stats to the entire team. Maximizes both her damage output and team synergy, making it one of the top artifacts to upgrade first."
+        "name_ru": "Злая Коба",
+        "priority": "Очень Высокий"
       },
       {
-        "desc": "Stats gain: Здоровье +83,649, Уклонение +4,647",
+        "desc": "Здоровье +83,649, Уклонение +4,647",
         "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/book-of-illusions.webp",
-        "name": "Book Artifact: Book of Illusions",
+        "name": "Книга иллюзий",
         "slot": "Книга",
-        "desc_en": "Stats gain: Health +83,649, Dodge +4,647",
-        "name_ru": "Book Artifact: Book of Illusions (Книга)",
-        "priority": "Высокий – Increases Heidi’s survivability significantly, letting her stay longer in fights to apply poison урон. Its combination of Здоровье and Уклонение makes it essential against physical-heavy teams.",
-        "priority_en": "High – Increases Heidi’s survivability significantly, letting her stay longer in fights to apply poison damage. Its combination of health and dodge makes it essential against physical-heavy teams."
+        "name_ru": "Книга иллюзий",
+        "priority": "Высокий"
       },
       {
-        "desc": "Stats gain: Интеллект +6,249 Each point of Интеллект grants three points to Магическая Атака, one to Защита от Магии, and one extra to Физическая Атака if Интеллект is the hero’s main stat.",
+        "desc": "Интеллект +6,249 (Магическая Атака +18,747, Защита от магии +6,249, Физическая Атака +6,249)",
         "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/ring-of-intelligence.webp",
-        "name": "Ring Artifact: Intelligence",
+        "name": "Кольцо интеллекта",
         "slot": "Кольцо",
-        "desc_en": "Stats gain: Intelligence +6,249 Each point of Intelligence grants three points to Magic Attack, one to Magic Defense, and one extra to Physical Attack if Intelligence is the hero’s main stat.",
-        "name_ru": "Ring Artifact: Intelligence (Кольцо)",
-        "priority": "Очень Высокий – Provides massive boosts to Heidi’s poison урон and increases her Защита от Магии. Essential to upgrade early for both offense and survivability.",
-        "priority_en": "Very High – Provides massive boosts to Heidi’s poison damage and increases her magic defense. Essential to upgrade early for both offense and survivability."
+        "name_ru": "Кольцо интеллекта",
+        "priority": "Очень Высокий"
       }
     ],
     "patronage": [],
-    "war_flags": [
+    "war_flags": [],
+    "best_teams": [
       {
-        "desc": "",
-        "name": "War Flag of Decline",
-        "benefit": "Reduces enemy healing by 10%, ensuring her poison and pure урон over time are more effective. This counters regenerative teams and maximizes her offensive potential."
+        "hero": "Dorian",
+        "reason": "Увеличивает урон Хайди и позволяет ее ядовитым атакам восстанавливать здоровье благодаря ауре вампиризма."
       },
       {
-        "desc": "",
-        "name": "War Flag of Frost",
-        "benefit": "Every 18 seconds, casts Frost on враги, reducing their skill levels by 2 for 8 seconds. This slows enemy skill usage, helping Heidi survive longer and apply continuous урон."
+        "hero": "Aurora",
+        "reason": "Отлично сочетается с первым артефактом Хайди, значительно повышающим Уклонение всей команды."
       },
       {
-        "desc": "",
-        "name": "War Flag of Recovery",
-        "benefit": "Increases all healing by 10%. While not directly boosting Heidi’s урон, it improves team sustainability, allowing her to maintain DPS longer in extended battles."
+        "hero": "Nebula",
+        "reason": "Существенно усиливает Магическую Атаку Хайди, позволяя ей наносить колоссальный чистый урон."
+      },
+      {
+        "hero": "Celeste",
+        "reason": "Усиливает магический потенциал команды и увеличивает урон от ядовитых атак."
       }
     ],
-    "best_teams": []
+    "conclusion": "Хайди — универсальный и неуловимый герой, чья сила заключается в способности избегать атак и быстро накапливать энергию для частой активации ультимативного умения. Правильная прокачка символов, выбор подходящих питомцев и использование боевых флагов позволяют максимально раскрыть ее потенциал. При правильном подборе команды Хайди становится грозным оружием как в PvE, так и в PvP боях Dominion Era."
+  },
+  "aurora": {
+    "cons": [
+      "Уязвимость к чистому урону (Ирис, Данте, Хайди, Эйдан игнорируют уклонение и магический щит)",
+      "Зависимость от случайности (RNG) уклонения",
+      "Низкая базовая физическая броня при неудавшемся уклонении",
+      "Сильная зависимость от правильно подобранной команды",
+      "Полный защитный потенциал раскрывается только после прокачки Возвышения"
+    ],
+    "pros": [
+      "Высокое сопротивление магии благодаря пассивному щиту Радужный Нимб, поглощающему большую часть магического урона",
+      "Огромный потенциал уклонения, который существенно повышает выживаемость против физических команд",
+      "Наличие урона по области и контроля (оглушения)",
+      "Отличная синергия с героями, зависящими от уклонения (Данте, Хайди, Ясмин)",
+      "Пассивный отраженный урон при взрыве щита, наказывающий вражеских магов"
+    ],
+    "skins": [
+      {
+        "name": "Базовый облик",
+        "bonus": "+1,365 Силы",
+        "priority": "Низкий"
+      },
+      {
+        "name": "Северный облик",
+        "bonus": "+2,960 Уклонения",
+        "priority": "Очень высокий"
+      },
+      {
+        "name": "Весенний облик",
+        "bonus": "+106,645 Здоровья",
+        "priority": "Высокий"
+      },
+      {
+        "name": "Романтический облик",
+        "bonus": "+10,650 Магической Атаки",
+        "priority": "Высокий"
+      },
+      {
+        "name": "Демонический облик",
+        "bonus": "+10,650 Брони",
+        "priority": "Средне-высокий"
+      },
+      {
+        "name": "Громовой облик",
+        "bonus": "+10,650 Магической Атаки",
+        "priority": "Высокий"
+      }
+    ],
+    "glyphs": [
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-attack.webp",
+        "name": "Магическая Атака"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/health.webp",
+        "name": "Здоровье"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-penetration.webp",
+        "name": "Пробивание Магической Защиты"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/dodge.webp",
+        "name": "Уклонение"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/strength.webp",
+        "name": "Сила"
+      }
+    ],
+    "counters": [
+      {
+        "hero": "Aidan",
+        "reason": "Эйдан наносит периодический чистый урон, который невозможно уклонить или поглотить щитом Авроры."
+      },
+      {
+        "hero": "Corvus",
+        "reason": "Корвус снижает шанс уклонения Авроры своим <a href=\"#hero/corvus?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">первым умением</a> и наказывает ее за массовый урон с помощью Алтаря Душ."
+      },
+      {
+        "hero": "Dante",
+        "reason": "Данте наносит высокий чистый урон, полностью игнорирующий главное преимущество Авроры — уклонение."
+      },
+      {
+        "hero": "Heidi",
+        "reason": "Хайди наносит чистый урон своими основными умениями и имеет высокий показатель невидимого уклонения, защищающий его от ответных взрывов Авроры."
+      },
+      {
+        "hero": "Iris",
+        "reason": "Ирис обнажает душу Авроры и перенаправляет чистый урон напрямую в нее, обходя щиты и уклонение."
+      },
+      {
+        "hero": "Lian",
+        "reason": "Лиан наносит чистый урон и контролирует Аврору очарованием, сбивая ритм ее умений."
+      },
+      {
+        "hero": "Lyria",
+        "reason": "Лирия снижает уклонение всех врагов в радиусе действия благодаря пассивному умению <a href=\"#hero/lyria?skill=4\" style=\"color:#38bdf8; text-decoration:underline;\">Оковы Рока</a>, делая Аврору легкой мишенью."
+      }
+    ],
+    "overview": "Аврора — уникальный танк первой линии, гармонично сочетающий в себе защиту и нападение. В отличие от традиционных танков, она полагается на уклонение от физических атак и поглощение магического урона. Её первое умение наносит значительный урон по области и активирует артефакт оружия, повышающий уклонение всей команды. Это делает Аврору идеальным защитником для героев, зависящих от уклонения (Данте, Ясмин, Хайди), а также для магических команд.",
+    "artifacts": [
+      {
+        "desc": "+13,941 Уклонения всей команде на 9 секунд при использовании ультимативного умения",
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/weapon-aurora-selias-legacy.webp",
+        "name": "Наследие Селиас",
+        "slot": "Оружие",
+        "name_ru": "Наследие Селиас",
+        "priority": "Очень высокий — ключевой артефакт для защиты команды и синергии уклонения."
+      },
+      {
+        "desc": "+4,647 Уклонения, +83,649 Здоровья",
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/book-of-illusions.webp",
+        "name": "Книга Иллюзий",
+        "slot": "Книга",
+        "name_ru": "Книга Иллюзий",
+        "priority": "Высокий — увеличивает выживаемость и силу взрывов пассивного щита."
+      },
+      {
+        "desc": "+6,249 Силы",
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/ring-of-strength.webp",
+        "name": "Кольцо Силы",
+        "slot": "Кольцо",
+        "name_ru": "Кольцо Силы",
+        "priority": "Средне-высокий — увеличивает общий запас здоровья."
+      }
+    ],
+    "patronage": [],
+    "war_flags": [],
+    "best_teams": [
+      {
+        "hero": "Dante",
+        "reason": "Аврора дает Данте командный бонус к уклонению, а Данте усиливает уклонение всей команды и генерирует энергию."
+      },
+      {
+        "hero": "Yasmine",
+        "reason": "Получает огромную выгоду от артефакта Авроры на уклонение, увеличивая свою живучесть."
+      },
+      {
+        "hero": "Heidi",
+        "reason": "Идеально сочетается в командах, построенных на уклонении и магии."
+      },
+      {
+        "hero": "Orion",
+        "reason": "Быстро заряжает энергию и наносит постоянный магический урон под защитой Авроры."
+      },
+      {
+        "hero": "Celeste",
+        "reason": "Обеспечивает магическую поддержку, исцеление и дополнительный урон."
+      }
+    ],
+    "conclusion": "Аврора — универсальный и крайне сильный танк, способный защитить свою команду за счет высокого уклонения, щита поглощения магии и впечатляющего урона по области. При правильной сборке и правильном окружении союзников она превращается в нерушимый оплот на первой линии, способный переломить ход любого сражения."
   },
   "aidan": {
     "cons": [
@@ -2512,136 +2277,105 @@ export const HERO_GUIDES_DB = {
     "war_flags": []
   },
   "guus": {
-    "id": "guus",
     "cons": [
-      "Powerful multi-source healing: Guus has four distinct healing abilities that keep союзники alive through direct and over-time healing.",
-      "Scales with Физическая Атака: His healing scales with Физическая Атака and Сила, allowing synergy with common glyphs and artifacts.",
-      "Golden Feather mechanic: Grants союзники a strong passive исцеление and a safety net against lethal урон.",
-      "Great synergy with tanks and brawlers: Works well in front-loaded teams that benefit from sustained healing.",
-      "Energy-efficient ultimate: If interrupted, Guus retains partial Energy, allowing faster reuse of his ultimate.",
-      "Strong with War Flag of Recovery: Healing can be amplified further with the right War Flag and patronage Поддержка."
+      "Высокая уязвимость к эффектам запрета исцеления (например, Селеста)",
+      "Поддерживаемый ультимейт можно прервать контролем или перемещением",
+      "Отсутствие ощутимого наступательного потенциала и урона",
+      "Зависимость эффективности лечения от позиционирования союзников",
+      "Требует высоких инвестиций в облики, символы и артефакты"
     ],
-    "name": "Гус",
     "pros": [
-      "Powerful multi-source healing: Guus has four distinct healing abilities that keep союзники alive through direct and over-time healing.",
-      "Scales with Физическая Атака: His healing scales with Физическая Атака and Сила, allowing synergy with common glyphs and artifacts.",
-      "Golden Feather mechanic: Grants союзники a strong passive исцеление and a safety net against lethal урон.",
-      "Great synergy with tanks and brawlers: Works well in front-loaded teams that benefit from sustained healing.",
-      "Energy-efficient ultimate: If interrupted, Guus retains partial Energy, allowing faster reuse of his ultimate.",
-      "Strong with War Flag of Recovery: Healing can be amplified further with the right War Flag and patronage Поддержка."
+      "Мощное многоисточниковое исцеление от четырёх различных способностей",
+      "Эффективно масштабируется от Физической Атаки и Силы",
+      "Механика Золотого Пера дает мощный пассивный отхил и спасает от смертельного урона",
+      "Превосходная синергия с танками и бойцами ближнего боя",
+      "Энергоэффективный ультимейт: сохраняет часть энергии при прерывании",
+      "Отлично усиливается Знаменем Войны Исцеления"
     ],
     "skins": [
       {
-        "desc": "",
-        "name": "Default Skin (Strength +1,365)",
-        "bonus": "The Default Skin increases Guus’s Сила, which is his main stat . This directly improves his Здоровье and Физическая Атака , which both scale his healing output. Every 1 Сила point gives Guus 40 Здоровье and 1 point of Физическая Атака. This makes it the most impactful skin for enhancing both survivability and skill performance.",
-        "priority": "Очень Высокий – Essential for increasing healing through Физическая Атака and boosting Guus's durability with extra Здоровье."
+        "name": "Базовый Облик",
+        "bonus": "Сила +1,365",
+        "priority": "Очень Высокий — дает Силу, увеличивая Здоровье и Физическую Атаку для мощного отхила"
       },
       {
-        "desc": "",
-        "name": "Angelic Skin (Magic Defense +10,650)",
-        "bonus": "The Angelic Skin boosts Защита от Магии, helping Guus survive against magic-based урон dealers like Iris, Lars, or Orion. While this doesn’t increase healing or skill effects directly, it makes him harder to kill, allowing him to stay active longer and continue healing союзники. It’s more situational, useful mainly in PvP or magic-heavy boss fights.",
-        "priority": "Средний – Helpful for survivability against magic урон, but doesn’t enhance healing power or skill effectiveness directly."
+        "name": "Ангельский Облик",
+        "bonus": "Защита от Магии +10,650",
+        "priority": "Средний — полезен для выживания против магических пачек"
       },
       {
-        "desc": "",
-        "name": "Autumn Skin (Armor +10,650)",
-        "bonus": "The Autumn Skin increases Броня, helping Guus survive longer against physical урон dealers and basic attack pressure. It does not boost his healing directly, but the added durability helps him stay active and keep supporting союзники in longer fights.",
-        "priority": "Средний &ndash; Useful when physical teams are a problem, but healing-focused upgrades and main stat investment should still come first."
+        "name": "Осенний Облик",
+        "bonus": "Броня +10,650",
+        "priority": "Средний — повышает стойкость против физического урона"
       }
     ],
     "glyphs": [
       {
-        "desc": "Броня helps reduce incoming physical урон. While it's helpful, Guus already heals himself and союзники frequently, so pure defensive stats like Броня are less urgent than improving his healing throughput.",
-        "name": "4th Glyph – Броня:",
-        "name_en": "4th Glyph – Armor:",
-        "priority": "Средний – Helps with survivability but doesn't affect healing or урон output directly."
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/physical-attack.webp",
+        "name": "Физическая Атака"
       },
       {
-        "desc": "While Guus does deal some physical урон (like gray geese), he’s not meant to be a урон dealer. This glyph has very little value for him compared to healing-focused stats.",
-        "name": "5th Glyph – Броня Penetration:",
-        "name_en": "5th Glyph – Armor Penetration:",
-        "priority": "Низкий – Minimal impact on Guus's primary role. Better reserved for heroes focused on dealing physical урон."
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/strength.webp",
+        "name": "Сила"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/health.webp",
+        "name": "Здоровье"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/armor.webp",
+        "name": "Броня"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/armor-penetration.webp",
+        "name": "Пробивание Брони"
       }
     ],
-    "counters": [],
-    "overview": "Полный разбор механик, роли и стратегий для персонажа Гус в игре Хроники Хаоса (Dominion Era).",
+    "counters": [
+      {
+        "hero": "Celeste",
+        "reason": "Селеста — самый эффективный контр-пик против Гуса. Ее <a href=\"#hero/celeste?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">Проклятое Пламя</a> блокирует исцеление в области и превращает его в урон, полностью нейтрализуя умения Марш Гусей и Наложение Перьев."
+      },
+      {
+        "hero": "Jorgen",
+        "reason": "Йорген сдерживает Гуса, замедляя его набор энергии своими умениями <a href=\"#hero/jorgen?skill=3\" style=\"color:#38bdf8; text-decoration:underline;\">Пытка</a> и <a href=\"#hero/jorgen?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">Проклятие Прокаженного</a>, откладывая использование ультимейта."
+      },
+      {
+        "hero": "Lian",
+        "reason": "Лиан прерывает Гуса очарованием при получении урона от его атак, сбивая поддерживаемый ультимейт Марш Гусей и блокируя исцеление."
+      }
+    ],
+    "overview": "Гус — необычный герой поддержки, специализирующийся на сдерживании урона и исцелении команды с помощью армии гусей. Этот пожилой мужчина и его золотой гусь защищают всю команду от взрывного и периодического урона. В это же время серые гуси атакуют врагов, сбивая их с толку и удерживая на расстоянии. Его умения сочетают в себе лечение, щиты и контроль, превращая его в надежную опору для всей группы.",
     "artifacts": [
       {
-        "desc": "This artifact boosts Guus’s Броня and activates in battle with 100% chance. The Высокий Броня bonus helps protect the entire team by increasing Guus’s survivability, which is crucial for a Хилер.",
+        "desc": "Броня (Активация артефакта дает Броню всей команде)",
         "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/weapon-guus-archgoose-feather.webp",
-        "name": "Weapon: Archgoose Feather",
+        "name": "Перо Архигуся",
         "slot": "Оружие",
-        "desc_en": "This artifact boosts Guus’s Armor and activates in battle with 100% chance. The high Armor bonus helps protect the entire team by increasing Guus’s survivability, which is crucial for a healer.",
-        "name_ru": "Weapon: Archgoose Feather (Оружие)",
-        "priority": "Высокий – It ensures Guus stays alive longer in battle, letting him keep healing. However, it doesn’t boost his healing output directly, so it’s not the very top priority.",
-        "priority_en": "High – It ensures Guus stays alive longer in battle, letting him keep healing. However, it doesn’t boost his healing output directly, so it’s not the very top priority."
+        "name_ru": "Перо Архигуся",
+        "priority": "Высокая — увеличивает выживаемость Гуса и дает бронебуст команде"
       },
       {
-        "desc": "This artifact provides Броня Penetration and Физическая Атака , but Guus is a Хилер whose skills do not rely on урон. These stats do not benefit his healing or survivability directly.",
+        "desc": "Пробивание Брони, Физическая Атака",
         "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/alchemists-folio.webp",
-        "name": "Book: Alchemist's Folio",
+        "name": "Фолиант Алхимика",
         "slot": "Книга",
-        "desc_en": "This artifact provides Armor Penetration and Physical Attack , but Guus is a healer whose skills do not rely on damage. These stats do not benefit his healing or survivability directly.",
-        "name_ru": "Book: Alchemist's Folio (Книга)",
-        "priority": "Низкий – These stats are not very useful for Guus’s role. It can be upgraded last unless you want small extra урон from gray geese.",
-        "priority_en": "Low – These stats are not very useful for Guus’s role. It can be upgraded last unless you want small extra damage from gray geese."
+        "name_ru": "Фолиант Алхимика",
+        "priority": "Низкая — статы не дают прямого прироста к выживаемости и лечению"
       },
       {
-        "desc": "This artifact increases Сила , which is Guus’s main stat. More Сила means more Здоровье and Физическая Атака, which indirectly boosts his healing via skills like “Lay on Feathers” and survivability.",
+        "desc": "Сила (Увеличивает Здоровье и Физическую Атаку)",
         "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/ring-of-strength.webp",
-        "name": "Ring: Ring of Strength",
+        "name": "Кольцо Силы",
         "slot": "Кольцо",
-        "desc_en": "This artifact increases Strength , which is Guus’s main stat. More Strength means more health and physical attack, which indirectly boosts his healing via skills like “Lay on Feathers” and survivability.",
-        "name_ru": "Ring: Ring of Strength (Кольцо)",
-        "priority": "Очень Высокий – Boosts both healing output and durability. This is the most important artifact to level up early for Guus’s performance as a Хилер.",
-        "priority_en": "Very High – Boosts both healing output and durability. This is the most important artifact to level up early for Guus’s performance as a healer."
-      },
-      {
-        "desc": "This glyph directly increases Guus's healing power, as all of his healing skills scale with Физическая Атака. It also boosts his gray goose урон from March of the Geese , making it his most impactful glyph in both Поддержка and урон.",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/physical-attack.webp",
-        "name": "1st Glyph – Physical Attack:",
-        "slot": "Оружие",
-        "desc_en": "This glyph directly increases Guus's healing power, as all of his healing skills scale with physical attack. It also boosts his gray goose damage from March of the Geese , making it his most impactful glyph in both support and damage.",
-        "name_ru": "1st Glyph – Physical Attack: (Оружие)",
-        "priority": "Очень Высокий – Maximizes both healing and урон, essential for Guus’s core functionality.",
-        "priority_en": "Very High – Maximizes both healing and damage, essential for Guus’s core functionality."
-      },
-      {
-        "desc": "Сила is Guus’s main stat , increasing both his Здоровье and Физическая Атака. This indirectly boosts his healing and improves his survivability. It’s slightly less effective than direct Физическая Атака, but still highly valuable.",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/strength.webp",
-        "name": "2nd Glyph – Strength:",
-        "slot": "Книга",
-        "desc_en": "Strength is Guus’s main stat , increasing both his health and physical attack. This indirectly boosts his healing and improves his survivability. It’s slightly less effective than direct physical attack, but still highly valuable.",
-        "name_ru": "2nd Glyph – Strength: (Книга)",
-        "priority": "Высокий – Strong all-around boost to Guus’s healing and durability.",
-        "priority_en": "High – Strong all-around boost to Guus’s healing and durability."
-      },
-      {
-        "desc": "This glyph gives Guus a large Здоровье boost, which helps him survive longer in drawn-out fights. It doesn’t enhance healing, but is crucial in battles where Guus is frequently targeted or faces AoE урон.",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/health.webp",
-        "name": "3rd Glyph – Health:",
-        "slot": "Кольцо",
-        "desc_en": "This glyph gives Guus a large health boost, which helps him survive longer in drawn-out fights. It doesn’t enhance healing, but is crucial in battles where Guus is frequently targeted or faces AoE damage.",
-        "name_ru": "3rd Glyph – Health: (Кольцо)",
-        "priority": "Средний-Высокий – Increases Guus’s staying power, especially useful in PvP or versus AoE teams.",
-        "priority_en": "Medium-High – Increases Guus’s staying power, especially useful in PvP or versus AoE teams."
+        "name_ru": "Кольцо Силы",
+        "priority": "Очень Высокая — поднимает главный стат, напрямую усиливая лечение и выживаемость"
       }
     ],
     "patronage": [],
-    "war_flags": [
-      {
-        "desc": "This is the top choice for Guus. It increases all healing by 10%, which directly buffs the output of March of the Geese , Feathers of Gold , Lay on Feathers , and Guardian Goose . Since Guus is one of the most healing-focused heroes in the game, this flag amplifies his primary role in any team.",
-        "name": "War Flag of Recovery",
-        "benefit": "Greatly increases his overall healing efficiency, helping союзники survive burst урон and sustain longer in drawn-out battles."
-      },
-      {
-        "desc": "This is a great secondary choice when Guus is on a Контролёр or attrition-based team. Reducing the enemy team’s healing by 10% makes it harder for opposing supports to outheal Guus’s pressure, especially in mirror matchups or against heroes like Aidan, Thea, or Celeste.",
-        "name": "War Flag of Decline",
-        "benefit": "Weakens the enemy team’s sustain, giving Guus’s team a healing advantage over time."
-      }
-    ],
-    "best_teams": []
+    "war_flags": [],
+    "best_teams": [],
+    "conclusion": "Гус — очаровательное и одновременно невероятно мощное дополнение к вашему ростеру в Hero Wars: Dominion Era. Несмотря на внешность чудаковатого старика с гусем, его способность непрерывно исцелять команду, спасать союзников от смертельного урона и сбивать ритм врагов делает его ценнейшим целителем. При правильной прокачке способностей и артефактов Гус превращается в нерушимый пернатый щит между вашей командой и поражением!"
   },
   "kai": {
     "id": "kai",
@@ -3120,170 +2854,133 @@ export const HERO_GUIDES_DB = {
     "best_teams": []
   },
   "isaac": {
-    "id": "isaac",
     "cons": [
-      "Excellent counter to Маг-heavy teams thanks to his ultimate, which silences враги and prevents them from generating energy.",
-      "Absorbs incoming magic урон, protecting the team from Маг burst attacks.",
-      "Provides strong Физическая Атака scaling, making him a reliable урон dealer in long battles.",
-      "Great synergy with physical teams, enhancing marksmen and Ловкость-based heroes.",
-      "Durable frontline presence with Броня and Защита от Магии glyphs that improve his survivability."
+      "Малоэффективен против команд без магов или с низким магическим уроном.",
+      "Относительно слабый урон на самой ранней стадии боя.",
+      "Эффект молчания легко снимается героями с очищением (Себастьян, Селеста, Небула).",
+      "Сильно зависит от правильного состава команды."
     ],
-    "name": "Исаак",
     "pros": [
-      "Excellent counter to Маг-heavy teams thanks to his ultimate, which silences враги and prevents them from generating energy.",
-      "Absorbs incoming magic урон, protecting the team from Маг burst attacks.",
-      "Provides strong Физическая Атака scaling, making him a reliable урон dealer in long battles.",
-      "Great synergy with physical teams, enhancing marksmen and Ловкость-based heroes.",
-      "Durable frontline presence with Броня and Защита от Магии glyphs that improve his survivability."
+      "Идеальный контр-пик против магических команд благодаря массовому молчанию и блокировке накопления энергии.",
+      "Поглощает магический урон, защищая всю команду от взрывного урона магов.",
+      "Обеспечивает отличный прирост физической атаки в затяжных сражениях.",
+      "Превосходная синергия с физическими пачками, особенно со стрелками и инженерами.",
+      "Высокая выживаемость благодаря прочной защитной базе и символам."
     ],
     "skins": [
       {
-        "desc": "Total of Ловкость Skin Stone for max level: 30,825",
-        "name": "Default Skin",
-        "bonus": "Stats gain: Ловкость +1,365",
-        "priority": "3-е (Кольцо) – Provides a mix of Физическая Атака and Броня, but has less impact on Isaac’s primary role compared to penetration or raw attack."
+        "name": "Весенний Облик",
+        "bonus": "Пробивание брони +10,650",
+        "priority": "1-е место — первостепенный облик для преодоления брони магов и поддержки."
       },
       {
-        "desc": "Total of Ловкость Skin Stone for max level: 55,410",
-        "name": "Masquerade Skin",
-        "bonus": "Stats gain: Физическая Атака +7,095",
-        "priority": "2-е (Книга) – Directly boosts Isaac’s overall урон and Charge-based utility, making it a strong offensive choice after penetration."
+        "name": "Маскарадный Облик",
+        "bonus": "Физическая атака +7,095",
+        "priority": "2-е место — прямой прирост к урону и эффективности умений."
       },
       {
-        "desc": "Total of Ловкость Skin Stone for max level: 55,410",
-        "name": "Lunar Skin",
-        "bonus": "Stats gain: Защита от Магии +10,650",
-        "priority": "4th – Helps Isaac Танк magic урон, but his silence already counters mages effectively. Низкий priority outside of specific PvP setups."
+        "name": "Базовый Облик",
+        "bonus": "Ловкость +1,365",
+        "priority": "3-е место — сбалансированный прирост атаки и брони."
       },
       {
-        "desc": "Total of Ловкость Skin Stone for max level: 55,410",
-        "name": "Spring Skin",
-        "bonus": "Stats gain: Броня Penetration +10,650",
-        "priority": "1-е (Оружие) – Essential for bypassing enemy Броня and ensuring Isaac can consistently урон backline mages and supports. Best skin to invest in first."
+        "name": "Лунный Облик",
+        "bonus": "Защита от магии +10,650",
+        "priority": "4-е место — низкий приоритет, так как защита от магии компенсируется молчанием."
       }
     ],
     "glyphs": [
       {
-        "desc": "Stats gain: +6,500",
-        "name": "4th Glyph - Защита от Магии:",
-        "name_en": "4th Glyph - Magic Defense:",
-        "priority": "Средний-Высокий – Provides extra resistance against magic урон, complementing Isaac’s role as an anti-Маг. Helpful, but not as impactful as Здоровье for charging his unique skills."
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/health.webp",
+        "name": "Здоровье"
       },
       {
-        "desc": "Stats gain: Ловкость +1,135",
-        "name": "5th Glyph - Ловкость:",
-        "name_en": "5th Glyph - Agility:",
-        "priority": "Низкий – Provides both урон and defense bonuses, but the gains are much smaller compared to Здоровье and direct Физическая Атака. Upgrade last."
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/physical-attack.webp",
+        "name": "Физическая Атака"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-defense.webp",
+        "name": "Защита от Магии"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/armor.webp",
+        "name": "Броня"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/agility.webp",
+        "name": "Ловкость"
       }
     ],
-    "counters": [],
-    "overview": "Isaac is not just another hero; he’s the genius engineer who makes mages tremble on the battlefield. With his self-propelled vehicle Tes’Lin, disruptive drones, and unmatched Контролёр, Isaac brings both innovation and devastation to his враги. In this guide, you’ll uncover everything you need to know about Isaac — from his unique skills and stats to the strategies that make him a top counter to magic-heavy teams and even the mighty Osh. Get ready to see why many players call him one of the most game-changing supports in Хроники Хаоса (Dominion Era).",
+    "counters": [
+      {
+        "hero": "Celeste",
+        "reason": "Ее <a href=\"#hero/celeste?skill=2\" style=\"color:#38bdf8; text-decoration:underline;\">Очищающая Сфера</a> снимает и блокирует негативные эффекты, сводя на нет эффект молчания от Исаака."
+      },
+      {
+        "hero": "Heidi",
+        "reason": "Все атаки Хайди наносят чистый урон, который не заряжает навык <a href=\"#hero/isaac?skill=2\" style=\"color:#38bdf8; text-decoration:underline;\">Конденсатор MP-300</a> Исаака."
+      },
+      {
+        "hero": "Julius",
+        "reason": "Навык <a href=\"#hero/julius?skill=4\" style=\"color:#38bdf8; text-decoration:underline;\">Девять Жизней</a> снимает ослабления при разрушении щитов и повышает бронезащиту команды."
+      },
+      {
+        "hero": "Nebula",
+        "reason": "Снимает негативные эффекты и исцеляет союзников <a href=\"#hero/nebula?skill=2\" style=\"color:#38bdf8; text-decoration:underline;\">своим умением</a>, быстро нейтрализуя контроль."
+      },
+      {
+        "hero": "Sebastian",
+        "reason": "Пассивный щит <a href=\"#hero/sebastian?skill=4\" style=\"color:#38bdf8; text-decoration:underline;\">Себастьяна</a> блокирует дебаффы и автоматически снимает молчание со всей команды."
+      }
+    ],
+    "overview": "Исаак — гениальный инженер и герой Поддержки/Контроля средней линии в Hero Wars: Dominion Era. С помощью своего самоходного аппарата Тес'Лин, боевых дронов и уникального контроля он приносит на поле боя инновации и разрушение. Исаак нейтрализует магические команды: он поглощает входящий магический урон, накладывает на врагов молчание и значительно усиливает физических атакующих союзников. Он является незаменимым героем как в PvP против магов, так и в боях против босса Оша в Асгарде.",
     "artifacts": [
       {
-        "desc": "This is Isaac’s most important skill. Unlike most heroes, Isaac does not gain energy from taking or dealing урон. Instead, his invention Tes’Lin builds Charge with every basic attack until reaching 100%. When activated, it releases a powerful electromagnetic pulse that silences all враги for 4 seconds. Silence prevents enemy mages from casting their strongest abilities, often turning the tide of battle. Because Isaac relies on Charges instead of energy, he is completely immune to energy manipulation effects, making him especially powerful against heroes like Satori and Jorgen who punish or drain energy from others. Formula: (Silence effect for 4s, triggered at 100% Charge) .",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/hero/isaac/tes-lins-overdrive.webp",
-        "name": "1st – Tes'Lin's Overdrive",
-        "slot": "Оружие",
-        "desc_en": "This is Isaac’s most important skill. Unlike most heroes, Isaac does not gain energy from taking or dealing damage. Instead, his invention Tes’Lin builds Charge with every basic attack until reaching 100%. When activated, it releases a powerful electromagnetic pulse that silences all enemies for 4 seconds. Silence prevents enemy mages from casting their strongest abilities, often turning the tide of battle. Because Isaac relies on Charges instead of energy, he is completely immune to energy manipulation effects, making him especially powerful against heroes like Satori and Jorgen who punish or drain energy from others. Formula: (Silence effect for 4s, triggered at 100% Charge) .",
-        "name_ru": "1st – Tes'Lin's Overdrive (Оружие)",
-        "priority": "Очень Высокий – This is Isaac’s core skill and his primary reason for being such a strong Маг counter. Without it, his role and usefulness drop sharply.",
-        "priority_en": "Very High – This is Isaac’s core skill and his primary reason for being such a strong mage counter. Without it, his role and usefulness drop sharply."
-      },
-      {
-        "desc": "This passive skill absorbs part of the magic урон taken by Isaac and his союзники, turning it into Charge. The more magic урон the enemy deals, the faster Isaac can silence them again. It also reduces the pressure on your team by making mages less threatening. Formula: (0.012% Здоровье + Ivl * 0.05 + 10)% (Isaac), (0.003% Здоровье + Ivl * 0.01 + 5)% (each ally) .",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/hero/isaac/mp-300-capacitor.webp",
-        "name": "2nd – MP-300 Capacitor",
-        "slot": "Книга",
-        "desc_en": "This passive skill absorbs part of the magic damage taken by Isaac and his allies, turning it into Charge. The more magic damage the enemy deals, the faster Isaac can silence them again. It also reduces the pressure on your team by making mages less threatening. Formula: (0.012% Health + Ivl * 0.05 + 10)% (Isaac), (0.003% Health + Ivl * 0.01 + 5)% (each ally) .",
-        "name_ru": "2nd – MP-300 Capacitor (Книга)",
-        "priority": "Высокий – A critical Поддержка skill that directly fuels Isaac’s main ability, making silences happen much more often. Always keep this skill strong.",
-        "priority_en": "High – A critical support skill that directly fuels Isaac’s main ability, making silences happen much more often. Always keep this skill strong."
-      },
-      {
-        "desc": "After the second activation of Tes’Lin’s Overdrive, Isaac releases drones that boost the Физическая Атака of all союзники for 8 seconds. Engineers get double the bonus, making this skill very strong in the right team setup. Formula: (12% Phys. atk. + Ivl * 10 + 110) .",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/hero/isaac/drone-swarm.webp",
-        "name": "3rd – Drone Swarm",
-        "slot": "Кольцо",
-        "desc_en": "After the second activation of Tes’Lin’s Overdrive, Isaac releases drones that boost the Physical Attack of all allies for 8 seconds. Engineers get double the bonus, making this skill very strong in the right team setup. Formula: (12% Phys. atk. + Ivl * 10 + 110) .",
-        "name_ru": "3rd – Drone Swarm (Кольцо)",
-        "priority": "Средний Высокий – Great for physical-heavy teams, but requires multiple activations to shine. It’s powerful, but secondary compared to his silence and magic absorption.",
-        "priority_en": "Medium High – Great for physical-heavy teams, but requires multiple activations to shine. It’s powerful, but secondary compared to his silence and magic absorption."
-      },
-      {
-        "desc": "Stats gain: Броня Penetration +50,190",
+        "desc": "Пробивание брони +50,190 (для всей команды при срабатывании артефактного оружия)",
         "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/weapon-isaac-lil-tes-lin.webp",
-        "name": "Weapon Artifact: Lil’ Tes’Lin",
+        "name": "Малышка Тес'Лин",
         "slot": "Оружие",
-        "desc_en": "Stats gain: Armor Penetration +50,190",
-        "name_ru": "Weapon Artifact: Lil’ Tes’Lin (Оружие)",
-        "priority": "1-е (Оружие) – This is Isaac’s most important artifact since it provides massive Броня Penetration for the entire team when Shieldbreaker is used. It synergizes directly with his ultimate, ensuring that both Isaac and союзники can consistently pierce through enemy defenses.",
-        "priority_en": "1st – This is Isaac’s most important artifact since it provides massive Armor Penetration for the entire team when Shieldbreaker is used. It synergizes directly with his ultimate, ensuring that both Isaac and allies can consistently pierce through enemy defenses."
+        "name_ru": "Малышка Тес'Лин",
+        "priority": "1-е место — дает колоссальное пробивание брони всей команде."
       },
       {
-        "desc": "Stats gain: Броня Penetration +16,731, Физическая Атака +5,577",
+        "desc": "Пробивание брони +16,731, Физическая атака +5,577",
         "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/alchemists-folio.webp",
-        "name": "Book Artifact: Alchemist’s Folio",
+        "name": "Фолиант Альхимика",
         "slot": "Книга",
-        "desc_en": "Stats gain: Armor Penetration +16,731, Physical Attack +5,577",
-        "name_ru": "Book Artifact: Alchemist’s Folio (Книга)",
-        "priority": "2-е (Книга) – Boosts Isaac’s own урон by improving both penetration and Физическая Атака. While not as powerful as the team-wide Оружие effect, it is still crucial for strengthening his offensive role.",
-        "priority_en": "2nd – Boosts Isaac’s own damage by improving both penetration and physical attack. While not as powerful as the team-wide weapon effect, it is still crucial for strengthening his offensive role."
+        "name_ru": "Фолиант Альхимика",
+        "priority": "2-е место — увеличивает личный урон и пробивание."
       },
       {
-        "desc": "Stats gain: Ловкость +6,249",
+        "desc": "Ловкость +6,249 (Физическая атака +18,747, Броня +6,249)",
         "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/ring-of-agility.webp",
-        "name": "Ring Artifact",
+        "name": "Кольцо Ловкости",
         "slot": "Кольцо",
-        "desc_en": "Stats gain: Agility +6,249",
-        "name_ru": "Ring Artifact (Кольцо)",
-        "priority": "3-е (Кольцо) – Provides individual stat growth for Isaac (attack and Броня), but has lower priority compared to artifacts that empower both Isaac and his союзники.",
-        "priority_en": "3rd – Provides individual stat growth for Isaac (attack and armor), but has lower priority compared to artifacts that empower both Isaac and his allies."
-      },
-      {
-        "desc": "Stats gain: +4,340",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/physical-attack.webp",
-        "name": "1st Glyph - Physical Attack:",
-        "slot": "Оружие",
-        "desc_en": "Stats gain: +4,340",
-        "name_ru": "1st Glyph - Physical Attack: (Оружие)",
-        "priority": "Высокий – Boosts Isaac’s overall урон, enhancing his Drone Swarm and Высокий-Voltage Module skills. However, it is slightly behind Здоровье since survivability directly powers his unique charge mechanic.",
-        "priority_en": "High – Boosts Isaac’s overall damage, enhancing his Drone Swarm and High-Voltage Module skills. However, it is slightly behind Health since survivability directly powers his unique charge mechanic."
-      },
-      {
-        "desc": "Stats gain: +62,200",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/health.webp",
-        "name": "2nd Glyph - Health:",
-        "slot": "Книга",
-        "desc_en": "Stats gain: +62,200",
-        "name_ru": "2nd Glyph - Health: (Книга)",
-        "priority": "Очень Высокий – Здоровье is the most important glyph because Isaac’s MP-300 Capacitor scales with his maximum Здоровье. More HP means more absorbed magic урон and faster charge gain, making this his strongest defense against mages.",
-        "priority_en": "Very High – Health is the most important glyph because Isaac’s MP-300 Capacitor scales with his maximum health. More HP means more absorbed magic damage and faster charge gain, making this his strongest defense against mages."
-      },
-      {
-        "desc": "Stats gain: +6,500",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/armor.webp",
-        "name": "3rd Glyph - Armor:",
-        "slot": "Кольцо",
-        "desc_en": "Stats gain: +6,500",
-        "name_ru": "3rd Glyph - Armor: (Кольцо)",
-        "priority": "Средний – Броня helps Isaac last longer against physical attackers, but it’s less crucial since his main counters are Маг-heavy lineups. Still useful when facing physical урон teams.",
-        "priority_en": "Medium – Armor helps Isaac last longer against physical attackers, but it’s less crucial since his main counters are mage-heavy lineups. Still useful when facing physical damage teams."
+        "name_ru": "Кольцо Ловкости",
+        "priority": "3-е место — базовое усиление характеристик."
       }
     ],
     "patronage": [],
-    "war_flags": [
+    "war_flags": [],
+    "best_teams": [
       {
-        "desc": "This flag reduces enemy skill levels by 2 every 18 seconds for 8 seconds. Since Isaac’s main role is to shut down enemy mages, weakening their skill power further increases his Контролёр and survivability against magic teams.",
-        "name": "War Flag of Frost",
-        "benefit": "Helps Isaac’s silence and absorption become more impactful by weakening Маг effectiveness, giving his team more time to dominate in physical battles."
+        "hero": "Orion",
+        "reason": "Орион наносит частый магический урон, моментально заряжая <a href=\"#hero/isaac?skill=2\" style=\"color:#38bdf8; text-decoration:underline;\">Конденсатор MP-300</a> Исаака."
       },
       {
-        "desc": "This flag reduces enemy healing by 10%. Since Isaac thrives in long physical battles where sustaining урон is critical, lowering enemy heals allows his team to finish targets more efficiently.",
-        "name": "War Flag of Decline",
-        "benefit": "Prevents enemy supports from undoing his team’s physical урон, making Isaac’s anti-Маг disruption more lethal."
+        "hero": "Dante",
+        "reason": "Данте получает огромную прибавку к урону от <a href=\"#hero/isaac?skill=3\" style=\"color:#38bdf8; text-decoration:underline;\">Стаи Дронов</a> Исаака."
+      },
+      {
+        "hero": "Sebastian",
+        "reason": "Создает мощный критический потенциал для физической команды и защищает Исаака от вражеского контроля."
+      },
+      {
+        "hero": "Aurora",
+        "reason": "Принимает магический урон на передней линии, давая Исааку время для накопления Зарядов."
       }
     ],
-    "best_teams": []
+    "conclusion": "Исаак — один из самых сильнейших героев для нейтрализации магических составов. Его способности подавляют врагов массовым молчанием, поглощением урона и ускоренной зарядкой. Он незаменим в физических сборках и является опорным героем в борьбе с боссом Ошем в Асгарде."
   },
   "ishmael": {
     "id": "ishmael",
@@ -3462,6 +3159,113 @@ export const HERO_GUIDES_DB = {
     "war_flags": [],
     "best_teams": []
   },
+  "adam": {
+    "cons": [
+      "Зависит от накопления меток охотника для достижения максимального урона",
+      "Жестко контрится механикой блокировки умений у Флаффи",
+      "Ограниченные возможности нанесения урона по области (AoE)",
+      "Низкий вклад в контроль вражеской команды"
+    ],
+    "pros": [
+      "Высокий взрывной урон по одиночной цели",
+      "Метка охотника увеличивает физическую атаку и пробивание брони",
+      "Сильная синергия с Лирией, Электрой и Фафниром",
+      "Встроенная выживаемость за счет уклонения от Реактивного экрана",
+      "Отлично показывает себя против прочных танков передней линии"
+    ],
+    "skins": [
+      {
+        "name": "Базовый облик",
+        "bonus": "Ловкость +1,365",
+        "priority": "Очень Высокий"
+      },
+      {
+        "name": "Церемониальный облик",
+        "bonus": "Здоровье +106,645",
+        "priority": "Высокий"
+      }
+    ],
+    "glyphs": [
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/physical-attack.webp",
+        "name": "Физическая атака"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/armor-penetration.webp",
+        "name": "Пробивание брони"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/agility.webp",
+        "name": "Ловкость"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/dodge.webp",
+        "name": "Уклонение"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/armor.webp",
+        "name": "Броня"
+      }
+    ],
+    "counters": [
+      {
+        "hero": "Fluffy",
+        "reason": "Главный контр-пик Адама — Флаффи. Его <a href=\"#hero/fluffy?skill=4\" style=\"color:#38bdf8; text-decoration:underline;\">четвертое умение</a> отменяет первое умение врага при активации, нанося урон и срабатывая раз в 20 секунд. Это предотвращает наложение Метки охотника и сбивает ротацию сброса перезарядки Адама."
+      }
+    ],
+    "overview": "Адам — высокомобильный герой роли Стрелок в Hero Wars: Dominion Era, обладающий отличным точечным взрывным уроном по одной цели. В бою он использует уникальную механику Метки охотника, накапливая бонусы и быстро уничтожая приоритетные цели. Его стиль игры строится на быстрой ротации умений и синергии с героями, усиливающими физическую атаку команды.",
+    "artifacts": [
+      {
+        "desc": "Физическая атака +33,459",
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/weapon-adam-starfang-adaptive-pistol.webp",
+        "name": "Адаптивный пистолет «Звездный Клык»",
+        "slot": "Оружие",
+        "name_ru": "Адаптивный пистолет «Звездный Клык»",
+        "priority": "Очень Высокий"
+      },
+      {
+        "desc": "Ловкость +6,249",
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/ring-of-agility.webp",
+        "name": "Кольцо Ловкости",
+        "slot": "Кольцо",
+        "name_ru": "Кольцо Ловкости",
+        "priority": "Высокий"
+      },
+      {
+        "desc": "Здоровье +83,649, Уклонение +4,647",
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/book-of-illusions.webp",
+        "name": "Фолиант Иллюзий",
+        "slot": "Книга",
+        "name_ru": "Фолиант Иллюзий",
+        "priority": "Выше среднего"
+      }
+    ],
+    "patronage": [],
+    "war_flags": [],
+    "best_teams": [
+      {
+        "hero": "Electra",
+        "reason": "Электра своим <a href=\"#hero/electra?skill=2\" style=\"color:#38bdf8; text-decoration:underline;\">вторым умением</a> наносит урон и превращает 399% от него в исцеление команды. Это дает Адаму время накопить Метки охотника и неоднократно сбросить перезарядку ультимейта."
+      },
+      {
+        "hero": "Fafnir",
+        "reason": "Фафнир накладывает щит на Адама и значительно увеличивает его физическую атаку, благодаря чему каждый выстрел и рикошет наносят огромный дополнительный урон."
+      },
+      {
+        "hero": "Iris",
+        "reason": "Ирис своим <a href=\"#hero/iris?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">первым умением</a> оголяет душу цели. При атаке отмеченной цели Адамом весь урон конвертируется в чистый, минуя броню и сопротивления."
+      },
+      {
+        "hero": "Lyria",
+        "reason": "Лирия <a href=\"#hero/lyria?skill=2\" style=\"color:#38bdf8; text-decoration:underline;\">вторым умением</a> связывается с Адамом, предоставляя вампиризм, а своей <a href=\"#hero/lyria?skill=4\" style=\"color:#38bdf8; text-decoration:underline;\">четвертой пассивной способностью</a> снижает уклонение всех врагов."
+      },
+      {
+        "hero": "Polaris",
+        "reason": "Полярис ослабляет реактивные способности врагов и продлевает действия эффектов контроля союзников, давая Адаму безопасное окно для атаки."
+      }
+    ],
+    "conclusion": "Адам — точный и сокрушительный стрелок, способный быстро ликвидировать ключевые цели врага. Механика Метки охотника награждает игрока за правильный подбор команды, обеспечивающей Адаму время и ресурсы для раскрытия потенциала. При правильной сборке с упором на первое и второе умения, а также поддержке таких героев, как Фафнир, Лирия и Электра, Адам становится смертоносной силой в Hero Wars: Dominion Era."
+  },
   "lyria": {
     "id": "lyria",
     "cons": [
@@ -3625,113 +3429,6 @@ export const HERO_GUIDES_DB = {
       }
     ],
     "best_teams": []
-  },
-  "adam": {
-    "cons": [
-      "Зависит от накопления меток охотника для достижения максимального урона",
-      "Жестко контрится механикой блокировки умений у Флаффи",
-      "Ограниченные возможности нанесения урона по области (AoE)",
-      "Низкий вклад в контроль вражеской команды"
-    ],
-    "pros": [
-      "Высокий взрывной урон по одиночной цели",
-      "Метка охотника увеличивает физическую атаку и пробивание брони",
-      "Сильная синергия с Лирией, Электрой и Фафниром",
-      "Встроенная выживаемость за счет уклонения от Реактивного экрана",
-      "Отлично показывает себя против прочных танков передней линии"
-    ],
-    "skins": [
-      {
-        "name": "Базовый облик",
-        "bonus": "Ловкость +1,365",
-        "priority": "Очень Высокий"
-      },
-      {
-        "name": "Церемониальный облик",
-        "bonus": "Здоровье +106,645",
-        "priority": "Высокий"
-      }
-    ],
-    "glyphs": [
-      {
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/physical-attack.webp",
-        "name": "Физическая атака"
-      },
-      {
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/armor-penetration.webp",
-        "name": "Пробивание брони"
-      },
-      {
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/agility.webp",
-        "name": "Ловкость"
-      },
-      {
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/dodge.webp",
-        "name": "Уклонение"
-      },
-      {
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/armor.webp",
-        "name": "Броня"
-      }
-    ],
-    "counters": [
-      {
-        "hero": "Fluffy",
-        "reason": "Главный контр-пик Адама — Флаффи. Его <a href=\"#hero/fluffy?skill=4\" style=\"color:#38bdf8; text-decoration:underline;\">четвертое умение</a> отменяет первое умение врага при активации, нанося урон и срабатывая раз в 20 секунд. Это предотвращает наложение Метки охотника и сбивает ротацию сброса перезарядки Адама."
-      }
-    ],
-    "overview": "Адам — высокомобильный герой роли Стрелок в Hero Wars: Dominion Era, обладающий отличным точечным взрывным уроном по одной цели. В бою он использует уникальную механику Метки охотника, накапливая бонусы и быстро уничтожая приоритетные цели. Его стиль игры строится на быстрой ротации умений и синергии с героями, усиливающими физическую атаку команды.",
-    "artifacts": [
-      {
-        "desc": "Физическая атака +33,459",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/weapon-adam-starfang-adaptive-pistol.webp",
-        "name": "Адаптивный пистолет «Звездный Клык»",
-        "slot": "Оружие",
-        "name_ru": "Адаптивный пистолет «Звездный Клык»",
-        "priority": "Очень Высокий"
-      },
-      {
-        "desc": "Ловкость +6,249",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/ring-of-agility.webp",
-        "name": "Кольцо Ловкости",
-        "slot": "Кольцо",
-        "name_ru": "Кольцо Ловкости",
-        "priority": "Высокий"
-      },
-      {
-        "desc": "Здоровье +83,649, Уклонение +4,647",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/book-of-illusions.webp",
-        "name": "Фолиант Иллюзий",
-        "slot": "Книга",
-        "name_ru": "Фолиант Иллюзий",
-        "priority": "Выше среднего"
-      }
-    ],
-    "patronage": [],
-    "war_flags": [],
-    "best_teams": [
-      {
-        "hero": "Electra",
-        "reason": "Электра своим <a href=\"#hero/electra?skill=2\" style=\"color:#38bdf8; text-decoration:underline;\">вторым умением</a> наносит урон и превращает 399% от него в исцеление команды. Это дает Адаму время накопить Метки охотника и неоднократно сбросить перезарядку ультимейта."
-      },
-      {
-        "hero": "Fafnir",
-        "reason": "Фафнир накладывает щит на Адама и значительно увеличивает его физическую атаку, благодаря чему каждый выстрел и рикошет наносят огромный дополнительный урон."
-      },
-      {
-        "hero": "Iris",
-        "reason": "Ирис своим <a href=\"#hero/iris?skill=1\" style=\"color:#38bdf8; text-decoration:underline;\">первым умением</a> оголяет душу цели. При атаке отмеченной цели Адамом весь урон конвертируется в чистый, минуя броню и сопротивления."
-      },
-      {
-        "hero": "Lyria",
-        "reason": "Лирия <a href=\"#hero/lyria?skill=2\" style=\"color:#38bdf8; text-decoration:underline;\">вторым умением</a> связывается с Адамом, предоставляя вампиризм, а своей <a href=\"#hero/lyria?skill=4\" style=\"color:#38bdf8; text-decoration:underline;\">четвертой пассивной способностью</a> снижает уклонение всех врагов."
-      },
-      {
-        "hero": "Polaris",
-        "reason": "Полярис ослабляет реактивные способности врагов и продлевает действия эффектов контроля союзников, давая Адаму безопасное окно для атаки."
-      }
-    ],
-    "conclusion": "Адам — точный и сокрушительный стрелок, способный быстро ликвидировать ключевые цели врага. Механика Метки охотника награждает игрока за правильный подбор команды, обеспечивающей Адаму время и ресурсы для раскрытия потенциала. При правильной сборке с упором на первое и второе умения, а также поддержке таких героев, как Фафнир, Лирия и Электра, Адам становится смертоносной силой в Hero Wars: Dominion Era."
   },
   "somna": {
     "id": "somna",
@@ -5531,145 +5228,130 @@ export const HERO_GUIDES_DB = {
     "best_teams": []
   },
   "augustus": {
-    "id": "augustus",
     "cons": [
-      "Excellent Pure урон scaling, especially when combined with Albus or magic-penetration teams.",
-      "Strong area урон thanks to Lightning Rod and урон transfer effects.",
-      "Synergizes extremely well with Orion due to rapid ultimate activation and Пробивание Защиты от Магии artifact boosts.",
-      "Высокий impact in long fights where his урон amplification ramps up significantly.",
-      "Useful against magic-tanky teams because part of his урон bypasses Защита от Магии."
+      "Сильно зависит от предметов на Магическую Атаку и прокачки артефактов для раскрытия полного потенциала",
+      "Низкая выживаемость без поддержки; уязвим к быстрому взрывному урону",
+      "Эффект передачи урона резко снижается с увеличением расстояния между врагами",
+      "Испытывает трудности против команд с высоким уклонением без поддержки точности",
+      "Требует грамотной подборки состава команды и слабо показывает себя в случайных пачках"
     ],
-    "name": "Август",
     "pros": [
-      "Excellent Pure урон scaling, especially when combined with Albus or magic-penetration teams.",
-      "Strong area урон thanks to Lightning Rod and урон transfer effects.",
-      "Synergizes extremely well with Orion due to rapid ultimate activation and Пробивание Защиты от Магии artifact boosts.",
-      "Высокий impact in long fights where his урон amplification ramps up significantly.",
-      "Useful against magic-tanky teams because part of his урон bypasses Защита от Магии."
+      "Отличная масштабируемость чистого урона, особенно в комбинациях с питомцем Альбусом и командами на магическое пробивание",
+      "Сильный урон по области благодаря распространению урона навыка «Заземление»",
+      "Превосходная синергия с Орионом из-за частой активации ультимативного умения и артефакта на пробивание защиты от магии",
+      "Высокая эффективность в долгих боях благодаря нарастающему усилению урона",
+      "Часть его урона игнорирует Защиту от Магии, что делает его крайне опасным для магических танков"
     ],
     "skins": [
       {
-        "desc": "Total of Интеллект Skin Stone for max level: 30,825",
-        "name": "Default Skin",
-        "bonus": "Stats gain: Интеллект +1365",
-        "priority": "Высокий – Provides balanced offensive and defensive benefits; boosts Магическая Атака, Защита от Магии, and Физическая Атака, making it a strong secondary upgrade."
+        "name": "Базовый облик",
+        "bonus": "Интеллект +1,365 (+4,095 Магической Атаки, +1,365 Защиты от Магии, +1,365 Физической Атаки)",
+        "priority": "Высокий — сбалансированные характеристики для урона и защиты"
       },
       {
-        "desc": "Total of Интеллект Skin Stone for max level: 55,410",
-        "name": "Winter Skin",
-        "bonus": "Stats gain: Магическая Атака +10,665",
-        "priority": "Очень Высокий – Best skin for Augustus. Directly increases all his урон: Lightning Rod cap, passive hit урон, Grounded splash, and pure урон conversion."
+        "name": "Зимний облик",
+        "bonus": "Магическая Атака +10,665",
+        "priority": "Очень Высокий — лучший облик, напрямую увеличивает весь урон и порог умения «Громоотвод»"
       },
       {
-        "desc": "Total of Интеллект Skin Stone for max level: 55,410",
-        "name": "Demonic Skin",
-        "bonus": "Stats gain: Здоровье +106,645",
-        "priority": "Средний-Высокий – Improves survivability but does not enhance skill урон. Useful only if Augustus dies early in your team setups."
+        "name": "Демонический облик",
+        "bonus": "Здоровье +106,645",
+        "priority": "Средне-Высокий — существенно увеличивает выживаемость"
       },
       {
-        "desc": "Total of Интеллект Skin Stone for max level: 55,410",
-        "name": "Romanic Skin",
-        "bonus": "Stats gain: Броня +10,650",
-        "priority": "Средний-Низкий – This skin increases Augustus's survivability against physical teams and helps him withstand early burst урон. Upgrade if you need extra protection for Augustus in your lineup."
+        "name": "Романтический облик",
+        "bonus": "Броня +10,650",
+        "priority": "Средне-Низкий — помогает выживать против физических пачек"
       }
     ],
     "glyphs": [
       {
-        "desc": "Stats gain: Пробивание Защиты от Магии +6500",
-        "name": "4th Glyph - Пробивание Защиты от Магии:",
-        "name_en": "4th Glyph - Magic Penetration:",
-        "priority": "Высокий – Greatly improves Augustus’s ability to урон Высокий–Защита от Магии targets, enabling stronger Lightning Rod bursts and maximizing Grounded’s splash output. Essential for bypassing defensive magic tanks."
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-attack.webp",
+        "name": "Магическая Атака"
       },
       {
-        "desc": "Stats gain: Интеллект +1135",
-        "name": "5th Glyph - Интеллект:",
-        "name_en": "5th Glyph - Intelligence:",
-        "priority": "Средний-Высокий – Adds Магическая Атака, Защита от Магии, and slight Физическая Атака. Strong hybrid value and helps both offense and durability, but still weaker than pure Магическая Атака or Пробивание Защиты от Магии for burst scaling."
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/health.webp",
+        "name": "Здоровье"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/armor.webp",
+        "name": "Броня"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-penetration.webp",
+        "name": "Пробивание Защиты от Магии"
+      },
+      {
+        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/intelligence.webp",
+        "name": "Интеллект"
       }
     ],
-    "counters": [],
-    "overview": "Augustus is one of those heroes who immediately captures players’ curiosity a calm, sky-touched ambassador who speaks softly but strikes with storms. In this guide, you’ll learn how to unlock his true destructive potential, from his thunder bursts to his synergy with Orion , the mighty pet Khorus , and even the newest frontline protector, Electra . If you love mages who mix elegance, raw power, and brilliant team synergy, Augustus will feel right at home in your roster. Augustus - Best Team #1 - Meta Team 2026 #1 Cain Khorus Axel Oliver Khorus Dante Nebula Orion Augustus Jet Augustus - Best Team #3 - Meta Team 2026 #1 Merlin Khorus Axel Oliver Khorus Aidan Augustus Orion Cascade Electra",
+    "counters": [
+      {
+        "hero": "Cornelius",
+        "reason": "Контрит Августа своим ультимативным умением, нанося огромный урон по цели с наивысшим Интеллектом, а также срезает Магическую Атаку и закрывает команду магическим щитом."
+      },
+      {
+        "hero": "Folio",
+        "reason": "Ворует Интеллект у Августа на 15 секунд, существенно снижая его урон, выживаемость и масштабирование всех навыков."
+      },
+      {
+        "hero": "Isaac",
+        "reason": "Главный анти-маг игры. Поглощает магический урон, лишая команду Августа притока энергии, и накладывает молчание на всю вражескую команду при полной зарядке."
+      },
+      {
+        "hero": "Rufus",
+        "reason": "Не может быть убит Магическим или Чистым уроном и закрывает команду щитом от магического урона, нейтрализуя весь атакующий потенциал Августа."
+      }
+    ],
+    "overview": "Август — мощный маг задней линии, чья магия молний наносит колоссальный взрывной урон и идеально сочетается с союзниками, дающими пробивание защиты от магии и ускоряющими набор энергии. Несмотря на спойкойный вид, он становится сокрушительной силой в сочетании с героями, усиливающими магическую атаку и ускоряющими использование умений. Его способности отлично масштабируются, делая Августа выбором высшего уровня для магических команд.",
     "artifacts": [
       {
-        "desc": "Stats gain: Магическая Атака +6500",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/magic-attack.webp",
-        "name": "1st Glyph - Magic Attack:",
-        "slot": "Оружие",
-        "desc_en": "Stats gain: Magic Attack +6500",
-        "name_ru": "1st Glyph - Magic Attack: (Оружие)",
-        "priority": "Очень Высокий – Augustus scales heavily with Магическая Атака. This glyph boosts Lightning Rod’s cap, enhances basic attack урон, increases Grounded’s transferred урон, and amplifies pure-урон conversion from Superconductivity. Best glyph to max first.",
-        "priority_en": "Very High – Augustus scales heavily with Magic Attack. This glyph boosts Lightning Rod’s cap, enhances basic attack damage, increases Grounded’s transferred damage, and amplifies pure-damage conversion from Superconductivity. Best glyph to max first."
-      },
-      {
-        "desc": "Stats gain: Здоровье +62,200",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/health.webp",
-        "name": "2nd Glyph - Health:",
-        "slot": "Книга",
-        "desc_en": "Stats gain: Health +62,200",
-        "name_ru": "2nd Glyph - Health: (Книга)",
-        "priority": "Средний – Helps Augustus survive longer, which indirectly increases total урон output in extended fights. Useful, but far less impactful than урон-related glyphs.",
-        "priority_en": "Medium – Helps Augustus survive longer, which indirectly increases total damage output in extended fights. Useful, but far less impactful than damage-related glyphs."
-      },
-      {
-        "desc": "Stats gain: Броня +6500",
-        "icon": "https://alexandregames.com/hero-wars-dominion-era/images/glyphs/armor.webp",
-        "name": "3rd Glyph - Armor:",
-        "slot": "Кольцо",
-        "desc_en": "Stats gain: Armor +6500",
-        "name_ru": "3rd Glyph - Armor: (Кольцо)",
-        "priority": "Низкий – Physical protection is helpful but not essential for Augustus. His main role is magical burst урон, making offensive glyphs far more valuable.",
-        "priority_en": "Low – Physical protection is helpful but not essential for Augustus. His main role is magical burst damage, making offensive glyphs far more valuable."
-      },
-      {
-        "desc": "Магическая Атака: +50,190",
+        "desc": "Увеличивает Магическую Атаку всей команды на +50,190 на 9 секунд при применении ультимативного умения.",
         "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/weapon-augustus-thunder-rods.webp",
-        "name": "Thunder Rods Artifact:",
-        "slot": "?",
-        "desc_en": "Magic Attack: +50,190",
-        "name_ru": "Thunder Rods Artifact: (?)",
-        "priority": "Очень Высокий – This is Augustus’s most impactful artifact. It activates together with his ultimate (Lightning Rod), boosting Магическая Атака for the whole team for 9 seconds. This directly amplifies all four of Augustus’s skills, especially his burst урон. Max this one first.",
-        "priority_en": "Very High – This is Augustus’s most impactful artifact. It activates together with his ultimate (Lightning Rod), boosting Magic Attack for the whole team for 9 seconds. This directly amplifies all four of Augustus’s skills, especially his burst damage. Max this one first."
+        "name": "Громовые Жезлы",
+        "slot": "Оружие",
+        "name_ru": "Громовые Жезлы",
+        "priority": "Очень Высокий — качать в первую очередь для усиления всей команды"
       },
       {
-        "desc": "Здоровье: +83,649 Магическая Атака: +16,731",
+        "desc": "Дает +83,649 Здоровья и +16,731 Магической Атаки.",
         "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/tome-of-arcane-knowledge.webp",
-        "name": "Tome of Arcane Knowledge:",
-        "slot": "?",
-        "desc_en": "Health: +83,649 Magic Attack: +16,731",
-        "name_ru": "Tome of Arcane Knowledge: (?)",
-        "priority": "Средний – Provides a mix of survivability and Магическая Атака. Helpful, but the buff does not activate through skills, making it less explosive than the Оружие artifact. Good mid-level priority.",
-        "priority_en": "Medium – Provides a mix of survivability and Magic Attack. Helpful, but the buff does not activate through skills, making it less explosive than the weapon artifact. Good mid-level priority."
+        "name": "Фолиант Тайных Знаний",
+        "slot": "Книга",
+        "name_ru": "Фолиант Тайных Знаний",
+        "priority": "Средний — сбалансированное повышение выживаемости и урона"
       },
       {
-        "desc": "Stats gain: Интеллект +6,249",
+        "desc": "Дает +6,249 Интеллекта (+18,747 Магической Атаки, +6,249 Защиты от Магии, +6,249 Физической Атаки).",
         "icon": "https://alexandregames.com/hero-wars-dominion-era/images/artifacts/ring-of-intelligence.webp",
-        "name": "Ring of Intelligence:",
+        "name": "Кольцо Интеллекта",
         "slot": "Кольцо",
-        "desc_en": "Stats gain: Intelligence +6,249",
-        "name_ru": "Ring of Intelligence: (Кольцо)",
-        "priority": "Средний-Высокий – Excellent secondary artifact due to its triple-scaling: Магическая Атака, Защита от Магии, and Физическая Атака. Strong for both offense and durability, making it more valuable than the Книга but still below the Оружие.",
-        "priority_en": "Medium-High – Excellent secondary artifact due to its triple-scaling: Magic Attack, Magic Defense, and Physical Attack. Strong for both offense and durability, making it more valuable than the book but still below the weapon."
+        "name_ru": "Кольцо Интеллекта",
+        "priority": "Средне-Высокий — важен для увеличения основных характеристик"
       }
     ],
     "patronage": [],
-    "war_flags": [
+    "war_flags": [],
+    "best_teams": [
       {
-        "desc": "The War Flag of Readiness is the strongest option for Augustus because he always stands in the back line, guaranteeing he receives its bonus Energy at the start of the fight and every 20 seconds. This accelerates his first skill use and increases his overall impact throughout the battle.",
-        "name": "War Flag of Readiness",
-        "benefit": "Earlier Energy allows Augustus to activate his supportive and урон-enhancing skills much sooner, improving team burst potential and perfectly synergizing with Маг-heavy compositions especially teams using Orion for continuous Пробивание Защиты от Магии activation."
+        "hero": "Orion",
+        "reason": "Очень часто активирует ультимативное умение, постоянно включающее артефакт на Пробивание Защиты от Магии, что позволяет Августу постоянно конвертировать урон в чистый."
       },
       {
-        "desc": "The War Flag of Pet Сила boosts Pet Skill Power by 10%, directly increasing the efficiency of Augustus’s patron pet in battle. Because Augustus frequently supports magic-heavy teams, the enhanced pet skill boosts group урон or protection depending on the chosen patron.",
-        "name": "War Flag of Pet Strength",
-        "benefit": "Stronger pet skills improve both offensive and defensive plays, making this flag especially good when running offensive pets like Mara or defensive pets like Axel."
+        "hero": "Aidan",
+        "reason": "Усиливает чистый урон метками огня и дает прочные щиты, повышающие выживаемость команды."
       },
       {
-        "desc": "War Flag of Frost automatically reduces enemy skill levels every 18 seconds. This provides valuable disruption against enemy supports, healers, and Контролёр heroes giving Augustus’s team an easier time surviving and bursting down opponents.",
-        "name": "War Flag of Frost",
-        "benefit": "Lower enemy skill levels directly reduce enemy healing, Контролёр duration, and урон, making this flag powerful for Контролёр-based or Маг-heavy Augustus teams that aim to outlast and overwhelm the enemy."
+        "hero": "Electra",
+        "reason": "Обеспечивает надежную защиту передней линии, дает бонус Магической Атаки от своего оружия-артефакта и поглощает урон."
+      },
+      {
+        "hero": "Nebula",
+        "reason": "Значительно усиливает Магическую Атаку Августа для нанесения колоссального взрывного урона."
       }
     ],
-    "best_teams": []
+    "conclusion": "Август выделяется как мощный герой задней линии, способный усиливать магический урон, укреплять щиты и обеспечивать разрушительные комбинации взрывного урона при правильном подборе союзников. Его способность повышать синергию команды делает его ценным дополнением во многих современных стратегиях Dominion Era. При правильном выборе Флага Войны и поддержке сильных магических союзников, таких как Орион, Эйдан и Небула, Август становится ключевой фигурой в высокоуровневых боях на Арене, Войнах Гильдий и в Приключениях."
   },
   "darkstar": {
     "id": "darkstar",
@@ -6095,16 +5777,5 @@ export const HERO_GUIDES_DB = {
 };
 
 export function getHeroGuide(heroId) {
-  return HERO_GUIDES_DB[heroId] || {
-    overview: 'Полный разбор механик и роли персонажа.',
-    pros: ['Эффективная роль в команде'],
-    cons: ['Требует правильной прокачки'],
-    artifacts: [],
-    skins: [],
-    glyphs: [],
-    patronage: [],
-    war_flags: [],
-    counters: [],
-    best_teams: [],
-  };
+  return HERO_GUIDES_DB[heroId] || { overview: '', pros: [], cons: [], artifacts: [], skins: [], glyphs: [], counters: [], best_teams: [] };
 }
