@@ -17,8 +17,17 @@ export function navigateTo(targetView, param = null) {
   if (section) section.classList.add('on');
 
   if (targetView === 'hero-detail' && param) {
+    // param might be "electra?skill=2"
+    const [heroId, query] = param.split('?');
     location.hash = `hero/${param}`;
-    renderHeroDetail(param);
+    renderHeroDetail(heroId);
+    if (query && query.includes('skill=')) {
+      const skillNum = query.split('=')[1];
+      setTimeout(() => {
+        const el = document.getElementById(`skill-${skillNum}`);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 300); // Wait for render and image load
+    }
   } else if (targetView === 'pet-detail' && param) {
     location.hash = `pet/${param}`;
     renderPetDetail(param);
@@ -41,8 +50,8 @@ export function handleHashChange() {
     return;
   }
   if (hash.startsWith('hero/')) {
-    const heroId = hash.split('/')[1];
-    navigateTo('hero-detail', heroId);
+    const param = hash.substring(5); // e.g. "electra" or "electra?skill=2"
+    navigateTo('hero-detail', param);
     return;
   }
   if (hash.startsWith('pet/')) {

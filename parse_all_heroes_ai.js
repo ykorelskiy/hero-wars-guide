@@ -106,6 +106,8 @@ const SYSTEM_INSTRUCTION = `
 10. JSON должен строго соответствовать требуемой структуре.
 11. Обязательно извлеки контр-пики (Counters) и синергию (Best Teams / Synergy Heroes), если они есть, и переведи их причины на русский язык.
 12. В поле "explanation" для каждого скилла заноси стратегическое объяснение (Skill Explanation), если оно есть в тексте. Обязательно переведи его.
+13. ВНИМАНИЕ: Если в любом тексте (особенно в синергии или контр-пиках) упоминается умение другого героя, оформляй это упоминание как HTML-ссылку: \`<a href="#hero/имя_героя_на_английском?skill=номер_скилла" style="color:#38bdf8; text-decoration:underline;">текст</a>\`. Например: \`<a href="#hero/electra?skill=2" style="color:#38bdf8; text-decoration:underline;">вторым умением Электры</a>\`.
+14. Извлеки секцию Conclusion (Заключение) в поле conclusion, переведя ее на русский язык.
 `;
 
 const SCHEMA = {
@@ -186,10 +188,11 @@ const SCHEMA = {
                 type: "OBJECT",
                 properties: {
                     name: { type: "STRING", description: "Название символа (например Ловкость)" },
-                    priority: { type: "STRING" }
+                    icon: { type: "STRING" }
                 }
             }
-        }
+        },
+        conclusion: { type: "STRING", description: "Финальное заключение (Conclusion), качественно переведенное на русский" }
     },
     required: ["id", "name", "overview", "pros", "cons", "main_stat", "counters", "best_teams", "skills", "artifacts", "skins", "glyphs"]
 };
@@ -287,6 +290,7 @@ async function processHero(hero) {
             glyphs: data.glyphs,
             counters: data.counters || [],
             best_teams: data.best_teams || [],
+            conclusion: data.conclusion || "",
             patronage: [],
             war_flags: []
         };

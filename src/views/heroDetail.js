@@ -1,4 +1,4 @@
-import { heroById } from '../data/dataService.js';
+import { heroById, getHeroes } from '../data/dataService.js';
 import { getPatronPetsForHero } from '../data/petsData.js';
 import { navigateTo } from '../components/navigation.js';
 import { getHeroTier, TIER_RANKS } from '../data/tierData.js';
@@ -49,8 +49,17 @@ export function renderHeroDetail(heroId) {
 
   const officialSkills = getHeroSkills(hero.id);
 
+  const allHeroes = getHeroes();
+  const getAvatarAndSlug = (nameStr) => {
+    if (!nameStr) return null;
+    const lower = nameStr.toLowerCase();
+    const h = allHeroes.find(x => lower.includes(x.name.toLowerCase()) || lower.includes((x.name_en || x.slug || '').toLowerCase()));
+    if (h) return { url: h.avatar_url || `/assets/heroes/${h.id}.png`, slug: h.id };
+    return null;
+  };
+
   const skillsHtml = officialSkills.map((s, index) => `
-        <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255, 255, 255, 0.12); border-left: 4px solid ${statColor}; border-radius: 12px; padding: 18px; margin-bottom: 16px;">
+        <div id="skill-${index + 1}" style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255, 255, 255, 0.12); border-left: 4px solid ${statColor}; border-radius: 12px; padding: 18px; margin-bottom: 16px; scroll-margin-top: 80px;">
           <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:8px; flex-wrap:wrap; gap:8px;">
             <div style="display:flex; align-items:center; gap:12px;">
               <img src="/images/skills/${hero.id}_skill_${index + 1}.png" onerror="this.style.display='none'" style="width:52px;height:52px;border-radius:10px;border:2px solid ${statColor}44; object-fit:cover; background:rgba(0,0,0,0.3);" alt="Skill ${index + 1}" />
@@ -196,11 +205,18 @@ export function renderHeroDetail(heroId) {
       <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(16,185,129,0.2); padding:16px; border-radius:12px; margin-bottom:14px;">
         <b style="color:#10b981; font-size:0.95rem; display:block; margin-bottom:10px;">🤝 Лучшая Синергия и Команды:</b>
         <div style="display:flex; flex-direction:column; gap:8px;">
-          ${heroGuide.best_teams.map(t => `
-          <div style="background:rgba(16,185,129,0.06); padding:10px 14px; border-radius:8px; border-left:3px solid rgba(16,185,129,0.4);">
-            <b style="color:#6ee7b7; font-size:0.88rem;">${t.hero || t.name || t}</b>
-            ${t.reason || t.desc ? `<div style="color:#94a3b8; font-size:0.83rem; margin-top:3px;">${t.reason || t.desc}</div>` : ''}
-          </div>`).join('')}
+          ${heroGuide.best_teams.map(t => {
+            const nameStr = t.hero || t.name || t;
+            const heroMatch = getAvatarAndSlug(nameStr);
+            return `
+            <div style="background:rgba(16,185,129,0.06); padding:10px 14px; border-radius:8px; border-left:3px solid rgba(16,185,129,0.4); display:flex; gap:12px; align-items:center;">
+              ${heroMatch ? `<a href="#hero/${heroMatch.slug}" style="flex-shrink:0;"><img src="${heroMatch.url}" style="width:44px; height:44px; border-radius:8px; border:1px solid rgba(16,185,129,0.5);" onerror="this.style.display='none'"/></a>` : ''}
+              <div>
+                <b style="color:#6ee7b7; font-size:0.92rem;">${heroMatch ? `<a href="#hero/${heroMatch.slug}" style="color:#6ee7b7; text-decoration:underline;">${nameStr}</a>` : nameStr}</b>
+                ${t.reason || t.desc ? `<div style="color:#94a3b8; font-size:0.86rem; margin-top:4px;">${t.reason || t.desc}</div>` : ''}
+              </div>
+            </div>`;
+          }).join('')}
         </div>
       </div>` : ''}
 
@@ -209,11 +225,18 @@ export function renderHeroDetail(heroId) {
       <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(239,68,68,0.2); padding:16px; border-radius:12px; margin-bottom:14px;">
         <b style="color:#ef4444; font-size:0.95rem; display:block; margin-bottom:10px;">⚔️ Контр-пики против ${hero.name}:</b>
         <div style="display:flex; flex-direction:column; gap:8px;">
-          ${heroGuide.counters.map(c => `
-          <div style="background:rgba(239,68,68,0.06); padding:10px 14px; border-radius:8px; border-left:3px solid rgba(239,68,68,0.4);">
-            <b style="color:#fca5a5; font-size:0.88rem;">${c.hero || c}</b>
-            ${c.reason ? `<div style="color:#94a3b8; font-size:0.83rem; margin-top:3px;">${c.reason}</div>` : ''}
-          </div>`).join('')}
+          ${heroGuide.counters.map(c => {
+            const nameStr = c.hero || c;
+            const heroMatch = getAvatarAndSlug(nameStr);
+            return `
+            <div style="background:rgba(239,68,68,0.06); padding:10px 14px; border-radius:8px; border-left:3px solid rgba(239,68,68,0.4); display:flex; gap:12px; align-items:center;">
+              ${heroMatch ? `<a href="#hero/${heroMatch.slug}" style="flex-shrink:0;"><img src="${heroMatch.url}" style="width:44px; height:44px; border-radius:8px; border:1px solid rgba(239,68,68,0.5);" onerror="this.style.display='none'"/></a>` : ''}
+              <div>
+                <b style="color:#fca5a5; font-size:0.92rem;">${heroMatch ? `<a href="#hero/${heroMatch.slug}" style="color:#fca5a5; text-decoration:underline;">${nameStr}</a>` : nameStr}</b>
+                ${c.reason ? `<div style="color:#94a3b8; font-size:0.86rem; margin-top:4px;">${c.reason}</div>` : ''}
+              </div>
+            </div>`;
+          }).join('')}
         </div>
       </div>` : (heroGuide.counters && typeof heroGuide.counters === 'string' ? `
       <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(239,68,68,0.2); padding:16px; border-radius:12px; margin-bottom:14px;">
@@ -287,6 +310,17 @@ export function renderHeroDetail(heroId) {
       <h3 style="color:#ffffff; font-size:1.3rem; margin-bottom:14px;">🗡️ Формула Прогрессии Артефактов (1★ → 6★ Звёзд)</h3>
       ${artifactsHtml}
     </div>
+
+    <!-- CONCLUSION -->
+    ${heroGuide.conclusion ? `
+    <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(56, 189, 248, 0.4); border-radius: 16px; padding: 24px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(56, 189, 248, 0.1);">
+      <h3 style="color:#38bdf8; font-size:1.4rem; margin-bottom:14px; display:flex; align-items:center; gap:8px;">
+        🏆 Заключительный Вывод
+      </h3>
+      <div style="color: #cbd5e1; font-size: 1.05rem; line-height: 1.7;">
+        ${heroGuide.conclusion}
+      </div>
+    </div>` : ''}
   `;
 
   // Bind Events
