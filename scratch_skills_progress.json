@@ -1,8 +1,4 @@
-/* ======================================================================
-   HERO WARS — OFFICIAL RUSSIAN SKILLS DATABASE (Dominion Era)
-   ====================================================================== */
-
-export const HERO_SKILLS_DB = {
+{
   "electra": [
     {
       "name": "1- Embrace of Pain (Ultimate)",
@@ -2519,13 +2515,4 @@ export const HERO_SKILLS_DB = {
       "per_lvl": "Прирост за каждый уровень"
     }
   ]
-};
-
-export function getHeroSkills(heroId) {
-  return HERO_SKILLS_DB[heroId] || [
-    { name: '1-й Навык', type: 'Ультимативный', desc: 'Ключевая способность.', depends_on: 'Атрибут', formula: 'Урон от уровня', per_lvl: '+За уровень' },
-    { name: '2-й Навык', type: 'Активное', desc: 'Спец-атака.', depends_on: 'Атрибут', formula: 'Урон от уровня', per_lvl: '+За уровень' },
-    { name: '3-й Навык', type: 'Активное', desc: 'Контроль/щит.', depends_on: 'Атрибут', formula: 'Эффект от уровня', per_lvl: '+За уровень' },
-    { name: '4-й Навык', type: 'Пассивное', desc: 'Аура.', depends_on: 'Атрибут', formula: 'Аура от уровня', per_lvl: '+За уровень' }
-  ];
 }
