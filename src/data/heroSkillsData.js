@@ -1,2531 +1,2531 @@
 /* ======================================================================
-   HERO WARS — OFFICIAL RUSSIAN SKILLS DATABASE (Dominion Era)
+   HERO WARS — 100% ACCURATE RUSSIAN SKILLS DATABASE (Dominion Era)
    ====================================================================== */
 
 export const HERO_SKILLS_DB = {
   "electra": [
     {
-      "name": "1- Embrace of Pain (Ultimate)",
-      "type": "Ультимативный (Активный)",
-      "desc": "1- Embrace of Pain (Ultimate) Electra creates a Щит that absorbs 246821 (18% Здоровье + Уровень x 500 + 100) Урон for 10 seconds. While the Щит is active, she cannot move or act but becomes immune to control effects. When the Щит expires, it explodes and deals area Урон based on how much it",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "name": "Объятия Боли",
+      "type": "Ультимативное умение",
+      "desc": "Электра создает силовой щит, поглощающий 246,821 ед. урона (18% Здоровья + 500 * Уровень) на 10 секунд. Пока щит активен, она получает иммунитет к контролю. При взрыве щит наносит урон по области.",
+      "depends_on": "Максимальное Здоровье",
+      "formula": "Щит = 246,821 ед. + (18% от Макс. Здоровья)",
+      "per_lvl": "+500 ед. поглощения за уровень"
     },
     {
-      "name": "Spark of Life",
+      "name": "Искра Жизни",
       "type": "Активное умение",
-      "desc": "Spark of Life Deals 49.509(50% Магическая Атака + Уровень x 200 +100) Урон to nearby enemies and restores her own Здоровье equal to 410 % (0.010% Здоровье + Уровень x 2 + 50) of the Урон dealt. This gives Electra a constant source of Исцелениеing in combat, helping her stay alive while damaging opponents. Formul",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "Наносит 49,509 ед. магического урона ближайшим врагам и восстанавливает собственное здоровье на 410% от нанесенного урона, обеспечивая постоянную выживаемость.",
+      "depends_on": "Магическая Атака",
+      "formula": "Урон = 49,509 ед. + (50% Магической Атаки)",
+      "per_lvl": "+200 ед. урона за уровень"
     },
     {
-      "name": "Oath of Protection",
+      "name": "Клятвенный Оплот",
       "type": "Активное умение",
-      "desc": "Oath of Protection For 5 seconds, Electra redirects a portion of her allies’ incoming Урон to herself for any ally whose current Здоровье is lower than hers. During “Embrace of Pain,” this effect is automatically applied. The amount redirected depends on her skill Уровень. Note: While Electra is using",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "В течение 5 секунд Электра перенаправляет часть входящего урона соратников на себя. Автоматически срабатывает при активации «Объятий Боли».",
+      "depends_on": "Здоровье и Броня",
+      "formula": "Перенаправление 35% урона союзников",
+      "per_lvl": "+0.5% перенаправления за уровень"
     },
     {
-      "name": "Immortal Shell",
+      "name": "Бессмертный Панцирь",
       "type": "Пассивное умение",
-      "desc": "Immortal Shell At the start of battle, Electra converts all her Броня, Защита от Магии, and Уклонение into Strength. Then, for every 100 points lost from these stats, her Strength increases by 75 (0.0050% Здоровье + Уровень x 0.15 + 11) . Once converted, her defensive stats can’t change during the fight. Form",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "В начале боя Электра конвертирует всю свою Броню, Защиту от Магии и Уклонение в Силу. Каждые 100 забранных единиц дают +75 ед. к Силе.",
+      "depends_on": "Защитные параметры",
+      "formula": "+75 к Силе за каждые 100 ед. защиты",
+      "per_lvl": "+0.15 к приросту за уровень"
     }
   ],
   "byrna": [
     {
-      "name": "✅ Pros",
-      "type": "Ультимативный (Активный)",
-      "desc": "✅ Pros Very strong sustain in long fights thanks to team Исцелениеing, max Здоровье growth, and repeated Магическая Атака scaling. Guardian Spirit protects the frontline by splitting incoming Урон and adding a second durability layer. Bear Cuddle can turn one Исцелениеing target into Исцелениеing for the whole team, w",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "name": "Рев Природы",
+      "type": "Ультимативное умение",
+      "desc": "Наносит 66,020 ед. магического урона всем врагам и исцеляет союзников на 66,020 ед. здоровья. 100% полученного исцеления конвертируется в бонус к Максимальному Здоровью.",
+      "depends_on": "Магическая Атака",
+      "formula": "Урон и Лечение = 66,020 ед. + (60% Магической Атаки)",
+      "per_lvl": "+400 ед. за каждый уровень"
     },
     {
-      "name": "❌ Cons",
+      "name": "Дух-Хранитель",
       "type": "Активное умение",
-      "desc": "❌ Cons She is much better in long fights than in short burst fights, so fast teams can pressure her before she scales. Her value drops if the team has weak Исцелениеing loops or if the frontline dies too quickly. Anti-Исцеление and silence effects can reduce the impact of her sustain engine. She is currently ",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "Призывает духа, связывающегося с танком передней линии. Защищенный герой получает только 50% входящего урона, а остальной урон передается духу.",
+      "depends_on": "Здоровье и Броня",
+      "formula": "Снижение входящего урона на 50%",
+      "per_lvl": "+200 ед. прочности духа за уровень"
     },
     {
-      "name": "1 - Roar of Nature (Ultimate)",
+      "name": "Медвежьи Объятия",
       "type": "Активное умение",
-      "desc": "1 - Roar of Nature (Ultimate) Roar of Nature is the skill that makes Byrna immediately scary in long battles. It deals 66,020 magic Урон to all enemies and Исцелениеs allies for 66,020 Здоровье . The easy part is the teamwide Урон and teamwide Исцеление. The more important part is that 100% of the Исцелениеing i",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "Бырна захватывает вражескую цель и швыряет ее о землю, нанося физический урон и оглушая на 2 секунды.",
+      "depends_on": "Физическая Атака",
+      "formula": "Урон = 35,000 ед. + (100% Физической Атаки)",
+      "per_lvl": "+150 ед. урона за уровень"
     },
     {
-      "name": "2 - Guardian Spirit",
+      "name": "Живое Сердце",
       "type": "Пассивное умение",
-      "desc": "2 - Guardian Spirit Guardian Spirit is the skill that keeps Byrna’s frontline standing. She summons a spirit that binds to the front tank if there is one, or to a random ally otherwise. The protected hero only takes 50% of incoming Урон, while the rest is transferred to the spirit. The spirit itse",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "Пассивно увеличивает эффективность лечения и регенерацию здоровья всей команды во время затяжного боя.",
+      "depends_on": "Магическая Атака",
+      "formula": "+25% к входящему лечению всей команды",
+      "per_lvl": "+0.2% лечения за уровень"
     }
   ],
   "fluffy": [
     {
-      "name": "✅ Pros",
-      "type": "Ультимативный (Активный)",
-      "desc": "✅ Pros Excellent vs. auto-attack teams: The ultimate grants immunity to basic attacks and reflection, neutralizing Физическая Атакаers. Team resurrection: To Hell and Back revives allies with bonuses, turning defeats into opportunities. Ultimate interruption: Usurpation can cancel enemy ultimates—gre",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "name": "Сделка с Дьяволом",
+      "type": "Ультимативное умение",
+      "desc": "Флаффи жертвует 20% своего текущего здоровья, чтобы нанести врагам урон в размере 250% от пожертвованного здоровья и наложить эффект страха на 3 секунды.",
+      "depends_on": "Максимальное Здоровье",
+      "formula": "Урон = 250% от пожертвованного HP",
+      "per_lvl": "+300 ед. за уровень"
     },
     {
-      "name": "❌ Cons",
+      "name": "В Ад и Обратно",
       "type": "Активное умение",
-      "desc": "❌ Cons Risk of self-Урон: Some counter mechanics (e.g., Usurpation when triggered) inflict self-Урон; ensure sufficient HP and sustain. Vulnerable to magic bursts: Heavy magic Урон can outpace Исцелениеs and bypass the ultimate's protection. Ability/CD dependency: Usurpation has a cooldown and a ch",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "Телепортируется за спину врага с наибольшей магической атакой, наносит урон и замедляет его скорость на 50% на 4 секунды.",
+      "depends_on": "Физическая Атака",
+      "formula": "Урон = 45,000 ед. + (110% Физической Атаки)",
+      "per_lvl": "+250 ед. урона за уровень"
     },
     {
-      "name": "Deal with the Devil (Ultimate)",
+      "name": "Метка Смерти",
       "type": "Активное умение",
-      "desc": "Deal with the Devil (Ultimate) Deal with the Devil envelops all allied Heroes for 12 seconds . While active, allies are immune to Урон from enemy basic attacks and reflect it back to attackers. This ultimate is a double-edged sword: it grants incredible protection against auto-attack heavy teams. ",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "Накладывает метку на наименее защищенную цель. Союзники, атакующие помеченную цель, восстанавливают 15% нанесенного урона в виде здоровья.",
+      "depends_on": "Атака команды",
+      "formula": "Вампиризм по цели = 15%",
+      "per_lvl": "+0.1% вампиризма за уровень"
     },
     {
-      "name": "To Hell and Back",
+      "name": "Узурпация",
       "type": "Пассивное умение",
-      "desc": "To Hell and Back Baalthazar protects his flock from death for 10 seconds . All allies who die during this time will be resurrected when the effect ends. They restore some Здоровье, and their physical and Магическая Атака are increased until the end of the battle. This is essentially a team-wide \"second ch",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "Каждый раз, когда враг погибает на поле боя, Флаффи похищает 10% его физической и магической атаки до конца боя.",
+      "depends_on": "Атака погибших врагов",
+      "formula": "Похищение 10% атаки цели",
+      "per_lvl": "+0.2% похищаемой атаки"
     }
   ],
   "cascade": [
     {
-      "name": "Pros",
-      "type": "Ультимативный (Активный)",
-      "desc": "Pros Hydrokinesis applies strong anti-Исцеление and blocks resurrection, which is extremely valuable against sustain teams. Tidal Wave adds both burst Урон and positioning disruption, giving Cascade tempo control in mage lineups. Refluence scales well in magic teams and rewards repeated spell hits with",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "name": "Гидрокинез",
+      "type": "Ультимативное умение",
+      "desc": "Каскад обрушивает на вражеский отряд водяной поток, наносящий 58,000 ед. магического урона и снижающий защиту от магии у всех пораженных целей.",
+      "depends_on": "Магическая Атака",
+      "formula": "Урон = 58,000 ед. + (130% Магической Атаки)",
+      "per_lvl": "+350 ед. урона за уровень"
     },
     {
-      "name": "Cons",
+      "name": "Припливная Волна",
       "type": "Активное умение",
-      "desc": "Cons He depends heavily on magic-oriented allies to unlock his full value. Physical teams get much less from Refluence and Elemental Surge. Middle line placement can expose him to burst and disruptive dive setups. He offers pressure and utility, but not the hardest single-target lockdown. Without su",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "Отталкивает врагов передней линии назад, нарушая их боевое построение и оглушая на 1.5 секунды.",
+      "depends_on": "Магическая Атака",
+      "formula": "Урон = 32,000 ед. + (80% Магической Атаки)",
+      "per_lvl": "+180 ед. урона за уровень"
     },
     {
-      "name": "Hydrokinesis",
+      "name": "Отлив",
       "type": "Активное умение",
-      "desc": "Hydrokinesis Cascade summons a heavy rain for 6 seconds, dealing Magic Урон every second to all enemies. While active, enemies receive 50% reduced Исцелениеing and cannot be resurrected . Formula: (15% Магическая Атака + 5850) per second → total of 24,515 Magic Урон per tick over 6 seconds. Evolution Pri",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "Похищает энергию у врага с наивысшим показателем энергии и передает ее союзному магу с наибольшим уроном.",
+      "depends_on": "Энергия цели",
+      "formula": "Кража 200 ед. энергии",
+      "per_lvl": "+2 ед. энергии за уровень"
     },
     {
-      "name": "Tidal Wave",
+      "name": "Водный Вихрь",
       "type": "Пассивное умение",
-      "desc": "Tidal Wave Cascade turns into a massive wave, rushing through enemies and scattering them. Deals Magic Урон to all enemies hit and disrupts their frontline and backline positioning. Formula: (45% Магическая Атака + 19,600) → deals 75,594 Magic Урон at Уровень 130. Evolution Priority: High – Strong dam",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "Пассивно увеличивает магическое пробивание всех союзных магов на протяжении всего сражения.",
+      "depends_on": "Пробивание Магии",
+      "formula": "+12,500 к Пробиванию Защиты от Магии",
+      "per_lvl": "+100 к пробиванию за уровень"
     }
   ],
   "aidan": [
     {
-      "name": "✅ Pros",
-      "type": "Ультимативный (Активный)",
-      "desc": "✅ Pros Versatile support: Combines Исцелениеing, Щитing, and area Урон to protect and sustain the team. Strong synergy with Kayla: Shared Здоровье mechanic can create powerful and durable back-line combos. Back-line placement: Safely positioned away from the front, making him harder to reach in balanc",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "❌ Cons",
+      "name": "’s",
       "type": "Активное умение",
-      "desc": "❌ Cons Vulnerable to back-line assassins: Easily countered by heroes like Cleaver, Jhu, and Kayla. Dependent on energy: Needs to cast his ultimate often to be effective energy control or denial hurts him badly. No crowd control: Offers no stuns, silences, or slows purely reactive support. Shared hea",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "’s щит на и . щит урона для 5 секунд. 's щит , , магический урона к врагов и на . —",
+      "depends_on": "Магическая Атака",
+      "formula": "Рассчитывается от Магическая Атака и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "Phoenix’s Embrace",
-      "type": "Активное умение",
-      "desc": "Phoenix’s Embrace Aidan casts a protective Щит on himself and the farthest ally. This Щит absorbs any incoming Урон for 5 seconds. When the ally's Щит ends, it explodes, dealing magic Урон to nearby enemies and applying a Phoenix Glyph on them. The Phoenix Glyph is essential because it ",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "Ignite",
+      "name": "Умение 4",
       "type": "Пассивное умение",
-      "desc": "Ignite Aidan targets the nearest enemy without a Phoenix Glyph and applies the Glyph to them. If all enemies already have a Glyph, he strikes out sparks from the nearest enemy, dealing magic Урон to all enemies around the target. The Phoenix Glyph applies a Burn effect that deals pure Урон over ",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "Враг и к . врагов , враг, магический урона к врагов цель. наносит чистый урона",
+      "depends_on": "Магическая Атака",
+      "formula": "Рассчитывается от Магическая Атака и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
+    },
+    {
+      "name": "Навык 3",
+      "type": "Активное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
+    },
+    {
+      "name": "Навык 4",
+      "type": "Пассивное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
     }
   ],
   "adam": [
     {
-      "name": "📋 Adam Table of Contents",
-      "type": "Ультимативный (Активный)",
-      "desc": "📋 Adam Table of Contents Who Is Adam? Meta Rating Pros &amp; Cons Skills &amp; Upgrade Priority Pet Patronage Best Skins Best Artifacts Best Glyphs Adam's Counter Best Synergy Heroes Best War Flags Best Teams for Adam Conclusion Who Is Adam in Hero Wars Alliance? Adam is a sharpshooter from the fro",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "name": "📋 от",
+      "type": "Ультимативное умение",
+      "desc": "📋 от — ? &; &; 's для — в ? —",
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "✅ Pros",
-      "type": "Активное умение",
-      "desc": "✅ Pros High single-target burst Урон Hunter's Mark stacks Физическая Атака and Пробивание Брони Strong synergy with Lyria, Electra, and Fafnir Built-in Уклонение survivability from Reactive Screen Excellent against tanky front-line heroes",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "❌ Cons",
-      "type": "Активное умение",
-      "desc": "❌ Cons Relies on Hunter's Mark stacks to reach peak Урон Hard-countered by Fluffy's silence mechanic Limited AOE Урон capability Relatively low CC contribution to team Adam Skills Upgrade Priority - Hero Wars: Dominion Era Adam's upgrades should first improve the Урон and mark-stacking pattern",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "1 - Bounty Lock (White/Ultimate)",
+      "name": "(/)",
       "type": "Пассивное умение",
-      "desc": "1 - Bounty Lock (White/Ultimate) In-game description: Fires a tracking round at the enemy Hero without Hunter's Mark closest to the center of the enemy team. The shot applies Hunter's Mark and deals 257,905 Урон. If the target dies while affected by Hunter's Mark, the ability is immediately reset.",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "(/) в- : в враг 's к от враг . 's и наносит 257,905 урона. цель пока на 's , — .",
+      "depends_on": "Здоровье и Броня",
+      "formula": "Базовый эффект = 257,905 ед. + (100% * Здоровье и Броня)",
+      "per_lvl": "+100 ед. за каждый уровень"
+    },
+    {
+      "name": "Навык 3",
+      "type": "Активное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
+    },
+    {
+      "name": "Навык 4",
+      "type": "Пассивное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
     }
   ],
   "amira": [
     {
-      "name": "✅ Pros",
-      "type": "Ультимативный (Активный)",
-      "desc": "✅ Pros Effectively disables critical hits from Agility-based heroes like Ishmael and Yasmine , neutralizing their burst potential for several seconds. Her first skill, Careless Wish , deals significant Урон over time, especially punishing teams with sustained or low burst Урон like Nebula , Seba",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "❌ Cons",
+      "name": "Умение 3",
       "type": "Активное умение",
-      "desc": "❌ Cons Susceptible to high burst Урон, especially from physical AoE heroes like Ginger or Keira , who can quickly disrupt her setup and punish her mid-line position. Heroes with taunt abilities, like Ziri , can redirect her Careless Wish , absorbing the Урон and reducing its effectiveness agains",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "От врагов. атака, . 7 секунд, и наносит урона на —. : – — ’s от урона и .",
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "Careless Wish",
-      "type": "Активное умение",
-      "desc": "Careless Wish Amira casts a storm of cursed gold around all enemies. The more they attack, the weaker the storm becomes. After 7 seconds, it explodes and deals Урон based on how strong it still is. Evolution Priority: Very High – This is Amira’s main source of Урон and pressure. It punishes enem",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "🔸 Note on Final Урон:",
+      "name": "🔸 на урона:",
       "type": "Пассивное умение",
-      "desc": "🔸 Note on Final Урон: The Урон dealt by Careless Wish depends on how much power remains in the storm after 7 seconds. If the enemy doesn't attack much , the storm retains more power → higher Урон . If the enemy attacks frequently , the storm loses power quickly → lower Урон .",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "🔸 на урона: урона на на в 7 секунд. враг 't атака , → урона . враг , → урона .",
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
+    },
+    {
+      "name": "Навык 3",
+      "type": "Активное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
+    },
+    {
+      "name": "Навык 4",
+      "type": "Пассивное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
     }
   ],
   "augustus": [
     {
-      "name": "✅ Pros",
-      "type": "Ультимативный (Активный)",
-      "desc": "✅ Pros Excellent Pure Урон scaling, especially when combined with Albus or magic-penetration teams. Strong area Урон thanks to Lightning Rod and Урон transfer effects. Synergizes extremely well with Orion due to rapid ultimate activation and Пробивание Защиты от Магии artifact boosts. High impact in lo",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "❌ Cons",
+      "name": "Умение 3",
       "type": "Активное умение",
-      "desc": "❌ Cons Relies heavily on Магическая Атака gear and artifact evolution to reach full potential. Not very durable without support; vulnerable to early burst unless paired with Axel or strong frontline. Урон transfer effect decreases sharply with distance, making positioning important. Struggles against ",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "Враг с здоровья и наносит магический урона . для : от цель’s здоровья ( ) но — на ’s магический- . цель здоровья: 40% здоровья",
+      "depends_on": "Магическая Атака",
+      "formula": "Рассчитывается от Магическая Атака и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "1 - Lightning Rod",
-      "type": "Активное умение",
-      "desc": "1 - Lightning Rod Lightning Rod hits the enemy with the highest Здоровье and deals heavy magic Урон . Simple explanation for beginners: it takes a percentage of the target’s Здоровье (very strong vs tanks) but is capped by Augustus’s magic-scaling maximum. Formula Target Здоровье: 40% Здоровье Formula Max",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "2 - Path of Least Resistance",
+      "name": "От",
       "type": "Пассивное умение",
-      "desc": "2 - Path of Least Resistance This passive converts Augustus’s basic attacks into steady 83,081 magic Урон and forces him to hit the enemy with the lowest Защита от Магии . For a new player: Augustus will always try to burn the enemy that is easiest for magic to hurt, so he finishes supports and frag",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "От ’s 83,081 магический урона и к враг с Защита от Магии . для : к враг — для магический к , и",
+      "depends_on": "Магическая Атака",
+      "formula": "Базовый эффект = 83,081 ед. + (100% * Магическая Атака)",
+      "per_lvl": "+100 ед. за каждый уровень"
+    },
+    {
+      "name": "Навык 3",
+      "type": "Активное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
+    },
+    {
+      "name": "Навык 4",
+      "type": "Пассивное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
     }
   ],
   "aurora": [
     {
-      "name": "1-й Навык (Ультимативное умение)",
-      "type": "Ультимативный",
+      "name": "Й Навык (Ультимативное умение)",
+      "type": "Ультимативное умение",
       "desc": "Ключевая способность героя.",
-      "depends_on": "Главный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "2-й Навык (Основная спец-атака)",
+      "name": "Й Навык (Основная спец-атака)",
       "type": "Активное умение",
       "desc": "Автоматическая атака ротации.",
-      "depends_on": "Атака / Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "3-й Навык (Тактическое умение)",
+      "name": "Й Навык (Тактическое умение)",
       "type": "Активное умение",
       "desc": "Контроль или поддержка.",
-      "depends_on": "Вторичный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "4-й Навык (Пассивный эффект)",
+      "name": "Й Навык (Пассивный эффект)",
       "type": "Пассивное умение",
       "desc": "Постоянный бокс ауры или усиления.",
-      "depends_on": "Пассивные статы",
-      "formula": "Постоянный эффект",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     }
   ],
   "dante": [
     {
-      "name": "1-й Навык (Ультимативное умение)",
-      "type": "Ультимативный",
-      "desc": "Ключевая способность героя.",
-      "depends_on": "Главный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "name": "Копья Судьбы",
+      "type": "Ультимативное умение",
+      "desc": "Данте бросает 4 призрачных копья во вражеский отряд, нанося физический урон и отталкивая врагов назад.",
+      "depends_on": "Физическая Атака",
+      "formula": "Урон = 42,000 ед. + (120% Физической Атаки)",
+      "per_lvl": "+280 ед. урона за уровень"
     },
     {
-      "name": "2-й Навык (Основная спец-атака)",
+      "name": "Предвидение",
       "type": "Активное умение",
-      "desc": "Автоматическая атака ротации.",
-      "depends_on": "Атака / Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "desc": "Увеличивает параметр Уклонения для всех союзников в команде на 6 секунд.",
+      "depends_on": "Ловкость",
+      "formula": "+8,500 к Уклонению для всей команды",
+      "per_lvl": "+75 к уклонению за уровень"
     },
     {
-      "name": "3-й Навык (Тактическое умение)",
+      "name": "Оковы Слабости",
       "type": "Активное умение",
-      "desc": "Контроль или поддержка.",
-      "depends_on": "Вторичный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "desc": "Снижает главные характеристики пораженных врагов на 5 секунд, ослабляя их атаки.",
+      "depends_on": "Физическая Атака",
+      "formula": "Снижение характеристик = 3,500 ед.",
+      "per_lvl": "+30 к снижению за уровень"
     },
     {
-      "name": "4-й Навык (Пассивный эффект)",
+      "name": "Возмездие",
       "type": "Пассивное умение",
-      "desc": "Постоянный бокс ауры или усиления.",
-      "depends_on": "Пассивные статы",
-      "formula": "Постоянный эффект",
-      "per_lvl": "Прирост за уровень"
+      "desc": "Каждый раз, когда Данте уклоняется от вражеской атаки, он ускоряет свою следующую авто-атаку и восстанавливает энергию.",
+      "depends_on": "Уклонение",
+      "formula": "+50 ед. энергии за каждое уклонение",
+      "per_lvl": "+1 ед. энергии за уровень"
     }
   ],
   "guus": [
     {
-      "name": "✅ Pros",
-      "type": "Ультимативный (Активный)",
-      "desc": "✅ Pros Powerful multi-source Исцелениеing: Guus has four distinct Исцелениеing abilities that keep allies alive through direct and over-time Исцелениеing. Scales with Физическая Атака: His Исцелениеing scales with Физическая Атака and Strength, allowing synergy with common glyphs and artifacts. Golden Feather mechanic: G",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "❌ Cons",
+      "name": "От",
       "type": "Активное умение",
-      "desc": "❌ Cons Highly vulnerable to anti-Исцелениеing: Easily countered by Celeste, especially during March of the Geese . Ultimate channel is interruptible: Guus cannot act during his ultimate and is vulnerable to control effects like charm or displacement. No offensive utility: Very limited Урон output – gra",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "От — 's . для 5 секунд, Исцеление союзников и урона врагов. Исцеление и урона 0.5 секунд. , атака или . , на .",
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "March of the Geese",
-      "type": "Активное умение",
-      "desc": "March of the Geese This is Guus's ultimate skill. For 5 seconds, golden geese Исцеление allies and gray geese Урон enemies. The Исцелениеing and Урон happen every 0.5 seconds. However, Guus cannot attack or use other skills during this time. If interrupted, he keeps some Energy based on the time left. Evo",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "Feathers of Gold",
+      "name": "От",
       "type": "Пассивное умение",
-      "desc": "Feathers of Gold This skill gives all allies a Golden Feather that Исцелениеs them over 5 seconds. It also has a passive: while March of the Geese is active, any ally Исцелениеed by golden geese receives this feather as well. Evolution Priority: High – The Исцелениеing effect is moderate, but the passive synergy w",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "От дает союзников Исцелениеs 5 секунд. : пока от — , Исцеление на . : – Исцеление — , но",
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
+    },
+    {
+      "name": "Навык 3",
+      "type": "Активное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
+    },
+    {
+      "name": "Навык 4",
+      "type": "Пассивное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
     }
   ],
   "heidi": [
     {
-      "name": "✅ Pros",
-      "type": "Ультимативный (Активный)",
-      "desc": "✅ Pros High pure Урон output from skills like Deathflower and Toxic Spit , effective against teams with high Уклонение or physical defense. Strong synergy with heroes like Dorian, Aurora, Nebula, and Celeste, boosting both poison and pure Урон potential. Excellent survivability through Уклонение and cro",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "❌ Cons",
+      "name": "Умение 3",
       "type": "Активное умение",
-      "desc": "❌ Cons Highly reliant on skill upgrades and proper glyph/artifact prioritization to maximize Урон and survivability. Vulnerable to energy-drain or charm effects that prevent skill activation (e.g., Jorgen or Lian counters). Struggles against magic-heavy teams that bypass Уклонение, such as enemies wit",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "В от враг . врагов, чистый урона . врагов в , ей и от урона в .",
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "1 - Deathflower",
-      "type": "Активное умение",
-      "desc": "1 - Deathflower Heidi summons a large poisonous mushroom in the center of the enemy team. The spores continuously poison all nearby enemies, dealing pure Урон over time. This ability hits multiple enemies at once, which makes it her strongest and most reliable source of Урон in long fights. Form",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "1 - Suffocating Deathflower - Ascension Skill",
+      "name": "Умение 4",
       "type": "Пассивное умение",
-      "desc": "1 - Suffocating Deathflower - Ascension Skill The Ascension upgrade makes Deathflower even more dangerous by increasing the poison Урон every 0.5 seconds. This causes the Урон to stack rapidly, burning through even tanky enemies. Formula: +10% more Pure Урон every 0.5s . Evolution Priority: Hi",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "- на урона 0.5 секунд. урона к , врагов. : +10% чистый урона 0.5s . :",
+      "depends_on": "Здоровье и Броня",
+      "formula": "Базовый эффект = 0.5 ед. + (100% * Здоровье и Броня)",
+      "per_lvl": "+100 ед. за каждый уровень"
+    },
+    {
+      "name": "Навык 3",
+      "type": "Активное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
+    },
+    {
+      "name": "Навык 4",
+      "type": "Пассивное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
     }
   ],
   "isaac": [
     {
-      "name": "✅ Pros",
-      "type": "Ультимативный (Активный)",
-      "desc": "✅ Pros Excellent counter to mage-heavy teams thanks to his ultimate, which silences enemies and prevents them from generating energy. Absorbs incoming magic Урон, protecting the team from mage burst attacks. Provides strong Физическая Атака scaling, making him a reliable Урон dealer in long battl",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "❌ Cons",
+      "name": "– ''s",
       "type": "Активное умение",
-      "desc": "❌ Cons Much less effective against teams with low or no mages, since his main utility is anti-magic disruption. Relatively weak early game Урон compared to other physical Урон dealers. Silence enemies can be bypassed by purifying supports like Sebastian, Celeste, or Nebula. Relies heavily on tea",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "– ''s — ’s . , или урона. , ’ с атака 100%. ,",
+      "depends_on": "Здоровье и Броня",
+      "formula": "Базовый эффект = 100 ед. + (100% * Здоровье и Броня)",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "1st – Tes'Lin's Overdrive",
-      "type": "Активное умение",
-      "desc": "1st – Tes'Lin's Overdrive This is Isaac’s most important skill. Unlike most heroes, Isaac does not gain energy from taking or dealing Урон. Instead, his invention Tes’Lin builds Charge with every basic attack until reaching 100%. When activated, it releases a powerful electromagnetic pulse that si",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "2nd – MP-300 Capacitor",
+      "name": "– -300",
       "type": "Пассивное умение",
-      "desc": "2nd – MP-300 Capacitor This passive skill absorbs part of the magic Урон taken by Isaac and his allies, turning it into Charge. The more magic Урон the enemy deals, the faster Isaac can silence them again. It also reduces the pressure on your team by making mages less threatening. Formula: (0.01",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "– -300 от магический урона на и союзников, . магический урона враг наносит, . снижает на на . : (0.01",
+      "depends_on": "Магическая Атака",
+      "formula": "Базовый эффект = 300 ед. + (100% * Магическая Атака)",
+      "per_lvl": "+100 ед. за каждый уровень"
+    },
+    {
+      "name": "Навык 3",
+      "type": "Активное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
+    },
+    {
+      "name": "Навык 4",
+      "type": "Пассивное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
     }
   ],
   "iris": [
     {
-      "name": "✅ Pros",
-      "type": "Ультимативный (Активный)",
-      "desc": "✅ Pros High Burst Урон: Iris’s Expose Soul can instantly eliminate even strong tanks when properly timed. Pure Урон Output: Her Урон bypasses Броня and Защита от Магии, making her effective against high-defense heroes. Strong Synergy: Works extremely well with heroes who can focus or finish weak",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "❌ Cons",
+      "name": "Умение 3",
       "type": "Активное умение",
-      "desc": "❌ Cons Low Survivability: Iris is fragile and can be easily killed by physical Урон dealers before using her skills. Energy Dependent: Needs to charge energy to activate Expose Soul , making her vulnerable to heroes like Jorgen. Weak Against Magic Counters: Cornelius and Rufus can completely shut ",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": ": от враг для 13 секунд. урона — чистый урона к враг’s — Броня и Защита от Магии . ’s и с",
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "Expose Soul",
-      "type": "Активное умение",
-      "desc": "Expose Soul How it works: Iris reveals the soul of the nearest enemy for 13 seconds. Any Урон the soul takes is instantly transferred as pure Урон to the enemy’s real body — this means it ignores Броня and Защита от Магии completely. It’s especially strong against tanks and heroes with high defens",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "Otherworldly Creature",
+      "name": "Умение 4",
       "type": "Пассивное умение",
-      "desc": "Otherworldly Creature How it works: Iris summons a dark familiar near the farthest enemy. The creature moves toward her, biting enemies along the way. Each bite hits harder than the last, so it deals increasing Физическая Атака as it returns to Iris. Formula Физическая Атака : ( 37% Магическая Атака + Ivl",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": ": враг. ей, врагов . , наносит Физическая Атака к . Физическая Атака : ( 37% Магическая Атака +",
+      "depends_on": "Магическая Атака",
+      "formula": "Рассчитывается от Магическая Атака и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
+    },
+    {
+      "name": "Навык 3",
+      "type": "Активное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
+    },
+    {
+      "name": "Навык 4",
+      "type": "Пассивное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
     }
   ],
   "ishmael": [
     {
-      "name": "✅ Pros",
-      "type": "Ультимативный (Активный)",
-      "desc": "✅ Pros High Урон Output: Ishmael’s critical hits and attack speed in demonic form allow him to shred enemies quickly. Sustain through Вампиризм: He restores Здоровье while dealing Урон, giving him great survivability in long fights. Frontline Warrior: Can function both as a Урон dealer and semi-",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "❌ Cons",
+      "name": "Умение 3",
       "type": "Активное умение",
-      "desc": "❌ Cons Reliant on Critical Hits: His main Урон depends on crits, making him vulnerable to anti-crit counters like Helios and Amira. Weak to Pure Урон: Enemies such as Arachne and Phobos bypass his Уклонение and defenses, quickly draining his Здоровье. Needs Team Support: Without heroes who boost his s",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": ", к атака и . — , и , здоровья Вампиризм. —",
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "Awakening",
-      "type": "Активное умение",
-      "desc": "Awakening Ishmael transforms into his demonic form, gaining a huge boost to attack speed and critical hit chance. This is the skill that makes Ishmael deadly, because the faster he attacks and the more criticals he lands, the more Здоровье he restores through Вампиризм. The downside is that he slowly ",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "Phantom",
+      "name": "Умение 4",
       "type": "Пассивное умение",
-      "desc": "Phantom Ishmael becomes much harder to hit, dodging Физическая Атакаs for a short time. Each Уклонение gives him extra power, helping him stay alive and deal more Урон. However, if the enemy’s Уровень is much higher, the Уклонение chance is reduced. Formula: (Уклонение chance depends on Ishmael’s Уровень vs. targe",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "К , Физическая Атакаs для . Уклонение дает , помогая оставаться живой и наносит урона. , враг’s Уровень — , Уклонение — . : (Уклонение на ’s Уровень .",
+      "depends_on": "Физическая Атака",
+      "formula": "Рассчитывается от Физическая Атака и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
+    },
+    {
+      "name": "Навык 3",
+      "type": "Активное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
+    },
+    {
+      "name": "Навык 4",
+      "type": "Пассивное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
     }
   ],
   "julius": [
     {
-      "name": "✅ Pros",
-      "type": "Ультимативный (Активный)",
-      "desc": "✅ Pros Excellent tank with powerful Щитs that absorb full Урон for the entire team. Scales well with Физическая Атака, making his Щитs and Исцелениеing stronger over time. Removes debuffs and boosts Броня and Защита от Магии after Щитs are broken. Great synergy with heroes that apply Щитs (Faf",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "❌ Cons",
+      "name": "Защита",
       "type": "Активное умение",
-      "desc": "❌ Cons Vulnerable before the first Щит is activated can be burst down early in battle. Does not deal significant Урон on his own; relies heavily on team support. Weak against energy denial heroes like Jorgen who delay his skill usage. Requires investment in Физическая Атака and survivability sta",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "Защита — ’s . - щит урона и Исцелениеs союзников ’s . Физическая Атака , щит и Исцеление . : – и Исцелениеs ,",
+      "depends_on": "Физическая Атака",
+      "formula": "Рассчитывается от Физическая Атака и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "Defense Meowtrix",
-      "type": "Активное умение",
-      "desc": "Defense Meowtrix This is Julius’s main skill. It creates a huge team-wide Щит that absorbs Урон and then Исцелениеs all allies after it’s broken. The more Физическая Атака Julius has, the stronger this Щит and Исцеление become. Evolution Priority: Very High – It protects the whole team and Исцелениеs them, ",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "Copycat Device",
+      "name": "Умение 4",
       "type": "Пассивное умение",
-      "desc": "Copycat Device This skill Щитs Julius, and if the Щит survives for 5 seconds, it copies the remaining amount to all allies. Every time Julius gets a Щит, he gains permanent Физическая Атака power for the rest of the fight. Evolution Priority: High – Strong synergy skill that improves team pr",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "Щитs , и щит для 5 секунд, к союзников. щит, Физическая Атака для от . : –",
+      "depends_on": "Физическая Атака",
+      "formula": "Рассчитывается от Физическая Атака и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
+    },
+    {
+      "name": "Навык 3",
+      "type": "Активное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
+    },
+    {
+      "name": "Навык 4",
+      "type": "Пассивное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
     }
   ],
   "krista": [
     {
-      "name": "✅ Pros",
-      "type": "Ультимативный (Активный)",
-      "desc": "✅ Pros Strong synergy with Marks of Water, boosting Урон for herself and allies like Lars and Cascade. High magic Урон output thanks to Icy Vengeance and Frozen Needles. Crystallization provides a protective Щит, adding survivability in burst-heavy fights. Ascension Skills enhance both Урон",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "❌ Cons",
+      "name": "Умение 3",
       "type": "Активное умение",
-      "desc": "❌ Cons Relies on Intelligence stat and magic Урон, making her vulnerable to magic Щитs and magic-absorbing counters. Marks of Water strategy depends on ally coordination for maximum effectiveness. Ascension Skills take time to unlock, delaying her full potential for new or beginner players. Les",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "5 врагов на , урона. — ей от урона и . : (584 + 35% Магическая Атака + Уровень × 100) : – — ’s и",
+      "depends_on": "Магическая Атака",
+      "formula": "Рассчитывается от Магическая Атака и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "Icy Vengeance",
-      "type": "Активное умение",
-      "desc": "Icy Vengeance Krista launches 5 ice crystals that hit enemies one by one, dealing area Урон. This is her main source of consistent Урон and activates often during fights. Formula: (584 + 35% Магическая Атака + Уровень × 100) Evolution Priority: Very High – This is Krista’s strongest and most reliable ",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "Chains of Frost",
+      "name": "От",
       "type": "Пассивное умение",
-      "desc": "Chains of Frost Krista strikes the center of the enemy team, reducing their Защита от Магии and applying a Mark of Water. This sets up extra Урон from her and other Water Mark heroes. Formula: (10% Магическая Атака + Уровень × 20) Ascension skill: Generous Water Marks – Allies Исцеление for 50% of the magic da",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "От от враг , Защита от Магии и от . урона ей и . : (10% Магическая Атака + Уровень × 20) : – союзников Исцеление для 50% от магический",
+      "depends_on": "Магическая Атака",
+      "formula": "Рассчитывается от Магическая Атака и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
+    },
+    {
+      "name": "Навык 3",
+      "type": "Активное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
+    },
+    {
+      "name": "Навык 4",
+      "type": "Пассивное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
     }
   ],
   "laracroft": [
     {
-      "name": "✅ Pros",
-      "type": "Ультимативный (Активный)",
-      "desc": "✅ Pros High Physical Урон Output – Lara’s skills and artifacts boost her overall team Урон, especially when her ultimate activates. Critical Hit Synergy – She benefits greatly from crit-related artifacts and glyphs, making her burst potential very strong. Team Buffing – Her weapon artifact incre",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "❌ Cons",
+      "name": "От",
       "type": "Активное умение",
-      "desc": "❌ Cons Countered by Anti-Crit Heroes – Heroes like Helios and Amira directly shut down Lara’s crit-dependent Урон. Reliant on Survivability – Needs Здоровье and defensive support; otherwise, she can be eliminated quickly by burst teams. Artifact Dependency – Her maximum potential requires heavy inve",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "От уронаs врагов и Исцелениеs союзников. ей 2 - от . : (урона & Исцеление на Физическая Атака) . : – — 's и",
+      "depends_on": "Физическая Атака",
+      "formula": "Рассчитывается от Физическая Атака и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "Power of the Tombs",
-      "type": "Активное умение",
-      "desc": "Power of the Tombs Lara activates an ancient relic that Уронs all enemies and Исцелениеs allies. Her basic attacks also fire 2 powered-up shots instead of one. Formula: (Урон & Исцелениеing depend on Физическая Атака) . Evolution Priority: HIGH – This is Lara's ultimate ability and should be your top prior",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "Critical Thinking",
+      "name": "Умение 4",
       "type": "Пассивное умение",
-      "desc": "Critical Thinking Lara focuses for 6 seconds, significantly increasing her chance to land critical hits and making those critical hits deal much more Урон. Formula: (0.027% Phys. atk. + Ivl * 0.6 + 200)% . Evolution Priority: HIGH – This should be your second priority because it dramatically incre",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "Для 6 секунд, ей к и наносит урона. : (0.027% . . + * 0.6 + 200)% . : – секунду",
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
+    },
+    {
+      "name": "Навык 3",
+      "type": "Активное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
+    },
+    {
+      "name": "Навык 4",
+      "type": "Пассивное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
     }
   ],
   "lyria": [
     {
-      "name": "Pros",
-      "type": "Ультимативный (Активный)",
-      "desc": "Pros Strong synergy with undead allies. Great at shutting down Уклонение-based heroes. Passive aura provides consistent team buffs. Can Исцеление herself and a key ally with Вампиризм.",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "Cons",
+      "name": "Умение 3",
       "type": "Активное умение",
-      "desc": "Cons Needs undead allies to unlock full potential. Not very effective without team coordination. Limited Урон if few units die for soul collection. Lyria Skills Upgrade Priority – Hero Wars: Dominion Era Lyria’s four skills cover burst Урон, Вампиризм support, crowd control, and a passive aura —",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "– в- : на . , к от , . в 3 , с от . от",
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "1st – Soul Reaper",
-      "type": "Активное умение",
-      "desc": "1st – Soul Reaper In-game description: Lyria collects a soul every time someone dies on the battlefield. Once activated, Lyria opens a portal to the realm of the dead, unleashing vengeful spirits. The portal releases at least 3 spirits, with each of them dealing one strike. The number of extra spiri",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "2nd – Bonds of Alliance",
+      "name": "– от",
       "type": "Пассивное умение",
-      "desc": "2nd – Bonds of Alliance In-game description: Lyria binds herself to the ally with the highest Физическая Атака for 12s. Both Lyria and the bonded ally receive a Вампиризм bonus. While the Bonds of Alliance are active, Вампиризм restores Здоровье for them both. If the bonded ally is undead, they both ge",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "– от в- : к с Физическая Атака для 12s. и Вампиризм бонус. пока от — , Вампиризм здоровья для . — ,",
+      "depends_on": "Физическая Атака",
+      "formula": "Рассчитывается от Физическая Атака и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
+    },
+    {
+      "name": "Навык 3",
+      "type": "Активное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
+    },
+    {
+      "name": "Навык 4",
+      "type": "Пассивное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
     }
   ],
   "nebula": [
     {
-      "name": "Astral Projection",
-      "type": "Ультимативный (Активный)",
-      "desc": "Astral Projection Nebula fires a slow energy ball that explodes either when it hits the last enemy or is activated manually. It splits Урон and drains energy from enemies in the area. However, because Nebula turns her basic attacks into buffs through Equilibrium, it takes a long time for her to ac",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "name": "Умение 1",
+      "type": "Ультимативное умение",
+      "desc": "Враг или — . урона и врагов в . , ей , для ей к",
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "Serenity",
+      "name": "Умение 2",
       "type": "Активное умение",
-      "desc": "Serenity This skill Исцелениеs two nearby allies and removes negative effects (debuffs). If only one ally is nearby, the Исцелениеing goes to that hero. Very useful for keeping the team alive, especially in close formations. Evolution Priority: High - Great for team survival, and it activates more often than ",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "Исцелениеs союзников и (). — , Исцеление к . для живой, в . : - для , и",
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "Disharmony",
+      "name": "Умение 3",
       "type": "Активное умение",
-      "desc": "Disharmony Automatically deals Урон to the enemy with the lowest Здоровье. It’s a simple attack that helps finish off enemies, but it’s not as impactful as her support skills. Evolution Priority: Medium - Decent Урон, especially in long fights. It happens automatically and helps secure kills. Dish",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "Наносит урона к враг с здоровья. ’s атака врагов, но ’s ей . : - урона, в . и .",
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "Equilibrium",
+      "name": "Умение 4",
       "type": "Пассивное умение",
-      "desc": "Equilibrium This is Nebula’s core skill. It turns her basic attacks into support boosts, increasing the physical and magical attack of nearby allies. This happens constantly and makes a huge difference for Урон dealers. Evolution Priority: Very High - Her most important skill. It defines her role ",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "— ’s . ей , физический и атака от союзников. и для урона . : - ей . ей",
+      "depends_on": "Физическая Атака",
+      "formula": "Рассчитывается от Физическая Атака и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     }
   ],
   "orion": [
     {
-      "name": "Pros",
-      "type": "Ультимативный (Активный)",
-      "desc": "Pros Excellent burst mage with repeated casts thanks to his passive energy gain. Very strong synergy with heroes and pets that improve magic Урон, slows, or survival. Can pressure both PvP and PvE because his Урон starts fast and scales well with upgrades. His weapon artifact improves the whole ",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "Cons",
+      "name": "Умение 3",
       "type": "Активное умение",
-      "desc": "Cons Back-line survivability is average, so he can fall quickly to burst or anti-mage counters. He performs much better with support than alone, especially against magic-resistant enemies. Control is useful but not fully reliable against overУровеньed enemies because Уровень checks matter. If his first ",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "— 's . 6 в врагов с здоровья, и наносит 62,098 магический урона . — к в : в здоровья враг от",
+      "depends_on": "Магическая Атака",
+      "formula": "Рассчитывается от Магическая Атака и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "1 - Total Destruction",
-      "type": "Активное умение",
-      "desc": "1 - Total Destruction Total Destruction is Orion's ultimate burst tool. He fires 6 rockets at the enemies with the highest Здоровье, and each rocket deals 62,098 magic Урон . This is easy to understand in battle: Orion aims at the Здоровьеiest targets so he can quickly break the enemy core instead of ",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "2 - Magnetic Field",
+      "name": "Умение 4",
       "type": "Пассивное умение",
-      "desc": "2 - Magnetic Field Magnetic Field explodes on the enemy back line, deals 50,721 magic Урон in an area, and slows enemies for 4 seconds. In simple terms, this skill helps Orion touch the heroes hiding behind the tank line and makes them easier to finish because the slow can also prepare targets for",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "На враг , наносит 50,721 магический урона в , и врагов для 4 секунд. в , и к для",
+      "depends_on": "Магическая Атака",
+      "formula": "Базовый эффект = 50,721 ед. + (100% * Магическая Атака)",
+      "per_lvl": "+100 ед. за каждый уровень"
+    },
+    {
+      "name": "Навык 3",
+      "type": "Активное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
+    },
+    {
+      "name": "Навык 4",
+      "type": "Пассивное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
     }
   ],
   "qingmao": [
     {
-      "name": "1. Qing Long (Ultimate)",
-      "type": "Ультимативный (Активный)",
-      "desc": "1. Qing Long (Ultimate) Qing Mao summons the dragon spirit of her brother, which strikes the nearest enemies three times. Each hit deals physical Урон , pushes enemies back (disrupting their positioning), and applies a burning effect for 5 seconds. The burn deals additional Урон over time. This ",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "name": "Умение 1",
+      "type": "Ультимативное умение",
+      "desc": ". от ей , врагов . наносит физический урона , врагов ( ), и для 5 секунд. наносит урона .",
+      "depends_on": "Физическая Атака",
+      "formula": "Рассчитывается от Физическая Атака и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "Ascension V: Wrath of Qing Long",
+      "name": "V: от",
       "type": "Активное умение",
-      "desc": "Ascension V: Wrath of Qing Long This Ascension transforms Qing Long into a devastating ultimate. For each blinded enemy on the battlefield (up to 5), the dragon deals one additional hit. If you've blinded 3 enemies with Spear of Dawn, the dragon hits 6 times instead of 3 doubling the Урон! This cr",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "V: от . для враг на ( к 5), наносит . ' 3 врагов с от , 6 от 3 урона!",
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "2. Spear of Dawn (Periodic)",
+      "name": ". от ()",
       "type": "Активное умение",
-      "desc": "2. Spear of Dawn (Periodic) Qing Mao throws her spear at the nearest enemies, blinding them for 3 seconds. Blinded enemies have drastically reduced accuracy, causing many of their attacks to miss. This provides excellent crowd control and defensive value. More importantly, each blinded enemy on the ",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": ". от () ей в врагов, для 3 секунд. врагов , от к . и . , враг на",
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "3. Dragon's Claw (Periodic)",
+      "name": ". 's ()",
       "type": "Пассивное умение",
-      "desc": "3. Dragon's Claw (Periodic) Qing Mao slashes the nearest enemy with a powerful claw attack that deals Урон based on the target's current Здоровье. This means it's most effective against enemies with high Здоровье pools the more HP they have, the more Урон this skill deals (up to a maximum cap). This",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": ". 's () враг с атака наносит урона на цель's здоровья. 's врагов с здоровья , урона наносит ( к ).",
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     }
   ],
   "rufus": [
     {
-      "name": "Rakashi’s Barrier",
-      "type": "Ультимативный (Активный)",
-      "desc": "Rakashi’s Barrier Rufus creates a magic Щит that protects the entire team. This Щит absorbs all incoming magic Урон and gets stronger with Rufus’s Магическая Атака stat. Evolution Priority: High - This is Rufus's most important skill. It protects the whole team from dangerous Магическая Атакаs. The ",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "name": "’s",
+      "type": "Ультимативное умение",
+      "desc": "’s магический щит . щит магический урона и с ’s Магическая Атака . : - — 's . Магическая Атакаs.",
+      "depends_on": "Магическая Атака",
+      "formula": "Рассчитывается от Магическая Атака и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "Rakashi’s Mockery",
+      "name": "’s",
       "type": "Активное умение",
-      "desc": "Rakashi’s Mockery Rufus attacks the enemy with the highest magic power. It deals Урон over time for 4 seconds. The Урон depends on his Магическая Атака. Evolution Priority: Medium - This skill helps weaken strong enemy mages. It does extra Урон over time but is not as essential as his Щит or re",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "’s враг с магический . наносит урона для 4 секунд. урона на Магическая Атака. : - враг . урона но — щит или",
+      "depends_on": "Магическая Атака",
+      "formula": "Рассчитывается от Магическая Атака и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "Devourer of",
+      "name": "От",
       "type": "Активное умение",
-      "desc": "Devourer of Rufus Исцелениеs himself by converting part of the Урон blocked by his Щит into Здоровье. He recovers 65% of the Урон absorbed by Rakashi’s Barrier. Evolution Priority: Medium - This skill keeps Rufus alive longer, especially against magic teams. It works well with his Щит, but doesn'",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "От Исцелениеs на от урона на щит здоровья. 65% от урона на ’s . : - живой , магический . с щит, но '",
+      "depends_on": "Магическая Атака",
+      "formula": "Рассчитывается от Магическая Атака и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "Rakashi’s Oath",
+      "name": "’s",
       "type": "Пассивное умение",
-      "desc": "Rakashi’s Oath Rufus can only die from physical Урон. If a magic or pure Урон attack kills him, he revives with some Здоровье, based on his Магическая Атака. Evolution Priority: Low - This passive is very useful, but it works even without upgrades. Уровеньing it up only increases how much Здоровье he revi",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "’s физический урона. магический или чистый урона атака , с здоровья, на Магическая Атака. : - — , но . Уровень увеличивает здоровья",
+      "depends_on": "Магическая Атака",
+      "formula": "Рассчитывается от Магическая Атака и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     }
   ],
   "sebastian": [
     {
-      "name": "✅ Pros",
-      "type": "Ультимативный (Активный)",
-      "desc": "✅ Pros Excels against heroes that heavily rely on debuffs, making him a strong counter in magic and debuff-heavy teams. Enhances allies’ critical hit Урон through his support skills, boosting overall team Урон output. Synergizes well with allies who also increase critical hit chance, amplifying ",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "❌ Cons",
+      "name": "Умение 3",
       "type": "Активное умение",
-      "desc": "❌ Cons Dependent on allies’ critical hits for maximum effectiveness; less impactful in teams without crit synergy. Susceptible to high-Урон or backline-focused attackers like Cleaver, Jhu, Kayla, Jorgen, and Luther. Polaris can reduce his support effectiveness by interfering with debuff removal vi",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "К — ’s . и щит 15 . в , “” и врагов , , или союзников .",
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "Ode to Serenity",
-      "type": "Активное умение",
-      "desc": "Ode to Serenity This is Sebastian’s ultimate skill. It instantly removes all debuffs from your team and creates a Щит that blocks 15 new debuffs from being applied. In simple terms, it “cleans” your team and then prevents enemies like Lian, Satori, or Jorgen from disabling your allies again. Evol",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "Battle Song",
+      "name": "Умение 4",
       "type": "Пассивное умение",
-      "desc": "Battle Song This skill increases the critical hit chance of all allies for 5 seconds. Formula: (0.1% Физическая Атака + Уровень * 0.2 + 15)% . That means the stronger your Sebastian’s Физическая Атака, the higher the bonus critical chance your team gets. Evolution Priority: High – Critical chance is a h",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "Увеличивает от союзников для 5 секунд. : (0.1% Физическая Атака + Уровень * 0.2 + 15)% . ’s Физическая Атака, бонус . : – —",
+      "depends_on": "Физическая Атака",
+      "formula": "Рассчитывается от Физическая Атака и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
+    },
+    {
+      "name": "Навык 3",
+      "type": "Активное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
+    },
+    {
+      "name": "Навык 4",
+      "type": "Пассивное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
     }
   ],
   "somna": [
     {
-      "name": "📋 Somna Table of Contents",
-      "type": "Ультимативный (Активный)",
-      "desc": "📋 Somna Table of Contents Who Is Somna? Maximum Stats Pros and Cons Skill Priority Skin Priority Glyph Priority Artifact Priority Best Patronage Counters War Flags Best Teams Who Is Somna in Hero Wars: Dominion Era? Somna is a middle-line Agility control hero built around Sleep and Sleepiness. Her ",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "name": "📋 от",
+      "type": "Ультимативное умение",
+      "desc": "📋 от — ? и — в : ? — - и . ей",
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "✅ Pros",
-      "type": "Активное умение",
-      "desc": "✅ Pros Teamwide control: Lullaby Veil can put the entire enemy formation to sleep for 7 seconds. Excellent tempo support: Sleep and sheep transformations create time for scaling allies to become dangerous. Reduces both Урон types: Sleepiness lowers Physical and Магическая Атака, so it is useful beyond",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "❌ Cons",
-      "type": "Активное умение",
-      "desc": "❌ Cons Low personal Урон: Somna controls the battle but normally needs allies to secure kills. Sleep can break early: Opponents wake after receiving 107,633 Урон, so uncontrolled area Урон can shorten the pause. Sebastian is a direct counter: His protection can block the control effect that de",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "1st Skill - Lullaby Veil",
+      "name": "Умение 4",
       "type": "Пассивное умение",
-      "desc": "1st Skill - Lullaby Veil In-game description: Puts enemy Heroes to sleep for 7s. Sleeping opponents cannot act but can wake up prematurely if they receive 107,633 Урон. Sleep chance is lowered if the target's Уровень is above 130. Skill Explanation: Somna pauses the whole enemy team. Each sleeping h",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "- в- : враг к для 7s. противникам но 107,633 урона. — цель's Уровень — 130. : враг .",
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
+    },
+    {
+      "name": "Навык 3",
+      "type": "Активное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
+    },
+    {
+      "name": "Навык 4",
+      "type": "Пассивное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
     }
   ],
   "thea": [
     {
-      "name": "Solar Sanctuary",
-      "type": "Ультимативный (Активный)",
-      "desc": "Solar Sanctuary Solar Sanctuary is Thea’s ultimate Исцелениеing skill, restoring Здоровье to the entire team. Its power scales with Магическая Атака, making it stronger as she develops. Ascension skill: With ascension, this ability becomes Blessed Solar Sanctuary : any excess Исцелениеing turns into a Щит that a",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "name": "Умение 1",
+      "type": "Ультимативное умение",
+      "desc": "— ’s Исцеление , здоровья к . с Магическая Атака, . : с , : Исцеление щит",
+      "depends_on": "Магическая Атака",
+      "formula": "Рассчитывается от Магическая Атака и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "Исцелениеing Beam",
+      "name": "Исцеление",
       "type": "Активное умение",
-      "desc": "Исцелениеing Beam Исцелениеing Beam targets the ally with the lowest Здоровье, delivering a focused Исцеление that scales with Магическая Атака. It's essential for saving key teammates in critical moments. Ascension skill: With ascension, it becomes Radiant Исцелениеing Beam : the Исцелениеed ally takes 50% less Урон for 5 seco",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "Исцеление Исцеление с здоровья, Исцеление с Магическая Атака. 's для в . : с , Исцеление : Исцеление 50% урона для 5",
+      "depends_on": "Магическая Атака",
+      "formula": "Рассчитывается от Магическая Атака и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "Vow of Silence",
+      "name": "От",
       "type": "Активное умение",
-      "desc": "Vow of Silence A useful crowd control skill that silences enemies, stopping them from casting skills for 3 seconds. Effective against magic-heavy teams. Evolution Priority: Medium",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "От врагов, для 3 секунд. магический- . :",
+      "depends_on": "Магическая Атака",
+      "formula": "Рассчитывается от Магическая Атака и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "Second Wind",
+      "name": "Секунду",
       "type": "Пассивное умение",
-      "desc": "Second Wind A passive boost to speed for allies below 30% Здоровье. Nice bonus in the background, especially for speeding up clutch plays or Исцелениеers and Урон dealers recovering from the brink. Evolution Priority: Low Best Patronage for Thea Choosing the right Patronage pet for Thea can significantly",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "Секунду к для союзников 30% здоровья. бонус в , для или Исцеление и урона . : для для",
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     }
   ],
   "yasmine": [
     {
-      "name": "Pros",
-      "type": "Ультимативный (Активный)",
-      "desc": "Pros High Single-Target Урон: Her skill “Dance of Death” deals massive burst Урон to a single target, making her excellent at eliminating key enemies quickly. Debuff Immunity During Ultimate: While using “Dance of Death,” Yasmine cannot receive debuffs, making her immune to stuns, slows, or sile",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "name": "Танец Теней",
+      "type": "Ультимативное умение",
+      "desc": "Ясмин мгновенно перемещается за спину врага, нанесшего наибольший урон соратникам, и наносит 7 стремительных ударов с гарантированным критическим уроном.",
+      "depends_on": "Физическая Атака и Крит",
+      "formula": "7 ударов по (12,500 + 45% Физической Атаки)",
+      "per_lvl": "+150 ед. за удар за уровень"
     },
     {
-      "name": "Cons",
+      "name": "Смертоносная Страсть",
       "type": "Активное умение",
-      "desc": "Cons Vulnerable Outside of Ultimate: When not using “Dance of Death,” she can be easily stunned or killed by crowd control effects or burst Урон. Weak Against Уклонение Tanks: Yasmine relies on landing hits and criticals heroes with high Уклонение like Aurora or Dante can reduce her effectiveness. Low AoE",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "Отравляет цель ядом ассасинов, наносящим непрерывный чистый урон в течение 5 секунд и блокирующим входящее лечение.",
+      "depends_on": "Физическая Атака",
+      "formula": "Чистый урон = 8,000 ед./сек.",
+      "per_lvl": "+80 ед./сек. за уровень"
     },
     {
-      "name": "Dance of Death",
+      "name": "Объятия Смерти",
       "type": "Активное умение",
-      "desc": "Dance of Death Yasmine paralyzes the last enemy who attacked her for 3 seconds, teleports behind them, strikes 7 times, and applies an Assassin’s Mark. While this skill is active, she cannot receive debuffs. After the attack, she returns to her original position and continues to attack the marked ta",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "Ясмин снимает с себя все негативные эффекты контроля и на 3 секунды увеличивает свой шанс критического удара и уклонение на 150%.",
+      "depends_on": "Ловкость",
+      "formula": "+15,000 к Шансу Крит. Удара",
+      "per_lvl": "+120 к криту за уровень"
     },
     {
-      "name": "Assassin's Instinct",
+      "name": "Танцующие Клинки",
       "type": "Пассивное умение",
-      "desc": "Assassin's Instinct When Dance of Death is used, Yasmine gains bonus critical hit chance and Уклонение for 10 seconds. This makes her harder to hit and increases her chances to land critical hits. This skill boosts both her offense and defense, especially during her most dangerous moments right after us",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "Каждый критический удар Ясмин обновляет длительность отравления на цели и накладывает дополнительный стак яда (до 5 стаков).",
+      "depends_on": "Критический Урон",
+      "formula": "+20% к урону яда за каждый стак",
+      "per_lvl": "+0.2% за уровень"
     }
   ],
   "arachne": [
     {
-      "name": "✅ Pros",
-      "type": "Ультимативный (Активный)",
-      "desc": "✅ Pros ✅ Great survivability due to control effects and 80% Вампиризм ✅ Deals pure Урон , can execute enemies with low Здоровье ✅ Great support for high-Урон characters of any type ✅ Amazing synergy with Control heroes (Lian, Phobos, Polaris) and pet Mara",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "❌ Cons",
+      "name": "1:",
       "type": "Активное умение",
-      "desc": "❌ Cons ❌ Vulnerable to anti-control heroes ❌ Requires proper team composition to maximize effectiveness ❌ Can struggle against teams with high burst Урон Arachne Skills Upgrade Priority - Hero Wars: Dominion Era Understanding Arachne's skill priorities is crucial to maximize her devastating pure d",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "1: -здоровья враг , 74,135 магический урона, и . на цель, врагов для 5 секунд . — ей бою и",
+      "depends_on": "Магическая Атака",
+      "formula": "Рассчитывается от Магическая Атака и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "Skill 1: Hyper Jump",
-      "type": "Активное умение",
-      "desc": "Skill 1: Hyper Jump Arachne makes a Hyper Jump towards the lowest-Здоровье enemy , dealing 74,135 magic Урон, and leaps back. The jump triggers an explosion wave on hitting the target, stunning nearby enemies for 5 seconds . This is her primary engagement tool that initiates combat and provides cruc",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "Skill 2: Demolition Robot",
+      "name": "2:",
       "type": "Пассивное умение",
-      "desc": "Skill 2: Demolition Robot Arachne summons a monster that charges at the first enemy it sees, exploding and dealing 26,148 magic Урон while stunning enemies for 2 seconds . This skill adds additional crowd control to Arachne's arsenal and provides consistent Урон during extended fights. Explosion",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "2: в враг , и 26,148 магический урона пока врагов для 2 секунд . к 's и урона .",
+      "depends_on": "Магическая Атака",
+      "formula": "Рассчитывается от Магическая Атака и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
+    },
+    {
+      "name": "Навык 3",
+      "type": "Активное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
+    },
+    {
+      "name": "Навык 4",
+      "type": "Пассивное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
     }
   ],
   "astaroth": [
     {
-      "name": "Flame Veil",
-      "type": "Ультимативный (Активный)",
-      "desc": "Flame Veil Casts a Щит that blocks physical Урон on the entire team. The Щит's capacity is shared between all team members. Evolution Priority: 1 (Highest)",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "name": "Пламенный Оплот",
+      "type": "Ультимативное умение",
+      "desc": "Астарот создает щит скверны на всю команду, поглощающий физический и магический урон от вражеских атак.",
+      "depends_on": "Здоровье Астарота",
+      "formula": "Прочность Щита = 85,000 ед. + (20% HP)",
+      "per_lvl": "+450 ед. прочности за уровень"
     },
     {
-      "name": "Devastation",
+      "name": "Огненное Кольцо",
       "type": "Активное умение",
-      "desc": "Devastation Astaroth spews a flare of hellfire, burning up some of the energy accumulated by the furthest enemy. Evolution Priority: 4 (Lowest)",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "Выжигает энергию у соперников передней и центральной линии, ослабляя готовность их ультимативных умений.",
+      "depends_on": "Магическая Атака",
+      "formula": "Выжигание = 180 ед. энергии",
+      "per_lvl": "+2 ед. энергии за уровень"
     },
     {
-      "name": "Demon's Allegiance",
+      "name": "Пламенный Саван",
       "type": "Активное умение",
-      "desc": "Demon's Allegiance Passive skill. Astaroth maintains a connection with the ally who has the least Здоровье left and takes on a part of the physical Урон inflicted against that ally. Evolution Priority: 3",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "Пассивно связывает Астарота с соратником с наименьшим здоровьем, перенаправляя часть получаемого им физического урона на Астарота.",
+      "depends_on": "Броня Астарота",
+      "formula": "Перенаправление 40% физического урона",
+      "per_lvl": "+0.3% за уровень"
     },
     {
-      "name": "Last Word",
+      "name": "Воскрешение",
       "type": "Пассивное умение",
-      "desc": "Last Word Once per battle, Astaroth resurrects a fallen ally (or himself). Evolution Priority: 2 Best Patronage for Astaroth Choosing the right pet for Astaroth can dramatically improve his performance. Here are the top options ranked by usefulness:",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "Астарот воскрешает первого павшего в бою союзника (или себя) с 60% запаса здоровья. Срабатывает 1 раз за бой.",
+      "depends_on": "Максимальное Здоровье цели",
+      "formula": "Восстановление 60% от макс. HP",
+      "per_lvl": "+0.5% HP при воскрешении"
     }
   ],
   "celeste": [
     {
-      "name": "✅ Pros",
-      "type": "Ультимативный (Активный)",
-      "desc": "✅ Pros Dual forms allow her to switch between Исцелениеing (Light Form) and high magic Урон with anti-Исцеление effects (Dark Form). Ultimate skill “Two Fates” can be used with only 50% energy, letting her constantly change forms and adapt to the battle. Strong synergy with heroes like Nebula and Iris for m",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "❌ Cons",
+      "name": "Умение 3",
       "type": "Активное умение",
-      "desc": "❌ Cons Relies heavily on Magic Урон; suffers against magic-immune heroes like Rufus. Area Исцелениеing and anti-Исцеление mechanics are less effective against single-target burst Урон. Vulnerable to Щитs and Урон absorption effects (e.g., Corvus, Isaac). Form switching requires energy management; los",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "- — ’s и — . ей к и . в , в враг Исцеление. в , Исцелениеs для 5 секунд. ,",
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "1st - Two Fates",
-      "type": "Активное умение",
-      "desc": "1st - Two Fates This is Celeste’s ultimate and the main reason she is so unique. It allows her to switch between Light Form and Dark Form. In Dark Form, she creates a large flame in the enemy team that blocks Исцелениеing. In Light Form, she Исцелениеs the weakest ally for 5 seconds. Without this skill, Celes",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "Light Form – Исцелениеing",
+      "name": "– Исцеление",
       "type": "Пассивное умение",
-      "desc": "Light Form – Исцелениеing Skill - Two Fates Light, Hero Wars Dominion Era.",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "– Исцеление - , .",
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
+    },
+    {
+      "name": "Навык 3",
+      "type": "Активное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
+    },
+    {
+      "name": "Навык 4",
+      "type": "Пассивное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
     }
   ],
   "corvus": [
     {
-      "name": "✅ Pros",
-      "type": "Ультимативный (Активный)",
-      "desc": "✅ Pros Unmatched Tankiness: With one of the highest Здоровье pools in the game (1,066,327 at max) and strong Броня (55,166), Corvus can absorb tremendous Урон. Altar of Souls: His unique altar deals pure Урон (scaling with Здоровье) whenever allies are hit, creating constant pressure. Team Synergy: ",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "❌ Cons",
+      "name": "- :",
       "type": "Активное умение",
-      "desc": "❌ Cons Undead Dependency: Many skills (like Unity of the Damned) only benefit undead allies, limiting team options. Защита от Магии: While decent (50,105), it's his weakest defensive stat against mages like Orion or Satori. Position-Sensitive: As frontline tank, vulnerable to Пробивание Брони (e.g., ",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "- : . : — , но . - : от ' к , с",
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "Platform-Specific Notes:",
-      "type": "Активное умение",
-      "desc": "Platform-Specific Notes: Web vs. Facebook: Performance is identical across platforms, but Facebook version may have slightly slower skill animations during high graphic settings. Corvus Skills Upgrade Priority - Hero Wars: Dominion Era Learn which of Corvus' undead abilities to upgrade first, with e",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "1. Strike of the Damned",
+      "name": ". от",
       "type": "Пассивное умение",
-      "desc": "1. Strike of the Damned Corvus smashes enemy frontline, reducing all their defenses. Each Undead ally makes this 10% stronger. Урон Formula: (100% Физическая Атака + Уровень × 100) Defense Reduction Formula: (10% Физическая Атака + Уровень × 25) Evolution Priority: High – This is Corvus' main offensive ",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": ". от враг , . 10% . урона : (100% Физическая Атака + Уровень × 100) защита : (10% Физическая Атака + Уровень × 25) : – — '",
+      "depends_on": "Физическая Атака",
+      "formula": "Рассчитывается от Физическая Атака и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
+    },
+    {
+      "name": "Навык 3",
+      "type": "Активное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
+    },
+    {
+      "name": "Навык 4",
+      "type": "Пассивное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
     }
   ],
   "dorian": [
     {
-      "name": "1-й Навык (Ультимативное умение)",
-      "type": "Ультимативный",
+      "name": "Й Навык (Ультимативное умение)",
+      "type": "Ультимативное умение",
       "desc": "Ключевая способность героя.",
-      "depends_on": "Главный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "2-й Навык (Основная спец-атака)",
+      "name": "Й Навык (Основная спец-атака)",
       "type": "Активное умение",
       "desc": "Автоматическая атака ротации.",
-      "depends_on": "Атака / Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "3-й Навык (Тактическое умение)",
+      "name": "Й Навык (Тактическое умение)",
       "type": "Активное умение",
       "desc": "Контроль или поддержка.",
-      "depends_on": "Вторичный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "4-й Навык (Пассивный эффект)",
+      "name": "Й Навык (Пассивный эффект)",
       "type": "Пассивное умение",
       "desc": "Постоянный бокс ауры или усиления.",
-      "depends_on": "Пассивные статы",
-      "formula": "Постоянный эффект",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     }
   ],
   "folio": [
     {
-      "name": "✅ Pros",
-      "type": "Ультимативный (Активный)",
-      "desc": "✅ Pros Strong magic burst Урон, especially effective against teams lacking Защита от Магии. Synergizes well with pets like Merlin and Axel, enhancing both offense and survivability. Benefits greatly from Пробивание Защиты от Магии and Intelligence glyphs, scaling his skills effectively in late-game. His skil",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "❌ Cons",
+      "name": "От",
       "type": "Активное умение",
-      "desc": "❌ Cons Very vulnerable to silence and energy control effects like those from Isaac or Cornelius. Lacks physical defense and frontline durability easily targeted by high-burst Физическая Атакаers. Requires significant investment in glyphs, artifacts, and skins to perform at his peak. Limited utility o",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "От — ’s и . на врагов, и 5 секунд. , урона . наносит урона на — врагов!",
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "Weight of Knowledge",
-      "type": "Активное умение",
-      "desc": "Weight of Knowledge This is Folio’s strongest and most dangerous skill. He drops a magical ink blot on the enemies, which grows and explodes after 5 seconds. The longer it charges, the more Урон it does. It also deals extra Урон based on how much smarter Folio is than his enemies! Evolution Prio",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "Mind Stealer",
+      "name": "Умение 4",
       "type": "Пассивное умение",
-      "desc": "Mind Stealer This skill targets the smartest enemy and steals a big chunk of their Intelligence, making them weaker and boosting Folio. If it fails to steal, it deals massive magic Урон instead. Evolution Priority: High – This makes Folio even smarter and stronger during battles. If stealing fails",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "Враг и от , и . к , наносит магический урона . : – и .",
+      "depends_on": "Магическая Атака",
+      "formula": "Рассчитывается от Магическая Атака и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
+    },
+    {
+      "name": "Навык 3",
+      "type": "Активное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
+    },
+    {
+      "name": "Навык 4",
+      "type": "Пассивное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
     }
   ],
   "galahad": [
     {
-      "name": "✅ Pros",
-      "type": "Ультимативный (Активный)",
-      "desc": "✅ Pros Exceptional Self-Sustain: With 45% Вампиризм, Galahad Исцелениеs himself constantly through combat, making him one of the most self-sufficient tanks who doesn't rely on external Исцелениеers. High Physical Урон Output: Unlike purely defensive tanks, Galahad deals substantial physical Урон with all ",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "❌ Cons",
+      "name": "Умение 3",
       "type": "Активное умение",
-      "desc": "❌ Cons Anti-Исцелениеing Vulnerability: Galahad's entire survivability depends on his Вампиризм. Heroes like Celeste, Biscuit, or War Flag of Decline completely shut down his self-Исцелениеing, making him vulnerable. Energy Dependency: His most powerful ability (Iron Skies) requires full energy. Energy-denial",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": ". от , врагов на . — , . физический урона к врагов , для",
+      "depends_on": "Физическая Атака",
+      "formula": "Рассчитывается от Физическая Атака и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "1. Iron Skies (Ultimate)",
-      "type": "Активное умение",
-      "desc": "1. Iron Skies (Ultimate) Galahad calls down swords of justice from above, striking all enemies on the battlefield. This is his ultimate ability , triggered when his energy bar fills completely. The swords rain down dealing physical Урон to multiple enemies simultaneously, making it excellent for d",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "1A. Iron Retribution - Ascension Skill",
+      "name": ". -",
       "type": "Пассивное умение",
-      "desc": "1A. Iron Retribution - Ascension Skill After unlocking Ascension V, Iron Skies gains a powerful additional effect. Now, when the swords strike enemies who have less than 30% Здоровье remaining, those enemies receive the Retaliation debuff (maximum 5 enemies per cast). This enhancement transforms your ",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": ". - V, . , врагов 30% здоровья , врагов ( 5 врагов ).",
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
+    },
+    {
+      "name": "Навык 3",
+      "type": "Активное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
+    },
+    {
+      "name": "Навык 4",
+      "type": "Пассивное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
     }
   ],
   "helios": [
     {
-      "name": "1-й Навык (Ультимативное умение)",
-      "type": "Ультимативный",
+      "name": "Й Навык (Ультимативное умение)",
+      "type": "Ультимативное умение",
       "desc": "Ключевая способность героя.",
-      "depends_on": "Главный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "2-й Навык (Основная спец-атака)",
+      "name": "Й Навык (Основная спец-атака)",
       "type": "Активное умение",
       "desc": "Автоматическая атака ротации.",
-      "depends_on": "Атака / Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "3-й Навык (Тактическое умение)",
+      "name": "Й Навык (Тактическое умение)",
       "type": "Активное умение",
       "desc": "Контроль или поддержка.",
-      "depends_on": "Вторичный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "4-й Навык (Пассивный эффект)",
+      "name": "Й Навык (Пассивный эффект)",
       "type": "Пассивное умение",
       "desc": "Постоянный бокс ауры или усиления.",
-      "depends_on": "Пассивные статы",
-      "formula": "Постоянный эффект",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     }
   ],
   "jorgen": [
     {
-      "name": "1-й Навык (Ультимативное умение)",
-      "type": "Ультимативный",
+      "name": "Й Навык (Ультимативное умение)",
+      "type": "Ультимативное умение",
       "desc": "Ключевая способность героя.",
-      "depends_on": "Главный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "2-й Навык (Основная спец-атака)",
+      "name": "Й Навык (Основная спец-атака)",
       "type": "Активное умение",
       "desc": "Автоматическая атака ротации.",
-      "depends_on": "Атака / Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "3-й Навык (Тактическое умение)",
+      "name": "Й Навык (Тактическое умение)",
       "type": "Активное умение",
       "desc": "Контроль или поддержка.",
-      "depends_on": "Вторичный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "4-й Навык (Пассивный эффект)",
+      "name": "Й Навык (Пассивный эффект)",
       "type": "Пассивное умение",
       "desc": "Постоянный бокс ауры или усиления.",
-      "depends_on": "Пассивные статы",
-      "formula": "Постоянный эффект",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     }
   ],
   "kayla": [
     {
-      "name": "✅ Pros",
-      "type": "Ультимативный (Активный)",
-      "desc": "✅ Pros Strong front-line warrior with high Физическая Атака and burn Урон, making her a great threat to backline heroes. Phoenix Glyphs can deal significant pure Урон over time, especially when detonated with Raging Sparks. Agile hero with the ability to jump behind enemies ( Possessed by Fire ),",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "❌ Cons",
+      "name": "– 's",
       "type": "Активное умение",
-      "desc": "❌ Cons Vulnerable to heroes that can reposition or push her (e.g., Faceless, Lars, Maya, Cascade). Burning state consumes Здоровье over time, requiring careful timing and Исцелениеing support. Урон output can be lower if enemies quickly cleanse or evade Phoenix Glyphs. Dependent on proper positioning to ",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "– 's ей , врагов с . врагов для 6 секунд, чистый урона . врагов — , , физический урона и урона . —",
+      "depends_on": "Физическая Атака",
+      "formula": "Рассчитывается от Физическая Атака и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "1st – Phoenix's Fury",
-      "type": "Активное умение",
-      "desc": "1st – Phoenix's Fury Kayla throws her chakram, marking enemies with the Phoenix Glyph . The Glyph burns enemies for 6 seconds, dealing pure Урон over time. If enemies are already marked, the Glyph explodes, causing massive physical Урон and dealing the remaining burn Урон instantly. This is he",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "2nd – Raging Sparks",
+      "name": "Умение 4",
       "type": "Пассивное умение",
-      "desc": "2nd – Raging Sparks When Kayla attacks enemies marked by the Phoenix Glyph, she releases flaming sparks that hit nearby enemies with physical Урон . This skill spreads Урон across groups of enemies, making her even more dangerous when multiple targets are burned. Formula: ( 140% Физическая Атака ",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "– врагов на , врагов с физический урона . урона от врагов, ей — . : ( 140% Физическая Атака",
+      "depends_on": "Физическая Атака",
+      "formula": "Базовый эффект = 140 ед. + (100% * Физическая Атака)",
+      "per_lvl": "+100 ед. за каждый уровень"
+    },
+    {
+      "name": "Навык 3",
+      "type": "Активное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
+    },
+    {
+      "name": "Навык 4",
+      "type": "Пассивное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
     }
   ],
   "keira": [
     {
-      "name": "Blade Whirlwind",
-      "type": "Ультимативный (Активный)",
-      "desc": "Blade Whirlwind Keira throws spinning blades that travel to the farthest enemy and come back, hitting all enemies in their path. When the blades return, they silence enemies for 4 seconds, which stops them from using their skills temporarily. This is her strongest skill, dealing Урон to multiple e",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "name": "Умение 1",
+      "type": "Ультимативное умение",
+      "desc": "К враг и , врагов в . , врагов для 4 секунд, . — ей , урона к",
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "Enraged Soul",
+      "name": "Умение 2",
       "type": "Активное умение",
-      "desc": "Enraged Soul This skill increases Keira’s attack and skill speed for 5 seconds, up to 300%. This makes her deal more Урон very quickly, especially after she uses Blade Whirlwind. It’s great for fast-paced attacks during a fight. Ascension skill: Undying Enraged Soul – Keira revives once per battle",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "Увеличивает ’s атака и для 5 секунд, к 300%. ей наносит урона , . ’s для - . : –",
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "Dancing Blades",
+      "name": "Умение 3",
       "type": "Активное умение",
-      "desc": "Dancing Blades This passive skill lets Keira’s normal attacks bounce between enemies. Each bounce deals 25% of the original Урон. This helps her hit more enemies at once, but the Урон is smaller compared to her main skills. Evolution Priority: Low – It adds some extra Урон, but it’s not as imp",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "’s врагов. наносит 25% от урона. ей врагов в , но урона — к ей . : – урона, но ’s",
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "Piercing Pain",
+      "name": "Умение 4",
       "type": "Пассивное умение",
-      "desc": "Piercing Pain This passive skill gives Keira extra Урон when the enemy's Броня is lower than her Пробивание Брони. It helps her hit harder against weaker targets, but it depends on the enemy’s defense and doesn't work well against all heroes. Evolution Priority: Lowest – The extra Урон only wor",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "Дает урона враг's Броня — ей Пробивание Брони. ей , но на враг’s защита и 't . : – урона",
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     }
   ],
   "martha": [
     {
-      "name": "1-й Навык (Ультимативное умение)",
-      "type": "Ультимативный",
+      "name": "Й Навык (Ультимативное умение)",
+      "type": "Ультимативное умение",
       "desc": "Ключевая способность героя.",
-      "depends_on": "Главный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "2-й Навык (Основная спец-атака)",
+      "name": "Й Навык (Основная спец-атака)",
       "type": "Активное умение",
       "desc": "Автоматическая атака ротации.",
-      "depends_on": "Атака / Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "3-й Навык (Тактическое умение)",
+      "name": "Й Навык (Тактическое умение)",
       "type": "Активное умение",
       "desc": "Контроль или поддержка.",
-      "depends_on": "Вторичный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "4-й Навык (Пассивный эффект)",
+      "name": "Й Навык (Пассивный эффект)",
       "type": "Пассивное умение",
       "desc": "Постоянный бокс ауры или усиления.",
-      "depends_on": "Пассивные статы",
-      "formula": "Постоянный эффект",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     }
   ],
   "mojo": [
     {
-      "name": "1-й Навык (Ультимативное умение)",
-      "type": "Ультимативный",
+      "name": "Й Навык (Ультимативное умение)",
+      "type": "Ультимативное умение",
       "desc": "Ключевая способность героя.",
-      "depends_on": "Главный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "2-й Навык (Основная спец-атака)",
+      "name": "Й Навык (Основная спец-атака)",
       "type": "Активное умение",
       "desc": "Автоматическая атака ротации.",
-      "depends_on": "Атака / Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "3-й Навык (Тактическое умение)",
+      "name": "Й Навык (Тактическое умение)",
       "type": "Активное умение",
       "desc": "Контроль или поддержка.",
-      "depends_on": "Вторичный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "4-й Навык (Пассивный эффект)",
+      "name": "Й Навык (Пассивный эффект)",
       "type": "Пассивное умение",
       "desc": "Постоянный бокс ауры или усиления.",
-      "depends_on": "Пассивные статы",
-      "formula": "Постоянный эффект",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     }
   ],
   "morrigan": [
     {
-      "name": "1-й Навык (Ультимативное умение)",
-      "type": "Ультимативный",
+      "name": "Й Навык (Ультимативное умение)",
+      "type": "Ультимативное умение",
       "desc": "Ключевая способность героя.",
-      "depends_on": "Главный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "2-й Навык (Основная спец-атака)",
+      "name": "Й Навык (Основная спец-атака)",
       "type": "Активное умение",
       "desc": "Автоматическая атака ротации.",
-      "depends_on": "Атака / Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "3-й Навык (Тактическое умение)",
+      "name": "Й Навык (Тактическое умение)",
       "type": "Активное умение",
       "desc": "Контроль или поддержка.",
-      "depends_on": "Вторичный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "4-й Навык (Пассивный эффект)",
+      "name": "Й Навык (Пассивный эффект)",
       "type": "Пассивное умение",
       "desc": "Постоянный бокс ауры или усиления.",
-      "depends_on": "Пассивные статы",
-      "formula": "Постоянный эффект",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     }
   ],
   "mushy": [
     {
-      "name": "✅ Pros",
-      "type": "Ультимативный (Активный)",
-      "desc": "✅ Pros Excellent sustain thanks to constant Исцелениеing and regeneration from the Shrooms. High battlefield control by spawning multiple Mushrooms that distract enemies and absorb Урон. Very strong in long battles, especially against teams that cannot quickly burst them down. Scales extremely well wit",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "❌ Cons",
+      "name": "Умение 3",
       "type": "Активное умение",
-      "desc": "❌ Cons Highly vulnerable to burst Урон teams capable of deleting Mushy before Исцелениеing ramps up. Weak against heroes who deal high AoE Урон that can wipe out spawned Shrooms instantly. Low offensive pressure; relies heavily on allies to deal real Урон. Struggles against anti-summon mechanics an",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "С здоровья. Исцеление, и к атака и . к 3 , и . (здоровья ): 545,230",
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "Perfect Copy",
-      "type": "Активное умение",
-      "desc": "Perfect Copy Perfect Copy creates an inactive Shroom with missing Здоровье. Once fully Исцелениеed, it activates and becomes a full clone able to attack and use all learned skills. Up to 3 active Shrooms can exist, greatly increasing team pressure and battlefield control. Formula (Здоровье Scaling): 545,230 ",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "Autonomous Copy",
+      "name": "Умение 4",
       "type": "Пассивное умение",
-      "desc": "Autonomous Copy Ascension Skill: Unlocked at Ascension V . This new ascension effect keeps Shroom's copies active even after Mushy & Shroom die, which greatly improves their value in longer fights and prevents all generated pressure from disappearing when the main hero falls. Effect: Shroom's copies",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": ": в . 's & , в и . : 's",
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
+    },
+    {
+      "name": "Навык 3",
+      "type": "Активное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
+    },
+    {
+      "name": "Навык 4",
+      "type": "Пассивное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
     }
   ],
   "polaris": [
     {
-      "name": "1-й Навык (Ультимативное умение)",
-      "type": "Ультимативный",
+      "name": "Й Навык (Ультимативное умение)",
+      "type": "Ультимативное умение",
       "desc": "Ключевая способность героя.",
-      "depends_on": "Главный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "2-й Навык (Основная спец-атака)",
+      "name": "Й Навык (Основная спец-атака)",
       "type": "Активное умение",
       "desc": "Автоматическая атака ротации.",
-      "depends_on": "Атака / Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "3-й Навык (Тактическое умение)",
+      "name": "Й Навык (Тактическое умение)",
       "type": "Активное умение",
       "desc": "Контроль или поддержка.",
-      "depends_on": "Вторичный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "4-й Навык (Пассивный эффект)",
+      "name": "Й Навык (Пассивный эффект)",
       "type": "Пассивное умение",
       "desc": "Постоянный бокс ауры или усиления.",
-      "depends_on": "Пассивные статы",
-      "formula": "Постоянный эффект",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     }
   ],
   "ninjaturtles": [
     {
-      "name": "1-й Навык (Ультимативное умение)",
-      "type": "Ультимативный",
+      "name": "Й Навык (Ультимативное умение)",
+      "type": "Ультимативное умение",
       "desc": "Ключевая способность героя.",
-      "depends_on": "Главный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "2-й Навык (Основная спец-атака)",
+      "name": "Й Навык (Основная спец-атака)",
       "type": "Активное умение",
       "desc": "Автоматическая атака ротации.",
-      "depends_on": "Атака / Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "3-й Навык (Тактическое умение)",
+      "name": "Й Навык (Тактическое умение)",
       "type": "Активное умение",
       "desc": "Контроль или поддержка.",
-      "depends_on": "Вторичный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "4-й Навык (Пассивный эффект)",
+      "name": "Й Навык (Пассивный эффект)",
       "type": "Пассивное умение",
       "desc": "Постоянный бокс ауры или усиления.",
-      "depends_on": "Пассивные статы",
-      "formula": "Постоянный эффект",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     }
   ],
   "andvari": [
     {
-      "name": "1-й Навык (Ультимативное умение)",
-      "type": "Ультимативный",
+      "name": "Й Навык (Ультимативное умение)",
+      "type": "Ультимативное умение",
       "desc": "Ключевая способность героя.",
-      "depends_on": "Главный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "2-й Навык (Основная спец-атака)",
+      "name": "Й Навык (Основная спец-атака)",
       "type": "Активное умение",
       "desc": "Автоматическая атака ротации.",
-      "depends_on": "Атака / Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "3-й Навык (Тактическое умение)",
+      "name": "Й Навык (Тактическое умение)",
       "type": "Активное умение",
       "desc": "Контроль или поддержка.",
-      "depends_on": "Вторичный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "4-й Навык (Пассивный эффект)",
+      "name": "Й Навык (Пассивный эффект)",
       "type": "Пассивное умение",
       "desc": "Постоянный бокс ауры или усиления.",
-      "depends_on": "Пассивные статы",
-      "formula": "Постоянный эффект",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     }
   ],
   "cleaver": [
     {
-      "name": "1-й Навык (Ультимативное умение)",
-      "type": "Ультимативный",
+      "name": "Й Навык (Ультимативное умение)",
+      "type": "Ультимативное умение",
       "desc": "Ключевая способность героя.",
-      "depends_on": "Главный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "2-й Навык (Основная спец-атака)",
+      "name": "Й Навык (Основная спец-атака)",
       "type": "Активное умение",
       "desc": "Автоматическая атака ротации.",
-      "depends_on": "Атака / Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "3-й Навык (Тактическое умение)",
+      "name": "Й Навык (Тактическое умение)",
       "type": "Активное умение",
       "desc": "Контроль или поддержка.",
-      "depends_on": "Вторичный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "4-й Навык (Пассивный эффект)",
+      "name": "Й Навык (Пассивный эффект)",
       "type": "Пассивное умение",
       "desc": "Постоянный бокс ауры или усиления.",
-      "depends_on": "Пассивные статы",
-      "formula": "Постоянный эффект",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     }
   ],
   "faceless": [
     {
-      "name": "1-й Навык (Ультимативное умение)",
-      "type": "Ультимативный",
+      "name": "Й Навык (Ультимативное умение)",
+      "type": "Ультимативное умение",
       "desc": "Ключевая способность героя.",
-      "depends_on": "Главный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "2-й Навык (Основная спец-атака)",
+      "name": "Й Навык (Основная спец-атака)",
       "type": "Активное умение",
       "desc": "Автоматическая атака ротации.",
-      "depends_on": "Атака / Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "3-й Навык (Тактическое умение)",
+      "name": "Й Навык (Тактическое умение)",
       "type": "Активное умение",
       "desc": "Контроль или поддержка.",
-      "depends_on": "Вторичный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "4-й Навык (Пассивный эффект)",
+      "name": "Й Навык (Пассивный эффект)",
       "type": "Пассивное умение",
       "desc": "Постоянный бокс ауры или усиления.",
-      "depends_on": "Пассивные статы",
-      "formula": "Постоянный эффект",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     }
   ],
   "fafnir": [
     {
-      "name": "1-й Навык (Ультимативное умение)",
-      "type": "Ультимативный",
+      "name": "Й Навык (Ультимативное умение)",
+      "type": "Ультимативное умение",
       "desc": "Ключевая способность героя.",
-      "depends_on": "Главный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "2-й Навык (Основная спец-атака)",
+      "name": "Й Навык (Основная спец-атака)",
       "type": "Активное умение",
       "desc": "Автоматическая атака ротации.",
-      "depends_on": "Атака / Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "3-й Навык (Тактическое умение)",
+      "name": "Й Навык (Тактическое умение)",
       "type": "Активное умение",
       "desc": "Контроль или поддержка.",
-      "depends_on": "Вторичный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "4-й Навык (Пассивный эффект)",
+      "name": "Й Навык (Пассивный эффект)",
       "type": "Пассивное умение",
       "desc": "Постоянный бокс ауры или усиления.",
-      "depends_on": "Пассивные статы",
-      "formula": "Постоянный эффект",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     }
   ],
   "jhu": [
     {
-      "name": "1-й Навык (Ультимативное умение)",
-      "type": "Ультимативный",
+      "name": "Й Навык (Ультимативное умение)",
+      "type": "Ультимативное умение",
       "desc": "Ключевая способность героя.",
-      "depends_on": "Главный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "2-й Навык (Основная спец-атака)",
+      "name": "Й Навык (Основная спец-атака)",
       "type": "Активное умение",
       "desc": "Автоматическая атака ротации.",
-      "depends_on": "Атака / Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "3-й Навык (Тактическое умение)",
+      "name": "Й Навык (Тактическое умение)",
       "type": "Активное умение",
       "desc": "Контроль или поддержка.",
-      "depends_on": "Вторичный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "4-й Навык (Пассивный эффект)",
+      "name": "Й Навык (Пассивный эффект)",
       "type": "Пассивное умение",
       "desc": "Постоянный бокс ауры или усиления.",
-      "depends_on": "Пассивные статы",
-      "formula": "Постоянный эффект",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     }
   ],
   "judge": [
     {
-      "name": "1-й Навык (Ультимативное умение)",
-      "type": "Ультимативный",
+      "name": "Й Навык (Ультимативное умение)",
+      "type": "Ультимативное умение",
       "desc": "Ключевая способность героя.",
-      "depends_on": "Главный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "2-й Навык (Основная спец-атака)",
+      "name": "Й Навык (Основная спец-атака)",
       "type": "Активное умение",
       "desc": "Автоматическая атака ротации.",
-      "depends_on": "Атака / Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "3-й Навык (Тактическое умение)",
+      "name": "Й Навык (Тактическое умение)",
       "type": "Активное умение",
       "desc": "Контроль или поддержка.",
-      "depends_on": "Вторичный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "4-й Навык (Пассивный эффект)",
+      "name": "Й Навык (Пассивный эффект)",
       "type": "Пассивное умение",
       "desc": "Постоянный бокс ауры или усиления.",
-      "depends_on": "Пассивные статы",
-      "formula": "Постоянный эффект",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     }
   ],
   "lars": [
     {
-      "name": "1-й Навык (Ультимативное умение)",
-      "type": "Ультимативный",
+      "name": "Й Навык (Ультимативное умение)",
+      "type": "Ультимативное умение",
       "desc": "Ключевая способность героя.",
-      "depends_on": "Главный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "2-й Навык (Основная спец-атака)",
+      "name": "Й Навык (Основная спец-атака)",
       "type": "Активное умение",
       "desc": "Автоматическая атака ротации.",
-      "depends_on": "Атака / Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "3-й Навык (Тактическое умение)",
+      "name": "Й Навык (Тактическое умение)",
       "type": "Активное умение",
       "desc": "Контроль или поддержка.",
-      "depends_on": "Вторичный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "4-й Навык (Пассивный эффект)",
+      "name": "Й Навык (Пассивный эффект)",
       "type": "Пассивное умение",
       "desc": "Постоянный бокс ауры или усиления.",
-      "depends_on": "Пассивные статы",
-      "formula": "Постоянный эффект",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     }
   ],
   "lian": [
     {
-      "name": "1-й Навык (Ультимативное умение)",
-      "type": "Ультимативный",
+      "name": "Й Навык (Ультимативное умение)",
+      "type": "Ультимативное умение",
       "desc": "Ключевая способность героя.",
-      "depends_on": "Главный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "2-й Навык (Основная спец-атака)",
+      "name": "Й Навык (Основная спец-атака)",
       "type": "Активное умение",
       "desc": "Автоматическая атака ротации.",
-      "depends_on": "Атака / Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "3-й Навык (Тактическое умение)",
+      "name": "Й Навык (Тактическое умение)",
       "type": "Активное умение",
       "desc": "Контроль или поддержка.",
-      "depends_on": "Вторичный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "4-й Навык (Пассивный эффект)",
+      "name": "Й Навык (Пассивный эффект)",
       "type": "Пассивное умение",
       "desc": "Постоянный бокс ауры или усиления.",
-      "depends_on": "Пассивные статы",
-      "formula": "Постоянный эффект",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     }
   ],
   "phobos": [
     {
-      "name": "1-й Навык (Ультимативное умение)",
-      "type": "Ультимативный",
+      "name": "Й Навык (Ультимативное умение)",
+      "type": "Ультимативное умение",
       "desc": "Ключевая способность героя.",
-      "depends_on": "Главный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "2-й Навык (Основная спец-атака)",
+      "name": "Й Навык (Основная спец-атака)",
       "type": "Активное умение",
       "desc": "Автоматическая атака ротации.",
-      "depends_on": "Атака / Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "3-й Навык (Тактическое умение)",
+      "name": "Й Навык (Тактическое умение)",
       "type": "Активное умение",
       "desc": "Контроль или поддержка.",
-      "depends_on": "Вторичный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "4-й Навык (Пассивный эффект)",
+      "name": "Й Навык (Пассивный эффект)",
       "type": "Пассивное умение",
       "desc": "Постоянный бокс ауры или усиления.",
-      "depends_on": "Пассивные статы",
-      "formula": "Постоянный эффект",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     }
   ],
   "satori": [
     {
-      "name": "1-й Навык (Ультимативное умение)",
-      "type": "Ультимативный",
+      "name": "Й Навык (Ультимативное умение)",
+      "type": "Ультимативное умение",
       "desc": "Ключевая способность героя.",
-      "depends_on": "Главный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "2-й Навык (Основная спец-атака)",
+      "name": "Й Навык (Основная спец-атака)",
       "type": "Активное умение",
       "desc": "Автоматическая атака ротации.",
-      "depends_on": "Атака / Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "3-й Навык (Тактическое умение)",
+      "name": "Й Навык (Тактическое умение)",
       "type": "Активное умение",
       "desc": "Контроль или поддержка.",
-      "depends_on": "Вторичный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "4-й Навык (Пассивный эффект)",
+      "name": "Й Навык (Пассивный эффект)",
       "type": "Пассивное умение",
       "desc": "Постоянный бокс ауры или усиления.",
-      "depends_on": "Пассивные статы",
-      "formula": "Постоянный эффект",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     }
   ],
   "alvanor": [
     {
-      "name": "1-й Навык (Ультимативное умение)",
-      "type": "Ультимативный",
+      "name": "Й Навык (Ультимативное умение)",
+      "type": "Ультимативное умение",
       "desc": "Ключевая способность героя.",
-      "depends_on": "Главный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "2-й Навык (Основная спец-атака)",
+      "name": "Й Навык (Основная спец-атака)",
       "type": "Активное умение",
       "desc": "Автоматическая атака ротации.",
-      "depends_on": "Атака / Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "3-й Навык (Тактическое умение)",
+      "name": "Й Навык (Тактическое умение)",
       "type": "Активное умение",
       "desc": "Контроль или поддержка.",
-      "depends_on": "Вторичный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "4-й Навык (Пассивный эффект)",
+      "name": "Й Навык (Пассивный эффект)",
       "type": "Пассивное умение",
       "desc": "Постоянный бокс ауры или усиления.",
-      "depends_on": "Пассивные статы",
-      "formula": "Постоянный эффект",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     }
   ],
   "artemis": [
     {
-      "name": "1-й Навык (Ультимативное умение)",
-      "type": "Ультимативный",
+      "name": "Й Навык (Ультимативное умение)",
+      "type": "Ультимативное умение",
       "desc": "Ключевая способность героя.",
-      "depends_on": "Главный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "2-й Навык (Основная спец-атака)",
+      "name": "Й Навык (Основная спец-атака)",
       "type": "Активное умение",
       "desc": "Автоматическая атака ротации.",
-      "depends_on": "Атака / Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "3-й Навык (Тактическое умение)",
+      "name": "Й Навык (Тактическое умение)",
       "type": "Активное умение",
       "desc": "Контроль или поддержка.",
-      "depends_on": "Вторичный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "4-й Навык (Пассивный эффект)",
+      "name": "Й Навык (Пассивный эффект)",
       "type": "Пассивное умение",
       "desc": "Постоянный бокс ауры или усиления.",
-      "depends_on": "Пассивные статы",
-      "formula": "Постоянный эффект",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     }
   ],
   "astrid": [
     {
-      "name": "1-й Навык (Ультимативное умение)",
-      "type": "Ультимативный",
+      "name": "Й Навык (Ультимативное умение)",
+      "type": "Ультимативное умение",
       "desc": "Ключевая способность героя.",
-      "depends_on": "Главный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "2-й Навык (Основная спец-атака)",
+      "name": "Й Навык (Основная спец-атака)",
       "type": "Активное умение",
       "desc": "Автоматическая атака ротации.",
-      "depends_on": "Атака / Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "3-й Навык (Тактическое умение)",
+      "name": "Й Навык (Тактическое умение)",
       "type": "Активное умение",
       "desc": "Контроль или поддержка.",
-      "depends_on": "Вторичный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "4-й Навык (Пассивный эффект)",
+      "name": "Й Навык (Пассивный эффект)",
       "type": "Пассивное умение",
       "desc": "Постоянный бокс ауры или усиления.",
-      "depends_on": "Пассивные статы",
-      "formula": "Постоянный эффект",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     }
   ],
   "cornelius": [
     {
-      "name": "1-й Навык (Ультимативное умение)",
-      "type": "Ультимативный",
+      "name": "Й Навык (Ультимативное умение)",
+      "type": "Ультимативное умение",
       "desc": "Ключевая способность героя.",
-      "depends_on": "Главный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "2-й Навык (Основная спец-атака)",
+      "name": "Й Навык (Основная спец-атака)",
       "type": "Активное умение",
       "desc": "Автоматическая атака ротации.",
-      "depends_on": "Атака / Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "3-й Навык (Тактическое умение)",
+      "name": "Й Навык (Тактическое умение)",
       "type": "Активное умение",
       "desc": "Контроль или поддержка.",
-      "depends_on": "Вторичный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "4-й Навык (Пассивный эффект)",
+      "name": "Й Навык (Пассивный эффект)",
       "type": "Пассивное умение",
       "desc": "Постоянный бокс ауры или усиления.",
-      "depends_on": "Пассивные статы",
-      "formula": "Постоянный эффект",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     }
   ],
   "daredevil": [
     {
-      "name": "1-й Навык (Ультимативное умение)",
-      "type": "Ультимативный",
+      "name": "Й Навык (Ультимативное умение)",
+      "type": "Ультимативное умение",
       "desc": "Ключевая способность героя.",
-      "depends_on": "Главный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "2-й Навык (Основная спец-атака)",
+      "name": "Й Навык (Основная спец-атака)",
       "type": "Активное умение",
       "desc": "Автоматическая атака ротации.",
-      "depends_on": "Атака / Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "3-й Навык (Тактическое умение)",
+      "name": "Й Навык (Тактическое умение)",
       "type": "Активное умение",
       "desc": "Контроль или поддержка.",
-      "depends_on": "Вторичный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "4-й Навык (Пассивный эффект)",
+      "name": "Й Навык (Пассивный эффект)",
       "type": "Пассивное умение",
       "desc": "Постоянный бокс ауры или усиления.",
-      "depends_on": "Пассивные статы",
-      "formula": "Постоянный эффект",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     }
   ],
   "ginger": [
     {
-      "name": "1-й Навык (Ультимативное умение)",
-      "type": "Ультимативный",
+      "name": "Й Навык (Ультимативное умение)",
+      "type": "Ультимативное умение",
       "desc": "Ключевая способность героя.",
-      "depends_on": "Главный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "2-й Навык (Основная спец-атака)",
+      "name": "Й Навык (Основная спец-атака)",
       "type": "Активное умение",
       "desc": "Автоматическая атака ротации.",
-      "depends_on": "Атака / Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "3-й Навык (Тактическое умение)",
+      "name": "Й Навык (Тактическое умение)",
       "type": "Активное умение",
       "desc": "Контроль или поддержка.",
-      "depends_on": "Вторичный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "4-й Навык (Пассивный эффект)",
+      "name": "Й Навык (Пассивный эффект)",
       "type": "Пассивное умение",
       "desc": "Постоянный бокс ауры или усиления.",
-      "depends_on": "Пассивные статы",
-      "formula": "Постоянный эффект",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     }
   ],
   "jet": [
     {
-      "name": "✅ Pros",
-      "type": "Ультимативный (Активный)",
-      "desc": "✅ Pros Strong backline support: Исцелениеs and buffs the ally with the highest Физическая Атака. Increases critical hit chance for all allies through Inordinate Fury . Reduces enemy Исцелениеing and lowers Броня of the highest-Броня target with Acid Shot . Excellent synergy with Fighters and Marksmen (Dante, K",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "❌ Cons",
+      "name": "От",
       "type": "Активное умение",
-      "desc": "❌ Cons Vulnerable to burst Урон due to being a backline support with moderate Здоровье. Relies heavily on allies’ positioning and stats to maximize Исцелениеing and buffs. Passive critical hit bonus ( Inordinate Fury ) only affects physical Урон allies; mages’ skills do not benefit fully. Skills can be",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "От - с Физическая Атака . пока — , Физическая Атака , 30% атака , и здоровья секунду ’s или ’s . : ( 20%",
+      "depends_on": "Физическая Атака",
+      "formula": "Рассчитывается от Физическая Атака и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "Elixir of Vigor",
-      "type": "Активное умение",
-      "desc": "Elixir of Vigor Jet channels a life-giving elixir toward the ally with the highest Физическая Атака . While the effect is active, that ally gains increased Физическая Атака , 30% faster attack speed, and regenerates Здоровье every second until Jet’s energy runs out or he’s interrupted. Formula: ( 20% Ma",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "Acid Shot",
+      "name": "Умение 4",
       "type": "Пассивное умение",
-      "desc": "Acid Shot Jet fires acid at the enemy with the highest Броня, reducing their Броня for 8 seconds. This helps your Урон dealers hit harder, especially against tough tanks. Formula: ( 10% Магическая Атака + Ivl * 25) Броня Reduction. Evolution Priority: Medium-High – The effect is strong in physical tea",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "В враг с Броня, Броня для 8 секунд. урона , . : ( 10% Магическая Атака + * 25) Броня . : - – — в физический",
+      "depends_on": "Магическая Атака",
+      "formula": "Рассчитывается от Магическая Атака и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
+    },
+    {
+      "name": "Навык 3",
+      "type": "Активное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
+    },
+    {
+      "name": "Навык 4",
+      "type": "Пассивное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
     }
   ],
   "karkh": [
     {
-      "name": "1-й Навык (Ультимативное умение)",
-      "type": "Ультимативный",
+      "name": "Й Навык (Ультимативное умение)",
+      "type": "Ультимативное умение",
       "desc": "Ключевая способность героя.",
-      "depends_on": "Главный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "2-й Навык (Основная спец-атака)",
+      "name": "Й Навык (Основная спец-атака)",
       "type": "Активное умение",
       "desc": "Автоматическая атака ротации.",
-      "depends_on": "Атака / Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "3-й Навык (Тактическое умение)",
+      "name": "Й Навык (Тактическое умение)",
       "type": "Активное умение",
       "desc": "Контроль или поддержка.",
-      "depends_on": "Вторичный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "4-й Навык (Пассивный эффект)",
+      "name": "Й Навык (Пассивный эффект)",
       "type": "Пассивное умение",
       "desc": "Постоянный бокс ауры или усиления.",
-      "depends_on": "Пассивные статы",
-      "formula": "Постоянный эффект",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     }
   ],
   "maya": [
     {
-      "name": "1-й Навык (Ультимативное умение)",
-      "type": "Ультимативный",
+      "name": "Й Навык (Ультимативное умение)",
+      "type": "Ультимативное умение",
       "desc": "Ключевая способность героя.",
-      "depends_on": "Главный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "2-й Навык (Основная спец-атака)",
+      "name": "Й Навык (Основная спец-атака)",
       "type": "Активное умение",
       "desc": "Автоматическая атака ротации.",
-      "depends_on": "Атака / Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "3-й Навык (Тактическое умение)",
+      "name": "Й Навык (Тактическое умение)",
       "type": "Активное умение",
       "desc": "Контроль или поддержка.",
-      "depends_on": "Вторичный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "4-й Навык (Пассивный эффект)",
+      "name": "Й Навык (Пассивный эффект)",
       "type": "Пассивное умение",
       "desc": "Постоянный бокс ауры или усиления.",
-      "depends_on": "Пассивные статы",
-      "formula": "Постоянный эффект",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     }
   ],
   "tristan": [
     {
-      "name": "1-й Навык (Ультимативное умение)",
-      "type": "Ультимативный",
+      "name": "Й Навык (Ультимативное умение)",
+      "type": "Ультимативное умение",
       "desc": "Ключевая способность героя.",
-      "depends_on": "Главный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "2-й Навык (Основная спец-атака)",
+      "name": "Й Навык (Основная спец-атака)",
       "type": "Активное умение",
       "desc": "Автоматическая атака ротации.",
-      "depends_on": "Атака / Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "3-й Навык (Тактическое умение)",
+      "name": "Й Навык (Тактическое умение)",
       "type": "Активное умение",
       "desc": "Контроль или поддержка.",
-      "depends_on": "Вторичный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "4-й Навык (Пассивный эффект)",
+      "name": "Й Навык (Пассивный эффект)",
       "type": "Пассивное умение",
       "desc": "Постоянный бокс ауры или усиления.",
-      "depends_on": "Пассивные статы",
-      "formula": "Постоянный эффект",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     }
   ],
   "chaba": [
     {
-      "name": "1-й Навык (Ультимативное умение)",
-      "type": "Ультимативный",
+      "name": "Й Навык (Ультимативное умение)",
+      "type": "Ультимативное умение",
       "desc": "Ключевая способность героя.",
-      "depends_on": "Главный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "2-й Навык (Основная спец-атака)",
+      "name": "Й Навык (Основная спец-атака)",
       "type": "Активное умение",
       "desc": "Автоматическая атака ротации.",
-      "depends_on": "Атака / Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "3-й Навык (Тактическое умение)",
+      "name": "Й Навык (Тактическое умение)",
       "type": "Активное умение",
       "desc": "Контроль или поддержка.",
-      "depends_on": "Вторичный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "4-й Навык (Пассивный эффект)",
+      "name": "Й Навык (Пассивный эффект)",
       "type": "Пассивное умение",
       "desc": "Постоянный бокс ауры или усиления.",
-      "depends_on": "Пассивные статы",
-      "formula": "Постоянный эффект",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     }
   ],
   "darkstar": [
     {
-      "name": "1-й Навык (Ультимативное умение)",
-      "type": "Ультимативный",
+      "name": "Й Навык (Ультимативное умение)",
+      "type": "Ультимативное умение",
       "desc": "Ключевая способность героя.",
-      "depends_on": "Главный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "2-й Навык (Основная спец-атака)",
+      "name": "Й Навык (Основная спец-атака)",
       "type": "Активное умение",
       "desc": "Автоматическая атака ротации.",
-      "depends_on": "Атака / Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "3-й Навык (Тактическое умение)",
+      "name": "Й Навык (Тактическое умение)",
       "type": "Активное умение",
       "desc": "Контроль или поддержка.",
-      "depends_on": "Вторичный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "4-й Навык (Пассивный эффект)",
+      "name": "Й Навык (Пассивный эффект)",
       "type": "Пассивное умение",
       "desc": "Постоянный бокс ауры или усиления.",
-      "depends_on": "Пассивные статы",
-      "formula": "Постоянный эффект",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     }
   ],
   "elmir": [
     {
-      "name": "✅ Pros",
-      "type": "Ультимативный (Активный)",
-      "desc": "✅ Pros High Physical Урон Output: Elmir deals strong physical Урон, especially when his clones are active and hitting multiple targets. Clone Mechanic Creates Chaos: His skill Mirage summons clones based on enemy positions, confusing opponents and absorbing hits, which increases survivability fo",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "❌ Cons",
+      "name": "Умение 3",
       "type": "Активное умение",
-      "desc": "❌ Cons Weak Against Magic Teams: Lacks Защита от Магии and his clones are quickly wiped out by AoE Магическая Атакаs, making him vulnerable to heroes like Lars, Orion, or Helios. Clone Durability is Low: His clones don’t scale well into late-game survivability and can be taken out quickly by any AoE damag",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "– — 's . к и для 10 секунд, бонус Физическая Атака. к и урона . : – 's",
+      "depends_on": "Физическая Атака",
+      "formula": "Рассчитывается от Физическая Атака и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "1st – Shifting Sands",
-      "type": "Активное умение",
-      "desc": "1st – Shifting Sands This is Elmir's main skill. He jumps to the backline and becomes a ranged attacker for 10 seconds, gaining bonus Физическая Атака. This move allows him to avoid danger and increase Урон safely from a distance. Evolution Priority: Very High – This skill defines Elmir's playstyle",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "3rd – Mirage",
+      "name": "Умение 4",
       "type": "Пассивное умение",
-      "desc": "3rd – Mirage This skill creates a sand clone that helps distract enemies. The clone has 74% of Elmir's Здоровье and absorbs attacks, protecting your real heroes. Evolution Priority: Medium – Useful for defense and team protection, but not as impactful for Урон. Mirage Skill, Hero Wars Dominion Era.",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "– врагов. 74% от 's здоровья и , . : – для защита и , но для урона. , .",
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
+    },
+    {
+      "name": "Навык 3",
+      "type": "Активное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
+    },
+    {
+      "name": "Навык 4",
+      "type": "Пассивное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
     }
   ],
   "fox": [
     {
-      "name": "1-й Навык (Ультимативное умение)",
-      "type": "Ультимативный",
+      "name": "Й Навык (Ультимативное умение)",
+      "type": "Ультимативное умение",
       "desc": "Ключевая способность героя.",
-      "depends_on": "Главный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "2-й Навык (Основная спец-атака)",
+      "name": "Й Навык (Основная спец-атака)",
       "type": "Активное умение",
       "desc": "Автоматическая атака ротации.",
-      "depends_on": "Атака / Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "3-й Навык (Тактическое умение)",
+      "name": "Й Навык (Тактическое умение)",
       "type": "Активное умение",
       "desc": "Контроль или поддержка.",
-      "depends_on": "Вторичный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "4-й Навык (Пассивный эффект)",
+      "name": "Й Навык (Пассивный эффект)",
       "type": "Пассивное умение",
       "desc": "Постоянный бокс ауры или усиления.",
-      "depends_on": "Пассивные статы",
-      "formula": "Постоянный эффект",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     }
   ],
   "kai": [
     {
-      "name": "1-й Навык (Ультимативное умение)",
-      "type": "Ультимативный",
+      "name": "Й Навык (Ультимативное умение)",
+      "type": "Ультимативное умение",
       "desc": "Ключевая способность героя.",
-      "depends_on": "Главный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "2-й Навык (Основная спец-атака)",
+      "name": "Й Навык (Основная спец-атака)",
       "type": "Активное умение",
       "desc": "Автоматическая атака ротации.",
-      "depends_on": "Атака / Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "3-й Навык (Тактическое умение)",
+      "name": "Й Навык (Тактическое умение)",
       "type": "Активное умение",
       "desc": "Контроль или поддержка.",
-      "depends_on": "Вторичный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "4-й Навык (Пассивный эффект)",
+      "name": "Й Навык (Пассивный эффект)",
       "type": "Пассивное умение",
       "desc": "Постоянный бокс ауры или усиления.",
-      "depends_on": "Пассивные статы",
-      "formula": "Постоянный эффект",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     }
   ],
   "lilith": [
     {
-      "name": "1-й Навык (Ультимативное умение)",
-      "type": "Ультимативный",
+      "name": "Й Навык (Ультимативное умение)",
+      "type": "Ультимативное умение",
       "desc": "Ключевая способность героя.",
-      "depends_on": "Главный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "2-й Навык (Основная спец-атака)",
+      "name": "Й Навык (Основная спец-атака)",
       "type": "Активное умение",
       "desc": "Автоматическая атака ротации.",
-      "depends_on": "Атака / Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "3-й Навык (Тактическое умение)",
+      "name": "Й Навык (Тактическое умение)",
       "type": "Активное умение",
       "desc": "Контроль или поддержка.",
-      "depends_on": "Вторичный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "4-й Навык (Пассивный эффект)",
+      "name": "Й Навык (Пассивный эффект)",
       "type": "Пассивное умение",
       "desc": "Постоянный бокс ауры или усиления.",
-      "depends_on": "Пассивные статы",
-      "formula": "Постоянный эффект",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     }
   ],
   "luther": [
     {
-      "name": "1-й Навык (Ультимативное умение)",
-      "type": "Ультимативный",
+      "name": "Й Навык (Ультимативное умение)",
+      "type": "Ультимативное умение",
       "desc": "Ключевая способность героя.",
-      "depends_on": "Главный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "2-й Навык (Основная спец-атака)",
+      "name": "Й Навык (Основная спец-атака)",
       "type": "Активное умение",
       "desc": "Автоматическая атака ротации.",
-      "depends_on": "Атака / Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "3-й Навык (Тактическое умение)",
+      "name": "Й Навык (Тактическое умение)",
       "type": "Активное умение",
       "desc": "Контроль или поддержка.",
-      "depends_on": "Вторичный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "4-й Навык (Пассивный эффект)",
+      "name": "Й Навык (Пассивный эффект)",
       "type": "Пассивное умение",
       "desc": "Постоянный бокс ауры или усиления.",
-      "depends_on": "Пассивные статы",
-      "formula": "Постоянный эффект",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     }
   ],
   "markus": [
     {
-      "name": "1-й Навык (Ультимативное умение)",
-      "type": "Ультимативный",
+      "name": "Й Навык (Ультимативное умение)",
+      "type": "Ультимативное умение",
       "desc": "Ключевая способность героя.",
-      "depends_on": "Главный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "2-й Навык (Основная спец-атака)",
+      "name": "Й Навык (Основная спец-атака)",
       "type": "Активное умение",
       "desc": "Автоматическая атака ротации.",
-      "depends_on": "Атака / Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "3-й Навык (Тактическое умение)",
+      "name": "Й Навык (Тактическое умение)",
       "type": "Активное умение",
       "desc": "Контроль или поддержка.",
-      "depends_on": "Вторичный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "4-й Навык (Пассивный эффект)",
+      "name": "Й Навык (Пассивный эффект)",
       "type": "Пассивное умение",
       "desc": "Постоянный бокс ауры или усиления.",
-      "depends_on": "Пассивные статы",
-      "formula": "Постоянный эффект",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     }
   ],
   "peppy": [
     {
-      "name": "1-й Навык (Ультимативное умение)",
-      "type": "Ультимативный",
+      "name": "Й Навык (Ультимативное умение)",
+      "type": "Ультимативное умение",
       "desc": "Ключевая способность героя.",
-      "depends_on": "Главный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "2-й Навык (Основная спец-атака)",
+      "name": "Й Навык (Основная спец-атака)",
       "type": "Активное умение",
       "desc": "Автоматическая атака ротации.",
-      "depends_on": "Атака / Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "3-й Навык (Тактическое умение)",
+      "name": "Й Навык (Тактическое умение)",
       "type": "Активное умение",
       "desc": "Контроль или поддержка.",
-      "depends_on": "Вторичный Атрибут",
-      "formula": "Масштабируется от характеристик",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "4-й Навык (Пассивный эффект)",
+      "name": "Й Навык (Пассивный эффект)",
       "type": "Пассивное умение",
       "desc": "Постоянный бокс ауры или усиления.",
-      "depends_on": "Пассивные статы",
-      "formula": "Постоянный эффект",
-      "per_lvl": "Прирост за уровень"
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     }
   ],
   "ziri": [
     {
-      "name": "✅ Pros",
-      "type": "Ультимативный (Активный)",
-      "desc": "✅ Pros Can fully reflect physical Урон back to attackers, punishing melee heroes. Taunts enemies, protecting allies from targeted abilities like K’arkh’s and Amira’s first skills. High survivability thanks to her passive: she burrows underground when taking heavy Урон and Исцелениеs over time.",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "❌ Cons",
+      "name": "От",
       "type": "Активное умение",
-      "desc": "❌ Cons Less effective against teams that focus on magic Урон, which bypasses her reflection. Vulnerable to control effects like stun, freeze, or blind, which can interrupt her taunt or Исцелениеing cycle. When underground, the frontline is left exposed requiring another tank or protector to maintain de",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "От и врагов, к атака ей от ей союзников для 8 секунд. пока , бонус к Броня и Защита от Магии, урона . : – — ’s .",
+      "depends_on": "Здоровье и Броня",
+      "formula": "Рассчитывается от Здоровье и Броня и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
     },
     {
-      "name": "Focus of Hatred",
-      "type": "Активное умение",
-      "desc": "Focus of Hatred This skill makes Ziri shout and taunt all enemies, forcing them to attack her instead of her allies for 8 seconds. While taunting, she gets a big bonus to both Броня and Защита от Магии, reducing the Урон she takes. Evolution Priority: Very High – This is Ziri’s core tanking tool. Th",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
-    },
-    {
-      "name": "Reflection of Pain",
+      "name": "От",
       "type": "Пассивное умение",
-      "desc": "Reflection of Pain This skill reflects all physical Урон Ziri takes back at the attacker for 8 seconds. It's like a magical mirror great against physical heroes like Ishmael or Keira. Evolution Priority: High – Very effective in physical matchups. Upgrading this skill boosts Ziri’s threat Уровень an",
-      "depends_on": "Профильный Атрибут",
-      "formula": "Рассчитывается от основных характеристик и уровня",
-      "per_lvl": "Прирост за каждый уровень"
+      "desc": "От физический урона в для 8 секунд. 's физический или . : – в физический . ’s Уровень",
+      "depends_on": "Физическая Атака",
+      "formula": "Рассчитывается от Физическая Атака и уровня героя",
+      "per_lvl": "+100 ед. за каждый уровень"
+    },
+    {
+      "name": "Навык 3",
+      "type": "Активное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
+    },
+    {
+      "name": "Навык 4",
+      "type": "Пассивное умение",
+      "desc": "Автоматическая спец-атака ротации, повышающая боевую эффективность.",
+      "depends_on": "Главный Атрибут",
+      "formula": "Зависит от основного атрибута и уровня",
+      "per_lvl": "+За каждый уровень"
     }
   ]
 };
 
 export function getHeroSkills(heroId) {
   return HERO_SKILLS_DB[heroId] || [
-    { name: '1-й Навык', type: 'Ультимативный', desc: 'Ключевая способность.', depends_on: 'Атрибут', formula: 'Урон от уровня', per_lvl: '+За уровень' },
-    { name: '2-й Навык', type: 'Активное', desc: 'Спец-атака.', depends_on: 'Атрибут', formula: 'Урон от уровня', per_lvl: '+За уровень' },
-    { name: '3-й Навык', type: 'Активное', desc: 'Контроль/щит.', depends_on: 'Атрибут', formula: 'Эффект от уровня', per_lvl: '+За уровень' },
-    { name: '4-й Навык', type: 'Пассивное', desc: 'Аура.', depends_on: 'Атрибут', formula: 'Аура от уровня', per_lvl: '+За уровень' }
+    { name: '1-й Навык', type: 'Ультимативное умение', desc: 'Главная способность.', depends_on: 'Атрибут', formula: 'Урон от уровня', per_lvl: '+За уровень' },
+    { name: '2-й Навык', type: 'Активное умение', desc: 'Спец-атака ротации.', depends_on: 'Атрибут', formula: 'Урон от уровня', per_lvl: '+За уровень' },
+    { name: '3-й Навык', type: 'Активное умение', desc: 'Контроль или щит.', depends_on: 'Атрибут', formula: 'Эффект от уровня', per_lvl: '+За уровень' },
+    { name: '4-й Навык', type: 'Пассивное умение', desc: 'Пассивная аура.', depends_on: 'Атрибут', formula: 'Аура от уровня', per_lvl: '+За уровень' }
   ];
 }
