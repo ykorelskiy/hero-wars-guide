@@ -52,12 +52,13 @@ export function renderHeroDetail(heroId) {
   const allHeroes = getHeroes();
   const getAvatarAndSlug = (nameStr) => {
     if (!nameStr) return null;
-    const lower = nameStr.toLowerCase();
+    const lower = nameStr.toLowerCase().trim();
     const h = allHeroes.find(x => {
-      if (x.name && lower.includes(x.name.toLowerCase())) return true;
-      if (x.name_en && lower.includes(x.name_en.toLowerCase())) return true;
-      if (x.slug && lower.includes(x.slug.toLowerCase())) return true;
-      return false;
+      const nameRu = (x.name || '').toLowerCase().trim();
+      const nameEn = (x.name_en || '').toLowerCase().trim();
+      const idStr = (x.id || '').toLowerCase().replace(/_/g, ' ').trim();
+      
+      return lower === nameRu || lower === nameEn || lower === idStr || lower === (x.id||'').toLowerCase() || nameRu.includes(lower) || idStr.includes(lower) || lower.includes(nameRu) || lower.includes(idStr);
     });
     if (h) return { url: h.avatar_url || `/assets/heroes/${h.id}.png`, slug: h.id };
     return null;
