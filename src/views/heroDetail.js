@@ -53,36 +53,49 @@ export function renderHeroDetail(heroId) {
         <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255, 255, 255, 0.12); border-left: 4px solid ${statColor}; border-radius: 12px; padding: 18px; margin-bottom: 16px;">
           <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:8px; flex-wrap:wrap; gap:8px;">
             <div style="display:flex; align-items:center; gap:12px;">
-              <img src="/images/skills/${hero.id}_skill_${index + 1}.png" onerror="this.style.display='none'" style="width:48px;height:48px;border-radius:8px;border:1px solid rgba(255,255,255,0.15); object-fit:cover;" alt="Skill ${index + 1}" />
-              <b style="color: #ffffff; font-size: 1.15rem;">${s.name}</b>
+              <img src="/images/skills/${hero.id}_skill_${index + 1}.png" onerror="this.style.display='none'" style="width:52px;height:52px;border-radius:10px;border:2px solid ${statColor}44; object-fit:cover; background:rgba(0,0,0,0.3);" alt="Skill ${index + 1}" />
+              <div>
+                <b style="color: #ffffff; font-size: 1.1rem; display:block;">${s.name || s.name_en || 'Умение ' + (index+1)}</b>
+                ${s.name_en && s.name !== s.name_en ? `<span style="color:#64748b; font-size:0.8rem; font-style:italic;">${s.name_en}</span>` : ''}
+              </div>
             </div>
-            <span style="background: rgba(255, 255, 255, 0.1); color: #cbd5e1; padding: 3px 12px; border-radius: 6px; font-size: 0.85rem; font-weight: 600; align-self:center;">${s.type}</span>
+            <div style="display:flex; flex-direction:column; align-items:flex-end; gap:4px;">
+              <span style="background: rgba(255, 255, 255, 0.1); color: #cbd5e1; padding: 3px 12px; border-radius: 6px; font-size: 0.82rem; font-weight: 600;">${s.type}</span>
+              ${s.priority ? `<span style="background: rgba(250,204,21,0.15); color: #facc15; border:1px solid rgba(250,204,21,0.3); padding: 2px 10px; border-radius: 6px; font-size: 0.78rem; font-weight: 700;">🏆 Приоритет: ${s.priority}</span>` : ''}
+            </div>
           </div>
           <div style="color: #cbd5e1; font-size: 0.95rem; line-height: 1.6; margin-bottom: 12px;">${s.desc}</div>
-          <div style="display:grid; grid-template-columns: 1fr; gap:10px;">
-            ${s.depends_on ? `<div style="background: rgba(6, 182, 212, 0.1); border: 1px solid rgba(6, 182, 212, 0.25); color: #38bdf8; padding: 8px 14px; border-radius: 8px; font-size: 0.9rem; font-weight: 600;">🎯 <b>Зависит от:</b> <span style="color:#ffffff;">${s.depends_on}</span></div>` : ''}
-            ${s.formula ? `<div style="background: rgba(30, 41, 59, 0.9); border: 1px solid rgba(255, 255, 255, 0.15); padding: 10px 14px; border-radius: 8px; font-size: 0.92rem; color: #f8fafc;">📐 <b>Формула расчёта:</b> <span style="color:#facc15; font-weight:700;">${s.formula}</span></div>` : ''}
-            ${s.per_lvl ? `<div style="background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.25); color: #34d399; padding: 8px 14px; border-radius: 8px; font-size: 0.9rem; font-weight: 600;">📈 <b>Прирост за уровень:</b> <span style="color:#ffffff;">${s.per_lvl}</span></div>` : ''}
+          <div style="display:grid; grid-template-columns: 1fr; gap:8px;">
+            ${s.depends_on ? `<div style="background: rgba(6, 182, 212, 0.1); border: 1px solid rgba(6, 182, 212, 0.25); color: #38bdf8; padding: 8px 14px; border-radius: 8px; font-size: 0.88rem; font-weight: 600;">🎯 <b>Зависит от:</b> <span style="color:#ffffff;">${s.depends_on}</span></div>` : ''}
+            ${s.formula ? `<div style="background: rgba(30, 41, 59, 0.9); border: 1px solid rgba(255, 255, 255, 0.15); padding: 10px 14px; border-radius: 8px; font-size: 0.88rem; color: #f8fafc;">📐 <b>Формула:</b> <span style="color:#facc15; font-weight:700;">${s.formula}</span></div>` : ''}
+            ${s.per_lvl ? `<div style="background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.25); color: #34d399; padding: 8px 14px; border-radius: 8px; font-size: 0.88rem; font-weight: 600;">📈 <b>Прирост за уровень:</b> <span style="color:#ffffff;">${s.per_lvl}</span></div>` : ''}
           </div>
         </div>
       `).join('');
 
-  const artifactsHtml = (hero.artifacts && hero.artifacts.length > 0)
-    ? hero.artifacts.map(a => `
-        <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255, 255, 255, 0.12); border-left: 4px solid ${statColor}; border-radius: 12px; padding: 16px; margin-bottom: 14px;">
-          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
-            <b style="color: #ffffff; font-size: 1.1rem;">Слот ${a.slot}: ${a.name}</b>
-            <span style="background: rgba(255, 255, 255, 0.1); color: #cbd5e1; padding: 3px 12px; border-radius: 6px; font-size: 0.82rem;">${a.type}</span>
+  // Артефакты берём из guide (heroGuidesData), т.к. там полная информация из Alexandre Games
+  const artifactsSource = (heroGuide.artifacts && heroGuide.artifacts.length > 0)
+    ? heroGuide.artifacts
+    : (hero.artifacts && hero.artifacts.length > 0 ? hero.artifacts : []);
+
+  const artifactsHtml = artifactsSource.length > 0
+    ? artifactsSource.map((a, ai) => `
+        <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255, 255, 255, 0.12); border-left: 4px solid ${statColor}; border-radius: 12px; padding: 18px; margin-bottom: 14px;">
+          <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:10px; flex-wrap:wrap; gap:8px;">
+            <div style="display:flex; align-items:center; gap:12px;">
+              ${a.icon ? `<img src="${a.icon}" onerror="this.style.display='none'" style="width:48px;height:48px;border-radius:8px;object-fit:contain;background:rgba(0,0,0,0.3);border:1px solid rgba(255,255,255,0.15);" />` : `<div style="width:48px;height:48px;border-radius:8px;background:rgba(250,204,21,0.15);border:1px solid rgba(250,204,21,0.3);display:flex;align-items:center;justify-content:center;font-size:1.5rem;">🗡️</div>`}
+              <div>
+                <b style="color: #ffffff; font-size: 1.05rem; display:block;">${a.name || a.name_ru || 'Артефакт ' + (ai+1)}</b>
+                <span style="color: #64748b; font-size:0.82rem;">${a.slot || (ai === 0 ? 'Оружие' : ai === 1 ? 'Книга' : 'Кольцо')}</span>
+              </div>
+            </div>
+            ${a.priority ? `<span style="background:rgba(250,204,21,0.15); color:#facc15; border:1px solid rgba(250,204,21,0.3); padding:4px 12px; border-radius:8px; font-size:0.82rem; font-weight:700; align-self:center;">🏆 ${a.priority}</span>` : ''}
           </div>
-          ${a.team_buff ? `<div style="color: #f59e0b; font-weight: 700; font-size: 0.92rem; margin-bottom: 8px;">⚡ Командная активация (9 сек): ${a.team_buff}</div>` : ''}
-          ${a.stats ? `<div style="color: #94a3b8; font-size: 0.9rem; margin-bottom: 8px;">📊 Параметры артефакта: ${a.stats}</div>` : ''}
-          <div style="display:grid; grid-template-columns: 1fr 1fr; gap:10px; margin-top: 8px; font-size: 0.88rem;">
-            <div style="background:rgba(255,255,255,0.04); padding:8px 12px; border-radius:6px; color:#cbd5e1;">⭐ <b>1★ (Базовый):</b> ${a.star1 || '10% прокачка'}</div>
-            <div style="background:rgba(16, 185, 129, 0.15); border:1px solid rgba(16, 185, 129, 0.3); padding:8px 12px; border-radius:6px; color:#34d399; font-weight:700;">🌟 <b>6★ (Абсолют):</b> ${a.star6 || '100% прокачка'}</div>
-          </div>
+          ${a.desc ? `<div style="color:#cbd5e1; font-size:0.9rem; line-height:1.6;">${a.desc}</div>` : ''}
+          ${a.team_buff ? `<div style="color: #f59e0b; font-weight: 700; font-size: 0.9rem; margin-top: 8px;">⚡ Бафф команды: ${a.team_buff}</div>` : ''}
         </div>
       `).join('')
-    : '<div class="bx info">Подробное описание артефактов обновляется...</div>';
+    : '<div style="color:#94a3b8; font-size:0.9rem; padding:12px;">Информация об артефактах обновляется после полного обхода сайта Alexandre Games.</div>';
 
   // Skins HTML
   const skinsHtml = (heroGuide.skins && heroGuide.skins.length > 0)
@@ -155,48 +168,75 @@ export function renderHeroDetail(heroId) {
     <!-- STRATEGIC GUIDE SECTION -->
     <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(16, 185, 129, 0.25); border-radius: 16px; padding: 22px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
       <h3 style="color:#34d399; font-size:1.3rem; margin-bottom:14px; display:flex; align-items:center; gap:8px;">
-        💡 Стратегический Гайд (Синергии, Контр-пики, Флаги и Питомцы)
+        💡 Стратегический Гайд (Плюсы, Минусы, Контр-пики, Флаги, Питомцы)
       </h3>
-      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:14px;">
-        
-        ${heroGuide.conversion_stat ? `
-        <div style="background:rgba(239, 68, 68, 0.1); border:1px solid rgba(239, 68, 68, 0.3); padding:16px; border-radius:12px; grid-column: 1 / -1;">
-          <b style="color:#f87171; font-size:1rem; display:block; margin-bottom:6px;">⚡ Пассивная Конверсия Характеристик и Преображение:</b>
-          <p style="color:#fecdd3; font-size:0.95rem; line-height:1.6; margin:0; font-weight:600;">
-            ${heroGuide.conversion_stat}
-          </p>
+
+      <!-- Pros & Cons -->
+      ${(heroGuide.pros?.length > 0 || heroGuide.cons?.length > 0) ? `
+      <div style="display:grid; grid-template-columns: 1fr 1fr; gap:14px; margin-bottom:14px;">
+        ${heroGuide.pros?.length > 0 ? `
+        <div style="background:rgba(16, 185, 129, 0.08); border:1px solid rgba(16, 185, 129, 0.25); padding:16px; border-radius:12px;">
+          <b style="color:#34d399; font-size:0.95rem; display:block; margin-bottom:8px;">✅ Достоинства:</b>
+          <ul style="margin:0; padding-left:18px; color:#cbd5e1; font-size:0.88rem; line-height:1.6;">
+            ${heroGuide.pros.map(p => `<li>${p}</li>`).join('')}
+          </ul>
         </div>` : ''}
-
-        <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); padding:16px; border-radius:12px;">
-          <b style="color:#facc15; font-size:1rem; display:block; margin-bottom:8px;">🎯 Лучшие Синергии и Напарники:</b>
-          <p style="color:#cbd5e1; font-size:0.92rem; line-height:1.6; margin:0;">
-            ${heroGuide.allies || `Отлично сочетается с героями фракции ${hero.faction || 'Путь вечности'} и бафферами своего главного атрибута.`}
-          </p>
-        </div>
-
-        <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); padding:16px; border-radius:12px;">
-          <b style="color:#ef4444; font-size:1rem; display:block; margin-bottom:8px;">⚔️ Опасные Контр-пики:</b>
-          <p style="color:#cbd5e1; font-size:0.92rem; line-height:1.6; margin:0;">
-            ${heroGuide.counters || 'Уязвим к героям с противоположными типами урона и глушением.'}
-          </p>
-        </div>
-
-        <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); padding:16px; border-radius:12px;">
-          <b style="color:#60a5fa; font-size:1rem; display:block; margin-bottom:8px;">🐾 Совместимость с Питомцами:</b>
-          <p style="color:#cbd5e1; font-size:0.92rem; line-height:1.6; margin:0;">
-            ${heroGuide.pets || 'Подходят профильные питомцы на защиту, пробивание или набор энергии.'}
-          </p>
-        </div>
-
-        ${heroGuide.war_flags ? `
-        <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); padding:16px; border-radius:12px;">
-          <b style="color:#a78bfa; font-size:1rem; display:block; margin-bottom:8px;">🚩 Рекомендуемые Флаги Войны (War Flags):</b>
-          <p style="color:#cbd5e1; font-size:0.92rem; line-height:1.6; margin:0;">
-            ${heroGuide.war_flags}
-          </p>
+        ${heroGuide.cons?.length > 0 ? `
+        <div style="background:rgba(239, 68, 68, 0.08); border:1px solid rgba(239, 68, 68, 0.25); padding:16px; border-radius:12px;">
+          <b style="color:#f87171; font-size:0.95rem; display:block; margin-bottom:8px;">❌ Недостатки:</b>
+          <ul style="margin:0; padding-left:18px; color:#cbd5e1; font-size:0.88rem; line-height:1.6;">
+            ${heroGuide.cons.map(c => `<li>${c}</li>`).join('')}
+          </ul>
         </div>` : ''}
+      </div>` : ''}
 
-      </div>
+      <!-- Counters -->
+      ${Array.isArray(heroGuide.counters) && heroGuide.counters.length > 0 ? `
+      <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(239,68,68,0.2); padding:16px; border-radius:12px; margin-bottom:14px;">
+        <b style="color:#ef4444; font-size:0.95rem; display:block; margin-bottom:10px;">⚔️ Контр-пики против ${hero.name}:</b>
+        <div style="display:flex; flex-direction:column; gap:8px;">
+          ${heroGuide.counters.map(c => `
+          <div style="background:rgba(239,68,68,0.06); padding:10px 14px; border-radius:8px; border-left:3px solid rgba(239,68,68,0.4);">
+            <b style="color:#fca5a5; font-size:0.88rem;">${c.hero || c}</b>
+            ${c.reason ? `<div style="color:#94a3b8; font-size:0.83rem; margin-top:3px;">${c.reason}</div>` : ''}
+          </div>`).join('')}
+        </div>
+      </div>` : (heroGuide.counters && typeof heroGuide.counters === 'string' ? `
+      <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(239,68,68,0.2); padding:16px; border-radius:12px; margin-bottom:14px;">
+        <b style="color:#ef4444; font-size:0.95rem; display:block; margin-bottom:8px;">⚔️ Контр-пики:</b>
+        <p style="color:#cbd5e1; font-size:0.9rem; line-height:1.6; margin:0;">${heroGuide.counters}</p>
+      </div>` : '')}
+
+      <!-- War Flags -->
+      ${Array.isArray(heroGuide.war_flags) && heroGuide.war_flags.length > 0 ? `
+      <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(167,139,250,0.2); padding:16px; border-radius:12px; margin-bottom:14px;">
+        <b style="color:#a78bfa; font-size:0.95rem; display:block; margin-bottom:10px;">🚩 Рекомендуемые Боевые Знамёна (War Flags):</b>
+        <div style="display:flex; flex-direction:column; gap:8px;">
+          ${heroGuide.war_flags.map(wf => `
+          <div style="background:rgba(167,139,250,0.06); padding:10px 14px; border-radius:8px; border-left:3px solid rgba(167,139,250,0.4);">
+            <b style="color:#c4b5fd; font-size:0.88rem;">${wf.name || wf}</b>
+            ${wf.desc ? `<div style="color:#94a3b8; font-size:0.83rem; margin-top:3px;">${wf.desc}</div>` : ''}
+          </div>`).join('')}
+        </div>
+      </div>` : (heroGuide.war_flags && typeof heroGuide.war_flags === 'string' ? `
+      <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(167,139,250,0.2); padding:16px; border-radius:12px; margin-bottom:14px;">
+        <b style="color:#a78bfa; font-size:0.95rem; display:block; margin-bottom:8px;">🚩 Боевые Знамёна:</b>
+        <p style="color:#cbd5e1; font-size:0.9rem; line-height:1.6; margin:0;">${heroGuide.war_flags}</p>
+      </div>` : '')}
+
+      <!-- Patronage from guide -->
+      ${Array.isArray(heroGuide.patronage) && heroGuide.patronage.length > 0 ? `
+      <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(245,158,11,0.2); padding:16px; border-radius:12px;">
+        <b style="color:#f59e0b; font-size:0.95rem; display:block; margin-bottom:10px;">🐾 Лучший Патронаж Питомцев (из Alexandre Games):</b>
+        <div style="display:flex; flex-direction:column; gap:8px;">
+          ${heroGuide.patronage.map(p => `
+          <div style="background:rgba(245,158,11,0.06); padding:10px 14px; border-radius:8px; border-left:3px solid rgba(245,158,11,0.4);">
+            <b style="color:#fcd34d; font-size:0.88rem;">${p.place || p.pet || p}</b>
+            ${p.desc ? `<div style="color:#94a3b8; font-size:0.83rem; margin-top:3px;">${p.desc}</div>` : ''}
+          </div>`).join('')}
+        </div>
+      </div>` : ''}
+
     </div>
 
     <!-- SKINS EVOLUTION PRIORITY SECTION -->
