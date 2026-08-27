@@ -219,7 +219,6 @@ async function fetchHtml(heroId, url) {
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 async function parseHero(hero, url) {
-    const ai = getAI();
     const heroId = hero.id;
     console.log(`[${heroId}] Загрузка HTML...`);
     const html = await fetchHtml(hero.slug, url);
@@ -251,15 +250,20 @@ ${textContent.substring(0, 30000)}
 ---
 Найденные на странице изображения (выбери из них правильные для иконок скиллов и артефактов):
 ${images.join('\n')}
+
+ВАЖНОЕ ТРЕБОВАНИЕ: Модель, ты должна сгенерировать максимально подробные данные!
+1. Описание каждого скилла (поле desc) должно быть ДЛИННЫМ и подробным. 
+2. Раздел гайда (guide.overview) должен быть развернутым текстом на несколько абзацев. НЕ оставляй эти поля пустыми!
 `;
 
     console.log(`[${heroId}] Отправка в Gemini AI...`);
     
     let aiResult = '';
-    let retries = 5;
+    let retries = 30;
     let success = false;
     
     while(retries > 0 && !success) {
+        let ai = getAI();
         try {
             const response = await ai.models.generateContent({
                 model: 'gemini-3.5-flash',
@@ -268,22 +272,48 @@ ${images.join('\n')}
                     systemInstruction: SYSTEM_INSTRUCTION,
                     responseMimeType: 'application/json',
                     responseSchema: SCHEMA,
-                    temperature: 0.1
+                    temperature: 0.7
                 }
             });
             aiResult = response.text;
-            
             const lower = aiResult.toLowerCase();
             if (lower.includes('react') || lower.includes('<div') || lower.includes('tests pass')) {
                 console.warn(`[${heroId}] Обнаружена галлюцинация, пробуем еще раз...`);
                 retries--;
                 continue;
             }
+
+            const parsedData = JSON.parse(aiResult);
+            let hasEmptySkills = false;
+            
+            if (parsedData.skills && Array.isArray(parsedData.skills)) {
+                parsedData.skills.forEach((s, idx) => {
+                    if (!s.desc || s.desc.length < 20) {
+                        console.warn(`[${heroId}] Скилл ${idx + 1} слишком короткий или пустой. Отбраковка.`);
+                        hasEmptySkills = true;
+                    }
+                });
+            } else {
+                hasEmptySkills = true;
+            }
+
+            if (!parsedData.guide || !parsedData.guide.overview || parsedData.guide.overview.length < 50) {
+                console.warn(`[${heroId}] Гайд слишком короткий или пустой. Отбраковка.`);
+                hasEmptySkills = true;
+            }
+
+            if (hasEmptySkills) {
+                console.warn(`[${heroId}] ИИ вернул неполные данные:`, JSON.stringify(parsedData, null, 2).substring(0, 500));
+                retries--;
+                continue;
+            }
+
             success = true;
+            aiResult = JSON.stringify(parsedData);
         } catch (e) {
             if (e.message.includes('429') || e.message.includes('RESOURCE_EXHAUSTED')) {
-                console.log(`[${heroId}] Ошибка 429 (лимиты). Ждем 30 секунд...`);
-                await new Promise(r => setTimeout(r, 30000));
+                console.log(`[${heroId}] Ошибка 429 (лимиты). Жду 60 секунд для сброса квоты...`);
+                await new Promise(r => setTimeout(r, 60000));
                 retries--;
             } else {
                 console.error(`[${heroId}] Ошибка вызова ИИ:`, e.message);
