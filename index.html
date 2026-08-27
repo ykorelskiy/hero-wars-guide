@@ -3001,43 +3001,39 @@
 
     <!-- ---------- КАЛЬКУЛЯТОР КОНТРПИКОВ ---------- -->
     <section id="titans-counter">
-      <h2><span class="h-num">3</span> Калькулятор контрпиков</h2>
-      <p>
-        Выберите стихию противника — калькулятор покажет, чем атаковать
-        в атаке, чем защищаться, и что нейтрально.
+      <h2><span class="h-num">3</span> Универсальный Калькулятор Составов Титанов</h2>
+      <p class="lead">
+        Укажите количество титанов противника по стихиям и наличие тотема — калькулятор подберёт идеальную 5-ку ваших титанов в правильном порядке расстановки передовой линии при равной прокачке.
       </p>
 
-      <div class="calc" id="titansCounterWidget">
-        <div class="calc-controls counter-controls">
-          <div class="calc-field">
-            <label for="inpEnemy">Стихия противника</label>
-            <select id="titansInpEnemy" class="elem-select">
-              <option value="water">Вода</option>
-              <option value="fire">Огонь</option>
-              <option value="earth" selected>Земля</option>
-              <option value="light">Свет</option>
-              <option value="dark">Тьма</option>
-              <option value="distortion">Искажение</option>
-            </select>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));gap:20px;margin-top:20px;">
+        <!-- Card 1: Enemy Squad Selection -->
+        <div class="card" style="background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:20px;">
+          <h3 style="margin-top:0;margin-bottom:14px;font-size:16px;color:var(--gold);">⚔️ Состав противника</h3>
+          <div id="titanEnemyRows"></div>
+          <div class="total" id="titanTotalLine" style="text-align:center;margin-top:14px;font-size:13px;color:var(--text-dim);">Выбрано титанов врага: 0 из 5</div>
+          <div style="margin-top:14px;padding-top:12px;border-top:1px solid var(--border-soft);">
+            <div style="font-size:13px;color:var(--text-dim);margin-bottom:8px;">🗿 Тотем у врага:</div>
+            <div id="titanEtotem"></div>
           </div>
+          <button class="btn btn-ghost" onclick="clearTitanEnemy()" style="width:100%;margin-top:14px;padding:9px;font-size:13px;">🔄 Сбросить выбор</button>
         </div>
 
-        <div class="counter-results" id="counterResults">
-          <div class="counter-col counter-col-good">
-            <h4>Атаковать этим (даёт бонус урона)</h4>
-            <div id="titansCounterBeats" class="counter-chips"></div>
-          </div>
-          <div class="counter-col counter-col-bad">
-            <h4>Не ставить в атаку (получит меньше урона от вас)</h4>
-            <div id="titansCounterLoses" class="counter-chips"></div>
-          </div>
-          <div class="counter-col counter-col-neutral">
-            <h4>Нейтрально (без бонусов ни у кого)</h4>
-            <div id="titansCounterNeutral" class="counter-chips"></div>
+        <!-- Card 2: Recommended 5-Titan Counter Squad -->
+        <div class="card" style="background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:20px;">
+          <h3 style="margin-top:0;margin-bottom:14px;font-size:16px;color:var(--gold);">🏆 Рекомендуемый контр-состав</h3>
+          <div id="titanResultBox">
+            <div class="empty" style="text-align:center;color:var(--text-dim);padding:24px;">Добавьте титанов противника кнопками «+» слева</div>
           </div>
         </div>
+      </div>
 
-        <div class="calc-msg show ok" id="titansCounterNote"></div>
+      <!-- Card 3: Elemental Matrix Breakdown -->
+      <div class="card" style="background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:20px;margin-top:20px;">
+        <h3 style="margin-top:0;margin-bottom:14px;font-size:16px;color:var(--gold);">📊 Расклад эффективности по стихиям</h3>
+        <div id="titanMatrix">
+          <div class="empty" style="text-align:center;color:var(--text-dim);padding:16px;">—</div>
+        </div>
       </div>
     </section>
 
