@@ -47,7 +47,7 @@ export function renderHeroDetail(heroId) {
       `).join('')
     : '<div style="color:#94a3b8; font-size:0.9rem; padding:10px;">Нет прямых данных о патронаже питомцев</div>';
 
-  const officialSkills = getHeroSkills(hero.id);
+  const officialSkills = (hero.skills && hero.skills.length > 0) ? hero.skills : getHeroSkills(hero.id);
 
   const allHeroes = getHeroes();
   const getAvatarAndSlug = (nameStr) => {
