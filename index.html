@@ -107,7 +107,1477 @@
   
   <!-- ===================== GUIDES VIEW (EVENT GUIDES) ===================== -->
   <section id="view-guides" class="view">
-    <div class="valdur-guide-wrap">
+    <div style="display:flex;gap:12px;margin-bottom:24px;justify-content:center;flex-wrap:wrap;padding-top:10px;" id="guidesSwitcher">
+      <button class="fb on" id="btnGuideAlecto" data-guide="alecto" style="padding:10px 20px;font-size:0.95rem;font-weight:700;">📜 Часть 1: Падение завесы (Алекто)</button>
+      <button class="fb" id="btnGuideValdur" data-guide="valdur" style="padding:10px 20px;font-size:0.95rem;font-weight:700;">📜 Часть 2: День Суда (Валдур)</button>
+    </div>
+
+
+    <div id="guide-container-alecto" class="guide-container">
+      <div class="alecto-guide-wrap">
+<header class="site-header">
+  <div class="wrap header-inner">
+    <div class="brand">
+      <img src="/alecto-guide/assets/img/alecto-avatar.png" alt="Алекто" class="brand-icon">
+      <div>
+        <div class="brand-title">Fall of the Veil</div>
+        <div class="brand-sub">Алекто · F2P-гайд</div>
+      </div>
+    </div>
+    <button class="nav-toggle" id="alectoNavToggle" aria-label="Меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="layout wrap">
+
+  <!-- ===================== БОКОВАЯ НАВИГАЦИЯ ===================== -->
+  <aside class="sidebar" id="alectoSidebar">
+    <nav aria-label="Содержание">
+      <div class="toc-title">Содержание</div>
+      <ol class="toc" id="alectoToc">
+        <li><a href="#alecto-intro">О событии</a></li>
+        <li><a href="#alecto-status">Статус и связь с Валдуром</a></li>
+        <li><a href="#alecto-economy">Экономика события</a></li>
+        <li><a href="#alecto-budget">Бюджет кристаллов</a></li>
+        <li><a href="#alecto-workshop">Мастерская: главный вопрос</a></li>
+        <li><a href="#alecto-rule">Правило 5×</a></li>
+        <li><a href="#alecto-calc">Калькулятор</a></li>
+        <li><a href="#alecto-amulet">Амулет и главы</a></li>
+        <li><a href="#alecto-plans">Сравнение планов</a></li>
+        <li><a href="#alecto-roadmap">План по дням</a></li>
+        <li><a href="#alecto-battles">Бои и составы</a></li>
+        <li><a href="#alecto-talismans">Талисманы</a></li>
+        <li><a href="#alecto-shop">Магазин сапфиров</a></li>
+        <li><a href="#alecto-artifacts">Артефакты Искажения</a></li>
+        <li><a href="#alecto-huntress">Охотница Разлома</a></li>
+        <li><a href="#alecto-mistakes">Чего не делать</a></li>
+        <li><a href="#alecto-cheatsheet">Шпаргалка</a></li>
+        <li><a href="#alecto-sources">Источники</a></li>
+      </ol>
+    </nav>
+  </aside>
+
+  <!-- ===================== ОСНОВНОЙ КОНТЕНТ ===================== -->
+  <main id="main">
+
+    <!-- ---------- HERO ---------- -->
+    <section class="hero" id="alecto-intro">
+      <div class="hero-media">
+        <img src="/alecto-guide/assets/img/alecto.png" alt="Титан Алекто — Hero Wars: Dominion Era" loading="lazy">
+      </div>
+      <div class="hero-body">
+        <h1>Fall of the Veil — полный гайд для игроков без доната</h1>
+        <p class="lead">
+          Событие «Падение завесы» — дебют <strong>Алекто</strong>, стрелка стихии Искажения.
+          Первая половина связки из двух приключений: сразу за ней идёт
+          <strong>Judgment Day</strong> с Валдуром и Эхо.
+        </p>
+        <div class="meta-badges">
+          <span class="badge badge-date">21–26 августа 2026</span>
+          <span class="badge badge-dur">5 дней + 1 день магазина</span>
+          <span class="badge badge-lvl">Для уровней 60–90</span>
+        </div>
+        <div class="hero-cta">
+          <a href="#alecto-cheatsheet" class="btn btn-primary">Сразу к шпаргалке</a>
+          <a href="#alecto-workshop" class="btn btn-ghost">Разбор мастерской</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- СТАТУС ---------- -->
+    <section id="alecto-status">
+      <h2><span class="h-num">0</span> Статус события и связь с Валдуром</h2>
+
+      <div class="callout callout-warn">
+        <h4>Событие уже завершилось</h4>
+        <p>
+          Приключение Алекто шло <strong>с 21 по 26 августа 2026</strong>, магазин оставался
+          открытым ещё сутки. <strong>27 августа</strong> ресурсы автоматически
+          конвертировались, и стартовало приключение Валдура.
+        </p>
+        <p>
+          Этот гайд — <strong>справочный</strong>. Он полезен в трёх случаях:
+          понять, что именно перетекло (и не перетекло) в событие Валдура;
+          подготовиться к возврату Алекто в будущих событиях;
+          разобраться в механике мастерской, которая повторяется у всех титанов.
+        </p>
+      </div>
+
+      <h3>Что общего у двух приключений</h3>
+      <figure class="stat-figure">
+        <img src="/alecto-guide/assets/img/alecto-hero.png" alt="Событие Fall of the Veil — Алекто" loading="lazy">
+        <figcaption>Приключение «Падение завесы» — первая половина связки из двух событий Искажения.</figcaption>
+      </figure>
+      <p>
+        Алекто и Валдур связаны одной историей, но <strong>механически независимы</strong>.
+        Официальная формулировка: у каждого свой магазин, а прогресс реликвий
+        и баффов приключения начинается заново.
+      </p>
+
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr><th>Параметр</th><th>Алекто</th><th>Валдур и Эхо</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Даты</td><td>21–26 августа</td><td>27 августа – 1 сентября</td></tr>
+            <tr><td>Магазин после конца</td><td class="cell-good">+1 день</td><td class="cell-bad">без доп. дня</td></tr>
+            <tr><td>Экономика мастерской</td><td colspan="2" class="cell-same">Идентична — те же таблицы стоимости</td></tr>
+            <tr><td>Награды глав</td><td colspan="2" class="cell-same">Идентичны — 220 000 монет, 37 сапфиров</td></tr>
+            <tr><td>Первый артефакт</td><td>Крыло Зорвала</td><td>Поводья Зорвала</td></tr>
+            <tr><td>Третий артефакт</td><td>Печать Искажённой атаки</td><td>Печать Зова</td></tr>
+            <tr><td>Общий артефакт</td><td colspan="2" class="cell-same">Корона Искажения</td></tr>
+            <tr><td>Побочная ветка</td><td>Охотница Разлома</td><td>Вестники Разлома</td></tr>
+            <tr><td>Торговец</td><td>Венди</td><td>Фокс</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout callout-info">
+        <h4>Важное изменение с этого приключения</h4>
+        <p>
+          Реликвии и бафф приключения <strong>больше не обмениваются</strong> на сундуки
+          после окончания события. Это не касается основных ресурсов: неиспользованные
+          кристаллы энергии, монеты доблести и сапфиры по-прежнему автоматически
+          превращаются в сундуки.
+        </p>
+        <p>
+          Практический вывод: вкладываться в реликвии в последний день бессмысленно —
+          они просто сгорят. Остаток кристаллов конвертируйте в монеты.
+        </p>
+      </div>
+
+      <h3>Что переносилось между событиями</h3>
+      <div class="two-col">
+        <div class="col-box col-box-bad">
+          <h4>Сгорало 27 августа</h4>
+          <ul class="check-list">
+            <li>Монеты доблести</li>
+            <li>Сапфировые медальоны</li>
+            <li>Энергия глав</li>
+            <li>Реликвии мастерской</li>
+            <li>Очки славы</li>
+            <li>Монеты лавки</li>
+          </ul>
+        </div>
+        <div class="col-box col-box-good">
+          <h4>Переносилось на аккаунт</h4>
+          <ul class="check-list">
+            <li>Зелья титанов</li>
+            <li>Камни шкур титанов</li>
+            <li>Эссенция элементов</li>
+            <li>Золото и изумруды</li>
+            <li>Фрагменты артефактов</li>
+            <li>Сама Алекто и её прокачка</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- ЭКОНОМИКА ---------- -->
+    <section id="alecto-economy">
+      <h2><span class="h-num">1</span> Экономика события</h2>
+      <p>Всё событие — одна цепочка превращений. Понимаете её — понимаете, куда вкладываться.</p>
+
+      <div class="flow">
+        <div class="flow-node flow-start">
+          <img src="/alecto-guide/assets/img/energy-crystal.png" alt="Кристалл энергии">
+          <div class="flow-label">Кристаллы энергии</div>
+          <div class="flow-note">Единственный дефицитный ресурс</div>
+        </div>
+        <div class="flow-split">
+          <div class="flow-branch">
+            <div class="flow-arrow">↓ прокачка</div>
+            <div class="flow-node">
+              <div class="flow-icons">
+                <img src="/alecto-guide/assets/img/tome-of-greed.png" alt="Том жадности">
+                <img src="/alecto-guide/assets/img/grail-of-generosity.png" alt="Грааль щедрости">
+                <img src="/alecto-guide/assets/img/amulet-of-battle.png" alt="Амулет битвы">
+              </div>
+              <div class="flow-label">3 реликвии мастерской</div>
+            </div>
+          </div>
+          <div class="flow-branch">
+            <div class="flow-arrow">↓ конверсия</div>
+            <div class="flow-node">
+              <img src="/alecto-guide/assets/img/valor-coin.png" alt="Монета доблести">
+              <div class="flow-label">Монеты доблести</div>
+            </div>
+          </div>
+        </div>
+        <div class="flow-arrow flow-arrow-wide">↓ крутки в Алтаре судьбы</div>
+        <div class="flow-split flow-split-results">
+          <div class="flow-node flow-node-result">
+            <img src="/alecto-guide/assets/img/alecto-avatar.png" alt="Осколки Алекто">
+            <div class="flow-label">90% → 15 осколков Алекто</div>
+          </div>
+          <div class="flow-node flow-node-result">
+            <img src="/alecto-guide/assets/img/sapphire-medallion.png" alt="Сапфировый медальон">
+            <div class="flow-label">10% → 1 сапфировый медальон</div>
+          </div>
+        </div>
+      </div>
+
+      <h3>Награды Алтаря судьбы</h3>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr><th>№</th><th class="num">Шанс</th><th>Награда</th><th class="num">Ценность</th></tr>
+          </thead>
+          <tbody>
+            <tr class="row-highlight"><td>1</td><td class="num">10%</td><td>1 сапфировый медальон</td><td class="num">4 000</td></tr>
+            <tr><td>2</td><td class="num">15%</td><td>2 000 зелий титанов + 15 осколков</td><td class="num">520</td></tr>
+            <tr><td>3</td><td class="num">15%</td><td>4 000 эссенции элементов + 15 осколков</td><td class="num">520</td></tr>
+            <tr><td>4</td><td class="num">15%</td><td>1 500 камней шкур + 15 осколков</td><td class="num">520</td></tr>
+            <tr><td>5</td><td class="num">15%</td><td>80 Крыла Зорвала + 15 осколков</td><td class="num">440</td></tr>
+            <tr><td>6</td><td class="num">15%</td><td>80 Печати Космоса + 15 осколков</td><td class="num">440</td></tr>
+          </tbody>
+          <tfoot>
+            <tr><td colspan="3">Средняя ценность крутки</td><td class="num">766</td></tr>
+          </tfoot>
+        </table>
+      </div>
+
+      <div class="callout callout-info">
+        <h4>Защита от неудач</h4>
+        <p>
+          Гарантия джекпота срабатывает после 2 неудачных круток подряд, затем порог
+          растёт до 4, потом до 8. Далее: если за 15 круток джекпот не выпал, следующая
+          гарантированно даёт его.
+        </p>
+        <p>
+          <strong>Важно:</strong> защита распространяется только на сапфировый медальон,
+          <strong>не на осколки Алекто</strong>. Поэтому разброс по осколкам реальный.
+        </p>
+      </div>
+
+      <h3>Алекто: характеристики</h3>
+      <figure class="stat-figure">
+        <img src="/alecto-guide/assets/img/alecto-stat.jpg" alt="Характеристики титана Алекто" loading="lazy">
+        <figcaption>Базовые характеристики Алекто — стрелка стихии Искажения.</figcaption>
+      </figure>
+
+      <h3>Пороги звёзд Алекто</h3>
+      <div class="star-track">
+        <div class="star-step"><div class="star-lbl">1★</div><div class="star-val">30</div></div>
+        <div class="star-step"><div class="star-lbl">2★</div><div class="star-val">80</div></div>
+        <div class="star-step"><div class="star-lbl">3★</div><div class="star-val">230</div></div>
+        <div class="star-step"><div class="star-lbl">4★</div><div class="star-val">730</div></div>
+        <div class="star-step star-step-target"><div class="star-lbl">5★</div><div class="star-val">1 630</div><div class="star-tag">цель F2P</div></div>
+        <div class="star-step star-step-locked"><div class="star-lbl">6★</div><div class="star-val">3 130</div><div class="star-tag">только донат</div></div>
+      </div>
+
+      <p class="note-small">
+        1★ — это призыв Алекто. То есть 30 осколков достаточно, чтобы просто получить титана.
+        Полная прокачка до 6★ требует около 464 000 монет доблести даже при Граале 6 уровня.
+      </p>
+    </section>
+
+    <!-- ---------- БЮДЖЕТ ---------- -->
+    <section id="alecto-budget">
+      <h2><span class="h-num">2</span> Бюджет кристаллов F2P</h2>
+      <p>Реалистичный сбор без вложений — около <strong>465 кристаллов</strong>.</p>
+
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr><th>Источник</th><th class="num">Кристаллов</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Квест «Победы в событии» (71 победа)</td><td class="num strong">142</td></tr>
+            <tr><td>Квест «Титаны / навыки влияния в Лавке развития» (28 шт.)</td><td class="num strong">84</td></tr>
+            <tr><td>Ежедневная витрина (бесплатная, 8 × 7 дней)</td><td class="num">56</td></tr>
+            <tr><td>Подарки по ссылкам (гильдия / друзья)</td><td class="num">~48</td></tr>
+            <tr><td>Квест «Герои макс. ранга в Лавке» (7 шт.)</td><td class="num">42</td></tr>
+            <tr><td>Квест «Питомцы в Лавке героев» (10 шт.)</td><td class="num">40</td></tr>
+            <tr><td>Боевой пропуск (бесплатная ветка)</td><td class="num">40</td></tr>
+            <tr><td>Квест «Потратить сапфиры» (10 шт.)</td><td class="num">10</td></tr>
+            <tr><td>Квест «Потратить изумруды» (500)</td><td class="num">3</td></tr>
+          </tbody>
+          <tfoot>
+            <tr><td>Итого</td><td class="num">~465</td></tr>
+          </tfoot>
+        </table>
+      </div>
+
+      <h3>Сколько нужно для верхних глав</h3>
+      <p>
+        Для тотема (глава 7) требуется <strong>790 кристаллов</strong>. Этот бюджет
+        достижим только с покупками: Золотой билет даёт 150, квест «Потратить
+        150 000 изумрудов» — 90, ежедневная зарядка — 24, VIP-квест — 18.
+        Итого около 800.
+      </p>
+
+      <div class="callout callout-tip">
+        <p>
+          <strong>Не пропускайте подарки по ссылкам.</strong> ~48 кристаллов за событие —
+          это больше, чем весь Грааль до 4 уровня. Собирайте каждый день из гильдейского чата.
+        </p>
+      </div>
+    </section>
+
+    <!-- ---------- МАСТЕРСКАЯ ---------- -->
+    <section id="alecto-workshop">
+      <h2><span class="h-num">3</span> Мастерская: главный вопрос</h2>
+
+      <div class="relic-cards">
+        <article class="relic-card relic-tome">
+          <img src="/alecto-guide/assets/img/tome-of-greed.png" alt="Том жадности">
+          <h3>Том жадности</h3>
+          <p class="relic-effect">+100 монет за каждый потраченный кристалл, за уровень</p>
+          <div class="relic-max">Макс. уровень: 15</div>
+          <div class="relic-verdict verdict-good">Качать первым</div>
+        </article>
+        <article class="relic-card relic-grail">
+          <img src="/alecto-guide/assets/img/grail-of-generosity.png" alt="Грааль щедрости">
+          <h3>Грааль щедрости</h3>
+          <p class="relic-effect">−100 монет к цене крутки за уровень (база 2 800)</p>
+          <div class="relic-max">Макс. уровень: 18</div>
+          <div class="relic-verdict verdict-mid">Третьим, до 4</div>
+        </article>
+        <article class="relic-card relic-amulet">
+          <img src="/alecto-guide/assets/img/amulet-of-battle.png" alt="Амулет битвы">
+          <h3>Амулет битвы</h3>
+          <p class="relic-effect">Баффы в боях события — открывает доступ к главам</p>
+          <div class="relic-max">Макс. уровень: 50</div>
+          <div class="relic-verdict verdict-warn">Вторым, только до 5</div>
+        </article>
+      </div>
+
+      <h3>Механика, которую все упускают</h3>
+      <p>Базовая конверсия кристалла в монеты:</p>
+      <div class="formula">
+        1 кристалл = 500 + 100 × (уровень Тома) монет
+      </div>
+      <p>
+        Но бонус Тома капает <strong>и при прокачке реликвий тоже</strong> — вы получаете
+        100 × Том монет за каждый кристалл, вложенный в любую реликвию.
+        То есть прокачка реликвии реально стоит вам <strong>500 монет за кристалл</strong>,
+        независимо от уровня Тома.
+      </p>
+      <p>
+        Именно поэтому Том качается <strong>строго первым</strong>: он удешевляет
+        всё остальное, что вы потом купите.
+      </p>
+
+      <h3>Таблица Тома жадности</h3>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr><th>Уровень</th><th class="num">Конверсия</th><th class="num">Цена</th><th class="num">Всего</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td class="num">600</td><td class="num">—</td><td class="num">0</td></tr>
+            <tr><td>2</td><td class="num">700</td><td class="num">10</td><td class="num">10</td></tr>
+            <tr><td>3</td><td class="num">800</td><td class="num">20</td><td class="num">30</td></tr>
+            <tr><td>4</td><td class="num">900</td><td class="num">30</td><td class="num">60</td></tr>
+            <tr><td>5</td><td class="num">1 000</td><td class="num">40</td><td class="num">100</td></tr>
+            <tr class="row-highlight"><td>6</td><td class="num">1 100</td><td class="num">50</td><td class="num">150</td></tr>
+            <tr class="row-dim"><td>7</td><td class="num">1 200</td><td class="num">60</td><td class="num">210</td></tr>
+            <tr class="row-dim"><td>8</td><td class="num">1 300</td><td class="num">70</td><td class="num">280</td></tr>
+            <tr class="row-locked"><td>15</td><td class="num">2 000</td><td class="num">80</td><td class="num">840</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Таблица Грааля щедрости</h3>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr><th>Уровень</th><th class="num">Цена крутки</th><th class="num">Цена</th><th class="num">Всего</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td class="num">2 700</td><td class="num">—</td><td class="num">0</td></tr>
+            <tr><td>2</td><td class="num">2 600</td><td class="num">10</td><td class="num">10</td></tr>
+            <tr><td>3</td><td class="num">2 500</td><td class="num">20</td><td class="num">30</td></tr>
+            <tr class="row-highlight"><td>4</td><td class="num">2 400</td><td class="num">30</td><td class="num">60</td></tr>
+            <tr class="row-dim"><td>5</td><td class="num">2 300</td><td class="num">40</td><td class="num">100</td></tr>
+            <tr class="row-dim"><td>6</td><td class="num">2 200</td><td class="num">50</td><td class="num">150</td></tr>
+            <tr class="row-locked"><td>18</td><td class="num">1 000</td><td class="num">100</td><td class="num">1 250</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note-small">
+        Базовая цена крутки 2 800. Уровень 1 Грааля бесплатный и уже даёт скидку до 2 700.
+      </p>
+    </section>
+
+    <!-- ---------- ПРАВИЛО 5x ---------- -->
+    <section id="alecto-rule">
+      <h2><span class="h-num">4</span> Правило 5×</h2>
+      <div class="callout callout-rule">
+        <p class="rule-text">
+          Вкладывайся в уровень, только если остатка хватит на
+          <strong>5 × стоимости этого уровня</strong>.
+        </p>
+      </div>
+      <ul class="check-list">
+        <li><strong>Том L→L+1</strong> окупается, если после покупки останется <em>больше 5 × стоимости</em> кристаллов на конверсию.</li>
+        <li><strong>Грааль L→L+1</strong> окупается, если вы сделаете <em>больше 5 × стоимости</em> круток.</li>
+      </ul>
+
+      <h3>Том жадности: где точка остановки</h3>
+      <div class="table-wrap">
+        <table class="data-table table-rule">
+          <thead>
+            <tr>
+              <th>Шаг</th><th class="num">Цена</th>
+              <th class="num">Мгновенный возврат</th>
+              <th class="num">Нужно остатка</th><th>Вердикт</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1 → 2</td><td class="num">10</td><td class="num">1 000</td><td class="num">50</td><td><span class="pill pill-yes">окупается</span></td></tr>
+            <tr><td>2 → 3</td><td class="num">20</td><td class="num">4 000</td><td class="num">100</td><td><span class="pill pill-yes">окупается</span></td></tr>
+            <tr><td>3 → 4</td><td class="num">30</td><td class="num">9 000</td><td class="num">150</td><td><span class="pill pill-yes">окупается</span></td></tr>
+            <tr><td>4 → 5</td><td class="num">40</td><td class="num">16 000</td><td class="num">200</td><td><span class="pill pill-yes">окупается</span></td></tr>
+            <tr class="row-highlight"><td>5 → 6</td><td class="num">50</td><td class="num">25 000</td><td class="num">250</td><td><span class="pill pill-yes">окупается</span></td></tr>
+            <tr><td>6 → 7</td><td class="num">60</td><td class="num">36 000</td><td class="num">300</td><td><span class="pill pill-edge">на грани</span></td></tr>
+            <tr class="row-dim"><td>7 → 8</td><td class="num">70</td><td class="num">49 000</td><td class="num">350</td><td><span class="pill pill-no">не окупается</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout callout-key-sm">
+        <p><strong>Том до 6 — оптимум при бюджете ~465.</strong> Это 150 кристаллов, которые
+        сразу возвращают 91 000 монет и поднимают конверсию с 600 до 1 100 монет за кристалл
+        <span class="delta-up">(+83%)</span>.</p>
+      </div>
+
+      <div class="callout callout-myth">
+        <h4>Сверка с другими гайдами</h4>
+        <p>
+          Hero Wars Central для Алекто советует <strong>Том до 5, Грааль до 3–4</strong>.
+          Это близко к оптимуму, но всё же недобор: по моему расчёту при бюджете 465
+          и цели «глава 3» варианты дают
+        </p>
+        <ul class="check-list">
+          <li>Том 5, Грааль 3 → <strong>2 187</strong> осколков</li>
+          <li>Том 5, Грааль 4 → <strong>2 194</strong> осколка</li>
+          <li>Том 6, Грааль 4 → <strong>2 230</strong> осколков</li>
+        </ul>
+        <p>
+          Разница небольшая (около 40 осколков), но шестой уровень Тома окупается:
+          он стоит 50 кристаллов и сразу возвращает 25 000 монет, а это больше
+          десяти круток.
+        </p>
+      </div>
+    </section>
+
+    <!-- ---------- КАЛЬКУЛЯТОР ---------- -->
+    <section id="alecto-calc">
+      <h2><span class="h-num">5</span> Калькулятор мастерской</h2>
+      <p>Подставьте свой бюджет кристаллов и посмотрите, как меняется оптимум.</p>
+
+      <div class="calc" id="alectoCalcWidget">
+        <div class="calc-controls">
+          <div class="calc-field">
+            <label for="inpBudget">Бюджет кристаллов</label>
+            <input type="range" id="alectoInpBudget" min="150" max="900" step="5" value="465">
+            <output id="alectoOutBudget">465</output>
+          </div>
+          <div class="calc-field">
+            <label for="inpTome">Том жадности</label>
+            <input type="range" id="alectoInpTome" min="1" max="15" step="1" value="6">
+            <output id="alectoOutTome">6</output>
+          </div>
+          <div class="calc-field">
+            <label for="inpGrail">Грааль щедрости</label>
+            <input type="range" id="alectoInpGrail" min="1" max="18" step="1" value="4">
+            <output id="alectoOutGrail">4</output>
+          </div>
+          <div class="calc-field">
+            <label for="inpChapter">Целевая глава</label>
+            <input type="range" id="alectoInpChapter" min="1" max="7" step="1" value="3">
+            <output id="alectoOutChapter">3</output>
+          </div>
+        </div>
+
+        <div class="calc-results" id="calcResults">
+          <div class="calc-stat">
+            <div class="calc-stat-label">Потрачено на реликвии</div>
+            <div class="calc-stat-val" id="alectoResSpent">—</div>
+          </div>
+          <div class="calc-stat">
+            <div class="calc-stat-label">Остаток на конверсию</div>
+            <div class="calc-stat-val" id="alectoResLeft">—</div>
+          </div>
+          <div class="calc-stat">
+            <div class="calc-stat-label">Монет доблести</div>
+            <div class="calc-stat-val" id="alectoResCoins">—</div>
+          </div>
+          <div class="calc-stat">
+            <div class="calc-stat-label">Цена крутки</div>
+            <div class="calc-stat-val" id="alectoResPull">—</div>
+          </div>
+          <div class="calc-stat">
+            <div class="calc-stat-label">Круток</div>
+            <div class="calc-stat-val" id="alectoResPulls">—</div>
+          </div>
+          <div class="calc-stat calc-stat-main">
+            <div class="calc-stat-label">Осколков Алекто</div>
+            <div class="calc-stat-val" id="alectoResStones">—</div>
+            <div class="calc-stat-sub" id="alectoResStars">—</div>
+          </div>
+          <div class="calc-stat calc-stat-main">
+            <div class="calc-stat-label">Сапфировых медальонов</div>
+            <div class="calc-stat-val" id="alectoResSapph">—</div>
+          </div>
+        </div>
+
+        <div class="calc-msg" id="alectoCalcMsg"></div>
+
+        <div class="calc-actions">
+          <button class="btn btn-small" data-preset="465,6,4,2">Максимум осколков</button>
+          <button class="btn btn-small btn-primary" data-preset="465,6,4,3">Рекомендуемый</button>
+          <button class="btn btn-small" data-preset="465,5,3,5">Максимум сапфиров</button>
+          <button class="btn btn-small" data-preset="600,4,2,6">Дар Доминиона (гл. 6)</button>
+          <button class="btn btn-small" data-preset="790,1,1,7">Тотем (гл. 7)</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- АМУЛЕТ И ГЛАВЫ ---------- -->
+    <section id="alecto-amulet">
+      <h2><span class="h-num">6</span> Амулет битвы: до какой главы идти</h2>
+      <p>Амулет — это <strong>гейт</strong>. Главы требуют накопленной вкачки.</p>
+
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Глава</th><th>Название и босс</th>
+              <th class="num">Кристаллов в Амулет</th>
+              <th>Награда главы</th><th>F2P</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Спуск во тьму <span class="tag tag-titan">титаны</span><br>
+                  <span class="boss-name">Босс: Край рассвета</span></td>
+              <td class="num">0</td>
+              <td>50 000 эссенции · 10 000 монет · 1 сапфир</td>
+              <td><span class="pill pill-yes">да</span></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Коридор легенд <span class="tag tag-hero">герои</span><br>
+                  <span class="boss-name">Босс: Сердце чащи</span></td>
+              <td class="num">0</td>
+              <td>30 больших сундуков шкур · 20 000 монет · 2 сапфира</td>
+              <td><span class="pill pill-yes">да</span></td>
+            </tr>
+            <tr class="row-highlight">
+              <td>3</td>
+              <td>Плато рассвета <span class="tag tag-titan">титаны</span><br>
+                  <span class="boss-name">Босс: Пепельная тропа</span></td>
+              <td class="num">50</td>
+              <td>25 000 камней шкур · 20 000 монет · 2 сапфира</td>
+              <td><span class="pill pill-yes">цель</span></td>
+            </tr>
+            <tr class="row-dim">
+              <td>4</td>
+              <td>Перекрёсток <span class="tag tag-hero">герои</span><br>
+                  <span class="boss-name">Босс: Голос руин</span></td>
+              <td class="num">160</td>
+              <td>150 первородных катализаторов · 20 000 монет · 2 сапфира</td>
+              <td><span class="pill pill-edge">спорно</span></td>
+            </tr>
+            <tr class="row-dim">
+              <td>5</td>
+              <td>Корни и воля <span class="tag tag-titan">титаны</span><br>
+                  <span class="boss-name">Босс: Безмолвный рубеж</span></td>
+              <td class="num">320</td>
+              <td>100 катализаторов · 50 000 монет · <strong>10 сапфиров</strong></td>
+              <td><span class="pill pill-edge">спорно</span></td>
+            </tr>
+            <tr class="row-locked">
+              <td>6</td>
+              <td>Безумная баллада <span class="tag tag-hero">герои</span><br>
+                  <span class="boss-name">Босс: Эхо машины</span></td>
+              <td class="num">530</td>
+              <td><strong>Дар Доминиона</strong> · 50 000 монет · 10 сапфиров</td>
+              <td><span class="pill pill-no">почти нет</span></td>
+            </tr>
+            <tr class="row-locked">
+              <td>7</td>
+              <td>Волна бед <span class="tag tag-titan">титаны</span><br>
+                  <span class="boss-name">Босс: Шёпот корней</span></td>
+              <td class="num">790</td>
+              <td>Сфера призыва Искажённого духа · 50 000 монет · 10 сапфиров</td>
+              <td><span class="pill pill-no">донат</span></td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr><td colspan="2">Всего за все 7 глав</td><td class="num">790</td>
+                <td>220 000 монет · 37 сапфиров</td><td>—</td></tr>
+          </tfoot>
+        </table>
+      </div>
+
+      <h3>Почему глава 4 — худшая покупка события</h3>
+      <div class="compare-bars">
+        <div class="cbar">
+          <div class="cbar-label">Глава 3 → 4</div>
+          <div class="cbar-body">
+            <span class="cbar-cost">−110 кристаллов</span>
+            <span class="cbar-gain cbar-gain-zero">+0 сапфиров сверх главы 3</span>
+          </div>
+        </div>
+        <div class="cbar">
+          <div class="cbar-label">Глава 4 → 5</div>
+          <div class="cbar-body">
+            <span class="cbar-cost">−160 кристаллов</span>
+            <span class="cbar-gain">+9 сапфиров</span>
+          </div>
+        </div>
+      </div>
+      <p>
+        Глава 3 стоит всего 50 кристаллов и почти бесплатна по осколкам (−28 штук),
+        а даёт +20 000 монет и +2 сапфира — чистый плюс.
+        Глава 4 стоит 110 дополнительных кристаллов и <strong>не даёт ни одного лишнего
+        сапфира</strong> сверх главы 3.
+      </p>
+
+      <div class="callout callout-warn">
+        <h4>Про главу 6 и Дар Доминиона</h4>
+        <p>
+          Второй по ценности приз события — <strong>Красный Дар Доминиона</strong> за главу 6.
+          Требуется Амулет 20 уровня, суммарно около 600 кристаллов.
+        </p>
+        <p>
+          Технически это достижимо без доната, но только если вы потратите большой
+          накопленный запас изумрудов или состоите в очень щедрой гильдии.
+          Для обычного F2P-аккаунта на уровнях 60–90 — нет.
+        </p>
+        <p>
+          Если всё же идёте за ним, раскладка другая:
+          <strong>Том 4</strong> (60 кр.), <strong>Грааль 2</strong> (10 кр.),
+          <strong>Амулет 20</strong> (530 кр.), остаток — в конверсию.
+          Здесь Том намеренно ниже, потому что почти весь бюджет уходит в Амулет.
+        </p>
+      </div>
+
+      <div class="callout callout-info">
+        <h4>Сложность верхних глав</h4>
+        <p>
+          Главы 5–7 заметно тяжелее предыдущих. Чтобы пройти главу 7 на минимальном
+          уровне баффов, нужно максимально прокачать титанов в бою перед боссом
+          и использовать точную схему слияния тотемов.
+        </p>
+      </div>
+    </section>
+
+    <!-- ---------- СРАВНЕНИЕ ПЛАНОВ ---------- -->
+    <section id="alecto-plans">
+      <h2><span class="h-num">7</span> Сравнение планов (бюджет 465)</h2>
+
+      <div class="plan-grid">
+        <article class="plan-card">
+          <div class="plan-head">
+            <span class="plan-letter">A</span>
+            <h3>Максимум осколков</h3>
+          </div>
+          <div class="plan-target">Главы 1–2</div>
+          <ul class="plan-relics">
+            <li><span>Том</span><b>6</b></li>
+            <li><span>Грааль</span><b>4</b></li>
+            <li><span>Амулет</span><b>—</b></li>
+          </ul>
+          <div class="plan-out">
+            <div><b>~2 258</b><span>осколков</span></div>
+            <div><b>20</b><span>сапфиров</span></div>
+            <div><b>5★</b><span>Алекто</span></div>
+          </div>
+        </article>
+
+        <article class="plan-card plan-card-best">
+          <div class="plan-badge">Рекомендуем</div>
+          <div class="plan-head">
+            <span class="plan-letter">B</span>
+            <h3>Баланс</h3>
+          </div>
+          <div class="plan-target">Глава 3</div>
+          <ul class="plan-relics">
+            <li><span>Том</span><b>6</b></li>
+            <li><span>Грааль</span><b>4</b></li>
+            <li><span>Амулет</span><b>5</b></li>
+          </ul>
+          <div class="plan-out">
+            <div><b>~2 230</b><span>осколков</span></div>
+            <div><b>22</b><span>сапфира</span></div>
+            <div><b>5★</b><span>Алекто</span></div>
+          </div>
+        </article>
+
+        <article class="plan-card">
+          <div class="plan-head">
+            <span class="plan-letter">C</span>
+            <h3>Пуш глав</h3>
+          </div>
+          <div class="plan-target">Глава 4</div>
+          <ul class="plan-relics">
+            <li><span>Том</span><b>6</b></li>
+            <li><span>Грааль</span><b>3</b></li>
+            <li><span>Амулет</span><b>10</b></li>
+          </ul>
+          <div class="plan-out">
+            <div><b>~2 033</b><span>осколка</span></div>
+            <div><b>22</b><span>сапфира</span></div>
+            <div><b>5★</b><span>Алекто</span></div>
+          </div>
+        </article>
+
+        <article class="plan-card">
+          <div class="plan-head">
+            <span class="plan-letter">D</span>
+            <h3>Максимум сапфиров</h3>
+          </div>
+          <div class="plan-target">Глава 5</div>
+          <ul class="plan-relics">
+            <li><span>Том</span><b>5</b></li>
+            <li><span>Грааль</span><b>3</b></li>
+            <li><span>Амулет</span><b>15</b></li>
+          </ul>
+          <div class="plan-out">
+            <div><b>~1 836</b><span>осколков</span></div>
+            <div><b>31</b><span>сапфир</span></div>
+            <div><b>5★</b><span>Алекто</span></div>
+          </div>
+        </article>
+      </div>
+
+      <h3>Визуальное сравнение</h3>
+      <div class="chart-block">
+        <div class="chart-title">Осколки Алекто</div>
+        <div class="bars" id="alectoBarsStones"></div>
+      </div>
+      <div class="chart-block">
+        <div class="chart-title">Сапфировые медальоны</div>
+        <div class="bars" id="alectoBarsSapph"></div>
+      </div>
+
+      <div class="callout callout-key-sm">
+        <h4>Рекомендация для уровней 60–90: план B</h4>
+        <ul class="check-list">
+          <li>5★ Алекто достигается в любом варианте — 6★ для F2P нереален.</li>
+          <li>Глава 3 стоит 50 кристаллов и даёт +20 000 монет и +2 сапфира. Чистый плюс.</li>
+          <li>Глава 4 — худшая покупка события: +110 кристаллов, +0 сапфиров.</li>
+          <li>Глава 5 даёт +9 сапфиров, но на 60–90 уровне вы, скорее всего,
+              <strong>физически её не пройдёте</strong> — нужны сильные пачки титанов
+              и много перезапусков.</li>
+        </ul>
+        <p class="compromise">
+          <strong>Компромисс:</strong> качайте Амулет до 5 сразу, дальше — только если
+          по факту прошли главу 4 без проблем и время ещё есть.
+        </p>
+      </div>
+    </section>
+
+    <!-- ---------- ПЛАН ПО ДНЯМ ---------- -->
+    <section id="alecto-roadmap">
+      <h2><span class="h-num">8</span> Пошаговый план по дням</h2>
+
+      <div class="timeline">
+
+        <article class="tl-day">
+          <div class="tl-marker">Д1</div>
+          <div class="tl-body">
+            <h3>День 1 — 21 августа</h3>
+            <ol class="tl-steps">
+              <li>Соберите бесплатную витрину, ежедневную награду и ежедневную зарядку —
+                  <strong>вручную</strong>, автоматом не начисляются.</li>
+              <li>Соберите подарки по ссылкам в гильдейском чате.</li>
+              <li class="tl-step-key">
+                <strong>Первым делом качайте Том жадности 1 → 6</strong> (150 кристаллов).
+                Мгновенно вернёт 91 000 монет.
+                <div class="tl-note">Если на старте кристаллов меньше 150 — качайте Том постепенно,
+                но обязательно до любых конверсий и круток.</div>
+              </li>
+              <li>Начинайте главы 1–2. Они не требуют Амулета.</li>
+              <li class="tl-step-warn"><strong>Не крутите Алтарь судьбы</strong>, пока Грааль не на 4.</li>
+            </ol>
+          </div>
+        </article>
+
+        <article class="tl-day">
+          <div class="tl-marker">Д2</div>
+          <div class="tl-body">
+            <h3>День 2</h3>
+            <ol class="tl-steps" start="6">
+              <li>Амулет до 5 (50 кристаллов) → открывается глава 3.</li>
+              <li>Грааль до 4 (60 кристаллов) → цена крутки 2 800 → 2 400.</li>
+              <li>Начинайте фарм 71 победы — самый жирный квест (142 кристалла).
+                  Проигрыш не стоит ничего, кроме времени: перезапускайте главу и добивайте победы.</li>
+            </ol>
+          </div>
+        </article>
+
+        <article class="tl-day">
+          <div class="tl-marker">Д3–4</div>
+          <div class="tl-body">
+            <h3>Дни 3–4</h3>
+            <ol class="tl-steps" start="9">
+              <li>
+                Добиваете квесты Лавки — там 166 кристаллов суммарно:
+                <div class="quest-block">
+                  <div class="quest-row">
+                    <span class="quest-name">7 героев макс. ранга</span>
+                    <span class="quest-list">Бирна · Адам · Лирия · Айдан · Каскад · Айрис · Руфус</span>
+                  </div>
+                  <div class="quest-row">
+                    <span class="quest-name">10 питомцев</span>
+                    <span class="quest-list">любые</span>
+                  </div>
+                  <div class="quest-row">
+                    <span class="quest-name">28 титанов / навыков</span>
+                    <span class="quest-list">Молох · Вулкан · Игнис · Араджи · Ангус · Сильва · Авалон ·
+                      Иден · Брустар · Керос · Морт · Тенебрис · Алекто · Валдур · Умбра · Тидус ·
+                      Вердок · Ашерона</span>
+                  </div>
+                  <div class="quest-row">
+                    <span class="quest-name">Навыки тотемов</span>
+                    <span class="quest-list">Звёздная пыль · Гравитационная аномалия · Новая вспышка ·
+                      Тёмная материя · Главная последовательность · Покров грёз · Шёпот глубин ·
+                      Ропот скал · Тройной цикл · Зов стихий</span>
+                  </div>
+                </div>
+              </li>
+              <li class="tl-step-key">
+                <strong>Механика Лавки:</strong> магазин обновляется после каждого боя.
+                Закрепляйте (пин) нужные фрагменты, иначе они пропадут.
+                Не устраивает предложение — жмите обновление.
+              </li>
+              <li>Собирайте 7 копий <strong>немногих</strong> героев вместо распыления на многих.</li>
+            </ol>
+          </div>
+        </article>
+
+        <article class="tl-day tl-day-final">
+          <div class="tl-marker">Д5</div>
+          <div class="tl-body">
+            <h3>День 5 — 26 августа, финальный</h3>
+            <ol class="tl-steps" start="12">
+              <li>Конвертируйте <strong>весь остаток кристаллов</strong> в монеты
+                  (при Томе 6 — 1 100 монет за кристалл).</li>
+              <li>Крутите Алтарь до нуля монет.</li>
+              <li class="tl-step-warn">
+                <strong>Не вкладывайтесь в реликвии в последний день.</strong>
+                С этого приключения они не обмениваются на сундуки — просто сгорят.
+              </li>
+            </ol>
+          </div>
+        </article>
+
+        <article class="tl-day tl-day-bonus">
+          <div class="tl-marker">Д6</div>
+          <div class="tl-body">
+            <h3>День 6 — 27 августа, только магазин</h3>
+            <ol class="tl-steps" start="15">
+              <li class="tl-step-key">
+                <strong>Магазин Алекто работал ещё сутки после конца приключения.</strong>
+                Это была последняя возможность потратить сапфиры.
+              </li>
+              <li>Всё непотраченное автоматически конвертировалось в Сундуки
+                  ресурсов титанов (125% ценности — приемлемо, но выбор лучше).</li>
+              <li>Сразу после этого стартовало приключение Валдура с обнулённым прогрессом.</li>
+            </ol>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ---------- БОИ ---------- -->
+    <section id="alecto-battles">
+      <h2><span class="h-num">9</span> Бои: составы и тактика</h2>
+
+      <div class="rules-grid">
+        <div class="rule-box">
+          <h4>Структура главы</h4>
+          <p>7 боёв с рядовыми + бой с боссом. Награды дают <strong>только за босса</strong>,
+          рядовые бои наград не приносят.</p>
+        </div>
+        <div class="rule-box rule-box-warn">
+          <h4>Поражения</h4>
+          <p>Проигрыш рядового боя <strong>3 раза</strong> = рестарт главы с начала.
+          Босса можно переигрывать бесконечно.</p>
+        </div>
+        <div class="rule-box">
+          <h4>Лавка</h4>
+          <p>Стартовые 120 монет лавки. Для максимального ранга нужно собрать героя
+          <strong>7 раз</strong>. Герои, доступные с начала главы, обычно проще для сборки.</p>
+        </div>
+        <div class="rule-box">
+          <h4>Особенности</h4>
+          <p>В боях героев <strong>не работают</strong> флаги войны и узоры.
+          В боях титанов тотемы разворачиваются автоматически, их сила подгоняется
+          под слабейшего титана.</p>
+        </div>
+      </div>
+
+      <h3>Рекомендуемые составы</h3>
+      <div class="team-legend">
+        <span><span class="tag tag-hero">герои</span> главы 2, 4, 6</span>
+        <span><span class="tag tag-titan">титаны</span> главы 1, 3, 5, 7</span>
+      </div>
+
+      <div class="teams">
+        <div class="team-block">
+          <h4>Глава 1 — Спуск во тьму <span class="tag tag-titan">титаны</span>
+            <span class="boss-inline">Край рассвета</span></h4>
+          <div class="team-imgs">
+            <img src="/alecto-guide/assets/img/team-ch1-1.png" alt="Состав для главы 1, вариант 1" loading="lazy">
+            <img src="/alecto-guide/assets/img/team-ch1-2.png" alt="Состав для главы 1, вариант 2" loading="lazy">
+            <img src="/alecto-guide/assets/img/team-ch1-3.png" alt="Состав для главы 1, вариант 3" loading="lazy">
+          </div>
+        </div>
+        <div class="team-block">
+          <h4>Глава 2 — Коридор легенд <span class="tag tag-hero">герои</span>
+            <span class="boss-inline">Сердце чащи</span></h4>
+          <div class="team-imgs">
+            <img src="/alecto-guide/assets/img/team-ch2-1.png" alt="Состав для главы 2, вариант 1" loading="lazy">
+            <img src="/alecto-guide/assets/img/team-ch2-2.png" alt="Состав для главы 2, вариант 2" loading="lazy">
+          </div>
+        </div>
+        <div class="team-block team-block-target">
+          <h4>Глава 3 — Плато рассвета <span class="tag tag-titan">титаны</span>
+            <span class="boss-inline">Пепельная тропа</span>
+            <span class="team-flag">цель F2P</span></h4>
+          <div class="team-imgs">
+            <img src="/alecto-guide/assets/img/team-ch3-1.png" alt="Состав для главы 3, вариант 1" loading="lazy">
+            <img src="/alecto-guide/assets/img/team-ch3-2.png" alt="Состав для главы 3, вариант 2" loading="lazy">
+          </div>
+        </div>
+        <div class="team-block">
+          <h4>Глава 4 — Перекрёсток <span class="tag tag-hero">герои</span>
+            <span class="boss-inline">Голос руин</span></h4>
+          <div class="team-imgs">
+            <img src="/alecto-guide/assets/img/team-ch4-1.png" alt="Состав для главы 4, вариант 1" loading="lazy">
+            <img src="/alecto-guide/assets/img/team-ch4-2.png" alt="Состав для главы 4, вариант 2" loading="lazy">
+            <img src="/alecto-guide/assets/img/team-ch4-3.png" alt="Состав для главы 4, вариант 3" loading="lazy">
+            <img src="/alecto-guide/assets/img/team-ch4-4.png" alt="Состав для главы 4, вариант 4" loading="lazy">
+          </div>
+        </div>
+        <div class="team-block">
+          <h4>Глава 5 — Корни и воля <span class="tag tag-titan">титаны</span>
+            <span class="boss-inline">Безмолвный рубеж</span></h4>
+          <div class="team-imgs">
+            <img src="/alecto-guide/assets/img/team-ch5-1.png" alt="Состав для главы 5, вариант 1" loading="lazy">
+            <img src="/alecto-guide/assets/img/team-ch5-2.png" alt="Состав для главы 5, вариант 2" loading="lazy">
+            <img src="/alecto-guide/assets/img/team-ch5-3.png" alt="Состав для главы 5, вариант 3" loading="lazy">
+            <img src="/alecto-guide/assets/img/team-ch5-4.png" alt="Состав для главы 5, вариант 4" loading="lazy">
+          </div>
+        </div>
+        <div class="team-block team-block-locked">
+          <h4>Глава 6 — Безумная баллада <span class="tag tag-hero">герои</span>
+            <span class="boss-inline">Эхо машины</span>
+            <span class="team-flag team-flag-locked">тяжело</span></h4>
+          <div class="team-imgs">
+            <img src="/alecto-guide/assets/img/team-ch6-1.png" alt="Состав для главы 6, вариант 1" loading="lazy">
+            <img src="/alecto-guide/assets/img/team-ch6-2.png" alt="Состав для главы 6, вариант 2" loading="lazy">
+            <img src="/alecto-guide/assets/img/team-ch6-3.png" alt="Состав для главы 6, вариант 3" loading="lazy">
+            <img src="/alecto-guide/assets/img/team-ch6-4.png" alt="Состав для главы 6, вариант 4" loading="lazy">
+            <img src="/alecto-guide/assets/img/team-ch6-6.png" alt="Состав для главы 6, вариант 5" loading="lazy">
+          </div>
+        </div>
+        <div class="team-block team-block-locked">
+          <h4>Глава 7 — Волна бед <span class="tag tag-titan">титаны</span>
+            <span class="boss-inline">Шёпот корней</span>
+            <span class="team-flag team-flag-locked">донат</span></h4>
+          <div class="team-imgs">
+            <img src="/alecto-guide/assets/img/team-ch7-1.png" alt="Состав для главы 7, вариант 1" loading="lazy">
+            <img src="/alecto-guide/assets/img/team-ch7-3.png" alt="Состав для главы 7, вариант 2" loading="lazy">
+            <img src="/alecto-guide/assets/img/team-ch7-4.png" alt="Состав для главы 7, вариант 3" loading="lazy">
+            <img src="/alecto-guide/assets/img/team-ch7-5.png" alt="Состав для главы 7, вариант 4" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <div class="callout callout-tip">
+        <p><strong>Общие рекомендации по стихиям.</strong>
+        Главы героев — магическая пачка. Главы титанов — Вода×5, Земля×5,
+        либо Свет×2 + Огонь×3.</p>
+      </div>
+    </section>
+
+    <!-- ---------- ТАЛИСМАНЫ ---------- -->
+    <section id="alecto-talismans">
+      <h2><span class="h-num">10</span> Талисманы</h2>
+      <p>Временные баффы, выбираются при входе на этап. Официальная рекомендация —
+      <strong>Талисман ярости + хилер</strong> (например, Варна).</p>
+
+      <div class="talisman-grid">
+        <div class="tal-card tal-best">
+          <img src="/alecto-guide/assets/img/talisman-1.png" alt="Талисман богатства" loading="lazy">
+          <h4>Талисман богатства</h4>
+          <p>Чем больше монет, тем больше кэшбэк и урон героев.</p>
+          <span class="tal-tag">лучший для фарма</span>
+        </div>
+        <div class="tal-card tal-best">
+          <img src="/alecto-guide/assets/img/talisman-2.png" alt="Талисман распродаж" loading="lazy">
+          <h4>Талисман распродаж</h4>
+          <p>Бесплатное обновление лавки и ускорение героев.</p>
+          <span class="tal-tag">лучший для фарма</span>
+        </div>
+        <div class="tal-card tal-good">
+          <img src="/alecto-guide/assets/img/talisman-3.png" alt="Талисман ярости" loading="lazy">
+          <h4>Талисман ярости</h4>
+          <p>Наносит постоянный урон герою, но повышает исходящий урон.</p>
+          <span class="tal-tag tal-tag-alt">офиц. рекомендация</span>
+        </div>
+        <div class="tal-card">
+          <img src="/alecto-guide/assets/img/talisman-4.png" alt="Талисман вампиризма" loading="lazy">
+          <h4>Талисман вампиризма</h4>
+          <p>Даёт вампиризм, но блокирует лечение из других источников.</p>
+        </div>
+        <div class="tal-card">
+          <img src="/alecto-guide/assets/img/talisman-5.png" alt="Талисман ускорения" loading="lazy">
+          <h4>Талисман ускорения</h4>
+          <p>Увеличивает скорость передвижения союзников и врагов.</p>
+        </div>
+        <div class="tal-card">
+          <img src="/alecto-guide/assets/img/talisman-7.png" alt="Талисман пакта" loading="lazy">
+          <h4>Талисман пакта</h4>
+          <p>Увеличивает и наносимый, и получаемый урон.</p>
+        </div>
+        <div class="tal-card">
+          <img src="/alecto-guide/assets/img/talisman-8.png" alt="Талисман исцеления" loading="lazy">
+          <h4>Талисман исцеления</h4>
+          <p>Усиливает лечение всех союзников, но снижает их общее здоровье.</p>
+        </div>
+        <div class="tal-card">
+          <img src="/alecto-guide/assets/img/talisman-9.png" alt="Талисман братства" loading="lazy">
+          <h4>Талисман братства</h4>
+          <p>Повышает характеристики героев-мужчин.</p>
+        </div>
+        <div class="tal-card">
+          <img src="/alecto-guide/assets/img/talisman-10.png" alt="Талисман сестринства" loading="lazy">
+          <h4>Талисман сестринства</h4>
+          <p>Повышает характеристики героинь.</p>
+        </div>
+        <div class="tal-card">
+          <img src="/alecto-guide/assets/img/talisman-11.png" alt="Талисман натиска" loading="lazy">
+          <h4>Талисман натиска</h4>
+          <p>Чем больше союзников, тем больше урона наносят герои.</p>
+        </div>
+        <div class="tal-card">
+          <img src="/alecto-guide/assets/img/talisman-12.png" alt="Талисман" loading="lazy">
+          <h4>Дополнительный талисман</h4>
+          <p>Состав ротации может отличаться в зависимости от главы.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- МАГАЗИН ---------- -->
+    <section id="alecto-shop">
+      <h2><span class="h-num">11</span> Магазин сапфиров</h2>
+      <p>
+        Оценка по ценности в изумрудах. Выше 100% — выгоднее стандартных способов
+        (например, Ярмарки редкости), ниже 100% — невыгодно.
+        Магазин постоянный, но валюта сгорает вместе с событием.
+      </p>
+
+      <h3 class="shop-h shop-h-good">Брать — 100% и выше</h3>
+      <div class="table-wrap">
+        <table class="data-table table-shop">
+          <thead>
+            <tr><th>Позиция</th><th class="num">Сапфиров</th><th class="num">Ценность</th><th class="num">%</th></tr>
+          </thead>
+          <tbody>
+            <tr class="row-good"><td>50 Великих рун зачарования</td><td class="num">1</td><td class="num">5 000</td><td class="num"><span class="pct pct-top">125%</span></td></tr>
+            <tr class="row-good"><td>10 Сундуков ресурсов титанов</td><td class="num">1</td><td class="num">5 000</td><td class="num"><span class="pct pct-top">125%</span></td></tr>
+            <tr class="row-good"><td>700 Частиц хаоса</td><td class="num">1</td><td class="num">4 900</td><td class="num"><span class="pct pct-top">122,5%</span></td></tr>
+            <tr class="row-good"><td>15 Бутыльков энергии</td><td class="num">1</td><td class="num">4 500</td><td class="num"><span class="pct pct-good">112,5%</span></td></tr>
+            <tr><td>20 000 Зелий титанов</td><td class="num">1</td><td class="num">4 000</td><td class="num"><span class="pct pct-ok">100%</span></td></tr>
+            <tr><td>40 000 Эссенции элементов</td><td class="num">1</td><td class="num">4 000</td><td class="num"><span class="pct pct-ok">100%</span></td></tr>
+            <tr><td>15 000 Камней шкур титанов</td><td class="num">1</td><td class="num">4 000</td><td class="num"><span class="pct pct-ok">100%</span></td></tr>
+            <tr><td>10 Длани славы</td><td class="num">1</td><td class="num">4 000</td><td class="num"><span class="pct pct-ok">100%</span></td></tr>
+            <tr><td>10 Головы минотавра</td><td class="num">1</td><td class="num">4 000</td><td class="num"><span class="pct pct-ok">100%</span></td></tr>
+            <tr><td>10 Гигантоборца</td><td class="num">1</td><td class="num">4 000</td><td class="num"><span class="pct pct-ok">100%</span></td></tr>
+            <tr><td>10 Пылающего сердца</td><td class="num">1</td><td class="num">4 000</td><td class="num"><span class="pct pct-ok">100%</span></td></tr>
+            <tr><td>1 Эгретка ночных цикад</td><td class="num">1</td><td class="num">4 000</td><td class="num"><span class="pct pct-ok">100%</span></td></tr>
+            <tr><td>1 Вечерний комендантский час</td><td class="num">1</td><td class="num">4 000</td><td class="num"><span class="pct pct-ok">100%</span></td></tr>
+            <tr><td>1 Сердце дракона</td><td class="num">1</td><td class="num">4 000</td><td class="num"><span class="pct pct-ok">100%</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="shop-h shop-h-bad">Не брать — ниже 100%</h3>
+      <div class="table-wrap">
+        <table class="data-table table-shop">
+          <thead>
+            <tr><th>Позиция</th><th class="num">Сапфиров</th><th class="num">Ценность</th><th class="num">%</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>20 Больших сундуков шкур</td><td class="num">1</td><td class="num">3 840</td><td class="num"><span class="pct pct-mid">96%</span></td></tr>
+            <tr><td>3 Трины</td><td class="num">1</td><td class="num">3 600</td><td class="num"><span class="pct pct-mid">90%</span></td></tr>
+            <tr><td>2 Карты Ла Морта</td><td class="num">1</td><td class="num">3 200</td><td class="num"><span class="pct pct-mid">80%</span></td></tr>
+            <tr><td>2 Клыка ликантропа</td><td class="num">1</td><td class="num">3 200</td><td class="num"><span class="pct pct-mid">80%</span></td></tr>
+            <tr><td>2 Набора алхимика</td><td class="num">1</td><td class="num">3 200</td><td class="num"><span class="pct pct-mid">80%</span></td></tr>
+            <tr><td>60 Безупречных сундуков артефактов</td><td class="num">1</td><td class="num">2 880</td><td class="num"><span class="pct pct-bad">72%</span></td></tr>
+            <tr class="row-bad"><td>250 Эха перемен</td><td class="num">1</td><td class="num">2 500</td><td class="num"><span class="pct pct-bad">62,5%</span></td></tr>
+            <tr class="row-bad"><td>500 Крыла Зорвала</td><td class="num">1</td><td class="num">2 000</td><td class="num"><span class="pct pct-worst">50%</span></td></tr>
+            <tr class="row-bad"><td>500 Печати Искажённой атаки</td><td class="num">1</td><td class="num">2 000</td><td class="num"><span class="pct pct-worst">50%</span></td></tr>
+            <tr class="row-bad"><td>500 Короны Искажения</td><td class="num">1</td><td class="num">2 000</td><td class="num"><span class="pct pct-worst">50%</span></td></tr>
+            <tr class="row-bad"><td>1 Малый сундук душ героя</td><td class="num">1</td><td class="num">2 000</td><td class="num"><span class="pct pct-worst">50%</span></td></tr>
+            <tr class="row-bad"><td>300 Огромных зелий опыта</td><td class="num">1</td><td class="num">1 500</td><td class="num"><span class="pct pct-worst">37,5%</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout callout-info">
+        <p>
+          <strong>Осколки Алекто в магазине не продаются.</strong> Единственный источник —
+          крутки Алтаря судьбы за монеты доблести (плюс Таинственный остров).
+        </p>
+      </div>
+    </section>
+
+    <!-- ---------- АРТЕФАКТЫ ---------- -->
+    <section id="alecto-artifacts">
+      <h2><span class="h-num">12</span> Артефакты Искажения</h2>
+
+      <div class="artifact-cards">
+        <article class="art-card">
+          <img src="/alecto-guide/assets/img/zorvals-wing.png" alt="Крыло Зорвала" loading="lazy">
+          <h3>Крыло Зорвала</h3>
+          <p class="art-role">Первый артефакт Умбры</p>
+          <p>Стихийное оружие — характеристики относительно неважны.</p>
+          <div class="art-cost">37 сапфиров до 6★</div>
+        </article>
+        <article class="art-card art-card-best">
+          <img src="/alecto-guide/assets/img/distorted-attack-seal.png" alt="Печать Искажённой атаки" loading="lazy">
+          <h3>Печать Искажённой атаки</h3>
+          <p class="art-role">Третий артефакт</p>
+          <p>Общий для всех Искажённых атакующих титанов. Повышает базовые характеристики —
+          важен для развития Алекто.</p>
+          <div class="art-cost">37 сапфиров до 6★</div>
+          <span class="art-flag">приоритет, если брать</span>
+        </article>
+        <article class="art-card">
+          <img src="/alecto-guide/assets/img/crown-of-distortion.png" alt="Корона Искажения" loading="lazy">
+          <h3>Корона Искажения</h3>
+          <p class="art-role">Третий артефакт</p>
+          <p>Добавлен в магазин события. Тоже общий для Искажённых атакующих титанов.</p>
+          <div class="art-cost">37 сапфиров до 6★</div>
+        </article>
+      </div>
+
+      <h3>Сколько сапфиров нужно на самом деле</h3>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr><th>Сценарий</th><th class="num">Нужно сапфиров</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Один артефакт до 6★</td><td class="num">37</td></tr>
+            <tr><td>Крыло Зорвала + Печать Искажённой атаки</td><td class="num">74</td></tr>
+            <tr><td>То же, но с Золотым билетом (−5)</td><td class="num">69</td></tr>
+            <tr><td>Все три артефакта</td><td class="num">111</td></tr>
+            <tr><td>Все три, с Золотым билетом</td><td class="num">106</td></tr>
+            <tr class="row-highlight"><td>Реально у F2P за событие</td><td class="num">~22</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout callout-warn">
+        <h4>Вердикт: не распыляйтесь</h4>
+        <p>
+          У F2P за событие набирается около 22 сапфиров — этого не хватит даже на
+          один артефакт до 6★. Артефакты возвращаются в будущих событиях,
+          а титаны Искажения <strong>на текущий момент слабы</strong>: их ценность
+          в будущих Супер-титанах.
+        </p>
+        <p>
+          Если всё же вкладываться — берите <strong>Печать Искажённой атаки</strong>
+          (третий артефакт, общий для всех Искажённых атакующих). Но на уровнях 60–90
+          выгоднее взять руны и частицы хаоса: они работают на весь аккаунт прямо сейчас.
+        </p>
+      </div>
+
+      <h3>Таблица прокачки артефактов</h3>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr><th>Звезда</th><th class="num">Фрагментов</th><th class="num">Всего</th><th class="num">Сапфиров (всего)</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1★</td><td class="num">60</td><td class="num">60</td><td class="num">1</td></tr>
+            <tr><td>2★</td><td class="num">440</td><td class="num">500</td><td class="num">1</td></tr>
+            <tr><td>3★</td><td class="num">1 400</td><td class="num">1 900</td><td class="num">4</td></tr>
+            <tr><td>4★</td><td class="num">2 500</td><td class="num">4 400</td><td class="num">9</td></tr>
+            <tr><td>5★</td><td class="num">5 000</td><td class="num">9 400</td><td class="num">19</td></tr>
+            <tr><td>6★</td><td class="num">9 000</td><td class="num">18 400</td><td class="num">37</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Прочие предметы события</h3>
+      <div class="misc-items">
+        <div class="misc-item">
+          <img src="/alecto-guide/assets/img/summoning-sphere.png" alt="Сфера призыва Искажённого духа" loading="lazy">
+          <div>
+            <h4>Сфера призыва Искажённого духа</h4>
+            <p>Награда за главу 7. Содержит фрагмент тотема на выбор: стихийного, света,
+            тьмы или Искажения. Прогресс можно сбросить или обменять на стихийные катализаторы.</p>
+          </div>
+        </div>
+        <div class="misc-item">
+          <img src="/alecto-guide/assets/img/echo-of-change.png" alt="Эхо перемен" loading="lazy">
+          <div>
+            <h4>Эхо перемен</h4>
+            <p>Материал для прокачки тотема Искажения. Добавлен в магазин события,
+            заменяем изумрудами (требуется ×10 от стоимости в изумрудах).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- ОХОТНИЦА РАЗЛОМА ---------- -->
+    <section id="alecto-huntress">
+      <h2><span class="h-num">13</span> Охотница Разлома — побочная ветка</h2>
+      <p>
+        Дополнительная линейка квестов, идущая параллельно основному событию.
+        Участие добровольное — она влияет только на фестивальную часть события.
+      </p>
+
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr><th>№</th><th>Задача</th><th class="num">Максимум</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Поднять уровень Алекто</td><td class="num">100</td></tr>
+            <tr><td>2</td><td>Повысить ранг эволюции Алекто</td><td class="num">6★</td></tr>
+            <tr><td>3</td><td>Прокачать стандартный облик Алекто</td><td class="num">60</td></tr>
+            <tr><td>4</td><td>Повысить ранг артефакта «Том Белава»</td><td class="num">6★</td></tr>
+            <tr><td>5</td><td>Прокачать артефакты Алекто</td><td class="num">360</td></tr>
+            <tr><td>6</td><td>Выполнить квесты события</td><td class="num">40</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout callout-tip">
+        <h4>Важный нюанс с порядком</h4>
+        <p>
+          Эта линейка <strong>не подвержена баффам события</strong>. Для максимальной
+          эффективности выполните все квесты по нужным героям
+          <strong>до призыва Алекто</strong>.
+        </p>
+      </div>
+
+      <div class="callout callout-info">
+        <h4>Если бережёте рейтинг в Турнире Силы</h4>
+        <p>
+          Прохождение этой ветки поднимает мощь аккаунта. Если это критично
+          для вашего места в турнире, можно намеренно ограничить рост:
+        </p>
+        <ul class="check-list">
+          <li>Прокачивать глифы только до низких ступеней</li>
+          <li>Улучшать артефакты, но держать их на 1★</li>
+          <li>Подстраивать приоритеты под свою цель — низкая мощь либо долгий рост</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ---------- ОШИБКИ ---------- -->
+    <section id="alecto-mistakes">
+      <h2><span class="h-num">14</span> Чего не делать</h2>
+      <div class="mistakes">
+        <div class="mistake">
+          <div class="mistake-x">✕</div>
+          <div>
+            <h4>Крутить Алтарь до Тома 6 и Грааля 4</h4>
+            <p>Теряете более 40% эффективности каждой монеты.</p>
+          </div>
+        </div>
+        <div class="mistake">
+          <div class="mistake-x">✕</div>
+          <div>
+            <h4>Качать Грааль раньше Тома</h4>
+            <p>Том даёт бонус и на прокачку Грааля тоже — порядок принципиален.</p>
+          </div>
+        </div>
+        <div class="mistake">
+          <div class="mistake-x">✕</div>
+          <div>
+            <h4>Вкладываться в реликвии в последний день</h4>
+            <p>С этого приключения реликвии не обмениваются на сундуки — они просто сгорят.
+            Остаток кристаллов конвертируйте в монеты.</p>
+          </div>
+        </div>
+        <div class="mistake">
+          <div class="mistake-x">✕</div>
+          <div>
+            <h4>Гнаться за главой 4</h4>
+            <p>+110 кристаллов, +0 сапфиров сверх главы 3.</p>
+          </div>
+        </div>
+        <div class="mistake">
+          <div class="mistake-x">✕</div>
+          <div>
+            <h4>Целиться в главу 7 и тотем</h4>
+            <p>790 кристаллов только в Амулет — чистый P2W.</p>
+          </div>
+        </div>
+        <div class="mistake">
+          <div class="mistake-x">✕</div>
+          <div>
+            <h4>Квесты «Купить изумруды» (120 000) и «Потратить 150 000 изумрудов»</h4>
+            <p>Донат или огромный запас. Но первые ступени «Потратить изумруды»
+            (100 и 500) берите — там 380% и 228% ценности.</p>
+          </div>
+        </div>
+        <div class="mistake">
+          <div class="mistake-x">✕</div>
+          <div>
+            <h4>Проходить ветку Охотницы после призыва Алекто</h4>
+            <p>Она не получает баффы события. Все квесты по нужным героям
+            эффективнее закрыть до призыва.</p>
+          </div>
+        </div>
+        <div class="mistake">
+          <div class="mistake-x">✕</div>
+          <div>
+            <h4>Копить сапфиры «на потом»</h4>
+            <p>Магазин постоянный, а валюта — нет. У Алекто был всего один
+            дополнительный день после конца приключения.</p>
+          </div>
+        </div>
+        <div class="mistake">
+          <div class="mistake-x">✕</div>
+          <div>
+            <h4>Целиться в 6★ Алекто</h4>
+            <p>3 130 осколков ≈ 464 000 монет даже при Граале 6. Недостижимо без доната.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- ШПАРГАЛКА ---------- -->
+    <section id="alecto-cheatsheet">
+      <h2><span class="h-num">15</span> Краткая шпаргалка</h2>
+      <div class="cheat">
+        <div class="cheat-row">
+          <img src="/alecto-guide/assets/img/tome-of-greed.png" alt="">
+          <div class="cheat-name">Том жадности</div>
+          <div class="cheat-arrow">→</div>
+          <div class="cheat-lvl">6</div>
+          <div class="cheat-cost">150 кристаллов</div>
+          <div class="cheat-note">первым делом</div>
+        </div>
+        <div class="cheat-row">
+          <img src="/alecto-guide/assets/img/amulet-of-battle.png" alt="">
+          <div class="cheat-name">Амулет битвы</div>
+          <div class="cheat-arrow">→</div>
+          <div class="cheat-lvl">5</div>
+          <div class="cheat-cost">50 кристаллов</div>
+          <div class="cheat-note">открывает главу 3</div>
+        </div>
+        <div class="cheat-row">
+          <img src="/alecto-guide/assets/img/grail-of-generosity.png" alt="">
+          <div class="cheat-name">Грааль щедрости</div>
+          <div class="cheat-arrow">→</div>
+          <div class="cheat-lvl">4</div>
+          <div class="cheat-cost">60 кристаллов</div>
+          <div class="cheat-note">крутка 2 800 → 2 400</div>
+        </div>
+        <div class="cheat-row cheat-row-final">
+          <img src="/alecto-guide/assets/img/valor-coin.png" alt="">
+          <div class="cheat-name">Остаток ~205</div>
+          <div class="cheat-arrow">→</div>
+          <div class="cheat-lvl">монеты</div>
+          <div class="cheat-cost">в последний день</div>
+          <div class="cheat-note">1 100 за кристалл</div>
+        </div>
+      </div>
+      <div class="cheat-result">
+        Итог: <strong>~2 230 осколков</strong> (Алекто 5★) + <strong>~22 сапфира</strong>
+      </div>
+
+      <div class="callout callout-info">
+        <h4>Оговорка о точности</h4>
+        <p>
+          Расчёты круток строятся на заявленном шансе 10% на джекпот и 15 осколках
+          за неудачную крутку. Защита от неудач (гарантия через 2 / 4 / 8 / 15 круток)
+          распространяется <strong>только на сапфиры, не на осколки</strong> — по осколкам
+          разброс реальный, ±10% от указанных цифр это норма.
+          Порог 5★ (1 630) вы возьмёте с большим запасом в любом случае.
+        </p>
+      </div>
+    </section>
+
+    <!-- ---------- ИСТОЧНИКИ ---------- -->
+    <section id="alecto-sources">
+      <h2><span class="h-num">16</span> Источники</h2>
+      <ul class="sources-list">
+        <li>
+          <a href="https://h-w.fun/en/fall-of-the-veil" target="_blank" rel="noopener">h-w.fun — Fall of the Veil (Alecto Event)</a>
+          <span>Детальные таблицы стоимости реликвий, глав, фестиваля и защиты от неудач</span>
+        </li>
+        <li>
+          <a href="https://h-w.fun/en/fall-of-the-veil-tasks" target="_blank" rel="noopener">h-w.fun — Fall of the Veil Tasks and Rewards</a>
+          <span>Полный список квестов и наград с оценкой в изумрудах</span>
+        </li>
+        <li>
+          <a href="https://h-w.fun/en/festival-shop-alecto" target="_blank" rel="noopener">h-w.fun — Festival Shop (Fall of the Veil)</a>
+          <span>Оценка позиций магазина сапфиров по ценности</span>
+        </li>
+        <li>
+          <a href="https://h-w.fun/en/rift-huntress" target="_blank" rel="noopener">h-w.fun — Rift Huntress Tasks and Rewards</a>
+          <span>Побочная ветка квестов по прокачке Алекто</span>
+        </li>
+        <li>
+          <a href="https://www.herowarscentral.com/post/alecto-s-event-which-relic-first" target="_blank" rel="noopener">herowarscentral.com — Alecto's Event: Which Relic First?</a>
+          <span>Альтернативная раскладка реликвий и путь к Дару Доминиона</span>
+        </li>
+        <li>
+          <a href="https://alexandregames.com/hero-wars-dominion-era/events-special-hwde/alecto-valdur-guide-en.html" target="_blank" rel="noopener">alexandregames.com — Alecto and Valdur Event Guide</a>
+          <span>Приоритеты F2P, правила сброса ресурсов между событиями</span>
+        </li>
+      </ul>
+      <p class="sources-note">
+        Математика мастерской (правило 5×, точки окупаемости, сравнение планов)
+        пересчитана самостоятельно по опубликованным таблицам стоимости,
+        а не скопирована из источников.
+      </p>
+
+      <div class="callout callout-info">
+        <h4>Связанный материал</h4>
+        <p>
+          Экономика мастерской у Алекто и Валдура идентична — те же таблицы,
+          тот же оптимум. Отличаются только названия глав, боссы и набор артефактов.
+          Если вы готовитесь к текущему событию, смотрите гайд по
+          <strong>Judgment Day (Валдур и Эхо)</strong>.
+        </p>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Гайд по событию Fall of the Veil (Алекто) · Hero Wars: Dominion Era · август 2026</p>
+    <p class="footer-dim">Все изображения принадлежат Nexters. Материал носит справочный характер.</p>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Наверх">↑</button>
+
+
+
+      </div>
+    </div>
+
+
+
+    <div id="guide-container-valdur" class="guide-container" style="display:none;">
+      <div class="valdur-guide-wrap">
 <header class="site-header">
   <div class="wrap header-inner">
     <div class="brand">
@@ -130,23 +1600,23 @@
     <nav aria-label="Содержание">
       <div class="toc-title">Содержание</div>
       <ol class="toc" id="valdurToc">
-        <li><a href="#intro">О событии</a></li>
-        <li><a href="#reset">Шаг 0. Сброс ресурсов</a></li>
-        <li><a href="#economy">Экономика события</a></li>
-        <li><a href="#budget">Бюджет кристаллов</a></li>
-        <li><a href="#workshop">Мастерская: главный вопрос</a></li>
-        <li><a href="#rule">Правило 5×</a></li>
-        <li><a href="#calc">Калькулятор</a></li>
-        <li><a href="#amulet">Амулет и главы</a></li>
-        <li><a href="#plans">Сравнение планов</a></li>
-        <li><a href="#roadmap">План по дням</a></li>
-        <li><a href="#battles">Бои и составы</a></li>
-        <li><a href="#talismans">Талисманы</a></li>
-        <li><a href="#shop">Магазин сапфиров</a></li>
-        <li><a href="#artifacts">Артефакты Искажения</a></li>
-        <li><a href="#mistakes">Чего не делать</a></li>
-        <li><a href="#cheatsheet">Шпаргалка</a></li>
-        <li><a href="#sources">Источники</a></li>
+        <li><a href="#valdur-intro">О событии</a></li>
+        <li><a href="#valdur-reset">Шаг 0. Сброс ресурсов</a></li>
+        <li><a href="#valdur-economy">Экономика события</a></li>
+        <li><a href="#valdur-budget">Бюджет кристаллов</a></li>
+        <li><a href="#valdur-workshop">Мастерская: главный вопрос</a></li>
+        <li><a href="#valdur-rule">Правило 5×</a></li>
+        <li><a href="#valdur-calc">Калькулятор</a></li>
+        <li><a href="#valdur-amulet">Амулет и главы</a></li>
+        <li><a href="#valdur-plans">Сравнение планов</a></li>
+        <li><a href="#valdur-roadmap">План по дням</a></li>
+        <li><a href="#valdur-battles">Бои и составы</a></li>
+        <li><a href="#valdur-talismans">Талисманы</a></li>
+        <li><a href="#valdur-shop">Магазин сапфиров</a></li>
+        <li><a href="#valdur-artifacts">Артефакты Искажения</a></li>
+        <li><a href="#valdur-mistakes">Чего не делать</a></li>
+        <li><a href="#valdur-cheatsheet">Шпаргалка</a></li>
+        <li><a href="#valdur-sources">Источники</a></li>
       </ol>
     </nav>
   </aside>
@@ -155,7 +1625,7 @@
   <main id="main">
 
     <!-- ---------- HERO ---------- -->
-    <section class="hero" id="intro">
+    <section class="hero" id="valdur-intro">
       <div class="hero-media">
         <img src="/valdur-guide/assets/img/valdur-hero.jpg" alt="Титан Валдур — Hero Wars: Dominion Era" loading="lazy">
       </div>
@@ -172,8 +1642,8 @@
           <span class="badge badge-lvl">Для уровней 60–90</span>
         </div>
         <div class="hero-cta">
-          <a href="#cheatsheet" class="btn btn-primary">Сразу к шпаргалке</a>
-          <a href="#workshop" class="btn btn-ghost">Разбор мастерской</a>
+          <a href="#valdur-cheatsheet" class="btn btn-primary">Сразу к шпаргалке</a>
+          <a href="#valdur-workshop" class="btn btn-ghost">Разбор мастерской</a>
         </div>
       </div>
     </section>
@@ -213,7 +1683,7 @@
     </section>
 
     <!-- ---------- ШАГ 0 ---------- -->
-    <section id="reset">
+    <section id="valdur-reset">
       <h2><span class="h-num">0</span> Сделать до старта события</h2>
       <div class="callout callout-warn">
         <p><strong>Ресурсы события Алекто сгорают</strong> при переходе к Валдуру. Обнуляются:</p>
@@ -236,7 +1706,7 @@
     </section>
 
     <!-- ---------- ЭКОНОМИКА ---------- -->
-    <section id="economy">
+    <section id="valdur-economy">
       <h2><span class="h-num">1</span> Экономика события</h2>
       <p>Всё событие — это одна цепочка превращений. Понимаете её — понимаете, куда вкладываться.</p>
 
@@ -302,7 +1772,7 @@
     </section>
 
     <!-- ---------- БЮДЖЕТ ---------- -->
-    <section id="budget">
+    <section id="valdur-budget">
       <h2><span class="h-num">2</span> Бюджет кристаллов F2P</h2>
       <p>Реалистичный сбор без вложений — около <strong>465 кристаллов</strong>.</p>
 
@@ -335,7 +1805,7 @@
     </section>
 
     <!-- ---------- МАСТЕРСКАЯ ---------- -->
-    <section id="workshop">
+    <section id="valdur-workshop">
       <h2><span class="h-num">3</span> Мастерская: главный вопрос</h2>
 
       <div class="relic-cards">
@@ -376,7 +1846,7 @@
     </section>
 
     <!-- ---------- ПРАВИЛО 5x ---------- -->
-    <section id="rule">
+    <section id="valdur-rule">
       <h2><span class="h-num">4</span> Правило 5×</h2>
       <div class="callout callout-rule">
         <p class="rule-text">
@@ -427,11 +1897,11 @@
     </section>
 
     <!-- ---------- КАЛЬКУЛЯТОР ---------- -->
-    <section id="calc">
+    <section id="valdur-calc">
       <h2><span class="h-num">5</span> Калькулятор мастерской</h2>
       <p>Подставьте свой бюджет кристаллов и посмотрите, как меняется оптимум.</p>
 
-      <div class="calc" id="calcWidget">
+      <div class="calc" id="valdurCalcWidget">
         <div class="calc-controls">
           <div class="calc-field">
             <label for="inpBudget">Бюджет кристаллов</label>
@@ -499,7 +1969,7 @@
     </section>
 
     <!-- ---------- АМУЛЕТ И ГЛАВЫ ---------- -->
-    <section id="amulet">
+    <section id="valdur-amulet">
       <h2><span class="h-num">6</span> Амулет битвы: до какой главы идти</h2>
       <p>Амулет — это <strong>гейт</strong>. Главы требуют накопленной вкачки.</p>
 
@@ -594,7 +2064,7 @@
     </section>
 
     <!-- ---------- СРАВНЕНИЕ ПЛАНОВ ---------- -->
-    <section id="plans">
+    <section id="valdur-plans">
       <h2><span class="h-num">7</span> Сравнение планов (бюджет 465)</h2>
 
       <div class="plan-grid">
@@ -675,11 +2145,11 @@
       <h3>Визуальное сравнение</h3>
       <div class="chart-block">
         <div class="chart-title">Осколки Валдура</div>
-        <div class="bars" id="valdurBarsStones"></div>
+        <div class="bars" id="barsStones"></div>
       </div>
       <div class="chart-block">
         <div class="chart-title">Сапфировые медальоны</div>
-        <div class="bars" id="valdurBarsSapph"></div>
+        <div class="bars" id="barsSapph"></div>
       </div>
 
       <div class="callout callout-key-sm">
@@ -700,7 +2170,7 @@
     </section>
 
     <!-- ---------- ПЛАН ПО ДНЯМ ---------- -->
-    <section id="roadmap">
+    <section id="valdur-roadmap">
       <h2><span class="h-num">8</span> Пошаговый план по дням</h2>
 
       <div class="timeline">
@@ -799,7 +2269,7 @@
     </section>
 
     <!-- ---------- БОИ ---------- -->
-    <section id="battles">
+    <section id="valdur-battles">
       <h2><span class="h-num">9</span> Бои: составы и тактика</h2>
 
       <div class="rules-grid">
@@ -899,7 +2369,7 @@
     </section>
 
     <!-- ---------- ТАЛИСМАНЫ ---------- -->
-    <section id="talismans">
+    <section id="valdur-talismans">
       <h2><span class="h-num">10</span> Талисманы</h2>
       <p>Временные баффы, выбираются при входе на этап. Официальная рекомендация —
       <strong>Талисман ярости + хилер</strong> (например, Варна).</p>
@@ -967,7 +2437,7 @@
     </section>
 
     <!-- ---------- МАГАЗИН ---------- -->
-    <section id="shop">
+    <section id="valdur-shop">
       <h2><span class="h-num">11</span> Магазин сапфиров</h2>
       <p>Оценка по ценности в изумрудах. Выше 100% — выгоднее стандартных способов
       (например, Ярмарки редкости), ниже 100% — невыгодно.</p>
@@ -1022,7 +2492,7 @@
     </section>
 
     <!-- ---------- АРТЕФАКТЫ ---------- -->
-    <section id="artifacts">
+    <section id="valdur-artifacts">
       <h2><span class="h-num">12</span> Артефакты Искажения</h2>
 
       <div class="artifact-cards">
@@ -1099,7 +2569,7 @@
     </section>
 
     <!-- ---------- ОШИБКИ ---------- -->
-    <section id="mistakes">
+    <section id="valdur-mistakes">
       <h2><span class="h-num">13</span> Чего не делать</h2>
       <div class="mistakes">
         <div class="mistake">
@@ -1163,7 +2633,7 @@
     </section>
 
     <!-- ---------- ШПАРГАЛКА ---------- -->
-    <section id="cheatsheet">
+    <section id="valdur-cheatsheet">
       <h2><span class="h-num">14</span> Краткая шпаргалка</h2>
       <div class="cheat">
         <div class="cheat-row">
@@ -1214,7 +2684,7 @@
     </section>
 
     <!-- ---------- ИСТОЧНИКИ ---------- -->
-    <section id="sources">
+    <section id="valdur-sources">
       <h2><span class="h-num">15</span> Источники</h2>
       <ul class="sources-list">
         <li>
@@ -1262,9 +2732,10 @@
 
 
 
+      </div>
     </div>
-  </section>
 
+  </section>
 
   <!-- ===================== HERO DETAIL VIEW ===================== -->
   <section id="view-hero-detail" class="view">

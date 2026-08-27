@@ -43,6 +43,27 @@ export function navigateTo(targetView, param = null) {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
+export function switchGuide(guideName) {
+  const containerAlecto = document.getElementById('guide-container-alecto');
+  const containerValdur = document.getElementById('guide-container-valdur');
+  const btnAlecto = document.getElementById('btnGuideAlecto');
+  const btnValdur = document.getElementById('btnGuideValdur');
+
+  if (guideName === 'valdur') {
+    if (containerAlecto) containerAlecto.style.display = 'none';
+    if (containerValdur) containerValdur.style.display = 'block';
+    if (btnAlecto) btnAlecto.classList.remove('on');
+    if (btnValdur) btnValdur.classList.add('on');
+    location.hash = 'guides/valdur';
+  } else {
+    if (containerAlecto) containerAlecto.style.display = 'block';
+    if (containerValdur) containerValdur.style.display = 'none';
+    if (btnAlecto) btnAlecto.classList.add('on');
+    if (btnValdur) btnValdur.classList.remove('on');
+    location.hash = 'guides/alecto';
+  }
+}
+
 export function handleHashChange() {
   const hash = location.hash.replace(/^#/, '');
   if (!hash || hash === 'wiki') {
@@ -65,6 +86,8 @@ export function handleHashChange() {
   }
   if (hash === 'guides' || hash.startsWith('guides/')) {
     navigateTo('guides');
+    const sub = hash.split('/')[1];
+    switchGuide(sub === 'valdur' ? 'valdur' : 'alecto');
     return;
   }
   const mainViews = ['advisor', 'teams', 'matrix', 'about', 'guides'];
@@ -84,6 +107,11 @@ export function initNavigation() {
       }
     });
   });
+
+  const btnAlecto = document.getElementById('btnGuideAlecto');
+  const btnValdur = document.getElementById('btnGuideValdur');
+  if (btnAlecto) btnAlecto.addEventListener('click', () => switchGuide('alecto'));
+  if (btnValdur) btnValdur.addEventListener('click', () => switchGuide('valdur'));
 
   window.addEventListener('hashchange', handleHashChange);
   handleHashChange();

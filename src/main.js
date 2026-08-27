@@ -1,5 +1,6 @@
 import './style.css';
 import './styles/valdur.css';
+import './styles/alecto.css';
 import { loadAllData, getHeroes, getTeams, isOfflineMode } from './data/dataService.js';
 import { initNavigation } from './components/navigation.js';
 import { initAdvisor } from './views/advisor.js';
@@ -7,6 +8,7 @@ import { initWikiView } from './views/wiki.js';
 import { initTeams } from './views/teams.js';
 import { initMatrix } from './views/matrix.js';
 import { initValdurGuide } from './views/valdurGuide.js';
+import { initAlectoGuide } from './views/alectoGuide.js';
 
 function renderBadges() {
   const box = document.getElementById('statBadges');
@@ -45,6 +47,7 @@ async function boot() {
     initTeams();
     initMatrix();
     initValdurGuide();
+    initAlectoGuide();
     renderBadges();
   } catch (err) {
     console.error('Fatal boot error:', err);
