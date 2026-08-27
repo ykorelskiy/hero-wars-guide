@@ -90,7 +90,11 @@ export function handleHashChange() {
     switchGuide(sub === 'valdur' ? 'valdur' : 'alecto');
     return;
   }
-  const mainViews = ['advisor', 'teams', 'matrix', 'about', 'guides'];
+  if (hash === 'titans' || hash.startsWith('titans-')) {
+    navigateTo('titans');
+    return;
+  }
+  const mainViews = ['advisor', 'teams', 'matrix', 'about', 'guides', 'titans'];
   if (mainViews.includes(hash)) {
     navigateTo(hash);
   }

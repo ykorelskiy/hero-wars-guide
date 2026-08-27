@@ -22,6 +22,7 @@
   <nav id="mainNav">
     <button class="nb on" data-view="wiki">📚 Герои</button>
     <button class="nb" data-view="guides">📜 Гайды по событиям</button>
+    <button class="nb" data-view="titans">🗿 Титаны</button>
     <button class="nb" data-view="pets">🐾 Питомцы</button>
     <button class="nb" data-view="advisor">🧭 Советчик по контрам</button>
     <button class="nb" data-view="teams">📋 Все команды</button>
@@ -189,6 +190,7 @@
     <!-- ---------- СТАТУС ---------- -->
     <section id="alecto-status">
       <h2><span class="h-num">0</span> Статус события и связь с Валдуром</h2>
+<p style="margin-top:10px;">💡 <strong>Базовые знания:</strong> Изучите <a href="#titans" style="color:var(--gold);font-weight:700;">🗿 Полный гайд по Титанам</a> (стихии, калькулятор контрпиков, тотемы и артефакты).</p>
 
       <div class="callout callout-warn">
         <h4>Событие уже завершилось</h4>
@@ -2736,6 +2738,1070 @@
     </div>
 
   </section>
+
+  
+  <!-- ===================== TITANS GUIDE VIEW ===================== -->
+  <section id="view-titans" class="view">
+    <div class="titans-guide-wrap">
+<header class="site-header">
+  <div class="wrap header-inner">
+    <div class="brand">
+      <img src="/titans-guide/assets/img/totem-fire.png" alt="Титаны" class="brand-icon">
+      <div>
+        <div class="brand-title">Титаны Dominion Era</div>
+        <div class="brand-sub">Стихии · Контрпики · Тотемы · Артефакты</div>
+      </div>
+    </div>
+    <button class="nav-toggle" id="titansNavToggle" aria-label="Меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="layout wrap">
+
+  <!-- ===================== БОКОВАЯ НАВИГАЦИЯ ===================== -->
+  <aside class="sidebar" id="titansSidebar">
+    <nav aria-label="Содержание">
+      <div class="toc-title">Содержание</div>
+      <ol class="toc" id="titansToc">
+        <li><a href="#titans-intro">О гайде</a></li>
+        <li><a href="#titans-elements">Круг стихий</a></li>
+        <li><a href="#titans-armor">Урон и броня</a></li>
+        <li><a href="#titans-counter">Калькулятор контрпиков</a></li>
+        <li><a href="#titans-roster">Ростер титанов</a></li>
+        <li><a href="#titans-distortion">Титаны Искажения</a></li>
+        <li><a href="#titans-totems">Тотемы: активация и прокачка</a></li>
+        <li><a href="#titans-fusion">Слияние тотемов</a></li>
+        <li><a href="#titans-artifacts">Артефакты титанов</a></li>
+        <li><a href="#titans-priority">Приоритеты прокачки</a></li>
+        <li><a href="#titans-valley">Долина Титанов</a></li>
+        <li><a href="#titans-mistakes">Чего не делать</a></li>
+        <li><a href="#titans-cheatsheet">Шпаргалка</a></li>
+        <li><a href="#titans-sources">Источники</a></li>
+      </ol>
+    </nav>
+  </aside>
+
+  <!-- ===================== ОСНОВНОЙ КОНТЕНТ ===================== -->
+  <main id="main">
+
+    <!-- ---------- HERO ---------- -->
+    <section class="hero" id="titans-intro">
+      <div class="hero-media">
+        <img src="/titans-guide/assets/img/alecto.png" alt="Титаны Hero Wars: Dominion Era" loading="lazy">
+      </div>
+      <div class="hero-body">
+        <h1>Титаны: полный гайд по стихиям, контрпикам и прокачке</h1>
+        <p class="lead">
+          Шесть стихий, тридцать с лишним титанов, тотемы, слияние и артефакты —
+          всё, что нужно понимать, чтобы не сливать ресурсы в неправильные апгрейды.
+          Отдельный блок — новая стихия <strong>Искажения</strong> и её титаны.
+        </p>
+        <div class="meta-badges">
+          <span class="badge badge-date">Актуально на август 2026</span>
+          <span class="badge badge-dur">6 стихий</span>
+          <span class="badge badge-lvl">Для любого уровня аккаунта</span>
+        </div>
+        <div class="hero-cta">
+          <a href="#titans-counter" class="btn btn-primary">К калькулятору контрпиков</a>
+          <a href="#titans-distortion" class="btn btn-ghost">Титаны Искажения</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- ГЛАВНЫЙ ВЫВОД ---------- -->
+    <section class="callout callout-key">
+      <h2 class="callout-title">Главное за 10 секунд</h2>
+      <div class="key-grid">
+        <div class="key-item">
+          <img src="/titans-guide/assets/img/totem-water.png" alt="Круг стихий">
+          <div class="key-name">Круг стихий</div>
+          <div class="key-val">Вода→Огонь→Земля→Вода</div>
+          <div class="key-cost">Свет ↔ Тьма — взаимно</div>
+        </div>
+        <div class="key-item">
+          <img src="/titans-guide/assets/img/crown-of-distortion.png" alt="Искажение">
+          <div class="key-name">Искажение</div>
+          <div class="key-val">бьёт Свет и Тьму</div>
+          <div class="key-cost">проигрывает трём стихиям</div>
+        </div>
+        <div class="key-item">
+          <img src="/titans-guide/assets/img/distorted-attack-seal.png" alt="Артефакты">
+          <div class="key-name">Артефакты титана</div>
+          <div class="key-val">Печать → Корона</div>
+          <div class="key-cost">сначала танк, потом супер-титан</div>
+        </div>
+        <div class="key-item key-item-accent">
+          <img src="/titans-guide/assets/img/echo-of-change.png" alt="Тотем">
+          <div class="key-name">Активация тотема</div>
+          <div class="key-val">3 титана</div>
+          <div class="key-cost">Свет/Тьма/Искажение — от 2</div>
+        </div>
+      </div>
+      <p class="key-result">
+        Один враг — одна контр-стихия. Правильный подбор титанов решает бой
+        сильнее, чем разница в уровнях.
+      </p>
+    </section>
+
+    <!-- ---------- КРУГ СТИХИЙ ---------- -->
+    <section id="titans-elements">
+      <h2><span class="h-num">1</span> Круг стихий</h2>
+      <p>
+        В игре шесть стихий титанов: Вода, Огонь, Земля, Свет, Тьма и новая —
+        Искажение. Каждая система разная.
+      </p>
+
+      <h3>Классический треугольник: Вода → Огонь → Земля</h3>
+      <div class="elem-triangle">
+        <div class="elem-node elem-water">
+          <img src="/titans-guide/assets/img/totem-water.png" alt="Вода">
+          <span>Вода</span>
+        </div>
+        <div class="elem-arrow">бьёт →</div>
+        <div class="elem-node elem-fire">
+          <img src="/titans-guide/assets/img/totem-fire.png" alt="Огонь">
+          <span>Огонь</span>
+        </div>
+        <div class="elem-arrow">бьёт →</div>
+        <div class="elem-node elem-earth">
+          <img src="/titans-guide/assets/img/totem-earth.png" alt="Земля">
+          <span>Земля</span>
+        </div>
+        <div class="elem-arrow elem-arrow-loop">бьёт →</div>
+      </div>
+      <p class="note-small">
+        Земля бьёт Воду, Вода бьёт Огонь, Огонь бьёт Землю. Классический
+        цикл камень-ножницы-бумага без исключений.
+      </p>
+
+      <h3>Свет и Тьма: взаимный контрпик</h3>
+      <div class="elem-duo">
+        <div class="elem-node elem-light">
+          <img src="/titans-guide/assets/img/totem-light.png" alt="Свет">
+          <span>Свет</span>
+        </div>
+        <div class="elem-arrow-double">↔ бьют друг друга</div>
+        <div class="elem-node elem-dark">
+          <img src="/titans-guide/assets/img/totem-dark.png" alt="Тьма">
+          <span>Тьма</span>
+        </div>
+      </div>
+      <p class="note-small">
+        Свет и Тьма не участвуют в треугольнике Вода-Огонь-Земля. Они контрят
+        только друг друга — бой Света против Земли идёт без бонусов урона.
+      </p>
+
+      <h3>Искажение: специалист против двух стихий</h3>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr><th>Искажение против</th><th>Результат</th></tr>
+          </thead>
+          <tbody>
+            <tr class="row-good"><td>Свет</td><td><span class="pill pill-yes">бонус урона и брони</span></td></tr>
+            <tr class="row-good"><td>Тьма</td><td><span class="pill pill-yes">бонус урона и брони</span></td></tr>
+            <tr class="row-bad"><td>Вода</td><td><span class="pill pill-no">без бонуса, уязвимо</span></td></tr>
+            <tr class="row-bad"><td>Огонь</td><td><span class="pill pill-no">без бонуса, уязвимо</span></td></tr>
+            <tr class="row-bad"><td>Земля</td><td><span class="pill pill-no">без бонуса, уязвимо</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout callout-warn">
+        <h4>Искажение — не новый король стихий</h4>
+        <p>
+          Оно не встраивается в старый треугольник, а действует поперёк всей доски.
+          В атаке даёт бонус урона против Света и Тьмы. Но проигрывает сразу
+          трём классическим стихиям — Воде, Огню и Земле. Разработчики прямо
+          называют его <strong>специалистом</strong>, а не универсальным ответом
+          на всё.
+        </p>
+      </div>
+    </section>
+
+    <!-- ---------- УРОН И БРОНЯ ---------- -->
+    <section id="titans-armor">
+      <h2><span class="h-num">2</span> Элементальный урон и броня</h2>
+      <p>
+        Два разных параметра решают, что происходит при встрече двух стихий
+        в бою. Их легко перепутать.
+      </p>
+
+      <div class="two-col">
+        <div class="col-box col-box-good">
+          <h4>Элементальный урон (Оружие)</h4>
+          <p>
+            Прибавляется к базовому урону при атаке контр-стихии.
+            Прокачивается через артефакт-оружие.
+          </p>
+          <div class="formula formula-sm">
+            Финальный урон = базовый урон + Элементальный урон
+          </div>
+        </div>
+        <div class="col-box col-box-bad">
+          <h4>Элементальная броня (Корона)</h4>
+          <p>
+            Снижает входящий урон от контр-стихии. Прокачивается через
+            артефакт-корону. Работает по формуле деления, не вычитания.
+          </p>
+          <div class="formula formula-sm">
+            Финальный урон = урон / (1 + Броня / 300 000)
+          </div>
+        </div>
+      </div>
+
+      <h3>Пример расчёта</h3>
+      <p>
+        Нова (Вода) атакует Ангуса (Земля) базовой атакой на 1 286 286 урона.
+        Элементальная броня Ангуса — 146 547.
+      </p>
+      <div class="formula">
+        1 286 286 / (1 + 146 547 / 300 000) = 1 286 286 / 1,488 ≈ 864 154
+      </div>
+      <p class="note-small">
+        Итоговый урон снижен почти на треть — это и есть работа контр-стихии
+        в защите.
+      </p>
+
+      <div class="callout callout-key-sm">
+        <h4>Ключевое правило брони: атака и защита работают по-разному</h4>
+        <ul class="check-list">
+          <li><strong>В атаке</strong> титан защищён только от своей контр-стихии
+              (например, Огонь защищён от Земли).</li>
+          <li><strong>В защите</strong> Вода, Огонь и Земля защищены от всех трёх
+              стихий цикла разом. Свет и Тьма в защите тоже прикрыты друг от друга
+              взаимно.</li>
+        </ul>
+      </div>
+
+      <div class="callout callout-info">
+        <h4>Особый случай: броня Искажения</h4>
+        <p>
+          Искажение в защите получает защиту против <strong>всей доски</strong>,
+          включая само себя — ни одна стихия не пробивает его чисто. Но в атаке
+          бонус урона работает только против Света и Тьмы, как и описано выше.
+        </p>
+      </div>
+
+      <h3>Затухание с разницей уровней</h3>
+      <p>
+        Оба параметра слабеют, если противник выше уровнем — чем больше разрыв,
+        тем меньше отдача от бонуса.
+      </p>
+      <div class="formula">
+        Модифицированный бонус = Бонус / (1 + разница уровней / 10)
+      </div>
+      <p class="note-small">
+        Правильная стихия не спасёт слабо прокачанную команду против сильно
+        превосходящего противника — эффект контрпика гаснет с разрывом уровней.
+      </p>
+    </section>
+
+    <!-- ---------- КАЛЬКУЛЯТОР КОНТРПИКОВ ---------- -->
+    <section id="titans-counter">
+      <h2><span class="h-num">3</span> Калькулятор контрпиков</h2>
+      <p>
+        Выберите стихию противника — калькулятор покажет, чем атаковать
+        в атаке, чем защищаться, и что нейтрально.
+      </p>
+
+      <div class="calc" id="titansCounterWidget">
+        <div class="calc-controls counter-controls">
+          <div class="calc-field">
+            <label for="inpEnemy">Стихия противника</label>
+            <select id="titansInpEnemy" class="elem-select">
+              <option value="water">Вода</option>
+              <option value="fire">Огонь</option>
+              <option value="earth" selected>Земля</option>
+              <option value="light">Свет</option>
+              <option value="dark">Тьма</option>
+              <option value="distortion">Искажение</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="counter-results" id="counterResults">
+          <div class="counter-col counter-col-good">
+            <h4>Атаковать этим (даёт бонус урона)</h4>
+            <div id="titansCounterBeats" class="counter-chips"></div>
+          </div>
+          <div class="counter-col counter-col-bad">
+            <h4>Не ставить в атаку (получит меньше урона от вас)</h4>
+            <div id="titansCounterLoses" class="counter-chips"></div>
+          </div>
+          <div class="counter-col counter-col-neutral">
+            <h4>Нейтрально (без бонусов ни у кого)</h4>
+            <div id="titansCounterNeutral" class="counter-chips"></div>
+          </div>
+        </div>
+
+        <div class="calc-msg show ok" id="titansCounterNote"></div>
+      </div>
+    </section>
+
+    <!-- ---------- РОСТЕР ТИТАНОВ ---------- -->
+    <section id="titans-roster">
+      <h2><span class="h-num">4</span> Ростер титанов по стихиям и ролям</h2>
+      <p>
+        Пять ролей: <strong>Танк</strong>, <strong>Стрелок</strong>,
+        <strong>Поддержка</strong>, <strong>Призыватель</strong> и
+        <strong>Супер-титан</strong> (совмещает две роли и имеет два навыка).
+        Призыватели тоже имеют два навыка и состоят из основного титана и
+        спутника.
+      </p>
+
+      <div class="table-wrap">
+        <table class="data-table roster-table">
+          <thead>
+            <tr><th>Стихия</th><th>Танк</th><th>Стрелок</th><th>Поддержка</th><th>Призыватель</th><th>Супер-титан</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tag tag-water">Вода</span></td>
+              <td>Сигурд</td>
+              <td>Нова</td>
+              <td>Майри</td>
+              <td>Тидус и Гело</td>
+              <td>Гиперион</td>
+            </tr>
+            <tr>
+              <td><span class="tag tag-fire">Огонь</span></td>
+              <td>Молох</td>
+              <td>Вулкан</td>
+              <td>Игнис</td>
+              <td>Ашерона и Пиро</td>
+              <td>Араджи</td>
+            </tr>
+            <tr>
+              <td><span class="tag tag-earth">Земля</span></td>
+              <td>Ангус</td>
+              <td>Сильва</td>
+              <td>Авалон</td>
+              <td>Вердок и Фито</td>
+              <td>Иден</td>
+            </tr>
+            <tr>
+              <td><span class="tag tag-light">Свет</span></td>
+              <td>Ригель</td>
+              <td>Амон</td>
+              <td>Ияри</td>
+              <td>Лумира</td>
+              <td>Соларис</td>
+            </tr>
+            <tr>
+              <td><span class="tag tag-dark">Тьма</span></td>
+              <td>Брустар</td>
+              <td>Керос</td>
+              <td>Морт</td>
+              <td>Умбра и Калиго</td>
+              <td>Тенебрис</td>
+            </tr>
+            <tr class="row-highlight">
+              <td><span class="tag tag-distortion">Искажение</span></td>
+              <td>анонсирован</td>
+              <td>Алекто</td>
+              <td>анонсирован</td>
+              <td>Валдур и Эхо</td>
+              <td>в разработке</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout callout-info">
+        <p>
+          Список актуален для веб/фейсбук-версии Hero Wars: Dominion Era.
+          Роли, отмеченные «анонсирован» и «в разработке» — часть Искажения,
+          подробности в разделе ниже.
+        </p>
+      </div>
+
+      <h3>Пример: как устроен призыватель на действующей стихии</h3>
+      <div class="misc-items">
+        <div class="misc-item">
+          <img src="/titans-guide/assets/img/umbra-avatar.png" alt="Умбра" loading="lazy">
+          <div>
+            <h4>Умбра и Калиго (Тьма)</h4>
+            <p>
+              Призыватель Тьмы — хороший ориентир, как вообще устроена роль:
+              два юнита, два навыка, пассивка стартует бой с 30% энергии и
+              даёт +10% к генерации энергии тотема своей стихии. Валдур и Эхо
+              у Искажения работают по тому же принципу роли, но с другим
+              набором навыков.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- ТИТАНЫ ИСКАЖЕНИЯ ---------- -->
+    <section id="titans-distortion">
+      <h2><span class="h-num">5</span> Титаны Искажения</h2>
+      <p>
+        Шестая стихия появилась в игре в августе 2026 вместе с релизом
+        Алекто и связки Валдур и Эхо. Разработчики подтвердили, что всего
+        запланировано <strong>пять титанов Искажения</strong> — на сегодня
+        официально раскрыты четыре роли, имя пятого (супер-титана) пока не
+        объявлено.
+      </p>
+
+      <div class="distortion-cards">
+        <article class="dist-card">
+          <img src="/titans-guide/assets/img/alecto-avatar.png" alt="Алекто">
+          <h3>Алекто</h3>
+          <div class="dist-role">Стрелок</div>
+          <p>
+            Телепортируется за спину самого дальнего противника, наносит
+            5 ударов (60% атаки по цели, 30% по её соседям), всё время
+            <strong>неуязвима</strong>, затем возвращается на позицию.
+          </p>
+          <div class="dist-stats">
+            <span>Позиция: задняя линия</span>
+          </div>
+        </article>
+
+        <article class="dist-card">
+          <img src="/titans-guide/assets/img/valdur-avatar.png" alt="Валдур и Эхо">
+          <h3>Валдур и Эхо</h3>
+          <div class="dist-role">Призыватель</div>
+          <p>
+            Призывает по одному образу Эхо на каждого живого титана
+            противника. Каждый образ взрывается при гибели, отталкивая
+            ближайшего врага в случайном направлении — постоянно ломает
+            построение противника.
+          </p>
+          <div class="dist-stats">
+            <span>Позиция: 25</span>
+            <span>Считается за 2 титана Искажения для активации тотема</span>
+          </div>
+        </article>
+
+        <article class="dist-card dist-card-locked">
+          <div class="dist-placeholder">?</div>
+          <h3>Танк Искажения</h3>
+          <div class="dist-role">Роль подтверждена, имя не объявлено</div>
+          <p>
+            Показан на официальном стриме, но точных характеристик и даты
+            релиза на момент написания гайда нет.
+          </p>
+        </article>
+
+        <article class="dist-card dist-card-locked">
+          <div class="dist-placeholder">?</div>
+          <h3>Поддержка Искажения</h3>
+          <div class="dist-role">Роль подтверждена, имя не объявлено</div>
+          <p>Аналогично — роль показана, детали не раскрыты.</p>
+        </article>
+
+        <article class="dist-card dist-card-locked">
+          <div class="dist-placeholder">?</div>
+          <h3>Супер-титан Искажения</h3>
+          <div class="dist-role">Анонсирован, не показан</div>
+          <p>
+            Пятый титан линейки. Официально подтверждено существование,
+            но ни имя, ни роль в деталях не раскрыты.
+          </p>
+        </article>
+      </div>
+
+      <div class="callout callout-warn">
+        <h4>Осторожно с утечками из датамайна</h4>
+        <p>
+          В файлах игры встречаются имена «Паллант» и «Орм» рядом с
+          материалами по Искажению. Это подтверждённые титаны стихии
+          <strong>Эларит</strong> из другой версии игры — Hero Wars: Alliance,
+          а не титаны Искажения в Dominion Era. Похоже на путаницу общих
+          ассетов между версиями игры, а не на утечку реальных имён.
+          Не считайте это подтверждённой информацией.
+        </p>
+      </div>
+
+      <h3>Артефакты Искажения</h3>
+      <div class="artifact-cards">
+        <article class="art-card">
+          <img src="/titans-guide/assets/img/zorvals-wing.png" alt="Крыло/Поводья Зорвала" loading="lazy">
+          <h3>Крыло / Поводья Зорвала</h3>
+          <p class="art-role">Оружие (первый артефакт)</p>
+          <p>Увеличивает Элементальный урон Искажения.</p>
+        </article>
+        <article class="art-card art-card-best">
+          <img src="/titans-guide/assets/img/crown-of-distortion.png" alt="Корона Искажения" loading="lazy">
+          <h3>Корона Искажения</h3>
+          <p class="art-role">Корона</p>
+          <p>Увеличивает Элементальную броню Искажения.</p>
+        </article>
+        <article class="art-card">
+          <img src="/titans-guide/assets/img/distorted-attack-seal.png" alt="Печать Искажённой атаки" loading="lazy">
+          <h3>Печать Искажённой атаки / Зова</h3>
+          <p class="art-role">Печать</p>
+          <p>Общая для всех Искажённых титанов атакующих ролей. Пассивно
+          повышает физическую атаку и здоровье.</p>
+        </article>
+      </div>
+
+      <h3>Тотем Искажения</h3>
+      <p>
+        Покрывает поле боя смертоносными осколками на 15 секунд. Раз в секунду
+        толкает случайного титана в зоне действия; любое перемещение
+        вражеского титана внутри зоны наносит урон, пропорциональный
+        пройденному расстоянию. Также повышает атаку ваших титанов Искажения.
+      </p>
+      <div class="callout callout-tip">
+        <p>
+          <strong>Порог активации ниже обычного:</strong> для тотемов Огня,
+          Воды и Земли нужно 3 титана стихии. Для Искажения хватает
+          <strong>2 титанов, если один из них — призыватель</strong> —
+          Валдур и Эхо засчитываются за двоих сразу. Поэтому пара Алекто +
+          Валдур включает тотем Искажения с первого дня, даже без третьего
+          титана этой стихии.
+        </p>
+      </div>
+
+      <h3>Ранние наблюдения по сборкам</h3>
+      <p>
+        По тестам официального стрима Искажение хорошо сочетается с командами
+        Огня (Игнис, Молох, Араджи) против Света и Земли. В защите неплохо
+        держится даже против моно-состава Тьмы. Учитывайте: это предварительные
+        наблюдения раннего тестирования, а не устоявшийся мета-анализ.
+      </p>
+    </section>
+
+    <!-- ---------- ТОТЕМЫ ---------- -->
+    <section id="titans-totems">
+      <h2><span class="h-num">6</span> Тотемы: активация и прокачка</h2>
+      <p>
+        Тотем — общий баф для команды одной стихии. Даёт бонусы всем титанам
+        этого элемента в бою, но требует минимального количества титанов
+        стихии на поле, чтобы включиться.
+      </p>
+
+      <h3>Условия активации</h3>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr><th>Тотем</th><th class="num">Нужно титанов</th><th>Особенность</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><span class="tag tag-water">Вода</span> / <span class="tag tag-fire">Огонь</span> / <span class="tag tag-earth">Земля</span></td>
+                <td class="num">3</td><td>Классический порог, без исключений</td></tr>
+            <tr><td><span class="tag tag-light">Свет</span> / <span class="tag tag-dark">Тьма</span></td>
+                <td class="num">2</td><td>Порог снижен вдвое</td></tr>
+            <tr class="row-highlight"><td><span class="tag tag-distortion">Искажение</span></td>
+                <td class="num">2*</td><td>*Призыватель (Валдур и Эхо) считается за 2 титана</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout callout-info">
+        <p>
+          Если у вас на поле титаны двух разных стихий, каждая из которых
+          набирает нужный порог, активируется тотем той стихии, что
+          <strong>сильнее суммарно</strong>. При равной силе приоритет:
+          Вода → Огонь → Земля → Тьма → Свет.
+        </p>
+      </div>
+
+      <h3>Как прокачивать</h3>
+      <div class="two-col">
+        <div class="col-box col-box-good">
+          <h4>Вода, Огонь, Земля</h4>
+          <ul class="check-list">
+            <li>Звезда тотема — Алтарь стихий или Сферы призыва духа стихии</li>
+            <li>Уровень тотема — трофеи Гильдейской войны или изумруды</li>
+          </ul>
+        </div>
+        <div class="col-box col-box-bad">
+          <h4>Свет и Тьма</h4>
+          <ul class="check-list">
+            <li>Звезда тотема — Алтарь стихий или специфичные предметы Света/Тьмы</li>
+            <li>Уровень тотема — трофеи Столкновения Миров (CoW) или изумруды</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="callout callout-warn">
+        <p>
+          <strong>Трофеи не взаимозаменяемы.</strong> Трофеи Гильдейской войны
+          нельзя потратить на тотемы Света/Тьмы, а трофеи CoW — на тотемы
+          Воды/Огня/Земли. У Искажения свой отдельный ресурс — Эхо перемен,
+          заменяемое изумрудами.
+        </p>
+      </div>
+
+      <h3>Максимум прокачки</h3>
+      <p>
+        Все тотемы капаются на <strong>6 звёзд / 120 уровне</strong>, независимо
+        от стихии.
+      </p>
+
+      <div class="misc-items">
+        <div class="misc-item">
+          <img src="/titans-guide/assets/img/summoning-sphere.png" alt="Сфера призыва духа стихии" loading="lazy">
+          <div>
+            <h4>Сфера призыва духа стихии</h4>
+            <p>
+              Главный источник звёзд тотема вне Алтаря стихий. Открывается за
+              изумруды или получается наградой событий; для Искажения
+              аналог — Сфера призыва Искажённого духа с фрагментом на выбор
+              стихии.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <h3>Защита от неудач при открытии сфер</h3>
+      <p>
+        Только первые два фрагмента тотема из Алтаря стихий или обычной сферы
+        совпадают с вашей <strong>сильнейшей</strong> стихией титанов. Все
+        последующие — случайной стихии. Если вы получаете фрагмент тотема из
+        обычной Сферы артефакта титана, прогресс защиты от неудач всё равно
+        продвигается, но счётчик потраченных изумрудов не увеличивается.
+      </p>
+    </section>
+
+    <!-- ---------- СЛИЯНИЕ ТОТЕМОВ ---------- -->
+    <section id="titans-fusion">
+      <h2><span class="h-num">7</span> Слияние тотемов</h2>
+      <p>
+        Система добавляет тотемам два типа навыков сверх базовой прокачки:
+        <strong>элементальные</strong> (активные) и <strong>изначальные</strong>
+        (пассивные). Интерфейс слияния — на экране тотема в Долине Титанов,
+        в нижнем правом углу рядом с кнопкой прокачки уровня.
+      </p>
+
+      <div class="two-col">
+        <div class="col-box col-box-good">
+          <h4>Элементальные навыки</h4>
+          <p>
+            Активные — влияют на ход боя напрямую: щиты, лечение, урон по
+            зоне, контроль. Всего в пуле 12 навыков.
+          </p>
+        </div>
+        <div class="col-box col-box-good">
+          <h4>Изначальные навыки</h4>
+          <p>
+            Пассивные — реагируют на события: получение щита, лечение,
+            использование умения, бой на низком здоровье. Пул из 5 навыков.
+          </p>
+        </div>
+      </div>
+
+      <div class="callout callout-warn">
+        <p>
+          <strong>Дубликаты не складываются.</strong> Если у тотема уже есть
+          навык и выпадает такой же — второй экземпляр не даёт отдельного
+          бонуса. В большинстве случаев выгоднее разнообразить набор навыков,
+          а не копить дубли одного.
+        </p>
+      </div>
+
+      <h3>Как работает слияние</h3>
+      <p>
+        Навыки создаются и улучшаются катализаторами. Если сливаете навык,
+        который у тотема уже есть, шанс получить такой же снова растёт, и
+        результат может выйти более высокого ранга.
+      </p>
+
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Тип катализатора</th><th>Источник</th></tr></thead>
+          <tbody>
+            <tr><td>Изначальные катализаторы</td><td>Дар Доминиона</td></tr>
+            <tr><td>Элементальные катализаторы</td><td>Фрагменты Сфер призыва духа стихии из событий</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Рекомендованные навыки по стихиям</h3>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr><th>Стихия</th><th>Лучшие элементальные</th><th>Лучшие изначальные</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tag tag-water">Вода</span></td>
+              <td>Ропот скал, Шёпот глубин, Последняя вспышка, Ледниковый век</td>
+              <td>Тройной цикл, Изначальное рвение, Пульс древних</td>
+            </tr>
+            <tr>
+              <td><span class="tag tag-fire">Огонь</span></td>
+              <td>Танец пламени, Последняя вспышка, Тёмная материя, Новая вспышка</td>
+              <td>Изначальное рвение, Тройной цикл</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout callout-info">
+        <p>
+          <strong>Ропот скал</strong> (Murmur of the Crags) даёт щит и
+          отражает урон — хорошо покупает время Сигурду или Нове.
+          <strong>Тройной цикл</strong> синергирует со стихией Воды, которая
+          и так тяготеет к лечению и живучести.
+          В Огне <strong>Танец пламени</strong> и <strong>Новая вспышка</strong>
+          добавляют бёрст, а <strong>Последняя вспышка</strong> позволяет
+          Молоху продолжать оглушать даже после смертельного удара.
+        </p>
+      </div>
+
+      <h3>Часто задаваемые вопросы</h3>
+      <div class="faq">
+        <div class="faq-item">
+          <h4>Складываются ли две копии одного навыка?</h4>
+          <p>Нет. Дубликаты не суммируются как отдельные полные бонусы —
+          в большинстве случаев лучше разнообразить набор.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Можно ли отказаться от неудачного результата слияния?</h4>
+          <p>Да. Перед принятием результата его можно отклонить и сохранить
+          прежнее состояние тотема.</p>
+        </div>
+      </div>
+
+      <div class="callout callout-tip">
+        <p>
+          Для тренировки есть отдельный режим — <strong>Боевая подготовка
+          тотемов</strong>: можно собрать команду, экипировать любые тотемы
+          и протестировать все навыки на максимальном уровне без затрат
+          ресурсов.
+        </p>
+      </div>
+    </section>
+
+    <!-- ---------- АРТЕФАКТЫ ---------- -->
+    <section id="titans-artifacts">
+      <h2><span class="h-num">8</span> Артефакты титанов</h2>
+      <p>
+        Три типа артефактов у каждого титана: <strong>Оружие</strong>,
+        <strong>Корона</strong> и <strong>Печать</strong>. Максимум — 6★,
+        уровень 120.
+      </p>
+
+      <div class="relic-cards">
+        <article class="relic-card relic-tome">
+          <h3>Оружие</h3>
+          <p class="relic-effect">Прокачивает Элементальный урон. Уникально
+          для каждого титана — фрагменты не делятся с другими.</p>
+          <div class="relic-verdict verdict-mid">Прокачка: эссенция или изумруды</div>
+        </article>
+        <article class="relic-card relic-grail">
+          <h3>Корона</h3>
+          <p class="relic-effect">Прокачивает Элементальную броню. Фрагменты
+          общие для всех титанов одной стихии.</p>
+          <div class="relic-verdict verdict-mid">Прокачка: эссенция или изумруды</div>
+        </article>
+        <article class="relic-card relic-amulet">
+          <h3>Печать</h3>
+          <p class="relic-effect">Пассивно повышает физическую атаку и
+          здоровье. Общая печать делится по <strong>роли</strong>, а не
+          по стихии.</p>
+          <div class="relic-verdict verdict-good">Прокачка: золото или изумруды — дольше всего</div>
+        </article>
+      </div>
+
+      <h3>Печати по ролям — кто с кем делит фрагменты</h3>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr><th>Печать</th><th>Титаны Воды/Огня/Земли</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Печать баланса</td><td>Иден, Майри, Авалон, Игнис</td></tr>
+            <tr><td>Печать защиты</td><td>Гиперион, Молох, Ангус, Сигурд</td></tr>
+            <tr><td>Печать атаки</td><td>Араджи, Нова, Вулкан, Сильва</td></tr>
+            <tr><td>Печать природы</td><td>Вердок и Фито, Ашерона и Пиро, Тидус и Гело</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout callout-info">
+        <p>
+          Свет и Тьма используют собственные печати, отдельные от классического
+          треугольника, даже если роль совпадает — Мort, Ияри и Соларис делят
+          печать баланса своей группы, но не пересекаются с Иденом или Майри.
+        </p>
+      </div>
+
+      <h3>Таблица звёзд артефакта (общая для всех типов)</h3>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr><th>Звезда</th><th class="num">Фрагментов</th><th class="num">Всего накопительно</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1★</td><td class="num">60</td><td class="num">60</td></tr>
+            <tr><td>2★</td><td class="num">440</td><td class="num">500</td></tr>
+            <tr><td>3★</td><td class="num">1 400</td><td class="num">1 900</td></tr>
+            <tr><td>4★</td><td class="num">2 500</td><td class="num">4 400</td></tr>
+            <tr><td>5★</td><td class="num">5 000</td><td class="num">9 400</td></tr>
+            <tr><td>6★</td><td class="num">9 000</td><td class="num">18 400</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Где брать фрагменты</h3>
+      <ul class="check-list">
+        <li>Алтарь стихий (Сферы артефакта титана)</li>
+        <li>Специальные события (Элементальная синергия и похожие)</li>
+        <li>Магазин Элементального турнира — только фрагменты Оружия и Короны</li>
+      </ul>
+    </section>
+
+    <!-- ---------- ПРИОРИТЕТЫ ---------- -->
+    <section id="titans-priority">
+      <h2><span class="h-num">9</span> Приоритеты прокачки</h2>
+
+      <div class="callout callout-key">
+        <h2 class="callout-title">Официально рекомендованный порядок</h2>
+        <ol class="priority-list">
+          <li><strong>Печать танка</strong> — выживаемость держит весь строй</li>
+          <li><strong>Печать супер-титана</strong> — совмещает две роли, отдача выше среднего</li>
+          <li><strong>Печати остальных ролей</strong></li>
+          <li><strong>Корона танка</strong> — снижает входящий урон именно там, где бьют чаще всего</li>
+          <li><strong>Оружие супер-титана</strong> — усиливает главный источник урона</li>
+        </ol>
+      </div>
+
+      <p>
+        Логика простая: печать дешевле короны и оружия по стоимости ресурса,
+        а танк — тот, кто держит удар дольше всех. Если у вас нет
+        супертитана данной стихии, второй пункт замените на печать самого
+        сильного стрелка.
+      </p>
+
+      <h3>Общий чек-лист по прокачке титана</h3>
+      <div class="two-col">
+        <div class="col-box col-box-good">
+          <h4>В первую очередь</h4>
+          <ul class="check-list">
+            <li>Уровень титана (зелья/изумруды)</li>
+            <li>Эволюция звёзд (осколки души)</li>
+            <li>Печать роли, начиная с танка</li>
+          </ul>
+        </div>
+        <div class="col-box col-box-bad">
+          <h4>Во вторую очередь</h4>
+          <ul class="check-list">
+            <li>Корона стихии — сначала танку</li>
+            <li>Оружие — сначала главному дамагеру</li>
+            <li>Скин — косметика и бонус статов, не приоритет</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="callout callout-warn">
+        <h4>Частая ошибка новичков</h4>
+        <p>
+          Прокачивать оружие стрелка раньше печати танка. Урон бесполезен,
+          если команда разваливается на второй волне — сначала обеспечьте,
+          чтобы тотем и танк держали строй, потом усиливайте урон.
+        </p>
+      </div>
+    </section>
+
+    <!-- ---------- ДОЛИНА ТИТАНОВ ---------- -->
+    <section id="titans-valley">
+      <h2><span class="h-num">10</span> Долина Титанов и Алтарь стихий</h2>
+      <p>
+        Центральный хаб для всей титановой экономики: прокачка, эволюция,
+        артефакты и тотемы происходят здесь.
+      </p>
+
+      <div class="rules-grid">
+        <div class="rule-box">
+          <h4>Алтарь стихий</h4>
+          <p>Открывайте Сферы артефакта титана за изумруды — фрагменты
+          артефактов или, реже, фрагмент тотема как главный приз.</p>
+        </div>
+        <div class="rule-box">
+          <h4>Защита от неудач по тотемам</h4>
+          <p>Счётчик потраченных изумрудов копится до гарантированного
+          порога. Открытие тотема через призовую сферу события не увеличивает
+          счётчик, но продвигает саму защиту.</p>
+        </div>
+        <div class="rule-box rule-box-warn">
+          <h4>Разные валюты — разные тотемы</h4>
+          <p>Трофеи Гильдейской войны качают только Воду/Огонь/Землю.
+          Трофеи CoW — только Свет/Тьму. Не перепутайте при трате.</p>
+        </div>
+        <div class="rule-box">
+          <h4>Экран слияния</h4>
+          <p>Находится на карточке конкретного тотема, кнопка в нижнем
+          правом углу — рядом с кнопкой обычной прокачки уровня.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- ОШИБКИ ---------- -->
+    <section id="titans-mistakes">
+      <h2><span class="h-num">11</span> Чего не делать</h2>
+      <div class="mistakes">
+        <div class="mistake">
+          <div class="mistake-x">✕</div>
+          <div>
+            <h4>Качать оружие раньше печати танка</h4>
+            <p>Урон бесполезен, если тотем не активируется и танк не держит строй.</p>
+          </div>
+        </div>
+        <div class="mistake">
+          <div class="mistake-x">✕</div>
+          <div>
+            <h4>Тратить трофеи Гильдейской войны на тотем Света или Тьмы</h4>
+            <p>Не сработает — эти трофеи качают только тотемы классического треугольника.</p>
+          </div>
+        </div>
+        <div class="mistake">
+          <div class="mistake-x">✕</div>
+          <div>
+            <h4>Собирать дубликаты навыков слияния специально</h4>
+            <p>Дубликаты не складываются в двойной бонус — разнообразие почти всегда выгоднее.</p>
+          </div>
+        </div>
+        <div class="mistake">
+          <div class="mistake-x">✕</div>
+          <div>
+            <h4>Считать Искажение универсальным контрпиком</h4>
+            <p>Оно проигрывает трём стихиям из шести. Само по себе оно
+            специалист против Света и Тьмы, а не суперстихия.</p>
+          </div>
+        </div>
+        <div class="mistake">
+          <div class="mistake-x">✕</div>
+          <div>
+            <h4>Ставить титана против стихии, которая выше уровнем</h4>
+            <p>Бонус контрпика затухает с разницей уровней — правильная
+            стихия не спасёт слабую прокачку против сильного оппонента.</p>
+          </div>
+        </div>
+        <div class="mistake">
+          <div class="mistake-x">✕</div>
+          <div>
+            <h4>Верить непроверенным именам из датамайна</h4>
+            <p>«Паллант» и «Орм» — титаны стихии Эларит из другой версии игры,
+            не подтверждённые титаны Искажения в Dominion Era.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- ШПАРГАЛКА ---------- -->
+    <section id="titans-cheatsheet">
+      <h2><span class="h-num">12</span> Краткая шпаргалка</h2>
+
+      <div class="cheat cheat-elements">
+        <div class="cheat-row">
+          <span class="tag tag-water">Вода</span>
+          <div class="cheat-arrow">бьёт →</div>
+          <span class="tag tag-fire">Огонь</span>
+          <div class="cheat-arrow">бьёт →</div>
+          <span class="tag tag-earth">Земля</span>
+          <div class="cheat-arrow">бьёт →</div>
+          <span class="tag tag-water">Вода</span>
+        </div>
+        <div class="cheat-row">
+          <span class="tag tag-light">Свет</span>
+          <div class="cheat-arrow">↔</div>
+          <span class="tag tag-dark">Тьма</span>
+        </div>
+        <div class="cheat-row cheat-row-final">
+          <span class="tag tag-distortion">Искажение</span>
+          <div class="cheat-arrow">бьёт →</div>
+          <span>Свет + Тьма</span>
+          <div class="cheat-arrow">проигрывает →</div>
+          <span>Вода + Огонь + Земля</span>
+        </div>
+      </div>
+
+      <div class="cheat-result">
+        Порядок прокачки: <strong>Печать танка → Печать супер-титана →
+        остальные печати → Корона танка → Оружие супер-титана</strong>
+      </div>
+
+      <div class="callout callout-info">
+        <h4>Оговорка о разделе Искажения</h4>
+        <p>
+          Стихия новая и активно достраивается: подтверждены Алекто, Валдур
+          и Эхо, роли танка и поддержки показаны без имён, супер-титан
+          анонсирован, но не раскрыт. Этот раздел будет требовать обновления
+          по мере выхода новых титанов — обновляйте константы в
+          <code>assets/js/main.js</code>, когда появятся официальные имена.
+        </p>
+      </div>
+    </section>
+
+    <!-- ---------- ИСТОЧНИКИ ---------- -->
+    <section id="titans-sources">
+      <h2><span class="h-num">13</span> Источники</h2>
+      <ul class="sources-list">
+        <li>
+          <a href="https://support-hwde.nexters.com/hc/en-us/articles/30411159883026-Elemental-Damage-and-Armor" target="_blank" rel="noopener">support-hwde.nexters.com — Elemental Damage and Armor</a>
+          <span>Официальная формула урона и брони, пример расчёта</span>
+        </li>
+        <li>
+          <a href="https://support-hwde.nexters.com/hc/en-us/articles/38057157986834-New-Titan-Element-Distortion" target="_blank" rel="noopener">support-hwde.nexters.com — New Titan Element: Distortion</a>
+          <span>Официальное описание Алекто, Валдура и тотема Искажения</span>
+        </li>
+        <li>
+          <a href="https://support-hwde.nexters.com/hc/en-us/articles/13288551241362-Totems" target="_blank" rel="noopener">support-hwde.nexters.com — Totems</a>
+          <span>Условия активации, защита от неудач, механика сфер</span>
+        </li>
+        <li>
+          <a href="https://support-hwde.nexters.com/hc/en-us/articles/5639102158482-All-About-Titans" target="_blank" rel="noopener">support-hwde.nexters.com — All About Titans</a>
+          <span>Печати по ролям, артефакты, общая механика</span>
+        </li>
+        <li>
+          <a href="https://herowars-olympus.com/distortion-totem-breakdown-2026" target="_blank" rel="noopener">herowars-olympus.com — Distortion Totem Breakdown 2026</a>
+          <span>Разбор стихии Искажения в атаке и защите</span>
+        </li>
+        <li>
+          <a href="https://herowars-olympus.com/new-element-titan-event-guide-2026" target="_blank" rel="noopener">herowars-olympus.com — New Element Titan Event Guide</a>
+          <span>Ранние наблюдения по сборкам с Искажением</span>
+        </li>
+        <li>
+          <a href="https://alexandregames.com/hero-wars-dominion-era/guide/totem-fusion-skills-en.html" target="_blank" rel="noopener">alexandregames.com — Totem Fusion Skills Tier List</a>
+          <span>Рекомендованные навыки слияния по стихиям</span>
+        </li>
+        <li>
+          <a href="https://h-w.fun/en/titan-artifact" target="_blank" rel="noopener">h-w.fun — Titan Artifact</a>
+          <span>Таблица звёзд, приоритеты прокачки артефактов</span>
+        </li>
+        <li>
+          <a href="https://hero-wars.fandom.com/wiki/Titans" target="_blank" rel="noopener">hero-wars.fandom.com — Titans</a>
+          <span>Полный список титанов по стихиям и ролям</span>
+        </li>
+        <li>
+          <a href="https://www.herowarscentral.com/post/live-stream-recap-distortion-titans" target="_blank" rel="noopener">herowarscentral.com — Live Stream Recap: Distortion Titans</a>
+          <span>Подтверждение о пяти титанах Искажения и структуре событий</span>
+        </li>
+      </ul>
+      <p class="sources-note">
+        Круг стихий и калькулятор контрпиков собраны из нескольких
+        независимых источников и сверены между собой — расхождений не найдено.
+        Раздел про Искажение будет неполным до официального раскрытия
+        оставшихся титанов линейки.
+      </p>
+    </section>
+
+</main>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Гайд по титанам Hero Wars: Dominion Era · стихии, контрпики, тотемы, артефакты · август 2026</p>
+    <p class="footer-dim">Все изображения принадлежат Nexters. Материал носит справочный характер.</p>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Наверх">↑</button>
+
+
+
+    </div>
+  </section>
+
 
   <!-- ===================== HERO DETAIL VIEW ===================== -->
   <section id="view-hero-detail" class="view">
