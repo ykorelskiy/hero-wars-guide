@@ -3799,6 +3799,1133 @@
   </section>
 
 
+  
+  <!-- ===================== HEROES GUIDE VIEW ===================== -->
+  <section id="view-heroes-guide" class="view">
+    <div class="heroes-guide-wrap">
+<header class="site-header">
+  <div class="wrap header-inner">
+    <div class="brand">
+      <img src="/heroes-guide/assets/img/byrna-avatar.png" alt="Герои" class="brand-icon">
+      <div>
+        <div class="brand-title">Герои Dominion Era</div>
+        <div class="brand-sub">Классы · Контрпики · Связки · Питомцы</div>
+      </div>
+    </div>
+    <button class="nav-toggle" id="heroesNavToggle" aria-label="Меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="layout wrap">
+
+  <!-- ===================== БОКОВАЯ НАВИГАЦИЯ ===================== -->
+  <aside class="sidebar" id="heroesSidebar">
+    <nav aria-label="Содержание">
+      <div class="toc-title">Содержание</div>
+      <ol class="toc" id="heroesToc">
+        <li><a href="#heroes-intro">О гайде</a></li>
+        <li><a href="#heroes-classes">Семь классов</a></li>
+        <li><a href="#heroes-team">Как собрать команду</a></li>
+        <li><a href="#heroes-counters">Жёсткие и мягкие контрпики</a></li>
+        <li><a href="#heroes-calc">Калькулятор контрпиков</a></li>
+        <li><a href="#heroes-comps">Типовые связки</a></li>
+        <li><a href="#heroes-upgrade">Порядок прокачки</a></li>
+        <li><a href="#heroes-artifacts">Артефакты: оружие, книга, кольцо</a></li>
+        <li><a href="#heroes-glyphs">Глифы и руны класса</a></li>
+        <li><a href="#heroes-pets">Питомцы</a></li>
+        <li><a href="#heroes-pet-priority">Каких питомцев качать</a></li>
+        <li><a href="#heroes-mistakes">Чего не делать</a></li>
+        <li><a href="#heroes-cheatsheet">Шпаргалка</a></li>
+        <li><a href="#heroes-sources">Источники</a></li>
+      </ol>
+    </nav>
+  </aside>
+
+  <!-- ===================== ОСНОВНОЙ КОНТЕНТ ===================== -->
+  <main id="main">
+
+    <!-- ---------- HERO ---------- -->
+    <section class="hero" id="heroes-intro">
+      <div class="hero-media">
+        <img src="/heroes-guide/assets/img/byrna.png" alt="Герои Hero Wars: Dominion Era" loading="lazy">
+      </div>
+      <div class="hero-body">
+        <h1>Герои: классы, контрпики, связки и питомцы</h1>
+
+      <div class="callout callout-info" style="margin-top:20px;">
+        <h4 style="margin:0 0 8px;color:var(--gold);">🔗 Быстрый переход по базе данных:</h4>
+        <p style="margin:0;">
+          Ищите параметры конкретного героя? Откройте <a href="#wiki" style="color:var(--gold);font-weight:700;">📚 Интерактивную Базу Героев</a> или <a href="#teams" style="color:var(--gold);font-weight:700;">⚔️ Таблицу Мета-Команд</a>.
+        </p>
+      </div>
+
+        <p class="lead">
+          Больше 60 героев, семь классов, десятки типовых команд и система
+          жёстких/мягких контрпиков — разбираемся, как собрать состав, который
+          не развалится об один вражеский навык, и куда вкладывать ресурсы
+          в первую очередь.
+        </p>
+        <div class="meta-badges">
+          <span class="badge badge-date">Актуально на август 2026</span>
+          <span class="badge badge-dur">7 классов</span>
+          <span class="badge badge-lvl">Для любого уровня аккаунта</span>
+        </div>
+        <div class="hero-cta">
+          <a href="#heroes-calc" class="btn btn-primary">К калькулятору контрпиков</a>
+          <a href="#heroes-pet-priority" class="btn btn-ghost">Каких питомцев качать</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- ГЛАВНЫЙ ВЫВОД ---------- -->
+    <section class="callout callout-key">
+      <h2 class="callout-title">Главное за 10 секунд</h2>
+      <div class="key-grid">
+        <div class="key-item">
+          <div class="key-icon">🛡️</div>
+          <div class="key-name">Состав команды</div>
+          <div class="key-val">Танк + 1 хил/саппорт</div>
+          <div class="key-cost">+ 2-3 источника урона</div>
+        </div>
+        <div class="key-item">
+          <div class="key-icon">⛔</div>
+          <div class="key-name">Жёсткий контрпик</div>
+          <div class="key-val">полностью блокирует</div>
+          <div class="key-cost">навык или пассивку</div>
+        </div>
+        <div class="key-item">
+          <div class="key-icon">⚔️</div>
+          <div class="key-name">Порядок прокачки</div>
+          <div class="key-val">Ранг → Эволюция → Навыки</div>
+          <div class="key-cost">потом скины и глифы</div>
+        </div>
+        <div class="key-item key-item-accent">
+          <div class="key-icon">🐾</div>
+          <div class="key-name">Питомец #1</div>
+          <div class="key-val">Аксель</div>
+          <div class="key-cost">универсальная защита</div>
+        </div>
+      </div>
+      <p class="key-result">
+        Правильный контрпик выигрывает бой сильнее, чем разница в уровнях —
+        но только если команда собрана не в вакууме, а под конкретного противника.
+      </p>
+    </section>
+
+    <!-- ---------- КЛАССЫ ---------- -->
+    <section id="heroes-classes">
+      <h2><span class="h-num">1</span> Семь классов</h2>
+      <p>
+        Каждый герой принадлежит одному классу. У класса есть пассивная
+        способность — <strong>Руна класса</strong>, которая открывается,
+        когда все глифы героя достигают 40 уровня и работает даже у
+        героев, чьи глифы этого уровня ещё не достигли.
+      </p>
+
+      <div class="class-cards">
+        <article class="class-card class-tank">
+          <div class="class-icon">🛡️</div>
+          <h3>Танк</h3>
+          <p class="class-effect">Высокая защита, держит удар на передней линии.</p>
+          <div class="class-rune">
+            <strong>Руна:</strong> раз в 10 секунд повышает броню и магическую
+            защиту союзника с наименьшим здоровьем на 5 секунд.
+          </div>
+          <div class="class-examples">Аврора · Чабба · Джулиус · Корвус · Астарот</div>
+        </article>
+
+        <article class="class-card class-warrior">
+          <div class="class-icon">⚔️</div>
+          <h3>Воин</h3>
+          <p class="class-effect">Наносит устойчивый физический урон в ближнем бою.</p>
+          <div class="class-rune">
+            <strong>Руна:</strong> обычная атака повышает физическую атаку
+            самого воина на время действия эффекта.
+          </div>
+          <div class="class-examples">Ясмин · Галахад · Ишмаэль · Тристан · Кайла</div>
+        </article>
+
+        <article class="class-card class-marksman">
+          <div class="class-icon">🏹</div>
+          <h3>Стрелок</h3>
+          <p class="class-effect">Физический урон на дистанции, обычно самый хрупкий класс.</p>
+          <div class="class-rune">
+            <strong>Руна:</strong> усиливает исходящий физический урон стрелка
+            по накопительной механике.
+          </div>
+          <div class="class-examples">Айзек · Джу · Артемис · Дэрдевил · Кира · Данте</div>
+        </article>
+
+        <article class="class-card class-mage">
+          <div class="class-icon">🔮</div>
+          <h3>Маг</h3>
+          <p class="class-effect">Магический урон на дистанции, часто с контролем по площади.</p>
+          <div class="class-rune">
+            <strong>Руна:</strong> усиливает магическую атаку по той же логике,
+            что и у стрелка, но от интеллекта.
+          </div>
+          <div class="class-examples">Орион · Корнелиус · Ирис · Лилит · Хайди · Фолио</div>
+        </article>
+
+        <article class="class-card class-support">
+          <div class="class-icon">✨</div>
+          <h3>Поддержка</h3>
+          <p class="class-effect">Баффы, щиты и усиление союзников — не лечит напрямую.</p>
+          <div class="class-rune">
+            <strong>Руна:</strong> варьируется по герою, но всегда усиливает
+            командный эффект поддержки.
+          </div>
+          <div class="class-examples">Альванор · Фафнир · Гелиос · Себастьян · Криста</div>
+        </article>
+
+        <article class="class-card class-control">
+          <div class="class-icon">🌀</div>
+          <h3>Контроль</h3>
+          <p class="class-effect">Сковывает противников: оглушение, немота, отбрасывание.</p>
+          <div class="class-rune">
+            <strong>Руна:</strong> после окончания эффекта контроля дополнительно
+            замедляет цель на 30% и снижает физический урон на 4 секунды.
+          </div>
+          <div class="class-examples">Фобос · Фейслесс · Арахна · Джадж · Поларис</div>
+        </article>
+
+        <article class="class-card class-healer">
+          <div class="class-icon">💚</div>
+          <h3>Целитель</h3>
+          <p class="class-effect">Восстанавливает здоровье союзников в бою.</p>
+          <div class="class-rune">
+            <strong>Руна:</strong> при лечении накладывает баф на 5 секунд,
+            конвертирующий входящий урон в лечение
+            (30% магической атаки + 220 / уровень руны). Раз в 10 секунд на цель.
+          </div>
+          <div class="class-examples">Теа · Маркус · Морриган · Дориан · Айдан · Марта</div>
+        </article>
+      </div>
+
+      <div class="callout callout-info">
+        <p>
+          Список примеров неполный и может отличаться версии игры (веб/мобайл).
+          Смотрите актуальный класс героя прямо в его карточке в игре —
+          именно она определяет доступную Руну класса.
+        </p>
+      </div>
+
+      <div class="misc-items">
+        <div class="misc-item">
+          <img src="/heroes-guide/assets/img/adam-avatar.png" alt="Адам" loading="lazy">
+          <div>
+            <h4>Пример: Адам</h4>
+            <p>
+              Один из героев августа 2026 — хорошая иллюстрация того, что
+              новые герои сразу получают полноценный класс со своей Руной,
+              а не появляются «вне системы». Свежих героев удобно оценивать
+              именно через призму класса: какую роль в команде он на самом
+              деле закрывает, а не только какой у него урон по цифрам.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- КАК СОБРАТЬ КОМАНДУ ---------- -->
+    <section id="heroes-team">
+      <h2><span class="h-num">2</span> Как собрать эффективную команду</h2>
+      <p>Официальная методичка разработчиков сводится к шести шагам.</p>
+
+      <div class="steps-list">
+        <div class="step-item">
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <h4>Роли героев</h4>
+            <p>В команде нужен минимум один танк, минимум один целитель или
+            поддержка, и пара воинов/магов/стрелков. Команда из пяти целителей
+            не сможет нормально сражаться, даже если каждый прокачан.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <h4>Синергия</h4>
+            <p>Некоторые герои специально усиливают друг друга — ищите такие
+            связки вместо случайного набора сильных героев поодиночке.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <h4>Питомцы</h4>
+            <p>Подбирайте питомцев под конкретную команду, а не просто самых
+            прокачанных — у каждого своя специализация.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">4</div>
+          <div class="step-body">
+            <h4>Состав противника</h4>
+            <p>Смотрите, какой урон наносит и к какому устойчив враг. Если
+            противник устойчив к магическому урону — берите физический
+            или чистый.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">5</div>
+          <div class="step-body">
+            <h4>Эффекты контроля</h4>
+            <p>Если у врага есть смещение (отбрасывание, притягивание),
+            возьмите героя, который защищает союзников от смещения.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">6</div>
+          <div class="step-body">
+            <h4>Иммунитеты</h4>
+            <p>Проверьте, не устойчив ли враг к конкретному эффекту вашего
+            героя. Например, герой с подбрасыванием бесполезен против цели,
+            которую нельзя подбросить.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout callout-tip">
+        <p>
+          <strong>Флаг войны тоже часть состава.</strong> Например, Флаг Упадка
+          снижает лечение вражеской команды — эффективен против составов,
+          завязанных на хилы. Подбирайте флаг под конкретного противника,
+          как ещё один слот команды.
+        </p>
+      </div>
+
+      <div class="callout callout-info">
+        <p>
+          Для тренировки механик есть режим <strong>Боевая подготовка</strong>:
+          можно собрать команду, протестировать связки и посмотреть бой
+          пошагово без риска потерять что-либо.
+        </p>
+      </div>
+    </section>
+
+    <!-- ---------- КОНТРПИКИ ---------- -->
+    <section id="heroes-counters">
+      <h2><span class="h-num">3</span> Жёсткие и мягкие контрпики</h2>
+      <p>
+        В игре два типа контрпиков, и разница между ними принципиальна для
+        планирования состава.
+      </p>
+
+      <div class="two-col">
+        <div class="col-box col-box-good">
+          <h4>Жёсткий контрпик (Hard counter)</h4>
+          <p>
+            Полностью блокирует конкретный навык или эффект противника.
+            Если у врага есть неснимаемый щит от контроля — жёсткий контрпик
+            гарантированно снимает именно его, а не просто уменьшает шанс.
+          </p>
+        </div>
+        <div class="col-box col-box-bad">
+          <h4>Мягкий контрпик (Soft counter)</h4>
+          <p>
+            Не блокирует эффект гарантированно, а лишь снижает его силу или
+            даёт шанс не сработать. Полезен, но не даёт стопроцентной защиты.
+          </p>
+        </div>
+      </div>
+
+      <div class="callout callout-warn">
+        <h4>Контрпик — это не гарантия победы</h4>
+        <p>
+          Ни жёсткий, ни мягкий контрпик не гарантируют выигрыш боя сам по
+          себе. Он снимает конкретную угрозу, но остальной состав противника
+          и общая прокачка команд по-прежнему решают исход. Хорошо подобранная
+          команда иногда побеждает даже при численном или силовом перевесе
+          противника — но именно за счёт снятых угроз, а не магии контрпика.
+        </p>
+      </div>
+
+      <h3>Как читать таблицу ниже</h3>
+      <p>
+        В левой колонке — герой, против которого вы играете. В правой —
+        герои, которые эффективны в противостоянии ему (жёсткие и мягкие
+        контрпики объединены, без разделения по типу — сверяйтесь с описанием
+        конкретного навыка героя в игре, если нужна точность до типа).
+      </p>
+
+      <div class="table-wrap">
+        <table class="data-table counters-table">
+          <thead><tr><th>Против кого</th><th>Берите</th></tr></thead>
+          <tbody>
+            <tr><td>Аврора</td><td>Арахна, Корвус, Фафнир, Айзек, Лирия, Теа</td></tr>
+            <tr><td>Айдан</td><td>Селеста, Кливер, Корвус, Джу, Йорген, Лютер</td></tr>
+            <tr><td>Альванор</td><td>Амира, Арахна, Айзек, Поларис, Сатори</td></tr>
+            <tr><td>Амира</td><td>Арахна, Айзек, Пеппи, Поларис, Теа</td></tr>
+            <tr><td>Андвари</td><td>Амира, Пеппи, Поларис, Сатори, Себастьян</td></tr>
+            <tr><td>Арахна</td><td>Дэрдевил, Айзек, Йорген, Пеппи, Себастьян</td></tr>
+            <tr><td>Артемис</td><td>Амира, Данте, Фафнир, Джадж, Ясмин</td></tr>
+            <tr><td>Астарот</td><td>Альванор, Амира, Селеста, Ирис, Морриган, Мушу и Шрум, Поларис, Себастьян, Теа</td></tr>
+            <tr><td>Астрид и Лукас</td><td>Айдан, Амира, Джадж, Ясмин</td></tr>
+            <tr><td>Август</td><td>Фолио, Айзек, Себастьян</td></tr>
+            <tr><td>Селеста</td><td>Амира, Арахна, Ирис, Айзек, Поларис</td></tr>
+            <tr><td>Чабба</td><td>Амира, Фафнир, Пеппи, Ясмин</td></tr>
+            <tr><td>Кливер</td><td>Амира, Андвари, Арахна, Аврора + Пеппи, Дориан, Фафнир, Лиан, Ясмин</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout callout-info">
+        <p>
+          Таблица не исчерпывающая — в игре больше 60 героев, полный список
+          контрпиков занял бы отдельный документ и быстро устаревает с каждым
+          балансным патчем. Общий принцип, по которому она строится, важнее
+          конкретных имён — см. следующий раздел.
+        </p>
+      </div>
+
+      <h3>Общие принципы поиска контрпика</h3>
+      <div class="rules-grid">
+        <div class="rule-box">
+          <h4>Против контроля</h4>
+          <p>Ищите героев с иммунитетом к конкретному эффекту или со снятием
+          негативных статусов с союзников.</p>
+        </div>
+        <div class="rule-box">
+          <h4>Против лечения</h4>
+          <p>Берите героев с эффектом анти-хила (снижение или блокировка
+          лечения) либо Флаг Упадка.</p>
+        </div>
+        <div class="rule-box">
+          <h4>Против крита</h4>
+          <p>Герои, наказывающие противника за критический удар — превращают
+          сильную сторону врага в его же слабость.</p>
+        </div>
+        <div class="rule-box rule-box-warn">
+          <h4>Против неуязвимости/щитов</h4>
+          <p>Нужны эффекты игнорирования щита или снятия неуязвимости —
+          обычный урон при этом бесполезен.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- КАЛЬКУЛЯТОР ---------- -->
+    <section id="heroes-calc">
+      <h2><span class="h-num">4</span> Калькулятор контрпиков</h2>
+      <p>
+        Выберите угрозу, которую нужно снять — калькулятор подскажет,
+        какой класс героев и какой тип эффекта искать в игре.
+      </p>
+
+      <div class="calc" id="heroesCounterWidget">
+        <div class="calc-controls counter-controls">
+          <div class="calc-field">
+            <label for="inpThreat">Что нужно контрить</label>
+            <select id="heroesInpThreat" class="elem-select">
+              <option value="control">Контроль (оглушение / немота / сон)</option>
+              <option value="heal">Тяжёлое лечение противника</option>
+              <option value="crit">Ставка на критический урон</option>
+              <option value="shield">Неуязвимость / несъёмные щиты</option>
+              <option value="displace">Смещение (отбрасывание / притяжение)</option>
+              <option value="magic" selected>Высокий магический урон</option>
+              <option value="physical">Высокий физический урон</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="counter-results" id="counterResults">
+          <div class="counter-col counter-col-good">
+            <h4>Что искать</h4>
+            <div id="heroesCounterAdvice" class="advice-text"></div>
+          </div>
+          <div class="counter-col counter-col-neutral">
+            <h4>Классы-кандидаты</h4>
+            <div id="heroesCounterClasses" class="counter-chips"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- ТИПОВЫЕ СВЯЗКИ ---------- -->
+    <section id="heroes-comps">
+      <h2><span class="h-num">5</span> Типовые связки команд</h2>
+      <p>
+        Мета сместилась в сторону магических команд, но физические составы
+        по-прежнему жизнеспособны при правильной сборке. Разберём несколько
+        устоявшихся связок.
+      </p>
+
+      <div class="comp-cards">
+        <article class="comp-card comp-card-magic">
+          <div class="comp-badge">Магия · доминирующая мета</div>
+          <div class="comp-media">
+            <img src="/heroes-guide/assets/img/cascade-avatar.png" alt="Каскад" loading="lazy">
+          </div>
+          <h3>Орион + Каскад + Криста</h3>
+          <p>
+            Каскад конвертирует часть обычных атак всей команды в магический
+            урон — даже автоатаки, которые обычно физические, начинают
+            работать в паре с магической пробивной способностью Ориона.
+            Криста замыкает связку петлёй лечения по водяному знаку.
+          </p>
+          <div class="comp-tags">
+            <span class="tag">урон</span>
+            <span class="tag">конверсия</span>
+            <span class="tag">самоподдержка</span>
+          </div>
+        </article>
+
+        <article class="comp-card">
+          <div class="comp-badge">Контр-мета</div>
+          <h3>Гелиос против крита</h3>
+          <p>
+            Гелиос наказывает противника магическим уроном за каждый
+            критический удар. Прямой ответ на физические команды на базе
+            Себастьяна, который повышает шанс крита союзникам (частый партнёр
+            Лары Крофт, Кейры и Ясмин). Чем чаще критует враг — тем больнее
+            бьёт Гелиос в ответ.
+          </p>
+          <div class="comp-tags">
+            <span class="tag">анти-крит</span>
+            <span class="tag">контрпик</span>
+          </div>
+        </article>
+
+        <article class="comp-card">
+          <div class="comp-badge">Оборона</div>
+          <h3>Каркасная защита</h3>
+          <p>
+            Танк держит фронт, целитель обеспечивает устойчивое лечение,
+            поддержка усиливает щиты — такая тройка выигрывает затяжные бои
+            на измор там, где бёрст-составы выдыхаются к середине боя.
+          </p>
+          <div class="comp-tags">
+            <span class="tag">выживаемость</span>
+            <span class="tag">затяжной бой</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="callout callout-myth">
+        <h4>Мета меняется быстрее, чем гайды</h4>
+        <p>
+          Указанные связки актуальны на момент написания, но балансные патчи
+          и новые герои регулярно перестраивают топ команд. Смотрите свежие
+          тир-листы перед крупными вложениями ресурсов — три конкретных имени
+          героев устаревают быстрее, чем сам принцип синергии.
+        </p>
+      </div>
+    </section>
+
+    <!-- ---------- ПОРЯДОК ПРОКАЧКИ ---------- -->
+    <section id="heroes-upgrade">
+      <h2><span class="h-num">6</span> Порядок прокачки героя</h2>
+      <p>
+        Восемь слоёв прокачки, и ошибка большинства игроков — вкладываться
+        не в том порядке. Каждый слой имеет смысл начинать только после
+        того, как предыдущий закрыт до разумного уровня.
+      </p>
+
+      <div class="upgrade-chain">
+        <div class="chain-step">
+          <div class="chain-num">1</div>
+          <div class="chain-body">
+            <h4>Ранг (цвет)</h4>
+            <p>Базовое открытие потенциала героя — без ранга остальные слои
+            попросту недоступны или неэффективны.</p>
+          </div>
+        </div>
+        <div class="chain-step">
+          <div class="chain-num">2</div>
+          <div class="chain-body">
+            <h4>Эволюция (звёзды)</h4>
+            <p>Прямой прирост характеристик. Для основных пяти героев команды —
+            приоритет номер один после ранга.</p>
+          </div>
+        </div>
+        <div class="chain-step">
+          <div class="chain-num">3</div>
+          <div class="chain-body">
+            <h4>Навыки</h4>
+            <p>В первую очередь — навыки, отвечающие за урон (DPS). Для
+            физических дамагеров важны основная характеристика и пробитие
+            брони; уклонение — следующим пунктом, если у героя есть уклон.</p>
+          </div>
+        </div>
+        <div class="chain-step">
+          <div class="chain-num">4</div>
+          <div class="chain-body">
+            <h4>Скины</h4>
+            <p>Дают статы и косметику одновременно. Не путайте порядок:
+            <strong>сначала артефакт-книгу</strong>, скины качаются по своей
+            логике отдельно.</p>
+          </div>
+        </div>
+        <div class="chain-step">
+          <div class="chain-num">5</div>
+          <div class="chain-body">
+            <h4>Глифы</h4>
+            <p>Точечно усиливают конкретные характеристики. Открывают Руну
+            класса на 40 уровне.</p>
+          </div>
+        </div>
+        <div class="chain-step">
+          <div class="chain-num">6</div>
+          <div class="chain-body">
+            <h4>Артефакты</h4>
+            <p>Оружие, Книга, Кольцо — разбор ниже в отдельном разделе.</p>
+          </div>
+        </div>
+        <div class="chain-step">
+          <div class="chain-num">7</div>
+          <div class="chain-body">
+            <h4>Дар Стихий</h4>
+            <p>Отдельная система, не путать с Дарами Доминиона — переносит
+            часть прокачки титанов на героев.</p>
+          </div>
+        </div>
+        <div class="chain-step">
+          <div class="chain-num">8</div>
+          <div class="chain-body">
+            <h4>Вознесение</h4>
+            <p>Открывает у части героев дополнительный навык, который
+            заметно меняет их поведение в бою. Не у всех героев отдача от
+            этого слоя одинаковая — оценивайте по конкретному герою.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout callout-key-sm">
+        <h4>Какие статы важны для какой роли</h4>
+        <ul class="check-list">
+          <li><strong>Физический ДД:</strong> основная характеристика (Сила/Ловкость) и пробитие брони первыми, дальше — уклонение, если оно есть у героя.</li>
+          <li><strong>Танк:</strong> здоровье и броня в первую очередь.</li>
+          <li><strong>Маг:</strong> интеллект и пробитие магической защиты.</li>
+        </ul>
+      </div>
+
+      <div class="callout callout-warn">
+        <h4>Частая ошибка новичков</h4>
+        <p>
+          Первое время игроки тратят ресурсы на уровень и снаряжение,
+          думая, что это основа силы аккаунта. На деле это лишь стартовое
+          усиление — меньше половины итоговой мощи героя. Артефакты с
+          удачными улучшениями, целевые скины и глифы, Дар Стихий и
+          питомцы — вот что действительно разводит сильных и слабых игроков
+          при равном стартовом времени в игре.
+        </p>
+      </div>
+    </section>
+
+    <!-- ---------- АРТЕФАКТЫ ---------- -->
+    <section id="heroes-artifacts">
+      <h2><span class="h-num">7</span> Артефакты: Оружие, Книга, Кольцо</h2>
+      <p>
+        У каждого героя три артефакта. Максимальная эволюция — 6★
+        (материал доходит до ранга «Абсолют»), максимальный уровень — 130.
+      </p>
+
+      <div class="relic-cards">
+        <article class="relic-card relic-tome">
+          <h3>Оружие</h3>
+          <p class="relic-effect">Даёт командный бонус с шансом активации,
+          который растёт с эволюцией. На 3★ шанс активации — 100%.</p>
+          <div class="relic-verdict verdict-good">Первым до 3★ у ключевых героев</div>
+        </article>
+        <article class="relic-card relic-grail">
+          <h3>Книга</h3>
+          <p class="relic-effect">Даёт бонус к двум второстепенным
+          характеристикам. Существует семь типов книг под разные роли.</p>
+          <div class="relic-verdict verdict-mid">Выбирайте тип под роль героя</div>
+        </article>
+        <article class="relic-card relic-amulet">
+          <h3>Кольцо</h3>
+          <p class="relic-effect">Даёт бонус к основной характеристике —
+          Силе, Ловкости или Интеллекту, в зависимости от типа.</p>
+          <div class="relic-verdict verdict-good">Тип кольца строго под класс героя</div>
+        </article>
+      </div>
+
+      <h3>Типы книг и что они дают</h3>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Книга</th><th>Бонус</th><th>Кому подходит</th></tr></thead>
+          <tbody>
+            <tr><td>Том тайных знаний</td><td>Магическая атака + здоровье</td><td>Маги с упором на выживаемость</td></tr>
+            <tr><td>Завет защитника</td><td>Броня + магическая защита</td><td>Танки, гибридная защита</td></tr>
+            <tr><td>Фолиант алхимика</td><td>Пробитие брони + физическая атака</td><td>Физические ДД против бронированных целей</td></tr>
+            <tr><td>Книга иллюзий</td><td>Уклонение + здоровье</td><td>Стрелки и герои с уклонением</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note-small">Указаны 4 из 7 существующих типов книг — самые часто встречающиеся в билдах.</p>
+
+      <h3>Типы колец</h3>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Кольцо</th><th>Даёт</th><th>Кому</th></tr></thead>
+          <tbody>
+            <tr><td>Кольцо силы</td><td>Сила</td><td>Физические классы на Силе (обычно танки/воины)</td></tr>
+            <tr><td>Кольцо ловкости</td><td>Ловкость</td><td>Стрелки и физический урон на Ловкости</td></tr>
+            <tr><td>Кольцо интеллекта</td><td>Интеллект</td><td>Маги, целители, поддержка</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Ресурсы прокачки эволюции</h3>
+      <p>Для эволюции нужны фрагменты своего типа и Ядра хаоса. Материалы
+      делятся на шесть ступеней качества.</p>
+
+      <div class="resource-tiers">
+        <div class="tier-row">
+          <span class="tier-name">Обычный</span>
+          <span class="tier-arrow">→</span>
+          <span class="tier-name">Необычный</span>
+          <span class="tier-arrow">→</span>
+          <span class="tier-name">Редкий</span>
+          <span class="tier-arrow">→</span>
+          <span class="tier-name">Превосходный</span>
+          <span class="tier-arrow">→</span>
+          <span class="tier-name">Безупречный</span>
+          <span class="tier-arrow">→</span>
+          <span class="tier-name tier-final">Абсолют</span>
+        </div>
+      </div>
+
+      <div class="resource-icons">
+        <div class="res-group">
+          <div class="res-label">Эссенция (Оружие)</div>
+          <div class="res-imgs">
+            <img src="/heroes-guide/assets/img/essence-1.png" alt="Эссенция 1 ранг" loading="lazy">
+            <img src="/heroes-guide/assets/img/essence-2.png" alt="Эссенция 2 ранг" loading="lazy">
+            <img src="/heroes-guide/assets/img/essence-3.png" alt="Эссенция 3 ранг" loading="lazy">
+            <img src="/heroes-guide/assets/img/essence-4.png" alt="Эссенция 4 ранг" loading="lazy">
+            <img src="/heroes-guide/assets/img/essence-5.png" alt="Эссенция 5 ранг" loading="lazy">
+            <img src="/heroes-guide/assets/img/essence-6.png" alt="Эссенция 6 ранг" loading="lazy">
+          </div>
+        </div>
+        <div class="res-group">
+          <div class="res-label">Свиток (Книга)</div>
+          <div class="res-imgs">
+            <img src="/heroes-guide/assets/img/scroll-1.png" alt="Свиток 1 ранг" loading="lazy">
+            <img src="/heroes-guide/assets/img/scroll-2.png" alt="Свиток 2 ранг" loading="lazy">
+            <img src="/heroes-guide/assets/img/scroll-3.png" alt="Свиток 3 ранг" loading="lazy">
+            <img src="/heroes-guide/assets/img/scroll-4.png" alt="Свиток 4 ранг" loading="lazy">
+            <img src="/heroes-guide/assets/img/scroll-5.png" alt="Свиток 5 ранг" loading="lazy">
+            <img src="/heroes-guide/assets/img/scroll-6.png" alt="Свиток 6 ранг" loading="lazy">
+          </div>
+        </div>
+        <div class="res-group">
+          <div class="res-label">Металл (Кольцо)</div>
+          <div class="res-imgs">
+            <img src="/heroes-guide/assets/img/metal-1.png" alt="Металл 1 ранг" loading="lazy">
+            <img src="/heroes-guide/assets/img/metal-2.png" alt="Металл 2 ранг" loading="lazy">
+            <img src="/heroes-guide/assets/img/metal-3.png" alt="Металл 3 ранг" loading="lazy">
+            <img src="/heroes-guide/assets/img/metal-4.png" alt="Металл 4 ранг" loading="lazy">
+            <img src="/heroes-guide/assets/img/metal-5.png" alt="Металл 5 ранг" loading="lazy">
+            <img src="/heroes-guide/assets/img/metal-6.png" alt="Металл 6 ранг" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <h3>Стоимость полной эволюции (1★ → 6★)</h3>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Ресурс</th><th class="num">Всего нужно</th></tr></thead>
+          <tbody>
+            <tr><td>Фрагментов артефакта</td><td class="num">150</td></tr>
+            <tr><td>Монет артефакта (эквивалент фрагментов)</td><td class="num">225</td></tr>
+            <tr><td>Ядер хаоса</td><td class="num">~121</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note-small">
+        Стоимость резко растёт после 4★ — 5★ требует уже 50 фрагментов
+        (около 20 000 монет артефакта), поэтому многие игроки останавливают
+        второстепенных героев на 4★ и вкладывают остаток в основной состав.
+      </p>
+
+      <div class="callout callout-tip">
+        <p>
+          <strong>Источники фрагментов:</strong> экспедиции, Сундуки артефактов,
+          Торговец артефактами на Дирижабле, Ядра хаоса — дополнительно в
+          Магазине Элементального турнира.
+        </p>
+      </div>
+    </section>
+
+    <!-- ---------- ГЛИФЫ ---------- -->
+    <section id="heroes-glyphs">
+      <h2><span class="h-num">8</span> Глифы и Руна класса</h2>
+      <p>
+        Глифы точечно усиливают конкретные характеристики героя. Прокачка
+        идёт волнами каждые 5 уровней, и общая стоимость растёт нелинейно.
+      </p>
+
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Уровень глифа</th><th class="num">Стоимость (камни рун)</th></tr></thead>
+          <tbody>
+            <tr><td>5</td><td class="num">150</td></tr>
+            <tr><td>10</td><td class="num">240</td></tr>
+            <tr><td>15</td><td class="num">570</td></tr>
+            <tr><td>20</td><td class="num">660</td></tr>
+            <tr><td>25</td><td class="num">1 560</td></tr>
+            <tr><td>30</td><td class="num">1 770</td></tr>
+            <tr><td>35</td><td class="num">2 370</td></tr>
+            <tr class="row-highlight"><td>40</td><td class="num">2 610</td></tr>
+          </tbody>
+          <tfoot><tr><td>Итого до 40 уровня</td><td class="num">≈ 9 930</td></tr></tfoot>
+        </table>
+      </div>
+
+      <div class="callout callout-key-sm">
+        <p>
+          <strong>40 уровень глифа — не просто ещё один шаг.</strong> Именно
+          на нём открывается Руна класса — пассивная способность, общая
+          для всех героев этого класса. Если у вас несколько героев одного
+          класса, руна прокачивается один раз и работает у всех сразу,
+          даже у тех, чьи глифы этого уровня не достигли.
+        </p>
+      </div>
+
+      <p>
+        Камни рун добываются за очки гильдейской активности — ежедневная
+        награда масштабируется по вкладу участника в гильдию.
+      </p>
+    </section>
+
+    <!-- ---------- ПИТОМЦЫ ---------- -->
+    <section id="heroes-pets">
+      <h2><span class="h-num">9</span> Питомцы</h2>
+      <p>
+        Питомцы работают через два независимых механизма — и оба стоит
+        понимать до того, как вкладывать ресурсы.
+      </p>
+
+      <div class="two-col">
+        <div class="col-box col-box-good">
+          <h4>Боевые навыки</h4>
+          <p>
+            Питомец, выставленный шестым слотом в бой, применяет активные
+            и пассивные навыки — щиты, урон, контроль. Работают только
+            когда питомец физически участвует в сражении.
+          </p>
+        </div>
+        <div class="col-box col-box-bad">
+          <h4>Покровительство</h4>
+          <p>
+            С фиолетового ранга питомец может стать покровителем героя —
+            даёт ему бонус характеристик в любом бою (кроме тренировки
+            на максимальной силе), <strong>даже если сам питомец не
+            участвует</strong> в этом бою.
+          </p>
+        </div>
+      </div>
+
+      <div class="callout callout-info">
+        <p>
+          Список героев, доступных для покровительства, ограничен для
+          каждого питомца — смотрите вкладку «Покровительство» в карточке
+          питомца в Святилище.
+        </p>
+      </div>
+
+      <h3>Ранги питомцев</h3>
+      <p>
+        От Белого до Фиолетового +3. Прокачка идёт через Камни питомцев,
+        добываемые в приключениях или покупаемые за Частицы хаоса
+        (последнее открывается после прохождения конкретного приключения,
+        привязанного к нужному предмету).
+      </p>
+
+      <h3>Подарок Святилища</h3>
+      <p>
+        Награда Сезона питомцев. При получении можно сразу выбрать, какого
+        питомца продвинуть, либо закрыть окно — тогда подарок придёт в
+        почту после конца сезона и останется в инвентаре без срока годности.
+        Если все питомцы уже собраны и на максимальном ранге — подарок можно
+        обменять на 100 000 изумрудов.
+      </p>
+    </section>
+
+    <!-- ---------- ПРИОРИТЕТ ПИТОМЦЕВ ---------- -->
+    <section id="heroes-pet-priority">
+      <h2><span class="h-num">10</span> Каких питомцев качать в первую очередь</h2>
+      <p>
+        Общий консенсус сообщества по универсальности (не по силе в одной
+        конкретной ситуации, а по применимости в целом).
+      </p>
+
+      <div class="pet-ranking">
+        <div class="pet-row pet-row-top">
+          <div class="pet-rank">1</div>
+          <div class="pet-info">
+            <h4>Аксель</h4>
+            <p>Самый универсальный питомец в игре. Защитный пузырь блокирует
+            одиночные смертельные удары, работает и против физического, и
+            против магического урона. Есть навык покровительства. Основной
+            выбор против рейд-босса и в PvP.</p>
+          </div>
+        </div>
+        <div class="pet-row">
+          <div class="pet-rank">2</div>
+          <div class="pet-info">
+            <h4>Хорус</h4>
+            <p>Ценен за неуязвимость (Indomitable) — снимает угрозу
+            смертельного добивания в критический момент боя.</p>
+          </div>
+        </div>
+        <div class="pet-row">
+          <div class="pet-rank">3</div>
+          <div class="pet-info">
+            <h4>Мастери</h4>
+            <p>Один из немногих питомцев с активным боевым навыком, а не
+            только пассивным. Активные способности редки в пуле питомцев,
+            что делает его ценным дополнением.</p>
+          </div>
+        </div>
+        <div class="pet-row">
+          <div class="pet-rank">4</div>
+          <div class="pet-info">
+            <h4>Фенрис</h4>
+            <p>Даёт эффект ослепления (Blind), способный переломить бой, и
+            хорошо ускоряет активацию умений героев вроде Себастьяна.</p>
+          </div>
+        </div>
+        <div class="pet-row">
+          <div class="pet-rank">5</div>
+          <div class="pet-info">
+            <h4>Альбус</h4>
+            <p>Единственный питомец, усиливающий магическую защиту команды.
+            Все три его навыка достаточно крепкие, хоть и не выдающиеся.</p>
+          </div>
+        </div>
+        <div class="pet-row pet-row-low">
+          <div class="pet-rank">6</div>
+          <div class="pet-info">
+            <h4>Оливер</h4>
+            <p>Покровительство сильное против рейд-босса (особенно на Айзеке),
+            но боевые способности слабые и работают только против
+            физического урона.</p>
+          </div>
+        </div>
+        <div class="pet-row pet-row-low">
+          <div class="pet-rank">7</div>
+          <div class="pet-info">
+            <h4>Мерлин</h4>
+            <p>Единственный питомец с пробитием магической защиты — нишевый
+            выбор для конкретных магов вроде Селесты или Авроры, если нужен
+            именно этот эффект.</p>
+          </div>
+        </div>
+        <div class="pet-row pet-row-last">
+          <div class="pet-rank">↓</div>
+          <div class="pet-info">
+            <h4>Мара — низкий приоритет</h4>
+            <p>Усиливает эффекты контроля (ослепление, немота, замедление,
+            очарование, подчинение разума) — звучит мощно на бумаге, но на
+            практике полезен только против очень специфичных составов без
+            Себастьяна и защиты от контроля. Ценен почти исключительно
+            навыком покровительства.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout callout-key-sm">
+        <h4>Правило для новичков</h4>
+        <p>
+          Большинство боевых навыков питомцев <strong>не действуют первые
+          15 секунд боя</strong> — исключение составляют пассивные эффекты
+          снижения урона, активные с первой секунды. Выбирая питомца в бой,
+          учитывайте, успевает ли бой длиться достаточно долго, чтобы навык
+          сработал хотя бы раз.
+        </p>
+      </div>
+    </section>
+
+    <!-- ---------- ОШИБКИ ---------- -->
+    <section id="heroes-mistakes">
+      <h2><span class="h-num">11</span> Чего не делать</h2>
+      <div class="mistakes">
+        <div class="mistake">
+          <div class="mistake-x">✕</div>
+          <div>
+            <h4>Собирать команду из пяти сильных героев без ролей</h4>
+            <p>Без танка и хила/поддержки даже очень прокачанные герои
+            рассыпаются под концентрированным уроном.</p>
+          </div>
+        </div>
+        <div class="mistake">
+          <div class="mistake-x">✕</div>
+          <div>
+            <h4>Игнорировать состав противника перед боем</h4>
+            <p>Тип урона (физический/магический/чистый) и наличие контроля
+            у врага должны определять состав, а не наоборот.</p>
+          </div>
+        </div>
+        <div class="mistake">
+          <div class="mistake-x">✕</div>
+          <div>
+            <h4>Качать уровень и снаряжение, забывая про артефакты и глифы</h4>
+            <p>Это меньше половины итоговой силы аккаунта — легко застрять
+            на месте, вкладываясь только в базовые вещи.</p>
+          </div>
+        </div>
+        <div class="mistake">
+          <div class="mistake-x">✕</div>
+          <div>
+            <h4>Ставить кольцо не под характеристику класса</h4>
+            <p>Кольцо силы на маге или кольцо интеллекта на воине —
+            почти чистая трата ресурса.</p>
+          </div>
+        </div>
+        <div class="mistake">
+          <div class="mistake-x">✕</div>
+          <div>
+            <h4>Тянуть всех героев до 6★ одинаково</h4>
+            <p>После 4★ стоимость эволюции резко растёт. Второстепенных
+            героев обычно выгоднее держать на 4★, а ресурс направлять в
+            основной состав.</p>
+          </div>
+        </div>
+        <div class="mistake">
+          <div class="mistake-x">✕</div>
+          <div>
+            <h4>Ставить питомца с навыком, который не успеет сработать</h4>
+            <p>Многие боевые навыки активируются только после 15 секунд боя —
+            в коротких стычках толку от них не будет.</p>
+          </div>
+        </div>
+        <div class="mistake">
+          <div class="mistake-x">✕</div>
+          <div>
+            <h4>Считать жёсткий контрпик гарантией победы</h4>
+            <p>Контрпик снимает конкретную угрозу, но не заменяет общую
+            прокачку и состав команды в целом.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- ШПАРГАЛКА ---------- -->
+    <section id="heroes-cheatsheet">
+      <h2><span class="h-num">12</span> Краткая шпаргалка</h2>
+
+      <div class="cheat">
+        <div class="cheat-row">
+          <div class="cheat-icon">🛡️</div>
+          <div class="cheat-name">Состав</div>
+          <div class="cheat-arrow">→</div>
+          <div class="cheat-lvl">1 танк</div>
+          <div class="cheat-cost">+ хил/саппорт</div>
+          <div class="cheat-note">+ 2-3 источника урона</div>
+        </div>
+        <div class="cheat-row">
+          <div class="cheat-icon">⚔️</div>
+          <div class="cheat-name">Прокачка</div>
+          <div class="cheat-arrow">→</div>
+          <div class="cheat-lvl">Ранг → Эволюция</div>
+          <div class="cheat-cost">→ Навыки</div>
+          <div class="cheat-note">потом скины/глифы/артефакты</div>
+        </div>
+        <div class="cheat-row">
+          <div class="cheat-icon">💍</div>
+          <div class="cheat-name">Артефакты</div>
+          <div class="cheat-arrow">→</div>
+          <div class="cheat-lvl">Оружие до 3★</div>
+          <div class="cheat-cost">100% активация</div>
+          <div class="cheat-note">книга/кольцо под роль</div>
+        </div>
+        <div class="cheat-row cheat-row-final">
+          <div class="cheat-icon">🐾</div>
+          <div class="cheat-name">Питомец</div>
+          <div class="cheat-arrow">→</div>
+          <div class="cheat-lvl">Аксель</div>
+          <div class="cheat-cost">универсальная защита</div>
+          <div class="cheat-note">потом Хорус, Мастери</div>
+        </div>
+      </div>
+
+      <div class="cheat-result">
+        Главное правило: <strong>роль важнее силы отдельного героя</strong> —
+        сбалансированная пятёрка почти всегда бьёт пять сильных героев без ролей.
+      </div>
+
+      <div class="callout callout-info">
+        <h4>Оговорка о точности</h4>
+        <p>
+          Список контрпиков и мета-связок отражает состояние на момент
+          написания гайда. Балансные патчи выходят регулярно — перед крупными
+          вложениями сверяйтесь со свежими тир-листами сообщества.
+        </p>
+      </div>
+    </section>
+
+    <!-- ---------- ИСТОЧНИКИ ---------- -->
+    <section id="heroes-sources">
+      <h2><span class="h-num">13</span> Источники</h2>
+      <ul class="sources-list">
+        <li>
+          <a href="https://support-hwde.nexters.com/hc/en-us/articles/16306548189202-How-to-Build-an-Effective-Team" target="_blank" rel="noopener">support-hwde.nexters.com — How to Build an Effective Team</a>
+          <span>Официальная методичка по сборке команды в 6 шагов</span>
+        </li>
+        <li>
+          <a href="https://support-hwa.nexters.com/hc/en-us/articles/6116195484306-General-Information-About-Heroes" target="_blank" rel="noopener">support-hwa.nexters.com — General Information About Heroes</a>
+          <span>Семь классов, Руны класса, формулы пассивок</span>
+        </li>
+        <li>
+          <a href="https://support-hwde.nexters.com/hc/en-us/articles/5637690826258-Hero-Artifacts" target="_blank" rel="noopener">support-hwde.nexters.com — Hero Artifacts</a>
+          <span>Типы Оружия/Книги/Кольца, материалы эволюции</span>
+        </li>
+        <li>
+          <a href="https://support-hwde.nexters.com/hc/en-us/articles/5742581923474-All-About-Pets" target="_blank" rel="noopener">support-hwde.nexters.com — All About Pets</a>
+          <span>Покровительство, ранги, Подарок Святилища</span>
+        </li>
+        <li>
+          <a href="https://herowars-olympus.com/complete-hero-upgrade-beginner-guide-2026" target="_blank" rel="noopener">herowars-olympus.com — Complete Hero Upgrade Beginner Guide</a>
+          <span>8 слоёв прокачки героя по порядку</span>
+        </li>
+        <li>
+          <a href="https://h-w.fun/en/basics-of-heroes-upgrade" target="_blank" rel="noopener">h-w.fun — Basics of Heroes Upgrade</a>
+          <span>Приоритет характеристик по ролям</span>
+        </li>
+        <li>
+          <a href="https://omg.rocks/hero-counters-hero-wars-dominion-era" target="_blank" rel="noopener">omg.rocks — Best Hero Wars Counters</a>
+          <span>Таблица контрпиков, разделение hard/soft</span>
+        </li>
+        <li>
+          <a href="https://omg.rocks/hero-wars-dominion-era-pet-ranking" target="_blank" rel="noopener">omg.rocks — Pet Ranking</a>
+          <span>Ранжирование питомцев по универсальности</span>
+        </li>
+        <li>
+          <a href="https://alexandregames.com/hero-wars-dominion-era/guide/meta-teams-and-combos-hwde-en.html" target="_blank" rel="noopener">alexandregames.com — Best Meta Teams and Combos 2026</a>
+          <span>Разбор связки Орион/Каскад/Криста и анти-крит Гелиос</span>
+        </li>
+      </ul>
+      <p class="sources-note">
+        Таблица классов и Рун сверена с официальной справкой Nexters.
+        Список контрпиков и мета-связок собран из независимых источников
+        сообщества и не претендует на полноту — героев в игре больше 60,
+        и полная матрица контрпиков быстро устаревает с каждым патчем.
+      </p>
+    </section>
+
+</main>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Гайд по героям Hero Wars: Dominion Era · классы, контрпики, связки, питомцы · август 2026</p>
+    <p class="footer-dim">Все изображения принадлежат Nexters. Материал носит справочный характер.</p>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Наверх">↑</button>
+
+
+
+    </div>
+  </section>
+
+
   <!-- ===================== HERO DETAIL VIEW ===================== -->
   <section id="view-hero-detail" class="view">
     <div id="heroDetailWrap"></div>
