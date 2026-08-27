@@ -1,0 +1,698 @@
+============= DANTE =============
+>>> Patronage: Fenris, Cain
+Soul Stones: Tower Shop, Soul Chests, Soul Atrium
+Best Synergy: Lyria, Nebula, Aidan
+>>> What makes Dante special is that he does not rely on raw stats alone. He pressures multiple enemies with spectral spears, buffs team Dodge, punishes heavy hits with automatic counterattacks, and lowers enemy main stats at the same time. That package gives him damage, disruption, and survivability without needing to play like a standard backline glass cannon.
+Dante Overall Rating in the Meta
+Note: 1⭐ means poor and 5⭐ means excellent, based on how the hero performs in the current Hero Wars: Dominion Era meta considering control value, damage pressure, team synergy, and how much the hero can function without perfect support.
+Control: ⭐⭐⭐
+Damage: ⭐⭐⭐⭐⭐
+Synergy: ⭐⭐⭐⭐
+Independence: ⭐⭐⭐⭐
+Pros and Cons of Dante Based on His Skills
+Dante excels in dodge-based mechanics and burst physical damage, making him a powerful and tricky hero in Hero Wars: Dominion Era. Below are his main strengths and weaknesses.
+Strong Dodge Synergy: Dante’s Retribution skill triggers extra attacks when he dodges, increasing his damage output significantly.
+High Burst Damage: His main skill, Instrument of Fate, deals heavy physical damage and disrupts enemies by pushing them back.
+Debuff Capabilities: With Shackles of Weakness, Dante reduces enemies’ main stats, weakening their performance in battle.
+Team Support: His Foresight skill boosts dodge for all allies, improving team survivability.
+Dependent on Dodge: Dante’s damage and utility heavily rely on successfully dodging attacks, making him less effective against accuracy or control-heavy enemies.
+Squishy Without Proper Builds: Without sufficient armor or health, Dante can be fragile and prone to burst damage.
+Situational Debuff: The stat reduction from Shackles of Weakness is useful but depends on landing hits from his spears, which can be interrupted.
+Dante Skills Upgrade Priority - Hero Wars: Dominion Era
+Dante’s upgrades should first improve the damage and Dodge patterns that define his whole kit, then improve the supporting effects that make his spear pressure harder to trade into.
+1 - Instrument of Fate (Ultimate)
+1 - Instrument of Fate (Ultimate)
+Instrument of Fate is Dante’s main burst tool. He throws 4 spectral spears at multiple enemies, dealing 210,193 physical damage and pushing targets back. This gives him real frontline disruption while also pressuring several enemies at once, which is why the skill stays central in both PvP and PvE.
+Formula - Physical Damage: 210,193 (220% Physical Attack + 100 x Level)
+Evolution Priority: Very High – This is the first skill to care about because it is Dante’s clearest source of burst, positioning pressure, and artifact activation tempo.
+Keywords: physical damage, knockback, multi-target pressure
+Area: multiple enemies
+2 - Foresight
+2 - Foresight
+Foresight gives all allies 16,524 Dodge for 5 seconds. This is the skill that turns Dante from a selfish damage dealer into a real dodge-core enabler, because it helps the whole team survive physical pressure while also making Dante lineups much more frustrating to pin down.
+Formula - Bonus Dodge: 16,524 (18% Physical Attack + 3 x Level)
+Evolution Priority: High – Upgrade this early because Dante teams become much more stable when the dodge window is large enough to create missed attacks and energy swings.
+Initial Cooldown: 5 seconds
+Cooldown: 18 seconds
+Keywords: team dodge, physical mitigation, dodge synergy
+3 - Shackles of Weakness
+3 - Shackles of Weakness
+Shackles of Weakness adds a debuff layer to Dante’s spear hits. Whenever a spectral spear from Instrument of Fate or Retribution lands, Dante reduces the enemy’s main stat by 7,022 for 5 seconds. That lowers enemy damage, defense scaling, or healing scaling depending on who gets hit, which gives Dante more value than a pure damage marksman in longer fights.
+Formula - Main Stat Reduction: 7,022 (7% Physical Attack + 8 x Level - 292)
+Evolution Priority: Medium High – This is worth leveling before Retribution in most builds because the stat reduction applies more consistently across fights and improves Dante’s overall pressure profile.
+Duration: 5 seconds
+Keywords: main stat reduction, spear synergy, debuff pressure
+4 - Retribution
+4 - Retribution
+Retribution is Dante’s automatic punish when the enemy plays into his Dodge pattern. After dodging damage greater than 5% of his total health, he throws a spectral spear at the nearest enemy for 111,596 physical damage. The effect is powerful in the right matchup, but it is more conditional than the rest of his kit because it depends on successful dodges and meaningful incoming hits.
+Formula - Physical Damage: 111,596 (110% Physical Attack + 100 x Level)
+Evolution Priority: Medium – This skill is still good, but it becomes best when Dante already has enough Dodge support and survivability to trigger it often.
+Cooldown: 1 second
+Trigger: dodge of damage above 5% of Dante’s total health
+>>> Keywords: counterattack, dodge trigger, single-target damage
+>>> Best Patronage for Dante
+Dante benefits most from pets that boost dodge, physical attack, and energy gain, increasing his damage and survivability.
+1st Place: Cain
+Cain greatly boosts Dante's survivability and skill uptime. His Dodge bonus fits perfectly with Dante’s Retribution skill and lets him trigger more spectral spears. Cain also restores Energy when Dante dodges, helping him use his ultimate more often.
+2nd Place: Fenris
+Fenris increases Dante’s Physical Attack and Armor Penetration, improving overall damage output. His blinding effect on basic attacks can reduce incoming damage in prolonged fights, making him a strong offensive support option when Cain isn’t available.
+Best Skin for Dante Hero Wars: Dominion Era
+Dante’s skin order should first strengthen the stats that consistently improve both his spear damage and his dodge-based tempo, then move into the more specialized defensive options. The new Oblivion Skin now matters because Magic Defense helps Dante survive the mage pressure that is so common in the current meta.
+Default Skin
+Default Skin
+Stat Gain: Agility +1,365
+Evolution Priority: Very High – Default Skin is the best place to start because Agility improves Dante’s baseline damage profile while also supporting his natural durability through stat efficiency. It is the most universal skin upgrade in every version of a Dante build.
+Total Agility Skin Stones for max level:
+     30,825
+Romantic Skin
+Romantic Skin
+Stat Gain: Dodge +2,960
+Evolution Priority: High – Romantic Skin is one of Dante’s most important follow-up upgrades because more Dodge means more survivability, more wasted enemy actions, and more chances to trigger Retribution in physical matchups.
+Total Agility Skin Stones for max level:
+     55,410
+Stat Gain: Armor Penetration +10,650
+Evolution Priority: High – Solar Skin is the upgrade that helps Dante convert his spear pressure into cleaner kills against tanks and bruisers. If your Dante already survives well enough, this skin becomes especially valuable.
+Total Agility Skin Stones for max level:
+     55,410
+Winter Skin
+Winter Skin
+Stat Gain: Physical Attack +7,120
+Evolution Priority: Medium High – Winter Skin is a solid damage upgrade, but it usually comes after Agility, Dodge, or Armor Penetration because those stats do more to stabilize Dante’s full game plan.
+Total Agility Skin Stones for max level:
+     58,412
+Spring Skin
+Spring Skin
+Stat Gain: Health +106,645
+Evolution Priority: Medium – Spring Skin has value if you need extra bulk, but it usually does less for Dante than the skins that directly improve his dodge loops or killing power.
+Total Agility Skin Stones for max level:
+     55,410
+Oblivion Skin
+Oblivion Skin
+Stat Gain: Magic Defense +10,650
+Evolution Priority: Medium High – Oblivion Skin gives Dante an important defensive upgrade for mage-heavy matchups. It does not increase his spear damage, Dodge loop, or Armor Penetration, but the extra Magic Defense can keep him alive long enough to continue controlling the fight and finishing enemies with repeated spear pressure.
+Alexandre Tip: With many strong mages in the current meta, this skin gives Dante some breathing room and helps him stay among the strongest heroes in the game.
+Total Agility Skin Stones for max level:
+     55,410
+>>> Dante Artifact Evolution Priority - Hero Wars: Dominion Era
+Dante’s artifacts should first reinforce the dodge-based structure that makes his comps difficult to break, then improve his personal stat floor for longer and more reliable fights.
+Spear of Fate
+Spear of Fate
+Stat Gain: Dodge +13,941
+Evolution Priority: Very High – This is Dante’s best artifact to prioritize because the weapon activation directly supports his identity as a dodge carry. More Dodge on activation increases the chance that Dante and his allies waste enemy physical pressure while creating better Retribution windows.
+Book of Illusions
+Book of Illusions
+Stat Gain: Health +83,649Dodge +4,647
+Evolution Priority: High – Book of Illusions gives Dante a very efficient mix of durability and Dodge. It does not hit as hard as the weapon activation in a key moment, but it makes his overall performance more stable in every fight.
+Ring of Agility
+Ring of Agility
+Stat Gain: Agility +6,249
+Evolution Priority: Medium – Ring of Agility is still a good artifact because Agility is never wasted on Dante, but it usually comes after the more specialized Dodge-focused artifacts that define his matchup advantage.
+>>> Glyph Evolution Priority for Dante
+Dante’s best glyphs are the ones that improve his spear damage first, then reinforce the dodge-and-survival pattern that lets him keep pressuring fights. The visual order below follows the game, but the priority field shows practical value.
+1st Glyph - Physical Attack
+1st Glyph - Physical Attack
+Stats gain: Physical Attack +4,340
+Evolution Priority: Very High – Dante’s main damage skills scale directly with Physical Attack, so this glyph gives the cleanest immediate increase to his burst and overall spear pressure.
+2nd Glyph - Armor Penetration
+2nd Glyph - Armor Penetration
+Stats gain: Armor Penetration +6,500
+Evolution Priority: High – Armor Penetration helps Dante convert his high spear damage into real kills against tanks and bruisers. Once his raw damage is good enough, this glyph becomes one of the most valuable follow-ups.
+3rd Glyph - Dodge
+3rd Glyph - Dodge
+Stats gain: Dodge +1,995
+Evolution Priority: High – Dodge is what makes Dante harder to pin down and what gives Retribution its matchup upside. It does not always outperform offensive stats first, but it is still one of the most important parts of his identity.
+4th Glyph - Armor
+4th Glyph - Armor
+Stats gain: Armor +6,500
+Evolution Priority: Medium – Armor gives Dante a better chance to survive physical focus long enough to keep dodging and throwing spears, but it is usually more about stability than increasing his win condition directly.
+5th Glyph - Agility
+5th Glyph - Agility
+Stats gain: Agility +1,135
+- Physical Attack from Agility: +1,135
+- Armor from Agility: indirect stat gain through the main stat
+Evolution Priority: Medium High – Agility is never wasted on Dante, but the direct combat impact usually feels weaker than Physical Attack, Armor Penetration, or Dodge. Still, it remains a solid all-around stat once the core glyphs are covered.
+>>> How to Counter Dante in Hero Wars
+Dante can be a dangerous opponent, but he has clear weaknesses you can exploit with the right heroes and tactics. Because his playstyle depends on dodging physical hits, crowd control abilities and magic damage are particularly effective.
+Magic-Based Heroes: Since Dante’s Dodge doesn’t work against magical or pure damage, heroes like Phobos, Celeste, and Iris can bypass his defenses and deal serious damage. Iris, in particular, can punish Dante with pure damage that ignores armor and dodge completely.
+>>> Control Effects: Heroes with stun, charm, or silence skills can interrupt Dante’s spear attacks. Lian is a perfect counter each time Dante attacks her, he risks being charmed, disrupting his flow and making him a liability to his team.
+High Dodge Heroes: Although Dante excels at dodging, he struggles against other heroes with similar agility. Aurora, Heidi, Yasmine, and Qing Mao can often evade his attacks, turning his strength into a disadvantage. Heidi, in particular, can blind and poison him while dodging his spears with ease.
+Positioning Exploits: Dante often stands near the front lines, making him vulnerable to area-of-effect control or focused burst damage. Proper positioning and timing can neutralize his impact early in the fight.
+>>> Countering Dante requires leveraging heroes who deal magic damage and can interrupt his actions through crowd control. Avoid relying heavily on physical damage or heroes who can’t mitigate his Dodge advantage.
+>>> Dante Best War Flag Hero Wars
+>>> Dante performs best with War Flags that either strengthen his tempo windows, improve the value of his patron pet, or make it easier for his dodge-based team to survive long enough for spear pressure to take over.
+>>> War Flag of Pet Strength
+>>> War Flag of Pet Strength
+>>> Dante and Team Benefit: Dante often relies heavily on Cain or Fenris to push either his dodge engine or his physical damage profile. War Flag of Pet Strength increases the value of that patron support and fits naturally into Dante comps that are already built around pet synergy.
+>>> War Flag of Frost
+>>> War Flag of Frost
+Dante and Team Benefit: Frost helps Dante teams survive cleaner against enemy bursts and support rotations by lowering enemy skill levels. That gives Dante more time to cycle Dodge buffs, ultimates, and spear pressure without losing momentum too early.
+>>> War Flag of Decline
+>>> War Flag of Decline
+Dante and Team Benefit: Decline is a strong situational option when Dante is trying to break sustain teams. His spear pressure is much more dangerous when enemy healing is reduced and targets cannot comfortably recover between his damage windows.
+Best Teams for Dante - Hero Wars: Dominion Era
+Dante continues to be one of the top damage dealers in Hero Wars, thanks to his high mobility, dodge, and powerful spear throws that hit multiple enemies. The best teams with Dante generally focus on increasing his survivability and amplifying his burst damage. Below are high-level defensive formations that maximize his performance in the arena and guild wars, as well as offensive compositions that make the most of his high damage and agility scaling.
+Dante Guide Conclusion
+Dante continues to be a great hero in Hero Wars: Dominion Era as a dependable and versatile hero. His ability to increase Dodge for all allies offers strong defensive synergy, especially when paired with heroes like Aurora. Positioned on the front line, his passive skill weakens the main stat of enemies, making it easier for his team to land critical hits. To unlock his full potential, Dante thrives alongside damage-boosting allies such as Jet, Nebula, Sebastian, and Fafnir, which secures his role in many top-tier lineups.
+>>> Even with the arrival of Lyria who reduces enemy Dodge Dante remains strong. His passive skill can counteract Lyria by lowering her main stat, helping to maintain his effectiveness even when he fails to dodge attacks. In fact, Dante is likely to remain in top-tier teams, often fighting alongside Lyria as an ally rather than as an opponent.
+============= AMIRA =============
+>>> Best Patronage for Amira
+Discover which pet brings out the best in Amira’s illusions and debuffs, helping her survive and control the battlefield with precision.
+>>> Axel is the best choice for Amira because he boosts her Magic Attack and Armor, two essential stats for a mid-line support mage. His patronage skill protects her from burst damage, which is crucial since Amira doesn’t have self-sustain or defense skills. With Axel, she can stay alive longer to execute her illusions and debuffs, especially in fights against high-damage teams.
+Biscuit works well with Amira by amplifying her anti-healing strategy, especially when using Art of Deceit. That skill boosts healing briefly before punishing mages, and Biscuit makes sure enemy healing is reduced even further. He also increases her Magic Attack and Armor, but lacks the survival shield that Axel provides.
+Oliver gives Amira extra Health and Armor, and his healing can keep her alive in some battles. However, because Amira relies on offensive magic and timing, Oliver doesn’t boost her performance directly in terms of skill impact. He’s better suited when you face teams with sustained damage and no burst threats.
+Best Skin for Amira – Hero Wars: Dominion Era
+Find the best skin order for Amira in Hero Wars. Learn which upgrades boost her illusion magic most effectively in real battle scenarios.
+Default Skin – Intelligence +1,365
+Default Skin – Intelligence +1,365
+The Default Skin increases Amira’s Intelligence, which boosts her Magic Attack, Magic Defense, and a bit of Physical Attack. It directly scales all her skills' damage and effectiveness.
+Evolution Priority: High – Intelligence improves all of Amira’s skill effects. This is the most impactful and well-rounded skin to upgrade first for both offense and defense.
+Cybernetic Skin – Magic Penetration +10,650
+Cybernetic Skin – Magic Penetration +10,650
+This skin increases Magic Penetration, allowing Amira to bypass enemy magic defense and deal stronger damage to high-resistance teams.
+Evolution Priority: Very High – Essential for breaking through magic tanks and high-defense setups. It’s particularly strong in PvP when facing heroes like Aurora, Aidan, or other mages with magic defense boosts.
+Romantic Skin – Magic Defense +10,650
+Romantic Skin – Magic Defense +10,650
+This skin increases Magic Defense, helping Amira survive longer against enemy mages like Orion, Krista, and Lars.
+Evolution Priority: Low – Useful if you’re often facing magic-heavy teams, but doesn’t boost her offensive potential. Consider this as a third or fourth option for PvP durability.
+Demonic Skin – Magic Attack +10,650
+Demonic Skin – Magic Attack +10,650
+The Demonic Skin increases Magic Attack, directly boosting the damage of all Amira’s skills, making her illusions much more dangerous.
+Evolution Priority: Very High– A strong option if you want to maximize Amira’s offensive power, especially after the Default Skin. Great for increasing burst damage in both PvE and PvP.
+Solar Skin – Armor +10,650
+Solar Skin – Armor +10,650
+The Solar Skin increases Armor, protecting Amira from physical damage (like Dante or Ishmael), but she is a mid-line mage and usually not a primary target.
+Evolution Priority: Medium-Low – Offers survivability, but less impactful for her skill effectiveness. Consider it mainly if you face strong physical DPS frequently.
+Note: The Solar Skin can only be obtained during the Summer Festival event.
+>>> Amira Artifact Evolution Priority – Hero Wars: Dominion Era
+Discover the best artifact priority for Amira in Hero Wars and learn which upgrades enhance her illusions and damage in real combat situations.
+Weapon Artifact: Turban of the Grand Genie
+Weapon Artifact: Turban of the Grand Genie
+This artifact activates when Amira casts her ultimate skill (Careless Wish) and grants a temporary Magic Attack bonus +50190 to the entire team for 9 seconds. This effect scales her damage and supports other magic-based allies at the same time.
+Evolution Priority: Very High – Since it activates with her main skill and boosts overall team performance, this artifact should be the first to upgrade. It strengthens her ultimate and helps control the pace of battle.
+Book Artifact: Manuscript of the Void
+Book Artifact: Manuscript of the Void
+Grants Amira a strong boost to Magic Penetration +10 680 and a decent amount of Magic Attack +8364. This is essential to bypass enemy Magic Defense and make sure her skills (especially Careless Wish and Art of Deceit) land full impact even against tough enemies.
+Evolution Priority: High – Improves damage consistency against magic-resistant enemies. It’s a solid second priority after the weapon for Amira’s offensive scaling.
+Ring Artifact: Intelligence +6249
+Ring Artifact: Intelligence +6249
+Boosts Amira’s Intelligence, which directly increases her Magic Attack, enhancing the power of all her skills. It also adds some Magic Defense and Physical Attack (though the latter is not significant for her role). While this artifact provides a valuable passive bonus, it does not offer the immediate, team-wide impact of her weapon or the penetration advantage of her book.
+Evolution Priority: Medium – Useful for passive power increase, but doesn’t provide immediate or team-wide effects. Upgrade it after the weapon and book are well-developed.
+>>> Amira Glyph Evolution Priority
+Discover the best glyphs for Amira in Hero Wars: Dominion Era. Learn which glyphs boost her illusion magic and battle impact most effectively.
+1st Glyph – Magic Attack:
+1st Glyph – Magic Attack:
+This glyph directly increases the power of all Amira’s skills, including Careless Wish, Art of Deceit, and Desperate Fury. Every ability she uses scales with Magic Attack.
+Evolution Priority: Very High – Magic Attack is the core stat for Amira. Maxing this glyph will greatly enhance her damage output and control abilities.
+2nd Glyph – Magic Penetration:
+2nd Glyph – Magic Penetration:
+This glyph helps Amira bypass enemy Magic Defense. It’s especially useful against magic-resistant heroes like Aurora, Aidan, and Rufus, ensuring her spells land with full effect.
+Evolution Priority: High – Improves reliability of her damage against high-resistance teams. Prioritize after Magic Attack for maximum spell effectiveness.
+3rd Glyph – Intelligence:
+3rd Glyph – Intelligence:
+Increases Amira’s Intelligence stat, which adds Magic Attack (+3 per point), Magic Defense, and a bit of Physical Attack. It supports both offense and minor survivability.
+Evolution Priority: Medium-High – A strong scaling glyph that passively boosts all her core stats. Useful, but slower impact than direct Magic Attack or Penetration.
+4th Glyph – Health:
+4th Glyph – Health:
+This glyph increases Amira’s Health by a large amount, giving her more durability in long fights or when facing burst teams like Dante or Ishmael.
+Evolution Priority: Medium – A defensive glyph that’s helpful in PvP, but doesn’t improve her offensive capabilities directly. Upgrade once her damage glyphs are maxed.
+5th Glyph – Armor:
+5th Glyph – Armor:
+Increases Amira’s resistance to physical attacks. Useful against teams with strong physical DPS, but less impactful than magic-related glyphs.
+Evolution Priority: Low – Defensive-only and situational. Leave this glyph for last unless facing physical-heavy teams constantly.
+>>> Cornelius is a direct counter to Amira due to his Heavy Wisdom skill, which targets the enemy with the highest Intelligence. Since Amira’s power scales from Intelligence, this ability deals massive magic damage and can eliminate her quickly in most battles.
+>>> Isaac is one of the most effective magic counters in the game. His MP-300 Capacitor absorbs magic damage, powering up Tes'Lin, and when Isaac activates Tes'Lin’s Overdrive, it silences the entire enemy team including Amira preventing her from casting key skills like Careless Wish.
+>>> Keira counters Amira with Blade Whirlwind, a powerful area-of-effect skill that hits the backline and silences enemies for 4 seconds on its return path. The high burst damage can significantly weaken the storm from Amira’s Careless Wish by reducing its stored power before it activates. As a mid-line support mage, Amira is highly vulnerable to Keira’s aggressive pressure and silence effects.
+Ziri can neutralize Amira’s first skill, Careless Wish, by redirecting it with Focus of Hatred. This taunt forces enemies to target Ziri, absorbing Amira’s magic and protecting squishier allies from burst damage while boosting Ziri’s defenses.
+>>> Amira Best War Flag Hero Wars
+>>> Discover the most effective War Flags to boost Amira’s magic-based support and control abilities in Hero Wars: Dominion Era.
+>>> War Flag of Frost:
+>>> War Flag of Frost:
+>>> This War Flag weakens the enemy team by reducing their skill levels by 2 every 18 seconds, for 8 seconds. That means enemy damage, healing, and control abilities are all weakened mid-fight.
+>>> Amira and Team Benefit: Since Amira is a control-oriented support hero who relies on timing and softening enemies with Careless Wish, War Flag of Frost pairs well by suppressing enemy impact during her setup window. This increases her survivability and gives her team an advantage during crucial ability exchanges.
+>>> War Flag of Decline:
+>>> War Flag of Decline:
+This flag decreases the enemy team’s healing received by 10%. It’s especially effective against teams that rely heavily on sustain or heal-over-time strategies.
+>>> Amira and Team Benefit: Amira’s skill Art of Deceit already punishes Intelligence-based enemies by reducing their Magic Attack while they are being healed. War Flag of Decline stacks with this effect, further crippling mages who rely on healing. It also benefits magic-heavy teams by ensuring that enemies stay weakened long enough to be eliminated.
+Best Teams for Amira Hero Wars: Dominion Era
+Top Defense Teams for Amira
+Rufus, Amira, Nebula, Heidi, Polaris, Khorus
+Amira, Nebula, Heidi, Aidan, Thea, Khorus
+Julius, Amira, Nebula, Heidi, Polaris, Oliver
+Dante, Amira, Nebula, Aidan, Thea, Khorus
+Top Attack Teams for Amira
+Khorus, Polaris, Heidi, Nebula, Amira, Rufus
+Khorus, Thea, Aidan, Heidi, Nebula, Amira
+Oliver, Polaris, Heidi, Nebula, Amira, Julius
+Khorus, Thea, Aidan, Nebula, Amira, Dante
+Amira’s Guide Conclusion
+Amira shines brightest when paired with magic-heavy teams that benefit from her deceptive support style and control abilities. Whether you're building a defensive lineup to stall enemies or crafting an aggressive attack team to break through enemy lines, her synergy with heroes like Heidi, Aidan, Nebula, and Polaris allows her to manipulate enemy stats while amplifying your own team's magic output.
+Just make sure to position her behind strong tanks like Rufus or Julius to give her enough time to activate Careless Wish and other crucial skills. With the right setup, Amira can be a powerful core hero in both PvP offense and defense.
+============= FLUFFY =============
+>>> Risk of self-damage: Some counter mechanics (e.g., Usurpation when triggered) inflict self-damage; ensure sufficient HP and sustain.
+Vulnerable to magic bursts: Heavy magic damage can outpace heals and bypass the ultimate's protection.
+Ability/CD dependency: Usurpation has a cooldown and a chance to cancel—not always reliable.
+Positioning is critical: Needs proper placement to take advantage of Readiness and resurrection windows.
+>>> Counters: Silences, dispels and skill-level reduction greatly weaken Fluffy.
+Fluffy Skills Guide – Hero Wars: Dominion Era
+>>> Fluffy is not your average support. His kit blends demonic protection, resurrection, and devastating counterplay. Master each ability to turn Baalthazar's wrath into your greatest asset.
+Deal with the Devil (Ultimate)
+Deal with the Devil (Ultimate)
+Deal with the Devil envelops all allied Heroes for 12 seconds. While active, allies are immune to damage from enemy basic attacks and reflect it back to attackers.
+This ultimate is a double-edged sword: it grants incredible protection against auto-attack heavy teams. Time it wisely to maximize reflections and avoid exposing allies to heavy burst damage.
+Formula: (80% magic attack + 200 * level) — max reflected damage: 117,961.
+Evolution Priority: Very High – This is Fluffy's signature ability. The basic-attack immunity and reflect can completely shut down physical damage dealers. Upgrade first to extend duration and reduce the self-damage ratio.
+Skill Animation Info
+Formula: (80% magic attack + 200 * level) — max reflected damage: 117,961.
+Duration: 12 seconds
+To Hell and Back
+To Hell and Back
+Baalthazar protects his flock from death for 10 seconds. All allies who die during this time will be resurrected when the effect ends. They restore some Health, and their physical and magic attack are increased until the end of the battle.
+>>> This is essentially a team-wide "second chance" mechanic. Timing is crucial: activate it before a massive enemy burst or ultimate combo. Resurrected allies come back stronger, turning potential defeats into aggressive counter-attacks.
+Formula: (Heal: 200% magic attack + 400 * level) = 281,902; Attack buff: (20% magic attack + 50 * level) = 29,490.
+Skill Animation Info
+Formula - Healing: (200% magic attack + 400 * level) = 281,902
+Formula - Attack increase: (20% magic attack + 50 * level) = 29,490
+Duration: 10 seconds
+Initial Cooldown: 10 seconds
+Cooldown: 40 seconds
+Evolution Priority: High – The resurrection effect is game-changing. Upgrading increases the Health restored and the attack buff given to resurrected allies. Prioritize this second.
+Mark of Death
+Mark of Death
+Fluffy puts Marks of Death on himself, increasing his magic armor penetration. When Fluffy dies, the Marks explode, dealing damage to enemy Heroes for each Mark. Up to 10 Marks can be active at once.
+This passive turns Fluffy's death into a weapon. The more Marks accumulated, the bigger the explosion. It synergizes with risky plays: sometimes letting Fluffy fall at the right moment can wipe out weakened enemies. The magic penetration bonus also makes Fluffy's other damage more effective.
+Formula: (Damage per Mark: 65% magic attack + 200 * level) = 100,718; Magic armor pen per Mark: (5% magic attack + 5 * level + 100) = 6,498.
+Skill Animation Info
+Formula - Damage per Mark: (65% magic attack + 200 * level) = 100,718
+Formula - Magic armor penetration per Mark: (5% magic attack + 5 * level + 100) = 6,498
+Marks (max): 10
+Cooldown: 10 seconds
+Evolution Priority: Medium – Useful for magic penetration and the death explosion, but less impactful than the protective abilities. Upgrade third.
+When an enemy uses an ultimate ability, Fluffy cancels it and deals damage to them. At the same time, Fluffy takes damage based on his maximum Health. This ability can trigger once every 20 seconds. The chance to cancel an ultimate ability depends on the target's level.
+This is Fluffy's most disruptive skill. Canceling enemy ultimates can completely swing a fight. However, the self-damage and 20-second cooldown mean you can't rely on it constantly. Best against teams with devastating single-target or AoE ultimates.
+Formula: (Damage to enemy: 50% magic attack + 150 * level + 100) = 77,076; Self-damage: 20% of max Health (scaling formula: 20% (-0.15 * level + 39.5)).
+Skill Animation Info
+Formula - Damage to enemy: (50% magic attack + 150 * level + 100) = 77,076
+Self-damage: 20% of Fluffy's max Health (scaling: (-0.15 * level + 39.5))
+Cooldown: 20 seconds
+Initial Cooldown: 1 second
+Note: Chance to cancel reduced against targets above level 130.
+Evolution Priority: High – Upgrading improves the cancel chance and damage dealt. Essential against ultimate-reliant enemies. Upgrade alongside or after To Hell and Back.
+Fluffy – Skill Upgrade Priority
+See the recommended order to upgrade Fluffy's skills to make the most of his kit:
+Deal with the Devil (Ultimate) – Basic-attack immunity and reflect; core of the kit.
+To Hell and Back – Area resurrection with an attack buff; decides long fights.
+Usurpation – Cancels enemy ultimates; crucial against burst compositions.
+Mark of Death – Magic penetration and explosion on death; powerful but situational.
+Best Skin for Fluffy Hero Wars: Dominion Era
+Fluffy skins change visual effects and stats; below is the recommended evolution priority by battlefield utility, balancing her Intelligence scaling with the defensive needs of each matchup.
+Default Skin
+Default Skin
+Stats gain: Intelligence +1,365
+- magic attack from Intelligence: +4,095
+- magic defense from Intelligence: +1,365
+- physical attack from Intelligence: +1,365
+Each intelligence point grants: three points to magic attack; one point to magic defense; one extra point to physical attack if intelligence is the hero's main stat.
+Evolution Priority: Very High – Fluffy's skills scale with Magic Attack, so the Default Skin improves her overall damage and support value while also adding Magic Defense through Intelligence. In most builds, this is one of her best all-around upgrades.
+Total of Intelligence skin stones for max level:  30,825
+Librarian Skin
+Librarian Skin
+Stats gain: Armor +10,650
+Evolution Priority: Very High – Massive armor greatly improves Fluffy's survivability against physical teams and reduces risk from self-damage mechanics; prioritize evolution when facing physical-heavy opponents.
+Total of Intelligence skin stones for max level:  55,410
+Masquerade Skin
+Masquerade Skin
+Stats gain: Magic Defense +10,650
+Evolution Priority: High – A strong answer to magic-burst teams, covering one of Fluffy's main weaknesses and helping her stay alive long enough to sustain Deal with the Devil and cast To Hell and Back.
+Total of Intelligence skin stones for max level:  55,410
+>>> Fluffy Glyph Evolution Priority
+Recommended glyph order for Fluffy based on battlefield utility and synergies with her kit.
+1st Glyph – Magic Attack: +6,500
+1st Glyph – Magic Attack: +6,500
+Stats gain: Magic Attack +6,500
+Evolution Priority: High – Increases Deal with the Devil damage, Mark of Death explosions and overall pressure; important once survivability is acceptable.
+2nd Glyph – Health: +62,200
+2nd Glyph – Health: +62,200
+Stats gain: Health +62,200
+Evolution Priority: Very High – Critical for surviving self-damage mechanics and enabling To Hell and Back to revive allies reliably; top priority for sustained fights.
+3rd Glyph – Armor: +6,500
+3rd Glyph – Armor: +6,500
+Stats gain: Armor +6,500
+Evolution Priority: Medium-High – Helps vs physical teams and pairs well with the Librarian skin; prioritize against physical-heavy metas.
+4th Glyph – Magic Penetration: +6,500
+4th Glyph – Magic Penetration: +6,500
+Stats gain: Magic Penetration +6,500
+Evolution Priority: High – Boosts Mark of Death and general magic damage; important for maximizing offensive output once durability is handled.
+5th Glyph – Intelligence: +1,135
+5th Glyph – Intelligence: +1,135
+Stats gain: Intelligence: +1,135
+- magic attack from Intelligence: +3,405
+- magic defense from Intelligence: +1,135
+- physical attack from Intelligence: +1,135
+Evolution Priority: Medium – Good long-term scaling but less immediate than raw Health or Magic Attack for Fluffy's kit.
+>>> Fluffy Artifact Evolution Priority Hero Wars: Dominion Era
+Fluffy’s artifacts reinforce her risky demon-support kit in Hero Wars: Dominion Era, adding teamwide magic defense, raw health and scaling damage.
+Baalthazar's Skull (Weapon Artifact)
+Baalthazar's Skull (Weapon Artifact)
+Stats gain: Magic Defense +50,190
+When Fluffy uses her ultimate (Shieldbreaker skill trigger), Baalthazar's Skull activates and grants bonus stats to the whole team for 9 seconds. This teamwide magic defense buff stacks perfectly with Deal with the Devil, covering a weakness in her kit: she already shuts down basic attacks, and the artifact helps your team survive enemy magic bursts and self-damage mechanics.
+Evolution Priority: Very High – This artifact directly protects the entire team at the exact moment Fluffy is most vulnerable. Because it is teamwide, always-on when the ultimate fires and shores up a key defensive layer, it offers the highest impact for both PvP and PvE.
+Tome of Arcane Knowledge (Book Artifact)
+Tome of Arcane Knowledge (Book Artifact)
+Stats gain: Health +83,649; Magic Attack +16,731
+The book artifact is Fluffy’s personal power and safety layer. Extra Health helps her survive self-damage from triggers (for example, Usurpation) and enemy burst damage, while bonus Magic Attack amplifies all her skills, including Deal with the Devil damage, resurrection buffs and Mark of Death explosions. It does not directly help the whole team like the weapon, but it makes Fluffy much harder to burst down.
+Evolution Priority: High – Strong mix of offense and survivability on Fluffy herself. Upgrading this artifact greatly improves her consistency in long fights, but it is slightly less valuable than Baalthazar's Skull because its effect is not teamwide.
+Ring of Intelligence (Stat Artifact)
+Ring of Intelligence (Stat Artifact)
+Stats gain: Intelligence +6,249
+Magic Attack from Intelligence: +18,747
+Magic Defense from Intelligence: +6,249
+Physical Attack from Intelligence: +6,249
+The Intelligence ring scales all of Fluffy’s numbers: more Magic Attack for damage and stronger buffs, extra Magic Defense for her own safety, and a bit of Physical Attack thanks to Intelligence being her main stat. However, this artifact only benefits Fluffy and offers no extra team utility or special effect.
+Evolution Priority: Medium-High – Excellent long-term scaling but less impactful per level than the weapon and book. Level it after Baalthazar's Skull and the Tome, once you are comfortable with Fluffy’s survivability and team protection.
+>>> Fluffy Best War Flag Hero Wars
+>>> Top War Flags to amplify Fluffy's survivability and team resurrection, prioritizing increased healing, early energy gain, and enemy skill suppression.
+>>> War Flag of Recovery:
+>>> War Flag of Recovery:
+Increases all healing by 10% — ideal when Fluffy runs Deal with the Devil and team resurrections.
+Fluffy and Team Benefit: Recovery directly boosts the healing portion of To Hell and Back and helps allies survive self-damage mechanics and heavy burst, making resurrection safer and more reliable for the team.
+>>> War Flag of Readiness:
+>>> War Flag of Readiness:
+Gives energy to the rearmost Hero at battle start and periodically — scales with red patterns.
+Fluffy and Team Benefit: If Fluffy is placed in the rear, Readiness lets her cast ultimate and resurrection much earlier, securing defensive windows and catching enemies off-guard; excellent for tempo control.
+>>> War Flag of Decline:
+>>> War Flag of Decline:
+Decreases enemy team healing by 10%.
+>>> Fluffy and Team Benefit: Decline is a strong counter when opponents rely on heavy healing; it prevents enemies from easily negating Fluffy's damage and reduces the effectiveness of heals that would undo your resurrections.
+>>> War Flag of Frost:
+>>> War Flag of Frost:
+Every 18 seconds reduces enemy skill levels by 2 for 8 seconds.
+Fluffy and Team Benefit: Frost helps neutralize skill-reliant enemy teams (lowering ultimates and skill potency), making Fluffy's cancels and resurrections more impactful by reducing incoming burst and control.
+Fluffy is a specialist support/mage that shines against auto-attack teams thanks to Deal with the Devil and can turn fights around with To Hell and Back. Prioritize survivability (Health/Armor glyphs and defensive skins), level the ultimate and resurrection first, and use artifacts like Baalthazar's Skull to protect the team. Beware heavy magic burst and crowd-control—proper timing and positioning are essential. In short: great in long fights and physical metas when built and played carefully.
+About the Author
+Alexandre Domingos holds a postgraduate degree in Engineering and works as a Production Supervisor. In his spare time, he works as a YouTuber, blogger, and webmaster at Alexandre Games, where he is responsible for both content creation and the website’s technical structure, SEO, and performance. He has been immersed in the gaming world since the age of 5, starting on classic platforms such as MSX, Master System, Nintendo, and even an old 286 PC. Since 2019, Alexandre has been creating in-depth content about Hero Wars, Mobile Legends, and other mobile games, producing guides, tutorials, analyses, and advanced strategies for the community.
+============= LARACROFT =============
+============= AIDAN =============
+>>> Vulnerable to back-line assassins: Easily countered by heroes like Cleaver, Jhu, and Kayla.
+Dependent on energy: Needs to cast his ultimate often to be effective   energy control or denial hurts him badly.
+No crowd control: Offers no stuns, silences, or slows   purely reactive support.
+Shared health risk: If Kayla or a bonded ally dies, Aidan can fall quickly due to the damage feedback.
+Low base durability: Without scaling defense, he relies entirely on shields and positioning to survive.
+Aidan's Skills Upgrade Priority - Hero Wars: Dominion Era
+Master Aidan's abilities by understanding damage formulas and upgrade priorities to maximize his healing and offensive potential in battle.
+Phoenix’s Embrace
+Phoenix’s Embrace
+Aidan casts a protective shield on himself and the farthest ally. This shield absorbs any incoming damage for 5 seconds. When the ally's shield ends, it explodes, dealing magic damage to nearby enemies and applying a Phoenix Glyph on them. The Phoenix Glyph is essential because it enables Aidan's other abilities to work at full power.
+Shield Durability Formula: 118,266 (80% Magic Attack + Level × 50)
+Shield Explosion Damage Formula: 31,356 (15% Magic Attack + Level × 80)
+Evolution Priority: Very High – This is Aidan's ultimate ability and the foundation of his kit. The shield protects your team while the explosion deals solid area damage. Most importantly, it applies the Phoenix Glyph which powers up his other skills. Always upgrade this first because it improves both defense and offense simultaneously.
+Aidan targets the nearest enemy without a Phoenix Glyph and applies the Glyph to them. If all enemies already have a Glyph, he strikes out sparks from the nearest enemy, dealing magic damage to all enemies around the target. The Phoenix Glyph applies a Burn effect that deals pure damage over 6 seconds. Pure damage is special because it ignores all armor and magic defense, making it extremely effective against tanky enemies.
+Phoenix Glyph Burn Damage Formula: 9,124 pure damage per second (5.6% Magic Attack + Level × 10)
+Sparks Damage Formula: 66,283 magic damage (40% Magic Attack + Level × 80)
+Evolution Priority: High – This skill is your main source of sustained damage. The pure damage from the Burn effect is excellent for wearing down enemies in longer fights, especially against heroes with high defenses. Upgrade this second to maximize Aidan's offensive contribution to your team.
+Aidan unleashes a fire wave that heals all allies except himself. Additionally, he recovers health once every 2 seconds starting from the beginning of battle. Each time Aidan heals himself, his next fire wave becomes stronger, healing his team for more. When Aidan's health drops below 30%, he self-ignites and doubles his own health regeneration. He stops burning once his health is above 60%.
+Fire Wave Base Healing Formula: 7,307 healing per ally (4.3% Magic Attack + Level × 10)
+Aidan's Self Health Regeneration Formula: 9,731 every 2 seconds (6.5% Magic Attack + Level × 5)
+Evolution Priority: Medium-High – This is Aidan's primary healing ability and keeps your team alive in extended battles. The scaling mechanic (where his self-healing boosts team healing) is powerful, but it takes time to build up. It's less impactful in quick fights where enemies burst through before healing matters. Upgrade this third, after your damage and shield skills are strong.
+Bonds of Flame
+Bonds of Flame
+Aidan establishes a mutual bond with the farthest ally, or with Kayla if she is on the team. The bonded ally becomes the target of Phoenix's Embrace. The bonded heroes share health, meaning any healing or damage one receives is also passed to the other. Both heroes gain a bonus that scales with their basic Armor and Magic Defense stats. The bond is created at the start of battle and only breaks if one of them dies.
+Armor and Magic Defense Bonus Formula: 10% bonus (Level × 0.077 + 3.077%)
+Evolution Priority: Medium – This is a utility skill that provides defensive bonuses and creates synergy, especially with Kayla. However, the scaling from level upgrades is minimal compared to other skills. The bond mechanic itself is useful but doesn't dramatically improve with higher skill levels. Upgrade this last, focusing on the other three skills first to maximize combat effectiveness.
+>>> Best Patronage for Aidan
+>>> Discover which pet boosts Aidan’s healing and magic output best in Hero Wars: Dominion Era. Patronage synergy is key to maximize his role.
+Merlin enhances Aidan’s core strengths: magic penetration and magic attack. The skill speed boost improves his Glyph application and healing wave timing, which is critical for maximizing damage and support output. This is his most consistent and impactful patron.
+Albus boosts pure damage dealt   which works well with Aidan’s Phoenix Glyph burns. This makes Aidan deadlier in boss fights or prolonged battles, especially if you focus on his offensive role. Not as helpful for healing, but excellent for damage-focused builds.
+Khorus grants shields based on magic damage and missing health. While interesting in theory, the shield effect is harder to control and less reliable than Merlin’s burst or Albus’ burn bonus. Better in niche defensive setups, especially if using Aidan for sustained shielding.
+Best Skin for Aidan Hero Wars: Dominion Era
+Boost Aidan’s healing and magic power with the right skin choices. Prioritize skins based on battle effectiveness, not just visual appeal.
+Default Skin (Intelligence)
+Default Skin (Intelligence)
++1,365 IntelligenceEach point = +3 Magic Attack, +1 Magic Defense
+Evolution Priority: Very High – This skin boosts Aidan’s core stat. Intelligence improves both healing and damage output from all of his abilities. A must-max skin.
++10,650 Magic Attack
+Evolution Priority: High – Adds a large flat boost to all skill effects. It’s perfect after leveling the Intelligence skin. Strengthens both damage and healing effectiveness.
+Cybernetic Skin
+Cybernetic Skin
++106,645 Health
+Evolution Priority: Medium-High – Increases Aidan’s survivability, which supports his passive healing mechanic and helps keep him alive longer. Great for PvP endurance.
+Masquerade Skin
+Masquerade Skin
++10,650 Magic Defense
+Evolution Priority: Medium – Offers protection against magic-based enemies, but doesn’t enhance healing or damage. Useful situationally, but not a top priority in general builds.
+>>> Aidan Artifact Evolution Priority Hero Wars: Dominion Era
+Learn which artifacts to level first for Aidan to maximize his healing, magic damage, and team support effectiveness in Hero Wars: Dominion Era.
+Weapon Artifact:
+Weapon Artifact:
+Phoenix Sigil – Grants +50,190 Armor and +12,547 Skill Power. When Aidan uses his ultimate (Phoenix's Embrace), it activates this artifact, granting bonus Armor to the entire team for 9 seconds. The base Armor boost significantly improves Aidan's physical defense, while the Skill Power enhances all his abilities' effectiveness.
+Evolution Priority: High – The permanent Armor and Skill Power make this artifact valuable. The Armor keeps Aidan alive against physical damage dealers, and the Skill Power boosts his healing and damage output. Upgrade this as your third priority after the Book and Ring.
+Book Artifact:
+Book Artifact:
+Tome of Arcane Knowledge – Grants +16,731 Magic Attack and +83,649 Health. Magic Attack directly improves all of Aidan’s core skills, including healing, burn effects, shields, and explosion damage. The Health boost helps him stay alive longer in battle, supporting more sustained healing and team utility.
+Evolution Priority: Very High – This is Aidan’s most important artifact. The Magic Attack bonus powers up every one of his abilities, while the Health boost enhances his survivability on the battlefield.
+Ring Artifact:
+Ring Artifact:
+Ring of Intelligence – Grants +6,249 Intelligence, which converts into +18,747 Magic Attack and +6,249 Magic Defense. It passively strengthens all his skills and defenses.
+Evolution Priority: High – Intelligence boosts both Magic Attack and Magic Defense. This artifact enhances Aidan’s healing and resilience, making it the second best to level up.
+Glyphs — Evolution Priority (Aidan)
+Short summary: prioritize Magic Attack first, then Intelligence to boost healing and pure-damage scaling; after that focus on Magic Penetration, Health and finally Magic Defense.
+Why this priority order (explained simply)
+- Magic Attack (Very High): improves everything Aidan does offensively: the shield explosion, Sparks and even the healing that scales with Magic Attack. More Magic Attack directly increases his healing and damage.
+- Intelligence (High): converts into Magic Attack and Magic Defense (and some physical attack). For Aidan, the converted Magic Attack is especially valuable because it scales both his healing and the pure-damage components of his kit. Pure damage ignores defenses, so Intelligence delivers reliable benefit even when penetration isn't available.
+- Magic Penetration (Medium-High): still useful vs teams with heavy Magic Defense, but less critical for Aidan than Intelligence because part of his damage (Phoenix burn/pure damage) bypasses defenses.
+- Health (Medium-High): increases the survivability of Aidan and the bonded ally; more health means heals and shields have more time to work.
+- Magic Defense (Medium): reduces magical damage Aidan and the bonded ally receive; useful in long fights but lower priority than the stats that directly increase his healing and damage output.
+1st Glyph – Magic Attack: +6500
+1st Glyph – Magic Attack: +6500
+Evolution Priority: Very High – Amplifies shield explosions, Sparks and scaling healing; first priority to increase offensive and support impact.
+2nd Glyph – Intelligence: +1135
+2nd Glyph – Intelligence: +1135
+Evolution Priority: High – Converts into Magic Attack and Magic Defense. For Aidan, the Magic Attack conversion strongly benefits his healing and the pure-damage Burn, making this the best secondary choice for support-oriented builds.
+3rd Glyph – Magic Penetration: +6500
+3rd Glyph – Magic Penetration: +6500
+Evolution Priority: Medium-High – Makes attacks and explosions more effective against targets with high Magic Defense; pick this when the meta has many magic tanks, but consider Intelligence first for Aidan's healing/pure-damage scaling.
+4th Glyph – Health: +62,200
+4th Glyph – Health: +62,200
+Evolution Priority: Medium-High – Increases durability of the bonded duo; good for surviving bursts and allowing heals to take effect.
+5th Glyph – Magic Defense: +6500
+5th Glyph – Magic Defense: +6500
+Evolution Priority: Medium – Reduces magic damage taken; helpful in long combats but lower priority than stats that directly improve Aidan's healing and pure-damage output.
+Gains related to Intelligence:
+Intelligence: +1135
+- Magic Attack per point of Intelligence (converted): ~3.405
+- Magic Defense per point of Intelligence: +1 (total +1135)
+- Physical Attack: +1 per point of Intelligence (when applicable)
+>>> How to Counter Aidan in Hero Wars: Dominion Era
+Cleaver pulls Aidan to the front line with his Hook skill, instantly exposing him to burst damage and interrupting his ability to protect allies or heal safely.
+Corvus punishes Aidan’s area damage and healing over time with his Altar of Souls, reflecting damage back and disrupting Aidan’s support effectiveness.
+Jhu targets the most distant enemy, often Aidan due to his back-line placement and mid-tier survivability. Jhu quickly eliminates Aidan before he can fully cycle his healing abilities.
+Jorgen can block Aidan’s energy gain and redirect attacks to the backline, delaying his ultimate and interrupting his support timing, making him far less effective during critical team moments.
+Kayla jumps to the back line and immediately targets the farthest enemy, often Aidan. Her rapid physical attacks and burn effects quickly bypass his shield and overwhelm his healing, making her a deadly threat that can eliminate him early in the battle.
+Luther can jump to the back line at the start of combat, immediately putting pressure on Aidan and preventing him from safely setting up shields or healing allies.
+>>> Aidan Best War Flag Hero Wars
+>>> Discover which War Flags boost Aidan’s healing, magic utility, and overall team support performance in Hero Wars: Dominion Era.
+>>> War Flag of Recovery:
+>>> War Flag of Recovery:
+This flag boosts all healing by 10%, significantly amplifying Aidan's Inner Fire healing waves and regeneration. Since his primary role is to heal and protect his team, this flag enhances his overall impact in long fights.
+Aidan and Team Benefit: Aidan’s healing becomes more effective across the board, helping his team survive burst damage and sustain through prolonged battles.
+>>> War Flag of Decline:
+>>> War Flag of Decline:
+>>> This flag reduces the enemy team's healing by 10%, which helps counter enemy healers and outlast defensive compositions. When combined with Aidan’s burn damage and sustained healing, it gives your team a strategic edge.
+Aidan and Team Benefit: Weakens the opposing team's ability to recover while Aidan continues to support his own, giving your side the advantage in attrition fights.
+>>> War Flag of Pet Strength:
+>>> War Flag of Pet Strength:
+>>> Increases pet Skill Power by 10%, indirectly enhancing Aidan's performance when supported by pets like Merlin or Khorus. These pets boost Aidan’s Magic Attack and shield potential through patronage and aura effects.
+Aidan and Team Benefit: Improves the effectiveness of support pets that boost Aidan’s skills and survivability, adding synergy and extra team utility.
+Team #1 Strategy
+This composition combines Aidan's sustained healing with Ishmael's transformation damage output. Nebula amplifies Ishmael's critical-hit-based damage, significantly increasing his burst potential during transformation. Sebastian provides additional pure damage through his active skill while offering critical protection by removing all debuffs from the team, keeping your damage dealers alive during extended fights.
+Team #2 Strategy
+This composition combines Aidan's sustained healing with Ishmael's transformation damage output. Lara Croft provides additional physical damage and extra healing, creating a balanced offensive approach. Sebastian adds pure damage through his active skill while offering critical protection by removing all debuffs from the team, keeping your damage dealers alive during extended fights.
+Development requirements focus on maximizing Ishmael's Ascension and artifact upgrades. The Lara Croft slot can be swapped for Nebula when you need maximum intelligence amplification for Ishmael's burst damage.
+>>> Sebastian as Meta Counter: This team excels against the current Augustus + Orion meta combination. Sebastian's immunity shields completely block Augustus's pure damage bursts, neutralizing one of the most popular offensive strategies. This makes Team #2 excellent both for defense (since many opponents attack using Augustus + Orion) and for offense when countering this meta composition.
+Team #3 Strategy
+This composition represents the defensive variant of the Augustus meta that gained widespread popularity in 2024. Augustus became rapidly adopted because players could seamlessly integrate him into their existing rosters with minimal restructuring — simply leveling him up was enough to create a competitive lineup.
+The combination of Augustus + Orion delivers consistent pure damage that bypasses conventional defenses, while Dante provides the core defensive foundation through his dodge-based damage mitigation. Sebastian adds immunity protection, making this setup exceptionally resilient against control-heavy opponents. Aidan's sustained healing keeps Dante alive, allowing his dodge mechanics to shine throughout extended battles.
+Team #4 Strategy
+This composition represents the offensive variant of the Augustus strategy that revolutionized team-building in 2024. The widespread adoption of Augustus-based teams occurred because players could easily slot him into pre-existing lineups, requiring only basic development to achieve immediate competitive results.
+Augustus + Orion forms the offensive core, dealing pure damage that ignores armor and magic defense. Nebula amplifies their Magic Attack based output, significantly increasing burst potential. Dante anchors the defense through dodge mechanics combined with Aidan's continuous healing, creating a durable front line that buys time for your damage dealers to eliminate threats.
+>>> This formation excels in offensive scenarios but faces challenges against evolved counter-strategies. Sebastian-based defensive teams can block Augustus's damage completely, while compositions featuring strong back-line assassins may eliminate Orion before he can contribute meaningful damage. The Nebula slot can be swapped for Martha when additional healing becomes necessary to sustain Dante through heavy physical pressure.
+Best Meta Team 2026 Strategy
+This composition represents the evolved meta strategy for 2026, maximizing Augustus's magic damage output while providing exceptional support and survivability. Aidan and Cascade work synergistically to enhance Augustus's damage potential, with Electra serving as a durable tank that absorbs damage from allies while contributing additional magic damage. Orion's magic penetration ensures that Augustus's attacks bypass enemy defenses effectively, while Khorus offers crucial protection against control effects, allowing Augustus to maintain his offensive presence throughout the battle.
+>>> Recommended War Flag: Frost
+>>> For this team composition, the War Flag of Frost is highly recommended. Every 18 seconds, Frost is cast on enemies, reducing their skill levels by 2 for 8 seconds. This disruption significantly weakens enemy supports, healers, and control heroes, giving your team a decisive advantage in prolonged engagements.
+>>> The combination of Aidan's sustained healing, Cascade's support amplification, and the pure damage from Augustus + Orion creates a formidable offensive core that can dominate the current meta. Electra's dual role as damage-absorbing tank and magic damage dealer adds exceptional durability and versatility, making this team exceptionally resilient against various counter strategies.
+Conclusion – Aidan in Hero Wars: Dominion Era
+Aidan stands out as one of the most versatile support heroes in Hero Wars: Dominion Era, blending sustained healing, protective shielding, and area burn damage. His role is vital in teams that rely on long-term survivability and magic-based synergy.
+>>> While vulnerable to back-line assassins and energy control, Aidan excels when properly positioned and supported by allies that amplify his potential. Investing wisely in his artifacts, war flags, and team compositions can turn Aidan into a defensive anchor and a consistent source of pressure.
+In short, if you're looking for a hero that keeps your team alive while wearing down enemies over time, Aidan is an excellent addition to your roster in the Dominion Era.
+============= LYRIA =============
+>>> This guide is here to walk you through everything you need to know about her from skills and artifacts to the best allies and counters. Whether you’re a beginner or a seasoned player, get ready to discover how Lyria can shake up your team comps and maybe even the entire meta.
+Who Is Lyria?
+Lyria had to learn to cope with her blood-chilling gift from a young age. The only thing more harrowing than seeing ghosts was hearing their haunting wails wherever she went. It was hard, but eventually, she realized that ignoring the spirits wouldn't make the problem go away. It turned out that making deals with the dead was a much better solution, and as an added bonus, it granted her power. One of the deals she made helped a truly powerful spirit named Keira break her curse and granted her the chance to rest in peace one day.
+Class: Warrior
+Position: Front Line
+Main Stat: Strength
+Special Trait: Undead
+Lyria Overall Rating in the Meta
+Control: ⭐⭐⭐⭐⭐
+Damage: ⭐⭐⭐
+Synergy: ⭐⭐⭐⭐⭐
+Independence: ⭐⭐⭐⭐
+Lyria – Maximum Stats Hero Wars: Dominion Era
+Pros and Cons of Lyria
+Strong synergy with undead allies.
+Great at shutting down dodge-based heroes.
+Passive aura provides consistent team buffs.
+Can heal herself and a key ally with vampirism.
+Needs undead allies to unlock full potential.
+Not very effective without team coordination.
+Limited damage if few units die for soul collection.
+Lyria Skills Upgrade Priority – Hero Wars: Dominion Era
+Lyria’s four skills cover burst damage, vampirism support, crowd control, and a passive aura — here’s the best order to evolve them for maximum impact.
+1st – Soul Reaper
+1st – Soul Reaper
+In-game description: Lyria collects a soul every time someone dies on the battlefield. Once activated, Lyria opens a portal to the realm of the dead, unleashing vengeful spirits. The portal releases at least 3 spirits, with each of them dealing one strike. The number of extra spirits scales with the number of reaped souls but cannot exceed 7. Each extra hit consumes one reaped soul. All hits target the enemy with the lowest health.
+Skill Explanation: Think of Soul Reaper like charging up power by saving souls during battle — every death (yours or the enemy’s) adds a charge. When you activate it, Lyria sends out ghost spirits that each deal one hit of Physical Damage to the weakest enemy. She always launches at least 3 hits, and up to 7 if you’ve collected enough souls. Since the damage formula is based on her Physical Attack, every upgrade directly makes each hit stronger — and with up to 7 hits, those gains multiply fast.
+Formula – Physical Damage per hit: 41,521 (45% Physical Attack + 50 × level)
+Evolution Priority: Very High – This is Lyria’s main source of burst damage. Each level increases damage per hit, and since she can deal up to 7 hits in a single activation, the total damage boost per upgrade is enormous. Always upgrade this skill first.
+Skill Animation Info
+Formula – Physical Damage per hit: (45% Physical Attack + 50 × level = 41,521)
+Hits: 3 to 7 (scales with souls collected, max 7)
+Keywords: Soul collection, spirit, burst damage, lowest-health target
+2nd – Bonds of Alliance
+2nd – Bonds of Alliance
+In-game description: Lyria binds herself to the ally with the highest physical attack for 12s. Both Lyria and the bonded ally receive a vampirism bonus. While the Bonds of Alliance are active, vampirism restores health for them both. If the bonded ally is undead, they both get a physical attack bonus.
+Skill Explanation: Lyria creates a magical bond with her strongest physical damage dealer. “Vampirism” means that a portion of the damage dealt is converted into healing — so both heroes heal themselves simply by attacking. If the bonded ally is an undead hero like Keira or Corvus, they both also receive a bonus to Physical Attack, making them hit harder and heal even more. Upgrading this skill increases both the vampirism percentage and the physical attack bonus.
+Formula – Vampirism Bonus: 20% (0.1153847 × level + 5)
+Formula – Physical Attack Bonus (undead ally): 10,000 (75 × level + 250)
+Evolution Priority: High – This is the backbone of Lyria’s support role. It keeps both her and her main DPS ally alive through vampirism, and when paired with an undead hero the attack bonus amplifies their damage significantly. Upgrade this second, right after Soul Reaper.
+Skill Animation Info
+Formula – Vampirism: (0.1153847 × level + 5 = 20%)
+Formula – Physical Attack Bonus: (75 × level + 250 = 10,000)
+Initial Cooldown: 7 seconds
+Cooldown: 14 seconds
+Duration: 12 seconds
+Keywords: Vampirism, self-healing, undead synergy, physical attack buff
+3rd – Children of the Grave
+3rd – Children of the Grave
+In-game description: Lyria summons 3 spirits. The spirits chase the enemy who has dealt the most damage in the last 10 seconds. The effect lasts 10 seconds. While the spirits are present, the chased hero cannot attack anyone except them, while other heroes cannot target the spirits.
+Skill Explanation: This skill is crowd control — it forces the most dangerous enemy hero to attack only the 3 summoned spirits for 10 seconds, effectively removing them from the fight. Think of it as putting a threat in “time-out” while Lyria’s team focuses on others. The spirits have their own Health based on Lyria’s total health. Upgrading this skill increases the spirits’ health, making them survive longer before the targeted enemy breaks free. Especially powerful against high-burst attackers like Dante or Ishmael.
+Formula – Spirit Health: 12,426 (0.25% Health + 75 × level)
+Evolution Priority: Medium – The crowd control is useful, but the upgrade gain (spirit health) is less impactful than increasing damage or vampirism. Upgrade this last, after Soul Reaper, Bonds of Alliance, and Shackles of Doom are already leveled up.
+Skill Animation Info
+Formula – Spirit Health: (0.25% Health + 75 × level = 12,426)
+Initial Cooldown: 14 seconds
+Cooldown: 22 seconds
+Duration: 10 seconds
+Hits: 3 spirits summoned
+Keywords: Crowd control, spirit summon, taunt, highest-damage target
+4th – Shackles of Doom
+4th – Shackles of Doom
+In-game description: Passive skill. The hero exudes an aura that decreases the dodge stat of all enemies within the area of effect. All affected enemies receive additional physical damage from physical attacks. The size of the aura scales with the number of undead units in allied team.
+Skill Explanation: This passive aura works automatically every battle — no button needed. “Dodge” means the chance an enemy has to avoid your attacks entirely. By reducing their dodge, your physical heroes land more hits consistently. On top of that, every hit that connects deals extra Physical Damage. The more undead allies you have, the wider this aura spreads, covering more enemies at once. Upgrading it increases how much dodge is reduced and how much extra damage enemies take. It’s essential against dodge-heavy teams like Dante or Yasmine.
+Formula – Dodge Reduction: 29,848 (30% Physical Attack + 50 × level)
+Formula – Extra Physical Damage per hit: 7,783 (10% Physical Attack)
+Evolution Priority: High – Even though it’s passive, this aura provides constant value in every single battle. Reducing enemy dodge is game-changing against teams built around Dante, Heidi, or Yasmine. The extra physical damage also stacks up across a long fight. Upgrade this alongside Bonds of Alliance as your second priority group.
+Skill Animation Info
+Formula – Dodge Reduction: (30% Physical Attack + 50 × level = 29,848)
+Formula – Extra Physical Damage: (10% Physical Attack = 7,783)
+Keywords: Passive, aura, dodge reduction, physical damage amplification, undead synergy
+Area: Scales with number of undead allies
+>>> Best Patronage for Lyria
+Lyria benefits most from pets that boost physical teams, offer healing or control, and enhance undead synergy in battle.
+Fenris offers armor penetration and physical attack, increasing Lyria’s damage output. The chance to blind enemies with basic attacks provides strong control, ideal with her passive aura and vampirism setup.
+>>> Oliver grants health and armor, which increase Lyria’s survivability. His patronage skill provides auto-healing below 50% health, synergizing well with her vampirism and allowing her to stay longer in battle.
+Biscuit reduces enemy healing, which helps control enemy sustain. However, his magic attack bonus is less ideal for Lyria, whose power scales better with physical stats and undead synergies.
+Lyria Artifacts Priority
+Lyria’s artifacts enhance her physical damage and survivability. Prioritizing the right ones will boost her impact in battle and support her core abilities.
+1st - Khopesh of Speaker with the Dead:
+1st - Khopesh of Speaker with the Dead:
+Grants Armor Penetration to boost physical damage output.
+Evolution Priority: 1
+2nd - Defender's Covenant:
+2nd - Defender's Covenant:
+Increases both Armor and Magic Defense. Great for frontliners.
+Evolution Priority: 3
+3rd - Ring of Strength:
+3rd - Ring of Strength:
+Boosts Strength, which increases her physical attack power and health.
+Evolution Priority: 2
+>>> Lyria Glyph Evolution Priority
+Lyria is a frontline Warrior and Support hero whose main stat is Strength. Investing in the right glyphs enhances her survivability, damage output, and vampirism synergy. If she's dying too quickly in battle, consider prioritizing defensive glyphs earlier. Here's the evolution priority of her glyphs based on their real combat value.
+1st – Physical Attack:
+1st – Physical Attack:
+This directly boosts Lyria’s skill damage and the effectiveness of her vampirism, making it the top priority.
+Evolution Priority: High
+2nd – Strength:
+2nd – Strength:
+As her main stat, Strength gives Lyria +1 Physical Attack and +40 Health per point, making it a great all-around stat for damage and survivability.
+Evolution Priority: High
+3rd – Armor:
+3rd – Armor:
+Boosts her resistance against physical attackers, which is important for a frontline tank-support hybrid like Lyria.
+Evolution Priority: Medium
+4th – Health:
+4th – Health:
+Improves her durability but is less efficient than Strength, which already grants Health and Physical Attack.
+Evolution Priority: Medium
+5th – Magic Defense:
+5th – Magic Defense:
+Situationally useful against mages but the least impactful glyph overall for her core role.
+Evolution Priority: Low
+>>> Best Skins for Lyria – Hero Wars: Dominion Era
+Choosing the right skin to evolve first can greatly improve her survivability and damage output. Below is the skin evolution priority for Lyria based on their real combat effectiveness.
+Default Skin: Strength +1365
+Default Skin: Strength +1365
+Boosts both physical attack and max health. Since Strength is her main stat, this skin increases her survivability and also enhances her vampirism-based healing. It’s essential if Lyria is dying too quickly in the front line.
+Evolution Priority: High
+Masquerade Skin: Physical Attack +7095
+Masquerade Skin: Physical Attack +7095
+Greatly increases her damage output and synergizes with her vampirism ability, but does not improve survivability. Best upgraded after boosting Strength with the Default Skin.
+Evolution Priority: Medium
+Winter Skin: Health +106,670
+Winter Skin: Health +106,670
+Provides a massive health boost, significantly improving Lyria's durability on the front line. A great secondary upgrade after the Default Skin if you need extra survivability.
+Evolution Priority: High
+Ceremonial Skin: Armor Penetration +10,650
+Ceremonial Skin: Armor Penetration +10,650
+Increases armor penetration, improving her physical damage against heavily armored targets. Obtainable from the Tournament of Hero Power. Upgrade after the Default and Winter skins.
+Evolution Priority: Medium
+Best Allies
+To get the most out of Lyria, pair her with heroes that either benefit from her vampirism or help trigger her passive skills.
+Undeads Allies
+Phobos: Undead mage who benefits from her passive and supports magic teams.
+Corvus: Great tank with good physical attack and buffs. His synergy with undead is ideal for Lyria.
+Morrigan: The undead support who summons skeletons to feed Lyria's passive aura and reaping souls.
+Keira: As an undead hero with strong synergy with Lyria, Keira gains additional vampirism and benefits greatly from Lyria’s buffs.
+Other Physical DPS Heroes
+Dante, Ishmael, Lara Croft: High physical DPS heroes who benefit from Lyria's vampirism buff in skill 2.
+Strong Against
+Lyria is extremely effective against dodge-reliant heroes. Her passive reduces dodge and boosts incoming physical damage, making the following heroes vulnerable:
+Pet Cain Teams
+Best Synergy with Lyria
+>>> Here are a few team compositions where Lyria truly shines, mixing both synergy and strong counters.
+Undead Synergy: Lyria, Corvus, Morrigan, Phobos
+Physical Vampirism Combo: Keira, Lara Croft, Dante, Ishmael, Lyria, Morrigan
+>>> Dodge Counter Team: Lyria, Morrigan, Corvus, Arachne, Heidi, Satori, Amira, Aidan
+>>> Lyria's Best War Flag – Hero Wars
+>>> Discover the top War Flags to boost Lyria's support and healing potential in Hero Wars: Dominion Era.
+>>> War Flag of Recovery:
+>>> War Flag of Recovery:
+This flag increases all healing effects by 10%, directly enhancing Lyria’s core role as a healer and support unit. Her healing-over-time abilities and burst heals benefit greatly from this bonus, improving her effectiveness in keeping allies alive during drawn-out fights.
+Lyria and Team Benefit: Amplifies Lyria’s healing output for both single-target and team-wide heals, making her a much more impactful support unit, especially in high-sustain compositions. This flag is the top choice when using Lyria in any healing-focused strategy.
+>>> War Flag of Decline:
+>>> War Flag of Decline:
+This flag reduces enemy healing by 10%, weakening enemy sustain while Lyria maintains strong healing support on her own team. This effect is especially valuable in mirror matches or against teams with powerful support heroes like Aidan or Markus.
+Lyria and Team Benefit: Complements Lyria’s healing by ensuring that the enemy team cannot easily recover, giving your team a sustained edge in longer fights. It’s particularly useful in control-heavy or poke teams that aim to slowly wear down opponents.
+Best Teams for Lyria - Hero Wars: Dominion Era
+Team 1# Analysis:
+This team composition focuses on maximizing Lyria's healing potential while providing strong support and control through synergy with Ishmael vampirism.
+You can also use this team at Area of Conquest Event for optimal performance and sustainability.
+Team 2# Analysis:
+>>> This team focuses on maximizing Lyria's healing potential while providing counter to Dante teams.
+You can replace Lara Croft for Kayla, Keira or Adam as your main damage dealer.
+While Sebastian provides additional support and utility to the team against debuffs and buff for crit hit Galahad provides tankiness and AoE damage for the team.
+Is Lyria the new meta-breaker?
+She very well might be. With the right undead setup or high-DPS partner, she can be a game changer in both Arena and Campaign. Keep experimenting and let us know what killer combos you discover!
+Lyria Guide Conclusion
+>>> Lyria is a unique and versatile front-line Warrior who thrives in battles where souls are reaped and alliances are strategic. Her ability to interact with undead allies, apply vampirism, and punish dodge-reliant enemies makes her a powerful addition to many team compositions. Whether she’s supporting high physical damage dealers like Dante or Ishmael, or strengthening undead synergies with heroes like Corvus and Morrigan, Lyria proves herself as a valuable and game-changing hero. With smart skill and artifact evolution, she can be the cornerstone of both aggressive and control-based teams in the evolving
+Video Suggestion

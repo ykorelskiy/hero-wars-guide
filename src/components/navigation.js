@@ -63,7 +63,11 @@ export function handleHashChange() {
     navigateTo('pets');
     return;
   }
-  const mainViews = ['advisor', 'teams', 'matrix', 'about'];
+  if (hash === 'guides' || hash.startsWith('guides/')) {
+    navigateTo('guides');
+    return;
+  }
+  const mainViews = ['advisor', 'teams', 'matrix', 'about', 'guides'];
   if (mainViews.includes(hash)) {
     navigateTo(hash);
   }

@@ -1,10 +1,12 @@
 import './style.css';
+import './styles/valdur.css';
 import { loadAllData, getHeroes, getTeams, isOfflineMode } from './data/dataService.js';
 import { initNavigation } from './components/navigation.js';
 import { initAdvisor } from './views/advisor.js';
 import { initWikiView } from './views/wiki.js';
 import { initTeams } from './views/teams.js';
 import { initMatrix } from './views/matrix.js';
+import { initValdurGuide } from './views/valdurGuide.js';
 
 function renderBadges() {
   const box = document.getElementById('statBadges');
@@ -42,6 +44,7 @@ async function boot() {
     initWikiView();
     initTeams();
     initMatrix();
+    initValdurGuide();
     renderBadges();
   } catch (err) {
     console.error('Fatal boot error:', err);
