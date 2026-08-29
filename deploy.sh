@@ -27,9 +27,8 @@ set -e
 cd /var/www/hero-wars-guide
 npm install --production
 
-# Create systemd service if it doesn't exist
-if [ ! -f /etc/systemd/system/hero-wars-guide.service ]; then
-    cat << 'SERVICE' > /etc/systemd/system/hero-wars-guide.service
+# Create or update systemd service
+cat << 'SERVICE' > /etc/systemd/system/hero-wars-guide.service
 [Unit]
 Description=Hero Wars Guide Web App (Port 80)
 After=network.target
@@ -46,9 +45,8 @@ Environment=NODE_ENV=production
 [Install]
 WantedBy=multi-user.target
 SERVICE
-    systemctl daemon-reload
-    systemctl enable hero-wars-guide
-fi
+systemctl daemon-reload
+systemctl enable hero-wars-guide
 
 systemctl restart hero-wars-guide
 echo "=== [OK] Hero Wars Guide deployment completed! Server running on http://192.109.206.42 ==="
