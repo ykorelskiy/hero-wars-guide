@@ -1,5 +1,5 @@
 #!/bin/bash
-# Deploy Hero Wars Guide to AdminVPS (192.109.206.42) on Port 3006
+# Deploy Hero Wars Guide to AdminVPS (192.109.206.42) on Port 80
 set -e
 
 echo "=== 1. Building Vite app ==="
@@ -16,7 +16,7 @@ else
     echo "[*] No uncommitted local changes."
 fi
 
-echo "=== 3. Deploying to AdminVPS (192.109.206.42:3006) ==="
+echo "=== 3. Deploying to AdminVPS (192.109.206.42:80) ==="
 ssh root@192.109.206.42 'mkdir -p /var/www/hero-wars-guide/dist'
 
 rsync -avz --delete dist/ root@192.109.206.42:/var/www/hero-wars-guide/dist/
@@ -31,14 +31,14 @@ npm install --production
 if [ ! -f /etc/systemd/system/hero-wars-guide.service ]; then
     cat << 'SERVICE' > /etc/systemd/system/hero-wars-guide.service
 [Unit]
-Description=Hero Wars Guide Web App (Port 3006)
+Description=Hero Wars Guide Web App (Port 80)
 After=network.target
 
 [Service]
 Type=simple
 User=root
 WorkingDirectory=/var/www/hero-wars-guide
-ExecStart=/usr/bin/npx vite preview --port 3006 --host
+ExecStart=/usr/bin/npx vite preview --port 80 --host
 Restart=always
 RestartSec=5
 Environment=NODE_ENV=production
@@ -51,5 +51,5 @@ SERVICE
 fi
 
 systemctl restart hero-wars-guide
-echo "=== [OK] Hero Wars Guide deployment completed! Server running on http://192.109.206.42:3006 ==="
+echo "=== [OK] Hero Wars Guide deployment completed! Server running on http://192.109.206.42 ==="
 EOF
