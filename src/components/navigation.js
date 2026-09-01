@@ -114,7 +114,11 @@ export function handleHashChange() {
     navigateTo('titans');
     return;
   }
-  const mainViews = ['advisor', 'teams', 'matrix', 'about', 'guides', 'titans', 'heroes-guide'];
+  if (hash === 'quiz' || hash.startsWith('quiz')) {
+    navigateTo('quiz');
+    return;
+  }
+  const mainViews = ['advisor', 'teams', 'matrix', 'about', 'guides', 'quiz', 'titans', 'heroes-guide'];
   if (mainViews.includes(hash)) {
     navigateTo(hash);
   }

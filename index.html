@@ -21,6 +21,7 @@
 
   <nav id="mainNav">
     <button class="nb on" data-view="wiki">📚 Герои</button>
+    <button class="nb" data-view="quiz">🎓 Викторина Знаний</button>
     <button class="nb" data-view="guides">📜 Гайды по событиям</button>
     <button class="nb" data-view="titans">🗿 Титаны</button>
     <button class="nb" data-view="pets">🐾 Питомцы</button>
@@ -2735,221 +2736,222 @@
 
 
 
-    <div id="guide-container-quiz" class="guide-container" style="display:none;">
-      <div class="quiz-guide-wrap">
-        <header class="quiz-header">
-          <div class="wrap quiz-header-inner">
-            <div class="quiz-brand">
-              <img src="/quiz-guide/assets/img/quiz-avatar.png" alt="Стронгфордская Викторина" class="quiz-brand-icon">
-              <div>
-                <div class="quiz-brand-title">Стронгфордская Викторина</div>
-                <div class="quiz-brand-sub">День Знаний · База ответов & Интерактивный тренажёр</div>
+  </section>
+
+  <!-- ===================== QUIZ EVENT VIEW (STANDALONE) ===================== -->
+  <section id="view-quiz" class="view">
+    <div class="quiz-guide-wrap">
+      <header class="quiz-header">
+        <div class="wrap quiz-header-inner">
+          <div class="quiz-brand">
+            <img src="/quiz-guide/assets/img/quiz-avatar.png" alt="Стронгфордская Викторина" class="quiz-brand-icon">
+            <div>
+              <div class="quiz-brand-title">Стронгфордская Викторина</div>
+              <div class="quiz-brand-sub">День Знаний · База ответов & Интерактивный тренажёр</div>
+            </div>
+          </div>
+          <button class="nav-toggle" id="quizNavToggle" aria-label="Меню" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </header>
+
+      <div class="layout wrap" style="padding-top:20px;">
+        <!-- BANNER HERO -->
+        <div class="quiz-hero-banner">
+          <img src="/quiz-guide/assets/img/quiz-banner.jpg" alt="Стронгфордская Викторина" class="quiz-hero-img">
+          <div class="quiz-hero-overlay">
+            <span class="quiz-hero-tag">🎓 Особое Событие · Dominion Era</span>
+            <h2 class="quiz-hero-title">Викторина Знаний Стронгфорда</h2>
+            <p class="quiz-hero-desc">Полная база ответов на все вопросы викторины, быстрая поисковая система для игры и интерактивный тренажёр знаний с таймером и подсчётом очков!</p>
+          </div>
+        </div>
+
+        <div style="display:flex;gap:32px;align-items:flex-start;flex-wrap:wrap;">
+          <!-- SIDEBAR TOC -->
+          <aside class="sidebar" id="quizSidebar" style="width:260px;flex-shrink:0;">
+            <nav aria-label="Содержание викторины">
+              <div class="toc-title" style="font-weight:800;color:var(--quiz-gold-bright);margin-bottom:12px;">📚 Содержание</div>
+              <ol class="toc" id="quizToc" style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;">
+                <li><a href="#quiz-intro" class="active" style="color:var(--quiz-text-dim);text-decoration:none;font-weight:600;">📜 О событии и Билеты</a></li>
+                <li><a href="#quiz-search" style="color:var(--quiz-text-dim);text-decoration:none;font-weight:600;">🔍 Поиск ответов</a></li>
+                <li><a href="#quiz-trainer" style="color:var(--quiz-text-dim);text-decoration:none;font-weight:600;">🎯 Интерактивный Тренажёр</a></li>
+                <li><a href="#quiz-rewards" style="color:var(--quiz-text-dim);text-decoration:none;font-weight:600;">🎁 Награды и Экономика</a></li>
+              </ol>
+            </nav>
+          </aside>
+
+          <!-- MAIN CONTENT AREA -->
+          <main style="flex:1;min-width:300px;">
+            <!-- SECTION 1: ABOUT & MECHANICS -->
+            <section id="quiz-intro" class="quiz-card">
+              <div class="quiz-card-header">
+                <span class="quiz-card-icon">📜</span>
+                <h3 class="quiz-card-title">Механика события и Распределение Билетов</h3>
               </div>
-            </div>
-            <button class="nav-toggle" id="quizNavToggle" aria-label="Меню" aria-expanded="false">
-              <span></span><span></span><span></span>
-            </button>
-          </div>
-        </header>
+              <p>Стронгфордская Викторина — это грандиозный праздничный ивент в <b>Hero Wars: Dominion Era</b>. За время проведения ивента игроки могут бесплатно суммарно получить <b>до 255 Билетов Викторины</b>:</p>
 
-        <div class="layout wrap" style="padding-top:20px;">
-          <!-- BANNER HERO -->
-          <div class="quiz-hero-banner">
-            <img src="/quiz-guide/assets/img/quiz-banner.jpg" alt="Стронгфордская Викторина" class="quiz-hero-img">
-            <div class="quiz-hero-overlay">
-              <span class="quiz-hero-tag">🎓 Особое Событие · Dominion Era</span>
-              <h2 class="quiz-hero-title">Викторина Знаний Стронгфорда</h2>
-              <p class="quiz-hero-desc">Полная база ответов на все вопросы викторины, быстрая поисковая система для игры и интерактивный тренажёр знаний с таймером и подсчётом очков!</p>
-            </div>
-          </div>
-
-          <div style="display:flex;gap:32px;align-items:flex-start;flex-wrap:wrap;">
-            <!-- SIDEBAR TOC -->
-            <aside class="sidebar" id="quizSidebar" style="width:260px;flex-shrink:0;">
-              <nav aria-label="Содержание викторины">
-                <div class="toc-title" style="font-weight:800;color:var(--quiz-gold-bright);margin-bottom:12px;">📚 Содержание</div>
-                <ol class="toc" id="quizToc" style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;">
-                  <li><a href="#quiz-intro" class="active" style="color:var(--quiz-text-dim);text-decoration:none;font-weight:600;">📜 О событии и Билеты</a></li>
-                  <li><a href="#quiz-search" style="color:var(--quiz-text-dim);text-decoration:none;font-weight:600;">🔍 Поиск ответов</a></li>
-                  <li><a href="#quiz-trainer" style="color:var(--quiz-text-dim);text-decoration:none;font-weight:600;">🎯 Интерактивный Тренажёр</a></li>
-                  <li><a href="#quiz-rewards" style="color:var(--quiz-text-dim);text-decoration:none;font-weight:600;">🎁 Награды и Экономика</a></li>
-                </ol>
-              </nav>
-            </aside>
-
-            <!-- MAIN CONTENT AREA -->
-            <main style="flex:1;min-width:300px;">
-              <!-- SECTION 1: ABOUT & MECHANICS -->
-              <section id="quiz-intro" class="quiz-card">
-                <div class="quiz-card-header">
-                  <span class="quiz-card-icon">📜</span>
-                  <h3 class="quiz-card-title">Механика события и Распределение Билетов</h3>
+              <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));gap:12px;margin:16px 0;">
+                <div style="background:var(--quiz-surface-2);border:1px solid var(--quiz-border);padding:14px;border-radius:8px;text-align:center;">
+                  <div style="font-size:1.4rem;font-weight:900;color:var(--quiz-gold-bright);">185 билетов</div>
+                  <div style="font-size:0.85rem;color:var(--quiz-text-dim);">Квесты «Lore Festival»</div>
                 </div>
-                <p>Стронгфордская Викторина — это грандиозный праздничный ивент в <b>Hero Wars: Dominion Era</b>. За время проведения ивента игроки могут бесплатно суммарно получить <b>до 255 Билетов Викторины</b>:</p>
+                <div style="background:var(--quiz-surface-2);border:1px solid var(--quiz-border);padding:14px;border-radius:8px;text-align:center;">
+                  <div style="font-size:1.4rem;font-weight:900;color:var(--quiz-gold-bright);">35 билетов</div>
+                  <div style="font-size:0.85rem;color:var(--quiz-text-dim);">Квесты «Lore Rush»</div>
+                </div>
+                <div style="background:var(--quiz-surface-2);border:1px solid var(--quiz-border);padding:14px;border-radius:8px;text-align:center;">
+                  <div style="font-size:1.4rem;font-weight:900;color:var(--quiz-gold-bright);">35 билетов</div>
+                  <div style="font-size:0.85rem;color:var(--quiz-text-dim);">Ежедневные подарки</div>
+                </div>
+              </div>
 
-                <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));gap:12px;margin:16px 0;">
-                  <div style="background:var(--quiz-surface-2);border:1px solid var(--quiz-border);padding:14px;border-radius:8px;text-align:center;">
-                    <div style="font-size:1.4rem;font-weight:900;color:var(--quiz-gold-bright);">185 билетов</div>
-                    <div style="font-size:0.85rem;color:var(--quiz-text-dim);">Квесты «Lore Festival»</div>
-                  </div>
-                  <div style="background:var(--quiz-surface-2);border:1px solid var(--quiz-border);padding:14px;border-radius:8px;text-align:center;">
-                    <div style="font-size:1.4rem;font-weight:900;color:var(--quiz-gold-bright);">35 билетов</div>
-                    <div style="font-size:0.85rem;color:var(--quiz-text-dim);">Квесты «Lore Rush»</div>
-                  </div>
-                  <div style="background:var(--quiz-surface-2);border:1px solid var(--quiz-border);padding:14px;border-radius:8px;text-align:center;">
-                    <div style="font-size:1.4rem;font-weight:900;color:var(--quiz-gold-bright);">35 билетов</div>
-                    <div style="font-size:0.85rem;color:var(--quiz-text-dim);">Ежедневные подарки</div>
+              <div class="quiz-features-grid">
+                <div class="quiz-feature-box">
+                  <img src="/quiz-guide/assets/img/official-ticket.png" alt="Билеты" class="quiz-feature-img">
+                  <div>
+                    <div class="quiz-feature-title">Билеты Викторины (x1 и x10)</div>
+                    <div class="quiz-feature-text">Тратятся за вопросы. Пакет x10 расходует 10 билетов за один раз и умножает всю награду в 10 раз!</div>
                   </div>
                 </div>
+                <div class="quiz-feature-box">
+                  <img src="/quiz-guide/assets/img/quiz-point.png" alt="Бонус за скорость" class="quiz-feature-img">
+                  <div>
+                    <div class="quiz-feature-title">Шкала бонуса за скорость</div>
+                    <div class="quiz-feature-text">Верный ответ = 10 очков + бонус: <b>+10 (до 30 сек)</b>, <b>+5 (до 60 сек)</b>, <b>+2 (до 180 сек)</b>. Ошибка даёт 5 очков.</div>
+                  </div>
+                </div>
+                <div class="quiz-feature-box">
+                  <img src="/quiz-guide/assets/img/explorer-bag.png" alt="Сумка Искателя" class="quiz-feature-img">
+                  <div>
+                    <div class="quiz-feature-title">Сумки Искателя (Explorer’s Bags)</div>
+                    <div class="quiz-feature-text">Выдаются с каждым билетом. Тея даёт 1 сумку, Пеппи — 3 сумки, Корнелиус — 5 сумок!</div>
+                  </div>
+                </div>
+              </div>
+            </section>
 
-                <div class="quiz-features-grid">
-                  <div class="quiz-feature-box">
-                    <img src="/quiz-guide/assets/img/official-ticket.png" alt="Билеты" class="quiz-feature-img">
+            <!-- SECTION 2: SEARCH ENGINE -->
+            <section id="quiz-search" class="quiz-card">
+              <div class="quiz-card-header">
+                <span class="quiz-card-icon">🔍</span>
+                <h3 class="quiz-card-title">Быстрый Поиск по Базе Вопросов</h3>
+              </div>
+              <p style="color:var(--quiz-text-dim);margin-bottom:16px;">Введите ключевое слово из вопроса (например: <i>Астарот</i>, <i>Корвус</i>, <i>Билет</i>) или выберите категорию.</p>
+
+              <div class="quiz-search-bar">
+                <input type="text" id="quizSearchInput" class="quiz-search-input" placeholder="🔍 Поиск по вопросу или ответу...">
+              </div>
+
+              <div id="quizCategoryChips" class="quiz-category-chips"></div>
+
+              <div id="quizMatchCount" style="margin-bottom:16px;color:var(--quiz-text-gold);font-weight:700;font-size:0.95rem;"></div>
+
+              <div id="quizQAList" class="quiz-qa-list"></div>
+            </section>
+
+            <!-- SECTION 3: INTERACTIVE TRAINER -->
+            <section id="quiz-trainer" class="quiz-card">
+              <div class="quiz-card-header">
+                <span class="quiz-card-icon">🎯</span>
+                <h3 class="quiz-card-title">Интерактивный Тренажёр Знаний</h3>
+              </div>
+              <p style="color:var(--quiz-text-dim);margin-bottom:20px;">Проверьте свои знания перед викториной в игре! 10 случайных вопросов, таймер скорости и подсчёт очков.</p>
+
+              <div class="quiz-sim-container">
+                <!-- START SCREEN -->
+                <div id="quizSimStartScreen">
+                  <div style="font-size:3.5rem;margin-bottom:12px;">🎓</div>
+                  <h4 style="font-size:1.5rem;color:#fff;margin-bottom:8px;">Готовы проверить знания?</h4>
+                  <p style="color:var(--quiz-text-dim);max-width:500px;margin:0 auto 24px auto;">Вам предстоит ответить на 10 случайных вопросов. За быструю скорость ответа начисляется бонус!</p>
+                  <button id="quizSimStartBtn" class="quiz-primary-btn">▶️ Начать тестирование</button>
+                </div>
+
+                <!-- ACTIVE SCREEN -->
+                <div id="quizSimActiveScreen" style="display:none;">
+                  <div class="quiz-sim-stats">
                     <div>
-                      <div class="quiz-feature-title">Билеты Викторины (x1 и x10)</div>
-                      <div class="quiz-feature-text">Тратятся за вопросы. Пакет x10 расходует 10 билетов за один раз и умножает всю награду в 10 раз!</div>
+                      <div id="quizSimQNum" class="quiz-stat-num">Вопрос 1/10</div>
+                      <div class="quiz-stat-label">Прогресс</div>
                     </div>
-                  </div>
-                  <div class="quiz-feature-box">
-                    <img src="/quiz-guide/assets/img/quiz-point.png" alt="Бонус за скорость" class="quiz-feature-img">
                     <div>
-                      <div class="quiz-feature-title">Шкала бонуса за скорость</div>
-                      <div class="quiz-feature-text">Верный ответ = 10 очков + бонус: <b>+10 (до 30 сек)</b>, <b>+5 (до 60 сек)</b>, <b>+2 (до 180 сек)</b>. Ошибка даёт 5 очков.</div>
+                      <div id="quizSimScore" class="quiz-stat-num">0</div>
+                      <div class="quiz-stat-label">Очки</div>
                     </div>
-                  </div>
-                  <div class="quiz-feature-box">
-                    <img src="/quiz-guide/assets/img/explorer-bag.png" alt="Сумка Искателя" class="quiz-feature-img">
                     <div>
-                      <div class="quiz-feature-title">Сумки Искателя (Explorer’s Bags)</div>
-                      <div class="quiz-feature-text">Выдаются с каждым билетом. Тея даёт 1 сумку, Пеппи — 3 сумки, Корнелиус — 5 сумок!</div>
+                      <div id="quizSimStreak" class="quiz-stat-num">0</div>
+                      <div class="quiz-stat-label">Стрик</div>
+                    </div>
+                    <div>
+                      <div id="quizSimTimer" class="quiz-stat-num" style="color:var(--quiz-gold-bright);">30с</div>
+                      <div class="quiz-stat-label">Таймер</div>
                     </div>
                   </div>
-                </div>
-              </section>
 
-              <!-- SECTION 2: SEARCH ENGINE -->
-              <section id="quiz-search" class="quiz-card">
-                <div class="quiz-card-header">
-                  <span class="quiz-card-icon">🔍</span>
-                  <h3 class="quiz-card-title">Быстрый Поиск по Базе Вопросов</h3>
-                </div>
-                <p style="color:var(--quiz-text-dim);margin-bottom:16px;">Введите ключевое слово из вопроса (например: <i>Астарот</i>, <i>Корвус</i>, <i>Билет</i>) или выберите категорию.</p>
-
-                <div class="quiz-search-bar">
-                  <input type="text" id="quizSearchInput" class="quiz-search-input" placeholder="🔍 Поиск по вопросу или ответу...">
+                  <div id="quizSimQText" class="quiz-sim-question"></div>
+                  <div id="quizSimOptions" class="quiz-sim-options"></div>
                 </div>
 
-                <div id="quizCategoryChips" class="quiz-category-chips"></div>
-
-                <div id="quizMatchCount" style="margin-bottom:16px;color:var(--quiz-text-gold);font-weight:700;font-size:0.95rem;"></div>
-
-                <div id="quizQAList" class="quiz-qa-list"></div>
-              </section>
-
-              <!-- SECTION 3: INTERACTIVE TRAINER -->
-              <section id="quiz-trainer" class="quiz-card">
-                <div class="quiz-card-header">
-                  <span class="quiz-card-icon">🎯</span>
-                  <h3 class="quiz-card-title">Интерактивный Тренажёр Знаний</h3>
-                </div>
-                <p style="color:var(--quiz-text-dim);margin-bottom:20px;">Проверьте свои знания перед викториной в игре! 10 случайных вопросов, таймер скорости и подсчёт очков.</p>
-
-                <div class="quiz-sim-container">
-                  <!-- START SCREEN -->
-                  <div id="quizSimStartScreen">
-                    <div style="font-size:3.5rem;margin-bottom:12px;">🎓</div>
-                    <h4 style="font-size:1.5rem;color:#fff;margin-bottom:8px;">Готовы проверить знания?</h4>
-                    <p style="color:var(--quiz-text-dim);max-width:500px;margin:0 auto 24px auto;">Вам предстоит ответить на 10 случайных вопросов. За быструю скорость ответа начисляется бонус!</p>
-                    <button id="quizSimStartBtn" class="quiz-primary-btn">▶️ Начать тестирование</button>
-                  </div>
-
-                  <!-- ACTIVE SCREEN -->
-                  <div id="quizSimActiveScreen" style="display:none;">
-                    <div class="quiz-sim-stats">
-                      <div>
-                        <div id="quizSimQNum" class="quiz-stat-num">Вопрос 1/10</div>
-                        <div class="quiz-stat-label">Прогресс</div>
-                      </div>
-                      <div>
-                        <div id="quizSimScore" class="quiz-stat-num">0</div>
-                        <div class="quiz-stat-label">Очки</div>
-                      </div>
-                      <div>
-                        <div id="quizSimStreak" class="quiz-stat-num">0</div>
-                        <div class="quiz-stat-label">Стрик</div>
-                      </div>
-                      <div>
-                        <div id="quizSimTimer" class="quiz-stat-num" style="color:var(--quiz-gold-bright);">30с</div>
-                        <div class="quiz-stat-label">Таймер</div>
-                      </div>
+                <!-- FINISH SCREEN -->
+                <div id="quizSimFinishScreen" style="display:none;">
+                  <div style="font-size:3.5rem;margin-bottom:12px;">🏆</div>
+                  <h4 style="font-size:1.6rem;color:var(--quiz-gold-bright);margin-bottom:8px;">Тестирование Завершено!</h4>
+                  <div style="display:flex;justify-content:center;gap:32px;margin:20px 0;">
+                    <div>
+                      <div id="quizSimFinalScore" style="font-size:2rem;font-weight:900;color:#fff;">0</div>
+                      <div style="color:var(--quiz-text-dim);font-size:0.85rem;">ИТОГОВЫЕ ОЧКИ</div>
                     </div>
-
-                    <div id="quizSimQText" class="quiz-sim-question"></div>
-                    <div id="quizSimOptions" class="quiz-sim-options"></div>
-                  </div>
-
-                  <!-- FINISH SCREEN -->
-                  <div id="quizSimFinishScreen" style="display:none;">
-                    <div style="font-size:3.5rem;margin-bottom:12px;">🏆</div>
-                    <h4 style="font-size:1.6rem;color:var(--quiz-gold-bright);margin-bottom:8px;">Тестирование Завершено!</h4>
-                    <div style="display:flex;justify-content:center;gap:32px;margin:20px 0;">
-                      <div>
-                        <div id="quizSimFinalScore" style="font-size:2rem;font-weight:900;color:#fff;">0</div>
-                        <div style="color:var(--quiz-text-dim);font-size:0.85rem;">ИТОГОВЫЕ ОЧКИ</div>
-                      </div>
-                      <div>
-                        <div id="quizSimAccuracy" style="font-size:2rem;font-weight:900;color:var(--quiz-success);">0%</div>
-                        <div style="color:var(--quiz-text-dim);font-size:0.85rem;">ТОЧНОСТЬ</div>
-                      </div>
+                    <div>
+                      <div id="quizSimAccuracy" style="font-size:2rem;font-weight:900;color:var(--quiz-success);">0%</div>
+                      <div style="color:var(--quiz-text-dim);font-size:0.85rem;">ТОЧНОСТЬ</div>
                     </div>
-                    <button id="quizSimRestartBtn" class="quiz-primary-btn">🔄 Пройти ещё раз</button>
                   </div>
+                  <button id="quizSimRestartBtn" class="quiz-primary-btn">🔄 Пройти ещё раз</button>
                 </div>
-              </section>
+              </div>
+            </section>
 
-              <!-- SECTION 4: STRATEGY & REWARDS -->
-              <section id="quiz-rewards" class="quiz-card">
-                <div class="quiz-card-header">
-                  <span class="quiz-card-icon">🎁</span>
-                  <h3 class="quiz-card-title">Экономика и Стратегия Расхода Билетов</h3>
-                </div>
-                <p>Главная стратегия на викторину — <b>использование поиска</b> во время ответа в игре для получения максимального бонуса за скорость (в первые 30 секунд).</p>
+            <!-- SECTION 4: STRATEGY & REWARDS -->
+            <section id="quiz-rewards" class="quiz-card">
+              <div class="quiz-card-header">
+                <span class="quiz-card-icon">🎁</span>
+                <h3 class="quiz-card-title">Экономика и Стратегия Расхода Билетов</h3>
+              </div>
+              <p>Главная стратегия на викторину — <b>использование поиска</b> во время ответа в игре для получения максимального бонуса за скорость (в первые 30 секунд).</p>
 
-                <div style="overflow-x:auto;margin-top:20px;">
-                  <table style="width:100%;border-collapse:collapse;text-align:left;background:var(--quiz-surface-2);border-radius:var(--quiz-radius-sm);overflow:hidden;">
-                    <thead>
-                      <tr style="background:rgba(255,255,255,0.05);color:var(--quiz-gold-bright);border-bottom:1px solid var(--quiz-border);">
-                        <th style="padding:12px 16px;">Порог Очков</th>
-                        <th style="padding:12px 16px;">Тип Награды</th>
-                        <th style="padding:12px 16px;">Рекомендация</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr style="border-bottom:1px solid rgba(255,255,255,0.05);">
-                        <td style="padding:12px 16px;font-weight:700;">1,000 Очков</td>
-                        <td style="padding:12px 16px;">Малый Сундук Академии + Монеты</td>
-                        <td style="padding:12px 16px;color:var(--quiz-success);">Достигается за 2-3 билета</td>
-                      </tr>
-                      <tr style="border-bottom:1px solid rgba(255,255,255,0.05);">
-                        <td style="padding:12px 16px;font-weight:700;">5,000 Очков</td>
-                        <td style="padding:12px 16px;">Сундук Мудрости + Ремкомплекты</td>
-                        <td style="padding:12px 16px;color:var(--quiz-success);">Оптимальный базовый уровень</td>
-                      </tr>
-                      <tr style="border-bottom:1px solid rgba(255,255,255,0.05);">
-                        <td style="padding:12px 16px;font-weight:700;">15,000 Очков</td>
-                        <td style="padding:12px 16px;">Большой Сундук Знаний + Реликвии</td>
-                        <td style="padding:12px 16px;color:var(--quiz-gold-bright);">Используйте режим x10 билетов</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </section>
-            </main>
-          </div>
+              <div style="overflow-x:auto;margin-top:20px;">
+                <table style="width:100%;border-collapse:collapse;text-align:left;background:var(--quiz-surface-2);border-radius:var(--quiz-radius-sm);overflow:hidden;">
+                  <thead>
+                    <tr style="background:rgba(255,255,255,0.05);color:var(--quiz-gold-bright);border-bottom:1px solid var(--quiz-border);">
+                      <th style="padding:12px 16px;">Порог Очков</th>
+                      <th style="padding:12px 16px;">Тип Награды</th>
+                      <th style="padding:12px 16px;">Рекомендация</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr style="border-bottom:1px solid rgba(255,255,255,0.05);">
+                      <td style="padding:12px 16px;font-weight:700;">1,000 Очков</td>
+                      <td style="padding:12px 16px;">Малый Сундук Академии + Монеты</td>
+                      <td style="padding:12px 16px;color:var(--quiz-success);">Достигается за 2-3 билета</td>
+                    </tr>
+                    <tr style="border-bottom:1px solid rgba(255,255,255,0.05);">
+                      <td style="padding:12px 16px;font-weight:700;">5,000 Очков</td>
+                      <td style="padding:12px 16px;">Сундук Мудрости + Ремкомплекты</td>
+                      <td style="padding:12px 16px;color:var(--quiz-success);">Оптимальный базовый уровень</td>
+                    </tr>
+                    <tr style="border-bottom:1px solid rgba(255,255,255,0.05);">
+                      <td style="padding:12px 16px;font-weight:700;">15,000 Очков</td>
+                      <td style="padding:12px 16px;">Большой Сундук Знаний + Реликвии</td>
+                      <td style="padding:12px 16px;color:var(--quiz-gold-bright);">Используйте режим x10 билетов</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </main>
         </div>
       </div>
     </div>
-
   </section>
 
   
