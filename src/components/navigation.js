@@ -46,20 +46,30 @@ export function navigateTo(targetView, param = null) {
 export function switchGuide(guideName) {
   const containerAlecto = document.getElementById('guide-container-alecto');
   const containerValdur = document.getElementById('guide-container-valdur');
+  const containerQuiz   = document.getElementById('guide-container-quiz');
   const btnAlecto = document.getElementById('btnGuideAlecto');
   const btnValdur = document.getElementById('btnGuideValdur');
+  const btnQuiz   = document.getElementById('btnGuideQuiz');
 
-  if (guideName === 'valdur') {
-    if (containerAlecto) containerAlecto.style.display = 'none';
+  if (containerAlecto) containerAlecto.style.display = 'none';
+  if (containerValdur) containerValdur.style.display = 'none';
+  if (containerQuiz)   containerQuiz.style.display   = 'none';
+
+  if (btnAlecto) btnAlecto.classList.remove('on');
+  if (btnValdur) btnValdur.classList.remove('on');
+  if (btnQuiz)   btnQuiz.classList.remove('on');
+
+  if (guideName === 'quiz') {
+    if (containerQuiz) containerQuiz.style.display = 'block';
+    if (btnQuiz) btnQuiz.classList.add('on');
+    location.hash = 'guides/quiz';
+  } else if (guideName === 'valdur') {
     if (containerValdur) containerValdur.style.display = 'block';
-    if (btnAlecto) btnAlecto.classList.remove('on');
     if (btnValdur) btnValdur.classList.add('on');
     location.hash = 'guides/valdur';
   } else {
     if (containerAlecto) containerAlecto.style.display = 'block';
-    if (containerValdur) containerValdur.style.display = 'none';
     if (btnAlecto) btnAlecto.classList.add('on');
-    if (btnValdur) btnValdur.classList.remove('on');
     location.hash = 'guides/alecto';
   }
 }
@@ -87,7 +97,13 @@ export function handleHashChange() {
   if (hash === 'guides' || hash.startsWith('guides/')) {
     navigateTo('guides');
     const sub = hash.split('/')[1];
-    switchGuide(sub === 'valdur' ? 'valdur' : 'alecto');
+    if (sub === 'quiz') {
+      switchGuide('quiz');
+    } else if (sub === 'valdur') {
+      switchGuide('valdur');
+    } else {
+      switchGuide('alecto');
+    }
     return;
   }
   if (hash === 'heroes-guide' || hash.startsWith('heroes-')) {
@@ -118,8 +134,10 @@ export function initNavigation() {
 
   const btnAlecto = document.getElementById('btnGuideAlecto');
   const btnValdur = document.getElementById('btnGuideValdur');
+  const btnQuiz   = document.getElementById('btnGuideQuiz');
   if (btnAlecto) btnAlecto.addEventListener('click', () => switchGuide('alecto'));
   if (btnValdur) btnValdur.addEventListener('click', () => switchGuide('valdur'));
+  if (btnQuiz)   btnQuiz.addEventListener('click', () => switchGuide('quiz'));
 
   window.addEventListener('hashchange', handleHashChange);
   handleHashChange();

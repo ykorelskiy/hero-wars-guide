@@ -1,6 +1,7 @@
 import './style.css';
 import './styles/valdur.css';
 import './styles/alecto.css';
+import './styles/quiz.css';
 import './styles/titans.css';
 import './styles/heroesGuide.css';
 import { loadAllData, getHeroes, getTeams, isOfflineMode } from './data/dataService.js';
@@ -11,6 +12,7 @@ import { initTeams } from './views/teams.js';
 import { initMatrix } from './views/matrix.js';
 import { initValdurGuide } from './views/valdurGuide.js';
 import { initAlectoGuide } from './views/alectoGuide.js';
+import { initQuizGuide } from './views/quizGuide.js';
 import { initTitansGuide } from './views/titansGuide.js';
 import { initHeroesGuideView } from './views/heroesGuideView.js';
 
@@ -52,6 +54,7 @@ async function boot() {
     initMatrix();
     initValdurGuide();
     initAlectoGuide();
+    initQuizGuide();
     initTitansGuide();
     initHeroesGuideView();
     renderBadges();
