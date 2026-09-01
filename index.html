@@ -2775,7 +2775,7 @@
               <ol class="toc" id="quizToc" style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;">
                 <li><a href="#quiz-intro" class="active" style="color:var(--quiz-text-dim);text-decoration:none;font-weight:600;">📜 О событии и Билеты</a></li>
                 <li><a href="#quiz-search" style="color:var(--quiz-text-dim);text-decoration:none;font-weight:600;">🔍 Поиск ответов</a></li>
-                <li><a href="#quiz-trainer" style="color:var(--quiz-text-dim);text-decoration:none;font-weight:600;">🎯 Интерактивный Тренажёр</a></li>
+
                 <li><a href="#quiz-rewards" style="color:var(--quiz-text-dim);text-decoration:none;font-weight:600;">🎁 Награды и Экономика</a></li>
               </ol>
             </nav>
@@ -2850,66 +2850,7 @@
               <div id="quizQAList" class="quiz-qa-list"></div>
             </section>
 
-            <!-- SECTION 3: INTERACTIVE TRAINER -->
-            <section id="quiz-trainer" class="quiz-card">
-              <div class="quiz-card-header">
-                <span class="quiz-card-icon">🎯</span>
-                <h3 class="quiz-card-title">Интерактивный Тренажёр Знаний</h3>
-              </div>
-              <p style="color:var(--quiz-text-dim);margin-bottom:20px;">Проверьте свои знания перед викториной в игре! 10 случайных вопросов, таймер скорости и подсчёт очков.</p>
 
-              <div class="quiz-sim-container">
-                <!-- START SCREEN -->
-                <div id="quizSimStartScreen">
-                  <div style="font-size:3.5rem;margin-bottom:12px;">🎓</div>
-                  <h4 style="font-size:1.5rem;color:#fff;margin-bottom:8px;">Готовы проверить знания?</h4>
-                  <p style="color:var(--quiz-text-dim);max-width:500px;margin:0 auto 24px auto;">Вам предстоит ответить на 10 случайных вопросов. За быструю скорость ответа начисляется бонус!</p>
-                  <button id="quizSimStartBtn" class="quiz-primary-btn">▶️ Начать тестирование</button>
-                </div>
-
-                <!-- ACTIVE SCREEN -->
-                <div id="quizSimActiveScreen" style="display:none;">
-                  <div class="quiz-sim-stats">
-                    <div>
-                      <div id="quizSimQNum" class="quiz-stat-num">Вопрос 1/10</div>
-                      <div class="quiz-stat-label">Прогресс</div>
-                    </div>
-                    <div>
-                      <div id="quizSimScore" class="quiz-stat-num">0</div>
-                      <div class="quiz-stat-label">Очки</div>
-                    </div>
-                    <div>
-                      <div id="quizSimStreak" class="quiz-stat-num">0</div>
-                      <div class="quiz-stat-label">Стрик</div>
-                    </div>
-                    <div>
-                      <div id="quizSimTimer" class="quiz-stat-num" style="color:var(--quiz-gold-bright);">30с</div>
-                      <div class="quiz-stat-label">Таймер</div>
-                    </div>
-                  </div>
-
-                  <div id="quizSimQText" class="quiz-sim-question"></div>
-                  <div id="quizSimOptions" class="quiz-sim-options"></div>
-                </div>
-
-                <!-- FINISH SCREEN -->
-                <div id="quizSimFinishScreen" style="display:none;">
-                  <div style="font-size:3.5rem;margin-bottom:12px;">🏆</div>
-                  <h4 style="font-size:1.6rem;color:var(--quiz-gold-bright);margin-bottom:8px;">Тестирование Завершено!</h4>
-                  <div style="display:flex;justify-content:center;gap:32px;margin:20px 0;">
-                    <div>
-                      <div id="quizSimFinalScore" style="font-size:2rem;font-weight:900;color:#fff;">0</div>
-                      <div style="color:var(--quiz-text-dim);font-size:0.85rem;">ИТОГОВЫЕ ОЧКИ</div>
-                    </div>
-                    <div>
-                      <div id="quizSimAccuracy" style="font-size:2rem;font-weight:900;color:var(--quiz-success);">0%</div>
-                      <div style="color:var(--quiz-text-dim);font-size:0.85rem;">ТОЧНОСТЬ</div>
-                    </div>
-                  </div>
-                  <button id="quizSimRestartBtn" class="quiz-primary-btn">🔄 Пройти ещё раз</button>
-                </div>
-              </div>
-            </section>
 
             <!-- SECTION 4: STRATEGY & REWARDS -->
             <section id="quiz-rewards" class="quiz-card">

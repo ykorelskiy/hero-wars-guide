@@ -7,12 +7,6 @@ import { QUIZ_CATEGORIES, QUIZ_QUESTIONS } from '../data/quizData.js';
 
 let isQuizInitialized = false;
 let activeCategory = 'all';
-let currentSimIndex = 0;
-let simQuestions = [];
-let simScore = 0;
-let simStreak = 0;
-let simTimer = null;
-let simTimeLeft = 30;
 
 export function initQuizGuide() {
   if (isQuizInitialized) return;
@@ -21,7 +15,6 @@ export function initQuizGuide() {
   initCategoryChips();
   initSearch();
   renderQAList();
-  initSimulator();
   initNavToggle();
   initScrollSpy();
 }
@@ -118,126 +111,6 @@ function renderQAList() {
   });
 }
 
-/* ---------- Simulator Engine ---------- */
-function initSimulator() {
-  const startBtn = document.getElementById('quizSimStartBtn');
-  if (startBtn) {
-    startBtn.addEventListener('click', startQuizSimulation);
-  }
-}
-
-function startQuizSimulation() {
-  simQuestions = [...QUIZ_QUESTIONS].sort(() => 0.5 - Math.random()).slice(0, 10);
-  currentSimIndex = 0;
-  simScore = 0;
-  simStreak = 0;
-
-  document.getElementById('quizSimStartScreen').style.display = 'none';
-  document.getElementById('quizSimActiveScreen').style.display = 'block';
-
-  renderSimQuestion();
-}
-
-function renderSimQuestion() {
-  clearInterval(simTimer);
-  simTimeLeft = 30;
-
-  if (currentSimIndex >= simQuestions.length) {
-    finishQuizSimulation();
-    return;
-  }
-
-  const q = simQuestions[currentSimIndex];
-  const qNum = document.getElementById('quizSimQNum');
-  const qText = document.getElementById('quizSimQText');
-  const optionsBox = document.getElementById('quizSimOptions');
-  const scoreEl = document.getElementById('quizSimScore');
-  const streakEl = document.getElementById('quizSimStreak');
-  const timerEl = document.getElementById('quizSimTimer');
-
-  if (qNum) qNum.textContent = `Вопрос ${currentSimIndex + 1} из ${simQuestions.length}`;
-  if (qText) qText.textContent = q.question;
-  if (scoreEl) scoreEl.textContent = simScore;
-  if (streakEl) streakEl.textContent = simStreak;
-  if (timerEl) timerEl.textContent = `${simTimeLeft}с`;
-
-  simTimer = setInterval(() => {
-    simTimeLeft--;
-    if (timerEl) timerEl.textContent = `${simTimeLeft}с`;
-    if (simTimeLeft <= 0) {
-      clearInterval(simTimer);
-      handleSimAnswer(null, q.answer);
-    }
-  }, 1000);
-
-  if (!optionsBox) return;
-  optionsBox.innerHTML = '';
-
-  const shuffledOptions = [...q.options].sort(() => 0.5 - Math.random());
-
-  shuffledOptions.forEach(opt => {
-    const btn = document.createElement('button');
-    btn.className = 'quiz-option-btn';
-    btn.textContent = opt;
-    btn.addEventListener('click', () => handleSimAnswer(opt, q.answer));
-    optionsBox.appendChild(btn);
-  });
-}
-
-function handleSimAnswer(selectedOpt, correctAns) {
-  clearInterval(simTimer);
-  const optionsBox = document.getElementById('quizSimOptions');
-  const buttons = optionsBox ? optionsBox.querySelectorAll('.quiz-option-btn') : [];
-
-  buttons.forEach(btn => {
-    btn.disabled = true;
-    if (btn.textContent === correctAns) {
-      btn.classList.add('correct');
-    }
-    if (selectedOpt && btn.textContent === selectedOpt && selectedOpt !== correctAns) {
-      btn.classList.add('wrong');
-    }
-  });
-
-  if (selectedOpt === correctAns) {
-    let pts = 10;
-    if (simTimeLeft >= 20) pts += 10;
-    else if (simTimeLeft >= 10) pts += 5;
-    else pts += 2;
-    simScore += pts;
-    simStreak++;
-  } else {
-    simScore += 5; // Incorrect answer fallback: 5 points
-    simStreak = 0;
-  }
-
-  setTimeout(() => {
-    currentSimIndex++;
-    renderSimQuestion();
-  }, 1500);
-}
-
-function finishQuizSimulation() {
-  document.getElementById('quizSimActiveScreen').style.display = 'none';
-  const finishScreen = document.getElementById('quizSimFinishScreen');
-  if (!finishScreen) return;
-
-  finishScreen.style.display = 'block';
-
-  const finalScoreEl = document.getElementById('quizSimFinalScore');
-  const accuracyEl = document.getElementById('quizSimAccuracy');
-
-  if (finalScoreEl) finalScoreEl.textContent = `${simScore} очков`;
-  if (accuracyEl) accuracyEl.textContent = `${Math.round((simScore / (simQuestions.length * 20)) * 100)}%`;
-
-  const restartBtn = document.getElementById('quizSimRestartBtn');
-  if (restartBtn) {
-    restartBtn.onclick = () => {
-      finishScreen.style.display = 'none';
-      startQuizSimulation();
-    };
-  }
-}
 
 function showToast(msg) {
   let toast = document.getElementById('quizToast');
