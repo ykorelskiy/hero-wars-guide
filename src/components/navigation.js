@@ -46,19 +46,27 @@ export function navigateTo(targetView, param = null) {
 export function switchGuide(guideName) {
   const containerAlecto = document.getElementById('guide-container-alecto');
   const containerValdur = document.getElementById('guide-container-valdur');
+  const containerPol    = document.getElementById('guide-container-pol');
   const btnAlecto = document.getElementById('btnGuideAlecto');
   const btnValdur = document.getElementById('btnGuideValdur');
+  const btnPol    = document.getElementById('btnGuidePol');
 
   if (containerAlecto) containerAlecto.style.display = 'none';
   if (containerValdur) containerValdur.style.display = 'none';
+  if (containerPol)    containerPol.style.display = 'none';
 
   if (btnAlecto) btnAlecto.classList.remove('on');
   if (btnValdur) btnValdur.classList.remove('on');
+  if (btnPol)    btnPol.classList.remove('on');
 
   if (guideName === 'valdur') {
     if (containerValdur) containerValdur.style.display = 'block';
     if (btnValdur) btnValdur.classList.add('on');
     location.hash = 'guides/valdur';
+  } else if (guideName === 'pol') {
+    if (containerPol) containerPol.style.display = 'block';
+    if (btnPol) btnPol.classList.add('on');
+    location.hash = 'guides/pol';
   } else {
     if (containerAlecto) containerAlecto.style.display = 'block';
     if (btnAlecto) btnAlecto.classList.add('on');
@@ -95,6 +103,8 @@ export function handleHashChange() {
     navigateTo('guides');
     if (sub === 'valdur') {
       switchGuide('valdur');
+    } else if (sub === 'pol') {
+      switchGuide('pol');
     } else {
       switchGuide('alecto');
     }
@@ -132,9 +142,11 @@ export function initNavigation() {
 
   const btnAlecto = document.getElementById('btnGuideAlecto');
   const btnValdur = document.getElementById('btnGuideValdur');
+  const btnPol    = document.getElementById('btnGuidePol');
   const btnQuiz   = document.getElementById('btnGuideQuiz');
   if (btnAlecto) btnAlecto.addEventListener('click', () => switchGuide('alecto'));
   if (btnValdur) btnValdur.addEventListener('click', () => switchGuide('valdur'));
+  if (btnPol)    btnPol.addEventListener('click', () => switchGuide('pol'));
   if (btnQuiz)   btnQuiz.addEventListener('click', () => navigateTo('quiz'));
 
   window.addEventListener('hashchange', handleHashChange);

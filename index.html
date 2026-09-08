@@ -112,6 +112,7 @@
     <div style="display:flex;gap:12px;margin-bottom:24px;justify-content:center;flex-wrap:wrap;padding-top:10px;" id="guidesSwitcher">
       <button class="fb on" id="btnGuideAlecto" data-guide="alecto" style="padding:10px 20px;font-size:0.95rem;font-weight:700;">📜 Падение завесы (Алекто)</button>
       <button class="fb" id="btnGuideValdur" data-guide="valdur" style="padding:10px 20px;font-size:0.95rem;font-weight:700;">📜 День Суда (Валдур)</button>
+      <button class="fb" id="btnGuidePol" data-guide="pol" style="padding:10px 20px;font-size:0.95rem;font-weight:700;">📜 Путь легенд (Астрид)</button>
       <button class="fb" id="btnGuideQuiz" data-guide="quiz" style="padding:10px 20px;font-size:0.95rem;font-weight:700;">📚 Викторина Знаний (День Знаний)</button>
     </div>
 
@@ -2733,10 +2734,777 @@
 </footer>
 
 <button class="to-top" id="toTop" aria-label="Наверх">↑</button>
+      </div>
+    </div>
 
+    <!-- ===================== POL GUIDE (ASTRID & LUCAS) ===================== -->
+    <div id="guide-container-pol" class="guide-container" style="display:none;">
+      <div class="pol-guide-wrap">
+<header class="site-header">
+  <div class="wrap header-inner">
+    <div class="brand">
+      <img src="/pol-guide/assets/img/astrid-lucas.png" alt="Астрид и Лукас" class="brand-icon">
+      <div>
+        <div class="brand-title">Путь легенд</div>
+        <div class="brand-sub">Астрид и Лукас · Сентябрь 2026</div>
+      </div>
+    </div>
+    <button class="nav-toggle" id="polNavToggle" aria-label="Меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
 
+<div class="layout wrap">
 
-  </section>
+  <aside class="sidebar" id="polSidebar">
+    <nav aria-label="Содержание">
+      <div class="toc-title">Содержание</div>
+      <ol class="toc" id="polToc">
+        <li><a href="#pol-intro">О событии</a></li>
+        <li><a href="#pol-currency">Валюты события</a></li>
+        <li><a href="#pol-relics">Мастерская: реликвии</a></li>
+        <li><a href="#pol-chapters">Главы и награды</a></li>
+        <li><a href="#pol-budget">Бюджет энергии</a></li>
+        <li><a href="#pol-calc">Калькулятор бюджета</a></li>
+        <li><a href="#pol-battlepass">Battle Pass</a></li>
+        <li><a href="#pol-emeralds">Трата изумрудов</a></li>
+        <li><a href="#pol-medallions">Сапфировые медальоны</a></li>
+        <li><a href="#pol-strategy">Стратегия F2P</a></li>
+        <li><a href="#pol-mistakes">Частые ошибки</a></li>
+        <li><a href="#pol-cheatsheet">Шпаргалка</a></li>
+        <li><a href="#pol-sources">Источники</a></li>
+      </ol>
+    </nav>
+  </aside>
+
+  <main id="pol-main">
+
+    <!-- HERO -->
+    <section class="hero" id="pol-intro">
+      <div class="hero-media">
+        <img src="/pol-guide/assets/img/astrid-lucas.png" alt="Астрид и Лукас" loading="lazy">
+      </div>
+      <div class="hero-body">
+        <h1>Путь легенд: Астрид и Лукас</h1>
+        <p class="lead">
+          Семидневное событие по стандартной механике «Команда на приключение» —
+          прокачка реликвий мастерской, семь глав с боссами и накопление монет
+          Доблести для призыва осколков Астрид в Алтаре судьбы.
+        </p>
+        <div class="meta-badges">
+          <span class="badge badge-date">8–15 сентября 2026</span>
+          <span class="badge badge-dur">7 дней</span>
+          <span class="badge badge-lvl">790 кристаллов = все 7 глав</span>
+        </div>
+        <div class="hero-cta">
+          <a href="#pol-calc" class="btn btn-primary">К калькулятору</a>
+          <a href="#pol-strategy" class="btn btn-ghost">Стратегия F2P</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ГЛАВНЫЙ ВЫВОД -->
+    <section class="callout callout-key">
+      <h2 class="callout-title">Главное за 10 секунд</h2>
+      <div class="key-grid">
+        <div class="key-item">
+          <img src="/pol-guide/assets/img/tome-of-greed.png" alt="Том жадности">
+          <div class="key-name">Реликвия 1</div>
+          <div class="key-val">Том жадности</div>
+          <div class="key-cost">качать первой</div>
+        </div>
+        <div class="key-item">
+          <img src="/pol-guide/assets/img/grail-of-generosity.png" alt="Грааль щедрости">
+          <div class="key-name">Реликвия 2</div>
+          <div class="key-val">Грааль щедрости</div>
+          <div class="key-cost">качать второй</div>
+        </div>
+        <div class="key-item">
+          <img src="/pol-guide/assets/img/amulet-of-battle.png" alt="Амулет битвы">
+          <div class="key-name">Реликвия 3</div>
+          <div class="key-val">Амулет битвы</div>
+          <div class="key-cost">открывает главы</div>
+        </div>
+        <div class="key-item key-item-accent">
+          <img src="/pol-guide/assets/img/energy-crystal.png" alt="Кристалл энергии">
+          <div class="key-name">F2P бюджет</div>
+          <div class="key-val">438 кристаллов</div>
+          <div class="key-cost">бесплатно из квестов</div>
+        </div>
+      </div>
+      <p class="key-result">
+        Правило события: <strong>Том жадности → Грааль щедрости → Амулет битвы.</strong>
+        Не качать в обратном порядке — это главная ошибка, которая стоит сотни монет Доблести.
+      </p>
+    </section>
+
+    <!-- ВАЛЮТЫ -->
+    <section id="pol-currency">
+      <h2><span class="h-num">1</span> Валюты события</h2>
+
+      <div class="relic-cards">
+        <article class="relic-card relic-tome">
+          <h3>⚡ Кристаллы энергии</h3>
+          <p class="relic-effect">
+            Основная валюта. Тратятся на прокачку реликвий мастерской и
+            конвертируются в монеты Доблести. Обменный курс повышает Том жадности.
+          </p>
+          <div class="relic-verdict verdict-good">Добываются из квестов, ежедневных бонусов и наград</div>
+        </article>
+        <article class="relic-card relic-grail">
+          <h3>🪙 Монеты Доблести</h3>
+          <p class="relic-effect">
+            Используются в Алтаре судьбы для розыгрыша осколков Астрид.
+            Курс обмена кристаллов в монеты зависит от уровня Тома жадности.
+          </p>
+          <div class="relic-verdict verdict-mid">Чем выше Том — тем больше монет за кристалл</div>
+        </article>
+        <article class="relic-card relic-amulet">
+          <h3>💎 Очки славы</h3>
+          <p class="relic-effect">
+            Продвигают Battle Pass. Начисляются автоматически, не хранятся в
+            инвентаре, нельзя конвертировать после события.
+            Ценность резко зависит от наличия Золотого билета.
+          </p>
+          <div class="relic-verdict verdict-good">100 → 200 → 400 очков на каждый уровень</div>
+        </article>
+        <article class="relic-card relic-amulet">
+          <h3>💠 Сапфировые медальоны</h3>
+          <p class="relic-effect">
+            Трата медальонов даёт дополнительные кристаллы энергии по
+            накопительной таблице. До 150 медальонов за событие → 120 кристаллов.
+          </p>
+          <div class="relic-verdict verdict-mid">30 медальонов = 30 кристаллов (базовый F2P уровень)</div>
+        </article>
+      </div>
+
+      <div class="callout callout-info">
+        <p>
+          <strong>Монеты Стойла</strong> — отдельная валюта мини-игры событийной
+          битвы. Начинаете с 120 монетами, зарабатываете в боях и тратите на
+          найм героев в стойле. Не путать с монетами Доблести.
+        </p>
+      </div>
+    </section>
+
+    <!-- РЕЛИКВИИ -->
+    <section id="pol-relics">
+      <h2><span class="h-num">2</span> Мастерская: реликвии и порядок прокачки</h2>
+      <p>
+        В мастерской три реликвии. Все три прокачать до максимума не получится —
+        бюджет кристаллов на это не рассчитан. Выбирайте приоритет сознательно.
+      </p>
+
+      <div class="callout callout-rule">
+        <p class="rule-text">
+          <strong>Том жадности → Грааль щедрости → Амулет битвы</strong>
+        </p>
+      </div>
+
+      <div class="relic-cards">
+        <article class="relic-card relic-tome">
+          <div class="relic-header">
+            <img src="/pol-guide/assets/img/tome-of-greed.png" alt="Том жадности" class="relic-img">
+            <h3>Том жадности</h3>
+          </div>
+          <p class="relic-effect">
+            Даёт дополнительные монеты Доблести при каждой трате кристаллов
+            энергии. Максимальный уровень — 15. Каждый уровень увеличивает
+            бонус на 1 000 монет за потраченный кристалл.
+          </p>
+          <div class="relic-verdict verdict-good">
+            ✓ Качать первым — напрямую умножает все последующие монеты
+          </div>
+        </article>
+
+        <article class="relic-card relic-grail">
+          <div class="relic-header">
+            <img src="/pol-guide/assets/img/grail-of-generosity.png" alt="Грааль щедрости" class="relic-img">
+            <h3>Грааль щедрости</h3>
+          </div>
+          <p class="relic-effect">
+            Снижает стоимость одного призыва в Алтаре судьбы. Максимальный
+            уровень — 18. Чем ниже цена — тем больше призывов на накопленные монеты.
+          </p>
+          <div class="relic-verdict verdict-mid">
+            ✓ Качать вторым — усиливает эффект Тома, снижая порог входа в Алтарь
+          </div>
+        </article>
+
+        <article class="relic-card relic-amulet">
+          <div class="relic-header">
+            <img src="/pol-guide/assets/img/amulet-of-battle.png" alt="Амулет битвы" class="relic-img">
+            <h3>Амулет битвы</h3>
+          </div>
+          <p class="relic-effect">
+            Повышает боевые бонусы в сражениях с боссами и открывает доступ к
+            следующим главам. Требуется конкретный уровень для прохода в главы 3–7.
+          </p>
+          <div class="relic-verdict verdict-mid">
+            ⚠ Качать по необходимости — только до уровня, нужного для следующей главы
+          </div>
+        </article>
+      </div>
+
+      <h3>Требования Амулета для открытия глав</h3>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr><th>Глава</th><th>Нужный уровень Амулета</th><th>Суммарных кристаллов до этой главы</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>—</td><td>0</td></tr>
+            <tr><td>2</td><td>—</td><td>0</td></tr>
+            <tr><td>3</td><td>5</td><td>50</td></tr>
+            <tr><td>4</td><td>10</td><td>160</td></tr>
+            <tr><td>5</td><td>15</td><td>320</td></tr>
+            <tr><td>6</td><td>20</td><td>530</td></tr>
+            <tr class="row-highlight"><td>7</td><td>25</td><td>790</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note-small">
+        Кристаллы показаны суммарно (нарастающим итогом), не за одну главу.
+      </p>
+
+      <div class="callout callout-warn">
+        <h4>Важно: порядок реликвий на экране изменился</h4>
+        <p>
+          В недавних событиях Амулет битвы переместился с нижней позиции на другое место в
+          списке — не ориентируйтесь на положение иконки. Следите за названием реликвии,
+          а не её позицией.
+        </p>
+      </div>
+
+      <h3>Стоимость прокачки Амулета по уровням</h3>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr><th>Уровень</th><th class="num">Бонус в бою</th><th class="num">Стоимость шага</th><th class="num">Суммарно</th><th>Открывает</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1→5</td><td class="num">1–5</td><td class="num">10/шаг</td><td class="num">50</td><td>Глава 3</td></tr>
+            <tr><td>6→10</td><td class="num">6–10</td><td class="num">20/шаг (10 на 10)</td><td class="num">160</td><td>Глава 4</td></tr>
+            <tr><td>11→15</td><td class="num">11–15</td><td class="num">32/шаг</td><td class="num">320</td><td>Глава 5</td></tr>
+            <tr><td>16→20</td><td class="num">16–20</td><td class="num">40–50/шаг</td><td class="num">530</td><td>Глава 6</td></tr>
+            <tr class="row-highlight"><td>21→25</td><td class="num">21–25</td><td class="num">50–60/шаг</td><td class="num">790</td><td>Глава 7</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ГЛАВЫ -->
+    <section id="pol-chapters">
+      <h2><span class="h-num">3</span> Главы и награды</h2>
+      <p>
+        Семь глав, каждая — отдельный бой с боссом. Кристаллы энергии в таблице
+        указаны <strong>нарастающим итогом</strong>, не за одну главу.
+      </p>
+
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>№</th>
+              <th>Название главы</th>
+              <th class="num">Кристаллов (итого)</th>
+              <th>Награды за прохождение</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Узники кошмара</td>
+              <td class="num">0</td>
+              <td>1 Сундук с осколком героя · 10 000 монет Доблести · 1 Сапфировый медальон</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Незнакомые лица</td>
+              <td class="num">0</td>
+              <td>30 Большой сундук с камнями скинов · 20 000 монет Доблести · 2 Сапфировых медальона</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Похищенный свет</td>
+              <td class="num">50</td>
+              <td>1 Эпический дар Доминиона · 20 000 монет Доблести · 2 Сапфировых медальона</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Тень на пороге</td>
+              <td class="num">160</td>
+              <td>1 Легендарный дар Доминиона · 20 000 монет Доблести · 2 Сапфировых медальона</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Осколки памяти</td>
+              <td class="num">320</td>
+              <td>20 Сундуков с ресурсом героя · 50 000 монет Доблести · 10 Сапфировых медальонов</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Сердце тишины</td>
+              <td class="num">530</td>
+              <td>1 Дар Доминиона · 50 000 монет Доблести · 10 Сапфировых медальонов</td>
+            </tr>
+            <tr class="row-highlight">
+              <td>7</td>
+              <td>TBA</td>
+              <td class="num">790</td>
+              <td>Осколки Астрид · 10 Сапфировых медальонов + бонусные награды</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout callout-info">
+        <p>
+          Главы 4–7 официально ещё не раскрыты полностью на момент написания гайда —
+          названия и точные награды 7-й главы могут отличаться. Структура и стоимость
+          кристаллов подтверждена из нескольких источников.
+        </p>
+      </div>
+    </section>
+
+    <!-- БЮДЖЕТ -->
+    <section id="pol-budget">
+      <h2><span class="h-num">4</span> Бюджет кристаллов энергии</h2>
+      <p>
+        Полный бюджет при правильном прохождении — ровно 790 кристаллов. Вот откуда
+        берётся каждый кристалл.
+      </p>
+
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr><th>Источник</th><th class="num">Кристаллов</th><th>Тип</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Витрина (ежедневно, 8 в день × 7 дней)</td><td class="num">56</td><td>🆓 Бесплатно</td></tr>
+            <tr><td>Квест: победа в событийном бою</td><td class="num">128</td><td>🆓 Бесплатно</td></tr>
+            <tr><td>Квест: тренировочный бой</td><td class="num">66</td><td>🆓 Бесплатно</td></tr>
+            <tr><td>Квест: бой с питомцем</td><td class="num">40</td><td>🆓 Бесплатно</td></tr>
+            <tr><td>Квест: бой на стойле</td><td class="num">100</td><td>🆓 Бесплатно</td></tr>
+            <tr><td>Групповой подарок (распространение ссылки)</td><td class="num">48</td><td>🆓 Бесплатно</td></tr>
+            <tr class="row-sum"><td><strong>Итого бесплатно</strong></td><td class="num"><strong>438</strong></td><td></td></tr>
+            <tr><td>Battle Pass (без Золотого билета)</td><td class="num">40</td><td>💰 Battle Pass</td></tr>
+            <tr><td>Подарки разработчиков (до 3 за событие, по 16)</td><td class="num">до 48</td><td>🎁 Подарок</td></tr>
+            <tr><td>Сапфировые медальоны (30 шт. = F2P минимум)</td><td class="num">30</td><td>💠 Медальоны</td></tr>
+            <tr><td>Трата изумрудов (500 = базовый уровень)</td><td class="num">3</td><td>💎 Платно/накоп.</td></tr>
+            <tr class="row-sum"><td><strong>Итого F2P с Battle Pass и мин. тратами</strong></td><td class="num"><strong>≈ 559</strong></td><td></td></tr>
+            <tr><td>Золотой билет (вместо Battle Pass)</td><td class="num">150</td><td>💰 Платно</td></tr>
+            <tr><td>Трата изумрудов (150 000 = максимум)</td><td class="num">90</td><td>💎 Платно</td></tr>
+            <tr><td>Сапфировые медальоны (150 шт. = максимум)</td><td class="num">120</td><td>💠 Медальоны</td></tr>
+            <tr><td>VIP квест (только с Золотым билетом)</td><td class="num">18</td><td>💰 Платно</td></tr>
+            <tr><td>Ежедневный заряд (платная часть)</td><td class="num">24</td><td>💰 Платно</td></tr>
+            <tr class="row-highlight"><td><strong>Максимальный бюджет (все источники)</strong></td><td class="num"><strong>790</strong></td><td></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout callout-tip">
+        <h4>F2P-вывод по бюджету</h4>
+        <p>
+          Без каких-либо трат бесплатных кристаллов хватает примерно на 438 единиц —
+          это уверенное прохождение 5-й главы (нужно 320) с запасом на осколки в Алтаре.
+          Для 6-й главы (530) нужны Battle Pass или подарки разработчиков.
+          Для 7-й главы (790) — вся таблица: Battle Pass + медальоны + трата изумрудов.
+        </p>
+      </div>
+    </section>
+
+    <!-- КАЛЬКУЛЯТОР -->
+    <section id="pol-calc">
+      <h2><span class="h-num">5</span> Калькулятор бюджета</h2>
+      <p>Отметьте доступные источники — калькулятор покажет, до какой главы дотянетесь.</p>
+
+      <div class="calc" id="polCalcWidget">
+        <div class="calc-controls">
+          <div class="calc-field">
+            <label for="polInpFreeQuests">
+              <input type="checkbox" id="polInpFreeQuests" checked>
+              Бесплатные квесты + витрина (438 кристаллов)
+            </label>
+          </div>
+          <div class="calc-field">
+            <label for="polInpDevGifts">
+              <input type="checkbox" id="polInpDevGifts">
+              Подарки разработчиков (3 × 16 = 48)
+            </label>
+          </div>
+          <div class="calc-field">
+            <label for="polInpBattlePass">
+              <input type="checkbox" id="polInpBattlePass">
+              Battle Pass (+40 кристаллов)
+            </label>
+          </div>
+          <div class="calc-field">
+            <label for="polInpGoldenTicket">
+              <input type="checkbox" id="polInpGoldenTicket">
+              Золотой билет (+150 кристаллов, включает VIP +18)
+            </label>
+          </div>
+          <div class="calc-field">
+            <label>Сапфировые медальоны:
+              <select id="polInpMedallions" class="elem-select" style="max-width:260px;margin-top:6px;">
+                <option value="0">0 (не тратить)</option>
+                <option value="10">10 → +10</option>
+                <option value="30" selected>30 → +30 (F2P минимум)</option>
+                <option value="50">50 → +50</option>
+                <option value="100">100 → +100</option>
+                <option value="120">120 → +110</option>
+                <option value="150">150 → +120 (максимум)</option>
+              </select>
+            </label>
+          </div>
+          <div class="calc-field">
+            <label>Изумруды (потрачено за событие):
+              <select id="polInpEmeralds" class="elem-select" style="max-width:260px;margin-top:6px;">
+                <option value="0">0 (не тратить)</option>
+                <option value="1">100 → +1</option>
+                <option value="3" selected>500 → +3</option>
+                <option value="6">3 000 → +6</option>
+                <option value="9">7 000 → +9</option>
+                <option value="12">12 000 → +12</option>
+                <option value="20">25 000 → +20</option>
+                <option value="34">50 000 → +34</option>
+                <option value="54">90 000 → +54</option>
+                <option value="90">150 000 → +90</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <div class="calc-results" id="polCalcResults">
+          <div class="calc-result-card">
+            <div class="calc-label">Кристаллов всего</div>
+            <div class="calc-value" id="polOutTotal">—</div>
+          </div>
+          <div class="calc-result-card">
+            <div class="calc-label">Максимальная глава</div>
+            <div class="calc-value" id="polOutChapter">—</div>
+          </div>
+          <div class="calc-result-card">
+            <div class="calc-label">До следующей главы</div>
+            <div class="calc-value" id="polOutNext">—</div>
+          </div>
+        </div>
+        <p id="polCalcNote" class="calc-note"></p>
+      </div>
+    </section>
+
+    <!-- BATTLE PASS -->
+    <section id="pol-battlepass">
+      <h2><span class="h-num">6</span> Battle Pass</h2>
+      <p>
+        Battle Pass продвигается очками Славы. Бесплатная дорожка открыта
+        всем участникам. Золотой билет разблокирует платную дорожку и
+        даёт значительно больше кристаллов и ресурсов.
+      </p>
+
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Уровень</th>
+              <th>Бесплатная награда</th>
+              <th>Награда с Золотым билетом</th>
+              <th class="num">Очков (итого)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>1 Сапфировый медальон</td><td>5 Сапфировых медальонов</td><td class="num">0</td></tr>
+            <tr><td>2</td><td>1 000 изумрудов</td><td>5 000 изумрудов</td><td class="num">100</td></tr>
+            <tr><td>3</td><td>50 камней скина (сундук)</td><td>250 камней скина (сундук)</td><td class="num">200</td></tr>
+            <tr><td>4</td><td>2 Кристалла души</td><td>10 Кристаллов души</td><td class="num">300</td></tr>
+            <tr><td>5</td><td>10 Кристаллов энергии</td><td>30 Кристаллов энергии</td><td class="num">400</td></tr>
+            <tr><td>6</td><td>50 Кристаллов желания</td><td>250 Кристаллов желания</td><td class="num">500</td></tr>
+            <tr><td>7</td><td>4 000 монет артефакта</td><td>20 000 монет артефакта</td><td class="num">600</td></tr>
+            <tr><td>8</td><td>20 Редких рун зачарования</td><td>100 Редких рун зачарования</td><td class="num">700</td></tr>
+            <tr><td>9</td><td>40 Абсолютных эссенций артефакта</td><td>160 Абсолютных эссенций артефакта</td><td class="num">800</td></tr>
+            <tr class="row-highlight"><td>10</td><td>10 Кристаллов энергии</td><td>30 Кристаллов энергии</td><td class="num">1 000</td></tr>
+            <tr><td>11</td><td>2 Бутылки энергии</td><td>10 Бутылок энергии</td><td class="num">1 200</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note-small">Таблица показывает первые 11 уровней. Battle Pass обычно содержит 20+ уровней.</p>
+
+      <div class="callout callout-tip">
+        <p>
+          Уровни 5 и 10 Battle Pass дают дополнительные Кристаллы энергии —
+          это прямой вклад в бюджет прокачки. Даже бесплатная версия Battle Pass
+          приносит +40 кристаллов, что может хватить для перехода с главы 5 на 6.
+        </p>
+      </div>
+    </section>
+
+    <!-- ИЗУМРУДЫ -->
+    <section id="pol-emeralds">
+      <h2><span class="h-num">7</span> Трата изумрудов</h2>
+      <p>
+        Квесты «Поток изумрудов» работают по накопительному принципу — каждая
+        следующая планка включает все предыдущие награды.
+      </p>
+
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr><th class="num">Потрачено изумрудов</th><th class="num">Итого кристаллов</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="num">100</td><td class="num">1</td></tr>
+            <tr><td class="num">500</td><td class="num">3</td></tr>
+            <tr><td class="num">3 000</td><td class="num">6</td></tr>
+            <tr><td class="num">7 000</td><td class="num">9</td></tr>
+            <tr><td class="num">12 000</td><td class="num">12</td></tr>
+            <tr><td class="num">18 000</td><td class="num">16</td></tr>
+            <tr><td class="num">25 000</td><td class="num">20</td></tr>
+            <tr><td class="num">35 000</td><td class="num">26</td></tr>
+            <tr><td class="num">50 000</td><td class="num">34</td></tr>
+            <tr><td class="num">70 000</td><td class="num">44</td></tr>
+            <tr><td class="num">90 000</td><td class="num">54</td></tr>
+            <tr><td class="num">120 000</td><td class="num">70</td></tr>
+            <tr class="row-highlight"><td class="num">150 000</td><td class="num">90</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout callout-warn">
+        <p>
+          Трата изумрудов через квест <em>засчитывает любые изумруды</em>,
+          потраченные в игре в период события — включая обычные покупки,
+          ускорения и т.д. Специально фармить их не нужно, если вы и так
+          их тратите.
+        </p>
+      </div>
+    </section>
+
+    <!-- МЕДАЛЬОНЫ -->
+    <section id="pol-medallions">
+      <h2><span class="h-num">8</span> Сапфировые медальоны</h2>
+      <p>
+        Накопительная таблица: каждая следующая строка — итоговое число
+        при достижении этого порога расхода.
+      </p>
+
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr><th class="num">Потрачено медальонов</th><th class="num">Итого кристаллов</th><th>Примечание</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="num">3</td><td class="num">3</td><td></td></tr>
+            <tr><td class="num">6</td><td class="num">6</td><td></td></tr>
+            <tr><td class="num">10</td><td class="num">10</td><td></td></tr>
+            <tr><td class="num">20</td><td class="num">20</td><td></td></tr>
+            <tr><td class="num">30</td><td class="num">30</td><td>F2P ориентир</td></tr>
+            <tr><td class="num">50</td><td class="num">50</td><td></td></tr>
+            <tr><td class="num">100</td><td class="num">100</td><td></td></tr>
+            <tr><td class="num">120</td><td class="num">110</td><td>+10 бонус сверх 100</td></tr>
+            <tr class="row-highlight"><td class="num">150</td><td class="num">120</td><td>Максимум, +20 бонус</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- СТРАТЕГИЯ -->
+    <section id="pol-strategy">
+      <h2><span class="h-num">9</span> Стратегия F2P</h2>
+
+      <h3>Приоритеты по дням</h3>
+      <div class="steps-list">
+        <div class="step-item">
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <h4>День 1–2: Том жадности</h4>
+            <p>Все первые кристаллы — в Том жадности. Чем раньше он прокачан,
+            тем больше монет Доблести принесут все последующие траты кристаллов.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <h4>День 2–3: Грааль щедрости</h4>
+            <p>После Тома — в Грааль. Снижает стоимость призыва в Алтаре, что
+            напрямую умножает число полученных осколков на те же монеты.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <h4>День 3+: Амулет битвы по необходимости</h4>
+            <p>Качать ровно до уровня, нужного для следующей главы — не больше.
+            Если следующая глава недостижима по бюджету, лишние кристаллы
+            конвертируйте в монеты Доблести через Том.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">4</div>
+          <div class="step-body">
+            <h4>Каждый день: квесты и витрина</h4>
+            <p>Не пропускайте ежедневные квесты — 8 кристаллов с витрины и
+            бои события дают суммарно большую часть бесплатного бюджета.
+            Пропущенный день нельзя наверстать.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">5</div>
+          <div class="step-body">
+            <h4>Алтарь судьбы: тянуть по ×10</h4>
+            <p>Одиночные призывы в Алтаре менее эффективны — используйте
+            пакет по 10 призывов, когда накопится достаточно монет Доблести.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout callout-key-sm">
+        <h4>Ориентиры для F2P</h4>
+        <ul class="check-list">
+          <li>438 кристаллов из квестов → уверенно 5-я глава (нужно 320)</li>
+          <li>+ Battle Pass (40) → запас для осколков между 5-й и 6-й главой</li>
+          <li>+ Подарки от разработчиков (48) → почти вплотную к 6-й главе (530)</li>
+          <li>+ 30 медальонов (30) → 556 кристаллов → 6-я глава достижима</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ОШИБКИ -->
+    <section id="pol-mistakes">
+      <h2><span class="h-num">10</span> Частые ошибки</h2>
+      <div class="mistakes">
+        <div class="mistake">
+          <div class="mistake-x">✕</div>
+          <div>
+            <h4>Качать Амулет битвы первым</h4>
+            <p>Открывает главы, но не приносит монет. Том жадности на тех же кристаллах
+            даёт в разы больше дохода за всё событие.</p>
+          </div>
+        </div>
+        <div class="mistake">
+          <div class="mistake-x">✕</div>
+          <div>
+            <h4>Тянуть одиночные призывы в Алтаре</h4>
+            <p>Копите монеты Доблести и тяните по ×10 — экономия есть даже при
+            одинаковом шансе на осколок.</p>
+          </div>
+        </div>
+        <div class="mistake">
+          <div class="mistake-x">✕</div>
+          <div>
+            <h4>Пропускать ежедневные квесты</h4>
+            <p>Витрина и квесты боёв дают 438 из 790 кристаллов — больше половины
+            полного бюджета. Каждый пропущенный день невосполним.</p>
+          </div>
+        </div>
+        <div class="mistake">
+          <div class="mistake-x">✕</div>
+          <div>
+            <h4>Тратить монеты Доблести на второстепенные предметы</h4>
+            <p>В Алтаре судьбы есть побочные товары — фокусируйтесь только на
+            осколках Астрид, пока не соберёте целевое количество звёзд.</p>
+          </div>
+        </div>
+        <div class="mistake">
+          <div class="mistake-x">✕</div>
+          <div>
+            <h4>Качать Амулет выше нужного уровня до повышения Тома</h4>
+            <p>Каждый «лишний» уровень Амулета — кристаллы, которые могли
+            умножить доход через Том жадности на оставшиеся дни события.</p>
+          </div>
+        </div>
+        <div class="mistake">
+          <div class="mistake-x">✕</div>
+          <div>
+            <h4>Распылять ресурсы на других героев во время события</h4>
+            <p>Активное событие — время максимально вкладываться именно в
+            Астрид и Лукас, а не параллельно прокачивать других.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ШПАРГАЛКА -->
+    <section id="pol-cheatsheet">
+      <h2><span class="h-num">11</span> Шпаргалка</h2>
+      <div class="cheat">
+        <div class="cheat-row">
+          <img src="/pol-guide/assets/img/tome-of-greed.png" alt="Том жадности" class="cheat-img">
+          <div class="cheat-name">Реликвии</div>
+          <div class="cheat-arrow">→</div>
+          <div class="cheat-lvl">Том жадности</div>
+          <div class="cheat-cost">Грааль щедрости</div>
+          <div class="cheat-note">Амулет — по необходимости</div>
+        </div>
+        <div class="cheat-row">
+          <img src="/pol-guide/assets/img/energy-crystal.png" alt="Кристаллы" class="cheat-img">
+          <div class="cheat-name">F2P бюджет</div>
+          <div class="cheat-arrow">→</div>
+          <div class="cheat-lvl">438 квестов</div>
+          <div class="cheat-cost">+40 Battle Pass</div>
+          <div class="cheat-note">≈ 5-я глава уверенно</div>
+        </div>
+        <div class="cheat-row">
+          <img src="/pol-guide/assets/img/amulet-of-battle.png" alt="Амулет" class="cheat-img">
+          <div class="cheat-name">Главы</div>
+          <div class="cheat-arrow">→</div>
+          <div class="cheat-lvl">Гл.5 = 320</div>
+          <div class="cheat-cost">Гл.6 = 530</div>
+          <div class="cheat-note">Гл.7 = 790 кристаллов</div>
+        </div>
+        <div class="cheat-row cheat-row-final">
+          <img src="/pol-guide/assets/img/grail-of-generosity.png" alt="Грааль" class="cheat-img">
+          <div class="cheat-name">Алтарь</div>
+          <div class="cheat-arrow">→</div>
+          <div class="cheat-lvl">Только ×10</div>
+          <div class="cheat-cost">Осколки Астрид</div>
+          <div class="cheat-note">не тратить на второстепенное</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ИСТОЧНИКИ -->
+    <section id="pol-sources">
+      <h2><span class="h-num">12</span> Источники</h2>
+      <ul class="sources-list">
+        <li>
+          <a href="https://herowars-olympus.com/path-of-legends-astrid-and-lucas-event" target="_blank" rel="noopener">herowars-olympus.com — Path of Legends: Astrid and Lucas Event</a>
+          <span>Главы, награды, реликвии, детальная разбивка бюджета</span>
+        </li>
+        <li>
+          <a href="https://herowars-olympus.com/path-of-legends-event-optimizer-2026" target="_blank" rel="noopener">herowars-olympus.com — Path of Legends Event Optimizer</a>
+          <span>Таблицы трат изумрудов и медальонов, примеры F2P бюджета</span>
+        </li>
+        <li>
+          <a href="https://h-w.fun/en/path-of-legends-astrid" target="_blank" rel="noopener">h-w.fun — Path of Legends (Astrid Event)</a>
+          <span>Полный список квестов, Battle Pass, расходы по главам</span>
+        </li>
+        <li>
+          <a href="https://h-w.fun/en/report-2026-week36" target="_blank" rel="noopener">h-w.fun — Weekly Report 2026 Week 36</a>
+          <span>Анонс события и расписание недели</span>
+        </li>
+      </ul>
+      <p class="sources-note">
+        Данные собраны из нескольких независимых источников сообщества. Тотемы Искажения в наградах
+        этого события не предусмотрены (подтверждено из нескольких источников).
+        Точные награды глав 4–7 могут отличаться по мере раскрытия официальных данных.
+      </p>
+    </section>
+
+  </main>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Путь легенд · Астрид и Лукас · Hero Wars: Dominion Era · Сентябрь 2026</p>
+    <p class="footer-dim">Все изображения принадлежат Nexters. Материал носит справочный характер.</p>
+  </div>
+</footer>
+
+<button class="to-top" id="polToTop" aria-label="Наверх">↑</button>
+      </div>
+    </div>
 
   <!-- ===================== QUIZ EVENT VIEW (STANDALONE) ===================== -->
   <section id="view-quiz" class="view">
