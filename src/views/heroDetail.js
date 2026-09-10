@@ -119,10 +119,9 @@ export function renderHeroDetail(heroId) {
         <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); padding:14px 18px; border-radius:12px; margin-bottom:10px;">
           <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
             <b style="color:#ffffff; font-size:1.05rem;">${sk.name}</b>
-            <span style="color:#facc15; font-size:0.85rem; font-weight:700;">${sk.priority}</span>
+            ${sk.priority ? `<span style="color:#facc15; font-size:0.85rem; font-weight:700;">${sk.priority}</span>` : ''}
           </div>
-          <div style="color:#34d399; font-size:0.9rem; font-weight:600; margin-bottom:4px;">${sk.bonus}</div>
-          <div style="color:#cbd5e1; font-size:0.88rem; line-height:1.5;">${sk.reason}</div>
+          ${sk.bonus ? `<div style="color:#34d399; font-size:0.9rem; font-weight:600; margin-bottom:4px;">${sk.bonus}</div>` : ''}
         </div>
       `).join('')
     : '<div style="color:#cbd5e1; font-size:0.9rem;">Приоритет скинов рассчитывается исходя из ключевого профильного атрибута.</div>';
@@ -131,11 +130,11 @@ export function renderHeroDetail(heroId) {
   const glyphsHtml = (heroGuide.glyphs && heroGuide.glyphs.length > 0)
     ? heroGuide.glyphs.map(gl => `
         <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); padding:12px 16px; border-radius:10px; margin-bottom:8px; display:flex; justify-content:space-between; align-items:center;">
-          <div>
+          <div style="display:flex; align-items:center; gap:10px;">
+            ${gl.icon ? `<img src="${gl.icon}" alt="${gl.name}" style="width:28px; height:28px; border-radius:6px; object-fit:contain;" onerror="this.style.display='none'" />` : ''}
             <b style="color:#ffffff; font-size:0.95rem;">${gl.name}</b>
-            <div style="color:#38bdf8; font-size:0.85rem;">${gl.bonus}</div>
           </div>
-          <span style="background:rgba(250, 204, 21, 0.15); color:#facc15; border:1px solid rgba(250, 204, 21, 0.3); padding:4px 10px; border-radius:6px; font-size:0.82rem; font-weight:700;">${gl.priority}</span>
+          ${gl.priority ? `<span style="background:rgba(250, 204, 21, 0.15); color:#facc15; border:1px solid rgba(250, 204, 21, 0.3); padding:4px 10px; border-radius:6px; font-size:0.82rem; font-weight:700;">${gl.priority}</span>` : ''}
         </div>
       `).join('')
     : '<div style="color:#cbd5e1; font-size:0.9rem;">Сначала прокачиваем Главный Атрибут и Пробивание, затем Здоровье и Защиту.</div>';
