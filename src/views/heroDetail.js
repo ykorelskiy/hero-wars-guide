@@ -6,10 +6,13 @@ import { getHeroGuide } from '../data/heroGuidesData.js';
 import { getHeroSkills } from '../data/heroSkillsData.js';
 
 export function renderHeroDetail(heroId) {
+  console.log('[HeroDetail] renderHeroDetail called with heroId:', heroId);
   const wrap = document.getElementById('heroDetailWrap');
-  if (!wrap) return;
+  if (!wrap) { console.error('[HeroDetail] heroDetailWrap NOT FOUND in DOM!'); return; }
+  console.log('[HeroDetail] wrap element found');
 
   const hero = heroById(heroId);
+  console.log('[HeroDetail] heroById result:', hero ? `Found: ${hero.name} (${hero.id})` : 'NOT FOUND');
   if (!hero) {
     wrap.innerHTML = `
       <div style="padding:40px; text-align:center;">
@@ -21,6 +24,8 @@ export function renderHeroDetail(heroId) {
     return;
   }
 
+  try { // wrap entire render in try/catch
+
   const statColor = hero.main_stat === 'Сила' ? '#ef4444' : 
                     hero.main_stat === 'Ловкость' ? '#10b981' : 
                     '#06b6d4';
@@ -31,9 +36,11 @@ export function renderHeroDetail(heroId) {
   const tier = getHeroTier(hero.id);
   const tierInfo = TIER_RANKS[tier] || TIER_RANKS['A'];
   const heroGuide = getHeroGuide(hero.id);
+  console.log('[HeroDetail] tier:', tier, 'heroGuide keys:', Object.keys(heroGuide));
 
   // Compatible Pets for Patronage
   const patronPets = getPatronPetsForHero(hero.id);
+  console.log('[HeroDetail] patronPets:', patronPets.length);
 
   const petsBadgesHtml = patronPets.length > 0
     ? patronPets.map(p => `
@@ -48,6 +55,7 @@ export function renderHeroDetail(heroId) {
     : '<div style="color:#94a3b8; font-size:0.9rem; padding:10px;">Нет прямых данных о патронаже питомцев</div>';
 
   const officialSkills = (hero.skills && hero.skills.length > 0) ? hero.skills : getHeroSkills(hero.id);
+  console.log('[HeroDetail] officialSkills:', officialSkills.length, 'source:', (hero.skills && hero.skills.length > 0) ? 'hero.skills' : 'heroSkillsData');
 
   const allHeroes = getHeroes();
   const getAvatarAndSlug = (nameStr) => {
@@ -139,6 +147,7 @@ export function renderHeroDetail(heroId) {
       `).join('')
     : '<div style="color:#cbd5e1; font-size:0.9rem;">Сначала прокачиваем Главный Атрибут и Пробивание, затем Здоровье и Защиту.</div>';
 
+  console.log('[HeroDetail] All data prepared, setting innerHTML...');
   wrap.innerHTML = `
     <div style="margin-bottom:20px;">
       <button class="mini-btn" id="heroBackBtn" style="padding:10px 20px; font-size:0.95rem;">← Назад в Каталог Героев</button>
@@ -328,6 +337,8 @@ export function renderHeroDetail(heroId) {
     </div>` : ''}
   `;
 
+  console.log('[HeroDetail] innerHTML set successfully, binding events...');
+
   // Bind Events
   document.getElementById('heroBackBtn')?.addEventListener('click', () => navigateTo('wiki'));
 
@@ -337,4 +348,20 @@ export function renderHeroDetail(heroId) {
       if (petId) navigateTo('pet-detail', petId);
     });
   });
+
+  console.log('[HeroDetail] render complete for', heroId);
+
+  } catch (err) {
+    console.error('[HeroDetail] CRASH during render:', err);
+    console.error('[HeroDetail] Stack:', err.stack);
+    const errMsg = err.message + '\n' + (err.stack || '');
+    wrap.innerHTML = `
+      <div style="padding:40px; text-align:center;">
+        <h3 style="color:#ef4444;">Ошибка рендера героя "${heroId}"</h3>
+        <pre style="color:#fca5a5; font-size:0.85rem; text-align:left; max-width:600px; margin:20px auto; background:rgba(0,0,0,0.5); padding:16px; border-radius:8px; overflow-x:auto;">${errMsg}</pre>
+        <button class="analyze-btn" style="margin-top:20px; max-width:200px;" id="heroBackBtn">← Назад в Вики</button>
+      </div>
+    `;
+    document.getElementById('heroBackBtn')?.addEventListener('click', () => navigateTo('wiki'));
+  }
 }
