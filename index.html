@@ -111,6 +111,7 @@
   <section id="view-guides" class="view">
     <div style="display:flex;gap:12px;margin-bottom:24px;justify-content:center;flex-wrap:wrap;padding-top:10px;" id="guidesSwitcher">
       <button class="fb on" id="btnGuideAlecto" data-guide="alecto" style="padding:10px 20px;font-size:0.95rem;font-weight:700;">📜 Падение завесы (Алекто)</button>
+      <button class="fb" id="btnGuideEva" data-guide="eva" style="padding:10px 20px;font-size:0.95rem;font-weight:700;">📜 Протокол Свободы (Ева)</button>
       <button class="fb" id="btnGuideValdur" data-guide="valdur" style="padding:10px 20px;font-size:0.95rem;font-weight:700;">📜 День Суда (Валдур)</button>
       <button class="fb" id="btnGuidePol" data-guide="pol" style="padding:10px 20px;font-size:0.95rem;font-weight:700;">📜 Путь легенд (Астрид)</button>
       <button class="fb" id="btnGuideQuiz" data-guide="quiz" style="padding:10px 20px;font-size:0.95rem;font-weight:700;">📚 Викторина Знаний (День Знаний)</button>
@@ -3503,6 +3504,651 @@
 </footer>
 
 <button class="to-top" id="polToTop" aria-label="Наверх">↑</button>
+      </div>
+    </div>
+
+    <!-- ===================== EVA EVENT GUIDE CONTAINER ===================== -->
+    <div id="guide-container-eva" class="guide-container" style="display:none;">
+      <div class="eva-guide-wrap">
+        <a href="#evaSec1" class="skip-link">Перейти к содержанию</a>
+
+        <!-- Шапка гайда -->
+        <header class="site-header">
+          <div class="wrap header-inner">
+            <div class="brand">
+              <img src="/eva-guide/assets/img/energy-crystal.png" alt="Ева" class="brand-icon">
+              <div>
+                <div class="brand-title">Freedom Protocol</div>
+                <div class="brand-sub">Ева · Полный F2P-гайд</div>
+              </div>
+            </div>
+            <button class="nav-toggle" id="evaNavToggle" aria-expanded="false" aria-controls="evaSidebar">
+              <span>☰ Меню</span>
+            </button>
+          </div>
+        </header>
+
+        <!-- Герой-баннер -->
+        <section class="hero-section" id="hero">
+          <div class="wrap">
+            <div class="hero">
+              <div class="hero-content">
+                <div class="hero-tag">🔥 Новое событие 2026 · Hero Wars: Dominion Era</div>
+                <h1 class="hero-title">Протокол Свободы (Freedom Protocol)</h1>
+                <p class="hero-sub">Полное руководство по прохождению события Евы. Оптимизация бюджета кристаллов, прокачка реликвий, сборки для 750M урона по Архидемону и тактика получения 6★ Евы без лишних трат.</p>
+                <div class="hero-meta">
+                  <div class="meta-item">📅 <span>Длительность: <strong>7 дней</strong></span></div>
+                  <div class="meta-item">🛡️ <span>Формат: <strong>PVE-Главы + Архидемон</strong></span></div>
+                  <div class="meta-item">💎 <span>Валюты: <strong>Кристаллы, Монеты, Медальоны, Печати Бездны</strong></span></div>
+                </div>
+                <div class="hero-actions">
+                  <a href="#evaSec3" class="btn btn-primary">🧮 Калькулятор Прокачки</a>
+                  <a href="#evaSec6" class="btn btn-secondary">⚔️ Команды на Архидемона (750M)</a>
+                </div>
+              </div>
+              <div class="hero-media">
+                <div class="hero-avatar-wrap">
+                  <img src="/eva-guide/assets/img/energy-crystal.png" alt="Ева — Протокол Свободы" class="hero-avatar">
+                  <div class="hero-badge">ЕВА 6★</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Карточки ключевых ресурсов -->
+            <div class="key-grid">
+              <div class="key-item">
+                <img src="/eva-guide/assets/img/energy-crystal.png" alt="Энергетический кристалл">
+                <div class="key-val">Кристаллы</div>
+                <div class="key-lbl">Главный ресурс для прокачки реликвий</div>
+              </div>
+              <div class="key-item">
+                <img src="/eva-guide/assets/img/valor-coin.png" alt="Монета Доблести">
+                <div class="key-val">Монеты</div>
+                <div class="key-lbl">Для прокруток Алтаря Судьбы (2800 баз.)</div>
+              </div>
+              <div class="key-item">
+                <img src="/eva-guide/assets/img/sapphire-medallion.png" alt="Сапфировый медальон">
+                <div class="key-val">Медальоны</div>
+                <div class="key-lbl">Валюта Магазина (Тотемы и душа Евы)</div>
+              </div>
+              <div class="key-item">
+                <img src="/eva-guide/assets/img/amulet-of-battle.png" alt="Печати Бездны">
+                <div class="key-val">10 Печатей</div>
+                <div class="key-lbl">Уникальная награда за главы I–VI</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Основной макет (Сайдбар + Контент) -->
+        <div class="wrap main-layout">
+          <!-- Боковое меню -->
+          <aside class="sidebar" id="evaSidebar">
+            <nav class="sidebar-nav">
+              <div class="sidebar-title">Навигация по гайду</div>
+              <ul class="toc-list" id="evaToc">
+                <li><a href="#evaSec1" class="active">Обзор и механика <span class="toc-num">01</span></a></li>
+                <li><a href="#evaSec2">Реликвии и приоритеты <span class="toc-num">02</span></a></li>
+                <li><a href="#evaSec3">Калькулятор прокачки <span class="toc-num">03</span></a></li>
+                <li><a href="#evaSec4">Прохождение глав <span class="toc-num">04</span></a></li>
+                <li><a href="#evaSec5">Гайд по боссам и лавке <span class="toc-num">05</span></a></li>
+                <li><a href="#evaSec6">Архидемон 750M урона <span class="toc-num">06</span></a></li>
+                <li><a href="#evaSec7">Квесты и награды <span class="toc-num">07</span></a></li>
+                <li><a href="#evaSec8">Магазин и тотемы <span class="toc-num">08</span></a></li>
+                <li><a href="#evaSec9">Алтарь и шансы дропа <span class="toc-num">09</span></a></li>
+                <li><a href="#evaSec10">Трек звезд Евы <span class="toc-num">10</span></a></li>
+                <li><a href="#evaSec11">Чит-таблица уровней <span class="toc-num">11</span></a></li>
+                <li><a href="#evaSec12">Конвертация ресурсов <span class="toc-num">12</span></a></li>
+                <li><a href="#evaSec13">Дневной план (Day 1-7) <span class="toc-num">13</span></a></li>
+                <li><a href="#evaSec14">Источники и ссылки <span class="toc-num">14</span></a></li>
+                <li><a href="#evaSec15">Заключение и советы <span class="toc-num">15</span></a></li>
+              </ul>
+            </nav>
+          </aside>
+
+          <!-- Основной контент -->
+          <main>
+            <!-- Секция 1: Обзор -->
+            <section id="evaSec1">
+              <h2><span class="h-num">1</span> Обзор события «Протокол Свободы»</h2>
+              <p>Событие <strong>«Протокол Свободы» (Freedom Protocol)</strong> посвящено приходу нового героя — <strong>Евы (Eva)</strong>. Ивенты подобного формата являются одними из самых щедрых в Hero Wars: Dominion Era, предоставляя огромное количество бесплатных ресурсов, ценных сундуков и возможность получить Тотем всего за $40–$50 или накопленные ресурсы.</p>
+              
+              <div class="callout callout-gold">
+                <div class="callout-title">💡 Главное правило успешного прохождения</div>
+                <div>Не тратьте Энергетические Кристаллы в первый же день вслепую! Прежде чем вкладывать ресурсы в Амулет или Грааль, рассчитайте оптимальную стратегию в нашем интерактивном калькуляторе. Первоочередная прокачка <strong>Тома Жадности</strong> увеличит приток Монет Доблести в 2–3 раза.</div>
+              </div>
+
+              <h3>Ключевые особенности ивента</h3>
+              <ul>
+                <li><strong>Длительность:</strong> 7 дней (168 часов).</li>
+                <li><strong>9 Глав испытаний:</strong> 6 основных сюжетных глав (I–VI) и 3 элитные главы с Архидемоном (VII–IX).</li>
+                <li><strong>Новый уникальный ресурс:</strong> <em>Печати Бездны (Abyssal Seals)</em> — выдаются за прохождение глав I–VI (всего 10 штук).</li>
+                <li><strong>Бесплатный сброс попыток:</strong> Вы можете бесконечно перепроходить главы и тестировать сборки без потери ресурсов.</li>
+              </ul>
+            </section>
+
+            <!-- Секция 2: Реликвии -->
+            <section id="evaSec2">
+              <h2><span class="h-num">2</span> Реликвии и Их Прокачка</h2>
+              <p>В событии доступны 3 священные реликвии. Грамотное распределение кристаллов между ними определят, сколько прокруток Алтаря вы получите.</p>
+
+              <div class="relic-cards">
+                <div class="relic-card">
+                  <div class="relic-badge">Приоритет 1</div>
+                  <img src="/eva-guide/assets/img/tome-of-greed.png" alt="Том Жадности" class="relic-img">
+                  <div class="relic-name">Том Жадности</div>
+                  <div class="relic-desc">Дает мгновенный бонус Монет Доблести за каждый новый уровень + увеличивает пассивный коэффициент монет за потраченные кристаллы.</div>
+                  <div class="relic-priority">Прокачивать ПЕРВЫМ!</div>
+                </div>
+
+                <div class="relic-card">
+                  <div class="relic-badge">Приоритет 2</div>
+                  <img src="/eva-guide/assets/img/grail-of-generosity.png" alt="Грааль Щедрости" class="relic-img">
+                  <div class="relic-name">Грааль Щедрости</div>
+                  <div class="relic-desc">Снижает стоимость одной прокрутки в Алтаре Судьбы с базовых 2800 монет на 100 за каждый уровень реликвии.</div>
+                  <div class="relic-priority">Прокачивать ВТОРЫМ</div>
+                </div>
+
+                <div class="relic-card">
+                  <div class="relic-badge">Приоритет 3</div>
+                  <img src="/eva-guide/assets/img/amulet-of-battle.png" alt="Амулет Битвы" class="relic-img">
+                  <div class="relic-name">Амулет Битвы</div>
+                  <div class="relic-desc">Повышает уровень Амулета, открывая доступ к новым главам (5, 10, 15, 20, 25 ур.) и давая усиление атаки и здоровья.</div>
+                  <div class="relic-priority">Качать по порогам глав</div>
+                </div>
+              </div>
+
+              <h3>Пороги уровней Амулета Битвы</h3>
+              <div class="table-wrap">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Глава</th>
+                      <th>Название главы</th>
+                      <th>Треб. уровень Амулета</th>
+                      <th>Стоимость в Кристаллах</th>
+                      <th>Награда Монетами</th>
+                      <th>Медальоны</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Глава I</td><td>Огни Протокола</td><td>1 ур.</td><td>0 кр.</td><td>10 000</td><td>1 шт.</td></tr>
+                    <tr><td>Глава II</td><td>Прорыв Легенд</td><td>5 ур.</td><td>50 кр.</td><td>30 000</td><td>3 шт.</td></tr>
+                    <tr><td>Глава III</td><td>Пепел Бездны</td><td>10 ур.</td><td>160 кр.</td><td>50 000</td><td>5 шт.</td></tr>
+                    <tr><td>Глава IV</td><td>Голос Руин</td><td>15 ур.</td><td>320 кр.</td><td>70 000</td><td>7 шт.</td></tr>
+                    <tr><td>Глава V</td><td>Корни Свободы</td><td>20 ур.</td><td>530 кр.</td><td>120 000</td><td>17 шт.</td></tr>
+                    <tr><td>Глава VI</td><td>Протокол "Ева"</td><td>25 ур.</td><td>790 кр.</td><td>170 000</td><td>27 шт.</td></tr>
+                    <tr><td>Глава VII</td><td>Архидемон I</td><td>25 ур.</td><td>790 кр.</td><td>220 000</td><td>37 шт.</td></tr>
+                    <tr><td>Глава VIII</td><td>Архидемон II</td><td>25 ур.</td><td>790 кр.</td><td>270 000</td><td>47 шт.</td></tr>
+                    <tr><td>Глава IX</td><td>Архидемон III</td><td>25 ур.</td><td>790 кр.</td><td>320 000</td><td>57 шт.</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <!-- Секция 3: Калькулятор -->
+            <section id="evaSec3">
+              <h2><span class="h-num">3</span> Интерактивный Калькулятор Прокачки</h2>
+              <p>Введите ваш имеющийся бюджет Энергетических Кристаллов и выберите желаемые уровни реликвий, чтобы мгновенно рассчитать суммарный доход Монет Доблести, количество прокруток Алтаря и итоговый звездный уровень Евы.</p>
+
+              <div class="calculator-wrap" id="evaCalcWidget">
+                <div class="calc-header">
+                  <h3>🧮 Оптимизатор Ресурсов Евы</h3>
+                  <p>Подберите идеальный баланс между Томом, Граалем и Амулетом</p>
+                </div>
+
+                <div class="calc-controls">
+                  <div class="calc-field">
+                    <label class="calc-label" for="evaInpBudget">Бюджет Кристаллов: <strong id="evaOutBudget" class="val-highlight">530</strong></label>
+                    <input type="range" id="evaInpBudget" min="50" max="1500" step="10" value="530" class="calc-input">
+                  </div>
+                  <div class="calc-field">
+                    <label class="calc-label" for="evaInpTome">Уровень Тома Жадности: <strong id="evaOutTome" class="val-accent">6</strong></label>
+                    <input type="range" id="evaInpTome" min="1" max="15" step="1" value="6" class="calc-input">
+                  </div>
+                  <div class="calc-field">
+                    <label class="calc-label" for="evaInpGrail">Уровень Грааля Щедрости: <strong id="evaOutGrail" class="val-accent">4</strong></label>
+                    <input type="range" id="evaInpGrail" min="1" max="18" step="1" value="4" class="calc-input">
+                  </div>
+                  <div class="calc-field">
+                    <label class="calc-label" for="evaInpChapter">Целевая глава: <strong id="evaOutChapter" class="val-highlight">5</strong></label>
+                    <input type="range" id="evaInpChapter" min="1" max="9" step="1" value="5" class="calc-input">
+                  </div>
+                </div>
+
+                <div style="display:flex;gap:10px;justify-content:center;margin-bottom:20px;flex-wrap:wrap;">
+                  <button class="btn btn-secondary" data-preset="320,5,3,4">F2P Эконом (320 кр.)</button>
+                  <button class="btn btn-primary" data-preset="530,6,4,5">⭐ F2P Оптимум (530 кр.)</button>
+                  <button class="btn btn-secondary" data-preset="790,7,5,6">F2P Максимум (790 кр.)</button>
+                </div>
+
+                <div class="calc-results">
+                  <div class="calc-res-card">
+                    <div class="calc-res-val" id="evaResSpent">530</div>
+                    <div class="calc-res-lbl">Затраты Кристаллов</div>
+                  </div>
+                  <div class="calc-res-card">
+                    <div class="calc-res-val" id="evaResLeft">0</div>
+                    <div class="calc-res-lbl">Остаток Кристаллов</div>
+                  </div>
+                  <div class="calc-res-card">
+                    <div class="calc-res-val" id="evaResCoins">285 000</div>
+                    <div class="calc-res-lbl">Монет Доблести</div>
+                  </div>
+                  <div class="calc-res-card">
+                    <div class="calc-res-val" id="evaResPull">2 400</div>
+                    <div class="calc-res-lbl">Цена прокрутки</div>
+                  </div>
+                  <div class="calc-res-card">
+                    <div class="calc-res-val" id="evaResPulls">118.8</div>
+                    <div class="calc-res-lbl">Всего прокруток</div>
+                  </div>
+                  <div class="calc-res-card">
+                    <div class="calc-res-val" id="evaResStones">1 603</div>
+                    <div class="calc-res-lbl">Камней души Евы</div>
+                  </div>
+                  <div class="calc-res-card">
+                    <div class="calc-res-val" id="evaResStars">Ева 6★</div>
+                    <div class="calc-res-lbl">Звездность Евы</div>
+                  </div>
+                  <div class="calc-res-card">
+                    <div class="calc-res-val" id="evaResSapph">29</div>
+                    <div class="calc-res-lbl">Медальонов</div>
+                  </div>
+                </div>
+
+                <div id="evaCalcMsg" class="calc-msg"></div>
+
+                <h4 style="margin-top:24px;text-align:center;">Сравнение F2P стратегий прокачки</h4>
+                <div class="calc-bars">
+                  <div id="evaBarsStones"></div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Секция 4: Прохождение глав -->
+            <section id="evaSec4">
+              <h2><span class="h-num">4</span> Анализ Глав и Прохождение</h2>
+              <p>Каждая из 6 основных глав содержит по 5 этапов с боссами и мобами. За очистку глав выдаются фиксированные монеты, медальоны и Печати Бездны.</p>
+              
+              <div class="card">
+                <h3>Основные этапы глав I–VI</h3>
+                <p>В отличие от обычных кампаний, уровень ваших героев в ивенте определяется <strong>Лавкой Героев (Hero Stall)</strong>. На каждом этапе вы покупаете временных персонажей за монеты лавки (Stall Coins), которые обновляются после каждого перезапуска главы.</p>
+                <ul>
+                  <li><strong>Глава I (Огни Протокола):</strong> Базовое знакомство. Не требует вложений в Амулет (0 кр.).</li>
+                  <li><strong>Глава II (Прорыв Легенд):</strong> Требует 5 ур. Амулета (50 кр.). В награду вы получаете 30 000 Монет и 3 Медальона.</li>
+                  <li><strong>Глава III (Пепел Бездны):</strong> 10 ур. Амулета (160 кр.). Первая проверка урона. 50 000 Монет.</li>
+                  <li><strong>Глава IV (Голос Руин):</strong> 15 ур. Амулета (320 кр.). Позволяет получить Еву на 4★. 70 000 Монет.</li>
+                  <li><strong>Глава V (Корни Свободы):</strong> 20 ур. Амулета (530 кр.). Золотой стандарт F2P. Гарантирует Еву 5★–6★ и 120 000 Монет.</li>
+                  <li><strong>Глава VI (Протокол "Ева"):</strong> 25 ур. Амулета (790 кр.). Завершение основной сюжетной линии. 170 000 Монет и 27 Медальонов.</li>
+                </ul>
+              </div>
+
+              <h3>Главы VII–IX: Испытания Архидемона</h3>
+              <p>После прохождения 6-й главы открывается 3 элитных главы с Архидемоном. Здоровье Архидемона составляет 750 000 000 единиц. Каждая пройденная планка урона добавляет кристаллы и доблестные монеты.</p>
+            </section>
+
+            <!-- Секция 5: Гайд по Боссам -->
+            <section id="evaSec5">
+              <h2><span class="h-num">5</span> Гайд по Боссам и Сборкам Команд</h2>
+              <p>Ниже представлены рекомендуемые комбинации героев для автобоя и ручного прохождения главных боссов события.</p>
+
+              <div class="team-block">
+                <div class="team-header">
+                  <div class="team-title">🛡️ Топ-сборка для Глав I–IV (Универсальная)</div>
+                  <span class="val-highlight">Автобой 100%</span>
+                </div>
+                <div class="team-heroes">Астарот + Майя + Селеста + Арахна + Безликий</div>
+                <div class="team-notes">Обеспечивает постоянный контроль, массовый отхил и быстрый набор энергии для перезарядки ультимейтов.</div>
+              </div>
+
+              <div class="team-block">
+                <div class="team-header">
+                  <div class="team-title">⚔️ Физическая сборка для Глав V–VI</div>
+                  <span class="val-highlight">Высокий урон</span>
+                </div>
+                <div class="team-heroes">Галахад + Данте + Себастьян + Джу + Марта</div>
+                <div class="team-notes">Максимальный соло-урон по боссам с критическими ударами от Себастьяна и ускорением от Марты.</div>
+              </div>
+
+              <div class="team-block">
+                <div class="team-header">
+                  <div class="team-title">🔮 Магическая сборка для Сложных Боссов</div>
+                  <span class="val-highlight">Пробитие защиты</span>
+                </div>
+                <div class="team-heroes">Аристарх + Орион + Гелиос + Дориан + Небула</div>
+                <div class="team-notes">Бесконечный спам ракетами Ориона с подпиткой от ауры Дориана и пробитием магической защиты.</div>
+              </div>
+            </section>
+
+            <!-- Секция 6: Архидемон 750M -->
+            <section id="evaSec6">
+              <h2><span class="h-num">6</span> Вызов Архидемона: Как нанести 750M Урона</h2>
+              <p>Для выполнения главного квеста ивента и получения 60 Энергетических Кристаллов необходимо суммарно нанести 750 000 000 урона в бою с Архидемоном.</p>
+
+              <div class="callout callout-red">
+                <div class="callout-title">⚠️ Механика Архидемона</div>
+                <div>Архидемон периодически накладывает щиты и наносит массовый урон от скверны. Вам потребуется пачка с чистым уроном, щитами и быстрым снятием дебаффов.</div>
+              </div>
+
+              <div class="card">
+                <h3>Рекомендуемый состав на 750M Дамага</h3>
+                <p><strong>Пачка:</strong> Джу + Моджо + Альванор + Себастьян + Марта (Питомец: Аксель / Фенрис)</p>
+                <ul>
+                  <li><strong>Джу:</strong> Наносит урон в процентах от максимального здоровья Архидемона.</li>
+                  <li><strong>Моджо:</strong> Проклятие Моджо пассивно наносит дополнительный урон с каждой атакой Джу.</li>
+                  <li><strong>Альванор:</strong> Защищает от физических атак босса и лечит лесных союзников.</li>
+                  <li><strong>Себастьян:</strong> Снимает оглушение и увеличивает шанс критического удара.</li>
+                  <li><strong>Марта:</strong> Ускоряет всю команду в 2 раза под конец боя.</li>
+                </ul>
+              </div>
+            </section>
+
+            <!-- Секция 7: Квесты -->
+            <section id="evaSec7">
+              <h2><span class="h-num">7</span> Квесты и Награды События</h2>
+              <p>В событии действуют 7 основных цепочек квестов. Ниже приведен детальный список задач и суммарные награды.</p>
+
+              <div class="table-wrap">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Название цепочки</th>
+                      <th>Условие выполнения</th>
+                      <th>Суммарная награда</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td><strong>Боевая подготовка</strong></td><td>Выиграть 64 битвы в событии</td><td>3100 Очков Славы + 128 Кристаллов + Рамка #272</td></tr>
+                    <tr><td><strong>Изумрудное эхо</strong></td><td>Купить до 120 000 Изумрудов</td><td>40 675 Изумрудов (Возврат)</td></tr>
+                    <tr><td><strong>Поток изумрудов</strong></td><td>Потратить до 150 000 Изумрудов</td><td>90 Энергетических Кристаллов</td></tr>
+                    <tr><td><strong>Вызов Архидемона</strong></td><td>Нанести 750M урона Архидемону</td><td>2000 Очков Славы + 60 Кристаллов</td></tr>
+                    <tr><td><strong>Милые помощники</strong></td><td>Купить 10 питомцев в Лавке Героев</td><td>2000 Очков Славы + 40 Кристаллов</td></tr>
+                    <tr><td><strong>Эволюция Евы</strong></td><td>Повысить звездный уровень Евы (до 6★)</td><td>Сапфировые Медальоны + Камни Души</td></tr>
+                    <tr><td><strong>Искусство боя</strong></td><td>Пройти главы I–VI на 3 звезды</td><td>Печати Бездны + Монеты Доблести</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <!-- Секция 8: Магазин -->
+            <section id="evaSec8">
+              <h2><span class="h-num">8</span> Магазин События и Приоритеты Покупок</h2>
+              <p>Сапфировые Медальоны — ценнейшая валюта магазина. F2P-игроки могут накопить от 25 до 40+ медальонов за ивент.</p>
+
+              <div class="plan-grid">
+                <div class="plan-card featured">
+                  <div class="plan-header">
+                    <div class="plan-title">🏆 Приоритет #1: Тотем</div>
+                    <div class="plan-cost">100 Медальонов (или $40-50)</div>
+                  </div>
+                  <ul class="plan-features">
+                    <li>Сундук с Тотемом на выбор</li>
+                    <li>Главная цель для донатеров и накопленных ресурсов</li>
+                    <li>Максимальный буст мощи аккаунта</li>
+                  </ul>
+                </div>
+
+                <div class="plan-card">
+                  <div class="plan-header">
+                    <div class="plan-title">⭐ Приоритет #2: Камни Евы</div>
+                    <div class="plan-cost">1 Медальон = 15 Камней</div>
+                  </div>
+                  <ul class="plan-features">
+                    <li>Докачка Евы до 6★ (Абсолютная звезда)</li>
+                    <li>Если не хватает камней из Алтаря</li>
+                    <li>Безопасная вложенность</li>
+                  </ul>
+                </div>
+
+                <div class="plan-card">
+                  <div class="plan-header">
+                    <div class="plan-title">📦 Приоритет #3: Ресурсы</div>
+                    <div class="plan-cost">Остатки Медальонов</div>
+                  </div>
+                  <ul class="plan-features">
+                    <li>Сундуки камней облика</li>
+                    <li>Ядра хаоса & Руны символов</li>
+                    <li>Сундуки артефактов герметичные</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            <!-- Секция 9: Алтарь -->
+            <section id="evaSec9">
+              <h2><span class="h-num">9</span> Алтарь Судьбы и Шансы Выпадения</h2>
+              <p>Каждая прокрутка в Алтаре Судьбы стоит 2800 Монет Доблести (без учета скидки от Грааля Щедрости). При прокачке Грааля до 18 уровня цена падает до 1000 монет.</p>
+
+              <div class="table-wrap">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Награда в Алтаре</th>
+                      <th>Шанс выпадения</th>
+                      <th>Количество</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Камни души Евы</td><td><strong>65%</strong></td><td>10 – 25 шт.</td></tr>
+                    <tr><td>Сапфировые медальоны (Джекпот)</td><td><strong>10%</strong></td><td>1 – 3 шт.</td></tr>
+                    <tr><td>Энергетические кристаллы</td><td><strong>15%</strong></td><td>5 – 15 шт.</td></tr>
+                    <tr><td>Сундуки ресурсов героев</td><td><strong>10%</strong></td><td>2 – 5 шт.</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <!-- Секция 10: Трек звезд -->
+            <section id="evaSec10">
+              <h2><span class="h-num">10</span> Звездный Трек Прокачки Евы</h2>
+              <p>Для повышения звездности Евы требуется следующее суммарное количество камней души:</p>
+
+              <div class="star-track">
+                <div class="star-card">
+                  <div class="star-stars">1★</div>
+                  <div class="star-stones">10 камней</div>
+                </div>
+                <div class="star-card">
+                  <div class="star-stars">2★</div>
+                  <div class="star-stones">30 камней</div>
+                </div>
+                <div class="star-card">
+                  <div class="star-stars">3★</div>
+                  <div class="star-stones">80 камней</div>
+                </div>
+                <div class="star-card">
+                  <div class="star-stars">4★</div>
+                  <div class="star-stones">180 камней</div>
+                </div>
+                <div class="star-card">
+                  <div class="star-stars">5★</div>
+                  <div class="star-stones">330 камней</div>
+                </div>
+                <div class="star-card" style="border-color:var(--eva-gold);background:rgba(240,178,60,.1);">
+                  <div class="star-stars">6★ (Абс)</div>
+                  <div class="star-stones">630 камней</div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Секция 11: Чит-таблица -->
+            <section id="evaSec11">
+              <h2><span class="h-num">11</span> Чит-таблица Уровней Реликвий</h2>
+              <p>Справочная таблица затрат на повышение уровня Тома Жадности и Грааля Щедрости.</p>
+
+              <div class="card">
+                <div class="cheat-row" style="font-weight:700;color:var(--eva-gold);">
+                  <div>Иконка</div>
+                  <div>Уровень</div>
+                  <div></div>
+                  <div>Шаг стоимости</div>
+                  <div>Суммарная цена</div>
+                  <div style="text-align:right;">Эффект</div>
+                </div>
+                <div class="cheat-row">
+                  <img src="/eva-guide/assets/img/tome-of-greed.png" alt="Том">
+                  <div class="cheat-name">Том Жадности</div>
+                  <div class="cheat-arrow">→</div>
+                  <div class="cheat-lvl">Ур. 2</div>
+                  <div class="cheat-cost">10 кр. (всего 10)</div>
+                  <div class="cheat-note">+1 000 монет мгновенно</div>
+                </div>
+                <div class="cheat-row">
+                  <img src="/eva-guide/assets/img/tome-of-greed.png" alt="Том">
+                  <div class="cheat-name">Том Жадности</div>
+                  <div class="cheat-arrow">→</div>
+                  <div class="cheat-lvl">Ур. 5</div>
+                  <div class="cheat-cost">40 кр. (всего 100)</div>
+                  <div class="cheat-note">+16 000 монет мгновенно</div>
+                </div>
+                <div class="cheat-row">
+                  <img src="/eva-guide/assets/img/tome-of-greed.png" alt="Том">
+                  <div class="cheat-name">Том Жадности</div>
+                  <div class="cheat-arrow">→</div>
+                  <div class="cheat-lvl">Ур. 7</div>
+                  <div class="cheat-cost">60 кр. (всего 210)</div>
+                  <div class="cheat-note">+36 000 монет мгновенно</div>
+                </div>
+                <div class="cheat-row">
+                  <img src="/eva-guide/assets/img/grail-of-generosity.png" alt="Грааль">
+                  <div class="cheat-name">Грааль Щедрости</div>
+                  <div class="cheat-arrow">→</div>
+                  <div class="cheat-lvl">Ур. 4</div>
+                  <div class="cheat-cost">30 кр. (всего 60)</div>
+                  <div class="cheat-note">Цена прокрутки: 2 400</div>
+                </div>
+                <div class="cheat-row cheat-row-final">
+                  <img src="/eva-guide/assets/img/grail-of-generosity.png" alt="Грааль">
+                  <div class="cheat-name">Грааль Щедрости</div>
+                  <div class="cheat-arrow">→</div>
+                  <div class="cheat-lvl">Ур. 18 (Макс)</div>
+                  <div class="cheat-cost">100 кр. (всего 1 450)</div>
+                  <div class="cheat-note">Цена прокрутки: 1 000</div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Секция 12: Конвертация -->
+            <section id="evaSec12">
+              <h2><span class="h-num">12</span> Финальная Конвертация Ресурсов</h2>
+              <p>По окончании 7-дневного события все оставшиеся неиспользованные ресурсы автоматически конвертируются в <strong>Сундуки ресурсов героя (Hero Resource Chests)</strong> по следующему курсу:</p>
+
+              <div class="table-wrap">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Оставшаяся валюта</th>
+                      <th>Коэффициент конвертации</th>
+                      <th>Получаемая награда</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>1 Сапфировый медальон</td><td>→ 1 : 10</td><td>10 Сундуков ресурсов героя</td></tr>
+                    <tr><td>2 Энергетических кристалла</td><td>→ 2 : 1</td><td>1 Сундук ресурсов героя</td></tr>
+                    <tr><td>1 500 Монет Доблести</td><td>→ 1500 : 1</td><td>1 Сундук ресурсов героя</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <!-- Секция 13: Дневной план -->
+            <section id="evaSec13">
+              <h2><span class="h-num">13</span> Пошаговый Дневной План (Day 1–7)</h2>
+              <div class="timeline">
+                <div class="tl-day">
+                  <div class="tl-marker">День 1</div>
+                  <div class="tl-content">
+                    <h4>Сбор ресурсов и качание Тома</h4>
+                    <ul>
+                      <li>Пройдите Главы I и II (не требует больших затрат кристаллов).</li>
+                      <li>Вложите все начальные кристаллы исключительно в <strong>Том Жадности</strong> (поднимите до 4–5 уровня).</li>
+                      <li>Не совершайте прокрутки в Алтаре Судьбы в первый день.</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="tl-day">
+                  <div class="tl-marker">День 2–3</div>
+                  <div class="tl-content">
+                    <h4>Прохождение Глав III–IV и Грааль</h4>
+                    <ul>
+                      <li>Поднимите Амулет Битвы до 10–15 уровня, открыв Главы III и IV.</li>
+                      <li>Качайте Грааль Щедрости до 3–4 уровня для снижения цены прокрутки до 2400–2500 монет.</li>
+                      <li>Сделайте первую волну из 30–40 прокруток в Алтаре.</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="tl-day">
+                  <div class="tl-marker">День 4–5</div>
+                  <div class="tl-content">
+                    <h4>Глава V и Поход на Архидемона</h4>
+                    <ul>
+                      <li>Достигните 20 уровня Амулета (Глава V). Это ключевая точка F2P-оптимума.</li>
+                      <li>Соберите рекомендованную команду (Джу + Моджо + Альванор + Себастьян + Марта) и нанесите 750M урона по Архидемону.</li>
+                      <li>Заберите награды из квестовой цепочки «Вызов Архидемона».</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="tl-day">
+                  <div class="tl-marker">День 6–7</div>
+                  <div class="tl-content">
+                    <h4>Финализация и Закупка в Магазине</h4>
+                    <ul>
+                      <li>Потратьте оставшиеся Монеты Доблести в Алтаре Судьбы.</li>
+                      <li>Проверьте баланс Сапфировых Медальонов и докупите необходимые Камни Души Евы до 5★ или 6★.</li>
+                      <li>Обменяйте остаток медальонов на сундуки ресурсов до закрытия магазина.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Секция 14: Источники -->
+            <section id="evaSec14">
+              <h2><span class="h-num">14</span> Источники и Полезные Ссылки</h2>
+              <div class="card">
+                <ul class="sources-list">
+                  <li>
+                    <a href="https://hwdaily.win/eva-event" target="_blank" rel="noopener">🌐 HWDaily — Freedom Protocol (Eva Event)</a>
+                    <span>Подробный англоязычный гайд, базы данных датамайна и оригинальные расчеты шансов.</span>
+                  </li>
+                  <li>
+                    <a href="https://herowars-olympus.com/hero-wars-freedom-protocol-eva-adventure-2026/" target="_blank" rel="noopener">🏛️ Hero Wars Olympus — Eva Adventure 2026</a>
+                    <span>Аналитика мета-команд, разбор навыков Евы и советы по сборам для Архидемона.</span>
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <!-- Секция 15: Заключение -->
+            <section id="evaSec15">
+              <h2><span class="h-num">15</span> Заключение и Финальные Советы</h2>
+              <p>Событие «Протокол Свободы» — отличная возможность прокачать нового сильного героя до 5★ или 6★ абсолютно без вложений реальных денег. Следуя стратегии <strong>"Том Жадности 6 -> Грааль 4 -> Амулет 20 (Глава V)"</strong>, вы получите максимальную отдачу от каждого вложенного кристалла.</p>
+              
+              <div class="callout callout-green">
+                <div class="callout-title">✅ Чек-лист перед завершением ивента</div>
+                <ul>
+                  <li>Убедитесь, что забрали все награды за квесты «Боевая подготовка» и «Архидемон».</li>
+                  <li>Потратьте все Монеты Доблести — не оставляйте их на автоконвертацию, так как прокрутки Алтаря выгоднее!</li>
+                  <li>Не забудьте потратить Сапфировые Медальоны в магазине ивента.</li>
+                </ul>
+              </div>
+            </section>
+          </main>
+        </div>
+
+        <!-- Подвал гайда -->
+        <footer class="site-footer">
+          <div class="wrap">
+            <p>Протокол Свободы · Ева · Hero Wars: Dominion Era Guide · 2026</p>
+            <p class="footer-dim">Все материалы и графические элементы принадлежат Nexters. Гайд носит справочный характер.</p>
+          </div>
+        </footer>
+
+        <button class="to-top" id="evaToTop" aria-label="Наверх">↑</button>
       </div>
     </div>
   </section> <!-- CLOSE view-guides -->

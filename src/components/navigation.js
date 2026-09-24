@@ -45,21 +45,29 @@ export function navigateTo(targetView, param = null) {
 
 export function switchGuide(guideName) {
   const containerAlecto = document.getElementById('guide-container-alecto');
+  const containerEva    = document.getElementById('guide-container-eva');
   const containerValdur = document.getElementById('guide-container-valdur');
   const containerPol    = document.getElementById('guide-container-pol');
   const btnAlecto = document.getElementById('btnGuideAlecto');
+  const btnEva    = document.getElementById('btnGuideEva');
   const btnValdur = document.getElementById('btnGuideValdur');
   const btnPol    = document.getElementById('btnGuidePol');
 
   if (containerAlecto) containerAlecto.style.display = 'none';
+  if (containerEva)    containerEva.style.display    = 'none';
   if (containerValdur) containerValdur.style.display = 'none';
-  if (containerPol)    containerPol.style.display = 'none';
+  if (containerPol)    containerPol.style.display    = 'none';
 
   if (btnAlecto) btnAlecto.classList.remove('on');
+  if (btnEva)    btnEva.classList.remove('on');
   if (btnValdur) btnValdur.classList.remove('on');
   if (btnPol)    btnPol.classList.remove('on');
 
-  if (guideName === 'valdur') {
+  if (guideName === 'eva') {
+    if (containerEva) containerEva.style.display = 'block';
+    if (btnEva) btnEva.classList.add('on');
+    location.hash = 'guides/eva';
+  } else if (guideName === 'valdur') {
     if (containerValdur) containerValdur.style.display = 'block';
     if (btnValdur) btnValdur.classList.add('on');
     location.hash = 'guides/valdur';
@@ -101,7 +109,9 @@ export function handleHashChange() {
       return;
     }
     navigateTo('guides');
-    if (sub === 'valdur') {
+    if (sub === 'eva') {
+      switchGuide('eva');
+    } else if (sub === 'valdur') {
       switchGuide('valdur');
     } else if (sub === 'pol') {
       switchGuide('pol');
@@ -141,10 +151,12 @@ export function initNavigation() {
   });
 
   const btnAlecto = document.getElementById('btnGuideAlecto');
+  const btnEva    = document.getElementById('btnGuideEva');
   const btnValdur = document.getElementById('btnGuideValdur');
   const btnPol    = document.getElementById('btnGuidePol');
   const btnQuiz   = document.getElementById('btnGuideQuiz');
   if (btnAlecto) btnAlecto.addEventListener('click', () => switchGuide('alecto'));
+  if (btnEva)    btnEva.addEventListener('click', () => switchGuide('eva'));
   if (btnValdur) btnValdur.addEventListener('click', () => switchGuide('valdur'));
   if (btnPol)    btnPol.addEventListener('click', () => switchGuide('pol'));
   if (btnQuiz)   btnQuiz.addEventListener('click', () => navigateTo('quiz'));

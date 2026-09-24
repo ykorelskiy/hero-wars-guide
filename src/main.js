@@ -1,6 +1,7 @@
 import './style.css';
 import './styles/valdur.css';
 import './styles/alecto.css';
+import './styles/eva.css';
 import './styles/pol.css';
 import './styles/quiz.css';
 import './styles/titans.css';
@@ -13,6 +14,7 @@ import { initTeams } from './views/teams.js';
 import { initMatrix } from './views/matrix.js';
 import { initValdurGuide } from './views/valdurGuide.js';
 import { initAlectoGuide } from './views/alectoGuide.js';
+import { initEvaGuide } from './views/evaGuide.js';
 import { initPolGuide } from './views/polGuide.js';
 import { initQuizGuide } from './views/quizGuide.js';
 import { initTitansGuide } from './views/titansGuide.js';
@@ -56,6 +58,7 @@ async function boot() {
     initMatrix();
     initValdurGuide();
     initAlectoGuide();
+    initEvaGuide();
     initPolGuide();
     initQuizGuide();
     initTitansGuide();

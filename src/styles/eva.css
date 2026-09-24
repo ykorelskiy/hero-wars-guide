@@ -1,0 +1,543 @@
+/* =========================================================
+   Freedom Protocol (Ева) — F2P гайд
+   Hero Wars: Dominion Era
+   ========================================================= */
+
+/* ---------- Переменные ---------- */
+:root {
+  --eva-bg:            #0e1220;
+  --eva-bg-alt:        #141a2e;
+  --eva-surface:       #1a2138;
+  --eva-surface-2:     #212a45;
+  --eva-border:        #2c3654;
+  --eva-border-soft:   #232c48;
+
+  --eva-text:          #e6ebf7;
+  --eva-text-dim:      #9aa6c4;
+  --eva-text-faint:    #6b7799;
+
+  --eva-accent:        #e85d3a;
+  --eva-accent-glow:   #ff7b54;
+  --eva-gold:          #f0b23c;
+  --eva-gold-dim:      #b8862a;
+  --eva-orange:        #ff9f43;
+  --eva-blue:          #4d9de0;
+  --eva-cyan:          #45c9d6;
+  --eva-green:         #4ec97e;
+  --eva-red:           #e3574f;
+
+  --eva-radius:        12px;
+  --eva-radius-sm:     8px;
+  --eva-radius-lg:     18px;
+
+  --eva-shadow:        0 4px 20px rgba(0,0,0,.35);
+  --eva-shadow-lg:     0 10px 40px rgba(0,0,0,.45);
+
+  --eva-maxw:          1180px;
+  --eva-sidebar-w:     250px;
+
+  --eva-font: "Segoe UI", "Inter", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --eva-mono: "JetBrains Mono", "SF Mono", Consolas, "Liberation Mono", monospace;
+}
+
+/* ---------- Сброс ---------- */
+.eva-guide-wrap *, .eva-guide-wrap *::before, .eva-guide-wrap *::after { box-sizing: border-box; }
+
+.eva-guide-wrap {
+  margin: 0;
+  font-family: var(--eva-font);
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--eva-text);
+  background: var(--eva-bg);
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(232,93,58,.18), transparent),
+    radial-gradient(ellipse 60% 40% at 90% 10%, rgba(255,123,84,.08), transparent);
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+}
+
+.eva-guide-wrap img { max-width: 100%; height: auto; display: block; }
+
+.eva-guide-wrap a { color: var(--eva-blue); text-decoration: none; transition: color .18s; }
+.eva-guide-wrap a:hover { color: var(--eva-cyan); }
+
+.eva-guide-wrap .wrap { max-width: var(--eva-maxw); margin: 0 auto; padding: 0 20px; }
+
+.eva-guide-wrap .skip-link {
+  position: absolute; left: -9999px;
+  background: var(--eva-gold); color: #14161f;
+  padding: 10px 18px; border-radius: var(--eva-radius-sm); z-index: 999;
+}
+.eva-guide-wrap .skip-link:focus { left: 16px; top: 16px; }
+
+/* ---------- Шапка ---------- */
+.eva-guide-wrap .site-header {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(14,18,32,.88);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--eva-border-soft);
+}
+.eva-guide-wrap .header-inner {
+  display: flex; align-items: center; justify-content: space-between;
+  height: 64px;
+}
+.eva-guide-wrap .brand { display: flex; align-items: center; gap: 12px; }
+.eva-guide-wrap .brand-icon {
+  width: 40px; height: 40px; border-radius: 10px;
+  border: 1.5px solid var(--eva-accent);
+  box-shadow: 0 0 16px rgba(232,93,58,.4);
+}
+.eva-guide-wrap .brand-title {
+  font-size: 17px; font-weight: 700; letter-spacing: .3px;
+  background: linear-gradient(90deg, var(--eva-accent-glow), var(--eva-gold));
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.eva-guide-wrap .brand-sub { font-size: 12px; color: var(--eva-text-faint); }
+
+.eva-guide-wrap .nav-toggle {
+  display: none; background: transparent; border: 1px solid var(--eva-border);
+  color: var(--eva-text); padding: 8px 12px; border-radius: var(--eva-radius-sm);
+  cursor: pointer; font-size: 14px; align-items: center; gap: 6px;
+}
+.eva-guide-wrap .nav-toggle:hover { background: var(--eva-surface-2); }
+
+/* ---------- Герой-баннер ---------- */
+.eva-guide-wrap .hero-section {
+  padding: 40px 0 20px;
+  background: linear-gradient(180deg, rgba(232,93,58,.12) 0%, transparent 100%);
+  border-bottom: 1px solid var(--eva-border-soft);
+}
+.eva-guide-wrap .hero {
+  display: grid; grid-template-columns: 1fr 340px; gap: 40px;
+  align-items: center;
+  background: var(--eva-surface);
+  border: 1px solid var(--eva-border);
+  border-radius: var(--eva-radius-lg);
+  padding: 36px;
+  box-shadow: var(--eva-shadow-lg);
+  position: relative; overflow: hidden;
+}
+.eva-guide-wrap .hero::before {
+  content: ""; position: absolute; top: -120px; right: -80px;
+  width: 320px; height: 320px;
+  background: radial-gradient(circle, rgba(232,93,58,.22), transparent 70%);
+  pointer-events: none;
+}
+.eva-guide-wrap .hero-tag {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 4px 12px; border-radius: 20px;
+  background: rgba(232,93,58,.15); border: 1px solid rgba(232,93,58,.35);
+  color: var(--eva-accent-glow); font-size: 12.5px; font-weight: 600;
+  letter-spacing: .5px; text-transform: uppercase; margin-bottom: 14px;
+}
+.eva-guide-wrap .hero-title {
+  font-size: 36px; font-weight: 800; line-height: 1.15;
+  margin: 0 0 12px; letter-spacing: -.5px;
+  background: linear-gradient(135deg, #ffffff 30%, var(--eva-accent-glow) 100%);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.eva-guide-wrap .hero-sub {
+  font-size: 16px; color: var(--eva-text-dim); margin: 0 0 24px;
+  max-width: 600px;
+}
+.eva-guide-wrap .hero-meta {
+  display: flex; flex-wrap: wrap; gap: 18px; margin-bottom: 26px;
+  font-size: 13.5px; color: var(--eva-text-dim);
+}
+.eva-guide-wrap .meta-item { display: flex; align-items: center; gap: 6px; }
+.eva-guide-wrap .meta-item strong { color: var(--eva-text); }
+
+.eva-guide-wrap .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.eva-guide-wrap .btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 11px 22px; border-radius: var(--eva-radius-sm);
+  font-size: 14px; font-weight: 650; cursor: pointer;
+  transition: all .2s; border: none; text-decoration: none !important;
+}
+.eva-guide-wrap .btn-primary {
+  background: linear-gradient(135deg, var(--eva-accent), #c44324);
+  color: #ffffff; box-shadow: 0 4px 16px rgba(232,93,58,.4);
+}
+.eva-guide-wrap .btn-primary:hover {
+  transform: translateY(-2px); box-shadow: 0 6px 22px rgba(232,93,58,.55); color: #fff;
+}
+.eva-guide-wrap .btn-secondary {
+  background: var(--eva-surface-2); color: var(--eva-text);
+  border: 1px solid var(--eva-border);
+}
+.eva-guide-wrap .btn-secondary:hover {
+  background: var(--eva-border); color: #fff; transform: translateY(-1px);
+}
+
+.eva-guide-wrap .hero-media { position: relative; text-align: center; }
+.eva-guide-wrap .hero-avatar-wrap {
+  position: relative; width: 240px; height: 240px; margin: 0 auto;
+}
+.eva-guide-wrap .hero-avatar {
+  width: 100%; height: 100%; object-fit: cover; border-radius: 50%;
+  border: 3px solid var(--eva-accent);
+  box-shadow: 0 0 40px rgba(232,93,58,.4);
+}
+.eva-guide-wrap .hero-badge {
+  position: absolute; bottom: 8px; right: 8px;
+  background: var(--eva-gold); color: #111; font-weight: 800; font-size: 12px;
+  padding: 4px 10px; border-radius: 12px; box-shadow: var(--eva-shadow);
+}
+
+/* ---------- Карточки ключевых показателей ---------- */
+.eva-guide-wrap .key-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
+  margin-top: 24px;
+}
+.eva-guide-wrap .key-item {
+  background: var(--eva-surface); border: 1px solid var(--eva-border);
+  border-radius: var(--eva-radius); padding: 18px 16px;
+  text-align: center; transition: border-color .2s, transform .2s;
+}
+.eva-guide-wrap .key-item:hover {
+  border-color: var(--eva-accent); transform: translateY(-2px);
+}
+.eva-guide-wrap .key-item img {
+  width: 48px; height: 48px; margin: 0 auto 10px; object-fit: contain;
+}
+.eva-guide-wrap .key-val {
+  font-size: 24px; font-weight: 800; color: var(--eva-gold);
+  line-height: 1.1; margin-bottom: 4px;
+}
+.eva-guide-wrap .key-lbl { font-size: 12.5px; color: var(--eva-text-dim); }
+
+/* ---------- Макет контента (Sidebar + Main) ---------- */
+.eva-guide-wrap .main-layout {
+  display: grid; grid-template-columns: var(--eva-sidebar-w) 1fr;
+  gap: 32px; padding: 32px 0 60px;
+}
+
+.eva-guide-wrap .sidebar { position: sticky; top: 84px; max-height: calc(100vh - 100px); overflow-y: auto; }
+.eva-guide-wrap .sidebar-nav {
+  background: var(--eva-surface); border: 1px solid var(--eva-border);
+  border-radius: var(--eva-radius); padding: 16px;
+}
+.eva-guide-wrap .sidebar-title {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: .8px; color: var(--eva-text-faint); margin-bottom: 12px;
+  padding-left: 8px;
+}
+.eva-guide-wrap .toc-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 4px; }
+.eva-guide-wrap .toc-list a {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 8px 12px; border-radius: var(--eva-radius-sm);
+  color: var(--eva-text-dim); font-size: 13.5px; font-weight: 550;
+  transition: all .18s;
+}
+.eva-guide-wrap .toc-list a:hover {
+  background: var(--eva-surface-2); color: var(--eva-text);
+}
+.eva-guide-wrap .toc-list a.active {
+  background: rgba(232,93,58,.15); color: var(--eva-accent-glow);
+  font-weight: 700; border-left: 3px solid var(--eva-accent);
+}
+.eva-guide-wrap .toc-num {
+  font-size: 11px; font-weight: 700; color: var(--eva-text-faint);
+  background: rgba(255,255,255,.06); padding: 2px 6px; border-radius: 4px;
+}
+
+/* ---------- Секции ---------- */
+.eva-guide-wrap main section { margin-bottom: 56px; scroll-margin-top: 80px; }
+
+.eva-guide-wrap h2 {
+  font-size: 26px; font-weight: 800; margin: 0 0 20px;
+  display: flex; align-items: center; gap: 12px;
+  color: var(--eva-text); letter-spacing: -.3px;
+  border-bottom: 1px solid var(--eva-border-soft); padding-bottom: 12px;
+}
+.eva-guide-wrap .h-num {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 34px; height: 34px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--eva-accent), #c44324);
+  color: #fff; font-size: 15px; font-weight: 800; flex-shrink: 0;
+  box-shadow: 0 2px 10px rgba(232,93,58,.4);
+}
+
+.eva-guide-wrap h3 {
+  font-size: 19px; font-weight: 700; margin: 28px 0 14px;
+  color: var(--eva-gold); display: flex; align-items: center; gap: 8px;
+}
+.eva-guide-wrap h4 { font-size: 16px; font-weight: 650; margin: 20px 0 10px; color: var(--eva-text); }
+
+.eva-guide-wrap p { margin: 0 0 14px; color: var(--eva-text-dim); }
+.eva-guide-wrap p strong { color: var(--eva-text); }
+
+/* ---------- Колл-ауты (Инфоблоки) ---------- */
+.eva-guide-wrap .callout {
+  background: var(--eva-surface); border: 1px solid var(--eva-border);
+  border-left: 4px solid var(--eva-accent);
+  border-radius: var(--eva-radius-sm); padding: 18px 22px;
+  margin: 20px 0; font-size: 14.5px;
+}
+.eva-guide-wrap .callout-title {
+  font-weight: 700; font-size: 15px; color: var(--eva-accent-glow);
+  margin-bottom: 6px; display: flex; align-items: center; gap: 8px;
+}
+.eva-guide-wrap .callout-gold { border-left-color: var(--eva-gold); }
+.eva-guide-wrap .callout-gold .callout-title { color: var(--eva-gold); }
+.eva-guide-wrap .callout-green { border-left-color: var(--eva-green); }
+.eva-guide-wrap .callout-green .callout-title { color: var(--eva-green); }
+.eva-guide-wrap .callout-red { border-left-color: var(--eva-red); }
+.eva-guide-wrap .callout-red .callout-title { color: var(--eva-red); }
+
+/* ---------- Карточки и сетки ---------- */
+.eva-guide-wrap .card {
+  background: var(--eva-surface); border: 1px solid var(--eva-border);
+  border-radius: var(--eva-radius); padding: 22px; margin-bottom: 20px;
+}
+
+.eva-guide-wrap .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.eva-guide-wrap .relic-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+
+.eva-guide-wrap .relic-card {
+  background: var(--eva-surface); border: 1px solid var(--eva-border);
+  border-radius: var(--eva-radius); padding: 20px;
+  display: flex; flex-direction: column; align-items: center; text-align: center;
+  position: relative; overflow: hidden; transition: transform .2s;
+}
+.eva-guide-wrap .relic-card:hover { transform: translateY(-3px); border-color: var(--eva-accent); }
+.eva-guide-wrap .relic-badge {
+  position: absolute; top: 12px; right: 12px;
+  font-size: 11px; font-weight: 700; text-transform: uppercase;
+  padding: 3px 8px; border-radius: 10px; background: rgba(232,93,58,.2);
+  color: var(--eva-accent-glow); border: 1px solid rgba(232,93,58,.4);
+}
+.eva-guide-wrap .relic-img { width: 72px; height: 72px; margin-bottom: 12px; object-fit: contain; }
+.eva-guide-wrap .relic-name { font-size: 17px; font-weight: 700; color: var(--eva-text); margin-bottom: 6px; }
+.eva-guide-wrap .relic-desc { font-size: 13px; color: var(--eva-text-dim); flex: 1; margin-bottom: 12px; }
+.eva-guide-wrap .relic-priority {
+  width: 100%; padding: 8px; border-radius: var(--eva-radius-sm);
+  background: var(--eva-surface-2); font-size: 12.5px; font-weight: 650;
+  color: var(--eva-gold); text-align: center;
+}
+
+/* ---------- Таблицы ---------- */
+.eva-guide-wrap .table-wrap {
+  overflow-x: auto; margin: 20px 0;
+  border: 1px solid var(--eva-border); border-radius: var(--eva-radius);
+  background: var(--eva-surface);
+}
+.eva-guide-wrap .data-table {
+  width: 100%; border-collapse: collapse; text-align: left;
+  font-size: 14px;
+}
+.eva-guide-wrap .data-table th {
+  background: var(--eva-surface-2); color: var(--eva-text);
+  font-weight: 700; padding: 12px 16px; border-bottom: 1px solid var(--eva-border);
+}
+.eva-guide-wrap .data-table td {
+  padding: 12px 16px; border-bottom: 1px solid var(--eva-border-soft);
+  color: var(--eva-text-dim);
+}
+.eva-guide-wrap .data-table tr:last-child td { border-bottom: none; }
+.eva-guide-wrap .data-table tr:hover td { background: rgba(255,255,255,.02); }
+
+.eva-guide-wrap .val-highlight { color: var(--eva-gold); font-weight: 700; }
+.eva-guide-wrap .val-accent { color: var(--eva-accent-glow); font-weight: 700; }
+
+/* ---------- Калькулятор ---------- */
+.eva-guide-wrap .calculator-wrap {
+  background: linear-gradient(135deg, var(--eva-surface) 0%, var(--eva-bg-alt) 100%);
+  border: 1.5px solid var(--eva-accent);
+  border-radius: var(--eva-radius-lg); padding: 28px;
+  box-shadow: 0 0 30px rgba(232,93,58,.15); margin: 24px 0;
+}
+.eva-guide-wrap .calc-header { margin-bottom: 24px; text-align: center; }
+.eva-guide-wrap .calc-header h3 { justify-content: center; margin-top: 0; font-size: 22px; }
+
+.eva-guide-wrap .calc-controls {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+  margin-bottom: 24px; background: var(--eva-surface-2);
+  padding: 20px; border-radius: var(--eva-radius);
+  border: 1px solid var(--eva-border);
+}
+.eva-guide-wrap .calc-field { display: flex; flex-direction: column; gap: 8px; }
+.eva-guide-wrap .calc-label { font-size: 13px; font-weight: 650; color: var(--eva-text-dim); }
+.eva-guide-wrap .calc-input, .eva-guide-wrap .calc-select {
+  background: var(--eva-bg); border: 1px solid var(--eva-border);
+  color: var(--eva-text); padding: 10px 14px; border-radius: var(--eva-radius-sm);
+  font-size: 15px; font-weight: 600; outline: none; transition: border-color .18s;
+}
+.eva-guide-wrap .calc-input:focus, .eva-guide-wrap .calc-select:focus {
+  border-color: var(--eva-accent); box-shadow: 0 0 0 3px rgba(232,93,58,.2);
+}
+
+.eva-guide-wrap .calc-results {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
+  margin-bottom: 24px;
+}
+.eva-guide-wrap .calc-res-card {
+  background: var(--eva-surface); border: 1px solid var(--eva-border);
+  border-radius: var(--eva-radius); padding: 16px; text-align: center;
+}
+.eva-guide-wrap .calc-res-val {
+  font-size: 24px; font-weight: 800; color: var(--eva-gold);
+  margin-bottom: 4px; font-variant-numeric: tabular-nums;
+}
+.eva-guide-wrap .calc-res-lbl { font-size: 12px; color: var(--eva-text-dim); }
+
+.eva-guide-wrap .calc-bars { display: grid; gap: 12px; margin-top: 20px; }
+.eva-guide-wrap .bar-row {
+  display: grid; grid-template-columns: 140px 1fr 70px; gap: 14px;
+  align-items: center; font-size: 13.5px;
+}
+.eva-guide-wrap .bar-name { font-weight: 600; color: var(--eva-text); }
+.eva-guide-wrap .bar-track {
+  height: 14px; background: var(--eva-bg); border-radius: 7px;
+  overflow: hidden; border: 1px solid var(--eva-border-soft); position: relative;
+}
+.eva-guide-wrap .bar-fill {
+  height: 100%; background: linear-gradient(90deg, var(--eva-accent), var(--eva-gold));
+  border-radius: 7px; transition: width .5s cubic-bezier(.4,0,.2,1); width: 0%;
+}
+.eva-guide-wrap .bar-val { font-weight: 700; color: var(--eva-gold); text-align: right; }
+
+/* ---------- Планы прокачки ---------- */
+.eva-guide-wrap .plan-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin: 24px 0; }
+.eva-guide-wrap .plan-card {
+  background: var(--eva-surface); border: 1px solid var(--eva-border);
+  border-radius: var(--eva-radius); padding: 24px;
+  display: flex; flex-direction: column; position: relative;
+}
+.eva-guide-wrap .plan-card.featured {
+  border-color: var(--eva-accent);
+  box-shadow: 0 0 24px rgba(232,93,58,.25);
+  background: linear-gradient(180deg, rgba(232,93,58,.08) 0%, var(--eva-surface) 100%);
+}
+.eva-guide-wrap .plan-header { margin-bottom: 16px; border-bottom: 1px solid var(--eva-border-soft); padding-bottom: 14px; }
+.eva-guide-wrap .plan-title { font-size: 20px; font-weight: 800; color: var(--eva-text); margin-bottom: 4px; }
+.eva-guide-wrap .plan-cost { font-size: 14px; color: var(--eva-gold); font-weight: 700; }
+.eva-guide-wrap .plan-features { list-style: none; padding: 0; margin: 0 0 20px; display: grid; gap: 10px; flex: 1; }
+.eva-guide-wrap .plan-features li {
+  font-size: 13.5px; color: var(--eva-text-dim); display: flex; align-items: flex-start; gap: 8px;
+}
+.eva-guide-wrap .plan-features li::before { content: "✓"; color: var(--eva-green); font-weight: 800; }
+
+/* ---------- Таймлайн и шаги ---------- */
+.eva-guide-wrap .timeline { display: grid; gap: 16px; margin: 24px 0; }
+.eva-guide-wrap .tl-day {
+  display: grid; grid-template-columns: 90px 1fr; gap: 20px;
+  background: var(--eva-surface); border: 1px solid var(--eva-border);
+  border-radius: var(--eva-radius); padding: 20px;
+}
+.eva-guide-wrap .tl-marker {
+  background: linear-gradient(135deg, var(--eva-accent), #c44324);
+  color: #fff; font-weight: 800; font-size: 15px; border-radius: var(--eva-radius-sm);
+  display: flex; align-items: center; justify-content: center; text-align: center;
+  box-shadow: 0 4px 12px rgba(232,93,58,.3);
+}
+.eva-guide-wrap .tl-content h4 { margin-top: 0; font-size: 17px; color: var(--eva-gold); }
+.eva-guide-wrap .tl-content ul { margin: 8px 0 0; padding-left: 20px; color: var(--eva-text-dim); font-size: 14px; }
+.eva-guide-wrap .tl-content li { margin-bottom: 6px; }
+
+/* ---------- Команды и Боссы ---------- */
+.eva-guide-wrap .team-block {
+  background: var(--eva-surface); border: 1px solid var(--eva-border);
+  border-radius: var(--eva-radius); padding: 20px; margin-bottom: 16px;
+}
+.eva-guide-wrap .team-header {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 12px; border-bottom: 1px solid var(--eva-border-soft); padding-bottom: 10px;
+}
+.eva-guide-wrap .team-title { font-size: 16px; font-weight: 700; color: var(--eva-gold); }
+.eva-guide-wrap .team-heroes { font-size: 14.5px; font-weight: 600; color: var(--eva-text); margin-bottom: 8px; }
+.eva-guide-wrap .team-notes { font-size: 13px; color: var(--eva-text-dim); font-style: italic; }
+
+/* ---------- Трек Звезд ---------- */
+.eva-guide-wrap .star-track {
+  display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; margin: 20px 0;
+}
+.eva-guide-wrap .star-card {
+  background: var(--eva-surface); border: 1px solid var(--eva-border);
+  border-radius: var(--eva-radius-sm); padding: 14px 10px; text-align: center;
+}
+.eva-guide-wrap .star-stars { font-size: 16px; font-weight: 800; color: var(--eva-gold); margin-bottom: 4px; }
+.eva-guide-wrap .star-stones { font-size: 12px; color: var(--eva-text-dim); }
+
+/* ---------- Читы / Таблица прокачки ---------- */
+.eva-guide-wrap .cheat-row {
+  display: grid; grid-template-columns: 44px 1.4fr 26px .8fr 1.2fr 1.4fr;
+  gap: 14px; align-items: center; padding: 15px 20px;
+  border-bottom: 1px solid var(--eva-border-soft);
+}
+.eva-guide-wrap .cheat-row:last-child { border-bottom: none; }
+.eva-guide-wrap .cheat-row img { width: 36px; height: 36px; object-fit: contain; }
+.eva-guide-wrap .cheat-name { font-weight: 650; font-size: 14.5px; color: var(--eva-text); }
+.eva-guide-wrap .cheat-arrow { color: var(--eva-text-faint); text-align: center; }
+.eva-guide-wrap .cheat-lvl {
+  font-size: 20px; font-weight: 800; color: var(--eva-gold);
+  font-variant-numeric: tabular-nums;
+}
+.eva-guide-wrap .cheat-cost { font-size: 13px; color: var(--eva-text-dim); }
+.eva-guide-wrap .cheat-note { font-size: 12.5px; color: var(--eva-text-faint); text-align: right; }
+.eva-guide-wrap .cheat-row-final { background: rgba(240,178,60,.06); }
+.eva-guide-wrap .cheat-result {
+  background: linear-gradient(135deg, rgba(240,178,60,.14), var(--eva-surface));
+  border: 1px solid var(--eva-gold-dim); border-top: none;
+  border-radius: 0 0 var(--eva-radius) var(--eva-radius);
+  padding: 16px 20px; text-align: center; font-size: 16px;
+  color: var(--eva-text-dim); margin-bottom: 20px;
+}
+.eva-guide-wrap .cheat-result strong { color: var(--eva-gold); }
+
+/* ---------- Подвал ---------- */
+.eva-guide-wrap .site-footer {
+  border-top: 1px solid var(--eva-border-soft);
+  background: var(--eva-bg-alt);
+  padding: 28px 0; text-align: center;
+  font-size: 13.5px; color: var(--eva-text-dim);
+}
+.eva-guide-wrap .site-footer p { margin: 0 0 6px; }
+.eva-guide-wrap .footer-dim { color: var(--eva-text-faint); font-size: 12.5px; }
+
+/* ---------- Кнопка наверх ---------- */
+.eva-guide-wrap .to-top {
+  position: fixed; right: 24px; bottom: 24px;
+  width: 44px; height: 44px; border-radius: 50%;
+  background: var(--eva-surface-2); border: 1px solid var(--eva-border);
+  color: var(--eva-gold); font-size: 19px; cursor: pointer;
+  opacity: 0; pointer-events: none; transition: .25s; z-index: 90;
+}
+.eva-guide-wrap .to-top.show { opacity: 1; pointer-events: auto; }
+.eva-guide-wrap .to-top:hover { background: var(--eva-gold); color: #16181f; border-color: var(--eva-gold); }
+
+/* ---------- Адаптив ---------- */
+@media (max-width: 1024px) {
+  .eva-guide-wrap .main-layout { grid-template-columns: 1fr; gap: 0; }
+  .eva-guide-wrap .sidebar {
+    position: fixed; top: 64px; left: 0;
+    width: 280px; height: calc(100vh - 64px);
+    background: var(--eva-bg-alt); border-right: 1px solid var(--eva-border);
+    padding: 20px; z-index: 95;
+    transform: translateX(-100%); transition: transform .28s;
+    max-height: none;
+  }
+  .eva-guide-wrap .sidebar.open { transform: translateX(0); box-shadow: var(--eva-shadow-lg); }
+  .eva-guide-wrap .nav-toggle { display: flex; }
+
+  .eva-guide-wrap .hero { grid-template-columns: 1fr; }
+  .eva-guide-wrap .hero-media { max-width: 260px; margin: 0 auto; }
+  .eva-guide-wrap .key-grid { grid-template-columns: repeat(2, 1fr); }
+  .eva-guide-wrap .relic-cards { grid-template-columns: 1fr; }
+  .eva-guide-wrap .plan-grid { grid-template-columns: repeat(2, 1fr); }
+  .eva-guide-wrap .calc-controls { grid-template-columns: 1fr; }
+  .eva-guide-wrap .calc-results { grid-template-columns: repeat(2, 1fr); }
+  .eva-guide-wrap .star-track { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 680px) {
+  .eva-guide-wrap { font-size: 15px; }
+  .eva-guide-wrap .key-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .eva-guide-wrap .plan-grid { grid-template-columns: 1fr; }
+  .eva-guide-wrap .two-col { grid-template-columns: 1fr; }
+  .eva-guide-wrap .star-track { grid-template-columns: repeat(2, 1fr); }
+  .eva-guide-wrap .tl-day { grid-template-columns: 1fr; gap: 12px; }
+  .eva-guide-wrap .tl-marker { width: 100%; height: 40px; }
+  .eva-guide-wrap .bar-row { grid-template-columns: 100px 1fr 50px; gap: 8px; }
+}
