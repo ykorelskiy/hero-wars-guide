@@ -1,6 +1,7 @@
 import { renderHeroDetail } from '../views/heroDetail.js';
 import { renderPetDetail } from '../views/petDetail.js';
 import { renderPetsGrid } from '../views/pets.js';
+import { showCounterTab } from '../views/counterGuide.js';
 
 export function navigateTo(targetView, param = null) {
   document.querySelectorAll('#mainNav .nb').forEach(b => {
@@ -132,7 +133,15 @@ export function handleHashChange() {
     navigateTo('quiz');
     return;
   }
-  const mainViews = ['advisor', 'teams', 'matrix', 'about', 'guides', 'quiz', 'titans', 'heroes-guide'];
+  if (hash === 'counter-guide' || hash.startsWith('counter-guide')) {
+    navigateTo('counter-guide');
+    const sub = hash.split('/')[1];
+    if (sub) {
+      showCounterTab(sub);
+    }
+    return;
+  }
+  const mainViews = ['advisor', 'counter-guide', 'teams', 'matrix', 'about', 'guides', 'quiz', 'titans', 'heroes-guide'];
   if (mainViews.includes(hash)) {
     navigateTo(hash);
   }

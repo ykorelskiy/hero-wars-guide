@@ -26,6 +26,7 @@
     <button class="nb" data-view="titans">🗿 Титаны</button>
     <button class="nb" data-view="pets">🐾 Питомцы</button>
     <button class="nb" data-view="advisor">🧭 Советчик по контрам</button>
+    <button class="nb" data-view="counter-guide">🎯 Контрпики для чайников</button>
     <button class="nb" data-view="teams">📋 Все команды</button>
     <button class="nb" data-view="matrix">🔀 Матрица контр-пиков</button>
     <button class="nb" data-view="about">ℹ️ Как это работает</button>
@@ -6540,6 +6541,70 @@
 
     <div id="resultBox" class="result-box"></div>
   </section>
+
+  <!-- ===================== COUNTER GUIDE VIEW ===================== -->
+  <section id="view-counter-guide" class="view">
+    <div class="counter-guide-wrap">
+      <div class="cg-header">
+        <h2>🎯 Контрпики Hero Wars: Dominion Era для чайников</h2>
+        <p class="lead">Почему Кайла, Адам, Жасмин и их друзья сносят команду — и чем их остановить. У каждого контрпика подробно объяснено, какой именно приём героя он ломает.</p>
+        <p class="lead" style="font-size:0.88rem;color:var(--cg-muted);">Названия героев даны на английском и русском языках. В карточках контрпиков указаны точные причины и практические подсказки.</p>
+      </div>
+
+      <nav class="cg-tabs" aria-label="Разделы контрпиков">
+        <div class="cg-tabs-scroll" role="tablist">
+          <button role="tab" aria-selected="true" data-tab="basics">Азбука контры</button>
+          <button role="tab" aria-selected="false" data-tab="kayla">Кайла</button>
+          <button role="tab" aria-selected="false" data-tab="adam">Адам</button>
+          <button role="tab" aria-selected="false" data-tab="yasmine">Жасмин</button>
+          <button role="tab" aria-selected="false" data-tab="aidan">Эйдан</button>
+          <button role="tab" aria-selected="false" data-tab="orion">Орион</button>
+          <button role="tab" aria-selected="false" data-tab="dante">Данте</button>
+          <button role="tab" aria-selected="false" data-tab="lyria">Lyria</button>
+          <button role="tab" aria-selected="false" data-tab="fluffy">Fluffy</button>
+          <button role="tab" aria-selected="false" data-tab="byrna">Byrna</button>
+          <button role="tab" aria-selected="false" data-tab="galahad">Галахад</button>
+          <button role="tab" aria-selected="false" data-tab="augustus">Augustus</button>
+          <button role="tab" aria-selected="false" data-tab="electra">Электра</button>
+          <button role="tab" aria-selected="false" data-tab="sebastian">Себастьян</button>
+          <button role="tab" aria-selected="false" data-tab="nebula">Небула</button>
+          <button role="tab" aria-selected="false" data-tab="cascade">Каскад</button>
+          <button role="tab" aria-selected="false" data-tab="krista">Криста</button>
+          <button role="tab" aria-selected="false" data-tab="jorgen">Йорген</button>
+          <button role="tab" aria-selected="false" data-tab="dorian">Дориан</button>
+          <button role="tab" aria-selected="false" data-tab="polaris">Поларис</button>
+          <button role="tab" aria-selected="false" data-tab="isaac">Айзек</button>
+          <button role="tab" aria-selected="false" data-tab="helios">Гелиос</button>
+          <button role="tab" aria-selected="false" data-tab="keira">Кейра</button>
+          <button role="tab" aria-selected="false" data-tab="somna">Сомна</button>
+          <button role="tab" aria-selected="false" data-tab="amira">Амира</button>
+          <button role="tab" aria-selected="false" data-tab="guus">Guus</button>
+          <button role="tab" aria-selected="false" data-tab="arenaheroes">Топ героев арены</button>
+          <button role="tab" aria-selected="false" data-tab="arenateams">Топ команд арены</button>
+          <button role="tab" aria-selected="false" data-tab="combos">Связки</button>
+          <button role="tab" aria-selected="false" data-tab="matrix">Таблица</button>
+          <button role="tab" aria-selected="false" data-tab="sources">Источники</button>
+        </div>
+      </nav>
+
+      <!-- Мой ростер -->
+      <section id="cgRosterBox" style="padding:0;margin-bottom:16px;">
+        <details class="panel rost">
+          <summary>🛡️ Мои герои (подсветка подходящих контрпиков)</summary>
+          <div class="toolbar" style="margin-top:12px;">
+            <button class="btn" id="cgOnlyMine" aria-pressed="false">Показывать только моих</button>
+            <button class="btn" id="cgClearMine">Сбросить</button>
+          </div>
+          <p style="margin:10px 0 0;color:var(--cg-muted);font-size:0.88rem;">Отметьте героев, которые у вас прокачаны: подходящие контры подсветятся зелёной рамкой. Выбор сохраняется в браузере.</p>
+          <div class="roster" id="cgRoster"></div>
+        </details>
+      </section>
+
+      <!-- Контейнер выбранной вкладки -->
+      <div id="cgView"></div>
+    </div>
+  </section>
+
   <!-- ===================== TEAMS VIEW ===================== -->
   <section id="view-teams" class="view">
     <h2>Все разобранные команды</h2>
