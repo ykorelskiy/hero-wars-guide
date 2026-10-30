@@ -7,6 +7,7 @@ import './styles/quiz.css';
 import './styles/titans.css';
 import './styles/heroesGuide.css';
 import './styles/counterGuide.css';
+import './styles/totems.css';
 import { loadAllData, getHeroes, getTeams, isOfflineMode } from './data/dataService.js';
 import { initNavigation } from './components/navigation.js';
 import { initAdvisor } from './views/advisor.js';
@@ -21,6 +22,7 @@ import { initQuizGuide } from './views/quizGuide.js';
 import { initTitansGuide } from './views/titansGuide.js';
 import { initHeroesGuideView } from './views/heroesGuideView.js';
 import { initCounterGuideView } from './views/counterGuide.js';
+import { initTotemsGuide } from './views/totemsGuide.js';
 
 function renderBadges() {
   const box = document.getElementById('statBadges');
@@ -64,6 +66,7 @@ async function boot() {
     initPolGuide();
     initQuizGuide();
     initTitansGuide();
+    initTotemsGuide();
     initHeroesGuideView();
     initCounterGuideView();
     renderBadges();

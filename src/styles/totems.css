@@ -1,0 +1,549 @@
+/* =========================================================
+   Раздел: Тотемы для чайников (Hero Wars: Dominion Era)
+   Стили и темы стихий
+   ========================================================= */
+
+.totems-view-wrap {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 16px 20px 80px;
+  color: var(--txt, #f1f5f9);
+}
+
+/* Hero Banner */
+.totems-hero {
+  position: relative;
+  border-radius: 20px;
+  padding: 40px 32px;
+  margin-bottom: 28px;
+  background: radial-gradient(circle at top right, rgba(219, 39, 119, 0.25), transparent 45%),
+              radial-gradient(circle at bottom left, rgba(2, 132, 199, 0.25), transparent 50%),
+              linear-gradient(135deg, rgba(30, 27, 75, 0.95), rgba(15, 23, 42, 0.98));
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+.totems-hero-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 900px;
+}
+
+.totems-badge-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.totems-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #e2e8f0;
+}
+.totems-pill.fire   { background: rgba(234, 88, 12, 0.2); border-color: rgba(234, 88, 12, 0.4); color: #fdba74; }
+.totems-pill.water  { background: rgba(2, 132, 199, 0.2); border-color: rgba(2, 132, 199, 0.4); color: #7dd3fc; }
+.totems-pill.earth  { background: rgba(101, 163, 13, 0.2); border-color: rgba(101, 163, 13, 0.4); color: #bef264; }
+.totems-pill.dark   { background: rgba(124, 58, 237, 0.2); border-color: rgba(124, 58, 237, 0.4); color: #c4b5fd; }
+.totems-pill.light  { background: rgba(202, 138, 4, 0.2); border-color: rgba(202, 138, 4, 0.4); color: #fde047; }
+.totems-pill.dist   { background: rgba(219, 39, 119, 0.2); border-color: rgba(219, 39, 119, 0.4); color: #f9a8d4; }
+
+.totems-hero h1 {
+  font-size: 2.35rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0;
+  background: linear-gradient(135deg, #ffffff 30%, #94a3b8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.totems-hero p.lead {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #cbd5e1;
+  margin: 0;
+}
+
+/* Quick Nav / TOC */
+.totems-toc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  position: sticky;
+  top: 70px;
+  z-index: 20;
+  padding: 10px 14px;
+  margin-bottom: 30px;
+  background: rgba(15, 23, 42, 0.88);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.totems-toc a {
+  text-decoration: none;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: #94a3b8;
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.totems-toc a:hover,
+.totems-toc a.active {
+  color: #fff;
+  background: rgba(219, 39, 119, 0.25);
+  border-color: rgba(219, 39, 119, 0.5);
+  transform: translateY(-1px);
+}
+
+/* Section Common */
+.totems-section {
+  margin-bottom: 48px;
+  scroll-margin-top: 130px;
+}
+
+.totems-section-header {
+  margin-bottom: 20px;
+}
+
+.totems-section-header h2 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 6px 0;
+  color: #f8fafc;
+}
+
+.totems-section-header p {
+  color: #94a3b8;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* Totem Showcase Cards */
+.totem-grid-6 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.totem-card {
+  background: rgba(30, 41, 59, 0.65);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.totem-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.4);
+}
+
+.totem-card.fire        { border-top: 4px solid #ea580c; }
+.totem-card.water       { border-top: 4px solid #0284c7; }
+.totem-card.earth       { border-top: 4px solid #65a30d; }
+.totem-card.dark        { border-top: 4px solid #7c3aed; }
+.totem-card.light       { border-top: 4px solid #ca8a04; }
+.totem-card.distortion  { border-top: 4px solid #db2777; }
+
+.totem-card-head {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.totem-card-img-wrap {
+  width: 70px;
+  height: 90px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 4px;
+}
+
+.totem-card-img-wrap img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.totem-card-title-group h3 {
+  margin: 0 0 4px 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.totem-card-req {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #cbd5e1;
+}
+
+.totem-card-body {
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: #cbd5e1;
+}
+
+.totem-card-bonus {
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 0.86rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.totem-card-bonus strong {
+  display: block;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #94a3b8;
+  margin-bottom: 2px;
+}
+
+.totem-card-bonus span {
+  font-weight: 700;
+  color: #38bdf8;
+}
+
+/* Callouts */
+.totem-callout {
+  background: rgba(30, 41, 59, 0.7);
+  border-left: 4px solid #38bdf8;
+  border-radius: 8px;
+  padding: 14px 18px;
+  margin: 16px 0;
+  font-size: 0.93rem;
+  line-height: 1.6;
+}
+.totem-callout.tip  { border-left-color: #10b981; background: rgba(16, 185, 129, 0.1); }
+.totem-callout.warn { border-left-color: #f59e0b; background: rgba(245, 158, 11, 0.1); }
+.totem-callout.dist { border-left-color: #db2777; background: rgba(219, 39, 119, 0.1); }
+
+/* Interactive Calculator Container */
+.totem-calc-card {
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  margin-bottom: 24px;
+}
+
+.totem-calc-card h3 {
+  margin: 0 0 14px 0;
+  font-size: 1.25rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.totem-calc-inputs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.totem-calc-field {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.totem-calc-field label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #cbd5e1;
+}
+
+.totem-calc-field input,
+.totem-calc-field select {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  color: #fff;
+  font-family: inherit;
+  font-size: 1.05rem;
+  padding: 6px 10px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.totem-calc-field input:focus,
+.totem-calc-field select:focus {
+  border-color: #38bdf8;
+}
+
+.totem-calc-result-box {
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.9), rgba(15, 23, 42, 0.95));
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  border-radius: 14px;
+  padding: 16px 20px;
+  font-size: 0.96rem;
+  line-height: 1.6;
+}
+
+/* Progress bar for BLP */
+.totem-progress-wrap {
+  width: 100%;
+  height: 14px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 999px;
+  overflow: hidden;
+  margin: 10px 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.totem-progress-bar {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #0284c7, #38bdf8, #f59e0b);
+  transition: width 0.4s ease;
+}
+
+/* Tables */
+.totem-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(15, 23, 42, 0.6);
+  margin: 16px 0 24px;
+}
+
+.totem-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  min-width: 620px;
+}
+
+.totem-table th {
+  background: rgba(30, 41, 59, 0.85);
+  color: #94a3b8;
+  font-weight: 700;
+  text-align: left;
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.totem-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  vertical-align: middle;
+}
+
+.totem-table tr:hover td {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* Fusion Skills Filter Toolbar */
+.totem-filter-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.totem-filter-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.totem-tab-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  color: #cbd5e1;
+  padding: 6px 14px;
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.totem-tab-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.totem-tab-btn.active {
+  background: #0284c7;
+  border-color: #38bdf8;
+  color: #fff;
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.4);
+}
+
+/* Fusion Skills Grid */
+.fusion-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.skill-card {
+  background: rgba(30, 41, 59, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(56, 189, 248, 0.4);
+}
+
+.skill-card-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.skill-card-top img {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.skill-card-title {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.skill-card-title h4 {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.skill-tier-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  width: fit-content;
+}
+.skill-tier-badge.tier-s { background: rgba(239, 68, 68, 0.25); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.4); }
+.skill-tier-badge.tier-a { background: rgba(59, 130, 246, 0.25); color: #60a5fa; border: 1px solid rgba(59, 130, 246, 0.4); }
+.skill-tier-badge.tier-b { background: rgba(148, 163, 184, 0.2); color: #94a3b8; border: 1px solid rgba(148, 163, 184, 0.3); }
+
+.skill-desc {
+  font-size: 0.86rem;
+  line-height: 1.5;
+  color: #cbd5e1;
+}
+
+.skill-synergy {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 6px 10px;
+  border-radius: 8px;
+  border-left: 3px solid #38bdf8;
+}
+
+/* FAQ Accordion */
+.totems-faq-item {
+  background: rgba(30, 41, 59, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.totems-faq-item summary {
+  padding: 14px 18px;
+  font-weight: 600;
+  color: #f1f5f9;
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+  transition: background 0.2s ease;
+}
+
+.totems-faq-item summary:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.totems-faq-item[open] summary {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  color: #38bdf8;
+}
+
+.totems-faq-answer {
+  padding: 14px 18px;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: #cbd5e1;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .totems-hero {
+    padding: 24px 18px;
+  }
+  .totems-hero h1 {
+    font-size: 1.75rem;
+  }
+  .totems-toc {
+    top: 60px;
+    padding: 6px;
+  }
+  .totem-calc-inputs {
+    grid-template-columns: 1fr 1fr;
+  }
+}

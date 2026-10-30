@@ -37,11 +37,15 @@ export function navigateTo(targetView, param = null) {
     renderPetsGrid();
   } else if (targetView === 'wiki') {
     location.hash = 'wiki';
+  } else if (param === 'preserve-hash') {
+    // Keep current hash intact (e.g. for anchor links)
   } else {
     location.hash = targetView;
   }
 
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  if (param !== 'preserve-hash') {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }
 
 export function switchGuide(guideName) {
@@ -129,6 +133,21 @@ export function handleHashChange() {
     navigateTo('titans');
     return;
   }
+  if (hash === 'totems' || hash.startsWith('totems')) {
+    navigateTo('totems');
+    return;
+  }
+  if (hash.startsWith('tt-')) {
+    const isTotemsActive = document.getElementById('view-totems')?.classList.contains('on');
+    if (!isTotemsActive) {
+      navigateTo('totems', 'preserve-hash');
+    }
+    setTimeout(() => {
+      const el = document.getElementById(hash);
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }, 150);
+    return;
+  }
   if (hash === 'quiz' || hash.startsWith('quiz')) {
     navigateTo('quiz');
     return;
@@ -141,7 +160,7 @@ export function handleHashChange() {
     }
     return;
   }
-  const mainViews = ['advisor', 'counter-guide', 'teams', 'matrix', 'about', 'guides', 'quiz', 'titans', 'heroes-guide'];
+  const mainViews = ['advisor', 'counter-guide', 'teams', 'matrix', 'about', 'guides', 'quiz', 'titans', 'totems', 'heroes-guide'];
   if (mainViews.includes(hash)) {
     navigateTo(hash);
   }

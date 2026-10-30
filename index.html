@@ -24,6 +24,7 @@
     <button class="nb" data-view="quiz">🎓 Викторина Знаний</button>
     <button class="nb" data-view="guides">📜 Гайды по событиям</button>
     <button class="nb" data-view="titans">🗿 Титаны</button>
+    <button class="nb" data-view="totems">🔮 Тотемы для чайников</button>
     <button class="nb" data-view="pets">🐾 Питомцы</button>
     <button class="nb" data-view="advisor">🧭 Советчик по контрам</button>
     <button class="nb" data-view="counter-guide">🎯 Контрпики для чайников</button>
@@ -4871,6 +4872,18 @@
         </p>
       </div>
 
+      <div class="totem-banner-callout" style="background:radial-gradient(circle at top right,rgba(219,39,119,0.15),transparent 60%),rgba(30,41,59,0.8);border:1px solid rgba(242,193,78,0.4);border-left:4px solid var(--gold);padding:16px 20px;border-radius:12px;margin:18px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;">
+        <div>
+          <div style="font-size:1.05rem;font-weight:700;color:var(--gold2);margin-bottom:4px;">🔮 Доступен отдельный интерактивный раздел «Тотемы для чайников»</div>
+          <p style="font-size:0.88rem;color:#cbd5e1;margin:0;">
+            Полный разбор всех 6 стихий, 4 калькулятора (активация пачки, защита BLP, стоимость прокачки 1–130 ур., 17 навыков слияния).
+          </p>
+        </div>
+        <a href="#totems" class="btn" style="background:linear-gradient(135deg,var(--gold2),var(--gold));color:#080a12;font-weight:700;padding:8px 18px;border-radius:10px;text-decoration:none;display:inline-flex;align-items:center;gap:6px;">
+          Открыть гайд по тотемам ➔
+        </a>
+      </div>
+
       <h3>Как прокачивать</h3>
       <div class="two-col">
         <div class="col-box col-box-good">
@@ -5372,6 +5385,528 @@
 
 
   
+  <!-- ===================== TOTEMS FOR DUMMIES GUIDE VIEW ===================== -->
+  <section id="view-totems" class="view">
+    <div class="totems-view-wrap">
+      
+      <!-- HERO BANNER -->
+      <div class="totems-hero">
+        <div class="totems-hero-inner">
+          <div class="totems-badge-strip">
+            <span class="totems-pill dist">🗿 Полный гайд</span>
+            <span class="totems-pill fire">Hero Wars: Dominion Era</span>
+            <span class="totems-pill water">Все 6 стихий</span>
+            <span class="totems-pill earth">130 ур. и 6★</span>
+            <span class="totems-pill light">4 Калькулятора</span>
+            <span class="totems-pill dark">Актуально на 2026</span>
+          </div>
+          <h1>🔮 Тотемы для чайников: Все механики, слияние и калькуляторы</h1>
+          <p class="lead">
+            Исчерпывающее руководство по духам стихий: как работают тотемы, механика накопления энергии и оверчарджа, 
+            активация двойных тотемов, защита от неудач (BLP), слияние навыков и умный подбор синергий для вашей команды титанов.
+          </p>
+        </div>
+      </div>
+
+      <!-- QUICK NAVIGATION TOC -->
+      <nav class="totems-toc" aria-label="Содержание гайда по тотемам">
+        <a href="#tt-what">1. Что такое тотем</a>
+        <a href="#tt-activation">2. Активация и пачка</a>
+        <a href="#tt-energy">3. Энергия и оверчардж</a>
+        <a href="#tt-get">4. Получение и BLP</a>
+        <a href="#tt-upgrade">5. Прокачка и уровни</a>
+        <a href="#tt-fusion">6. Слияние и навыки</a>
+        <a href="#tt-spheres">7. Сферы и обмен</a>
+        <a href="#tt-synergies">8. Синергии и сборки</a>
+        <a href="#tt-dual">9. Двойные тотемы</a>
+        <a href="#tt-faq">10. FAQ</a>
+      </nav>
+
+      <!-- 1. ЧТО ТАКОЕ ТОТЕМ -->
+      <section class="totems-section" id="tt-what">
+        <div class="totems-section-header">
+          <h2>1. Что такое тотем и как он устроен</h2>
+          <p>Тотем — это древний дух стихии, дающий вашей команде титанов два фундаментальных преимущества:</p>
+        </div>
+        <ul>
+          <li><b>Постоянный пассивный бонус:</b> даёт огромный прирост атаки или максимального здоровья ВСЕМ титанам своей стихии. Этот бонус действует ВСЕГДА (даже если тотем в конкретном бою ни разу не сработал или не набрал энергии).</li>
+          <li><b>Базовый активный навык:</b> когда тотем накапливает 3000 энергии, он обрушивает на поле боя мощнейшую способность (лечение, щит, ураган огня, стяжку или взрыв).</li>
+        </ul>
+        <p>Максимальная прокачка каждого тотема: <b>6 звёзд</b> (эволюция фрагментами) и <b>130 уровень</b>.</p>
+
+        <!-- 6 Карточек Тотемов -->
+        <div id="totemShowcaseGrid" class="totem-grid-6"></div>
+      </section>
+
+      <!-- 2. АКТИВАЦИЯ И КАЛЬКУЛЯТОР ПАЧКИ -->
+      <section class="totems-section" id="tt-activation">
+        <div class="totems-section-header">
+          <h2>2. Как тотем включается в бою: пороги и призыватели</h2>
+          <p>Чтобы тотем мог примениться в бою, в команде из 5 титанов должно быть минимальное количество титанов его стихии:</p>
+        </div>
+
+        <div class="totem-table-wrap">
+          <table class="totem-table">
+            <thead>
+              <tr>
+                <th>Стихия тотема</th>
+                <th>Нужно титанов в пачке</th>
+                <th>Особые правила</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="totems-pill water">💧 Вода</span> / <span class="totems-pill fire">🔥 Огонь</span> / <span class="totems-pill earth">🌍 Земля</span></td>
+                <td><b>3 титана</b></td>
+                <td>Классический порог трио титанов</td>
+              </tr>
+              <tr>
+                <td><span class="totems-pill dist">🌀 Искажение</span></td>
+                <td><b>3 титана*</b></td>
+                <td><b>*Призыватель Вальдур с Эхо засчитывается за 2 титана!</b> Достаточно Вальдура и ещё 1 титана Искажения (например, Алекто).</td>
+              </tr>
+              <tr>
+                <td><span class="totems-pill light">✨ Свет</span> / <span class="totems-pill dark">🌑 Тьма</span></td>
+                <td><b>2 титана</b></td>
+                <td>Сниженный порог — активируется всего двумя титанами</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="totem-callout tip">
+          <b>Правило призывателей (Summoners):</b> Призыватели титанов засчитываются за двоих! 
+          <b>Вердок и Фито (Verdoc, Phyto)</b> дают +2 титана к стихиям, а <b>Вальдур и Эхо (Valdur, Echo)</b> дают +2 титана к Искажению. 
+          Это позволяет включать тотем всего двумя персонажами на поле боя!
+        </div>
+
+        <!-- КАЛЬКУЛЯТОР 1: Проверка пачки -->
+        <div class="totem-calc-card">
+          <h3>🧮 Интерактивный калькулятор активации тотемов</h3>
+          <p style="color:#94a3b8;font-size:0.9rem;margin:0 0 16px;">
+            Укажите количество титанов каждой стихии в вашей пачке (всего до 5 слотов) и отметьте призывателей, чтобы увидеть активные тотемы и приоритет их срабатывания:
+          </p>
+          
+          <div class="totem-calc-inputs">
+            <div class="totem-calc-field">
+              <label for="sq_fire">🔥 Огонь</label>
+              <input type="number" id="sq_fire" min="0" max="5" value="3">
+            </div>
+            <div class="totem-calc-field">
+              <label for="sq_water">💧 Вода</label>
+              <input type="number" id="sq_water" min="0" max="5" value="0">
+            </div>
+            <div class="totem-calc-field">
+              <label for="sq_earth">🌍 Земля</label>
+              <input type="number" id="sq_earth" min="0" max="5" value="0">
+            </div>
+            <div class="totem-calc-field">
+              <label for="sq_distortion">🌀 Искажение</label>
+              <input type="number" id="sq_distortion" min="0" max="5" value="0">
+            </div>
+            <div class="totem-calc-field">
+              <label for="sq_light">✨ Свет</label>
+              <input type="number" id="sq_light" min="0" max="5" value="2">
+            </div>
+            <div class="totem-calc-field">
+              <label for="sq_dark">🌑 Тьма</label>
+              <input type="number" id="sq_dark" min="0" max="5" value="0">
+            </div>
+          </div>
+
+          <div style="display:flex;flex-wrap:wrap;gap:16px;margin-bottom:16px;background:rgba(255,255,255,0.03);padding:10px 14px;border-radius:10px;">
+            <label style="display:flex;align-items:center;gap:8px;cursor:pointer;font-size:0.88rem;">
+              <input type="checkbox" id="chkSummonerValdur">
+              <span>🌀 В пачке есть <b>Вальдур и Эхо</b> (+1 к Искажению)</span>
+            </label>
+            <label style="display:flex;align-items:center;gap:8px;cursor:pointer;font-size:0.88rem;">
+              <input type="checkbox" id="chkSummonerVerdoc">
+              <span>🌿 В пачке есть <b>Вердок и Фито</b> (+1 к Воде/Земле)</span>
+            </label>
+          </div>
+
+          <div id="squadActivatorResult" class="totem-calc-result-box"></div>
+        </div>
+      </section>
+
+      <!-- 3. ЭНЕРГИЯ И ОВЕРЧАРДЖ -->
+      <section class="totems-section" id="tt-energy">
+        <div class="totems-section-header">
+          <h2>3. Энергия, перезарядка и оверчардж</h2>
+          <p>Тотем срабатывает в бою, когда накопит <b>3000 единиц энергии</b>. Энергию тотем получает исключительно от действий титанов <i>своей стихии</i>:</p>
+        </div>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-bottom:16px;">
+          <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:14px;text-align:center;">
+            <div style="font-size:1.6rem;font-weight:800;color:#38bdf8;">+200</div>
+            <div style="font-size:0.85rem;color:#cbd5e1;margin-top:4px;">Базовая автоатака титана</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:14px;text-align:center;">
+            <div style="font-size:1.6rem;font-weight:800;color:#38bdf8;">+200</div>
+            <div style="font-size:0.85rem;color:#cbd5e1;margin-top:4px;">Периодический навык супертитана/призывателя</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:14px;text-align:center;">
+            <div style="font-size:1.6rem;font-weight:800;color:#10b981;">+300</div>
+            <div style="font-size:0.85rem;color:#cbd5e1;margin-top:4px;">Добивание вражеского титана</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:14px;text-align:center;">
+            <div style="font-size:1.6rem;font-weight:800;color:#f59e0b;">+5</div>
+            <div style="font-size:0.85rem;color:#cbd5e1;margin-top:4px;">За каждый 1% потерянного здоровья</div>
+          </div>
+        </div>
+
+        <div class="totem-callout tip">
+          <b>Секрет оверчарджа (Overcharge) в ручном бою:</b><br>
+          Тотем может продолжать копить энергию <b>сверх 3000 (свыше 100%)</b>! Чем дольше вы копите заряд перед активацией, тем мощнее будет следующий удар. 
+          Особенно популярен оверчардж у <b>Тотема Огня</b>: опытные игроки задерживают применение, чтобы ураган огня снёс всю вражескую пачку за один залп.
+        </div>
+      </section>
+
+      <!-- 4. ПОЛУЧЕНИЕ И BLP -->
+      <section class="totems-section" id="tt-get">
+        <div class="totems-section-header">
+          <h2>4. Как получить тотем: Алтарь, сферы и защита от неудач (BLP)</h2>
+          <p>Фрагменты тотемов добываются на <b>Алтаре стихий</b> в Долине Титанов и из специальных сфер событий.</p>
+        </div>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-bottom:20px;">
+          <div style="background:rgba(30,41,59,0.6);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:18px;">
+            <h4 style="margin:0 0 8px 0;color:#38bdf8;">🎯 Правило первых двух фрагментов</h4>
+            <p style="font-size:0.9rem;line-height:1.55;color:#cbd5e1;margin:0;">
+              Первые 2 фрагмента из Алтаря или сферы стихий гарантированно выпадают для вашей <b>самой сильной стихии титанов</b> (по суммарной мощи титанов, артефактов и обликов). 
+              Если сильнейшая стихия — Искажение, первые фрагменты выпадут из другой случайной стихии. Начиная с 3-го тотема, стихия полностью случайна!
+            </p>
+          </div>
+          <div style="background:rgba(30,41,59,0.6);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:18px;">
+            <h4 style="margin:0 0 8px 0;color:#10b981;">🎁 Бесплатный первый тотем</h4>
+            <p style="font-size:0.9rem;line-height:1.55;color:#cbd5e1;margin:0;">
+              Порог первого тотема равен 4 500 изумрудов. Но в игре есть цепочка заданий на призывы: потратив 9 раз по 500 изумрудов (4 500), вы получаете награду в <b>5 000 изумрудов обратно</b>! 
+              Таким образом, первый тотем достаётся игроку бесплатно.
+            </p>
+          </div>
+        </div>
+
+        <!-- КАЛЬКУЛЯТОР 2: BLP -->
+        <div class="totem-calc-card">
+          <h3>🛡️ Калькулятор защиты от неудач (Bad Luck Protection)</h3>
+          <p style="color:#94a3b8;font-size:0.9rem;margin:0 0 16px;">
+            Выберите номер целевого фрагмента тотема и укажите, сколько изумрудов уже потрачено на Алтаре Стихий:
+          </p>
+
+          <div class="totem-calc-inputs">
+            <div class="totem-calc-field">
+              <label for="blpTargetTotem">Целевой фрагмент тотема</label>
+              <select id="blpTargetTotem">
+                <option value="1">1-й фрагмент (порог 4 500 💎)</option>
+                <option value="2">2-й фрагмент (порог 45 000 💎)</option>
+                <option value="3">3-й фрагмент (порог 466 667 💎)</option>
+                <option value="4">4-й фрагмент (порог 850 000 💎)</option>
+                <option value="5">5-й фрагмент (порог 1 133 333 💎)</option>
+                <option value="6">6-й фрагмент (порог 1 416 667 💎)</option>
+                <option value="7">7-й фрагмент (порог 1 700 000 💎)</option>
+                <option value="8">8-й фрагмент (порог 1 983 333 💎)</option>
+                <option value="9">9-й фрагмент (порог 2 266 667 💎)</option>
+                <option value="10">10-й фрагмент (порог 2 550 000 💎)</option>
+              </select>
+            </div>
+            <div class="totem-calc-field">
+              <label for="blpSpentEmeralds">Потрачено изумрудов на Алтаре (💎)</label>
+              <input type="number" id="blpSpentEmeralds" min="0" step="500" value="0">
+            </div>
+          </div>
+
+          <div id="blpCalcResult" class="totem-calc-result-box"></div>
+        </div>
+
+        <div class="totem-table-wrap">
+          <table class="totem-table">
+            <thead>
+              <tr>
+                <th>Номер фрагмента</th>
+                <th>Гарантированный порог изумрудов</th>
+                <th>Примечание</th>
+              </tr>
+            </thead>
+            <tbody id="totemBLPTableBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 5. ПРОКАЧКА И УРОВНИ -->
+      <section class="totems-section" id="tt-upgrade">
+        <div class="totems-section-header">
+          <h2>5. Прокачка уровней и звёзд тотема</h2>
+          <p>Уровень тотема прокачивается за трофеи и изумруды, а звёздность (1–6★) — за фрагменты духа стихии:</p>
+        </div>
+
+        <!-- КАЛЬКУЛЯТОР 3: Прокачка уровней и звёзд -->
+        <div class="totem-calc-card">
+          <h3>📈 Калькулятор стоимости прокачки и бонусов тотема</h3>
+          <p style="color:#94a3b8;font-size:0.9rem;margin:0 0 16px;">
+            Рассчитайте необходимые ресурсы и итоговые характеристики при повышении уровней и звёзд:
+          </p>
+
+          <div class="totem-calc-inputs">
+            <div class="totem-calc-field">
+              <label for="upgElement">Стихия тотема</label>
+              <select id="upgElement">
+                <option value="fire">🔥 Огонь (Трофеи ВГ)</option>
+                <option value="water">💧 Вода (Трофеи ВГ)</option>
+                <option value="earth">🌍 Земля (Трофеи ВГ)</option>
+                <option value="dark">🌑 Тьма (Трофеи CoW)</option>
+                <option value="light">✨ Свет (Трофеи CoW)</option>
+                <option value="distortion">🌀 Искажение (Эхо перемен)</option>
+              </select>
+            </div>
+            <div class="totem-calc-field">
+              <label for="upgLvlFrom">С уровня</label>
+              <input type="number" id="upgLvlFrom" min="1" max="130" value="1">
+            </div>
+            <div class="totem-calc-field">
+              <label for="upgLvlTo">До уровня</label>
+              <input type="number" id="upgLvlTo" min="1" max="130" value="130">
+            </div>
+            <div class="totem-calc-field">
+              <label for="upgStarsFrom">С звёзд</label>
+              <select id="upgStarsFrom">
+                <option value="1">1 звезда</option>
+                <option value="2">2 звезды</option>
+                <option value="3">3 звезды</option>
+                <option value="4">4 звезды</option>
+                <option value="5">5 звёзд</option>
+              </select>
+            </div>
+            <div class="totem-calc-field">
+              <label for="upgStarsTo">До звёзд</label>
+              <select id="upgStarsTo">
+                <option value="6" selected>6 звёзд (Абсолют)</option>
+                <option value="5">5 звёзд</option>
+                <option value="4">4 звезды</option>
+                <option value="3">3 звезды</option>
+                <option value="2">2 звезды</option>
+              </select>
+            </div>
+          </div>
+
+          <div id="upgCalcResult" class="totem-calc-result-box"></div>
+        </div>
+      </section>
+
+      <!-- 6. СЛИЯНИЕ И НАВЫКИ -->
+      <section class="totems-section" id="tt-fusion">
+        <div class="totems-section-header">
+          <h2>6. Слияние тотемов: 12 стихийных и 5 первичных навыков</h2>
+          <p>
+            Сверх базового умения каждый тотем может нести 2 дополнительных навыка слияния:
+            один <b>стихийный</b> (активный) и один <b>первичный</b> (пассивный). Слияние доступно даже на 1-звёздочном тотеме!
+          </p>
+        </div>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin-bottom:20px;">
+          <div style="background:rgba(234,88,12,0.1);border:1px solid rgba(234,88,12,0.3);border-radius:12px;padding:16px;">
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+              <img src="/images/totems/elemental-catalyst.webp" alt="Стихийный катализатор" style="width:32px;height:32px;">
+              <h4 style="margin:0;color:#fdba74;">Стихийные катализаторы</h4>
+            </div>
+            <p style="font-size:0.88rem;color:#cbd5e1;margin:0;">
+              Используются для создания и прокачки 12 активных стихийных навыков (контроль, урон, барьеры, защита от смерти).
+              Получаются при распылении лишних фрагментов тотема (1 фрагмент = <b>350 катализаторов</b>).
+            </p>
+          </div>
+          <div style="background:rgba(124,58,237,0.1);border:1px solid rgba(124,58,237,0.3);border-radius:12px;padding:16px;">
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+              <img src="/images/totems/primal-catalyst.webp" alt="Первичный катализатор" style="width:32px;height:32px;">
+              <h4 style="margin:0;color:#c4b5fd;">Первичные катализаторы</h4>
+            </div>
+            <p style="font-size:0.88rem;color:#cbd5e1;margin:0;">
+              Используются для 5 пассивных первичных навыков (щиты, лечение, набор энергии, зацикливание эффектов).
+              Получаются из событий или при разборе Легендарного Дара Доминиона (1 дар = <b>135 катализаторов</b>).
+            </p>
+          </div>
+        </div>
+
+        <div class="totem-callout warn">
+          <b>Как крафтить нужные навыки дёшево и эффективно:</b>
+          <ol style="margin:6px 0 0 18px;padding:0;">
+            <li>Если полученный навык вам не нравится, вы можете <b>отклонить результат</b> до подтверждения.</li>
+            <li>Чтобы дешево получить желаемый навык, сначала создайте любой базовый навык за 10 катализаторов, а затем выбивайте нужный, вкладывая от 90 катализаторов.</li>
+            <li>Для гарантированного повышения ранга до 6 уровня копите на «Кристаллизованную мощь» (~3000 катализаторов).</li>
+          </ol>
+        </div>
+
+        <!-- Тулбар фильтрации навыков -->
+        <div class="totem-filter-toolbar">
+          <div class="totem-filter-tabs">
+            <button class="totem-tab-btn active" data-filter="all">Все навыки (17)</button>
+            <button class="totem-tab-btn" data-filter="el">Стихийные (12)</button>
+            <button class="totem-tab-btn" data-filter="pr">Первичные (5)</button>
+            <button class="totem-tab-btn" data-filter="s">🔥 Тир S (Топ)</button>
+            <button class="totem-tab-btn" data-filter="a">⚡ Тир A (Сильные)</button>
+            <button class="totem-tab-btn" data-filter="b">🛡️ Тир B (Ситуативные)</button>
+          </div>
+        </div>
+
+        <!-- Сетка навыков слияния -->
+        <div id="fusionSkillsGrid" class="fusion-skills-grid"></div>
+      </section>
+
+      <!-- 7. СФЕРЫ И ОБМЕН -->
+      <section class="totems-section" id="tt-spheres">
+        <div class="totems-section-header">
+          <h2>7. Типы сфер и правила передачи тотемов</h2>
+          <p>В игре существует 8 типов сфер призыва. Лишние сферы можно дарить друзьям или превращать в катализаторы:</p>
+        </div>
+
+        <div class="totem-table-wrap">
+          <table class="totem-table">
+            <thead>
+              <tr>
+                <th>Сфера призыва</th>
+                <th>Доступные стихии</th>
+                <th>Тип получения</th>
+              </tr>
+            </thead>
+            <tbody id="totemSpheresTableBody"></tbody>
+          </table>
+        </div>
+
+        <div class="totem-callout tip">
+          <b>Правила подарка сфер друзьям:</b><br>
+          Подарить сферу согильдийцу или другу можно только в том случае, если <b>все ваши тотемы уже прокачаны до 6 звёзд</b>. 
+          Дарятся ТОЛЬКО целые сферы (не фрагменты!). При этом у получателя не должно быть максимальных тотемов или запаса сфер, закрывающего 6★.
+        </div>
+      </section>
+
+      <!-- 8. СИНЕРГИИ И СБОРКИ -->
+      <section class="totems-section" id="tt-synergies">
+        <div class="totems-section-header">
+          <h2>8. Советчик сборок и синергии со стихиями</h2>
+          <p>Выберите свою основную стихию тотема, чтобы получить проверенные комбинации навыков слияния:</p>
+        </div>
+
+        <div class="totem-calc-card">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+            <label for="totemAdvisorElementSelect" style="font-weight:700;">Выберите стихию тотема:</label>
+            <select id="totemAdvisorElementSelect" style="background:rgba(0,0,0,0.4);border:1px solid #38bdf8;color:#fff;border-radius:8px;padding:6px 14px;font-size:1rem;">
+              <option value="fire">🔥 Огонь</option>
+              <option value="water">💧 Вода</option>
+              <option value="earth">🌍 Земля</option>
+              <option value="light">✨ Свет</option>
+              <option value="dark">🌑 Тьма</option>
+              <option value="distortion">🌀 Искажение</option>
+            </select>
+          </div>
+
+          <div id="totemBuildAdvisorResult"></div>
+        </div>
+      </section>
+
+      <!-- 9. ДВОЙНЫЕ ТОТЕМЫ -->
+      <section class="totems-section" id="tt-dual">
+        <div class="totems-section-header">
+          <h2>9. Двойные тотемы: механика и очерёдность срабатывания</h2>
+          <p>Составы команд, позволяющие запускать сразу два тотема в одном бою:</p>
+        </div>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-bottom:20px;">
+          <div style="background:rgba(30,41,59,0.6);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:16px;">
+            <h4 style="margin:0 0 8px 0;color:#f59e0b;">🔥 3 Огня + 2 Света (или Тьмы)</h4>
+            <p style="font-size:0.88rem;color:#cbd5e1;margin:0;">
+              Атакующая взрывная мощь: Огонь наносит огромный урон циклоном, а Сверхновая Света спасает команду от ваншота в критический момент.
+            </p>
+          </div>
+          <div style="background:rgba(30,41,59,0.6);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:16px;">
+            <h4 style="margin:0 0 8px 0;color:#38bdf8;">💧 3 Воды + 2 Света (Классика выживания)</h4>
+            <p style="font-size:0.88rem;color:#cbd5e1;margin:0;">
+              Максимальный сустейн: исцеление Воды + неуязвимость Света позволяют Сигурду, Нове и Гипериону безостановочно контролить поле.
+            </p>
+          </div>
+          <div style="background:rgba(30,41,59,0.6);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:16px;">
+            <h4 style="margin:0 0 8px 0;color:#db2777;">🌀 Вальдур (Искажение) + 1 Титан + 2 Света/Тьмы</h4>
+            <p style="font-size:0.88rem;color:#cbd5e1;margin:0;">
+              Поскольку Вальдур считается за двоих, пара Вальдур + Алекто закрывает Искажение, оставляя 3 слота для закрытия второго тотема!
+            </p>
+          </div>
+        </div>
+
+        <div class="totem-callout warn">
+          <b>Золотое правило двойных тотемов:</b><br>
+          <b>Дублирующиеся навыки НЕ СКЛАДЫВАЮТСЯ!</b> Если вы поставите <i>Flame Dance</i> или <i>Triple Cycle</i> на оба тотема, сработает ТОЛЬКО ОДИН тотем (с более высоким рангом навыка или суммарной мощью титанов). 
+          Обязательно ставьте разные навыки на первый и второй тотем!
+        </div>
+      </section>
+
+      <!-- 10. FAQ -->
+      <section class="totems-section" id="tt-faq">
+        <div class="totems-section-header">
+          <h2>10. Часто задаваемые вопросы (FAQ)</h2>
+          <p>Ответы на самые распространённые вопросы новичков и опытных игроков:</p>
+        </div>
+
+        <div class="totems-faq-item">
+          <details>
+            <summary>Работает ли пассивный бонус тотема, если он не набрал энергию в бою?</summary>
+            <div class="totems-faq-answer">
+              Да, абсолютно! Пассивный бонус к атаке или здоровью титанов своей стихии действует постоянно с первой до последней секунды любого боя, независимо от того, ультовал ли тотем.
+            </div>
+          </details>
+        </div>
+
+        <div class="totems-faq-item">
+          <details>
+            <summary>Какой тотем считается самым сильным в игре?</summary>
+            <div class="totems-faq-answer">
+              Универсального ответа нет: <b>Тотем Воды</b> идеален для Подземелья и защитных пачек; <b>Тотем Огня</b> обладает колоссальным уроном; <b>Тотем Света</b> даёт 5-секундное бессмертие, спасающее от любых контрпиков; а <b>Тотем Искажения</b> наказывает за перемещения. Для старта аккаунта лучшим традиционно считается Тотем Воды.
+            </div>
+          </details>
+        </div>
+
+        <div class="totems-faq-item">
+          <details>
+            <summary>Можно ли передать лишний фрагмент тотема другу?</summary>
+            <div class="totems-faq-answer">
+              Нет, фрагменты дарить нельзя. Подарить можно только ЦЕЛУЮ нераспакованную сферу призыва, и только при условии, что у дарителя все 6 тотемов уже прокачаны до 6 звёзд.
+            </div>
+          </details>
+        </div>
+
+        <div class="totems-faq-item">
+          <details>
+            <summary>Что делать с лишними сферами и фрагментами тотемов?</summary>
+            <div class="totems-faq-answer">
+              Лишние фрагменты и сферы можно преобразовать в инвентаре (вкладка «Все» → кнопка «Преобразовать») в <b>350 стихийных катализаторов</b> каждый для прокачки навыков слияния.
+            </div>
+          </details>
+        </div>
+
+        <div class="totems-faq-item">
+          <details>
+            <summary>Можно ли делать слияние тотема, если он ещё не прокачан до 6 звёзд или 130 уровня?</summary>
+            <div class="totems-faq-answer">
+              Да! Слияние доступно даже на тотеме в 1 звезду и 1 уровня. Вы можете в любой момент привязать к нему стихийный и первичный навык при наличии катализаторов.
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <!-- ИСТОЧНИКИ -->
+      <section class="totems-section" id="tt-sources" style="border-top:1px solid rgba(255,255,255,0.1);padding-top:24px;">
+        <h3 style="font-size:1.1rem;color:#94a3b8;">Источники и база знаний:</h3>
+        <ul style="font-size:0.88rem;color:#94a3b8;line-height:1.7;">
+          <li>Hero Wars Olympus — Руководство по тотемам и механикам навыков слияния</li>
+          <li>Alexandre Games — Dominion Era Totems Guide & Totem Fusion Skills Tier List</li>
+          <li>Hero Wars Central — Стратегии оптимального распределения навыков тотемов</li>
+          <li>Nexters Support — Официальная база знаний Hero Wars: Dominion Era</li>
+        </ul>
+        <p style="font-size:0.8rem;color:#64748b;margin-top:10px;">
+          Все изображения тотемов, сфер и навыков сохранены локально в проекте. Права на игровые ассеты принадлежат Nexters.
+        </p>
+      </section>
+
+    </div>
+  </section>
+
+
   <!-- ===================== HEROES GUIDE VIEW ===================== -->
   <section id="view-heroes-guide" class="view">
     <div class="heroes-guide-wrap">
