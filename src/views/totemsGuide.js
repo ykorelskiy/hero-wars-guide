@@ -721,7 +721,7 @@ function initScrollSpy() {
   });
 
   window.addEventListener('scroll', () => {
-    let fromTop = window.scrollY + 160;
+    let fromTop = window.scrollY + 90;
     links.forEach(link => {
       const sec = document.querySelector(link.hash);
       if (sec && sec.offsetTop <= fromTop && sec.offsetTop + sec.offsetHeight > fromTop) {

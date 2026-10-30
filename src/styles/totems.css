@@ -81,15 +81,16 @@
   flex-wrap: wrap;
   gap: 8px;
   position: sticky;
-  top: 70px;
+  top: 0;
   z-index: 20;
-  padding: 10px 14px;
+  padding: 8px 14px;
   margin-bottom: 30px;
-  background: rgba(15, 23, 42, 0.88);
+  background: rgba(15, 23, 42, 0.94);
   backdrop-filter: blur(14px);
   border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 14px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  border-top: none;
+  border-radius: 0 0 14px 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
 }
 
 .totems-toc a {
@@ -115,7 +116,7 @@
 /* Section Common */
 .totems-section {
   margin-bottom: 48px;
-  scroll-margin-top: 130px;
+  scroll-margin-top: 75px;
 }
 
 .totems-section-header {
@@ -605,8 +606,9 @@
     font-size: 1.75rem;
   }
   .totems-toc {
-    top: 60px;
+    top: 0;
     padding: 6px;
+    border-radius: 0 0 10px 10px;
   }
   .totem-calc-inputs {
     grid-template-columns: 1fr 1fr;
