@@ -5597,20 +5597,20 @@
             <div class="totem-calc-field">
               <label for="blpTargetTotem">Целевой фрагмент тотема</label>
               <select id="blpTargetTotem">
-                <option value="1">1-й фрагмент (порог 4 500 💎)</option>
-                <option value="2">2-й фрагмент (порог 45 000 💎)</option>
-                <option value="3">3-й фрагмент (порог 466 667 💎)</option>
-                <option value="4">4-й фрагмент (порог 850 000 💎)</option>
-                <option value="5">5-й фрагмент (порог 1 133 333 💎)</option>
-                <option value="6">6-й фрагмент (порог 1 416 667 💎)</option>
-                <option value="7">7-й фрагмент (порог 1 700 000 💎)</option>
-                <option value="8">8-й фрагмент (порог 1 983 333 💎)</option>
-                <option value="9">9-й фрагмент (порог 2 266 667 💎)</option>
-                <option value="10">10-й фрагмент (порог 2 550 000 💎)</option>
+                <option value="1">1-й фрагмент (порог 4 500 изумрудов)</option>
+                <option value="2">2-й фрагмент (порог 45 000 изумрудов)</option>
+                <option value="3">3-й фрагмент (порог 466 667 изумрудов)</option>
+                <option value="4">4-й фрагмент (порог 850 000 изумрудов)</option>
+                <option value="5">5-й фрагмент (порог 1 133 333 изумрудов)</option>
+                <option value="6">6-й фрагмент (порог 1 416 667 изумрудов)</option>
+                <option value="7">7-й фрагмент (порог 1 700 000 изумрудов)</option>
+                <option value="8">8-й фрагмент (порог 1 983 333 изумрудов)</option>
+                <option value="9">9-й фрагмент (порог 2 266 667 изумрудов)</option>
+                <option value="10">10-й фрагмент (порог 2 550 000 изумрудов)</option>
               </select>
             </div>
             <div class="totem-calc-field">
-              <label for="blpSpentEmeralds">Потрачено изумрудов на Алтаре (💎)</label>
+              <label for="blpSpentEmeralds">Потрачено изумрудов на Алтаре <img src="/images/totems/emerald.webp" class="emerald-icon" alt="Изумруды"></label>
               <input type="number" id="blpSpentEmeralds" min="0" step="500" value="0">
             </div>
           </div>
@@ -5695,43 +5695,78 @@
       <!-- 6. СЛИЯНИЕ И НАВЫКИ -->
       <section class="totems-section" id="tt-fusion">
         <div class="totems-section-header">
-          <h2>6. Слияние тотемов: 12 стихийных и 5 первичных навыков</h2>
+          <h2>6. Слияние тотемов: механика прокачки, катализаторы и Кристаллизованная мощь</h2>
           <p>
-            Сверх базового умения каждый тотем может нести 2 дополнительных навыка слияния:
-            один <b>стихийный</b> (активный) и один <b>первичный</b> (пассивный). Слияние доступно даже на 1-звёздочном тотеме!
+            Сверх базового умения каждый тотем может нести 2 дополнительных навыка влияния:
+            один <b>стихийный</b> (активный) и один <b>первичный</b> (пассивный). Слияние доступно даже на 1-звёздочном тотеме 1-го уровня!
           </p>
         </div>
 
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin-bottom:20px;">
           <div style="background:rgba(234,88,12,0.1);border:1px solid rgba(234,88,12,0.3);border-radius:12px;padding:16px;">
             <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
-              <img src="/images/totems/elemental-catalyst.webp" alt="Стихийный катализатор" style="width:32px;height:32px;">
-              <h4 style="margin:0;color:#fdba74;">Стихийные катализаторы</h4>
+              <img src="/images/totems/elemental-catalyst.webp" alt="Стихийный катализатор" style="width:34px;height:34px;">
+              <h4 style="margin:0;color:#fdba74;font-size:1.05rem;">Стихийные катализаторы</h4>
             </div>
-            <p style="font-size:0.88rem;color:#cbd5e1;margin:0;">
-              Используются для создания и прокачки 12 активных стихийных навыков (контроль, урон, барьеры, защита от смерти).
-              Получаются при распылении лишних фрагментов тотема (1 фрагмент = <b>350 катализаторов</b>).
+            <p style="font-size:0.88rem;color:#cbd5e1;margin:0;line-height:1.55;">
+              Используются для 12 активных стихийных навыков (контроль, урон, барьеры, защита от смерти).
+              Получаются при распылении лишних фрагментов тотема (1 фрагмент = <b>350 катализаторов</b>) или в наградах сезонов.
             </p>
           </div>
           <div style="background:rgba(124,58,237,0.1);border:1px solid rgba(124,58,237,0.3);border-radius:12px;padding:16px;">
             <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
-              <img src="/images/totems/primal-catalyst.webp" alt="Первичный катализатор" style="width:32px;height:32px;">
-              <h4 style="margin:0;color:#c4b5fd;">Первичные катализаторы</h4>
+              <img src="/images/totems/primal-catalyst.webp" alt="Первичный катализатор" style="width:34px;height:34px;">
+              <h4 style="margin:0;color:#c4b5fd;font-size:1.05rem;">Первородные катализаторы</h4>
             </div>
-            <p style="font-size:0.88rem;color:#cbd5e1;margin:0;">
-              Используются для 5 пассивных первичных навыков (щиты, лечение, набор энергии, зацикливание эффектов).
+            <p style="font-size:0.88rem;color:#cbd5e1;margin:0;line-height:1.55;">
+              Используются для 5 пассивных первородных навыков (щиты, лечение, набор энергии, зацикливание эффектов).
               Получаются из событий или при разборе Легендарного Дара Доминиона (1 дар = <b>135 катализаторов</b>).
             </p>
           </div>
         </div>
 
-        <div class="totem-callout warn">
-          <b>Как крафтить нужные навыки дёшево и эффективно:</b>
-          <ol style="margin:6px 0 0 18px;padding:0;">
-            <li>Если полученный навык вам не нравится, вы можете <b>отклонить результат</b> до подтверждения.</li>
-            <li>Чтобы дешево получить желаемый навык, сначала создайте любой базовый навык за 10 катализаторов, а затем выбивайте нужный, вкладывая от 90 катализаторов.</li>
-            <li>Для гарантированного повышения ранга до 6 уровня копите на «Кристаллизованную мощь» (~3000 катализаторов).</li>
-          </ol>
+        <!-- ПОДРОБНЫЙ РАЗБОР МЕХАНИКИ ПРОКАЧКИ ТОТЕМОВ -->
+        <div style="background:rgba(15,23,42,0.8);border:1px solid rgba(56,189,248,0.3);border-radius:16px;padding:22px;margin-bottom:24px;">
+          <h3 style="color:#38bdf8;margin:0 0 14px;font-size:1.25rem;display:flex;align-items:center;gap:10px;">
+            ⚙️ Полная механика прокачки навыков тотема: от роллов до гаранта
+          </h3>
+          
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-bottom:18px;">
+            <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:14px;">
+              <div style="color:#f59e0b;font-weight:700;font-size:0.95rem;margin-bottom:6px;">1. Создание и прокачка рангов</div>
+              <p style="font-size:0.88rem;color:#cbd5e1;margin:0;line-height:1.55;">
+                В пустой слот первый навык создаётся всего за <b>10 катализаторов</b> (выпадает случайный навык 1-го ранга). 
+                Дальнейшие попытки улучшить ранг требуют вложения от 10 до 90+ катализаторов за попытку (ролл).
+              </p>
+            </div>
+            <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:14px;">
+              <div style="color:#10b981;font-weight:700;font-size:0.95rem;margin-bottom:6px;">2. Выпал слабый навык? Жмите «Отклонить»!</div>
+              <p style="font-size:0.88rem;color:#cbd5e1;margin:0;line-height:1.55;">
+                Если при попытке выпал не тот навык или навык более низкого ранга, вы нажимаете кнопку <b>«Отклонить» (Сохранить текущий)</b>.
+                <b>Ваш текущий прокачанный навык остаётся полностью целым и не сбрасывается!</b> Никакого риска ухудшить тотем нет.
+              </p>
+            </div>
+            <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:14px;">
+              <div style="color:#a855f7;font-weight:700;font-size:0.95rem;margin-bottom:6px;">3. Накопление очков до 3 000 (Защита от неудач)</div>
+              <p style="font-size:0.88rem;color:#cbd5e1;margin:0;line-height:1.55;">
+                Катализаторы при отклонении не сгорают впустую! Каждая трата катализаторов наполняет шкалу гаранта в правом нижнем углу:
+                <b>1 стихийный = 1 очко</b>, <b>1 первородный = 0.4 очка</b>. При наборе <b>3 000 очков</b> вы гарантированно получаете предмет <b>«Кристаллизованная мощь»</b>.
+              </p>
+            </div>
+            <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:14px;">
+              <div style="color:#ef4444;font-weight:700;font-size:0.95rem;margin-bottom:6px;">4. ⚠️ Главная ловушка: лимит 1 штука!</div>
+              <p style="font-size:0.88rem;color:#cbd5e1;margin:0;line-height:1.55;">
+                В инвентаре может храниться <b>только 1 Кристаллизованная мощь</b>. Пока вы её не потратите, <b>набор очков шкалы полностью останавливается</b>!
+                Все дальнейшие траты катализаторов сгорят без начисления прогресса. Получили гарант — сразу применяйте!
+              </p>
+            </div>
+          </div>
+
+          <div class="totem-callout tip" style="margin-bottom:0;">
+            <b>💡 Оптимальная стратегия прокачки («Умный билд»):</b><br>
+            • <b>Ранги 1 $\rightarrow$ 3:</b> качайте обычными роллами катализаторов. Базовый шанс успеха на начальных рангах достаточно высок.<br>
+            • <b>Ранги 4 $\rightarrow$ 5 / 6:</b> шанс естественного улучшения падает до 4–16%! На этом этапе НЕ сливайте тысячи катализаторов вслепую: копите шкалу гаранта (3000 очков) и закрывайте сложный переход гарантированной <b>«Кристаллизованной мощью»</b> со 100% успехом.
+          </div>
         </div>
 
         <!-- Тулбар фильтрации навыков -->
@@ -5831,7 +5866,7 @@
 
         <div class="totem-callout warn">
           <b>Золотое правило двойных тотемов:</b><br>
-          <b>Дублирующиеся навыки НЕ СКЛАДЫВАЮТСЯ!</b> Если вы поставите <i>Flame Dance</i> или <i>Triple Cycle</i> на оба тотема, сработает ТОЛЬКО ОДИН тотем (с более высоким рангом навыка или суммарной мощью титанов). 
+          <b>Дублирующиеся навыки НЕ СКЛАДЫВАЮТСЯ!</b> Если вы поставите <i>«Танец пламени»</i> или <i>«Тройной цикл»</i> на оба тотема, сработает ТОЛЬКО ОДИН тотем (с более высоким рангом навыка или суммарной мощью титанов). 
           Обязательно ставьте разные навыки на первый и второй тотем!
         </div>
       </section>

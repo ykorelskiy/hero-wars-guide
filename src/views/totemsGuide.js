@@ -92,11 +92,12 @@ export const TOTEMS_DATA = [
 ];
 
 // 2. Навыки Слияния (12 стихийных + 5 первичных)
+// Формат названий: «Русскоязычное название (English Name)» при первом представлении
 export const FUSION_SKILLS_DATA = [
   // Стихийные (Активные)
   {
     id: 'ice-age',
-    name: 'Ice Age (Ледниковый период)',
+    name: 'Ледниковый период (Ice Age)',
     tier: 'S',
     type: 'el',
     img: '/images/totems/ice-age.webp',
@@ -106,7 +107,7 @@ export const FUSION_SKILLS_DATA = [
   },
   {
     id: 'dreamveil',
-    name: 'Dreamveil (Завеса снов)',
+    name: 'Пелена грёз (Dreamveil)',
     tier: 'S',
     type: 'el',
     img: '/images/totems/dreamveil.webp',
@@ -116,7 +117,7 @@ export const FUSION_SKILLS_DATA = [
   },
   {
     id: 'nova-frare',
-    name: 'Nova Flare (Вспышка сверхновой)',
+    name: 'Вспышка сверхновой (Nova Flare)',
     tier: 'S',
     type: 'el',
     img: '/images/totems/nova-frare.webp',
@@ -126,7 +127,7 @@ export const FUSION_SKILLS_DATA = [
   },
   {
     id: 'last-flash',
-    name: 'Last Flash (Последняя вспышка)',
+    name: 'Последняя вспышка (Last Flash)',
     tier: 'S',
     type: 'el',
     img: '/images/totems/last-flash.webp',
@@ -136,7 +137,7 @@ export const FUSION_SKILLS_DATA = [
   },
   {
     id: 'murmur-of-the-crags',
-    name: 'Murmur of the Crags (Шёпот утёсов)',
+    name: 'Шёпот утёсов (Murmur of the Crags)',
     tier: 'A',
     type: 'el',
     img: '/images/totems/murmur-of-the-crags.webp',
@@ -146,7 +147,7 @@ export const FUSION_SKILLS_DATA = [
   },
   {
     id: 'dark-matter',
-    name: 'Dark Matter (Тёмная материя)',
+    name: 'Тёмная материя (Dark Matter)',
     tier: 'A',
     type: 'el',
     img: '/images/totems/dark-matter.webp',
@@ -156,7 +157,7 @@ export const FUSION_SKILLS_DATA = [
   },
   {
     id: 'main-sequence',
-    name: 'Main Sequence (Главная последовательность)',
+    name: 'Главная последовательность (Main Sequence)',
     tier: 'A',
     type: 'el',
     img: '/images/totems/main-sequence.webp',
@@ -166,7 +167,7 @@ export const FUSION_SKILLS_DATA = [
   },
   {
     id: 'flame-dance',
-    name: 'Flame Dance (Танец пламени)',
+    name: 'Танец пламени (Flame Dance)',
     tier: 'A',
     type: 'el',
     img: '/images/totems/flame-dance.webp',
@@ -176,7 +177,7 @@ export const FUSION_SKILLS_DATA = [
   },
   {
     id: 'gravitational-anomaly',
-    name: 'Gravitational Anomaly (Гравитационная аномалия)',
+    name: 'Гравитационная аномалия (Gravitational Anomaly)',
     tier: 'B',
     type: 'el',
     img: '/images/totems/gravitational-anomaly.webp',
@@ -186,7 +187,7 @@ export const FUSION_SKILLS_DATA = [
   },
   {
     id: 'the-depths-whisper',
-    name: 'The Depths Whisper (Шёпот глубин)',
+    name: 'Шёпот глубин (The Depths Whisper)',
     tier: 'B',
     type: 'el',
     img: '/images/totems/the-depths-whisper.webp',
@@ -196,7 +197,7 @@ export const FUSION_SKILLS_DATA = [
   },
   {
     id: 'star-dust',
-    name: 'Star Dust (Звёздная пыль)',
+    name: 'Звёздная пыль (Star Dust)',
     tier: 'B',
     type: 'el',
     img: '/images/totems/star-dust.webp',
@@ -206,7 +207,7 @@ export const FUSION_SKILLS_DATA = [
   },
   {
     id: 'wrath-of-the-depths',
-    name: 'Wrath of the Depths (Гнев глубин)',
+    name: 'Гнев глубин (Wrath of the Depths)',
     tier: 'B',
     type: 'el',
     img: '/images/totems/wrath-of-the-depths.webp',
@@ -218,7 +219,7 @@ export const FUSION_SKILLS_DATA = [
   // Первичные (Пассивные)
   {
     id: 'triple-cycle',
-    name: 'Triple Cycle (Тройной цикл)',
+    name: 'Тройной цикл (Triple Cycle)',
     tier: 'S',
     type: 'pr',
     img: '/images/totems/triple-cycle.webp',
@@ -228,7 +229,7 @@ export const FUSION_SKILLS_DATA = [
   },
   {
     id: 'primal-zeal',
-    name: 'Primal Zeal (Первичное рвение)',
+    name: 'Первичное рвение (Primal Zeal)',
     tier: 'A',
     type: 'pr',
     img: '/images/totems/primal-zeal.webp',
@@ -238,7 +239,7 @@ export const FUSION_SKILLS_DATA = [
   },
   {
     id: 'echo-aegis',
-    name: 'Echo Aegis (Эхо-эгида)',
+    name: 'Эхо-эгида (Echo Aegis)',
     tier: 'A',
     type: 'pr',
     img: '/images/totems/echo-aegis.webp',
@@ -248,7 +249,7 @@ export const FUSION_SKILLS_DATA = [
   },
   {
     id: 'pulse-of-the-ancients',
-    name: 'Pulse of the Ancients (Пульс древних)',
+    name: 'Пульс древних (Pulse of the Ancients)',
     tier: 'A',
     type: 'pr',
     img: '/images/totems/pulse-of-the-ancients.webp',
@@ -258,19 +259,19 @@ export const FUSION_SKILLS_DATA = [
   },
   {
     id: 'call-of-elements',
-    name: 'Call of Elements (Зов стихий)',
+    name: 'Зов стихий (Call of Elements)',
     tier: 'B',
     type: 'pr',
     img: '/images/totems/call-of-elements.webp',
     desc: 'Атака титана увеличивается пропорционально потерянному здоровью: +14 625 атаки за каждые недостающие 11% HP.',
-    synergy: 'Рискованный берсерк-мод. Отлично синергирует с Last Flash, когда титан долго живёт на 1 HP.',
+    synergy: 'Рискованный берсерк-мод. Отлично синергирует с «Последней вспышкой», когда титан долго живёт на 1 HP.',
     statVal: '+14 625 атаки за каждые 11% потерянного HP'
   }
 ];
 
 // 3. Таблица порогов Bad Luck Protection (BLP)
 export const BLP_THRESHOLDS = [
-  { num: 1,  emeralds: 4500,     comment: 'Фактически бесплатно (квест на 9 призывов по 500💎 возвращает 5000💎). Сильнейшая стихия.' },
+  { num: 1,  emeralds: 4500,     comment: 'Фактически бесплатно (квест на 9 призывов по 500 изумрудов возвращает 5 000 изумрудов). Сильнейшая стихия.' },
   { num: 2,  emeralds: 45000,    comment: 'Гарантированно для вашей сильнейшей по мощи стихии титанов!' },
   { num: 3,  emeralds: 466667,   comment: 'Стихия тотема случайная. Начинается резкий рост порога.' },
   { num: 4,  emeralds: 850000,   comment: 'Случайная стихия.' },
@@ -297,43 +298,43 @@ export const SPHERES_DATA = [
   { name: 'Сфера Искажённого духа', img: '/images/totems/sphere-distorted.png', pool: 'Все 6 стихий (включая Искажение)', type: 'Вы выбираете стихию' }
 ];
 
-// Рекомендации сборок навыков слияния по стихиям
+// Рекомендации сборок навыков слияния по стихиям (только русскоязычные названия)
 export const ELEMENT_RECOMMENDED_BUILDS = {
   fire: {
     title: '🔥 Огненная сборка (Максимальный взрывной урон)',
-    active: 'Nova Flare или Flame Dance',
-    passive: 'Primal Zeal или Triple Cycle',
-    reason: 'Огню требуется как можно быстрее стереть вражескую передовую. Nova Flare защищает от смертельного контрудара и наносит колоссальный урон, а Primal Zeal даёт быстрый набор энергии для повторной ульты Молоха и Араджи.'
+    active: '«Вспышка сверхновой» или «Танец пламени»',
+    passive: '«Первичное рвение» или «Тройной цикл»',
+    reason: 'Огню требуется как можно быстрее стереть вражескую передовую. «Вспышка сверхновой» защищает от смертельного контрудара и наносит колоссальный урон, а «Первичное рвение» даёт быстрый набор энергии для повторной ульты Молоха и Араджи.'
   },
   water: {
     title: '💧 Водная сборка (Непробиваемый сустейн и контроль)',
-    active: 'Murmur of the Crags или Ice Age',
-    passive: 'Triple Cycle или Pulse of the Ancients',
-    reason: 'Воде нужно время, чтобы Сигурд прожал неуязвимость, а Нова заморозила заднюю линию. Murmur of the Crags поглощает колоссальный урон, а Triple Cycle зацикливает лечение Сигурда в щиты и атаку.'
+    active: '«Шёпот утёсов» или «Ледниковый период»',
+    passive: '«Тройной цикл» или «Пульс древних»',
+    reason: 'Воде нужно время, чтобы Сигурд прожал неуязвимость, а Нова заморозила заднюю линию. «Шёпот утёсов» поглощает колоссальный урон, а «Тройной цикл» зацикливает лечение Сигурда в щиты и атаку.'
   },
   earth: {
     title: '🌍 Земляная сборка (Кристаллическая крепость)',
-    active: 'Murmur of the Crags или Main Sequence',
-    passive: 'Echo Aegis или Triple Cycle',
-    reason: 'Земля рассчитывает на затяжной бой и живучесть Ангуса. Echo Aegis постоянно обновляет щиты при их сбивании, а Main Sequence разгоняет атаку команды до небес.'
+    active: '«Шёпот утёсов» или «Главная последовательность»',
+    passive: '«Эхо-эгида» или «Тройной цикл»',
+    reason: 'Земля рассчитывает на затяжной бой и живучесть Ангуса. «Эхо-эгида» постоянно обновляет щиты при их сбивании, а «Главная последовательность» разгоняет атаку команды до небес.'
   },
   light: {
     title: '✨ Сборка Света (Оглушение и контр-атака)',
-    active: 'Dark Matter или Ice Age',
-    passive: 'Triple Cycle или Primal Zeal',
-    reason: 'Титаны Света (Ригель, Амон, Ияри) обладают частыми оглушениями. Dark Matter вызывает комету на каждое оглушение и увеличивает стихийный урон по цели на 75%!'
+    active: '«Тёмная материя» или «Ледниковый период»',
+    passive: '«Тройной цикл» или «Первичное рвение»',
+    reason: 'Титаны Света (Ригель, Амон, Ияри) обладают частыми оглушениями. «Тёмная материя» вызывает комету на каждое оглушение и увеличивает стихийный урон по цели на 75%!'
   },
   dark: {
     title: '🌑 Сборка Тьмы (Агрессивная стяжка и дебаф)',
-    active: 'Flame Dance или Gravitational Anomaly',
-    passive: 'Triple Cycle или Primal Zeal',
-    reason: 'Чёрная дыра стягивает всех врагов в одну точку, где вихрь Flame Dance наносит максимальный концентрированный урон всей пачке врага сразу.'
+    active: '«Танец пламени» или «Гравитационная аномалия»',
+    passive: '«Тройной цикл» или «Первичное рвение»',
+    reason: 'Чёрная дыра стягивает всех врагов в одну точку, где вихрь «Танец пламени» наносит максимальный концентрированный урон всей пачке врага сразу.'
   },
   distortion: {
     title: '🌀 Сборка Искажения (Осколочная зона и толчки)',
-    active: 'Star Dust или Ice Age',
-    passive: 'Triple Cycle или Primal Zeal',
-    reason: 'Осколочное поле Искажения бьёт за перемещение врагов, а Star Dust добавляет регулярные толчки раз в секунду, провоцируя непрерывный урон за движение.'
+    active: '«Звёздная пыль» или «Ледниковый период»',
+    passive: '«Тройной цикл» или «Первичное рвение»',
+    reason: 'Осколочное поле Искажения бьёт за перемещение врагов, а «Звёздная пыль» добавляет регулярные толчки раз в секунду, провоцируя непрерывный урон за движение.'
   }
 };
 
@@ -378,7 +379,7 @@ function renderTotemCards() {
         <span>${t.maxBonus} (${t.bonusType})</span>
       </div>
       <div style="font-size: 0.8rem; color: #94a3b8; margin-top: auto;">
-        💎 <b>Ресурс прокачки:</b> ${t.currency}
+        <img src="/images/totems/emerald.webp" class="emerald-icon" alt="Изумруды"> <b>Ресурс прокачки:</b> ${t.currency}
       </div>
     </article>
   `).join('');
@@ -411,7 +412,7 @@ function renderBLPTable() {
   tbody.innerHTML = BLP_THRESHOLDS.map(b => `
     <tr>
       <td><b>#${b.num}</b></td>
-      <td style="color:#f59e0b;font-weight:700;">${b.emeralds.toLocaleString()} 💎</td>
+      <td style="color:#10b981;font-weight:700;">${b.emeralds.toLocaleString()} <img src="/images/totems/emerald.webp" class="emerald-icon" alt="Изумруды"></td>
       <td style="color:#cbd5e1;font-size:0.86rem;">${b.comment}</td>
     </tr>
   `).join('');
@@ -475,8 +476,8 @@ function initSquadActivator() {
         ⚡ Двойная активация! Активны 2 тотема: <span style="color:#f59e0b;">${first.name}</span> и <span style="color:#a855f7;">${second.name}</span>
       </div>
       <div style="background:rgba(0,0,0,0.3);border-radius:10px;padding:10px 14px;margin-top:10px;border-left:3px solid #f59e0b;font-size:0.9rem;">
-        🎯 <b>Очерёдность применения:</b> Первым гарантированно сработает <b>${first.name}</b> (на него рекомендуется ставить активный навык контроля или щита, например <i>Ice Age</i>).
-        Вторым сработает <b>${second.name}</b> (на него выгоднее ставить пассивный навык <i>Triple Cycle</i>).<br>
+        🎯 <b>Очерёдность применения:</b> Первым гарантированно сработает <b>${first.name}</b> (на него рекомендуется ставить активный навык контроля или щита, например <i>«Ледниковый период»</i>).
+        Вторым сработает <b>${second.name}</b> (на него выгоднее ставить пассивный навык <i>«Тройной цикл»</i>).<br>
         ⚠️ <b>Правило слияния:</b> Не ставьте один и тот же навык на оба тотема — дубликаты навыков НЕ стакаются!
       </div>`;
     }
@@ -521,8 +522,8 @@ function initBLPCalculator() {
         <div class="totem-progress-bar" style="width: ${progressPercent}%;"></div>
       </div>
       <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-size:0.9rem;margin-top:10px;">
-        <span>Порог гаранта: <b style="color:#f59e0b;">${required.toLocaleString()} 💎</b></span>
-        <span>Осталось потратить: <b style="color:#ef4444;">${remaining.toLocaleString()} 💎</b></span>
+        <span>Порог гаранта: <b style="color:#10b981;">${required.toLocaleString()} <img src="/images/totems/emerald.webp" class="emerald-icon" alt="Изумруды"></b></span>
+        <span>Осталось потратить: <b style="color:#ef4444;">${remaining.toLocaleString()} <img src="/images/totems/emerald.webp" class="emerald-icon" alt="Изумруды"></b></span>
       </div>
     `;
 
@@ -595,7 +596,7 @@ function initUpgradeCostCalculator() {
         </div>
         <div style="background:rgba(0,0,0,0.3);padding:12px 14px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);">
           <div style="color:#94a3b8;font-size:0.8rem;text-transform:uppercase;">Или альтернативно в изумрудах</div>
-          <div style="font-size:1.2rem;font-weight:700;color:#f59e0b;">~${estEmeraldsForLvl.toLocaleString()} 💎</div>
+          <div style="font-size:1.2rem;font-weight:700;color:#10b981;">~${estEmeraldsForLvl.toLocaleString()} <img src="/images/totems/emerald.webp" class="emerald-icon" alt="Изумруды"></div>
         </div>
         <div style="background:rgba(0,0,0,0.3);padding:12px 14px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);">
           <div style="color:#94a3b8;font-size:0.8rem;text-transform:uppercase;">Фрагментов / сфер для звёзд</div>

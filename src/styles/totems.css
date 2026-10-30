@@ -339,6 +339,16 @@
   transition: width 0.4s ease;
 }
 
+/* Emerald Currency Icon */
+.emerald-icon {
+  width: 17px;
+  height: 17px;
+  vertical-align: -2.5px;
+  object-fit: contain;
+  display: inline-block;
+  margin: 0 2px;
+}
+
 /* Tables */
 .totem-table-wrap {
   width: 100%;
@@ -354,6 +364,61 @@
   border-collapse: collapse;
   font-size: 0.9rem;
   min-width: 620px;
+}
+
+/* Section 2 table: responsive without forced min-width */
+#tt-activation .totem-table-wrap {
+  overflow-x: visible;
+}
+
+#tt-activation .totem-table {
+  min-width: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+#tt-activation .totem-table th,
+#tt-activation .totem-table td {
+  white-space: normal;
+  word-break: normal;
+  overflow-wrap: break-word;
+  padding: 12px 14px;
+}
+
+#tt-activation .totem-table th:nth-child(1),
+#tt-activation .totem-table td:nth-child(1) {
+  width: 30%;
+}
+
+#tt-activation .totem-table th:nth-child(2),
+#tt-activation .totem-table td:nth-child(2) {
+  width: 22%;
+  text-align: center;
+}
+
+#tt-activation .totem-table th:nth-child(3),
+#tt-activation .totem-table td:nth-child(3) {
+  width: 48%;
+}
+
+@media (max-width: 640px) {
+  #tt-activation .totem-table th,
+  #tt-activation .totem-table td {
+    padding: 8px 6px;
+    font-size: 0.82rem;
+  }
+  #tt-activation .totem-table th:nth-child(1),
+  #tt-activation .totem-table td:nth-child(1) {
+    width: 32%;
+  }
+  #tt-activation .totem-table th:nth-child(2),
+  #tt-activation .totem-table td:nth-child(2) {
+    width: 20%;
+  }
+  #tt-activation .totem-table th:nth-child(3),
+  #tt-activation .totem-table td:nth-child(3) {
+    width: 48%;
+  }
 }
 
 .totem-table th {
